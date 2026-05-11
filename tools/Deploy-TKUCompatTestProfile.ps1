@@ -4,6 +4,7 @@ param(
     [string]$BaselineModName = 'TKUEvidenceCorePluginOnly',
     [int]$LoadOrder = 95,
     [string]$GameVersion = '1.13.378',
+    [switch]$ReplaceExisting,
     [string]$SourcePackageDir = '',
     [string]$LiveModsRoot = ''
 )
@@ -66,6 +67,7 @@ $reportMdPath = Join-Path $reportDir "tkucompat_live_test_deploy_$timestamp.md"
 $liveModlist = Join-Path $LiveModsRoot 'modlist.json'
 $liveBackup = Join-Path $LiveModsRoot "modlist.backup-before-$ModName-$timestamp.json"
 $repoBackup = Join-Path $reportDir "modlist.backup-before-$ModName-$timestamp.json"
+$destBackup = Join-Path $reportDir "backups\live_mod_before_deploy_${ModName}_$timestamp"
 $profilePath = Join-Path $LiveModsRoot "modlist.profile-$ModName-corepatch-$timestamp.json"
 $destModDir = Join-Path $LiveModsRoot $ModName
 $destModJson = Join-Path $destModDir 'mod.json'
@@ -86,8 +88,18 @@ if (-not $liveModlistExists) {
 if (-not $baselineExists) {
     $safetyFailures += "baseline mod folder missing: $baselineModDir"
 }
-if ($destExistsBefore) {
+if ($destExistsBefore -and -not $ReplaceExisting) {
     $safetyFailures += "destination mod folder already exists; refusing to overwrite: $destModDir"
+}
+if ($destExistsBefore -and $ReplaceExisting) {
+    $resolvedLiveRoot = (Resolve-Path -LiteralPath $LiveModsRoot).Path
+    $resolvedDest = (Resolve-Path -LiteralPath $destModDir).Path
+    if (-not $resolvedDest.StartsWith($resolvedLiveRoot, [System.StringComparison]::OrdinalIgnoreCase)) {
+        $safetyFailures += "destination does not resolve under live mods root: $destModDir"
+    }
+    if ($resolvedDest -eq $resolvedLiveRoot) {
+        $safetyFailures += "destination resolves to live mods root itself; refusing replace: $destModDir"
+    }
 }
 
 $currentModlist = $null
@@ -119,6 +131,7 @@ $report = [ordered]@{
     live_modlist = $liveModlist
     live_modlist_backup = $liveBackup
     repo_modlist_backup = $repoBackup
+    destination_mod_backup = $(if ($destExistsBefore -and $ReplaceExisting) { $destBackup } else { $null })
     profile_path = $profilePath
     safety_failures = $safetyFailures
     actions = @()
@@ -131,6 +144,14 @@ if ($safetyFailures.Count -eq 0 -and $Apply) {
     Copy-Item -LiteralPath $liveModlist -Destination $repoBackup
     $report.actions += "backed up live modlist to $liveBackup"
     $report.actions += "backed up live modlist to $repoBackup"
+
+    if ($destExistsBefore -and $ReplaceExisting) {
+        New-Item -ItemType Directory -Force -Path (Split-Path -Parent $destBackup) | Out-Null
+        Copy-Item -LiteralPath $destModDir -Destination $destBackup -Recurse
+        Remove-Item -LiteralPath $destModDir -Recurse -Force
+        $report.actions += "backed up existing destination mod folder to $destBackup"
+        $report.actions += "removed existing destination mod folder before redeploy"
+    }
 
     Copy-Item -LiteralPath $SourcePackageDir -Destination $destModDir -Recurse
     $report.actions += "copied packaged mod to $destModDir"
@@ -178,6 +199,7 @@ $lines = @(
     "- Game version source: ``$gameVersionSource``",
     "- Live modlist backup: ``$liveBackup``",
     "- Repo modlist backup: ``$repoBackup``",
+    "- Destination mod backup: ``$(if ($destExistsBefore -and $ReplaceExisting) { $destBackup } else { '' })``",
     "- Test profile: ``$profilePath``",
     "",
     "## Safety",
@@ -210,6 +232,9 @@ $lines += ""
 $lines += "## Rollback"
 $lines += ""
 $lines += "To restore the previous live modlist, copy ``$liveBackup`` back to ``$liveModlist``."
+if ($destExistsBefore -and $ReplaceExisting) {
+    $lines += "To restore the previous deployed mod folder, copy ``$destBackup`` back to ``$destModDir``."
+}
 $lines | Set-Content -LiteralPath $reportMdPath -Encoding UTF8
 
 Write-Host "Wrote $reportPath"

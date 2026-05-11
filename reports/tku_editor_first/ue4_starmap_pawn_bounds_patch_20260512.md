@@ -1,7 +1,7 @@
 # UE4 StarMapPawn Bounds Patch Gate - 2026-05-12
 
-- Generated: `2026-05-11T21:35:05.513929+00:00`
-- Apply requested: `False`
+- Generated: `2026-05-11T21:36:51.013792+00:00`
+- Apply requested: `True`
 - Asset path: `/Game/UI/FrontEnd/StarMapPawn`
 - Target mod file: `E:\Games\MechWarrior5Editor\MW5Mercs\Plugins\TKUCompatEditorPatch\ModOverride\UI\FrontEnd\StarMapPawn.uasset`
 - Target pan horizontal: `17500.0`
@@ -26,15 +26,15 @@
 
 ## Result
 
-- Attempted: `False`
-- Applied: `False`
-- Saved: `False`
-- Reason: `dry run only`
-- Writes: `None`
-- Backup: `None`
+- Attempted: `True`
+- Applied: `True`
+- Saved: `True`
+- Reason: `None`
+- Writes: `{'pan_bounds_horizontal': {'ok': True, 'after': 17500.0}, 'pan_bounds_vertical': {'ok': True, 'after': 17500.0}, 'zoom_distance_list': {'ok': True, 'after': [300.0, 600.0, 900.0, 1300.0, 1800.0, 2200.0, 2800.0, 3500.0, 5000.0, 7500.0, 9000.0]}, 'zoom_level_thresholds': {'ok': True, 'after': [3500, 1000]}}`
+- Backup: `{'path': 'D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\backups\\TKUCompatEditorPatch_starmap_pawn_pre_bounds_patch_20260512\\StarMapPawn.uasset', 'sha256': '2C2121628B6B968B158C2A87CDF2E50E1541761B82103A0CE0B2BDA15D4097B9'}`
 
 ## Hashes
 
 - Target before: `2C2121628B6B968B158C2A87CDF2E50E1541761B82103A0CE0B2BDA15D4097B9`
-- Target after: `2C2121628B6B968B158C2A87CDF2E50E1541761B82103A0CE0B2BDA15D4097B9`
+- Target after: `3A4EC0F8DE697928057F24985E9715B6EEFA199FB56776E0C89C34212FDF1FF0`
 - Base unchanged: `True`

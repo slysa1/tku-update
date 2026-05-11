@@ -1,5 +1,5 @@
 {
-  "apply_requested": false,
+  "apply_requested": true,
   "asset_path": "/Game/UI/FrontEnd/StarMapPawn",
   "base_asset_file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\UI\\FrontEnd\\StarMapPawn.uasset",
   "base_asset_hash_after": "418EF773BF4CABB4AB55B5B470CE66E3E5761B7DB85B632AB90382929BAC97C2",
@@ -37,7 +37,7 @@
       "span": 9616.0
     }
   },
-  "generated_utc": "2026-05-11T21:35:05.513929+00:00",
+  "generated_utc": "2026-05-11T21:36:51.013792+00:00",
   "pawn": {
     "asset_class": "Blueprint",
     "asset_exists": {
@@ -70,14 +70,58 @@
     }
   },
   "result": {
-    "applied": false,
-    "attempted": false,
-    "reason": "dry run only",
-    "saved": false
+    "applied": true,
+    "attempted": true,
+    "modify_asset": {
+      "ok": true,
+      "value": false
+    },
+    "modify_cdo": {
+      "ok": true,
+      "value": false
+    },
+    "pre_patch_backup": {
+      "path": "D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\backups\\TKUCompatEditorPatch_starmap_pawn_pre_bounds_patch_20260512\\StarMapPawn.uasset",
+      "sha256": "2C2121628B6B968B158C2A87CDF2E50E1541761B82103A0CE0B2BDA15D4097B9"
+    },
+    "saved": true,
+    "writes": {
+      "pan_bounds_horizontal": {
+        "after": 17500.0,
+        "ok": true
+      },
+      "pan_bounds_vertical": {
+        "after": 17500.0,
+        "ok": true
+      },
+      "zoom_distance_list": {
+        "after": [
+          300.0,
+          600.0,
+          900.0,
+          1300.0,
+          1800.0,
+          2200.0,
+          2800.0,
+          3500.0,
+          5000.0,
+          7500.0,
+          9000.0
+        ],
+        "ok": true
+      },
+      "zoom_level_thresholds": {
+        "after": [
+          3500,
+          1000
+        ],
+        "ok": true
+      }
+    }
   },
   "safety_failures": [],
   "target_asset_file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch\\ModOverride\\UI\\FrontEnd\\StarMapPawn.uasset",
-  "target_asset_hash_after": "2C2121628B6B968B158C2A87CDF2E50E1541761B82103A0CE0B2BDA15D4097B9",
+  "target_asset_hash_after": "3A4EC0F8DE697928057F24985E9715B6EEFA199FB56776E0C89C34212FDF1FF0",
   "target_asset_hash_before": "2C2121628B6B968B158C2A87CDF2E50E1541761B82103A0CE0B2BDA15D4097B9",
   "target_mod_name": "TKUCompatEditorPatch",
   "targets": {

@@ -17,6 +17,8 @@ EXPECTED_PAK_FRAGMENTS = [
     "Content/InnerSphereData/MW5_InnerSphereData.uexp",
     "Content/Levels/FrontEnd/StarMap.umap",
     "Content/Levels/FrontEnd/StarMap.uexp",
+    "Content/UI/FrontEnd/StarMapPawn.uasset",
+    "Content/UI/FrontEnd/StarMapPawn.uexp",
 ]
 FOCUS_TERMS = [
     "TKUCompatEditorPatch",
@@ -25,6 +27,8 @@ FOCUS_TERMS = [
     "MW5_InnerSphereData",
     "Levels/FrontEnd/StarMap",
     "Levels\\FrontEnd\\StarMap",
+    "UI/FrontEnd/StarMapPawn",
+    "UI\\FrontEnd\\StarMapPawn",
 ]
 
 
