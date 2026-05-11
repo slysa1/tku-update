@@ -1,0 +1,13 @@
+{
+  "details": {
+    "report": "D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\ue4_starmap_actor_patch_20260511.json",
+    "result": {
+      "attempted": false,
+      "reason": "dry run only",
+      "saved": false,
+      "spawned": 0
+    }
+  },
+  "generated_utc": "2026-05-11T10:42:06.841775+00:00",
+  "step": "report_written"
+}

@@ -1,0 +1,14 @@
+{
+	"gameVersion": "1.13.378",
+	"modStatus":
+	{
+		"TKUCompatEditorPatch":
+		{
+			"bEnabled": true
+		},
+		"TKUEvidenceCorePluginOnly":
+		{
+			"bEnabled": true
+		}
+	}
+}

@@ -10,6 +10,7 @@ TOOLS_ROOT = PROJECT_ROOT / "tools"
 CONFIG_DIR = PROJECT_ROOT / "config"
 
 _DEFAULTS = {
+    "game_version": "1.13.378",
     "game_root": r"E:\SteamLibrary\steamapps\common\MechWarrior 5 Mercenaries",
     "steam_workshop_root": r"E:\SteamLibrary\steamapps\workshop\content\784080",
     "mw5_editor_root": r"E:\Games\MechWarrior5Editor",
@@ -22,6 +23,7 @@ _DEFAULTS = {
 }
 
 _ENV_KEYS = {
+    "game_version": "TKU_GAME_VERSION",
     "game_root": "TKU_GAME_ROOT",
     "local_mods_root": "TKU_LOCAL_MODS_ROOT",
     "content_paks_root": "TKU_CONTENT_PAKS_ROOT",
@@ -94,7 +96,7 @@ def _configured_game_version() -> str:
         if game_version:
             return str(game_version)
 
-    return "1.1.380"
+    return str(_DEFAULTS["game_version"])
 
 
 GAME_VERSION = _configured_game_version()

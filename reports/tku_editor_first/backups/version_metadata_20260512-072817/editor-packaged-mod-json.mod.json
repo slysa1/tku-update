@@ -1,0 +1,17 @@
+{
+   "displayName" : "TKUCompatEditorPatch",
+   "version" : "1.0",
+   "buildNumber" : 1,
+   "description" : "Editor-authored compatibility patch for Known Universe on MW5 1.1.380",
+   "author" : "Codex/TKU Recovery",
+   "authorURL" : "",
+   "defaultLoadOrder" : 0,
+   "gameVersion" : "1.13.64",
+   "manifest" : [
+      "/Game/InnerSphereData/MW5_InnerSphereData.uasset",
+      "/Game/Levels/FrontEnd/StarMap.umap"
+   ],
+   "steamPublishedFileId" : 0,
+   "steamLastSubmittedBuildNumber" : 0,
+   "steamModVisibility" : "Private"
+}

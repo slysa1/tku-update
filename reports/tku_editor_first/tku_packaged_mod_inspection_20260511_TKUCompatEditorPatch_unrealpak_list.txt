@@ -1,0 +1,11 @@
+LogPakFile: Display: Using command line for crypto configuration
+LogPakFile: Display: Mount point ../../../MW5Mercs/
+LogPakFile: Display: "Config/Input/TKUCompatEditorPatchInput.ini" offset: 0, size: 1383 bytes, sha1: 6F09714C36590136FEFD12627978C9B45A8BAE19, compression: None.
+LogPakFile: Display: "Config/Tags/TKUCompatEditorPatchTags.ini" offset: 1436, size: 43 bytes, sha1: 55A6A1F3E093E68D45A20D717EB09863AE3FBCB8, compression: None.
+LogPakFile: Display: "Content/InnerSphereData/MW5_InnerSphereData.uasset" offset: 1532, size: 73485 bytes, sha1: 6C1EED6D59F31EA63CF14D0891F81600F4534296, compression: None.
+LogPakFile: Display: "Content/Levels/FrontEnd/StarMap.umap" offset: 75070, size: 1646045 bytes, sha1: 0DEA89C72B6EBA260B570259C28E138E64AE0DCD, compression: None.
+LogPakFile: Display: "Content/InnerSphereData/MW5_InnerSphereData.uexp" offset: 1721168, size: 3167256 bytes, sha1: C9FBE192DF3BBC9F8C5407EE66DCD0B4D5DE6119, compression: None.
+LogPakFile: Display: "Content/Levels/FrontEnd/StarMap.uexp" offset: 4888477, size: 2490052 bytes, sha1: F9E6D3B47FE90102CE802FBE7A452D4BB206612A, compression: None.
+LogPakFile: Display: "Plugins/TKUCompatEditorPatch/AssetRegistry.bin" offset: 7378582, size: 6485 bytes, sha1: DA8FFEEE73A219FF348CDABD9501B19617471138, compression: None.
+LogPakFile: Display: 7 files (7384749 bytes), (0 filtered bytes).
+LogPakFile: Display: Unreal pak executed in 0.000592 seconds

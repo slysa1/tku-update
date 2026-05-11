@@ -1,0 +1,31 @@
+{
+  "generated": "2026-05-12T07:02:16.2924044+10:00",
+  "apply_requested": true,
+  "mod_name": "TKUCompatEditorPatch",
+  "baseline_mod_name": "TKUEvidenceCorePluginOnly",
+  "source_package_dir": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Mods\\TKUCompatEditorPatch",
+  "live_mods_root": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods",
+  "destination_mod_dir": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\TKUCompatEditorPatch",
+  "load_order": 95,
+  "game_version": "1.1.380",
+  "live_modlist": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\modlist.json",
+  "live_modlist_backup": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\modlist.backup-before-TKUCompatEditorPatch-20260512-070216.json",
+  "repo_modlist_backup": "D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\modlist.backup-before-TKUCompatEditorPatch-20260512-070216.json",
+  "profile_path": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\modlist.profile-TKUCompatEditorPatch-corepatch-20260512-070216.json",
+  "safety_failures": [],
+  "actions": [
+    "backed up live modlist to E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\modlist.backup-before-TKUCompatEditorPatch-20260512-070216.json",
+    "backed up live modlist to D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\modlist.backup-before-TKUCompatEditorPatch-20260512-070216.json",
+    "copied packaged mod to E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\TKUCompatEditorPatch",
+    "updated deployed TKUCompatEditorPatch mod.json defaultLoadOrder=95 gameVersion=1.1.380",
+    "wrote isolated test profile E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\modlist.profile-TKUCompatEditorPatch-corepatch-20260512-070216.json",
+    "activated isolated test profile in E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\modlist.json"
+  ],
+  "hashes": {
+    "deployed_mod_json": "469D22A8FD9A94F8CEA1045B147432272710F8FE155BA739366F0332C76305EA",
+    "deployed_pak": "3214395F1E9EDB88957903C88CE364A48AD634902A26EF461284E3D27BAAED0D",
+    "source_mod_json": "915029771DF2F0AD587F0A14D035FF6E1A1B93D13C65AF718388297455EC4CA9",
+    "source_pak": "3214395F1E9EDB88957903C88CE364A48AD634902A26EF461284E3D27BAAED0D",
+    "live_modlist": "337E2487793E061A6FF282130791978A964A8C5F42CAA28C07C6CC458587CCDE"
+  }
+}

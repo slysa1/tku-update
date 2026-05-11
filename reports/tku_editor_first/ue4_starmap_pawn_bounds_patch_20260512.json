@@ -1,0 +1,110 @@
+{
+  "apply_requested": false,
+  "asset_path": "/Game/UI/FrontEnd/StarMapPawn",
+  "base_asset_file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\UI\\FrontEnd\\StarMapPawn.uasset",
+  "base_asset_hash_after": "418EF773BF4CABB4AB55B5B470CE66E3E5761B7DB85B632AB90382929BAC97C2",
+  "base_asset_hash_before": "418EF773BF4CABB4AB55B5B470CE66E3E5761B7DB85B632AB90382929BAC97C2",
+  "base_asset_unchanged": true,
+  "csv_extents": {
+    "all_x": {
+      "half_span": 15664.3203125,
+      "max": 15297.4404296875,
+      "min": -16031.2001953125,
+      "span": 31328.640625
+    },
+    "all_y": {
+      "half_span": 15259.2001953125,
+      "max": 15498.9599609375,
+      "min": -15019.4404296875,
+      "span": 30518.400390625
+    },
+    "encoding": "utf-16",
+    "exists": true,
+    "path": "D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\tku_inner_sphere_merged_current_plus_tku_additions_20260510.csv",
+    "row_count_excluding_0": 3973,
+    "target_pan_horizontal": 17500.0,
+    "target_pan_vertical": 17500.0,
+    "vanilla_subset_x": {
+      "half_span": 4304.0,
+      "max": 4416.0,
+      "min": -4192.0,
+      "span": 8608.0
+    },
+    "vanilla_subset_y": {
+      "half_span": 4808.0,
+      "max": 5480.0,
+      "min": -4136.0,
+      "span": 9616.0
+    }
+  },
+  "generated_utc": "2026-05-11T21:17:33.245202+00:00",
+  "pawn": {
+    "asset_class": "Blueprint",
+    "asset_exists": {
+      "ok": true,
+      "value": true
+    },
+    "asset_loaded": true,
+    "asset_object_path": "/Game/UI/FrontEnd/StarMapPawn.StarMapPawn",
+    "asset_path": "/Game/UI/FrontEnd/StarMapPawn",
+    "blueprint_class_loaded": true,
+    "blueprint_class_path": "/Game/UI/FrontEnd/StarMapPawn.StarMapPawn_C",
+    "cdo_class": "StarMapPawn_C",
+    "cdo_path": "/Game/UI/FrontEnd/StarMapPawn.Default__StarMapPawn_C",
+    "defaults": {
+      "pan_bounds_horizontal": 5500.0,
+      "pan_bounds_vertical": 4500.0,
+      "zoom_distance_list": [
+        400.0,
+        550.0,
+        700.0,
+        1400.0,
+        1600.0,
+        1800.0,
+        3500.0
+      ],
+      "zoom_level_thresholds": [
+        2000,
+        1000
+      ]
+    }
+  },
+  "result": {
+    "applied": false,
+    "attempted": false,
+    "reason": "safety failures",
+    "saved": false
+  },
+  "safety_failures": [
+    "mod-owned StarMapPawn file missing; use MW5 Mod Editor Save To Mod first: E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch\\ModOverride\\UI\\FrontEnd\\StarMapPawn.uasset",
+    "could not hash target StarMapPawn before operation",
+    "asset_object_path is not resolving through mod override: /Game/UI/FrontEnd/StarMapPawn.StarMapPawn",
+    "blueprint_class_path is not resolving through mod override: /Game/UI/FrontEnd/StarMapPawn.StarMapPawn_C",
+    "cdo_path is not resolving through mod override: /Game/UI/FrontEnd/StarMapPawn.Default__StarMapPawn_C"
+  ],
+  "target_asset_file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch\\ModOverride\\UI\\FrontEnd\\StarMapPawn.uasset",
+  "target_asset_hash_after": null,
+  "target_asset_hash_before": null,
+  "target_mod_name": "TKUCompatEditorPatch",
+  "targets": {
+    "pan_bounds_horizontal": 17500.0,
+    "pan_bounds_vertical": 17500.0,
+    "zoom_distance_list": [
+      300.0,
+      600.0,
+      900.0,
+      1300.0,
+      1800.0,
+      2200.0,
+      2800.0,
+      3500.0,
+      5000.0,
+      7500.0,
+      9000.0
+    ],
+    "zoom_level_thresholds": [
+      3500,
+      1000
+    ]
+  }
+}
