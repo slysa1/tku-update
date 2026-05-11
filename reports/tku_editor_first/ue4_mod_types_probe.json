@@ -1,0 +1,1638 @@
+{
+  "generated_utc": "2026-05-10T11:34:59.185236+00:00",
+  "probe_scope": "MW5 editor Python mod authoring/package API symbol and type inspection",
+  "non_mutating": true,
+  "search_terms": [
+    "MWModPluginInfo",
+    "ModPackageArgs",
+    "ModPackage",
+    "MWMod",
+    "ModPlugin",
+    "PackageMod",
+    "CreateMod",
+    "SaveToMod",
+    "SaveTo"
+  ],
+  "runtime_state": {
+    "workspace": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries",
+    "editor_root": "E:\\Games\\MechWarrior5Editor",
+    "project": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\MW5Mercs.uproject",
+    "stub_path": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Intermediate\\PythonStub\\unreal.py"
+  },
+  "matching_unreal_symbols": {
+    "MWModPluginInfo": [
+      "MWModPluginInfo"
+    ],
+    "ModPackageArgs": [
+      "ModPackageArgs"
+    ],
+    "ModPackage": [
+      "ModPackageArgs"
+    ],
+    "MWMod": [
+      "MWModEditorWidget",
+      "MWModPluginInfo",
+      "MWModUtils"
+    ],
+    "ModPlugin": [
+      "MWModPluginInfo"
+    ],
+    "PackageMod": [],
+    "CreateMod": [],
+    "SaveToMod": [],
+    "SaveTo": []
+  },
+  "class_summaries": {
+    "MWModPluginInfo": {
+      "exists": true,
+      "repr": "<class 'MWModPluginInfo'>",
+      "members": [
+        "assign",
+        "cast",
+        "category",
+        "copy",
+        "created_by",
+        "created_by_url",
+        "description",
+        "docs_url",
+        "engine_version",
+        "friendly_name",
+        "get_editor_property",
+        "marketplace_url",
+        "mod_name",
+        "plugin_path",
+        "set_editor_properties",
+        "set_editor_property",
+        "static_struct",
+        "support_url",
+        "to_tuple",
+        "version_name"
+      ],
+      "term_members": {
+        "MWModPluginInfo": [],
+        "ModPackageArgs": [],
+        "ModPackage": [],
+        "MWMod": [],
+        "ModPlugin": [],
+        "PackageMod": [],
+        "CreateMod": [],
+        "SaveToMod": [],
+        "SaveTo": []
+      }
+    },
+    "ModPackageArgs": {
+      "exists": true,
+      "repr": "<class 'ModPackageArgs'>",
+      "members": [
+        "assign",
+        "cast",
+        "copy",
+        "get_editor_property",
+        "mod_name",
+        "output_to_folder",
+        "publish_to_steam",
+        "set_editor_properties",
+        "set_editor_property",
+        "skip_packaging",
+        "static_struct",
+        "steam_visibility",
+        "to_tuple"
+      ],
+      "term_members": {
+        "MWModPluginInfo": [],
+        "ModPackageArgs": [],
+        "ModPackage": [],
+        "MWMod": [],
+        "ModPlugin": [],
+        "PackageMod": [],
+        "CreateMod": [],
+        "SaveToMod": [],
+        "SaveTo": []
+      }
+    },
+    "MWModUtils": {
+      "exists": true,
+      "repr": "<class 'MWModUtils'>",
+      "members": [
+        "call_method",
+        "cast",
+        "create_mod_entry",
+        "does_mod_list_require_restart",
+        "get_active_mod_entry",
+        "get_active_mod_plugin",
+        "get_class",
+        "get_default_object",
+        "get_editor_property",
+        "get_enabled_mod_list",
+        "get_fname",
+        "get_full_name",
+        "get_mod_conflicts",
+        "get_mod_list",
+        "get_mod_platform",
+        "get_mod_plugin_entry_by_name",
+        "get_mod_plugin_icon_path",
+        "get_mod_plugin_names",
+        "get_mod_status_list",
+        "get_mods_install_path",
+        "get_name",
+        "get_outer",
+        "get_outermost",
+        "get_path_name",
+        "get_running_mods",
+        "get_typed_outer",
+        "get_world",
+        "is_mod_different",
+        "is_valid",
+        "modify",
+        "needs_restart_to_apply_mods",
+        "platform_open_mods_folder",
+        "rename",
+        "save_mod_info_to_file",
+        "set_active_mod",
+        "set_editor_properties",
+        "set_editor_property",
+        "sort_mod_list",
+        "static_class",
+        "update_mod_status",
+        "update_mod_status_list_version"
+      ],
+      "term_members": {
+        "MWModPluginInfo": [],
+        "ModPackageArgs": [],
+        "ModPackage": [],
+        "MWMod": [],
+        "ModPlugin": [],
+        "PackageMod": [],
+        "CreateMod": [],
+        "SaveToMod": [],
+        "SaveTo": []
+      }
+    },
+    "MWModEditorWidget": {
+      "exists": true,
+      "repr": "<class 'MWModEditorWidget'>",
+      "members": [
+        "add_to_player_screen",
+        "add_to_viewport",
+        "auto_run_default_action",
+        "bind_to_animation_event",
+        "bind_to_animation_finished",
+        "bind_to_animation_started",
+        "call_method",
+        "cancel_latent_actions",
+        "cast",
+        "close_tab",
+        "color_and_opacity",
+        "construct",
+        "cursor",
+        "destruct",
+        "flush_animations",
+        "force_layout_prepass",
+        "force_volatile",
+        "foreground_color",
+        "get_accessible_summary_text",
+        "get_accessible_text",
+        "get_alignment_in_viewport",
+        "get_anchors_in_viewport",
+        "get_animation_current_time",
+        "get_cached_geometry",
+        "get_class",
+        "get_clipping",
+        "get_default_object",
+        "get_desired_size",
+        "get_editor_property",
+        "get_fname",
+        "get_full_name",
+        "get_game_instance",
+        "get_is_enabled",
+        "get_is_visible",
+        "get_name",
+        "get_opacity",
+        "get_outer",
+        "get_outermost",
+        "get_owning_local_player",
+        "get_owning_player",
+        "get_owning_player_camera_manager",
+        "get_owning_player_pawn",
+        "get_paint_space_geometry",
+        "get_parent",
+        "get_path_name",
+        "get_render_opacity",
+        "get_render_transform_angle",
+        "get_steam_user_name",
+        "get_tick_space_geometry",
+        "get_typed_outer",
+        "get_visibility",
+        "get_world",
+        "has_any_user_focus",
+        "has_focused_descendants",
+        "has_keyboard_focus",
+        "has_mouse_capture",
+        "has_mouse_capture_by_user",
+        "has_user_focus",
+        "has_user_focused_descendants",
+        "help_text",
+        "invalidate_layout_and_volatility",
+        "is_animation_playing",
+        "is_animation_playing_forward",
+        "is_any_animation_playing",
+        "is_enabled",
+        "is_focusable",
+        "is_hovered",
+        "is_in_viewport",
+        "is_interactable",
+        "is_listening_for_input_action",
+        "is_playing_animation",
+        "is_steam_initialized",
+        "is_visible",
+        "is_volatile",
+        "listen_for_input_action",
+        "modify",
+        "navigation",
+        "on_added_to_focus_path",
+        "on_analog_value_changed",
+        "on_animation_finished",
+        "on_animation_started",
+        "on_default_action_clicked",
+        "on_drag_cancelled",
+        "on_drag_detected",
+        "on_drag_enter",
+        "on_drag_leave",
+        "on_drag_over",
+        "on_drop",
+        "on_focus_lost",
+        "on_focus_received",
+        "on_initialized",
+        "on_key_char",
+        "on_key_down",
+        "on_key_up",
+        "on_mod_info_changed",
+        "on_motion_detected",
+        "on_mouse_button_double_click",
+        "on_mouse_button_down",
+        "on_mouse_button_up",
+        "on_mouse_capture_lost",
+        "on_mouse_enter",
+        "on_mouse_leave",
+        "on_mouse_move",
+        "on_mouse_wheel",
+        "on_paint",
+        "on_preview_key_down",
+        "on_preview_mouse_button_down",
+        "on_removed_from_focus_path",
+        "on_steam_state_changed",
+        "on_tab_closed",
+        "on_touch_ended",
+        "on_touch_force_changed",
+        "on_touch_gesture",
+        "on_touch_moved",
+        "on_touch_started",
+        "on_visibility_changed",
+        "package_mod",
+        "padding",
+        "pause_animation",
+        "pick_new_preview_image",
+        "play_animation",
+        "play_animation_at_time",
+        "play_animation_forward",
+        "play_animation_reverse",
+        "play_animation_time_range",
+        "play_animation_to",
+        "play_sound",
+        "pre_construct",
+        "priority",
+        "register_input_component",
+        "register_steam_callbacks",
+        "remove_from_parent",
+        "remove_from_viewport",
+        "rename",
+        "render_transform",
+        "render_transform_pivot",
+        "reset_cursor",
+        "reverse_animation",
+        "run",
+        "set_alignment_in_viewport",
+        "set_all_navigation_rules",
+        "set_anchors_in_viewport",
+        "set_animation_current_time",
+        "set_clipping",
+        "set_color_and_opacity",
+        "set_cursor",
+        "set_desired_size_in_viewport",
+        "set_editor_properties",
+        "set_editor_property",
+        "set_focus",
+        "set_foreground_color",
+        "set_input_action_blocking",
+        "set_input_action_priority",
+        "set_is_enabled",
+        "set_keyboard_focus",
+        "set_navigation_rule",
+        "set_navigation_rule_base",
+        "set_navigation_rule_custom",
+        "set_navigation_rule_custom_boundary",
+        "set_navigation_rule_explicit",
+        "set_num_loops_to_play",
+        "set_opacity",
+        "set_owning_player",
+        "set_padding",
+        "set_playback_speed",
+        "set_position_in_viewport",
+        "set_render_angle",
+        "set_render_opacity",
+        "set_render_scale",
+        "set_render_shear",
+        "set_render_transform",
+        "set_render_transform_angle",
+        "set_render_transform_pivot",
+        "set_render_translation",
+        "set_tool_tip",
+        "set_tool_tip_text",
+        "set_user_focus",
+        "set_visibility",
+        "slot",
+        "static_class",
+        "stop_action",
+        "stop_all_animations",
+        "stop_animation",
+        "stop_animations_and_latent_actions",
+        "stop_listening_for_all_input_actions",
+        "stop_listening_for_input_action",
+        "tick",
+        "tick_frequency",
+        "tool_tip_text",
+        "tool_tip_widget",
+        "unbind_all_from_animation_finished",
+        "unbind_all_from_animation_started",
+        "unbind_from_animation_finished",
+        "unbind_from_animation_started",
+        "unregister_input_component",
+        "unregister_steam_callbacks"
+      ],
+      "term_members": {
+        "MWModPluginInfo": [],
+        "ModPackageArgs": [],
+        "ModPackage": [],
+        "MWMod": [],
+        "ModPlugin": [],
+        "PackageMod": [],
+        "CreateMod": [],
+        "SaveToMod": [],
+        "SaveTo": []
+      }
+    },
+    "ModInfo": {
+      "exists": true,
+      "repr": "<class 'ModInfo'>",
+      "members": [
+        "assign",
+        "author",
+        "author_url",
+        "build_number",
+        "cast",
+        "copy",
+        "default_load_order",
+        "description",
+        "display_name",
+        "game_version",
+        "get_editor_property",
+        "manifest",
+        "set_editor_properties",
+        "set_editor_property",
+        "static_struct",
+        "steam_last_submitted_build_number",
+        "steam_mod_visibility",
+        "steam_published_file_id",
+        "to_tuple",
+        "version"
+      ],
+      "term_members": {
+        "MWModPluginInfo": [],
+        "ModPackageArgs": [],
+        "ModPackage": [],
+        "MWMod": [],
+        "ModPlugin": [],
+        "PackageMod": [],
+        "CreateMod": [],
+        "SaveToMod": [],
+        "SaveTo": []
+      }
+    },
+    "ModList": {
+      "exists": true,
+      "repr": "<class 'ModList'>",
+      "members": [
+        "assign",
+        "cast",
+        "copy",
+        "game_version",
+        "get_editor_property",
+        "mod_status",
+        "set_editor_properties",
+        "set_editor_property",
+        "static_struct",
+        "to_tuple"
+      ],
+      "term_members": {
+        "MWModPluginInfo": [],
+        "ModPackageArgs": [],
+        "ModPackage": [],
+        "MWMod": [],
+        "ModPlugin": [],
+        "PackageMod": [],
+        "CreateMod": [],
+        "SaveToMod": [],
+        "SaveTo": []
+      }
+    },
+    "ModListEntry": {
+      "exists": true,
+      "repr": "<class 'ModListEntry'>",
+      "members": [
+        "assign",
+        "cast",
+        "copy",
+        "get_editor_property",
+        "info",
+        "mod_name",
+        "origin",
+        "set_editor_properties",
+        "set_editor_property",
+        "static_struct",
+        "status",
+        "to_tuple"
+      ],
+      "term_members": {
+        "MWModPluginInfo": [],
+        "ModPackageArgs": [],
+        "ModPackage": [],
+        "MWMod": [],
+        "ModPlugin": [],
+        "PackageMod": [],
+        "CreateMod": [],
+        "SaveToMod": [],
+        "SaveTo": []
+      }
+    },
+    "ModStatus": {
+      "exists": true,
+      "repr": "<class 'ModStatus'>",
+      "members": [
+        "assign",
+        "cast",
+        "copy",
+        "enabled",
+        "get_editor_property",
+        "set_editor_properties",
+        "set_editor_property",
+        "static_struct",
+        "to_tuple"
+      ],
+      "term_members": {
+        "MWModPluginInfo": [],
+        "ModPackageArgs": [],
+        "ModPackage": [],
+        "MWMod": [],
+        "ModPlugin": [],
+        "PackageMod": [],
+        "CreateMod": [],
+        "SaveToMod": [],
+        "SaveTo": []
+      }
+    },
+    "ModPlatform": {
+      "exists": true,
+      "repr": "<class 'ModPlatform'>",
+      "members": [
+        "EPIC",
+        "GAMEPASS",
+        "GOG",
+        "NONE",
+        "STEAM",
+        "cast",
+        "name",
+        "static_enum",
+        "value"
+      ],
+      "term_members": {
+        "MWModPluginInfo": [],
+        "ModPackageArgs": [],
+        "ModPackage": [],
+        "MWMod": [],
+        "ModPlugin": [],
+        "PackageMod": [],
+        "CreateMod": [],
+        "SaveToMod": [],
+        "SaveTo": []
+      }
+    },
+    "ModConflict": {
+      "exists": true,
+      "repr": "<class 'ModConflict'>",
+      "members": [
+        "assign",
+        "cast",
+        "conflict_paths",
+        "copy",
+        "get_editor_property",
+        "mod_display_name",
+        "mod_name",
+        "set_editor_properties",
+        "set_editor_property",
+        "static_struct",
+        "to_tuple"
+      ],
+      "term_members": {
+        "MWModPluginInfo": [],
+        "ModPackageArgs": [],
+        "ModPackage": [],
+        "MWMod": [],
+        "ModPlugin": [],
+        "PackageMod": [],
+        "CreateMod": [],
+        "SaveToMod": [],
+        "SaveTo": []
+      }
+    },
+    "PublishedModVisibility": {
+      "exists": true,
+      "repr": "<class 'PublishedModVisibility'>",
+      "members": [
+        "FRIENDS_ONLY",
+        "PRIVATE",
+        "PUBLIC",
+        "cast",
+        "name",
+        "static_enum",
+        "value"
+      ],
+      "term_members": {
+        "MWModPluginInfo": [],
+        "ModPackageArgs": [],
+        "ModPackage": [],
+        "MWMod": [],
+        "ModPlugin": [],
+        "PackageMod": [],
+        "CreateMod": [],
+        "SaveToMod": [],
+        "SaveTo": []
+      }
+    }
+  },
+  "struct_samples": {
+    "MWModPluginInfo_default": {
+      "exists": true,
+      "constructed": true,
+      "repr": "<Struct 'MWModPluginInfo' (0x0000022187F20700) {mod_name: \"\", plugin_path: \"\", version_name: \"\", friendly_name: \"\", description: \"\", category: \"\", created_by: \"\", created_by_url: \"\", docs_url: \"\", marketplace_url: \"\", support_url: \"\", engine_version: \"\"}>",
+      "jsonable": {
+        "repr": "<Struct 'MWModPluginInfo' (0x0000022187F20700) {mod_name: \"\", plugin_path: \"\", version_name: \"\", friendly_name: \"\", description: \"\", category: \"\", created_by: \"\", created_by_url: \"\", docs_url: \"\", marketplace_url: \"\", support_url: \"\", engine_version: \"\"}>",
+        "python_type": "MWModPluginInfo"
+      },
+      "members": [
+        "assign",
+        "cast",
+        "category",
+        "copy",
+        "created_by",
+        "created_by_url",
+        "description",
+        "docs_url",
+        "engine_version",
+        "friendly_name",
+        "get_editor_property",
+        "marketplace_url",
+        "mod_name",
+        "plugin_path",
+        "set_editor_properties",
+        "set_editor_property",
+        "static_struct",
+        "support_url",
+        "to_tuple",
+        "version_name"
+      ],
+      "editor_properties": {
+        "mod_name": "",
+        "plugin_path": "",
+        "version_name": "",
+        "friendly_name": "",
+        "description": "",
+        "category": "",
+        "created_by": "",
+        "created_by_url": "",
+        "docs_url": "",
+        "marketplace_url": "",
+        "support_url": "",
+        "engine_version": ""
+      }
+    },
+    "MWModPluginInfo_sample": {
+      "exists": true,
+      "constructed": true,
+      "repr": "<Struct 'MWModPluginInfo' (0x0000022187F20700) {mod_name: \"__TKUProbeNoCreate__\", plugin_path: \"__NoDiskPath__\", version_name: \"0.0-probe\", friendly_name: \"TKU Probe No Create\", description: \"Non-mutating constructor sample\", category: \"Probe\", created_by: \"Codex\", created_by_url: \"\", docs_url: \"\", marketplace_url: \"\", support_url: \"\", engine_version: \"4.27\"}>",
+      "jsonable": {
+        "repr": "<Struct 'MWModPluginInfo' (0x0000022187F20700) {mod_name: \"__TKUProbeNoCreate__\", plugin_path: \"__NoDiskPath__\", version_name: \"0.0-probe\", friendly_name: \"TKU Probe No Create\", description: \"Non-mutating constructor sample\", category: \"Probe\", created_by: \"Codex\", created_by_url: \"\", docs_url: \"\", marketplace_url: \"\", support_url: \"\", engine_version: \"4.27\"}>",
+        "python_type": "MWModPluginInfo"
+      },
+      "members": [
+        "assign",
+        "cast",
+        "category",
+        "copy",
+        "created_by",
+        "created_by_url",
+        "description",
+        "docs_url",
+        "engine_version",
+        "friendly_name",
+        "get_editor_property",
+        "marketplace_url",
+        "mod_name",
+        "plugin_path",
+        "set_editor_properties",
+        "set_editor_property",
+        "static_struct",
+        "support_url",
+        "to_tuple",
+        "version_name"
+      ],
+      "editor_properties": {
+        "mod_name": "__TKUProbeNoCreate__",
+        "plugin_path": "__NoDiskPath__",
+        "version_name": "0.0-probe",
+        "friendly_name": "TKU Probe No Create",
+        "description": "Non-mutating constructor sample",
+        "category": "Probe",
+        "created_by": "Codex",
+        "created_by_url": "",
+        "docs_url": "",
+        "marketplace_url": "",
+        "support_url": "",
+        "engine_version": "4.27"
+      }
+    },
+    "ModPackageArgs_default": {
+      "exists": true,
+      "constructed": true,
+      "repr": "<Struct 'ModPackageArgs' (0x0000022191B4A950) {mod_name: \"\", skip_packaging: False, output_to_folder: False, publish_to_steam: False, steam_visibility: \"\"}>",
+      "jsonable": {
+        "repr": "<Struct 'ModPackageArgs' (0x0000022191B4A950) {mod_name: \"\", skip_packaging: False, output_to_folder: False, publish_to_steam: False, steam_visibility: \"\"}>",
+        "python_type": "ModPackageArgs"
+      },
+      "members": [
+        "assign",
+        "cast",
+        "copy",
+        "get_editor_property",
+        "mod_name",
+        "output_to_folder",
+        "publish_to_steam",
+        "set_editor_properties",
+        "set_editor_property",
+        "skip_packaging",
+        "static_struct",
+        "steam_visibility",
+        "to_tuple"
+      ],
+      "editor_properties": {
+        "mod_name": "",
+        "skip_packaging": false,
+        "output_to_folder": false,
+        "publish_to_steam": false,
+        "steam_visibility": ""
+      }
+    },
+    "ModPackageArgs_sample": {
+      "exists": true,
+      "constructed": true,
+      "repr": "<Struct 'ModPackageArgs' (0x0000022191B4A950) {mod_name: \"__TKUProbeNoPackage__\", skip_packaging: True, output_to_folder: True, publish_to_steam: False, steam_visibility: \"Private\"}>",
+      "jsonable": {
+        "repr": "<Struct 'ModPackageArgs' (0x0000022191B4A950) {mod_name: \"__TKUProbeNoPackage__\", skip_packaging: True, output_to_folder: True, publish_to_steam: False, steam_visibility: \"Private\"}>",
+        "python_type": "ModPackageArgs"
+      },
+      "members": [
+        "assign",
+        "cast",
+        "copy",
+        "get_editor_property",
+        "mod_name",
+        "output_to_folder",
+        "publish_to_steam",
+        "set_editor_properties",
+        "set_editor_property",
+        "skip_packaging",
+        "static_struct",
+        "steam_visibility",
+        "to_tuple"
+      ],
+      "editor_properties": {
+        "mod_name": "__TKUProbeNoPackage__",
+        "skip_packaging": true,
+        "output_to_folder": true,
+        "publish_to_steam": false,
+        "steam_visibility": "Private"
+      }
+    }
+  },
+  "mwmodutils_safe_results": {
+    "exists": true,
+    "calls": {
+      "get_mods_install_path": {
+        "ok": true,
+        "value": "E:/Games/MechWarrior5Editor/MW5Mercs/Mods/"
+      },
+      "get_mod_plugin_names": {
+        "ok": true,
+        "value": []
+      },
+      "get_active_mod_plugin": {
+        "ok": true,
+        "value": {
+          "repr": "<Struct 'MWModPluginInfo' (0x0000022187F22200) {mod_name: \"\", plugin_path: \"\", version_name: \"\", friendly_name: \"\", description: \"\", category: \"\", created_by: \"\", created_by_url: \"\", docs_url: \"\", marketplace_url: \"\", support_url: \"\", engine_version: \"\"}>",
+          "python_type": "MWModPluginInfo"
+        }
+      },
+      "get_active_mod_entry": {
+        "ok": true,
+        "value": {
+          "repr": "<Struct 'ModListEntry' (0x0000022187F21240) {mod_name: \"\", info: {display_name: \"\", version: \"\", build_number: 0, description: \"\", author: \"\", author_url: \"\", default_load_order: 0.000000, game_version: \"\", manifest: , steam_published_file_id: 0, steam_last_submitted_build_number: 0, steam_mod_visibility: Private}, status: {enabled: False}, origin: None}>",
+          "python_type": "ModListEntry"
+        }
+      },
+      "get_mod_platform": {
+        "ok": true,
+        "value": {
+          "repr": "<ModPlatform.NONE: 0>",
+          "python_type": "ModPlatform"
+        }
+      },
+      "get_mod_list(False)": {
+        "ok": true,
+        "value": []
+      },
+      "get_mod_list(True)": {
+        "ok": true,
+        "value": []
+      },
+      "get_enabled_mod_list": {
+        "ok": true,
+        "value": []
+      },
+      "get_running_mods": {
+        "ok": true,
+        "value": []
+      },
+      "get_mod_status_list": {
+        "ok": true,
+        "value": {
+          "repr": "<Struct 'ModList' (0x0000022192D253C0) {game_version: \"1.13.64\", mod_status: ()}>",
+          "python_type": "ModList"
+        }
+      }
+    }
+  },
+  "editor_widget_probe": {
+    "exists": true,
+    "class_members": [
+      "add_to_player_screen",
+      "add_to_viewport",
+      "auto_run_default_action",
+      "bind_to_animation_event",
+      "bind_to_animation_finished",
+      "bind_to_animation_started",
+      "call_method",
+      "cancel_latent_actions",
+      "cast",
+      "close_tab",
+      "color_and_opacity",
+      "construct",
+      "cursor",
+      "destruct",
+      "flush_animations",
+      "force_layout_prepass",
+      "force_volatile",
+      "foreground_color",
+      "get_accessible_summary_text",
+      "get_accessible_text",
+      "get_alignment_in_viewport",
+      "get_anchors_in_viewport",
+      "get_animation_current_time",
+      "get_cached_geometry",
+      "get_class",
+      "get_clipping",
+      "get_default_object",
+      "get_desired_size",
+      "get_editor_property",
+      "get_fname",
+      "get_full_name",
+      "get_game_instance",
+      "get_is_enabled",
+      "get_is_visible",
+      "get_name",
+      "get_opacity",
+      "get_outer",
+      "get_outermost",
+      "get_owning_local_player",
+      "get_owning_player",
+      "get_owning_player_camera_manager",
+      "get_owning_player_pawn",
+      "get_paint_space_geometry",
+      "get_parent",
+      "get_path_name",
+      "get_render_opacity",
+      "get_render_transform_angle",
+      "get_steam_user_name",
+      "get_tick_space_geometry",
+      "get_typed_outer",
+      "get_visibility",
+      "get_world",
+      "has_any_user_focus",
+      "has_focused_descendants",
+      "has_keyboard_focus",
+      "has_mouse_capture",
+      "has_mouse_capture_by_user",
+      "has_user_focus",
+      "has_user_focused_descendants",
+      "help_text",
+      "invalidate_layout_and_volatility",
+      "is_animation_playing",
+      "is_animation_playing_forward",
+      "is_any_animation_playing",
+      "is_enabled",
+      "is_focusable",
+      "is_hovered",
+      "is_in_viewport",
+      "is_interactable",
+      "is_listening_for_input_action",
+      "is_playing_animation",
+      "is_steam_initialized",
+      "is_visible",
+      "is_volatile",
+      "listen_for_input_action",
+      "modify",
+      "navigation",
+      "on_added_to_focus_path",
+      "on_analog_value_changed",
+      "on_animation_finished",
+      "on_animation_started",
+      "on_default_action_clicked",
+      "on_drag_cancelled",
+      "on_drag_detected",
+      "on_drag_enter",
+      "on_drag_leave",
+      "on_drag_over",
+      "on_drop",
+      "on_focus_lost",
+      "on_focus_received",
+      "on_initialized",
+      "on_key_char",
+      "on_key_down",
+      "on_key_up",
+      "on_mod_info_changed",
+      "on_motion_detected",
+      "on_mouse_button_double_click",
+      "on_mouse_button_down",
+      "on_mouse_button_up",
+      "on_mouse_capture_lost",
+      "on_mouse_enter",
+      "on_mouse_leave",
+      "on_mouse_move",
+      "on_mouse_wheel",
+      "on_paint",
+      "on_preview_key_down",
+      "on_preview_mouse_button_down",
+      "on_removed_from_focus_path",
+      "on_steam_state_changed",
+      "on_tab_closed",
+      "on_touch_ended",
+      "on_touch_force_changed",
+      "on_touch_gesture",
+      "on_touch_moved",
+      "on_touch_started",
+      "on_visibility_changed",
+      "package_mod",
+      "padding",
+      "pause_animation",
+      "pick_new_preview_image",
+      "play_animation",
+      "play_animation_at_time",
+      "play_animation_forward",
+      "play_animation_reverse",
+      "play_animation_time_range",
+      "play_animation_to",
+      "play_sound",
+      "pre_construct",
+      "priority",
+      "register_input_component",
+      "register_steam_callbacks",
+      "remove_from_parent",
+      "remove_from_viewport",
+      "rename",
+      "render_transform",
+      "render_transform_pivot",
+      "reset_cursor",
+      "reverse_animation",
+      "run",
+      "set_alignment_in_viewport",
+      "set_all_navigation_rules",
+      "set_anchors_in_viewport",
+      "set_animation_current_time",
+      "set_clipping",
+      "set_color_and_opacity",
+      "set_cursor",
+      "set_desired_size_in_viewport",
+      "set_editor_properties",
+      "set_editor_property",
+      "set_focus",
+      "set_foreground_color",
+      "set_input_action_blocking",
+      "set_input_action_priority",
+      "set_is_enabled",
+      "set_keyboard_focus",
+      "set_navigation_rule",
+      "set_navigation_rule_base",
+      "set_navigation_rule_custom",
+      "set_navigation_rule_custom_boundary",
+      "set_navigation_rule_explicit",
+      "set_num_loops_to_play",
+      "set_opacity",
+      "set_owning_player",
+      "set_padding",
+      "set_playback_speed",
+      "set_position_in_viewport",
+      "set_render_angle",
+      "set_render_opacity",
+      "set_render_scale",
+      "set_render_shear",
+      "set_render_transform",
+      "set_render_transform_angle",
+      "set_render_transform_pivot",
+      "set_render_translation",
+      "set_tool_tip",
+      "set_tool_tip_text",
+      "set_user_focus",
+      "set_visibility",
+      "slot",
+      "static_class",
+      "stop_action",
+      "stop_all_animations",
+      "stop_animation",
+      "stop_animations_and_latent_actions",
+      "stop_listening_for_all_input_actions",
+      "stop_listening_for_input_action",
+      "tick",
+      "tick_frequency",
+      "tool_tip_text",
+      "tool_tip_widget",
+      "unbind_all_from_animation_finished",
+      "unbind_all_from_animation_started",
+      "unbind_from_animation_finished",
+      "unbind_from_animation_started",
+      "unregister_input_component",
+      "unregister_steam_callbacks"
+    ],
+    "constructor_attempt": {
+      "exists": true,
+      "constructed": false,
+      "error": "Exception: MWModEditorWidget: Class 'MWModEditorWidget' is abstract",
+      "class_members": [
+        "add_to_player_screen",
+        "add_to_viewport",
+        "auto_run_default_action",
+        "bind_to_animation_event",
+        "bind_to_animation_finished",
+        "bind_to_animation_started",
+        "call_method",
+        "cancel_latent_actions",
+        "cast",
+        "close_tab",
+        "color_and_opacity",
+        "construct",
+        "cursor",
+        "destruct",
+        "flush_animations",
+        "force_layout_prepass",
+        "force_volatile",
+        "foreground_color",
+        "get_accessible_summary_text",
+        "get_accessible_text",
+        "get_alignment_in_viewport",
+        "get_anchors_in_viewport",
+        "get_animation_current_time",
+        "get_cached_geometry",
+        "get_class",
+        "get_clipping",
+        "get_default_object",
+        "get_desired_size",
+        "get_editor_property",
+        "get_fname",
+        "get_full_name",
+        "get_game_instance",
+        "get_is_enabled",
+        "get_is_visible",
+        "get_name",
+        "get_opacity",
+        "get_outer",
+        "get_outermost",
+        "get_owning_local_player",
+        "get_owning_player",
+        "get_owning_player_camera_manager",
+        "get_owning_player_pawn",
+        "get_paint_space_geometry",
+        "get_parent",
+        "get_path_name",
+        "get_render_opacity",
+        "get_render_transform_angle",
+        "get_steam_user_name",
+        "get_tick_space_geometry",
+        "get_typed_outer",
+        "get_visibility",
+        "get_world",
+        "has_any_user_focus",
+        "has_focused_descendants",
+        "has_keyboard_focus",
+        "has_mouse_capture",
+        "has_mouse_capture_by_user",
+        "has_user_focus",
+        "has_user_focused_descendants",
+        "help_text",
+        "invalidate_layout_and_volatility",
+        "is_animation_playing",
+        "is_animation_playing_forward",
+        "is_any_animation_playing",
+        "is_enabled",
+        "is_focusable",
+        "is_hovered",
+        "is_in_viewport",
+        "is_interactable",
+        "is_listening_for_input_action",
+        "is_playing_animation",
+        "is_steam_initialized",
+        "is_visible",
+        "is_volatile",
+        "listen_for_input_action",
+        "modify",
+        "navigation",
+        "on_added_to_focus_path",
+        "on_analog_value_changed",
+        "on_animation_finished",
+        "on_animation_started",
+        "on_default_action_clicked",
+        "on_drag_cancelled",
+        "on_drag_detected",
+        "on_drag_enter",
+        "on_drag_leave",
+        "on_drag_over",
+        "on_drop",
+        "on_focus_lost",
+        "on_focus_received",
+        "on_initialized",
+        "on_key_char",
+        "on_key_down",
+        "on_key_up",
+        "on_mod_info_changed",
+        "on_motion_detected",
+        "on_mouse_button_double_click",
+        "on_mouse_button_down",
+        "on_mouse_button_up",
+        "on_mouse_capture_lost",
+        "on_mouse_enter",
+        "on_mouse_leave",
+        "on_mouse_move",
+        "on_mouse_wheel",
+        "on_paint",
+        "on_preview_key_down",
+        "on_preview_mouse_button_down",
+        "on_removed_from_focus_path",
+        "on_steam_state_changed",
+        "on_tab_closed",
+        "on_touch_ended",
+        "on_touch_force_changed",
+        "on_touch_gesture",
+        "on_touch_moved",
+        "on_touch_started",
+        "on_visibility_changed",
+        "package_mod",
+        "padding",
+        "pause_animation",
+        "pick_new_preview_image",
+        "play_animation",
+        "play_animation_at_time",
+        "play_animation_forward",
+        "play_animation_reverse",
+        "play_animation_time_range",
+        "play_animation_to",
+        "play_sound",
+        "pre_construct",
+        "priority",
+        "register_input_component",
+        "register_steam_callbacks",
+        "remove_from_parent",
+        "remove_from_viewport",
+        "rename",
+        "render_transform",
+        "render_transform_pivot",
+        "reset_cursor",
+        "reverse_animation",
+        "run",
+        "set_alignment_in_viewport",
+        "set_all_navigation_rules",
+        "set_anchors_in_viewport",
+        "set_animation_current_time",
+        "set_clipping",
+        "set_color_and_opacity",
+        "set_cursor",
+        "set_desired_size_in_viewport",
+        "set_editor_properties",
+        "set_editor_property",
+        "set_focus",
+        "set_foreground_color",
+        "set_input_action_blocking",
+        "set_input_action_priority",
+        "set_is_enabled",
+        "set_keyboard_focus",
+        "set_navigation_rule",
+        "set_navigation_rule_base",
+        "set_navigation_rule_custom",
+        "set_navigation_rule_custom_boundary",
+        "set_navigation_rule_explicit",
+        "set_num_loops_to_play",
+        "set_opacity",
+        "set_owning_player",
+        "set_padding",
+        "set_playback_speed",
+        "set_position_in_viewport",
+        "set_render_angle",
+        "set_render_opacity",
+        "set_render_scale",
+        "set_render_shear",
+        "set_render_transform",
+        "set_render_transform_angle",
+        "set_render_transform_pivot",
+        "set_render_translation",
+        "set_tool_tip",
+        "set_tool_tip_text",
+        "set_user_focus",
+        "set_visibility",
+        "slot",
+        "static_class",
+        "stop_action",
+        "stop_all_animations",
+        "stop_animation",
+        "stop_animations_and_latent_actions",
+        "stop_listening_for_all_input_actions",
+        "stop_listening_for_input_action",
+        "tick",
+        "tick_frequency",
+        "tool_tip_text",
+        "tool_tip_widget",
+        "unbind_all_from_animation_finished",
+        "unbind_all_from_animation_started",
+        "unbind_from_animation_finished",
+        "unbind_from_animation_started",
+        "unregister_input_component",
+        "unregister_steam_callbacks"
+      ]
+    },
+    "package_mod_member_present": true
+  },
+  "editor_utility_asset_matches": {
+    "/Game/UI/Editor": {
+      "exists": true,
+      "asset_count": 9,
+      "matches": [
+        "/Game/UI/Editor/Mods/ManageMod_Checkmark_64x_ICN.ManageMod_Checkmark_64x_ICN",
+        "/Game/UI/Editor/Mods/ManageMod_XMark_64x_ICN.ManageMod_XMark_64x_ICN",
+        "/Game/UI/Editor/Mods/ManageModEditorWidget.ManageModEditorWidget"
+      ]
+    },
+    "/Game/UI": {
+      "exists": true,
+      "asset_count": 3842,
+      "matches": [
+        "/Game/UI/_common/Textures/Icons/Sensors/Vision_Mode_ICN_48px.Vision_Mode_ICN_48px",
+        "/Game/UI/_common/Textures/Icons/Sensors/Vision_Mode_Night_ICN_48px.Vision_Mode_Night_ICN_48px",
+        "/Game/UI/_common/Textures/Icons/Sensors/Vision_Mode_Thermal_ICN_48px.Vision_Mode_Thermal_ICN_48px",
+        "/Game/UI/_common/Textures/Icons/Sensors/Vision_Mode_Zoom_ICN_48px.Vision_Mode_Zoom_ICN_48px",
+        "/Game/UI/BattleGrid/Textures/StoryMissions/A1M1_AmmoDump.A1M1_AmmoDump",
+        "/Game/UI/Editor/Mods/ManageMod_Checkmark_64x_ICN.ManageMod_Checkmark_64x_ICN",
+        "/Game/UI/Editor/Mods/ManageMod_XMark_64x_ICN.ManageMod_XMark_64x_ICN",
+        "/Game/UI/Editor/Mods/ManageModEditorWidget.ManageModEditorWidget",
+        "/Game/UI/FrontEnd/Codex/Entries/MechLab/ViewModes_CodexEntry.ViewModes_CodexEntry",
+        "/Game/UI/FrontEnd/Components/SaveMechDialogBox.SaveMechDialogBox",
+        "/Game/UI/FrontEnd/Marketplace/ESortMode.ESortMode",
+        "/Game/UI/FrontEnd/Mods/Assets/DetailsArrow.DetailsArrow",
+        "/Game/UI/FrontEnd/Mods/Assets/EGSLogo_Default_ICN.EGSLogo_Default_ICN",
+        "/Game/UI/FrontEnd/Mods/Assets/EGSLogo_Hovered_ICN.EGSLogo_Hovered_ICN",
+        "/Game/UI/FrontEnd/Mods/Assets/EmptyCheckbox.EmptyCheckbox",
+        "/Game/UI/FrontEnd/Mods/Assets/expand_window_icon.expand_window_icon",
+        "/Game/UI/FrontEnd/Mods/Assets/FilledCheckbox.FilledCheckbox",
+        "/Game/UI/FrontEnd/Mods/Assets/ModDetailsFrame.ModDetailsFrame",
+        "/Game/UI/FrontEnd/Mods/Assets/ModFrame.ModFrame",
+        "/Game/UI/FrontEnd/Mods/Assets/SteamIconOnly-Inverted.SteamIconOnly-Inverted",
+        "/Game/UI/FrontEnd/Mods/Assets/SteamIconOnly.SteamIconOnly",
+        "/Game/UI/FrontEnd/Mods/Assets/SteamWorkShop_Default_ICN.SteamWorkShop_Default_ICN",
+        "/Game/UI/FrontEnd/Mods/Assets/SteamWorkshop_Hovered_ICN.SteamWorkshop_Hovered_ICN",
+        "/Game/UI/FrontEnd/Mods/Assets/TabbedFolder-Inverted.TabbedFolder-Inverted",
+        "/Game/UI/FrontEnd/Mods/Assets/TabbedFolder.TabbedFolder",
+        "/Game/UI/FrontEnd/Mods/ModConflictDetails.ModConflictDetails",
+        "/Game/UI/FrontEnd/Mods/ModScreenEntry.ModScreenEntry",
+        "/Game/UI/FrontEnd/Mods/ModsScreen.ModsScreen",
+        "/Game/UI/SaveLoad/LoadScreen/CampaignComponentDisplayData.CampaignComponentDisplayData",
+        "/Game/UI/SaveLoad/LoadScreen/CampaignDLCLockComponent.CampaignDLCLockComponent",
+        "/Game/UI/SaveLoad/LoadScreen/CampaignDLCToolTip.CampaignDLCToolTip",
+        "/Game/UI/SaveLoad/LoadScreen/CampaignDLCToolTipItem.CampaignDLCToolTipItem",
+        "/Game/UI/SaveLoad/LoadScreen/CampaignLockDisplayData.CampaignLockDisplayData",
+        "/Game/UI/SaveLoad/LoadScreen/ImportSaveScreen.ImportSaveScreen",
+        "/Game/UI/SaveLoad/LoadScreen/LoadActionComponent.LoadActionComponent",
+        "/Game/UI/SaveLoad/LoadScreen/LoadCampaignList_Wireframe.LoadCampaignList_Wireframe",
+        "/Game/UI/SaveLoad/LoadScreen/LoadGameCampaignList.LoadGameCampaignList",
+        "/Game/UI/SaveLoad/LoadScreen/LoadGameSaveList.LoadGameSaveList",
+        "/Game/UI/SaveLoad/LoadScreen/LoadGameScreen.LoadGameScreen",
+        "/Game/UI/SaveLoad/LoadScreen/LoadSaveList_Wireframe.LoadSaveList_Wireframe",
+        "/Game/UI/SaveLoad/LoadScreen/LoadScreenCampaignComponent.LoadScreenCampaignComponent",
+        "/Game/UI/SaveLoad/LoadScreen/LoadScreenSaveComponent.LoadScreenSaveComponent",
+        "/Game/UI/SaveLoad/LoadScreen/NewCampaign_Wireframe.NewCampaign_Wireframe",
+        "/Game/UI/SaveLoad/LoadScreen/SaveLoadDialog.SaveLoadDialog",
+        "/Game/UI/SaveLoad/SaveLoadButton.SaveLoadButton",
+        "/Game/UI/SaveLoad/SaveScreen/SaveActionComponent.SaveActionComponent",
+        "/Game/UI/SaveLoad/SaveScreen/SaveActionState.SaveActionState",
+        "/Game/UI/SaveLoad/SaveScreen/SaveGameScreen.SaveGameScreen",
+        "/Game/UI/Textures/GenericButtons_Icons/FE_ModUpdateAlert_ICN_32PX.FE_ModUpdateAlert_ICN_32PX"
+      ]
+    },
+    "/Game/Editor": {
+      "exists": false,
+      "assets": []
+    }
+  },
+  "active_mod_path_probe": {
+    "active_mod_plugin": {
+      "ok": true,
+      "value": {
+        "repr": "<Struct 'MWModPluginInfo' (0x000002216ED07AC0) {mod_name: \"\", plugin_path: \"\", version_name: \"\", friendly_name: \"\", description: \"\", category: \"\", created_by: \"\", created_by_url: \"\", docs_url: \"\", marketplace_url: \"\", support_url: \"\", engine_version: \"\"}>",
+        "python_type": "MWModPluginInfo"
+      }
+    },
+    "mod_plugin_names": {
+      "ok": true,
+      "value": []
+    },
+    "mods_install_path": {
+      "ok": true,
+      "value": "E:/Games/MechWarrior5Editor/MW5Mercs/Mods/"
+    }
+  },
+  "stub_snippets": {
+    "exists": true,
+    "path": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Intermediate\\PythonStub\\unreal.py",
+    "matches": {
+      "MWModPluginInfo": [
+        {
+          "line": 86948,
+          "snippet": "class MWModPluginInfo(StructBase):\n    r\"\"\"\n    MWMod Plugin Info\n    \n    **C++ Source:**\n    \n    - **Module**: MechWarrior\n    - **File**: ModUtils.h\n    \n    **Editor Properties:** (see get_editor_property/set_editor_property)\n    \n    - ``category`` (str):  [Read-Write] Category\n    - ``created_by`` (str):  [Read-Write] Created By\n    - ``created_by_url`` (str):  [Read-Write] Created by URL\n    - ``description`` (str):  [Read-Write] Description\n    - ``docs_url`` (str):  [Read-Write] Docs URL"
+        },
+        {
+          "line": 295910,
+          "snippet": "X.get_active_mod_plugin() -> MWModPluginInfo\n        Get Active Mod Plugin\n        \n        Returns:\n            MWModPluginInfo:\n        \"\"\"\n        return MWModPluginInfo()\n    @classmethod\n    def get_active_mod_entry(cls):\n        r\"\"\"\n        X.get_active_mod_entry() -> ModListEntry\n        Get Active Mod Entry\n        \n        Returns:\n            ModListEntry:\n        \"\"\"\n        return ModListEntry()"
+        },
+        {
+          "line": 295914,
+          "snippet": "MWModPluginInfo:\n        \"\"\"\n        return MWModPluginInfo()\n    @classmethod\n    def get_active_mod_entry(cls):\n        r\"\"\"\n        X.get_active_mod_entry() -> ModListEntry\n        Get Active Mod Entry\n        \n        Returns:\n            ModListEntry:\n        \"\"\"\n        return ModListEntry()\n    @classmethod\n    def does_mod_list_require_restart(cls, mod_list):\n        r\"\"\""
+        },
+        {
+          "line": 295916,
+          "snippet": "return MWModPluginInfo()\n    @classmethod\n    def get_active_mod_entry(cls):\n        r\"\"\"\n        X.get_active_mod_entry() -> ModListEntry\n        Get Active Mod Entry\n        \n        Returns:\n            ModListEntry:\n        \"\"\"\n        return ModListEntry()\n    @classmethod\n    def does_mod_list_require_restart(cls, mod_list):\n        r\"\"\"\n        X.does_mod_list_require_restart(mod_list) -> bool\n        Does Mod List Require Restart"
+        },
+        {
+          "line": 295947,
+          "snippet": "plugin_info (MWModPluginInfo): \n        \n        Returns:\n            ModListEntry:\n        \"\"\"\n        return ModListEntry()\n\nclass MWAcademyDataAsset(PrimaryDataAsset):\n    r\"\"\"\n    MWAcademy Data Asset\n    \n    **C++ Source:**\n    \n    - **Module**: MechWarrior\n    - **File**: MWAcademyDataAsset.h"
+        }
+      ],
+      "ModPackageArgs": [
+        {
+          "line": 111205,
+          "snippet": "class ModPackageArgs(StructBase):\n    r\"\"\"\n    Mod Package Args\n    \n    **C++ Source:**\n    \n    - **Module**: MechWarriorEditor\n    - **File**: MWModEditorWidget.h\n    \n    **Editor Properties:** (see get_editor_property/set_editor_property)\n    \n    - ``mod_name`` (str):  [Read-Write] Mod Name\n    - ``output_to_folder`` (bool):  [Read-Write] Output to Folder\n    - ``publish_to_steam`` (bool):  [Read-Write] Publish to Steam\n    - ``skip_packaging`` (bool):  [Read-Write] if set to true, uses the existing folder in the staging/intermediate directory if possible.\n    - ``steam_visibility`` (str):  [Read-Write] Valid options are \"Private, FriendsOnly, Public\", maps to https:partner.steamgames.com/doc/api/ISteamRemoteStorage#ERemoteStoragePublishedFileVisibility"
+        },
+        {
+          "line": 394294,
+          "snippet": "args (ModPackageArgs):\n        \"\"\"\n        return None\n    def on_tab_closed(self):\n        r\"\"\"\n        x.on_tab_closed() -> None\n        On Tab Closed\n        \"\"\"\n        return None\n    def on_steam_state_changed(self):\n        r\"\"\"\n        x.on_steam_state_changed() -> None\n        ~Super\n        \"\"\"\n        return None\n    def on_mod_info_changed(self):"
+        }
+      ],
+      "ModPackage": [
+        {
+          "line": 111205,
+          "snippet": "class ModPackageArgs(StructBase):\n    r\"\"\"\n    Mod Package Args\n    \n    **C++ Source:**\n    \n    - **Module**: MechWarriorEditor\n    - **File**: MWModEditorWidget.h\n    \n    **Editor Properties:** (see get_editor_property/set_editor_property)\n    \n    - ``mod_name`` (str):  [Read-Write] Mod Name\n    - ``output_to_folder`` (bool):  [Read-Write] Output to Folder\n    - ``publish_to_steam`` (bool):  [Read-Write] Publish to Steam\n    - ``skip_packaging`` (bool):  [Read-Write] if set to true, uses the existing folder in the staging/intermediate directory if possible.\n    - ``steam_visibility`` (str):  [Read-Write] Valid options are \"Private, FriendsOnly, Public\", maps to https:partner.steamgames.com/doc/api/ISteamRemoteStorage#ERemoteStoragePublishedFileVisibility"
+        },
+        {
+          "line": 394294,
+          "snippet": "args (ModPackageArgs):\n        \"\"\"\n        return None\n    def on_tab_closed(self):\n        r\"\"\"\n        x.on_tab_closed() -> None\n        On Tab Closed\n        \"\"\"\n        return None\n    def on_steam_state_changed(self):\n        r\"\"\"\n        x.on_steam_state_changed() -> None\n        ~Super\n        \"\"\"\n        return None\n    def on_mod_info_changed(self):"
+        }
+      ],
+      "MWMod": [
+        {
+          "line": 86948,
+          "snippet": "class MWModPluginInfo(StructBase):\n    r\"\"\"\n    MWMod Plugin Info\n    \n    **C++ Source:**\n    \n    - **Module**: MechWarrior\n    - **File**: ModUtils.h\n    \n    **Editor Properties:** (see get_editor_property/set_editor_property)\n    \n    - ``category`` (str):  [Read-Write] Category\n    - ``created_by`` (str):  [Read-Write] Created By\n    - ``created_by_url`` (str):  [Read-Write] Created by URL\n    - ``description`` (str):  [Read-Write] Description\n    - ``docs_url`` (str):  [Read-Write] Docs URL"
+        },
+        {
+          "line": 86950,
+          "snippet": "MWMod Plugin Info\n    \n    **C++ Source:**\n    \n    - **Module**: MechWarrior\n    - **File**: ModUtils.h\n    \n    **Editor Properties:** (see get_editor_property/set_editor_property)\n    \n    - ``category`` (str):  [Read-Write] Category\n    - ``created_by`` (str):  [Read-Write] Created By\n    - ``created_by_url`` (str):  [Read-Write] Created by URL\n    - ``description`` (str):  [Read-Write] Description\n    - ``docs_url`` (str):  [Read-Write] Docs URL\n    - ``engine_version`` (str):  [Read-Write] Engine Version\n    - ``friendly_name`` (str):  [Read-Write] Friendly Name"
+        },
+        {
+          "line": 111212,
+          "snippet": "- **File**: MWModEditorWidget.h\n    \n    **Editor Properties:** (see get_editor_property/set_editor_property)\n    \n    - ``mod_name`` (str):  [Read-Write] Mod Name\n    - ``output_to_folder`` (bool):  [Read-Write] Output to Folder\n    - ``publish_to_steam`` (bool):  [Read-Write] Publish to Steam\n    - ``skip_packaging`` (bool):  [Read-Write] if set to true, uses the existing folder in the staging/intermediate directory if possible.\n    - ``steam_visibility`` (str):  [Read-Write] Valid options are \"Private, FriendsOnly, Public\", maps to https:partner.steamgames.com/doc/api/ISteamRemoteStorage#ERemoteStoragePublishedFileVisibility\n    \"\"\"\n    def __init__(self, mod_name=\"\", skip_packaging=False, output_to_folder=False, publish_to_steam=False, steam_visibility=\"\"):\n        pass\n    @property\n    def mod_name(self):\n        r\"\"\"\n        (str):  [Read-Write] Mod Name"
+        },
+        {
+          "line": 295684,
+          "snippet": "class MWModUtils(BlueprintFunctionLibrary):\n    r\"\"\"\n    MWMod Utils\n    \n    **C++ Source:**\n    \n    - **Module**: MechWarrior\n    - **File**: ModUtils.h\n    \n    \"\"\"\n    @classmethod\n    def update_mod_status_list_version(cls, version):\n        r\"\"\"\n        X.update_mod_status_list_version(version) -> None\n        Update Mod Status List Version"
+        },
+        {
+          "line": 295686,
+          "snippet": "MWMod Utils\n    \n    **C++ Source:**\n    \n    - **Module**: MechWarrior\n    - **File**: ModUtils.h\n    \n    \"\"\"\n    @classmethod\n    def update_mod_status_list_version(cls, version):\n        r\"\"\"\n        X.update_mod_status_list_version(version) -> None\n        Update Mod Status List Version\n        \n        Args:\n            version (str):"
+        },
+        {
+          "line": 295910,
+          "snippet": "X.get_active_mod_plugin() -> MWModPluginInfo\n        Get Active Mod Plugin\n        \n        Returns:\n            MWModPluginInfo:\n        \"\"\"\n        return MWModPluginInfo()\n    @classmethod\n    def get_active_mod_entry(cls):\n        r\"\"\"\n        X.get_active_mod_entry() -> ModListEntry\n        Get Active Mod Entry\n        \n        Returns:\n            ModListEntry:\n        \"\"\""
+        },
+        {
+          "line": 295914,
+          "snippet": "MWModPluginInfo:\n        \"\"\"\n        return MWModPluginInfo()\n    @classmethod\n    def get_active_mod_entry(cls):\n        r\"\"\"\n        X.get_active_mod_entry() -> ModListEntry\n        Get Active Mod Entry\n        \n        Returns:\n            ModListEntry:\n        \"\"\"\n        return ModListEntry()\n    @classmethod\n    def does_mod_list_require_restart(cls, mod_list):\n        r\"\"\""
+        },
+        {
+          "line": 295916,
+          "snippet": "return MWModPluginInfo()\n    @classmethod\n    def get_active_mod_entry(cls):\n        r\"\"\"\n        X.get_active_mod_entry() -> ModListEntry\n        Get Active Mod Entry\n        \n        Returns:\n            ModListEntry:\n        \"\"\"\n        return ModListEntry()\n    @classmethod\n    def does_mod_list_require_restart(cls, mod_list):\n        r\"\"\"\n        X.does_mod_list_require_restart(mod_list) -> bool\n        Does Mod List Require Restart"
+        }
+      ],
+      "ModPlugin": [
+        {
+          "line": 86948,
+          "snippet": "class MWModPluginInfo(StructBase):\n    r\"\"\"\n    MWMod Plugin Info\n    \n    **C++ Source:**\n    \n    - **Module**: MechWarrior\n    - **File**: ModUtils.h\n    \n    **Editor Properties:** (see get_editor_property/set_editor_property)\n    \n    - ``category`` (str):  [Read-Write] Category\n    - ``created_by`` (str):  [Read-Write] Created By\n    - ``created_by_url`` (str):  [Read-Write] Created by URL\n    - ``description`` (str):  [Read-Write] Description\n    - ``docs_url`` (str):  [Read-Write] Docs URL"
+        },
+        {
+          "line": 295910,
+          "snippet": "X.get_active_mod_plugin() -> MWModPluginInfo\n        Get Active Mod Plugin\n        \n        Returns:\n            MWModPluginInfo:\n        \"\"\"\n        return MWModPluginInfo()\n    @classmethod\n    def get_active_mod_entry(cls):\n        r\"\"\"\n        X.get_active_mod_entry() -> ModListEntry\n        Get Active Mod Entry\n        \n        Returns:\n            ModListEntry:\n        \"\"\""
+        },
+        {
+          "line": 295914,
+          "snippet": "MWModPluginInfo:\n        \"\"\"\n        return MWModPluginInfo()\n    @classmethod\n    def get_active_mod_entry(cls):\n        r\"\"\"\n        X.get_active_mod_entry() -> ModListEntry\n        Get Active Mod Entry\n        \n        Returns:\n            ModListEntry:\n        \"\"\"\n        return ModListEntry()\n    @classmethod\n    def does_mod_list_require_restart(cls, mod_list):\n        r\"\"\""
+        },
+        {
+          "line": 295916,
+          "snippet": "return MWModPluginInfo()\n    @classmethod\n    def get_active_mod_entry(cls):\n        r\"\"\"\n        X.get_active_mod_entry() -> ModListEntry\n        Get Active Mod Entry\n        \n        Returns:\n            ModListEntry:\n        \"\"\"\n        return ModListEntry()\n    @classmethod\n    def does_mod_list_require_restart(cls, mod_list):\n        r\"\"\"\n        X.does_mod_list_require_restart(mod_list) -> bool\n        Does Mod List Require Restart"
+        },
+        {
+          "line": 295947,
+          "snippet": "plugin_info (MWModPluginInfo): \n        \n        Returns:\n            ModListEntry:\n        \"\"\"\n        return ModListEntry()\n\nclass MWAcademyDataAsset(PrimaryDataAsset):\n    r\"\"\"\n    MWAcademy Data Asset\n    \n    **C++ Source:**\n    \n    - **Module**: MechWarrior\n    - **File**: MWAcademyDataAsset.h"
+        }
+      ],
+      "PackageMod": [],
+      "CreateMod": [],
+      "SaveToMod": [],
+      "SaveTo": [],
+      "MWModUtils": [
+        {
+          "line": 295684,
+          "snippet": "class MWModUtils(BlueprintFunctionLibrary):\n    r\"\"\"\n    MWMod Utils\n    \n    **C++ Source:**\n    \n    - **Module**: MechWarrior\n    - **File**: ModUtils.h\n    \n    \"\"\"\n    @classmethod\n    def update_mod_status_list_version(cls, version):\n        r\"\"\"\n        X.update_mod_status_list_version(version) -> None\n        Update Mod Status List Version"
+        }
+      ],
+      "MWModEditorWidget": [
+        {
+          "line": 111212,
+          "snippet": "- **File**: MWModEditorWidget.h\n    \n    **Editor Properties:** (see get_editor_property/set_editor_property)\n    \n    - ``mod_name`` (str):  [Read-Write] Mod Name\n    - ``output_to_folder`` (bool):  [Read-Write] Output to Folder\n    - ``publish_to_steam`` (bool):  [Read-Write] Publish to Steam\n    - ``skip_packaging`` (bool):  [Read-Write] if set to true, uses the existing folder in the staging/intermediate directory if possible.\n    - ``steam_visibility`` (str):  [Read-Write] Valid options are \"Private, FriendsOnly, Public\", maps to https:partner.steamgames.com/doc/api/ISteamRemoteStorage#ERemoteStoragePublishedFileVisibility\n    \"\"\"\n    def __init__(self, mod_name=\"\", skip_packaging=False, output_to_folder=False, publish_to_steam=False, steam_visibility=\"\"):\n        pass\n    @property\n    def mod_name(self):\n        r\"\"\"\n        (str):  [Read-Write] Mod Name"
+        },
+        {
+          "line": 394205,
+          "snippet": "class MWModEditorWidget(EditorUtilityWidget):\n    r\"\"\"\n    MWMod Editor Widget\n    \n    **C++ Source:**\n    \n    - **Module**: MechWarriorEditor\n    - **File**: MWModEditorWidget.h\n    \n    **Editor Properties:** (see get_editor_property/set_editor_property)\n    \n    - ``accessible_behavior`` (SlateAccessibleBehavior):  [Read-Write] Whether or not the widget is accessible, and how to describe it. If set to custom, additional customization options will appear.\n    - ``accessible_summary_behavior`` (SlateAccessibleBehavior):  [Read-Write] How to describe this widget when it's being presented through a summary of a parent widget. If set to custom, additional customization options will appear.\n    - ``accessible_summary_text`` (Text):  [Read-Write] When AccessibleSummaryBehavior is set to Custom, this is the text that will be used to describe the widget.\n    - ``accessible_text`` (Text):  [Read-Write] When AccessibleBehavior is set to Custom, this is the text that will be used to describe the widget.\n    - ``always_reregister_with_windows_menu`` (bool):  [Read-Write] Should this widget always be re-added to the windows menu once it's opened"
+        },
+        {
+          "line": 394212,
+          "snippet": "- **File**: MWModEditorWidget.h\n    \n    **Editor Properties:** (see get_editor_property/set_editor_property)\n    \n    - ``accessible_behavior`` (SlateAccessibleBehavior):  [Read-Write] Whether or not the widget is accessible, and how to describe it. If set to custom, additional customization options will appear.\n    - ``accessible_summary_behavior`` (SlateAccessibleBehavior):  [Read-Write] How to describe this widget when it's being presented through a summary of a parent widget. If set to custom, additional customization options will appear.\n    - ``accessible_summary_text`` (Text):  [Read-Write] When AccessibleSummaryBehavior is set to Custom, this is the text that will be used to describe the widget.\n    - ``accessible_text`` (Text):  [Read-Write] When AccessibleBehavior is set to Custom, this is the text that will be used to describe the widget.\n    - ``always_reregister_with_windows_menu`` (bool):  [Read-Write] Should this widget always be re-added to the windows menu once it's opened\n    - ``auto_run_default_action`` (bool):  [Read-Write] Should this blueprint automatically run OnDefaultActionClicked, or should it open up a details panel to edit properties and/or offer multiple buttons\n    - ``can_children_be_accessible`` (bool):  [Read-Write] Whether or not children of this widget can appear as distinct accessible widgets.\n    - ``clipping`` (WidgetClipping):  [Read-Write] Controls how the clipping behavior of this widget.  Normally content that overflows the\n      bounds of the widget continues rendering.  Enabling clipping prevents that overflowing content\n      from being seen.\n      \n      NOTE: Elements in different clipping spaces can not be batched together, and so there is a"
+        }
+      ],
+      "ModInfo": [
+        {
+          "line": 87133,
+          "snippet": "- ``info`` (ModInfo):  [Read-Write] Info\n    - ``mod_name`` (str):  [Read-Write] Mod Name\n    - ``origin`` (ModPlatform):  [Read-Write] Origin\n    - ``status`` (ModStatus):  [Read-Write] Status\n    \"\"\"\n    def __init__(self, mod_name=\"\", info=[\"\", \"\", 0, \"\", \"\", \"\", 0.000000, \"\", [], 0, 0, PublishedModVisibility.PRIVATE], status=[False], origin=ModPlatform.NONE):\n        pass\n    @property\n    def mod_name(self):\n        r\"\"\"\n        (str):  [Read-Write] Mod Name\n        \"\"\"\n        return \"\"\n    @mod_name.setter\n    def mod_name(self, value):\n        pass"
+        },
+        {
+          "line": 87152,
+          "snippet": "(ModInfo):  [Read-Write] Info\n        \"\"\"\n        return ModInfo()\n    @info.setter\n    def info(self, value):\n        pass\n    @property\n    def status(self):\n        r\"\"\"\n        (ModStatus):  [Read-Write] Status\n        \"\"\"\n        return ModStatus()\n    @status.setter\n    def status(self, value):\n        pass\n    @property"
+        },
+        {
+          "line": 87154,
+          "snippet": "return ModInfo()\n    @info.setter\n    def info(self, value):\n        pass\n    @property\n    def status(self):\n        r\"\"\"\n        (ModStatus):  [Read-Write] Status\n        \"\"\"\n        return ModStatus()\n    @status.setter\n    def status(self, value):\n        pass\n    @property\n    def origin(self):\n        r\"\"\""
+        },
+        {
+          "line": 87202,
+          "snippet": "class ModInfo(StructBase):\n    r\"\"\"\n    Mod Info\n    \n    **C++ Source:**\n    \n    - **Module**: MechWarrior\n    - **File**: ModUtils.h\n    \n    **Editor Properties:** (see get_editor_property/set_editor_property)\n    \n    - ``author`` (str):  [Read-Write] Author\n    - ``author_url`` (str):  [Read-Write] Author URL\n    - ``build_number`` (int32):  [Read-Write] Auto-versioned build number, increases automatically every time the package is published.\n    - ``default_load_order`` (float):  [Read-Write] The default order this mod should load in compared to other mods (Larger number = Mod is applied later and takes priority )\n    - ``description`` (str):  [Read-Write] Description"
+        },
+        {
+          "line": 295747,
+          "snippet": "mod_info (ModInfo): \n            reset_steam_last_submitted_build_number (bool):\n        \"\"\"\n        return None\n    @classmethod\n    def platform_open_mods_folder(cls):\n        r\"\"\"\n        X.platform_open_mods_folder() -> None\n        Platform Open Mods Folder\n        \"\"\"\n        return None\n    @classmethod\n    def needs_restart_to_apply_mods(cls):\n        r\"\"\"\n        X.needs_restart_to_apply_mods() -> bool\n        checks to see if our active mod list differs from the list of enabled mods (only meaningful in non-editor builds)"
+        }
+      ],
+      "ModList": [
+        {
+          "line": 87122,
+          "snippet": "class ModListEntry(StructBase):\n    r\"\"\"\n    Mod List Entry\n    \n    **C++ Source:**\n    \n    - **Module**: MechWarrior\n    - **File**: ModUtils.h\n    \n    **Editor Properties:** (see get_editor_property/set_editor_property)\n    \n    - ``info`` (ModInfo):  [Read-Write] Info\n    - ``mod_name`` (str):  [Read-Write] Mod Name\n    - ``origin`` (ModPlatform):  [Read-Write] Origin\n    - ``status`` (ModStatus):  [Read-Write] Status\n    \"\"\""
+        },
+        {
+          "line": 87337,
+          "snippet": "class ModList(StructBase):\n    r\"\"\"\n    Mod List\n    \n    **C++ Source:**\n    \n    - **Module**: MechWarrior\n    - **File**: ModUtils.h\n    \n    **Editor Properties:** (see get_editor_property/set_editor_property)\n    \n    - ``game_version`` (str):  [Read-Write] The version of the game that mods were last disabled if out of date\n    - ``mod_status`` (Map(str, ModStatus)):  [Read-Write] Mod Status\n    \"\"\"\n    def __init__(self, game_version=\"\", mod_status={}):\n        pass"
+        },
+        {
+          "line": 295718,
+          "snippet": "X.sort_mod_list(mod_list) -> Array(ModListEntry)\n        Sort Mod List\n        \n        Args:\n            mod_list (Array(ModListEntry)): \n        \n        Returns:\n            Array(ModListEntry):\n        \"\"\"\n        return Array.cast(ModListEntry, [])\n    @classmethod\n    def set_active_mod(cls, mod_name, browse_to_folder=False):\n        r\"\"\"\n        X.set_active_mod(mod_name, browse_to_folder=False) -> None\n        Set Active Mod"
+        },
+        {
+          "line": 295722,
+          "snippet": "mod_list (Array(ModListEntry)): \n        \n        Returns:\n            Array(ModListEntry):\n        \"\"\"\n        return Array.cast(ModListEntry, [])\n    @classmethod\n    def set_active_mod(cls, mod_name, browse_to_folder=False):\n        r\"\"\"\n        X.set_active_mod(mod_name, browse_to_folder=False) -> None\n        Set Active Mod\n        \n        Args:\n            mod_name (str): \n            browse_to_folder (bool):\n        \"\"\""
+        },
+        {
+          "line": 295725,
+          "snippet": "Array(ModListEntry):\n        \"\"\"\n        return Array.cast(ModListEntry, [])\n    @classmethod\n    def set_active_mod(cls, mod_name, browse_to_folder=False):\n        r\"\"\"\n        X.set_active_mod(mod_name, browse_to_folder=False) -> None\n        Set Active Mod\n        \n        Args:\n            mod_name (str): \n            browse_to_folder (bool):\n        \"\"\"\n        return None\n    @classmethod\n    def save_mod_info_to_file(cls, mod_name, mod_info, reset_steam_last_submitted_build_number):"
+        },
+        {
+          "line": 295727,
+          "snippet": "return Array.cast(ModListEntry, [])\n    @classmethod\n    def set_active_mod(cls, mod_name, browse_to_folder=False):\n        r\"\"\"\n        X.set_active_mod(mod_name, browse_to_folder=False) -> None\n        Set Active Mod\n        \n        Args:\n            mod_name (str): \n            browse_to_folder (bool):\n        \"\"\"\n        return None\n    @classmethod\n    def save_mod_info_to_file(cls, mod_name, mod_info, reset_steam_last_submitted_build_number):\n        r\"\"\"\n        X.save_mod_info_to_file(mod_name, mod_info, reset_steam_last_submitted_build_number) -> None"
+        },
+        {
+          "line": 295775,
+          "snippet": "mod_entry (ModListEntry): \n        \n        Returns:\n            bool:\n        \"\"\"\n        return False\n    @classmethod\n    def is_mod_different(cls, mod_entry):\n        r\"\"\"\n        X.is_mod_different(mod_entry) -> bool\n        Is Mod Different\n        \n        Args:\n            mod_entry (ModListEntry): \n        \n        Returns:"
+        },
+        {
+          "line": 295788,
+          "snippet": "mod_entry (ModListEntry): \n        \n        Returns:\n            bool:\n        \"\"\"\n        return False\n    @classmethod\n    def get_running_mods(cls):\n        r\"\"\"\n        X.get_running_mods() -> Array(str)\n        returns the list of mods currently active/applied to a non-editor build of the game\n        \n        Returns:\n            Array(str):\n        \"\"\"\n        return Array.cast(str, [])"
+        }
+      ],
+      "ModListEntry": [
+        {
+          "line": 87122,
+          "snippet": "class ModListEntry(StructBase):\n    r\"\"\"\n    Mod List Entry\n    \n    **C++ Source:**\n    \n    - **Module**: MechWarrior\n    - **File**: ModUtils.h\n    \n    **Editor Properties:** (see get_editor_property/set_editor_property)\n    \n    - ``info`` (ModInfo):  [Read-Write] Info\n    - ``mod_name`` (str):  [Read-Write] Mod Name\n    - ``origin`` (ModPlatform):  [Read-Write] Origin\n    - ``status`` (ModStatus):  [Read-Write] Status\n    \"\"\""
+        },
+        {
+          "line": 295718,
+          "snippet": "X.sort_mod_list(mod_list) -> Array(ModListEntry)\n        Sort Mod List\n        \n        Args:\n            mod_list (Array(ModListEntry)): \n        \n        Returns:\n            Array(ModListEntry):\n        \"\"\"\n        return Array.cast(ModListEntry, [])\n    @classmethod\n    def set_active_mod(cls, mod_name, browse_to_folder=False):\n        r\"\"\"\n        X.set_active_mod(mod_name, browse_to_folder=False) -> None\n        Set Active Mod"
+        },
+        {
+          "line": 295722,
+          "snippet": "mod_list (Array(ModListEntry)): \n        \n        Returns:\n            Array(ModListEntry):\n        \"\"\"\n        return Array.cast(ModListEntry, [])\n    @classmethod\n    def set_active_mod(cls, mod_name, browse_to_folder=False):\n        r\"\"\"\n        X.set_active_mod(mod_name, browse_to_folder=False) -> None\n        Set Active Mod\n        \n        Args:\n            mod_name (str): \n            browse_to_folder (bool):\n        \"\"\""
+        },
+        {
+          "line": 295725,
+          "snippet": "Array(ModListEntry):\n        \"\"\"\n        return Array.cast(ModListEntry, [])\n    @classmethod\n    def set_active_mod(cls, mod_name, browse_to_folder=False):\n        r\"\"\"\n        X.set_active_mod(mod_name, browse_to_folder=False) -> None\n        Set Active Mod\n        \n        Args:\n            mod_name (str): \n            browse_to_folder (bool):\n        \"\"\"\n        return None\n    @classmethod\n    def save_mod_info_to_file(cls, mod_name, mod_info, reset_steam_last_submitted_build_number):"
+        },
+        {
+          "line": 295727,
+          "snippet": "return Array.cast(ModListEntry, [])\n    @classmethod\n    def set_active_mod(cls, mod_name, browse_to_folder=False):\n        r\"\"\"\n        X.set_active_mod(mod_name, browse_to_folder=False) -> None\n        Set Active Mod\n        \n        Args:\n            mod_name (str): \n            browse_to_folder (bool):\n        \"\"\"\n        return None\n    @classmethod\n    def save_mod_info_to_file(cls, mod_name, mod_info, reset_steam_last_submitted_build_number):\n        r\"\"\"\n        X.save_mod_info_to_file(mod_name, mod_info, reset_steam_last_submitted_build_number) -> None"
+        },
+        {
+          "line": 295775,
+          "snippet": "mod_entry (ModListEntry): \n        \n        Returns:\n            bool:\n        \"\"\"\n        return False\n    @classmethod\n    def is_mod_different(cls, mod_entry):\n        r\"\"\"\n        X.is_mod_different(mod_entry) -> bool\n        Is Mod Different\n        \n        Args:\n            mod_entry (ModListEntry): \n        \n        Returns:"
+        },
+        {
+          "line": 295788,
+          "snippet": "mod_entry (ModListEntry): \n        \n        Returns:\n            bool:\n        \"\"\"\n        return False\n    @classmethod\n    def get_running_mods(cls):\n        r\"\"\"\n        X.get_running_mods() -> Array(str)\n        returns the list of mods currently active/applied to a non-editor build of the game\n        \n        Returns:\n            Array(str):\n        \"\"\"\n        return Array.cast(str, [])"
+        },
+        {
+          "line": 295850,
+          "snippet": "X.get_mod_plugin_entry_by_name(mod_name) -> ModListEntry\n        Get Mod Plugin Entry by Name\n        \n        Args:\n            mod_name (str): \n        \n        Returns:\n            ModListEntry:\n        \"\"\"\n        return ModListEntry()\n    @classmethod\n    def get_mod_platform(cls):\n        r\"\"\"\n        X.get_mod_platform() -> ModPlatform\n        Get Mod Platform\n        \n        Returns:"
+        }
+      ],
+      "ModStatus": [
+        {
+          "line": 87136,
+          "snippet": "- ``status`` (ModStatus):  [Read-Write] Status\n    \"\"\"\n    def __init__(self, mod_name=\"\", info=[\"\", \"\", 0, \"\", \"\", \"\", 0.000000, \"\", [], 0, 0, PublishedModVisibility.PRIVATE], status=[False], origin=ModPlatform.NONE):\n        pass\n    @property\n    def mod_name(self):\n        r\"\"\"\n        (str):  [Read-Write] Mod Name\n        \"\"\"\n        return \"\"\n    @mod_name.setter\n    def mod_name(self, value):\n        pass\n    @property\n    def info(self):\n        r\"\"\""
+        },
+        {
+          "line": 87161,
+          "snippet": "(ModStatus):  [Read-Write] Status\n        \"\"\"\n        return ModStatus()\n    @status.setter\n    def status(self, value):\n        pass\n    @property\n    def origin(self):\n        r\"\"\"\n        (ModPlatform):  [Read-Write] Origin\n        \"\"\"\n        return ModPlatform.NONE\n    @origin.setter\n    def origin(self, value):\n        pass"
+        },
+        {
+          "line": 87163,
+          "snippet": "return ModStatus()\n    @status.setter\n    def status(self, value):\n        pass\n    @property\n    def origin(self):\n        r\"\"\"\n        (ModPlatform):  [Read-Write] Origin\n        \"\"\"\n        return ModPlatform.NONE\n    @origin.setter\n    def origin(self, value):\n        pass\n\nclass ModStatus(StructBase):\n    r\"\"\""
+        },
+        {
+          "line": 87177,
+          "snippet": "class ModStatus(StructBase):\n    r\"\"\"\n    Mod Status\n    \n    **C++ Source:**\n    \n    - **Module**: MechWarrior\n    - **File**: ModUtils.h\n    \n    **Editor Properties:** (see get_editor_property/set_editor_property)\n    \n    - ``enabled`` (bool):  [Read-Write] Enabled\n    \"\"\"\n    def __init__(self, enabled=False):\n        pass\n    @property"
+        },
+        {
+          "line": 87349,
+          "snippet": "- ``mod_status`` (Map(str, ModStatus)):  [Read-Write] Mod Status\n    \"\"\"\n    def __init__(self, game_version=\"\", mod_status={}):\n        pass\n    @property\n    def game_version(self):\n        r\"\"\"\n        (str):  [Read-Write] The version of the game that mods were last disabled if out of date\n        \"\"\"\n        return \"\"\n    @game_version.setter\n    def game_version(self, value):\n        pass\n    @property\n    def mod_status(self):\n        r\"\"\""
+        },
+        {
+          "line": 87365,
+          "snippet": "(Map(str, ModStatus)):  [Read-Write] Mod Status\n        \"\"\"\n        return Map.cast(str, ModStatus, {})\n    @mod_status.setter\n    def mod_status(self, value):\n        pass\n\nclass AcademyAssetId(StructBase):\n    r\"\"\"\n    Academy Asset Id\n    \n    **C++ Source:**\n    \n    - **Module**: MechWarrior\n    - **File**: MWAcademyDataAsset.h"
+        },
+        {
+          "line": 87367,
+          "snippet": "return Map.cast(str, ModStatus, {})\n    @mod_status.setter\n    def mod_status(self, value):\n        pass\n\nclass AcademyAssetId(StructBase):\n    r\"\"\"\n    Academy Asset Id\n    \n    **C++ Source:**\n    \n    - **Module**: MechWarrior\n    - **File**: MWAcademyDataAsset.h\n    \n    **Editor Properties:** (see get_editor_property/set_editor_property)"
+        },
+        {
+          "line": 295712,
+          "snippet": "status (ModStatus):\n        \"\"\"\n        return None\n    @classmethod\n    def sort_mod_list(cls, mod_list):\n        r\"\"\"\n        X.sort_mod_list(mod_list) -> Array(ModListEntry)\n        Sort Mod List\n        \n        Args:\n            mod_list (Array(ModListEntry)): \n        \n        Returns:\n            Array(ModListEntry):\n        \"\"\"\n        return Array.cast(ModListEntry, [])"
+        }
+      ],
+      "ModPlatform": [
+        {
+          "line": 15593,
+          "snippet": "class ModPlatform(EnumBase):\n    r\"\"\"\n    EMod Platform\n    \n    **C++ Source:**\n    \n    - **Module**: MechWarrior\n    - **File**: ModUtils.h\n    \n    \"\"\"\n\n    NONE = _EnumEntry(\"ModPlatform\", \"NONE\", 0)  #: 0\n    STEAM = _EnumEntry(\"ModPlatform\", \"STEAM\", 1)  #: 1\n    GAMEPASS = _EnumEntry(\"ModPlatform\", \"GAMEPASS\", 2)  #: 2\n    EPIC = _EnumEntry(\"ModPlatform\", \"EPIC\", 3)  #: 3\n    GOG = _EnumEntry(\"ModPlatform\", \"GOG\", 4)  #: 4"
+        },
+        {
+          "line": 15604,
+          "snippet": "NONE = _EnumEntry(\"ModPlatform\", \"NONE\", 0)  #: 0\n    STEAM = _EnumEntry(\"ModPlatform\", \"STEAM\", 1)  #: 1\n    GAMEPASS = _EnumEntry(\"ModPlatform\", \"GAMEPASS\", 2)  #: 2\n    EPIC = _EnumEntry(\"ModPlatform\", \"EPIC\", 3)  #: 3\n    GOG = _EnumEntry(\"ModPlatform\", \"GOG\", 4)  #: 4\n    pass\n\nclass PublishedModVisibility(EnumBase):\n    r\"\"\"\n    EPublished Mod Visibility\n    \n    **C++ Source:**\n    \n    - **Module**: MechWarrior\n    - **File**: ModUtils.h"
+        },
+        {
+          "line": 15605,
+          "snippet": "STEAM = _EnumEntry(\"ModPlatform\", \"STEAM\", 1)  #: 1\n    GAMEPASS = _EnumEntry(\"ModPlatform\", \"GAMEPASS\", 2)  #: 2\n    EPIC = _EnumEntry(\"ModPlatform\", \"EPIC\", 3)  #: 3\n    GOG = _EnumEntry(\"ModPlatform\", \"GOG\", 4)  #: 4\n    pass\n\nclass PublishedModVisibility(EnumBase):\n    r\"\"\"\n    EPublished Mod Visibility\n    \n    **C++ Source:**\n    \n    - **Module**: MechWarrior\n    - **File**: ModUtils.h\n    \n    \"\"\""
+        },
+        {
+          "line": 15606,
+          "snippet": "GAMEPASS = _EnumEntry(\"ModPlatform\", \"GAMEPASS\", 2)  #: 2\n    EPIC = _EnumEntry(\"ModPlatform\", \"EPIC\", 3)  #: 3\n    GOG = _EnumEntry(\"ModPlatform\", \"GOG\", 4)  #: 4\n    pass\n\nclass PublishedModVisibility(EnumBase):\n    r\"\"\"\n    EPublished Mod Visibility\n    \n    **C++ Source:**\n    \n    - **Module**: MechWarrior\n    - **File**: ModUtils.h\n    \n    \"\"\""
+        },
+        {
+          "line": 15607,
+          "snippet": "EPIC = _EnumEntry(\"ModPlatform\", \"EPIC\", 3)  #: 3\n    GOG = _EnumEntry(\"ModPlatform\", \"GOG\", 4)  #: 4\n    pass\n\nclass PublishedModVisibility(EnumBase):\n    r\"\"\"\n    EPublished Mod Visibility\n    \n    **C++ Source:**\n    \n    - **Module**: MechWarrior\n    - **File**: ModUtils.h\n    \n    \"\"\"\n\n    PRIVATE = _EnumEntry(\"PublishedModVisibility\", \"PRIVATE\", 0)  #: 0"
+        },
+        {
+          "line": 15608,
+          "snippet": "GOG = _EnumEntry(\"ModPlatform\", \"GOG\", 4)  #: 4\n    pass\n\nclass PublishedModVisibility(EnumBase):\n    r\"\"\"\n    EPublished Mod Visibility\n    \n    **C++ Source:**\n    \n    - **Module**: MechWarrior\n    - **File**: ModUtils.h\n    \n    \"\"\"\n\n    PRIVATE = _EnumEntry(\"PublishedModVisibility\", \"PRIVATE\", 0)  #: 0\n    FRIENDS_ONLY = _EnumEntry(\"PublishedModVisibility\", \"FRIENDS_ONLY\", 1)  #: 1"
+        },
+        {
+          "line": 87135,
+          "snippet": "- ``origin`` (ModPlatform):  [Read-Write] Origin\n    - ``status`` (ModStatus):  [Read-Write] Status\n    \"\"\"\n    def __init__(self, mod_name=\"\", info=[\"\", \"\", 0, \"\", \"\", \"\", 0.000000, \"\", [], 0, 0, PublishedModVisibility.PRIVATE], status=[False], origin=ModPlatform.NONE):\n        pass\n    @property\n    def mod_name(self):\n        r\"\"\"\n        (str):  [Read-Write] Mod Name\n        \"\"\"\n        return \"\"\n    @mod_name.setter\n    def mod_name(self, value):\n        pass\n    @property\n    def info(self):"
+        },
+        {
+          "line": 87138,
+          "snippet": "def __init__(self, mod_name=\"\", info=[\"\", \"\", 0, \"\", \"\", \"\", 0.000000, \"\", [], 0, 0, PublishedModVisibility.PRIVATE], status=[False], origin=ModPlatform.NONE):\n        pass\n    @property\n    def mod_name(self):\n        r\"\"\"\n        (str):  [Read-Write] Mod Name\n        \"\"\"\n        return \"\"\n    @mod_name.setter\n    def mod_name(self, value):\n        pass\n    @property\n    def info(self):\n        r\"\"\"\n        (ModInfo):  [Read-Write] Info\n        \"\"\"\n        return ModInfo()"
+        }
+      ],
+      "ModConflict": [
+        {
+          "line": 87077,
+          "snippet": "class ModConflict(StructBase):\n    r\"\"\"\n    Mod Conflict\n    \n    **C++ Source:**\n    \n    - **Module**: MechWarrior\n    - **File**: ModUtils.h\n    \n    **Editor Properties:** (see get_editor_property/set_editor_property)\n    \n    - ``conflict_paths`` (Array(str)):  [Read-Write] Conflict Paths\n    - ``mod_display_name`` (str):  [Read-Write] Mod Display Name\n    - ``mod_name`` (str):  [Read-Write] Mod Name\n    \"\"\"\n    def __init__(self, mod_name=\"\", mod_display_name=\"\", conflict_paths=[]):"
+        },
+        {
+          "line": 295886,
+          "snippet": "X.get_mod_conflicts(mod_name, ordered_mod_list) -> Array(ModConflict)\n        Gets conflicts between this mod and any others in an enabled/ordered mod list.  InModName is expected to be a mod in the mod list.\n        \n        Args:\n            mod_name (str): \n            ordered_mod_list (Array(ModListEntry)): \n        \n        Returns:\n            Array(ModConflict):\n        \"\"\"\n        return Array.cast(ModConflict, [])\n    @classmethod\n    def get_enabled_mod_list(cls):\n        r\"\"\"\n        X.get_enabled_mod_list() -> Array(ModListEntry)\n        Get Enabled Mod List"
+        },
+        {
+          "line": 295894,
+          "snippet": "Array(ModConflict):\n        \"\"\"\n        return Array.cast(ModConflict, [])\n    @classmethod\n    def get_enabled_mod_list(cls):\n        r\"\"\"\n        X.get_enabled_mod_list() -> Array(ModListEntry)\n        Get Enabled Mod List\n        \n        Returns:\n            Array(ModListEntry):\n        \"\"\"\n        return Array.cast(ModListEntry, [])\n    @classmethod\n    def get_active_mod_plugin(cls):\n        r\"\"\""
+        },
+        {
+          "line": 295896,
+          "snippet": "return Array.cast(ModConflict, [])\n    @classmethod\n    def get_enabled_mod_list(cls):\n        r\"\"\"\n        X.get_enabled_mod_list() -> Array(ModListEntry)\n        Get Enabled Mod List\n        \n        Returns:\n            Array(ModListEntry):\n        \"\"\"\n        return Array.cast(ModListEntry, [])\n    @classmethod\n    def get_active_mod_plugin(cls):\n        r\"\"\"\n        X.get_active_mod_plugin() -> MWModPluginInfo\n        Get Active Mod Plugin"
+        }
+      ],
+      "PublishedModVisibility": [
+        {
+          "line": 15611,
+          "snippet": "class PublishedModVisibility(EnumBase):\n    r\"\"\"\n    EPublished Mod Visibility\n    \n    **C++ Source:**\n    \n    - **Module**: MechWarrior\n    - **File**: ModUtils.h\n    \n    \"\"\"\n\n    PRIVATE = _EnumEntry(\"PublishedModVisibility\", \"PRIVATE\", 0)  #: 0\n    FRIENDS_ONLY = _EnumEntry(\"PublishedModVisibility\", \"FRIENDS_ONLY\", 1)  #: 1\n    PUBLIC = _EnumEntry(\"PublishedModVisibility\", \"PUBLIC\", 2)  #: 2\n    pass"
+        },
+        {
+          "line": 15622,
+          "snippet": "PRIVATE = _EnumEntry(\"PublishedModVisibility\", \"PRIVATE\", 0)  #: 0\n    FRIENDS_ONLY = _EnumEntry(\"PublishedModVisibility\", \"FRIENDS_ONLY\", 1)  #: 1\n    PUBLIC = _EnumEntry(\"PublishedModVisibility\", \"PUBLIC\", 2)  #: 2\n    pass\n\nclass MWAcademyPrestige(EnumBase):\n    r\"\"\"\n    EMWAcademy Prestige\n    \n    **C++ Source:**\n    \n    - **Module**: MechWarrior\n    - **File**: MWAcademyDataAsset.h\n    \n    \"\"\""
+        },
+        {
+          "line": 15623,
+          "snippet": "FRIENDS_ONLY = _EnumEntry(\"PublishedModVisibility\", \"FRIENDS_ONLY\", 1)  #: 1\n    PUBLIC = _EnumEntry(\"PublishedModVisibility\", \"PUBLIC\", 2)  #: 2\n    pass\n\nclass MWAcademyPrestige(EnumBase):\n    r\"\"\"\n    EMWAcademy Prestige\n    \n    **C++ Source:**\n    \n    - **Module**: MechWarrior\n    - **File**: MWAcademyDataAsset.h\n    \n    \"\"\"\n\n    VERY_LOW = _EnumEntry(\"MWAcademyPrestige\", \"VERY_LOW\", 0)  #: 0"
+        },
+        {
+          "line": 15624,
+          "snippet": "PUBLIC = _EnumEntry(\"PublishedModVisibility\", \"PUBLIC\", 2)  #: 2\n    pass\n\nclass MWAcademyPrestige(EnumBase):\n    r\"\"\"\n    EMWAcademy Prestige\n    \n    **C++ Source:**\n    \n    - **Module**: MechWarrior\n    - **File**: MWAcademyDataAsset.h\n    \n    \"\"\"\n\n    VERY_LOW = _EnumEntry(\"MWAcademyPrestige\", \"VERY_LOW\", 0)  #: 0\n    LOW = _EnumEntry(\"MWAcademyPrestige\", \"LOW\", 1)  #: 1"
+        },
+        {
+          "line": 87138,
+          "snippet": "def __init__(self, mod_name=\"\", info=[\"\", \"\", 0, \"\", \"\", \"\", 0.000000, \"\", [], 0, 0, PublishedModVisibility.PRIVATE], status=[False], origin=ModPlatform.NONE):\n        pass\n    @property\n    def mod_name(self):\n        r\"\"\"\n        (str):  [Read-Write] Mod Name\n        \"\"\"\n        return \"\"\n    @mod_name.setter\n    def mod_name(self, value):\n        pass\n    @property\n    def info(self):\n        r\"\"\"\n        (ModInfo):  [Read-Write] Info\n        \"\"\"\n        return ModInfo()"
+        },
+        {
+          "line": 87222,
+          "snippet": "- ``steam_mod_visibility`` (PublishedModVisibility):  [Read-Write] Steam Mod Visibility\n    - ``steam_published_file_id`` (int64):  [Read-Write] Steam Published File Id\n    - ``version`` (str):  [Read-Write] Version\n    \"\"\"\n    def __init__(self, display_name=\"\", version=\"\", build_number=0, description=\"\", author=\"\", author_url=\"\", default_load_order=0.000000, game_version=\"\", manifest=[], steam_published_file_id=0, steam_last_submitted_build_number=0, steam_mod_visibility=PublishedModVisibility.PRIVATE):\n        pass\n    @property\n    def display_name(self):\n        r\"\"\"\n        (str):  [Read-Write] Display Name\n        \"\"\"\n        return \"\"\n    @display_name.setter\n    def display_name(self, value):\n        pass\n    @property"
+        },
+        {
+          "line": 87226,
+          "snippet": "def __init__(self, display_name=\"\", version=\"\", build_number=0, description=\"\", author=\"\", author_url=\"\", default_load_order=0.000000, game_version=\"\", manifest=[], steam_published_file_id=0, steam_last_submitted_build_number=0, steam_mod_visibility=PublishedModVisibility.PRIVATE):\n        pass\n    @property\n    def display_name(self):\n        r\"\"\"\n        (str):  [Read-Write] Display Name\n        \"\"\"\n        return \"\"\n    @display_name.setter\n    def display_name(self, value):\n        pass\n    @property\n    def version(self):\n        r\"\"\"\n        (str):  [Read-Write] Version\n        \"\"\"\n        return \"\""
+        },
+        {
+          "line": 87330,
+          "snippet": "(PublishedModVisibility):  [Read-Write] Steam Mod Visibility\n        \"\"\"\n        return PublishedModVisibility.PRIVATE\n    @steam_mod_visibility.setter\n    def steam_mod_visibility(self, value):\n        pass\n\nclass ModList(StructBase):\n    r\"\"\"\n    Mod List\n    \n    **C++ Source:**\n    \n    - **Module**: MechWarrior\n    - **File**: ModUtils.h"
+        }
+      ]
+    }
+  },
+  "decision": {
+    "non_mutating_decision": "Editor Python exposes MW5 mod metadata structs and read-only mod utilities. It exposes MWModEditorWidget.package_mod(args), but no direct module-level CreateMod, SaveToMod, or SaveTo symbol was found by this probe.",
+    "can_create_mod_via_python": false,
+    "can_package_via_python_without_ui_widget": false,
+    "package_api_requires_widget_instance": true,
+    "manual_editor_ui_required_for_safe_mod_creation_or_save_to_mod": true,
+    "evidence": {
+      "create_mod_symbols": [],
+      "save_to_mod_symbols": [],
+      "save_to_symbols": [],
+      "package_symbols": [
+        "package_mod"
+      ]
+    }
+  }
+}

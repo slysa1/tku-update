@@ -1,0 +1,13 @@
+{
+  "game_root": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries",
+  "local_mods_root": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods",
+  "content_paks_root": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Content\\Paks",
+  "steam_workshop_root": "E:\\SteamLibrary\\steamapps\\workshop\\content\\784080",
+  "mw5_editor_root": "E:\\Games\\MechWarrior5Editor",
+  "umodel_root": "C:\\Program Files\\umodel",
+  "fmodel_root": "C:\\Program Files\\fmodel",
+  "blender_root": "C:\\Program Files\\Blender Foundation\\Blender 5.1",
+  "uassetapi_root": "D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\tools\\MW5AssetTool",
+  "uassetgui_root": "C:\\Program Files\\UassetGUI",
+  "ue4ss_win64_root": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Binaries\\Win64"
+}

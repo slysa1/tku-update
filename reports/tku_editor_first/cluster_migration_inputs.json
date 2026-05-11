@@ -1,0 +1,2104 @@
+{
+  "source_files": {
+    "current_runtime_csv": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\InnerSphereData\\MW5_InnerSphereData.csv",
+    "wide_source_json": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Data\\InnerSphereMap\\MW5_InnerSphereData.json",
+    "original_tku_pak": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\TheKnownUniverse\\Paks\\TheKnownUniverse.pak",
+    "editor_asset_dump": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\reports\\tku_editor_first\\ue4_editor_asset_dump.json"
+  },
+  "current_runtime_csv": {
+    "row_count": 2173,
+    "cluster_rows": 2173,
+    "nonempty_cluster_rows": 824,
+    "unique_nonempty_cluster_ids": 77,
+    "top_cluster_ids": {
+      "TaurianCorridor": 43,
+      "OutworldsBorder": 28,
+      "LowerClassWorlds": 25,
+      "AlarionPeriphery": 24,
+      "LyranStrongholds": 23,
+      "DavionBorder": 22,
+      "DavionKurita_1": 21,
+      "RepairSystem_20": 21,
+      "RebeliousLyranTerritory": 18,
+      "SteinerBorder": 18,
+      "RasalagueReaches": 18,
+      "MarikLiaoBorder": 17,
+      "FWLInterior": 17,
+      "SianCommonality": 17,
+      "DutchyOfAndurien": 17,
+      "AgriculturalBelt": 16,
+      "DavionBorderlands": 16,
+      "FWLCommercialHub": 16,
+      "DroughtWorlds": 16,
+      "SteinerMarikBorder": 15,
+      "InfernosWake": 15,
+      "RepairSystem_26": 14,
+      "IndustrialMiningCompany": 14,
+      "StewartCommonality": 13,
+      "TheJunkyard": 13,
+      "PirateCluster": 13,
+      "RepairSystem_27": 12,
+      "RogueSystems": 12,
+      "BackwaterRegion": 12,
+      "MercenaryRow": 12
+    },
+    "overlay_rows": 74,
+    "unique_overlay_values": 74,
+    "constellation_rows": 31,
+    "unique_constellation_values": 31,
+    "sample_overlay_values": [
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_10_Blob.Safezone_10_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_11_Blob.Safezone_11_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_12_Blob.Safezone_12_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_13_Blob.Safezone_13_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_14_Blob.Safezone_14_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_15_Blob.Safezone_15_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_16_Blob.Safezone_16_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_17_Blob.Safezone_17_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_18_Blob.Safezone_18_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_1_Blob.Safezone_1_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_2_Blob.Safezone_2_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_3_Blob.Safezone_3_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_4_Blob.Safezone_4_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_5_Blob.Safezone_5_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_6_Blob.Safezone_6_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_7_5_Blob.Safezone_7_5_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_7_Blob.Safezone_7_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_8_Blob.Safezone_8_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_9_Blob.Safezone_9_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/SafezoneCollision/Safezone1_Collision.Safezone1_Collision",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/SafezoneCollision/Safezone2_Collision.Safezone2_Collision",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/SafezoneCollision/Safezone3_Collision.Safezone3_Collision",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/SafezoneCollision/Safezone4_Collision.Safezone4_Collision",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/SafezoneCollision/Safezone5_Collision.Safezone5_Collision",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/SafezoneCollision/Safezone6_Collision.Safezone6_Collision",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/SafezoneCollision/Safezone7_Collision.Safezone7_Collision",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/SafezoneCollision/Safezone8_Collision.Safezone8_Collision",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/SafezoneCollision/Safezone9_Collision.Safezone9_Collision",
+      "/Game/Campaign/CampaignArcs/MetagameObjectives/CampaignClusters/A2M1.A2M1",
+      "/Game/Campaign/CampaignArcs/MetagameObjectives/CampaignClusters/A2M2.A2M2"
+    ],
+    "sample_constellation_values": [
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone1.Safezone1",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone2.Safezone2",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone3.Safezone3",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone4.Safezone4",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone5.Safezone5",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone6.Safezone6",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone7.Safezone7",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone8.Safezone8",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone9.Safezone9",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_1.Safezone_1",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_10.Safezone_10",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_11.Safezone_11",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_12.Safezone_12",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_13.Safezone_13",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_14.Safezone_14",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_15.Safezone_15",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_16.Safezone_16",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_17.Safezone_17",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_18.Safezone_18",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_2.Safezone_2",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_3.Safezone_3",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_4.Safezone_4",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_5.Safezone_5",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_6.Safezone_6",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_7.Safezone_7",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_7_5.Safezone_7_5",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_8.Safezone_8",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_9.Safezone_9",
+      "/Game/Campaign/CampaignArcs/Regions/EndgameClusters/Safezone_29.Safezone_29",
+      "/Game/Campaign/CampaignArcs/Regions/EndgameClusters/Safezone_30.Safezone_30"
+    ],
+    "cluster_ids": [
+      "A2M1_Cluster",
+      "AgriculturalBelt",
+      "AlarionPeriphery",
+      "BackwaterRegion",
+      "DavionBorder",
+      "DavionBorderlands",
+      "DavionKurita_1",
+      "DropshipGraveyard",
+      "DroughtWorlds",
+      "DutchyOfAndurien",
+      "EmptyWorlds",
+      "FWLCommercialHub",
+      "FWLInterior",
+      "FWLShippingRoute",
+      "IndustrialMiningCompany",
+      "InfernosWake",
+      "KuritaBorder",
+      "KuritaDavion",
+      "KuritanBadlands",
+      "LowerClassWorlds",
+      "LyranStrongholds",
+      "MarikLiaoBorder",
+      "MercenaryRow",
+      "OutworldsBorder",
+      "PirateCluster",
+      "RasalagueReaches",
+      "RashpurOwensInc",
+      "RebeliousLyranTerritory",
+      "RepairSystem_1",
+      "RepairSystem_10",
+      "RepairSystem_11",
+      "RepairSystem_12",
+      "RepairSystem_13",
+      "RepairSystem_14",
+      "RepairSystem_15",
+      "RepairSystem_16",
+      "RepairSystem_17",
+      "RepairSystem_18",
+      "RepairSystem_19",
+      "RepairSystem_2",
+      "RepairSystem_20",
+      "RepairSystem_21",
+      "RepairSystem_22",
+      "RepairSystem_23",
+      "RepairSystem_24",
+      "RepairSystem_25",
+      "RepairSystem_26",
+      "RepairSystem_27",
+      "RepairSystem_28",
+      "RepairSystem_29",
+      "RepairSystem_3",
+      "RepairSystem_30",
+      "RepairSystem_31",
+      "RepairSystem_4",
+      "RepairSystem_5",
+      "RepairSystem_6",
+      "RepairSystem_7",
+      "RepairSystem_8",
+      "RepairSystem_9",
+      "RogueSystems",
+      "ShippingRoute",
+      "SianCommonality",
+      "SteinerBorder",
+      "SteinerMarikBorder",
+      "StewartCommonality",
+      "StoryCluster1",
+      "StoryCluster10",
+      "StoryCluster2",
+      "StoryCluster3",
+      "StoryCluster4",
+      "StoryCluster5",
+      "StoryCluster6",
+      "StoryCluster7",
+      "TamarindAbbey",
+      "TaurianCorridor",
+      "TheJunkyard",
+      "TsinghaiCommonality"
+    ]
+  },
+  "wide_source_json": {
+    "row_count": 3446,
+    "cluster_field_counts": {
+      "Cluster": {
+        "rows": 1,
+        "unique_values": 1
+      },
+      "ClusterOverlay": {
+        "rows": 0,
+        "unique_values": 0
+      },
+      "ClusterConstellation": {
+        "rows": 0,
+        "unique_values": 0
+      }
+    },
+    "cluster_field_samples": {
+      "Cluster": [
+        {
+          "Id": {
+            "PrimaryAssetType": {
+              "Name": "MWFactionAsset"
+            },
+            "PrimaryAssetName": "MercenaryRow"
+          }
+        }
+      ],
+      "ClusterOverlay": [],
+      "ClusterConstellation": []
+    }
+  },
+  "editor_cluster_assets": [
+    {
+      "asset_path": "/Game/Campaign/Clusters/A2M1/A2M1_ClusterAsset",
+      "system_count": 10,
+      "cluster_faction_asset": "<Object '/Game/Factions/ClusterOwners/RefinerySystems.RefinerySystems' (0x00000235117CCF00) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RefinerySystems",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/A2M1/A2M1.A2M1' (0x00000235AC55B800) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/A2M2/A2M2_ClusterAsset",
+      "system_count": 13,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/A2M2/TheJunkyard.TheJunkyard' (0x0000023511791EC0) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "TheJunkyard",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/A2M2/A2M2.A2M2' (0x00000235AC55AC00) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/A2M3/A2M3_ClusterAsset",
+      "system_count": 15,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/A2M3/AgriculturalBelt.AgriculturalBelt' (0x0000023511792940) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "AgriculturalBelt",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/A2M3/A2M3.A2M3' (0x00000235AC55A000) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/Alarion/Alarion_ClusterAsset",
+      "system_count": 24,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/Alarion/AlarionPeriphery.AlarionPeriphery' (0x0000023511792400) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "AlarionPeriphery",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/Alarion/15_2.15_2' (0x00000235AC559400) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/BackwaterRegion/BackwaterRegion_ClusterAsset",
+      "system_count": 11,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/BackwaterRegion/BackwaterRegion.BackwaterRegion' (0x0000023511792E80) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "BackwaterRegion",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/BackwaterRegion/8_4.8_4' (0x00000235AC558400) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/Davion-KuritaFrontline/Davion-KuritaFrontline_ClusterAsset",
+      "system_count": 21,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/Davion-KuritaFrontline/DavionKurita_1.DavionKurita_1' (0x0000023511792B00) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "DavionKurita_1",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/Davion-KuritaFrontline/5_1_Mesh.5_1_Mesh' (0x000002355DD47800) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/DavionBorderlands/DavionBorderlands_ClusterAsset",
+      "system_count": 14,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/DavionBorderlands/DavionBorderlands.DavionBorderlands' (0x0000023511793580) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "DavionBorderlands",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/DavionBorderlands/6_2_Mesh.6_2_Mesh' (0x000002355DD46C00) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/DraconisBadlands/DraconisBadlands_ClusterAsset",
+      "system_count": 11,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/DraconisBadlands/KuritanBadlands.KuritanBadlands' (0x0000023511793040) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "KuritanBadlands",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/DraconisBadlands/13_1.13_1' (0x000002355DD46000) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/DroughtWorlds/DroughtWorlds_ClusterAsset",
+      "system_count": 16,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/DroughtWorlds/DroughtWorlds.DroughtWorlds' (0x0000023511793AC0) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "DroughtWorlds",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/DroughtWorlds/13_2.13_2' (0x000002355DD45400) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/DuchyOfAndurien/DuchyOfAndurien_ClusterAsset",
+      "system_count": 17,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/DuchyOfAndurien/DutchyOfAndurien.DutchyOfAndurien' (0x0000023511793740) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "DutchyOfAndurien",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/DuchyOfAndurien/8_3.8_3' (0x000002355DD44800) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/DuchyOfTamarind/DuchyOfTamarind_ClusterAsset",
+      "system_count": 11,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/DuchyOfTamarind/TamarindAbbey.TamarindAbbey' (0x0000023511793C80) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "TamarindAbbey",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/DuchyOfTamarind/10_2.10_2' (0x00000235A9D93800) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/DuchyOfTsitsang/DuchyOfTsitsang_ClusterAsset",
+      "system_count": 10,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/DuchyOfTsitsang/TsinghaiCommonality.TsinghaiCommonality' (0x00000235117982C0) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "TsinghaiCommonality",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/DuchyOfTsitsang/7_2_Mesh.7_2_Mesh' (0x00000235A9D92C00) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/FreeWorldCommerceHub/FreeWorldCommerceHub_ClusterAsset",
+      "system_count": 17,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/FreeWorldInterior/FWLCommercialHub.FWLCommercialHub' (0x0000023511798480) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "FWLCommercialHub",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/FreeWorldCommerceHub/9_4.9_4' (0x00000235A9D91400) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/FreeWorldInterior/FreeWorldInterior_ClusterAsset",
+      "system_count": 17,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/FreeWorldCommerceHub/FWLInterior.FWLInterior' (0x0000023511798800) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "FWLInterior",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/FreeWorldInterior/9_3.9_3' (0x00000235A9D90800) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/FWL_ShippingLane/FWL_ShippingLane_ClusterAsset",
+      "system_count": 12,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/FWL_ShippingLane/FWLShippingRoute.FWLShippingRoute' (0x0000023511798F00) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "FWLShippingRoute",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/FWL_ShippingLane/10_1.10_1' (0x00000235A9D92000) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/HerotitusZone/HerotitusZone_ClusterAsset",
+      "system_count": 1,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/HerotitusZone/Herotitus.Herotitus' (0x00000235117989C0) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "Herotitus",
+      "cluster_overlay": "",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/IndustrialHub_1/IndustrialHub_1_ClusterAsset",
+      "system_count": 6,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/IndustrialHub_1/RepairSystem_1.RepairSystem_1' (0x0000023511799440) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RepairSystem_1",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/IndustrialHub_1/Safezone_1_Blob.Safezone_1_Blob' (0x00000235AF78B800) Class 'StaticMesh'>",
+      "cluster_constellation": "<Object '/Game/Campaign/Clusters/IndustrialHub_1/Safezone_1.Safezone_1' (0x00000235AF78AC00) Class 'StaticMesh'>"
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/IndustrialHub_10/IndustrialHub_10_ClusterAsset",
+      "system_count": 6,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/IndustrialHub_10/RepairSystem_11.RepairSystem_11' (0x00000235117990C0) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RepairSystem_11",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/IndustrialHub_10/Safezone_10_Blob.Safezone_10_Blob' (0x00000235AF78A400) Class 'StaticMesh'>",
+      "cluster_constellation": "<Object '/Game/Campaign/Clusters/IndustrialHub_10/Safezone_10.Safezone_10' (0x00000235AF789000) Class 'StaticMesh'>"
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/IndustrialHub_11/IndustrialHub_11_ClusterAsset",
+      "system_count": 6,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/IndustrialHub_11/RepairSystem_12.RepairSystem_12' (0x0000023511799B40) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RepairSystem_12",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/IndustrialHub_11/Safezone_11_Blob.Safezone_11_Blob' (0x000002355DCF3800) Class 'StaticMesh'>",
+      "cluster_constellation": "<Object '/Game/Campaign/Clusters/IndustrialHub_11/Safezone_11.Safezone_11' (0x000002355DCF2C00) Class 'StaticMesh'>"
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/IndustrialHub_12/IndustrialHub_12_ClusterAsset",
+      "system_count": 5,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/IndustrialHub_12/RepairSystem_14.RepairSystem_14' (0x0000023511799600) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RepairSystem_14",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/IndustrialHub_12/Safezone_12_Blob.Safezone_12_Blob' (0x000002355DCF0C00) Class 'StaticMesh'>",
+      "cluster_constellation": "<Object '/Game/Campaign/Clusters/IndustrialHub_12/Safezone_12.Safezone_12' (0x000002359C2D7800) Class 'StaticMesh'>"
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/IndustrialHub_13/IndustrialHub_13_ClusterAsset",
+      "system_count": 6,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/IndustrialHub_13/RepairSystem_13.RepairSystem_13' (0x000002351179A080) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RepairSystem_13",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/IndustrialHub_13/Safezone_13_Blob.Safezone_13_Blob' (0x000002359C2D6C00) Class 'StaticMesh'>",
+      "cluster_constellation": "<Object '/Game/Campaign/Clusters/IndustrialHub_13/Safezone_13.Safezone_13' (0x000002359C2D6000) Class 'StaticMesh'>"
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/IndustrialHub_14/IndustrialHub_14_ClusterAsset",
+      "system_count": 5,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/IndustrialHub_14/RepairSystem_15.RepairSystem_15' (0x0000023511799D00) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RepairSystem_15",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/IndustrialHub_14/Safezone_14_Blob.Safezone_14_Blob' (0x000002359A4B3400) Class 'StaticMesh'>",
+      "cluster_constellation": "<Object '/Game/Campaign/Clusters/IndustrialHub_14/Safezone_14.Safezone_14' (0x000002359A4B2800) Class 'StaticMesh'>"
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/IndustrialHub_15/IndustrialHub_15_ClusterAsset",
+      "system_count": 4,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/IndustrialHub_15/RepairSystem_16.RepairSystem_16' (0x000002351179A5C0) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RepairSystem_16",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/IndustrialHub_15/Safezone_15_Blob.Safezone_15_Blob' (0x000002359A4B0800) Class 'StaticMesh'>",
+      "cluster_constellation": "<Object '/Game/Campaign/Clusters/IndustrialHub_15/Safezone_15.Safezone_15' (0x0000023588D9F000) Class 'StaticMesh'>"
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/IndustrialHub_16/IndustrialHub_16_ClusterAsset",
+      "system_count": 6,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/IndustrialHub_16/RepairSystem_18.RepairSystem_18' (0x000002351179A240) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RepairSystem_18",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/IndustrialHub_16/Safezone_16_Blob.Safezone_16_Blob' (0x0000023588D9E000) Class 'StaticMesh'>",
+      "cluster_constellation": "<Object '/Game/Campaign/Clusters/IndustrialHub_16/Safezone_16.Safezone_16' (0x0000023588D9D400) Class 'StaticMesh'>"
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/IndustrialHub_17/IndustrialHub_17_ClusterAsset",
+      "system_count": 4,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/IndustrialHub_17/RepairSystem_17.RepairSystem_17' (0x000002351179AB00) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RepairSystem_17",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/IndustrialHub_17/Safezone_17_Blob.Safezone_17_Blob' (0x0000023588D9C800) Class 'StaticMesh'>",
+      "cluster_constellation": "<Object '/Game/Campaign/Clusters/IndustrialHub_17/Safezone_17.Safezone_17' (0x000002354168B800) Class 'StaticMesh'>"
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/IndustrialHub_18/IndustrialHub_18_ClusterAsset",
+      "system_count": 5,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/IndustrialHub_18/RepairSystem_19.RepairSystem_19' (0x000002351179A780) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RepairSystem_19",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/IndustrialHub_18/Safezone_18_Blob.Safezone_18_Blob' (0x000002354168A800) Class 'StaticMesh'>",
+      "cluster_constellation": "<Object '/Game/Campaign/Clusters/IndustrialHub_18/Safezone_18.Safezone_18' (0x0000023541689C00) Class 'StaticMesh'>"
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/IndustrialHub_19/IndustrialHub_19_ClusterAsset",
+      "system_count": 4,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/IndustrialHub_19/RepairSystem_7.RepairSystem_7' (0x000002351179B040) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RepairSystem_7",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/IndustrialHub_19/Safezone_7_Blob.Safezone_7_Blob' (0x0000023541689000) Class 'StaticMesh'>",
+      "cluster_constellation": "<Object '/Game/Campaign/Clusters/IndustrialHub_19/Safezone_7.Safezone_7' (0x00000235B0AE3800) Class 'StaticMesh'>"
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/IndustrialHub_2/IndustrialHub_2_ClusterAsset",
+      "system_count": 7,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/IndustrialHub_2/RepairSystem_2.RepairSystem_2' (0x000002351179ACC0) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RepairSystem_2",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/IndustrialHub_2/Safezone_2_Blob.Safezone_2_Blob' (0x00000235B0AE2C00) Class 'StaticMesh'>",
+      "cluster_constellation": "<Object '/Game/Campaign/Clusters/IndustrialHub_2/Safezone_2.Safezone_2' (0x00000235B0AE2000) Class 'StaticMesh'>"
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/IndustrialHub_20/IndustrialHub_20_ClusterAsset",
+      "system_count": 4,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/IndustrialHub_20/RepairSystem_21.RepairSystem_21' (0x000002351179B580) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RepairSystem_21",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/IndustrialHub_20/Safezone2_Collision.Safezone2_Collision' (0x00000235B0AE1400) Class 'StaticMesh'>",
+      "cluster_constellation": "<Object '/Game/Campaign/Clusters/IndustrialHub_20/Safezone2.Safezone2' (0x00000235B0ADF800) Class 'StaticMesh'>"
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/IndustrialHub_21/IndustrialHub_21_ClusterAsset",
+      "system_count": 10,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/IndustrialHub_21/RepairSystem_22.RepairSystem_22' (0x000002351179B200) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RepairSystem_22",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/IndustrialHub_21/Safezone3_Collision.Safezone3_Collision' (0x00000235B0ADE000) Class 'StaticMesh'>",
+      "cluster_constellation": "<Object '/Game/Campaign/Clusters/IndustrialHub_21/Safezone3.Safezone3' (0x00000235B0ADD800) Class 'StaticMesh'>"
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/IndustrialHub_22/IndustrialHub_22_ClusterAsset",
+      "system_count": 8,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/IndustrialHub_22/RepairSystem_23.RepairSystem_23' (0x000002351179BAC0) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RepairSystem_23",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/IndustrialHub_22/Safezone4_Collision.Safezone4_Collision' (0x00000235B0ADD400) Class 'StaticMesh'>",
+      "cluster_constellation": "<Object '/Game/Campaign/Clusters/IndustrialHub_22/Safezone4.Safezone4' (0x00000235B0ADC400) Class 'StaticMesh'>"
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/IndustrialHub_23/IndustrialHub_23_ClusterAsset",
+      "system_count": 6,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/IndustrialHub_23/RepairSystem_24.RepairSystem_24' (0x000002351179B740) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RepairSystem_24",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/IndustrialHub_23/Safezone5_Collision.Safezone5_Collision' (0x00000235B7AB3400) Class 'StaticMesh'>",
+      "cluster_constellation": "<Object '/Game/Campaign/Clusters/IndustrialHub_23/Safezone5.Safezone5' (0x00000235B7AB2800) Class 'StaticMesh'>"
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/IndustrialHub_24/IndustrialHub_24_ClusterAsset",
+      "system_count": 6,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/IndustrialHub_24/RepairSystem_25.RepairSystem_25' (0x000002351179BC80) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RepairSystem_25",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/IndustrialHub_24/Safezone6_Collision.Safezone6_Collision' (0x00000235B7AB1C00) Class 'StaticMesh'>",
+      "cluster_constellation": "<Object '/Game/Campaign/Clusters/IndustrialHub_24/Safezone6.Safezone6' (0x00000235B7AB1000) Class 'StaticMesh'>"
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/IndustrialHub_25/IndustrialHub_25_ClusterAsset",
+      "system_count": 20,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/IndustrialHub_25/RepairSystem_20.RepairSystem_20' (0x00000235117A0100) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RepairSystem_20",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/IndustrialHub_25/Safezone1_Collision.Safezone1_Collision' (0x00000235B80CB800) Class 'StaticMesh'>",
+      "cluster_constellation": "<Object '/Game/Campaign/Clusters/IndustrialHub_25/Safezone1.Safezone1' (0x00000235B80CA800) Class 'StaticMesh'>"
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/IndustrialHub_26/IndustrialHub_26_ClusterAsset",
+      "system_count": 13,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/IndustrialHub_26/RepairSystem_26.RepairSystem_26' (0x00000235117A0640) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RepairSystem_26",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/IndustrialHub_26/Safezone7_Collision.Safezone7_Collision' (0x00000235B80CA000) Class 'StaticMesh'>",
+      "cluster_constellation": "<Object '/Game/Campaign/Clusters/IndustrialHub_26/Safezone7.Safezone7' (0x00000235B80C9000) Class 'StaticMesh'>"
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/IndustrialHub_27/IndustrialHub_27_ClusterAsset",
+      "system_count": 9,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/IndustrialHub_27/RepairSystem_27.RepairSystem_27' (0x00000235117A02C0) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RepairSystem_27",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/IndustrialHub_27/Safezone8_Collision.Safezone8_Collision' (0x00000235B81FF800) Class 'StaticMesh'>",
+      "cluster_constellation": "<Object '/Game/Campaign/Clusters/IndustrialHub_27/Safezone8.Safezone8' (0x00000235B81FEC00) Class 'StaticMesh'>"
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/IndustrialHub_28/IndustrialHub_28_ClusterAsset",
+      "system_count": 4,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/IndustrialHub_28/RepairSystem_28.RepairSystem_28' (0x00000235117A0B80) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RepairSystem_28",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/IndustrialHub_28/Safezone9_Collision.Safezone9_Collision' (0x00000235B81FE000) Class 'StaticMesh'>",
+      "cluster_constellation": "<Object '/Game/Campaign/Clusters/IndustrialHub_28/Safezone9.Safezone9' (0x00000235B81FD400) Class 'StaticMesh'>"
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/IndustrialHub_29/IndustrialHub_29_ClusterAsset",
+      "system_count": 4,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/IndustrialHub_29/RepairSystem_29.RepairSystem_29' (0x00000235117A0800) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RepairSystem_29",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/IndustrialHub_29/29_Collision.29_Collision' (0x00000235B81FC800) Class 'StaticMesh'>",
+      "cluster_constellation": "<Object '/Game/Campaign/Clusters/IndustrialHub_29/Safezone_29.Safezone_29' (0x00000235B65A3800) Class 'StaticMesh'>"
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/IndustrialHub_3/IndustrialHub_3_ClusterAsset",
+      "system_count": 5,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/IndustrialHub_3/RepairSystem_6.RepairSystem_6' (0x00000235117A10C0) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RepairSystem_6",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/IndustrialHub_3/Safezone_3_Blob.Safezone_3_Blob' (0x00000235B65A2C00) Class 'StaticMesh'>",
+      "cluster_constellation": "<Object '/Game/Campaign/Clusters/IndustrialHub_3/Safezone_3.Safezone_3' (0x00000235B65A2000) Class 'StaticMesh'>"
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/IndustrialHub_30/IndustrialHub_30_ClusterAsset",
+      "system_count": 5,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/IndustrialHub_30/RepairSystem_30.RepairSystem_30' (0x00000235117A0D40) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RepairSystem_30",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/IndustrialHub_30/30_Collision.30_Collision' (0x00000235B65A1400) Class 'StaticMesh'>",
+      "cluster_constellation": "<Object '/Game/Campaign/Clusters/IndustrialHub_30/Safezone_30.Safezone_30' (0x00000235B65A0800) Class 'StaticMesh'>"
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/IndustrialHub_31/IndustrialHub_31_ClusterAsset",
+      "system_count": 4,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/IndustrialHub_31/RepairSystem_31.RepairSystem_31' (0x00000235117A1600) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RepairSystem_31",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/IndustrialHub_31/31_Collision.31_Collision' (0x00000235B7A0F800) Class 'StaticMesh'>",
+      "cluster_constellation": "<Object '/Game/Campaign/Clusters/IndustrialHub_31/Safezone_31.Safezone_31' (0x00000235B7A0EC00) Class 'StaticMesh'>"
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/IndustrialHub_4/IndustrialHub_4_ClusterAsset",
+      "system_count": 5,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/IndustrialHub_4/RepairSystem_3.RepairSystem_3' (0x00000235117A1280) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RepairSystem_3",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/IndustrialHub_4/Safezone_4_Blob.Safezone_4_Blob' (0x00000235BC44F800) Class 'StaticMesh'>",
+      "cluster_constellation": "<Object '/Game/Campaign/Clusters/IndustrialHub_4/Safezone_4.Safezone_4' (0x00000235BC44E800) Class 'StaticMesh'>"
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/IndustrialHub_5/IndustrialHub_5_ClusterAsset",
+      "system_count": 4,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/IndustrialHub_5/RepairSystem_4.RepairSystem_4' (0x00000235117A1B40) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RepairSystem_4",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/IndustrialHub_5/Safezone_5_Blob.Safezone_5_Blob' (0x00000235BC44DC00) Class 'StaticMesh'>",
+      "cluster_constellation": "<Object '/Game/Campaign/Clusters/IndustrialHub_5/Safezone_5.Safezone_5' (0x00000235BC44C800) Class 'StaticMesh'>"
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/IndustrialHub_6/IndustrialHub_6_ClusterAsset",
+      "system_count": 4,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/IndustrialHub_6/RepairSystem_8.RepairSystem_8' (0x00000235117A17C0) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RepairSystem_8",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/IndustrialHub_6/Safezone_6_Blob.Safezone_6_Blob' (0x00000235B7A0D400) Class 'StaticMesh'>",
+      "cluster_constellation": "<Object '/Game/Campaign/Clusters/IndustrialHub_6/Safezone_6.Safezone_6' (0x00000235B7A0E000) Class 'StaticMesh'>"
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/IndustrialHub_7/IndustrialHub_7_ClusterAsset",
+      "system_count": 7,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/IndustrialHub_7/RepairSystem_5.RepairSystem_5' (0x00000235117A2240) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RepairSystem_5",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/IndustrialHub_7/Safezone_7_5_Blob.Safezone_7_5_Blob' (0x00000235B7A0C800) Class 'StaticMesh'>",
+      "cluster_constellation": "<Object '/Game/Campaign/Clusters/IndustrialHub_7/Safezone_7_5.Safezone_7_5' (0x00000235BBB2F000) Class 'StaticMesh'>"
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/IndustrialHub_8/IndustrialHub_8_ClusterAsset",
+      "system_count": 4,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/IndustrialHub_8/RepairSystem_9.RepairSystem_9' (0x00000235117A1D00) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RepairSystem_9",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/IndustrialHub_8/Safezone_8_Blob.Safezone_8_Blob' (0x00000235BBB2E400) Class 'StaticMesh'>",
+      "cluster_constellation": "<Object '/Game/Campaign/Clusters/IndustrialHub_8/Safezone_8.Safezone_8' (0x00000235BBB2D800) Class 'StaticMesh'>"
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/IndustrialHub_9/IndustrialHub_9_ClusterAsset",
+      "system_count": 5,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/IndustrialHub_9/RepairSystem_10.RepairSystem_10' (0x00000235117A2940) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RepairSystem_10",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/IndustrialHub_9/Safezone_9_Blob.Safezone_9_Blob' (0x00000235BBCA7800) Class 'StaticMesh'>",
+      "cluster_constellation": "<Object '/Game/Campaign/Clusters/IndustrialHub_9/Safezone_9.Safezone_9' (0x00000235BBCA6800) Class 'StaticMesh'>"
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/IndustrialMiningCollective/IndustrialMiningCollective_ClusterAsset",
+      "system_count": 14,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/IndustrialMiningCollective/IndustrialMiningCompany.IndustrialMiningCompany' (0x00000235117A2400) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "IndustrialMiningCompany",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/IndustrialMiningCollective/5_2_Mesh.5_2_Mesh' (0x00000235BBCA5C00) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/InfernosWake/InfernosWake_ClusterAsset",
+      "system_count": 14,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/InfernosWake/InfernosWake.InfernosWake' (0x00000235117A3040) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "InfernosWake",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/InfernosWake/4_1_Mesh.4_1_Mesh' (0x00000235BBCA5000) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/Kurita-DavionFrontLine/Kurita-DavionFrontLine_ClusterAsset",
+      "system_count": 11,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/Kurita-DavionFrontLine/KuritaDavion.KuritaDavion' (0x00000235117A2B00) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "KuritaDavion",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/Kurita-DavionFrontLine/6_1_Mesh.6_1_Mesh' (0x00000235BB183800) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/Liao-DavionBorder/Liao-DavionBorder_ClusterAsset",
+      "system_count": 22,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/Liao-DavionBorder/DavionBorder.DavionBorder' (0x00000235117A3740) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "DavionBorder",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/Liao-DavionBorder/8_2.8_2' (0x00000235BB182C00) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/Lower-ClassKuritanWorlds/Lower-ClassKuritanWorlds_ClusterAsset",
+      "system_count": 25,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/Lower-ClassKuritanWorlds/LowerClassWorlds.LowerClassWorlds' (0x00000235117A3200) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "LowerClassWorlds",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/Lower-ClassKuritanWorlds/12_2.12_2' (0x00000235BB182000) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/LyranMilitaryStrongholds/LyranMilitaryStrongholds_ClusterAsset",
+      "system_count": 22,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/LyranMilitaryStrongholds/LyranStrongholds.LyranStrongholds' (0x00000235117A3E40) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "LyranStrongholds",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/LyranMilitaryStrongholds/11_3.11_3' (0x00000235BB181400) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/Marik-LiaoBorder/Marik-LiaoBorder_ClusterAsset",
+      "system_count": 17,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/Marik-LiaoBorder/MarikLiaoBorder.MarikLiaoBorder' (0x00000235117A3900) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "MarikLiaoBorder",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/Marik-LiaoBorder/9_1.9_1' (0x00000235BB180800) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/Marik-StrinerBorder/Marik-StrinerBorder_ClusterAsset",
+      "system_count": 16,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/Marik-StrinerBorder/SteinerMarikBorder.SteinerMarikBorder' (0x000002351179C640) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "SteinerMarikBorder",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/Marik-StrinerBorder/10_3.10_3' (0x00000235BB207800) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/MercenaryRow/MercenaryRow_ClusterAsset",
+      "system_count": 13,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/MercenaryRow/MercenaryRow.MercenaryRow' (0x000002351179C100) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "MercenaryRow",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/MercenaryRow/3_1_Mesh.3_1_Mesh' (0x00000235BB206C00) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/Outreach/Outreach_ClusterAsset",
+      "system_count": 1,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/Outreach/Outreach.Outreach' (0x000002351179CD40) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "Outreach",
+      "cluster_overlay": "",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/OutworldsAlliance/OutworldsAlliance_ClusterAsset",
+      "system_count": 28,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/OutworldsAlliance/OutworldsBorder.OutworldsBorder' (0x000002351179C800) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "OutworldsBorder",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/OutworldsAlliance/15_1.15_1' (0x00000235BB206000) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/PiratesLair/PiratesLair_ClusterAsset",
+      "system_count": 13,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/PiratesLair/PirateCluster.PirateCluster' (0x000002351179D280) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "PirateCluster",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/PiratesLair/12_4.12_4' (0x00000235BB204C00) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/Rasalhague/Rasalhague_ClusterAsset",
+      "system_count": 18,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/Rasalhague/RasalagueReaches.RasalagueReaches' (0x000002351179CF00) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RasalagueReaches",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/Rasalhague/15_3.15_3' (0x00000235BB417800) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/Rashpur-OwensMenufacturingWorlds/Rashpur-OwensMenufacturingWorlds_ClusterAsset",
+      "system_count": 9,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/Rashpur-OwensMenufacturingWorlds/RashpurOwensInc.RashpurOwensInc' (0x000002351179D7C0) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RashpurOwensInc",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/Rashpur-OwensMenufacturingWorlds/7_1_Mesh.7_1_Mesh' (0x00000235BB416800) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/RebelliousLyranPrince/RebelliousLyranPrince_ClusterAsset",
+      "system_count": 17,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/RebelliousLyranPrince/RebeliousLyranTerritory.RebeliousLyranTerritory' (0x000002351179D440) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RebeliousLyranTerritory",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/RebelliousLyranPrince/11_2.11_2' (0x00000235BB416000) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/Rogue/Rogue_ClusterAsset",
+      "system_count": 14,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/Rogue/RogueSystems.RogueSystems' (0x000002351179DEC0) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "RogueSystems",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/Rogue/12_3.12_3' (0x00000235BB415400) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/SC01/SC01_ClusterAsset",
+      "system_count": 5,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/SC01/StoryCluster1.StoryCluster1' (0x000002351179D980) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "StoryCluster1",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/SC01/StoryCluster_1_STM.StoryCluster_1_STM' (0x00000235BB414800) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/SC02/SC02_ClusterAsset",
+      "system_count": 1,
+      "cluster_faction_asset": "",
+      "cluster_faction_name": "",
+      "cluster_overlay": "",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/SC03/SC03_ClusterAsset",
+      "system_count": 5,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/SC03/StoryCluster3.StoryCluster3' (0x000002351179E5C0) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "StoryCluster3",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/SC03/StoryMixer_3_STM.StoryMixer_3_STM' (0x00000235BB82B800) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/SC04/SC04_ClusterAsset",
+      "system_count": 3,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/SC04/StoryCluster4.StoryCluster4' (0x000002351179E080) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "StoryCluster4",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/SC04/StoryCluster_4_STM.StoryCluster_4_STM' (0x00000235BB82AC00) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/SC05/SC05_ClusterAsset",
+      "system_count": 5,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/SC05/StoryCluster5.StoryCluster5' (0x000002351179ECC0) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "StoryCluster5",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/SC05/StoryCluster_5_STM.StoryCluster_5_STM' (0x00000235BB82A000) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/SC06/SC06_ClusterAsset",
+      "system_count": 3,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/SC06/StoryCluster6.StoryCluster6' (0x000002351179E780) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "StoryCluster6",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/SC06/StoryCluster_6_STM.StoryCluster_6_STM' (0x00000235BB829400) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/SC07/SC07_ClusterAsset",
+      "system_count": 3,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/SC07/StoryCluster7.StoryCluster7' (0x000002351179F3C0) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "StoryCluster7",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/SC07/StoryCluster_7_STM.StoryCluster_7_STM' (0x00000235BB828800) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/ShippingRoute/ShippingRoute_ClusterAsset",
+      "system_count": 11,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/ShippingRoute/ShippingRoute.ShippingRoute' (0x000002351179EE80) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "ShippingRoute",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/ShippingRoute/6_3_Mesh.6_3_Mesh' (0x00000235B5EFB800) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/SianCommonality/SianCommonality_ClusterAsset",
+      "system_count": 17,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/SianCommonality/SianCommonality.SianCommonality' (0x000002351179FAC0) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "SianCommonality",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/SianCommonality/8_1.8_1' (0x00000235B5EFAC00) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/Steiner-KuritaBorder/Steiner-KuritaBorder_ClusterAsset",
+      "system_count": 21,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/Steiner-KuritaBorder/SteinerBorder.SteinerBorder' (0x000002351179F580) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "SteinerBorder",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/Steiner-KuritaBorder/12_1.12_1' (0x00000235B5EFA000) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/Steiner-KuritaBorder/Steiner-KuritaBorder_PostClanReplacement_ClusterAsset",
+      "system_count": 1,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/Steiner-KuritaBorder/SteinerBorder.SteinerBorder' (0x000002351179F580) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "SteinerBorder",
+      "cluster_overlay": "",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/StweartCommonwealth/StweartCommonwealth_ClusterAsset",
+      "system_count": 14,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/StweartCommonwealth/StewartCommonality.StewartCommonality' (0x000002351179FC80) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "StewartCommonality",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/StweartCommonwealth/11_1.11_1' (0x00000235B5EF9400) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/Taurian/Taurian_ClusterAsset",
+      "system_count": 42,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/Taurian/TaurianCorridor.TaurianCorridor' (0x00000235117A82C0) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "TaurianCorridor",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/Taurian/15_4.15_4' (0x00000235B5EF8800) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/TheGraveyard/TheGraveyard_ClusterAsset",
+      "system_count": 12,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/TheGraveyard/DropshipGraveyard.DropshipGraveyard' (0x00000235117A8480) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "DropshipGraveyard",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/TheGraveyard/13_3.13_3' (0x00000235BA0C7800) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/VacantWorlds/VacantWorlds_ClusterAsset",
+      "system_count": 6,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/VacantWorlds/EmptyWorlds.EmptyWorlds' (0x00000235117A8B80) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "EmptyWorlds",
+      "cluster_overlay": "<Object '/Game/Campaign/Clusters/VacantWorlds/9_2.9_2' (0x00000235BA0C6C00) Class 'StaticMesh'>",
+      "cluster_constellation": ""
+    },
+    {
+      "asset_path": "/Game/Campaign/Clusters/WesterhandZone/WesterhandZone_ClusterAsset",
+      "system_count": 1,
+      "cluster_faction_asset": "<Object '/Game/Campaign/Clusters/WesterhandZone/Westerhand.Westerhand' (0x00000235117A8640) Class 'MWFactionAsset'>",
+      "cluster_faction_name": "Westerhand",
+      "cluster_overlay": "",
+      "cluster_constellation": ""
+    }
+  ],
+  "current_place_cluster_actions": [
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/10_1/PlaceFWL_ShippingLaneCluster_ArcAction",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\10_1\\PlaceFWL_ShippingLaneCluster_ArcAction.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/FWL_ShippingLane/FWL_ShippingLane_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/10_2/PlaceDuchyOfTamarindCluster_ArcAction",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\10_2\\PlaceDuchyOfTamarindCluster_ArcAction.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/DuchyOfTamarind/DuchyOfTamarind_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/10_3/PlaceMarik-StrinerBorderCluster_ArcAction",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\10_3\\PlaceMarik-StrinerBorderCluster_ArcAction.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/Marik-StrinerBorder/Marik-StrinerBorder_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/11_1/PlaceStweartCommonwealthCluster_ArcAction",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\11_1\\PlaceStweartCommonwealthCluster_ArcAction.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/StweartCommonwealth/StweartCommonwealth_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/11_2/PlaceRebelliousLyranPrinceCluster_ArcAction",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\11_2\\PlaceRebelliousLyranPrinceCluster_ArcAction.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/RebelliousLyranPrince/RebelliousLyranPrince_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/11_3/PlaceLyranMilitaryStrongholdsCluster_ArcAction",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\11_3\\PlaceLyranMilitaryStrongholdsCluster_ArcAction.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/LyranMilitaryStrongholds/LyranMilitaryStrongholds_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/12_1/PlaceSteiner-KuritaBorderCluster_ArcAction",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\12_1\\PlaceSteiner-KuritaBorderCluster_ArcAction.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/Steiner-KuritaBorder/Steiner-KuritaBorder_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/12_2/PlaceLower-ClassKuritanWorldsCluster_ArcAction",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\12_2\\PlaceLower-ClassKuritanWorldsCluster_ArcAction.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/Lower-ClassKuritanWorlds/Lower-ClassKuritanWorlds_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/12_3/PlaceRogueCluster_ArcAction",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\12_3\\PlaceRogueCluster_ArcAction.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/Rogue/Rogue_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/12_4/PlacePiratesLairCluster_ArcAction",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\12_4\\PlacePiratesLairCluster_ArcAction.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/PiratesLair/PiratesLair_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/13_1/PlaceDraconisBadlandsCluster_ArcaCtion",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\13_1\\PlaceDraconisBadlandsCluster_ArcaCtion.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/DraconisBadlands/DraconisBadlands_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/13_2/PlaceDroughtWorldsCluster_ArcAction",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\13_2\\PlaceDroughtWorldsCluster_ArcAction.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/DroughtWorlds/DroughtWorlds_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/13_3/PlaceTheGraveyardCluster_ArcAction",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\13_3\\PlaceTheGraveyardCluster_ArcAction.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/TheGraveyard/TheGraveyard_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/3_1/PlaceMercenaryRowCluster_ArcAction",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\3_1\\PlaceMercenaryRowCluster_ArcAction.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/MercenaryRow/MercenaryRow_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/4_1/PlaceInfernosWakeCluster_ArcAction",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\4_1\\PlaceInfernosWakeCluster_ArcAction.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/InfernosWake/InfernosWake_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/5_1/PlaceDavion-KuritaFrontlineCluster_ArcAction",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\5_1\\PlaceDavion-KuritaFrontlineCluster_ArcAction.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/Davion-KuritaFrontline/Davion-KuritaFrontline_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/5_2/PlaceIndustrialMiningCollectiveCluster_ArcAction",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\5_2\\PlaceIndustrialMiningCollectiveCluster_ArcAction.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/IndustrialMiningCollective/IndustrialMiningCollective_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/6_1/PlaceKurita-DavionFrontLineCluster_ArcAction",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\6_1\\PlaceKurita-DavionFrontLineCluster_ArcAction.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/Kurita-DavionFrontLine/Kurita-DavionFrontLine_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/6_2/PlaceDavionBorderlandsCluster_ArcAction",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\6_2\\PlaceDavionBorderlandsCluster_ArcAction.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/DavionBorderlands/DavionBorderlands_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/6_3/PlaceShippingRouteCluster_ArcAction",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\6_3\\PlaceShippingRouteCluster_ArcAction.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/ShippingRoute/ShippingRoute_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/7_1/PlaceRashpur-OwensMenufacturingWorldsCluster_ArcAction",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\7_1\\PlaceRashpur-OwensMenufacturingWorldsCluster_ArcAction.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/Rashpur-OwensMenufacturingWorlds/Rashpur-OwensMenufacturingWorlds_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/7_2/PlaceDuchyOfTsitsangCluster_ArcAction",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\7_2\\PlaceDuchyOfTsitsangCluster_ArcAction.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/DuchyOfTsitsang/DuchyOfTsitsang_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/8_1/PlaceSianCommonalityCluster_ArcAction",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\8_1\\PlaceSianCommonalityCluster_ArcAction.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/SianCommonality/SianCommonality_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/8_2/PlaceLiao-DavionBorderCluster_ArcAction",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\8_2\\PlaceLiao-DavionBorderCluster_ArcAction.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/Liao-DavionBorder/Liao-DavionBorder_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/8_3/PlaceDuchyOfAndurienCluster_ArcAction",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\8_3\\PlaceDuchyOfAndurienCluster_ArcAction.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/DuchyOfAndurien/DuchyOfAndurien_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/8_4/PlaceBackwaterRegionCluster_ArcAction",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\8_4\\PlaceBackwaterRegionCluster_ArcAction.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/BackwaterRegion/BackwaterRegion_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/9_1/PlaceMarik-LiaoBorderCluster_ArcAction",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\9_1\\PlaceMarik-LiaoBorderCluster_ArcAction.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/Marik-LiaoBorder/Marik-LiaoBorder_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/9_2/PlaceVacantWorldsCluster_ArcAction",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\9_2\\PlaceVacantWorldsCluster_ArcAction.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/VacantWorlds/VacantWorlds_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/9_3/PlaceFreeWorldInteriorCluster_ArcAction",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\9_3\\PlaceFreeWorldInteriorCluster_ArcAction.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/FreeWorldInterior/FreeWorldInterior_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/9_4/PlaceFreeWorldCommerceHubCluster_ArcAction",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\9_4\\PlaceFreeWorldCommerceHubCluster_ArcAction.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/FreeWorldCommerceHub/FreeWorldCommerceHub_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/EndgameClusters/PlaceAlarion_ArcAction",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\EndgameClusters\\PlaceAlarion_ArcAction.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/Alarion/Alarion_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/EndgameClusters/PlaceOutworldsAlliance_ArcAction",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\EndgameClusters\\PlaceOutworldsAlliance_ArcAction.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/OutworldsAlliance/OutworldsAlliance_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/EndgameClusters/PlaceRasalhague_ArcAction",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\EndgameClusters\\PlaceRasalhague_ArcAction.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/Rasalhague/Rasalhague_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/EndgameClusters/PlaceTaurian_ArcAction",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\EndgameClusters\\PlaceTaurian_ArcAction.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/Taurian/Taurian_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/MercStars/Place_HerotitusZone",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\MercStars\\Place_HerotitusZone.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/HerotitusZone/HerotitusZone_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/MercStars/Place_Outreach",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\MercStars\\Place_Outreach.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/Outreach/Outreach_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/MercStars/Place_WesterhandZone",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\MercStars\\Place_WesterhandZone.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/WesterhandZone/WesterhandZone_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/StoryCluster_01/PlaceCluster_SC01",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\StoryCluster_01\\PlaceCluster_SC01.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/SC01/SC01_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/StoryCluster_02/PlaceCluster_SC02",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\StoryCluster_02\\PlaceCluster_SC02.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/SC02/SC02_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/StoryCluster_03/PlaceCluster_SC03",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\StoryCluster_03\\PlaceCluster_SC03.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/SC03/SC03_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/StoryCluster_04/PlaceCluster_SC04",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\StoryCluster_04\\PlaceCluster_SC04.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/SC04/SC04_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/StoryCluster_05/PlaceCluster_SC05",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\StoryCluster_05\\PlaceCluster_SC05.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/SC05/SC05_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/StoryCluster_06/PlaceCluster_SC06",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\StoryCluster_06\\PlaceCluster_SC06.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/SC06/SC06_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    },
+    {
+      "asset_path": "/Game/Campaign/CampaignArcs/Regions/StoryCluster_07/PlaceCluster_SC07",
+      "file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\Campaign\\CampaignArcs\\Regions\\StoryCluster_07\\PlaceCluster_SC07.uasset",
+      "cluster_ref_count": 4,
+      "cluster_refs": [
+        "/Game/Campaign/Clusters/SC07/SC07_ClusterAsset",
+        "ClusterDataAsset",
+        "ClusterDataAssetId",
+        "MWClusterDataAsset"
+      ],
+      "cluster_name_strings": [
+        "ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B",
+        "ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3"
+      ]
+    }
+  ],
+  "csv_vs_editor_cluster_assets": {
+    "csv_cluster_ids": [
+      "A2M1_Cluster",
+      "AgriculturalBelt",
+      "AlarionPeriphery",
+      "BackwaterRegion",
+      "DavionBorder",
+      "DavionBorderlands",
+      "DavionKurita_1",
+      "DropshipGraveyard",
+      "DroughtWorlds",
+      "DutchyOfAndurien",
+      "EmptyWorlds",
+      "FWLCommercialHub",
+      "FWLInterior",
+      "FWLShippingRoute",
+      "IndustrialMiningCompany",
+      "InfernosWake",
+      "KuritaBorder",
+      "KuritaDavion",
+      "KuritanBadlands",
+      "LowerClassWorlds",
+      "LyranStrongholds",
+      "MarikLiaoBorder",
+      "MercenaryRow",
+      "OutworldsBorder",
+      "PirateCluster",
+      "RasalagueReaches",
+      "RashpurOwensInc",
+      "RebeliousLyranTerritory",
+      "RepairSystem_1",
+      "RepairSystem_10",
+      "RepairSystem_11",
+      "RepairSystem_12",
+      "RepairSystem_13",
+      "RepairSystem_14",
+      "RepairSystem_15",
+      "RepairSystem_16",
+      "RepairSystem_17",
+      "RepairSystem_18",
+      "RepairSystem_19",
+      "RepairSystem_2",
+      "RepairSystem_20",
+      "RepairSystem_21",
+      "RepairSystem_22",
+      "RepairSystem_23",
+      "RepairSystem_24",
+      "RepairSystem_25",
+      "RepairSystem_26",
+      "RepairSystem_27",
+      "RepairSystem_28",
+      "RepairSystem_29",
+      "RepairSystem_3",
+      "RepairSystem_30",
+      "RepairSystem_31",
+      "RepairSystem_4",
+      "RepairSystem_5",
+      "RepairSystem_6",
+      "RepairSystem_7",
+      "RepairSystem_8",
+      "RepairSystem_9",
+      "RogueSystems",
+      "ShippingRoute",
+      "SianCommonality",
+      "SteinerBorder",
+      "SteinerMarikBorder",
+      "StewartCommonality",
+      "StoryCluster1",
+      "StoryCluster10",
+      "StoryCluster2",
+      "StoryCluster3",
+      "StoryCluster4",
+      "StoryCluster5",
+      "StoryCluster6",
+      "StoryCluster7",
+      "TamarindAbbey",
+      "TaurianCorridor",
+      "TheJunkyard",
+      "TsinghaiCommonality"
+    ],
+    "editor_cluster_faction_names": [
+      "AgriculturalBelt",
+      "AlarionPeriphery",
+      "BackwaterRegion",
+      "DavionBorder",
+      "DavionBorderlands",
+      "DavionKurita_1",
+      "DropshipGraveyard",
+      "DroughtWorlds",
+      "DutchyOfAndurien",
+      "EmptyWorlds",
+      "FWLCommercialHub",
+      "FWLInterior",
+      "FWLShippingRoute",
+      "Herotitus",
+      "IndustrialMiningCompany",
+      "InfernosWake",
+      "KuritaDavion",
+      "KuritanBadlands",
+      "LowerClassWorlds",
+      "LyranStrongholds",
+      "MarikLiaoBorder",
+      "MercenaryRow",
+      "Outreach",
+      "OutworldsBorder",
+      "PirateCluster",
+      "RasalagueReaches",
+      "RashpurOwensInc",
+      "RebeliousLyranTerritory",
+      "RefinerySystems",
+      "RepairSystem_1",
+      "RepairSystem_10",
+      "RepairSystem_11",
+      "RepairSystem_12",
+      "RepairSystem_13",
+      "RepairSystem_14",
+      "RepairSystem_15",
+      "RepairSystem_16",
+      "RepairSystem_17",
+      "RepairSystem_18",
+      "RepairSystem_19",
+      "RepairSystem_2",
+      "RepairSystem_20",
+      "RepairSystem_21",
+      "RepairSystem_22",
+      "RepairSystem_23",
+      "RepairSystem_24",
+      "RepairSystem_25",
+      "RepairSystem_26",
+      "RepairSystem_27",
+      "RepairSystem_28",
+      "RepairSystem_29",
+      "RepairSystem_3",
+      "RepairSystem_30",
+      "RepairSystem_31",
+      "RepairSystem_4",
+      "RepairSystem_5",
+      "RepairSystem_6",
+      "RepairSystem_7",
+      "RepairSystem_8",
+      "RepairSystem_9",
+      "RogueSystems",
+      "ShippingRoute",
+      "SianCommonality",
+      "SteinerBorder",
+      "SteinerMarikBorder",
+      "StewartCommonality",
+      "StoryCluster1",
+      "StoryCluster3",
+      "StoryCluster4",
+      "StoryCluster5",
+      "StoryCluster6",
+      "StoryCluster7",
+      "TamarindAbbey",
+      "TaurianCorridor",
+      "TheJunkyard",
+      "TsinghaiCommonality",
+      "Westerhand"
+    ],
+    "csv_ids_missing_editor_faction_asset": [
+      "A2M1_Cluster",
+      "KuritaBorder",
+      "StoryCluster10",
+      "StoryCluster2"
+    ],
+    "editor_faction_assets_missing_csv_id": [
+      "Herotitus",
+      "Outreach",
+      "RefinerySystems",
+      "Westerhand"
+    ]
+  },
+  "original_tku_cooked_inner_sphere_strings": {
+    "string_count": 7461,
+    "asset_path_string_count": 240,
+    "sample_asset_paths": [
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_1.Safezone",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_10.Safezone",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_11.Safezone",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_12.Safezone",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_13.Safezone",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_14.Safezone",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_15.Safezone",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_16.Safezone",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_17.Safezone",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_18.Safezone",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_2.Safezone",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_3.Safezone",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_4.Safezone",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_5.Safezone",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_6.Safezone",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_7",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_7.Safezone",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_7_5.Safezone_7",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_8.Safezone",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_9.Safezone",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_10_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_10_Blob.Safezone_10_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_11_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_11_Blob.Safezone_11_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_12_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_12_Blob.Safezone_12_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_13_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_13_Blob.Safezone_13_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_14_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_14_Blob.Safezone_14_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_15_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_15_Blob.Safezone_15_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_16_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_16_Blob.Safezone_16_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_17_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_17_Blob.Safezone_17_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_18_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_18_Blob.Safezone_18_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_1_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_1_Blob.Safezone_1_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_2_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_2_Blob.Safezone_2_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_3_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_3_Blob.Safezone_3_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_4_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_4_Blob.Safezone_4_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_5_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_5_Blob.Safezone_5_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_6_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_6_Blob.Safezone_6_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_7_5_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_7_5_Blob.Safezone_7_5_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_7_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_7_Blob.Safezone_7_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_8_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_8_Blob.Safezone_8_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_9_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_9_Blob.Safezone_9_Blob",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone1",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone1.Safezone1",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone2",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone2.Safezone2",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone3",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone3.Safezone3",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone4",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone4.Safezone4",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone5",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone5.Safezone5",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone6",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone6.Safezone6",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone7",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone7.Safezone7",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone8",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone8.Safezone8",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone9",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone9.Safezone9",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/SafezoneCollision/Safezone1_Collision",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/SafezoneCollision/Safezone1_Collision.Safezone1_Collision",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/SafezoneCollision/Safezone2_Collision",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/SafezoneCollision/Safezone2_Collision.Safezone2_Collision",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/SafezoneCollision/Safezone3_Collision",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/SafezoneCollision/Safezone3_Collision.Safezone3_Collision",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/SafezoneCollision/Safezone4_Collision",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/SafezoneCollision/Safezone4_Collision.Safezone4_Collision",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/SafezoneCollision/Safezone5_Collision",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/SafezoneCollision/Safezone5_Collision.Safezone5_Collision",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/SafezoneCollision/Safezone6_Collision",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/SafezoneCollision/Safezone6_Collision.Safezone6_Collision",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/SafezoneCollision/Safezone7_Collision",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/SafezoneCollision/Safezone7_Collision.Safezone7_Collision",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/SafezoneCollision/Safezone8_Collision",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/SafezoneCollision/Safezone8_Collision.Safezone8_Collision",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/SafezoneCollision/Safezone9_Collision",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/SafezoneCollision/Safezone9_Collision.Safezone9_Collision",
+      "/Game/Campaign/CampaignArcs/MetagameObjectives/CampaignClusters/A2M1",
+      "/Game/Campaign/CampaignArcs/MetagameObjectives/CampaignClusters/A2M1.A2M1",
+      "/Game/Campaign/CampaignArcs/MetagameObjectives/CampaignClusters/A2M2",
+      "/Game/Campaign/CampaignArcs/MetagameObjectives/CampaignClusters/A2M2.A2M2",
+      "/Game/Campaign/CampaignArcs/MetagameObjectives/CampaignClusters/A2M3",
+      "/Game/Campaign/CampaignArcs/MetagameObjectives/CampaignClusters/A2M3.A2M3",
+      "/Game/Campaign/CampaignArcs/Regions/10_1/10",
+      "/Game/Campaign/CampaignArcs/Regions/10_1/10_1.10",
+      "/Game/Campaign/CampaignArcs/Regions/10_2/10",
+      "/Game/Campaign/CampaignArcs/Regions/10_2/10_2.10",
+      "/Game/Campaign/CampaignArcs/Regions/10_3/10",
+      "/Game/Campaign/CampaignArcs/Regions/10_3/10_3.10",
+      "/Game/Campaign/CampaignArcs/Regions/11_1/11",
+      "/Game/Campaign/CampaignArcs/Regions/11_1/11_1.11",
+      "/Game/Campaign/CampaignArcs/Regions/11_2/11",
+      "/Game/Campaign/CampaignArcs/Regions/11_2/11_2.11",
+      "/Game/Campaign/CampaignArcs/Regions/11_3/11",
+      "/Game/Campaign/CampaignArcs/Regions/11_3/11_3.11",
+      "/Game/Campaign/CampaignArcs/Regions/12_1/12",
+      "/Game/Campaign/CampaignArcs/Regions/12_1/12_1.12",
+      "/Game/Campaign/CampaignArcs/Regions/12_2/12",
+      "/Game/Campaign/CampaignArcs/Regions/12_2/12_2.12",
+      "/Game/Campaign/CampaignArcs/Regions/12_3/12",
+      "/Game/Campaign/CampaignArcs/Regions/12_3/12_3.12",
+      "/Game/Campaign/CampaignArcs/Regions/12_4/12"
+    ],
+    "current_cluster_ids_found_count": 46,
+    "current_cluster_ids_found": [
+      "A2M1_Cluster",
+      "AgriculturalBelt",
+      "AlarionPeriphery",
+      "BackwaterRegion",
+      "DavionBorder",
+      "DavionBorderlands",
+      "DropshipGraveyard",
+      "DroughtWorlds",
+      "DutchyOfAndurien",
+      "EmptyWorlds",
+      "FWLCommercialHub",
+      "FWLInterior",
+      "FWLShippingRoute",
+      "IndustrialMiningCompany",
+      "InfernosWake",
+      "KuritaBorder",
+      "KuritaDavion",
+      "KuritanBadlands",
+      "LowerClassWorlds",
+      "LyranStrongholds",
+      "MarikLiaoBorder",
+      "MercenaryRow",
+      "OutworldsBorder",
+      "PirateCluster",
+      "RasalagueReaches",
+      "RashpurOwensInc",
+      "RebeliousLyranTerritory",
+      "RepairSystem_3",
+      "RogueSystems",
+      "ShippingRoute",
+      "SianCommonality",
+      "SteinerBorder",
+      "SteinerMarikBorder",
+      "StewartCommonality",
+      "StoryCluster1",
+      "StoryCluster10",
+      "StoryCluster2",
+      "StoryCluster3",
+      "StoryCluster4",
+      "StoryCluster5",
+      "StoryCluster6",
+      "StoryCluster7",
+      "TamarindAbbey",
+      "TaurianCorridor",
+      "TheJunkyard",
+      "TsinghaiCommonality"
+    ],
+    "term_hit_counts": {
+      "ClusterOverlay": 1,
+      "ClusterConstellation": 1,
+      "MWFactionAsset": 1,
+      "FactionBorderMeshes": 80,
+      "Regions/": 80,
+      "CustomContent/Zones_Clan": 8,
+      "Lyran": 2,
+      "Steiner": 2,
+      "Clan": 19,
+      "Taurian": 1,
+      "Outworlds": 1,
+      "Canopus": 1
+    },
+    "term_hit_samples": {
+      "ClusterOverlay": [
+        "ClusterOverlay"
+      ],
+      "ClusterConstellation": [
+        "ClusterConstellation"
+      ],
+      "MWFactionAsset": [
+        "MWFactionAsset"
+      ],
+      "FactionBorderMeshes": [
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_1.Safezone",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_10.Safezone",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_11.Safezone",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_12.Safezone",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_13.Safezone",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_14.Safezone",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_15.Safezone",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_16.Safezone",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_17.Safezone",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_18.Safezone",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_2.Safezone",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_3.Safezone",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_4.Safezone",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_5.Safezone",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_6.Safezone",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_7",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_7.Safezone",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_7_5.Safezone_7",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_8.Safezone",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_9.Safezone",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_10_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_10_Blob.Safezone_10_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_11_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_11_Blob.Safezone_11_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_12_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_12_Blob.Safezone_12_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_13_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_13_Blob.Safezone_13_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_14_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_14_Blob.Safezone_14_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_15_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_15_Blob.Safezone_15_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_16_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_16_Blob.Safezone_16_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_17_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_17_Blob.Safezone_17_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_18_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_18_Blob.Safezone_18_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_1_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_1_Blob.Safezone_1_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_2_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_2_Blob.Safezone_2_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_3_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_3_Blob.Safezone_3_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_4_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_4_Blob.Safezone_4_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_5_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_5_Blob.Safezone_5_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_6_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_6_Blob.Safezone_6_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_7_5_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_7_5_Blob.Safezone_7_5_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_7_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_7_Blob.Safezone_7_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_8_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_8_Blob.Safezone_8_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_9_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_9_Blob.Safezone_9_Blob",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone1",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone1.Safezone1",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone2",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone2.Safezone2",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone3",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone3.Safezone3",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone4",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone4.Safezone4",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone5",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone5.Safezone5",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone6",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone6.Safezone6",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone7",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone7.Safezone7",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone8",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone8.Safezone8",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone9",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone9.Safezone9",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/SafezoneCollision/Safezone1_Collision",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/SafezoneCollision/Safezone1_Collision.Safezone1_Collision",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/SafezoneCollision/Safezone2_Collision"
+      ],
+      "Regions/": [
+        "/Game/Campaign/CampaignArcs/Regions/10_1/10",
+        "/Game/Campaign/CampaignArcs/Regions/10_1/10_1.10",
+        "/Game/Campaign/CampaignArcs/Regions/10_2/10",
+        "/Game/Campaign/CampaignArcs/Regions/10_2/10_2.10",
+        "/Game/Campaign/CampaignArcs/Regions/10_3/10",
+        "/Game/Campaign/CampaignArcs/Regions/10_3/10_3.10",
+        "/Game/Campaign/CampaignArcs/Regions/11_1/11",
+        "/Game/Campaign/CampaignArcs/Regions/11_1/11_1.11",
+        "/Game/Campaign/CampaignArcs/Regions/11_2/11",
+        "/Game/Campaign/CampaignArcs/Regions/11_2/11_2.11",
+        "/Game/Campaign/CampaignArcs/Regions/11_3/11",
+        "/Game/Campaign/CampaignArcs/Regions/11_3/11_3.11",
+        "/Game/Campaign/CampaignArcs/Regions/12_1/12",
+        "/Game/Campaign/CampaignArcs/Regions/12_1/12_1.12",
+        "/Game/Campaign/CampaignArcs/Regions/12_2/12",
+        "/Game/Campaign/CampaignArcs/Regions/12_2/12_2.12",
+        "/Game/Campaign/CampaignArcs/Regions/12_3/12",
+        "/Game/Campaign/CampaignArcs/Regions/12_3/12_3.12",
+        "/Game/Campaign/CampaignArcs/Regions/12_4/12",
+        "/Game/Campaign/CampaignArcs/Regions/12_4/12_4.12",
+        "/Game/Campaign/CampaignArcs/Regions/13_1/13",
+        "/Game/Campaign/CampaignArcs/Regions/13_1/13_1.13",
+        "/Game/Campaign/CampaignArcs/Regions/13_2/13",
+        "/Game/Campaign/CampaignArcs/Regions/13_2/13_2.13",
+        "/Game/Campaign/CampaignArcs/Regions/13_3/13",
+        "/Game/Campaign/CampaignArcs/Regions/13_3/13_3.13",
+        "/Game/Campaign/CampaignArcs/Regions/3_1/3_1_Mesh",
+        "/Game/Campaign/CampaignArcs/Regions/3_1/3_1_Mesh.3_1_Mesh",
+        "/Game/Campaign/CampaignArcs/Regions/4_1/4_1_Mesh",
+        "/Game/Campaign/CampaignArcs/Regions/4_1/4_1_Mesh.4_1_Mesh",
+        "/Game/Campaign/CampaignArcs/Regions/5_1/5_1_Mesh",
+        "/Game/Campaign/CampaignArcs/Regions/5_1/5_1_Mesh.5_1_Mesh",
+        "/Game/Campaign/CampaignArcs/Regions/5_2/5_2_Mesh",
+        "/Game/Campaign/CampaignArcs/Regions/5_2/5_2_Mesh.5_2_Mesh",
+        "/Game/Campaign/CampaignArcs/Regions/6_1/6_1_Mesh",
+        "/Game/Campaign/CampaignArcs/Regions/6_1/6_1_Mesh.6_1_Mesh",
+        "/Game/Campaign/CampaignArcs/Regions/6_2/6_2_Mesh",
+        "/Game/Campaign/CampaignArcs/Regions/6_2/6_2_Mesh.6_2_Mesh",
+        "/Game/Campaign/CampaignArcs/Regions/6_3/6_3_Mesh",
+        "/Game/Campaign/CampaignArcs/Regions/6_3/6_3_Mesh.6_3_Mesh",
+        "/Game/Campaign/CampaignArcs/Regions/7_1/7_1_Mesh",
+        "/Game/Campaign/CampaignArcs/Regions/7_1/7_1_Mesh.7_1_Mesh",
+        "/Game/Campaign/CampaignArcs/Regions/7_2/7_2_Mesh",
+        "/Game/Campaign/CampaignArcs/Regions/7_2/7_2_Mesh.7_2_Mesh",
+        "/Game/Campaign/CampaignArcs/Regions/8_1/8",
+        "/Game/Campaign/CampaignArcs/Regions/8_1/8_1.8",
+        "/Game/Campaign/CampaignArcs/Regions/8_2/8",
+        "/Game/Campaign/CampaignArcs/Regions/8_2/8_2.8",
+        "/Game/Campaign/CampaignArcs/Regions/8_3/8",
+        "/Game/Campaign/CampaignArcs/Regions/8_3/8_3.8",
+        "/Game/Campaign/CampaignArcs/Regions/8_4/8",
+        "/Game/Campaign/CampaignArcs/Regions/8_4/8_4.8",
+        "/Game/Campaign/CampaignArcs/Regions/9_1/9",
+        "/Game/Campaign/CampaignArcs/Regions/9_1/9_1.9",
+        "/Game/Campaign/CampaignArcs/Regions/9_2/9",
+        "/Game/Campaign/CampaignArcs/Regions/9_2/9_2.9",
+        "/Game/Campaign/CampaignArcs/Regions/9_3/9",
+        "/Game/Campaign/CampaignArcs/Regions/9_3/9_3.9",
+        "/Game/Campaign/CampaignArcs/Regions/9_4/9",
+        "/Game/Campaign/CampaignArcs/Regions/9_4/9_4.9",
+        "/Game/Campaign/CampaignArcs/Regions/EndgameClusters/15",
+        "/Game/Campaign/CampaignArcs/Regions/EndgameClusters/15_1.15",
+        "/Game/Campaign/CampaignArcs/Regions/EndgameClusters/15_2.15",
+        "/Game/Campaign/CampaignArcs/Regions/EndgameClusters/15_3.15",
+        "/Game/Campaign/CampaignArcs/Regions/EndgameClusters/15_4.15",
+        "/Game/Campaign/CampaignArcs/Regions/EndgameClusters/29_Collision",
+        "/Game/Campaign/CampaignArcs/Regions/EndgameClusters/29_Collision.29_Collision",
+        "/Game/Campaign/CampaignArcs/Regions/EndgameClusters/30_Collision",
+        "/Game/Campaign/CampaignArcs/Regions/EndgameClusters/30_Collision.30_Collision",
+        "/Game/Campaign/CampaignArcs/Regions/EndgameClusters/31_Collision",
+        "/Game/Campaign/CampaignArcs/Regions/EndgameClusters/31_Collision.31_Collision",
+        "/Game/Campaign/CampaignArcs/Regions/EndgameClusters/Safezone",
+        "/Game/Campaign/CampaignArcs/Regions/EndgameClusters/Safezone_29.Safezone",
+        "/Game/Campaign/CampaignArcs/Regions/EndgameClusters/Safezone_30.Safezone",
+        "/Game/Campaign/CampaignArcs/Regions/EndgameClusters/Safezone_31.Safezone",
+        "/Game/Campaign/CampaignArcs/Regions/StoryCluster_01/StoryCluster_1_STM",
+        "/Game/Campaign/CampaignArcs/Regions/StoryCluster_01/StoryCluster_1_STM.StoryCluster_1_STM",
+        "/Game/Campaign/CampaignArcs/Regions/StoryCluster_03/StoryMixer_3_STM",
+        "/Game/Campaign/CampaignArcs/Regions/StoryCluster_03/StoryMixer_3_STM.StoryMixer_3_STM",
+        "/Game/Campaign/CampaignArcs/Regions/StoryCluster_04/StoryCluster_4_STM"
+      ],
+      "CustomContent/Zones_Clan": [
+        "/Game/CustomContent/Zones_Clan_Safezone",
+        "/Game/CustomContent/Zones_Clan_Safezone_1.Zones_Clan_Safezone",
+        "/Game/CustomContent/Zones_Clan_Safezone_2.Zones_Clan_Safezone",
+        "/Game/CustomContent/Zones_ClanConf",
+        "/Game/CustomContent/Zones_ClanConf_1.Zones_ClanConf",
+        "/Game/CustomContent/Zones_ClanConf_2.Zones_ClanConf",
+        "/Game/CustomContent/Zones_ClanConf_3.Zones_ClanConf",
+        "/Game/CustomContent/Zones_ClanConf_4.Zones_ClanConf"
+      ],
+      "Lyran": [
+        "LyranStrongholds",
+        "RebeliousLyranTerritory"
+      ],
+      "Steiner": [
+        "SteinerBorder",
+        "SteinerMarikBorder"
+      ],
+      "Clan": [
+        "/Game/CustomContent/Zones_Clan_Safezone",
+        "/Game/CustomContent/Zones_Clan_Safezone_1.Zones_Clan_Safezone",
+        "/Game/CustomContent/Zones_Clan_Safezone_2.Zones_Clan_Safezone",
+        "/Game/CustomContent/Zones_ClanConf",
+        "/Game/CustomContent/Zones_ClanConf_1.Zones_ClanConf",
+        "/Game/CustomContent/Zones_ClanConf_2.Zones_ClanConf",
+        "/Game/CustomContent/Zones_ClanConf_3.Zones_ClanConf",
+        "/Game/CustomContent/Zones_ClanConf_4.Zones_ClanConf",
+        "Albion (Clan)",
+        "Arcadia (Clan)",
+        "Atreus (Clan)",
+        "ClanConflict",
+        "Dagda (Clan)",
+        "Declan",
+        "Niles (Clan)",
+        "RepairSystem_Clan",
+        "Sheridan (Clan)",
+        "Tiber (Clan)",
+        "York (Clan)"
+      ],
+      "Taurian": [
+        "TaurianCorridor"
+      ],
+      "Outworlds": [
+        "OutworldsBorder"
+      ],
+      "Canopus": [
+        "Canopus"
+      ]
+    }
+  }
+}

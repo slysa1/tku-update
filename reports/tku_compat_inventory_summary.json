@@ -1,0 +1,66 @@
+{
+  "pak_summaries": [
+    {
+      "label": "game",
+      "path": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Content\\Paks\\MW5Mercs-WindowsNoEditor.pak",
+      "mount_point": "../../../",
+      "version": 11,
+      "file_count": 239830,
+      "game_entry_count": 239466,
+      "plugin_entry_count": 298
+    },
+    {
+      "label": "tku_mod",
+      "path": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\TheKnownUniverse\\Paks\\TheKnownUniverse.pak",
+      "mount_point": "../../../MW5Mercs/",
+      "version": 11,
+      "file_count": 2709,
+      "game_entry_count": 282,
+      "plugin_entry_count": 2425
+    },
+    {
+      "label": "tku_override",
+      "path": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Content\\Paks\\MW5Mercs-zKnownUniverseStarmap.pak",
+      "mount_point": "../../../MW5Mercs/Content/",
+      "version": 4,
+      "file_count": 40,
+      "game_entry_count": 40,
+      "plugin_entry_count": 0
+    }
+  ],
+  "manifest_count": 141,
+  "matrix_count": 1333,
+  "tier_counts": {
+    "-": 1174,
+    "A": 5,
+    "B": 3,
+    "C": 6,
+    "keep": 127,
+    "review": 18
+  },
+  "domain_counts": {
+    "border_changes": 3,
+    "employer_assets": 108,
+    "employer_info_data": 1,
+    "faction_assets": 17,
+    "faction_materials": 3,
+    "frontend_starmap_actor": 1,
+    "frontend_starmap_body": 1,
+    "frontend_starmap_level": 1,
+    "frontend_starmap_pawn": 1,
+    "frontend_support_library": 1,
+    "innersphere_data": 1,
+    "persona_assets": 2,
+    "plugin_content": 1174,
+    "root_other": 18,
+    "system_faction_changes": 1
+  },
+  "tier_a_base_paths": [
+    "/Game/Levels/FrontEnd/StarMap",
+    "/Game/Libraries/MW5_TOI_Functions",
+    "/Game/UI/FrontEnd/StarMapPawn",
+    "/Game/UI/FrontEnd/Starmap/StarMapActor",
+    "/Game/UI/FrontEnd/Starmap/StarSystemBody"
+  ],
+  "tier_a_missing_vanilla": []
+}

@@ -1,0 +1,16 @@
+{
+  "patch_name": "TheKnownUniverseCompatPatch",
+  "patch_root": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\TheKnownUniverseCompatPatch",
+  "patch_pak": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\TheKnownUniverseCompatPatch\\Paks\\TheKnownUniverseCompatPatch.pak",
+  "patch_pak_size": 312,
+  "content_patch_pak": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Content\\Paks\\MW5Mercs-zzzKnownUniverseCompatPatch.pak",
+  "content_patch_pak_size": 312,
+  "staging_root": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\TheKnownUniverseCompatPatch\\Staging\\TierB_4\\MW5Mercs\\Content",
+  "tier": "B",
+  "selection_mode": "tiered",
+  "selected_base_paths": [],
+  "exact_paths": [],
+  "manifest_paths": [],
+  "load_order": 999,
+  "game_version": "1.13.378"
+}

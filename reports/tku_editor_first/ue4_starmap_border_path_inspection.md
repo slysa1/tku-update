@@ -1,0 +1,509 @@
+# UE4 Starmap Border Path Inspection
+
+Focused MW5 Mod Editor dump for the crash family around `BaseStarMapBorderActor_C`, `StarMapActor_2570_C`, dated border actors, cluster assets, and starmap bounds.
+
+## Summary
+
+- inspected assets: `55`
+- parent `BlueprintGeneratedClass'/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.BaseStarMapBorderActor_C'` count `15`
+- parent `BlueprintGeneratedClass'/Game/Campaign/CampaignArcActions/StateChangeActions/UpdateStarmapBorders_ArcAction.UpdateStarmapBorders_ArcAction_C'` count `13`
+- parent `Class'/Script/MechWarrior.MWCampaignArcAction'` count `2`
+- parent `Class'/Script/MechWarrior.MWStarMapBorderActor'` count `1`
+- parent `Class'/Script/Blutility.EditorUtilityWidget'` count `1`
+- parent `Class'/Script/MechWarrior.MWStarMapPawn'` count `1`
+- parent `Class'/Script/MechWarrior.MWStarMap'` count `1`
+- parent `Class'/Script/MechWarrior.MWStarSystemBody'` count `1`
+- assets depending on `BaseStarMapBorderActor`:
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/StarMapBorderActor3015`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3025_ThirdSuccession/StarMapBorderActor3025`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3029_FormationOfTikinovAndStIves/StarMapBorderActor3029`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3030_FourthSuccession/StarMapBorderActor3030`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3031_TikinovJoinsFederatedSuns/StarMapBorderActor3031`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/StarMapBorderActor3034`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3039_WarOf3039/StarMapBorderActor3039`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3041_FormationOfFederatedCommonwealth/StarMapBorderActor3041`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3049_ClanInvasion/StarMapBorderActor3049`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave1/StarMapBorderActor3050_Wave1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave2/StarMapBorderActor3050_Wave2`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave3/StarMapBorderActor3050_Wave3`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_YearOfPeace_Wave4/StarMapBorderActor3050_Wave4`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3051_EndOfOperationRevival_Wave5/StarMapBorderActor3050_Wave5`
+- `/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor`
+- `/Game/Campaign/Dialogue/HoloTable/StarMapActor_2570`
+
+## Focus Findings
+
+### `/Game/Campaign/Dialogue/HoloTable/StarMapActor_2570`
+- exists: `True`
+- asset_class: `Blueprint`
+- GeneratedClass: `BlueprintGeneratedClass'/Game/Campaign/Dialogue/HoloTable/StarMapActor_2570.StarMapActor_2570_C'`
+- ParentClass: `BlueprintGeneratedClass'/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.BaseStarMapBorderActor_C'`
+- NativeParentClass: `Class'/Script/MechWarrior.MWStarMapBorderActor'`
+- class chain:
+- `/Game/Campaign/Dialogue/HoloTable/StarMapActor_2570.StarMapActor_2570_C`
+- get_dependencies count: `24`
+- `/Engine/EditorBlueprintResources/StandardMacros`
+- `/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor`
+- `/Game/Campaign/Dialogue/HoloTable/HolotableStarMap_ENUM`
+- `/Game/Campaign/Dialogue/HoloTable/Materials/HoloTable_Hologram_MTI`
+- `/Game/Campaign/Dialogue/HoloTable/Materials/Holo_Act3Region_MTI`
+- `/Game/Campaign/Dialogue/HoloTable/Materials/Holo_FWL_MTI`
+- `/Game/Campaign/Dialogue/HoloTable/Materials/Holo_Federated_MTI`
+- `/Game/Campaign/Dialogue/HoloTable/Materials/Holo_Kurita_MTI`
+- `/Game/Campaign/Dialogue/HoloTable/Materials/Holo_Liao_MTI`
+- `/Game/Campaign/Dialogue/HoloTable/Materials/Holo_Lyran_MTI`
+- `/Game/Campaign/Dialogue/HoloTable/Materials/Holo_Terra_MTI`
+- `/Game/Campaign/Dialogue/HoloTable/StarMap/Draconis`
+- `/Game/Campaign/Dialogue/HoloTable/StarMap/Federated`
+- `/Game/Campaign/Dialogue/HoloTable/StarMap/Free`
+- `/Game/Campaign/Dialogue/HoloTable/StarMap/Liao`
+- `/Game/Campaign/Dialogue/HoloTable/StarMap/Lyran`
+- `/Game/Campaign/Dialogue/HoloTable/StarMap/Terran`
+- `/Game/Campaign/Dialogue/HoloTable/StarMapActor_2570`
+- `/Game/Objects/_common/Materials/Effects/Hologram/PCLs_and_MTLs/PCLs/Holo_FiveWorlds_PCL`
+- `/Game/Objects/_common/Materials/Effects/Hologram/PCLs_and_MTLs/PCLs/Holo_LostWorlds_PCL`
+- `/Script/ActorSequence`
+- `/Script/MovieScene`
+- `/Script/MovieSceneTools`
+- `/Script/MovieSceneTracks`
+- get_referencers count: `3`
+- `/Game/Campaign/Dialogue/HoloTable/Holotable_Manager_BP`
+- `/Game/Campaign/Dialogue/HoloTable/StarMapActor_2570`
+- `/Game/Levels/Dropships/Leopard_Level`
+
+### `/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor`
+- exists: `True`
+- asset_class: `Blueprint`
+- GeneratedClass: `BlueprintGeneratedClass'/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.BaseStarMapBorderActor_C'`
+- ParentClass: `Class'/Script/MechWarrior.MWStarMapBorderActor'`
+- NativeParentClass: `Class'/Script/MechWarrior.MWStarMapBorderActor'`
+- class chain:
+- `/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.BaseStarMapBorderActor_C`
+- get_dependencies count: `3`
+- `/Engine/EditorBlueprintResources/StandardMacros`
+- `/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor`
+- `/Script/MechWarrior`
+- get_referencers count: `17`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/StarMapBorderActor3015`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3025_ThirdSuccession/StarMapBorderActor3025`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3029_FormationOfTikinovAndStIves/StarMapBorderActor3029`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3030_FourthSuccession/StarMapBorderActor3030`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3031_TikinovJoinsFederatedSuns/StarMapBorderActor3031`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/StarMapBorderActor3034`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3039_WarOf3039/StarMapBorderActor3039`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3041_FormationOfFederatedCommonwealth/StarMapBorderActor3041`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3049_ClanInvasion/StarMapBorderActor3049`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave1/StarMapBorderActor3050_Wave1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave2/StarMapBorderActor3050_Wave2`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave3/StarMapBorderActor3050_Wave3`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_YearOfPeace_Wave4/StarMapBorderActor3050_Wave4`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3051_EndOfOperationRevival_Wave5/StarMapBorderActor3050_Wave5`
+- `/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor`
+- `/Game/Campaign/Dialogue/HoloTable/StarMapActor_2570`
+- `/Game/Levels/Dropships/Leopard_Level`
+
+### `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015`
+- exists: `True`
+- asset_class: `MWStarMapBorderAsset`
+- known properties:
+- `BorderActor` = `<Object '/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/StarMapBorderActor3015.StarMapBorderActor3015_C' (0x000002B612E2DD00) Class 'BlueprintGeneratedClass'>`
+- `border_actor` = `<Object '/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/StarMapBorderActor3015.StarMapBorderActor3015_C' (0x000002B612E2DD00) Class 'BlueprintGeneratedClass'>`
+- get_dependencies count: `2`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/StarMapBorderActor3015`
+- `/Script/MechWarrior`
+- get_referencers count: `22`
+- `/Game/Campaign/StartConditions/Act1Complete_StartConditions`
+- `/Game/Campaign/StartConditions/Act1Complete_TutorialStartConditions`
+- `/Game/Campaign/StartConditions/Act2Complete_StartConditions`
+- `/Game/Campaign/StartConditions/Act2Complete_TutorialStartConditions`
+- `/Game/Campaign/StartConditions/Dev/Post_A1M1_Start`
+- `/Game/Campaign/StartConditions/MainCampaign_StartConditionsAsset`
+- `/Game/Campaign/StartConditions/MainCampaign_TutorialStartConditionsAsset`
+- `/Game/Campaign/StartConditions/PostAct3_StartConditions`
+- `/Game/Campaign/StartConditions/PreAct2_StartConditions`
+- `/Game/Campaign/StartConditions/PreAct2_TutorialStartConditions`
+- `/Game/Campaign/StartConditions/PreAct3_StartConditions`
+- `/Game/Campaign/StartConditions/PreAct3_TutorialStartConditions`
+- `/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start`
+- `/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial`
+- `/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start`
+- `/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial`
+- `/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start`
+- `/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial`
+- `/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start`
+- `/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial`
+- `/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start`
+- `/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial`
+
+### `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/StarMapBorderActor3015`
+- exists: `True`
+- asset_class: `Blueprint`
+- GeneratedClass: `BlueprintGeneratedClass'/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/StarMapBorderActor3015.StarMapBorderActor3015_C'`
+- ParentClass: `BlueprintGeneratedClass'/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.BaseStarMapBorderActor_C'`
+- NativeParentClass: `Class'/Script/MechWarrior.MWStarMapBorderActor'`
+- class chain:
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/StarMapBorderActor3015.StarMapBorderActor3015_C`
+- get_dependencies count: `8`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/FactionBorder_3015/1_3015`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/FactionBorder_3015/2_3015`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/FactionBorder_3015/3_3015`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/FactionBorder_3015/4_3015`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/FactionBorder_3015/5_3015`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/FactionBorder_3015/6_3015`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/StarMapBorderActor3015`
+- `/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor`
+- get_referencers count: `2`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/StarMapBorderActor3015`
+
+### `/Game/Campaign/CampaignArcs/BorderChanges/AllStarMapBorderChanges`
+- exists: `True`
+- asset_class: `MWCampaignArcAsset`
+- get_dependencies count: `9`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3025_ThirdSuccession/3025_ThirdSuccession`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3029_FormationOfTikinovAndStIves/3029_FormationOfTikinovAndStIves`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3030_FourthSuccession/3030_FourthSuccession`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3031_TikinovJoinsFederatedSuns/3031_TikinovJoinsFederatedSuns`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/Borders_Year3034_RassalhaugeRecognized`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3039_WarOf3039/3039_WarOf3039`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3041_FormationOfFederatedCommonwealth/3041_FormationOfFederatedCommonwealth`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3049_ClanInvasion/3049_ClanInvasion`
+- `/Script/MechWarrior`
+- get_referencers count: `4`
+- `/Game/Campaign/CampaignArcs/MW5CoreCampaign`
+- `/Game/DLC1/CareerMode/CareerModeCoreCampaign`
+- `/Game/DLC7/CampaignData/DEBUG_DLC7_Act2_CampaignArc`
+- `/Game/DLC7/CampaignData/DEBUG_DLC7_Act3_CampaignArc`
+
+### `/Game/Campaign/CampaignArcActions/StateChangeActions/UpdateStarmapBorders_ArcAction`
+- exists: `True`
+- asset_class: `Blueprint`
+- GeneratedClass: `BlueprintGeneratedClass'/Game/Campaign/CampaignArcActions/StateChangeActions/UpdateStarmapBorders_ArcAction.UpdateStarmapBorders_ArcAction_C'`
+- ParentClass: `Class'/Script/MechWarrior.MWCampaignArcAction'`
+- NativeParentClass: `Class'/Script/MechWarrior.MWCampaignArcAction'`
+- class chain:
+- `/Game/Campaign/CampaignArcActions/StateChangeActions/UpdateStarmapBorders_ArcAction.UpdateStarmapBorders_ArcAction_C`
+- default object known properties:
+- `Config` = `<Struct 'UpdateStarmapBorders_Config' (0x000002B613694758) {}>`
+- `config` = `<Struct 'UpdateStarmapBorders_Config' (0x000002B613694758) {}>`
+- get_dependencies count: `4`
+- `/Engine/EditorBlueprintResources/StandardMacros`
+- `/Game/Campaign/CampaignArcActions/StateChangeActions/StateChangeConfigs/UpdateStarmapBorders_Config`
+- `/Game/Campaign/CampaignArcActions/StateChangeActions/UpdateStarmapBorders_ArcAction`
+- `/Script/MechWarrior`
+- get_referencers count: `14`
+- `/Game/Campaign/CampaignArcActions/StateChangeActions/UpdateStarmapBorders_ArcAction`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3025_ThirdSuccession/StarMapBordersUpdate_3025_ArcAction`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3029_FormationOfTikinovAndStIves/StarMapBordersUpdate_3029_ArcAction`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3030_FourthSuccession/StarMapBordersUpdate_3030_ArcAction`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3031_TikinovJoinsFederatedSuns/StarMapBordersUpdate_3031_ArcAction`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/StarMapBordersUpdate_3034_ArcAction`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3039_WarOf3039/StarMapBordersUpdate_3039_ArcAction`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3041_FormationOfFederatedCommonwealth/StarMapBordersUpdate_3041_ArcAction`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3049_ClanInvasion/StarMapBordersUpdate_3049_ArcAction`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave1/StarMapBordersUpdate_3050_Wave1_ArcAction`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave2/StarMapBordersUpdate_3050_Wave2_ArcAction`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave3/StarMapBordersUpdate_3050_Wave3_ArcAction`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_YearOfPeace_Wave4/StarMapBordersUpdate_3050_Wave4_ArcAction`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3051_EndOfOperationRevival_Wave5/StarMapBordersUpdate_3050_Wave5_ArcAction`
+
+### `/Game/UI/Editor/Utils/EUW_MigratePlaceClusterTOIsToClusterAssets`
+- exists: `True`
+- asset_class: `EditorUtilityWidgetBlueprint`
+- GeneratedClass: `WidgetBlueprintGeneratedClass'/Game/UI/Editor/Utils/EUW_MigratePlaceClusterTOIsToClusterAssets.EUW_MigratePlaceClusterTOIsToClusterAssets_C'`
+- ParentClass: `Class'/Script/Blutility.EditorUtilityWidget'`
+- NativeParentClass: `Class'/Script/Blutility.EditorUtilityWidget'`
+- get_dependencies count: `18`
+- `/Engine/EditorBlueprintResources/StandardMacros`
+- `/Game/Campaign/CampaignArcActions/MissionActions/MissionConfigs/PlaceClusterToi_Config`
+- `/Game/Campaign/CampaignArcActions/MissionActions/MissionConfigs/PlaceClusterToi_Markups`
+- `/Game/Campaign/CampaignArcActions/MissionActions/PlaceClusterToi_ArcAction`
+- `/Game/Campaign/_common/ClusterToiDataFragment`
+- `/Game/InnerSphereData/MW5_InnerSphereData`
+- `/Game/UI/Editor/Utils/EUW_MigratePlaceClusterTOIsToClusterAssets`
+- `/Game/UI/Font/Futura/Futura`
+- `/Game/UI/FrontEnd/Codex/Codex_TextBox_Style`
+- `/Script/AssetRegistry`
+- `/Script/AssetTools`
+- `/Script/Blutility`
+- `/Script/EditorScriptingUtilities`
+- `/Script/MechWarrior`
+- `/Script/PythonScriptPlugin`
+- `/Script/UMG`
+- `/Script/UMGEditor`
+- `/Script/VictoryBPLibrary`
+- get_referencers count: `1`
+- `/Game/UI/Editor/Utils/EUW_MigratePlaceClusterTOIsToClusterAssets`
+
+### `/Game/Campaign/CampaignArcActions/MissionActions/PlaceClusterToi_ArcAction`
+- exists: `True`
+- asset_class: `Blueprint`
+- GeneratedClass: `BlueprintGeneratedClass'/Game/Campaign/CampaignArcActions/MissionActions/PlaceClusterToi_ArcAction.PlaceClusterToi_ArcAction_C'`
+- ParentClass: `Class'/Script/MechWarrior.MWCampaignArcAction'`
+- NativeParentClass: `Class'/Script/MechWarrior.MWCampaignArcAction'`
+- class chain:
+- `/Game/Campaign/CampaignArcActions/MissionActions/PlaceClusterToi_ArcAction.PlaceClusterToi_ArcAction_C`
+- default object known properties:
+- `Config` = `<Struct 'PlaceClusterToi_Config' (0x000002B60AAC4818) {}>`
+- `config` = `<Struct 'PlaceClusterToi_Config' (0x000002B60AAC4818) {}>`
+- `ClusterDataAsset` = `None`
+- `ClusterDataAssetId` = `<Struct 'ClusterDataAssetId' (0x000002B60AAC48B0) {id: {primary_asset_type: {name: ""}, primary_asset_name: ""}}>`
+- get_dependencies count: `8`
+- `/Engine/EditorBlueprintResources/StandardMacros`
+- `/Game/Campaign/CampaignArcActions/MissionActions/MissionConfigs/PlaceClusterToi_Config`
+- `/Game/Campaign/CampaignArcActions/MissionActions/MissionConfigs/PlaceClusterToi_Markups`
+- `/Game/Campaign/CampaignArcActions/MissionActions/PlaceClusterToi_ArcAction`
+- `/Game/Campaign/TOIs/CLusterToi`
+- `/Game/Campaign/TOIs/ClusterToiLogic`
+- `/Game/Campaign/_common/ClusterToiDataFragment`
+- `/Script/MechWarrior`
+- get_referencers count: `229`
+- `/Game/Campaign/CampaignArcActions/MissionActions/PlaceClusterToiUtility`
+- `/Game/Campaign/CampaignArcActions/MissionActions/PlaceClusterToi_ArcAction`
+- `/Game/Campaign/CampaignArcs/MetagameObjectives/CampaignClusters/PlaceA2M1_Cluster`
+- `/Game/Campaign/CampaignArcs/MetagameObjectives/CampaignClusters/PlaceA2M2_Cluster`
+- `/Game/Campaign/CampaignArcs/MetagameObjectives/CampaignClusters/PlaceA2M3_Cluster`
+- `/Game/Campaign/CampaignArcs/MetagameObjectives/PlaceBanditsLair_Cluster_ArcAction`
+- `/Game/Campaign/CampaignArcs/MetagameObjectives/RegionArcs/Davion/PlaceIndustrialHub_10_ArcAction`
+- `/Game/Campaign/CampaignArcs/MetagameObjectives/RegionArcs/Davion/PlaceIndustrialHub_11_ArcAction`
+- `/Game/Campaign/CampaignArcs/MetagameObjectives/RegionArcs/Davion/PlaceIndustrialHub_12_ArcAction`
+- `/Game/Campaign/CampaignArcs/MetagameObjectives/RegionArcs/Davion/PlaceIndustrialHub_13_ArcAction`
+- `/Game/Campaign/CampaignArcs/MetagameObjectives/RegionArcs/Davion/PlaceIndustrialHub_14_ArcAction`
+- `/Game/Campaign/CampaignArcs/MetagameObjectives/RegionArcs/Davion/PlaceIndustrialHub_15_ArcAction`
+- `/Game/Campaign/CampaignArcs/MetagameObjectives/RegionArcs/Davion/PlaceIndustrialHub_16_ArcAction`
+- `/Game/Campaign/CampaignArcs/MetagameObjectives/RegionArcs/Davion/PlaceIndustrialHub_17_ArcAction`
+- `/Game/Campaign/CampaignArcs/MetagameObjectives/RegionArcs/Davion/PlaceIndustrialHub_18_ArcAction`
+- `/Game/Campaign/CampaignArcs/MetagameObjectives/RegionArcs/Davion/PlaceIndustrialHub_19_ArcAction`
+- `/Game/Campaign/CampaignArcs/MetagameObjectives/RegionArcs/Davion/PlaceIndustrialHub_1_ArcAction`
+- `/Game/Campaign/CampaignArcs/MetagameObjectives/RegionArcs/Davion/PlaceIndustrialHub_20_ArcAction`
+- `/Game/Campaign/CampaignArcs/MetagameObjectives/RegionArcs/Davion/PlaceIndustrialHub_21_ArcAction`
+- `/Game/Campaign/CampaignArcs/MetagameObjectives/RegionArcs/Davion/PlaceIndustrialHub_22_ArcAction`
+- `/Game/Campaign/CampaignArcs/MetagameObjectives/RegionArcs/Davion/PlaceIndustrialHub_23_ArcAction`
+- `/Game/Campaign/CampaignArcs/MetagameObjectives/RegionArcs/Davion/PlaceIndustrialHub_24_ArcAction`
+- `/Game/Campaign/CampaignArcs/MetagameObjectives/RegionArcs/Davion/PlaceIndustrialHub_25_ArcAction`
+- `/Game/Campaign/CampaignArcs/MetagameObjectives/RegionArcs/Davion/PlaceIndustrialHub_26_ArcAction`
+- `/Game/Campaign/CampaignArcs/MetagameObjectives/RegionArcs/Davion/PlaceIndustrialHub_27_ArcAction`
+- `/Game/Campaign/CampaignArcs/MetagameObjectives/RegionArcs/Davion/PlaceIndustrialHub_28_ArcAction`
+- `/Game/Campaign/CampaignArcs/MetagameObjectives/RegionArcs/Davion/PlaceIndustrialHub_29_ArcAction`
+- `/Game/Campaign/CampaignArcs/MetagameObjectives/RegionArcs/Davion/PlaceIndustrialHub_2_ArcAction`
+- `/Game/Campaign/CampaignArcs/MetagameObjectives/RegionArcs/Davion/PlaceIndustrialHub_30_ArcAction`
+- `/Game/Campaign/CampaignArcs/MetagameObjectives/RegionArcs/Davion/PlaceIndustrialHub_31_ArcAction`
+- `/Game/Campaign/CampaignArcs/MetagameObjectives/RegionArcs/Davion/PlaceIndustrialHub_3_ArcAction`
+- `/Game/Campaign/CampaignArcs/MetagameObjectives/RegionArcs/Davion/PlaceIndustrialHub_4_ArcAction`
+- `/Game/Campaign/CampaignArcs/MetagameObjectives/RegionArcs/Davion/PlaceIndustrialHub_5_ArcAction`
+- `/Game/Campaign/CampaignArcs/MetagameObjectives/RegionArcs/Davion/PlaceIndustrialHub_6_ArcAction`
+- `/Game/Campaign/CampaignArcs/MetagameObjectives/RegionArcs/Davion/PlaceIndustrialHub_7_ArcAction`
+
+### `/Game/Campaign/Clusters/Steiner-KuritaBorder/Steiner-KuritaBorder_ClusterAsset`
+- exists: `True`
+- asset_class: `MWClusterDataAsset`
+- known properties:
+- `ClusterFactionAsset` = `<Object '/Game/Campaign/Clusters/Steiner-KuritaBorder/SteinerBorder.SteinerBorder' (0x000002B50F547580) Class 'MWFactionAsset'>`
+- `cluster_faction_asset` = `<Object '/Game/Campaign/Clusters/Steiner-KuritaBorder/SteinerBorder.SteinerBorder' (0x000002B50F547580) Class 'MWFactionAsset'>`
+- `ClusterOverlay` = `<Object '/Game/Campaign/Clusters/Steiner-KuritaBorder/12_1.12_1' (0x000002B60C375400) Class 'StaticMesh'>`
+- `cluster_overlay` = `<Object '/Game/Campaign/Clusters/Steiner-KuritaBorder/12_1.12_1' (0x000002B60C375400) Class 'StaticMesh'>`
+- `ClusterConstellation` = `None`
+- `cluster_constellation` = `None`
+- `SystemIds` = `[208, 477, 583, 629, 664, 687, 728, 751, 1562, 1579, 1584, 1592, 1594, 1597, 1605, 1608, 1611, 1613, 1622, 1638, 1640]`
+- `system_ids` = `[208, 477, 583, 629, 664, 687, 728, 751, 1562, 1579, 1584, 1592, 1594, 1597, 1605, 1608, 1611, 1613, 1622, 1638, 1640]`
+- get_dependencies count: `5`
+- `/Game/Campaign/Clusters/Steiner-KuritaBorder/12_1`
+- `/Game/Campaign/Clusters/Steiner-KuritaBorder/SteinerBorder`
+- `/Game/Campaign/Clusters/_common/Faction_StringTable`
+- `/Game/Campaign/_common/ClusterToiDataFragment`
+- `/Script/MechWarrior`
+- get_referencers count: `2`
+- `/Game/Campaign/CampaignArcs/Regions/12_1/PlaceSteiner-KuritaBorderCluster_ArcAction`
+- `/Game/DLC7/PlaceClusterActions/RemoveClusters/RemovedByWave5`
+
+### `/Game/Campaign/Clusters/Taurian/Taurian_ClusterAsset`
+- exists: `True`
+- asset_class: `MWClusterDataAsset`
+- known properties:
+- `ClusterFactionAsset` = `<Object '/Game/Campaign/Clusters/Taurian/TaurianCorridor.TaurianCorridor' (0x000002B50F5502C0) Class 'MWFactionAsset'>`
+- `cluster_faction_asset` = `<Object '/Game/Campaign/Clusters/Taurian/TaurianCorridor.TaurianCorridor' (0x000002B50F5502C0) Class 'MWFactionAsset'>`
+- `ClusterOverlay` = `<Object '/Game/Campaign/Clusters/Taurian/15_4.15_4' (0x000002B60C374800) Class 'StaticMesh'>`
+- `cluster_overlay` = `<Object '/Game/Campaign/Clusters/Taurian/15_4.15_4' (0x000002B60C374800) Class 'StaticMesh'>`
+- `ClusterConstellation` = `None`
+- `cluster_constellation` = `None`
+- `SystemIds` = `[611, 683, 896, 903, 906, 919, 931, 934, 937, 942, 948, 953, 956, 964, 978, 979, 980, 1028, 1041, 1051, 1053, 1062, 1104, 1122, 1123, 1127, 1146, 1148, 1794, 1846, 1866, 1877, 1881, 1884, 1885, 1906, 1911, 1936, 1942, 1996, 2004, 2011]`
+- `system_ids` = `[611, 683, 896, 903, 906, 919, 931, 934, 937, 942, 948, 953, 956, 964, 978, 979, 980, 1028, 1041, 1051, 1053, 1062, 1104, 1122, 1123, 1127, 1146, 1148, 1794, 1846, 1866, 1877, 1881, 1884, 1885, 1906, 1911, 1936, 1942, 1996, 2004, 2011]`
+- get_dependencies count: `5`
+- `/Game/Campaign/Clusters/Taurian/15_4`
+- `/Game/Campaign/Clusters/Taurian/TaurianCorridor`
+- `/Game/Campaign/Clusters/_common/Faction_StringTable`
+- `/Game/Campaign/_common/ClusterToiDataFragment`
+- `/Script/MechWarrior`
+- get_referencers count: `1`
+- `/Game/Campaign/CampaignArcs/Regions/EndgameClusters/PlaceTaurian_ArcAction`
+
+### `/Game/Campaign/Clusters/OutworldsAlliance/OutworldsAlliance_ClusterAsset`
+- exists: `True`
+- asset_class: `MWClusterDataAsset`
+- known properties:
+- `ClusterFactionAsset` = `<Object '/Game/Campaign/Clusters/OutworldsAlliance/OutworldsBorder.OutworldsBorder' (0x000002B50F544800) Class 'MWFactionAsset'>`
+- `cluster_faction_asset` = `<Object '/Game/Campaign/Clusters/OutworldsAlliance/OutworldsBorder.OutworldsBorder' (0x000002B50F544800) Class 'MWFactionAsset'>`
+- `ClusterOverlay` = `<Object '/Game/Campaign/Clusters/OutworldsAlliance/15_1.15_1' (0x000002B60C376000) Class 'StaticMesh'>`
+- `cluster_overlay` = `<Object '/Game/Campaign/Clusters/OutworldsAlliance/15_1.15_1' (0x000002B60C376000) Class 'StaticMesh'>`
+- `ClusterConstellation` = `None`
+- `cluster_constellation` = `None`
+- `SystemIds` = `[1018, 1020, 1022, 1035, 1043, 1044, 1045, 1046, 1047, 1055, 1056, 1129, 1139, 1144, 2049, 2051, 2055, 2061, 2082, 2092, 2096, 2103, 2104, 2107, 2108, 2118, 2120, 2122]`
+- `system_ids` = `[1018, 1020, 1022, 1035, 1043, 1044, 1045, 1046, 1047, 1055, 1056, 1129, 1139, 1144, 2049, 2051, 2055, 2061, 2082, 2092, 2096, 2103, 2104, 2107, 2108, 2118, 2120, 2122]`
+- get_dependencies count: `5`
+- `/Game/Campaign/Clusters/OutworldsAlliance/15_1`
+- `/Game/Campaign/Clusters/OutworldsAlliance/OutworldsBorder`
+- `/Game/Campaign/Clusters/_common/Faction_StringTable`
+- `/Game/Campaign/_common/ClusterToiDataFragment`
+- `/Script/MechWarrior`
+- get_referencers count: `1`
+- `/Game/Campaign/CampaignArcs/Regions/EndgameClusters/PlaceOutworldsAlliance_ArcAction`
+
+### `/Game/Campaign/Clusters/IndustrialHub_1/IndustrialHub_1_ClusterAsset`
+- exists: `True`
+- asset_class: `MWClusterDataAsset`
+- known properties:
+- `ClusterFactionAsset` = `<Object '/Game/Campaign/Clusters/IndustrialHub_1/RepairSystem_1.RepairSystem_1' (0x000002B50F541440) Class 'MWFactionAsset'>`
+- `cluster_faction_asset` = `<Object '/Game/Campaign/Clusters/IndustrialHub_1/RepairSystem_1.RepairSystem_1' (0x000002B50F541440) Class 'MWFactionAsset'>`
+- `ClusterOverlay` = `<Object '/Game/Campaign/Clusters/IndustrialHub_1/Safezone_1_Blob.Safezone_1_Blob' (0x000002B60BEC9000) Class 'StaticMesh'>`
+- `cluster_overlay` = `<Object '/Game/Campaign/Clusters/IndustrialHub_1/Safezone_1_Blob.Safezone_1_Blob' (0x000002B60BEC9000) Class 'StaticMesh'>`
+- `ClusterConstellation` = `<Object '/Game/Campaign/Clusters/IndustrialHub_1/Safezone_1.Safezone_1' (0x000002B60C377400) Class 'StaticMesh'>`
+- `cluster_constellation` = `<Object '/Game/Campaign/Clusters/IndustrialHub_1/Safezone_1.Safezone_1' (0x000002B60C377400) Class 'StaticMesh'>`
+- `SystemIds` = `[911, 1049, 1057, 2131, 2143, 2145]`
+- `system_ids` = `[911, 1049, 1057, 2131, 2143, 2145]`
+- get_dependencies count: `6`
+- `/Game/Campaign/Clusters/IndustrialHub_1/RepairSystem_1`
+- `/Game/Campaign/Clusters/IndustrialHub_1/Safezone_1`
+- `/Game/Campaign/Clusters/IndustrialHub_1/Safezone_1_Blob`
+- `/Game/Campaign/Clusters/_common/Faction_StringTable`
+- `/Game/Campaign/_common/ClusterToiDataFragment`
+- `/Script/MechWarrior`
+- get_referencers count: `1`
+- `/Game/Campaign/CampaignArcs/MetagameObjectives/RegionArcs/Davion/PlaceIndustrialHub_1_ArcAction`
+
+### `/Game/UI/FrontEnd/StarMapPawn`
+- exists: `True`
+- asset_class: `Blueprint`
+- GeneratedClass: `BlueprintGeneratedClass'/Game/UI/FrontEnd/StarMapPawn.StarMapPawn_C'`
+- ParentClass: `Class'/Script/MechWarrior.MWStarMapPawn'`
+- NativeParentClass: `Class'/Script/MechWarrior.MWStarMapPawn'`
+- class chain:
+- `/Game/UI/FrontEnd/StarMapPawn.StarMapPawn_C`
+- default object known properties:
+- `PanBoundsHorizontal` = `5500.0`
+- `pan_bounds_horizontal` = `5500.0`
+- `PanBoundsVertical` = `4500.0`
+- `pan_bounds_vertical` = `4500.0`
+- `ZoomDistanceList` = `[400.0, 550.0, 700.0, 1400.0, 1600.0, 1800.0, 3500.0]`
+- `zoom_distance_list` = `[400.0, 550.0, 700.0, 1400.0, 1600.0, 1800.0, 3500.0]`
+- `ZoomLevelThresholds` = `[2000, 1000]`
+- `zoom_level_thresholds` = `[2000, 1000]`
+- get_dependencies count: `5`
+- `/Game/UI/Components/StarSystemTOITooltip`
+- `/Game/UI/FrontEnd/StarMapPawn`
+- `/Game/UI/FrontEnd/StarMap_MPC`
+- `/Game/UI/FrontEnd/StarmapGamepadWidget`
+- `/Script/MechWarrior`
+- get_referencers count: `3`
+- `/Game/Levels/FrontEnd/StarMapSceneManager`
+- `/Game/Levels/FrontEnd/StarSystemSceneManager`
+- `/Game/UI/FrontEnd/StarMapPawn`
+
+### `/Game/UI/FrontEnd/Starmap/StarMapActor`
+- exists: `True`
+- asset_class: `Blueprint`
+- GeneratedClass: `BlueprintGeneratedClass'/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C'`
+- ParentClass: `Class'/Script/MechWarrior.MWStarMap'`
+- NativeParentClass: `Class'/Script/MechWarrior.MWStarMap'`
+- class chain:
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C`
+- default object known properties:
+- `BorderActor` = `None`
+- `StarMapCamera` = `None`
+- `InitialCameraTransform` = `<Struct 'Transform' (0x000002B5A97BDC20) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: 0.000000, y: 0.000000, z: 0.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>`
+- get_dependencies count: `31`
+- `/Engine/BasicShapes/BasicShapeMaterial`
+- `/Engine/BasicShapes/Sphere`
+- `/Engine/EditorBlueprintResources/StandardMacros`
+- `/Game/InnerSphereData/StarMapBP_UTILS`
+- `/Game/Libraries/MW5_PersistentModel_ActorLibrary`
+- `/Game/UI/FrontEnd/Starmap/AbstractStarSystem`
+- `/Game/UI/FrontEnd/Starmap/Cluster_MTI`
+- `/Game/UI/FrontEnd/Starmap/CurrentCourse_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/FogOfWarRenderTarget`
+- `/Game/UI/FrontEnd/Starmap/Materials/FogOfWarSplat_MTL`
+- `/Game/UI/FrontEnd/Starmap/Materials/FogOfWar_MTL`
+- `/Game/UI/FrontEnd/Starmap/MaxTravelDistance_MTI`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_AClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_BClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_FClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_GClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_KClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_MClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor`
+- `/Game/UI/FrontEnd/Starmap/StarMapRoute_MTI`
+- `/Game/UI/FrontEnd/Starmap/StarMapSelectionActor`
+- `/Game/UI/FrontEnd/Starmap/StarSystem`
+- `/Game/UI/FrontEnd/Starmap/StarSystemBody`
+- `/Game/UI/FrontEnd/Starmap/UnaffordableRoute_MTI`
+- `/Game/UI/FrontEnd/Starmap/cylinder_STM`
+- `/Script/InputCore`
+- `/Script/MechWarrior`
+- `/Script/NavigationSystem`
+- `/Script/ProceduralMeshComponent`
+- `/Script/UMG`
+- get_referencers count: `6`
+- `/Game/Levels/FrontEnd/StarMap`
+- `/Game/Levels/FrontEnd/StarMapSceneManager`
+- `/Game/UI/Components/StarSystemTagWidget`
+- `/Game/UI/FrontEnd/StarSystemScreen`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor`
+- `/Game/UI/FrontEnd/Starmap/StarSystemBody`
+
+### `/Game/UI/FrontEnd/Starmap/StarSystemBody`
+- exists: `True`
+- asset_class: `Blueprint`
+- GeneratedClass: `BlueprintGeneratedClass'/Game/UI/FrontEnd/Starmap/StarSystemBody.StarSystemBody_C'`
+- ParentClass: `Class'/Script/MechWarrior.MWStarSystemBody'`
+- NativeParentClass: `Class'/Script/MechWarrior.MWStarSystemBody'`
+- class chain:
+- `/Game/UI/FrontEnd/Starmap/StarSystemBody.StarSystemBody_C`
+- get_dependencies count: `15`
+- `/Engine/BasicShapes/Plane`
+- `/Engine/EditorBlueprintResources/StandardMacros`
+- `/Game/Campaign/TOIs/ClusterToiLogic`
+- `/Game/Libraries/MW5_PersistentModel_ActorLibrary`
+- `/Game/UI/Components/StarSystemBannerWidget`
+- `/Game/UI/Components/StarSystemTagWidget`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/SafezoneLine_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Safezone_MTI1`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Warzone_MTI`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor`
+- `/Game/UI/FrontEnd/Starmap/StarSystemBody`
+- `/Game/UI/Mech/Materials/VerticalMask_MTL`
+- `/Script/InputCore`
+- `/Script/MechWarrior`
+- `/Script/UMG`
+- get_referencers count: `3`
+- `/Game/Levels/FrontEnd/StarMap`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor`
+- `/Game/UI/FrontEnd/Starmap/StarSystemBody`
+
+
+## Border Actor Parent Summary
+
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/StarMapBorderActor3015` parent `BlueprintGeneratedClass'/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.BaseStarMapBorderActor_C'` native `Class'/Script/MechWarrior.MWStarMapBorderActor'` deps `8`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3025_ThirdSuccession/StarMapBorderActor3025` parent `BlueprintGeneratedClass'/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.BaseStarMapBorderActor_C'` native `Class'/Script/MechWarrior.MWStarMapBorderActor'` deps `8`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3029_FormationOfTikinovAndStIves/StarMapBorderActor3029` parent `BlueprintGeneratedClass'/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.BaseStarMapBorderActor_C'` native `Class'/Script/MechWarrior.MWStarMapBorderActor'` deps `9`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3030_FourthSuccession/StarMapBorderActor3030` parent `BlueprintGeneratedClass'/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.BaseStarMapBorderActor_C'` native `Class'/Script/MechWarrior.MWStarMapBorderActor'` deps `9`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3031_TikinovJoinsFederatedSuns/StarMapBorderActor3031` parent `BlueprintGeneratedClass'/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.BaseStarMapBorderActor_C'` native `Class'/Script/MechWarrior.MWStarMapBorderActor'` deps `9`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/StarMapBorderActor3034` parent `BlueprintGeneratedClass'/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.BaseStarMapBorderActor_C'` native `Class'/Script/MechWarrior.MWStarMapBorderActor'` deps `10`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3039_WarOf3039/StarMapBorderActor3039` parent `BlueprintGeneratedClass'/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.BaseStarMapBorderActor_C'` native `Class'/Script/MechWarrior.MWStarMapBorderActor'` deps `10`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3041_FormationOfFederatedCommonwealth/StarMapBorderActor3041` parent `BlueprintGeneratedClass'/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.BaseStarMapBorderActor_C'` native `Class'/Script/MechWarrior.MWStarMapBorderActor'` deps `9`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3049_ClanInvasion/StarMapBorderActor3049` parent `BlueprintGeneratedClass'/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.BaseStarMapBorderActor_C'` native `Class'/Script/MechWarrior.MWStarMapBorderActor'` deps `9`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave1/StarMapBorderActor3050_Wave1` parent `BlueprintGeneratedClass'/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.BaseStarMapBorderActor_C'` native `Class'/Script/MechWarrior.MWStarMapBorderActor'` deps `11`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave2/StarMapBorderActor3050_Wave2` parent `BlueprintGeneratedClass'/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.BaseStarMapBorderActor_C'` native `Class'/Script/MechWarrior.MWStarMapBorderActor'` deps `11`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave3/StarMapBorderActor3050_Wave3` parent `BlueprintGeneratedClass'/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.BaseStarMapBorderActor_C'` native `Class'/Script/MechWarrior.MWStarMapBorderActor'` deps `11`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_YearOfPeace_Wave4/StarMapBorderActor3050_Wave4` parent `BlueprintGeneratedClass'/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.BaseStarMapBorderActor_C'` native `Class'/Script/MechWarrior.MWStarMapBorderActor'` deps `11`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3051_EndOfOperationRevival_Wave5/StarMapBorderActor3050_Wave5` parent `BlueprintGeneratedClass'/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.BaseStarMapBorderActor_C'` native `Class'/Script/MechWarrior.MWStarMapBorderActor'` deps `14`
+- `/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor` parent `Class'/Script/MechWarrior.MWStarMapBorderActor'` native `Class'/Script/MechWarrior.MWStarMapBorderActor'` deps `3`

@@ -1,0 +1,944 @@
+# TKU Cooked Package Reference Parse
+
+Read-only UE4 cooked package reference parse. This inspects uasset/umap headers, name maps, imports, exports, and hard package references; it does not decode Blueprint bytecode or DataTable row payloads.
+
+## Key Interpretation
+
+- This report is stronger than string scanning because imports and exports come from UE package tables.
+- It still cannot prove Blueprint runtime control flow or decode DataTable rows; that remains editor/tool work.
+- Evidence here should gate any next rebuild. If a suspected replacement is not visible in import/export tables, do not build around that suspicion.
+
+## Source Paks
+
+- `vanilla_game`: `E:\SteamLibrary\steamapps\common\MechWarrior 5 Mercenaries\MW5Mercs\Content\Paks\MW5Mercs-WindowsNoEditor.pak` exists `True`
+- `required_loose_override`: `E:\SteamLibrary\steamapps\common\MechWarrior 5 Mercenaries\MW5Mercs\Content\Paks\MW5Mercs-zKnownUniverseStarmap.pak` exists `True`
+- `original_tku_mod`: `E:\SteamLibrary\steamapps\common\MechWarrior 5 Mercenaries\MW5Mercs\Mods\TheKnownUniverse\Paks\TheKnownUniverse.pak` exists `True`
+
+## Highest Signal Assets
+
+### `required_loose_override` `/Game/Levels/FrontEnd/StarMap`
+
+- status: `parsed`
+- payload: `/Game/Levels/FrontEnd/StarMap.umap`
+- sidecars: `/Game/Levels/FrontEnd/StarMap.uexp, /Game/Levels/FrontEnd/StarMap.umap`
+- summary: names `341`, imports `153`, exports `11849`, package flags `0x80020000`
+- native class refs:
+- `Import[75] Default__MWLightingVolume (/Script/MechWarrior::MWLightingVolume)`
+- high-signal hard refs:
+- `/Game/Levels/FrontEnd/StarMapSceneManager`
+- `/Game/Levels/FrontEnd/StarMapSceneManager.Default__StarMapSceneManager_C`
+- `/Game/Levels/FrontEnd/StarMapSceneManager.StarMapSceneManager_C`
+- `/Game/Levels/FrontEnd/StarMapSceneManager.StarMapSceneManager_C.DefaultSceneRoot_GEN_VARIABLE`
+- `/Game/Levels/FrontEnd/StarSystemSceneManager`
+- `/Game/Levels/FrontEnd/StarSystemSceneManager.Default__StarSystemSceneManager_C`
+- `/Game/Levels/FrontEnd/StarSystemSceneManager.StarSystemSceneManager_C`
+- `/Game/Levels/FrontEnd/StarSystemSceneManager.StarSystemSceneManager_C.DefaultSceneRoot_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/AbstractStarSystem`
+- `/Game/UI/FrontEnd/Starmap/AbstractStarSystem.AbstractStarSystem_C`
+- `/Game/UI/FrontEnd/Starmap/AbstractStarSystem.AbstractStarSystem_C.DefaultSceneRoot_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/AbstractStarSystem.Default__AbstractStarSystem_C`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionBorder_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionBorder_MTI.FactionBorder_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Nebula_MST`
+- `/Game/UI/FrontEnd/Starmap/Materials/Nebula_MST.Nebula_MST`
+- `/Game/UI/FrontEnd/Starmap/Materials/StarMap_Nebula_MST`
+- `/Game/UI/FrontEnd/Starmap/Materials/StarMap_Nebula_MST.StarMap_Nebula_MST`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/Nebula`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/Nebula.Default__Nebula_C`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/Nebula.Nebula_C`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/Nebula.Nebula_C.DefaultSceneRoot_REMOVED_8417F7C34E5A753B2781DA9BDDEB28C1`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/Nebula.Nebula_C.StarSphere_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/Nebula.Nebula_C.StaticMesh_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula.Default__StarMap_Nebula_C`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula.StarMap_Nebula_C`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula.StarMap_Nebula_C.DefaultSceneRoot_REMOVED_8417F7C34E5A753B2781DA9BDDEB28C1`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula.StarMap_Nebula_C.StarSphere_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula.StarMap_Nebula_C.StaticMesh_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_AClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_AClass_Star_MTI.StarMap_AClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_BClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_BClass_Star_MTI.StarMap_BClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_FClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_FClass_Star_MTI.StarMap_FClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_GClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_GClass_Star_MTI.StarMap_GClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_KClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_KClass_Star_MTI.StarMap_KClass_Star_MTI`
+- key exports:
+- `ExecuteUbergraph_StarMap` class `Import[22] Function (/Script/CoreUObject::Class)` super `None`
+- `StarMap_C` class `Import[26] BlueprintGeneratedClass (/Script/CoreUObject::Class)` super `Import[37] LevelScriptActor (/Script/CoreUObject::Class)`
+- `Default__StarMap_C` class `Export[2] StarMap_C` super `None`
+- `StarMapCamera` class `Import[30] CameraActor (/Script/CoreUObject::Class)` super `None`
+- `MWLightingVolume#2` class `Import[50] MWLightingVolume (/Script/CoreUObject::Class)` super `None`
+- `StarMapRoot` class `Import[44] SceneComponent (/Script/CoreUObject::Class)` super `None`
+- `StarMap_C#2` class `Export[2] StarMap_C` super `None`
+- `Nebula_GEN_VARIABLE_StarMap_Nebula_C_CAT#1` class `Import[7] StarMap_Nebula_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarMapActor#3` class `Import[8] StarMapActor_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarMapSceneManager#3` class `Import[2] StarMapSceneManager_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2173` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2174` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2175` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2176` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2177` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2178` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2179` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2180` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2181` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2182` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2183` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2184` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2185` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2186` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2187` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2188` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2189` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2190` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2191` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2192` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+
+### `original_tku_mod` `/Game/Levels/FrontEnd/StarMap`
+
+- status: `parsed`
+- payload: `/Game/Levels/FrontEnd/StarMap.umap`
+- sidecars: `/Game/Levels/FrontEnd/StarMap.uexp, /Game/Levels/FrontEnd/StarMap.umap`
+- summary: names `329`, imports `141`, exports `11844`, package flags `0x80020000`
+- native class refs:
+- `Import[72] Default__MWLightingVolume (/Script/MechWarrior::MWLightingVolume)`
+- high-signal hard refs:
+- `/Game/Levels/FrontEnd/StarMapSceneManager`
+- `/Game/Levels/FrontEnd/StarMapSceneManager.Default__StarMapSceneManager_C`
+- `/Game/Levels/FrontEnd/StarMapSceneManager.StarMapSceneManager_C`
+- `/Game/Levels/FrontEnd/StarMapSceneManager.StarMapSceneManager_C.DefaultSceneRoot_GEN_VARIABLE`
+- `/Game/Levels/FrontEnd/StarSystemSceneManager`
+- `/Game/Levels/FrontEnd/StarSystemSceneManager.Default__StarSystemSceneManager_C`
+- `/Game/Levels/FrontEnd/StarSystemSceneManager.StarSystemSceneManager_C`
+- `/Game/Levels/FrontEnd/StarSystemSceneManager.StarSystemSceneManager_C.DefaultSceneRoot_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/AbstractStarSystem`
+- `/Game/UI/FrontEnd/Starmap/AbstractStarSystem.AbstractStarSystem_C`
+- `/Game/UI/FrontEnd/Starmap/AbstractStarSystem.AbstractStarSystem_C.DefaultSceneRoot_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/AbstractStarSystem.Default__AbstractStarSystem_C`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionBorder_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionBorder_MTI.FactionBorder_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Nebula_MST`
+- `/Game/UI/FrontEnd/Starmap/Materials/Nebula_MST.Nebula_MST`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/Nebula`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/Nebula.Default__Nebula_C`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/Nebula.Nebula_C`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/Nebula.Nebula_C.DefaultSceneRoot_REMOVED_8417F7C34E5A753B2781DA9BDDEB28C1`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/Nebula.Nebula_C.StarSphere_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/Nebula.Nebula_C.StaticMesh_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_AClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_AClass_Star_MTI.StarMap_AClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_BClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_BClass_Star_MTI.StarMap_BClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_FClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_FClass_Star_MTI.StarMap_FClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_GClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_GClass_Star_MTI.StarMap_GClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_KClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_KClass_Star_MTI.StarMap_KClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_MClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_MClass_Star_MTI.StarMap_MClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/StarSystem`
+- `/Game/UI/FrontEnd/Starmap/StarSystem.Default__StarSystem_C`
+- `/Game/UI/FrontEnd/Starmap/StarSystem.StarSystem_C`
+- `/Game/UI/FrontEnd/Starmap/StarSystem.StarSystem_C.DefaultSceneRoot_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarSystem.StarSystem_C.DynamicNebula_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarSystem.StarSystem_C.DynamicNebula_GEN_VARIABLE.DynamicNebula_GEN_VARIABLE_DynamicNebula_C_CAT`
+- key exports:
+- `ExecuteUbergraph_StarMap` class `Import[20] Function (/Script/CoreUObject::Class)` super `None`
+- `StarMap_C` class `Import[24] BlueprintGeneratedClass (/Script/CoreUObject::Class)` super `Import[35] LevelScriptActor (/Script/CoreUObject::Class)`
+- `Default__StarMap_C` class `Export[2] StarMap_C` super `None`
+- `StarMapCamera` class `Import[28] CameraActor (/Script/CoreUObject::Class)` super `None`
+- `MWLightingVolume#2` class `Import[48] MWLightingVolume (/Script/CoreUObject::Class)` super `None`
+- `StarMapRoot` class `Import[42] SceneComponent (/Script/CoreUObject::Class)` super `None`
+- `StarMap_C#2` class `Export[2] StarMap_C` super `None`
+- `StarMapActor#3` class `Import[8] StarMapActor_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarMapSceneManager#3` class `Import[2] StarMapSceneManager_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2173` class `Import[9] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2174` class `Import[9] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2175` class `Import[9] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2176` class `Import[9] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2177` class `Import[9] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2178` class `Import[9] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2179` class `Import[9] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2180` class `Import[9] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2181` class `Import[9] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2182` class `Import[9] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2183` class `Import[9] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2184` class `Import[9] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2185` class `Import[9] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2186` class `Import[9] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2187` class `Import[9] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2188` class `Import[9] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2189` class `Import[9] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2190` class `Import[9] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2191` class `Import[9] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2192` class `Import[9] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2193` class `Import[9] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+
+### `vanilla_game` `/Game/Levels/FrontEnd/StarMap`
+
+- status: `parsed`
+- payload: `/Game/Levels/FrontEnd/StarMap.umap`
+- sidecars: `/Game/Levels/FrontEnd/StarMap.uexp, /Game/Levels/FrontEnd/StarMap.umap`
+- summary: names `340`, imports `153`, exports `6581`, package flags `0x80020000`
+- native class refs:
+- `Import[75] Default__MWLightingVolume (/Script/MechWarrior::MWLightingVolume)`
+- high-signal hard refs:
+- `/Game/Levels/FrontEnd/StarMapSceneManager`
+- `/Game/Levels/FrontEnd/StarMapSceneManager.Default__StarMapSceneManager_C`
+- `/Game/Levels/FrontEnd/StarMapSceneManager.StarMapSceneManager_C`
+- `/Game/Levels/FrontEnd/StarMapSceneManager.StarMapSceneManager_C.DefaultSceneRoot_GEN_VARIABLE`
+- `/Game/Levels/FrontEnd/StarSystemSceneManager`
+- `/Game/Levels/FrontEnd/StarSystemSceneManager.Default__StarSystemSceneManager_C`
+- `/Game/Levels/FrontEnd/StarSystemSceneManager.StarSystemSceneManager_C`
+- `/Game/Levels/FrontEnd/StarSystemSceneManager.StarSystemSceneManager_C.DefaultSceneRoot_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/AbstractStarSystem`
+- `/Game/UI/FrontEnd/Starmap/AbstractStarSystem.AbstractStarSystem_C`
+- `/Game/UI/FrontEnd/Starmap/AbstractStarSystem.AbstractStarSystem_C.DefaultSceneRoot_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/AbstractStarSystem.Default__AbstractStarSystem_C`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionBorder_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionBorder_MTI.FactionBorder_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Nebula_MST`
+- `/Game/UI/FrontEnd/Starmap/Materials/Nebula_MST.Nebula_MST`
+- `/Game/UI/FrontEnd/Starmap/Materials/StarMap_Nebula_MST`
+- `/Game/UI/FrontEnd/Starmap/Materials/StarMap_Nebula_MST.StarMap_Nebula_MST`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/Nebula`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/Nebula.Default__Nebula_C`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/Nebula.Nebula_C`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/Nebula.Nebula_C.DefaultSceneRoot_REMOVED_8417F7C34E5A753B2781DA9BDDEB28C1`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/Nebula.Nebula_C.StarSphere_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/Nebula.Nebula_C.StaticMesh_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula.Default__StarMap_Nebula_C`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula.StarMap_Nebula_C`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula.StarMap_Nebula_C.DefaultSceneRoot_REMOVED_8417F7C34E5A753B2781DA9BDDEB28C1`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula.StarMap_Nebula_C.StarSphere_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula.StarMap_Nebula_C.StaticMesh_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_AClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_AClass_Star_MTI.StarMap_AClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_BClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_BClass_Star_MTI.StarMap_BClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_FClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_FClass_Star_MTI.StarMap_FClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_GClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_GClass_Star_MTI.StarMap_GClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_KClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_KClass_Star_MTI.StarMap_KClass_Star_MTI`
+- key exports:
+- `ExecuteUbergraph_StarMap` class `Import[22] Function (/Script/CoreUObject::Class)` super `None`
+- `StarMap_C` class `Import[26] BlueprintGeneratedClass (/Script/CoreUObject::Class)` super `Import[37] LevelScriptActor (/Script/CoreUObject::Class)`
+- `Default__StarMap_C` class `Export[2] StarMap_C` super `None`
+- `StarMapCamera` class `Import[30] CameraActor (/Script/CoreUObject::Class)` super `None`
+- `MWLightingVolume#2` class `Import[50] MWLightingVolume (/Script/CoreUObject::Class)` super `None`
+- `StarMapRoot` class `Import[44] SceneComponent (/Script/CoreUObject::Class)` super `None`
+- `StarMap_C#2` class `Export[2] StarMap_C` super `None`
+- `Nebula_GEN_VARIABLE_StarMap_Nebula_C_CAT#33` class `Import[7] StarMap_Nebula_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarMapActor#3` class `Import[8] StarMapActor_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarMapSceneManager#3` class `Import[2] StarMapSceneManager_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#1` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#2` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#11` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#101` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#1001` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#1002` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#1003` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#1004` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#1005` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#1006` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#1007` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#1008` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#1009` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#1010` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#102` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#1011` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#1012` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#1013` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#1014` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+- `StarSystemBody_C#1015` class `Import[10] StarSystemBody_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+
+### `required_loose_override` `/Game/UI/FrontEnd/Starmap/StarMapActor`
+
+- status: `missing`
+
+### `original_tku_mod` `/Game/UI/FrontEnd/Starmap/StarMapActor`
+
+- status: `parsed`
+- payload: `/Game/UI/FrontEnd/Starmap/StarMapActor.uasset`
+- sidecars: `/Game/UI/FrontEnd/Starmap/StarMapActor.uasset, /Game/UI/FrontEnd/Starmap/StarMapActor.uexp`
+- summary: names `517`, imports `225`, exports `59`, package flags `0x80000000`
+- native class refs:
+- `Export[27] StarMapActor_C class=Import[19] BlueprintGeneratedClass (/Script/CoreUObject::Class) super=Import[46] MWStarMap (/Script/CoreUObject::Class) template=Import[7] Default__BlueprintGeneratedClass (/Script/Engine::BlueprintGeneratedClass)`
+- `Export[28] Default__StarMapActor_C class=Export[27] StarMapActor_C super=None template=Import[146] Default__MWStarMap (/Script/MechWarrior::MWStarMap)`
+- `Import[146] Default__MWStarMap (/Script/MechWarrior::MWStarMap)`
+- `Import[43] MWInnerSphereData (/Script/CoreUObject::Class)`
+- `Import[46] MWStarMap (/Script/CoreUObject::Class)`
+- `Import[47] MWStarMapBorderActor (/Script/CoreUObject::Class)`
+- `Import[48] MWStarMapBorderAsset (/Script/CoreUObject::Class)`
+- `Import[49] MWStarMapModel (/Script/CoreUObject::Class)`
+- `Import[50] MWStarSystemBody (/Script/CoreUObject::Class)`
+- high-signal hard refs:
+- `/Game/InnerSphereData/StarMapBP_UTILS`
+- `/Game/InnerSphereData/StarMapBP_UTILS.Default__StarMapBP_UTILS_C`
+- `/Game/InnerSphereData/StarMapBP_UTILS.StarMapBP_UTILS_C`
+- `/Game/UI/FrontEnd/Starmap/AbstractStarSystem`
+- `/Game/UI/FrontEnd/Starmap/AbstractStarSystem.AbstractStarSystem_C`
+- `/Game/UI/FrontEnd/Starmap/AbstractStarSystem.AbstractStarSystem_C.DefaultSceneRoot_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/AbstractStarSystem.Default__AbstractStarSystem_C`
+- `/Game/UI/FrontEnd/Starmap/Cluster_MTI`
+- `/Game/UI/FrontEnd/Starmap/Cluster_MTI.Cluster_MTI`
+- `/Game/UI/FrontEnd/Starmap/CurrentCourse_MTI`
+- `/Game/UI/FrontEnd/Starmap/CurrentCourse_MTI.CurrentCourse_MTI`
+- `/Game/UI/FrontEnd/Starmap/cylinder_STM`
+- `/Game/UI/FrontEnd/Starmap/cylinder_STM.cylinder_STM`
+- `/Game/UI/FrontEnd/Starmap/Materials/FogOfWar_MTL`
+- `/Game/UI/FrontEnd/Starmap/Materials/FogOfWar_MTL.FogOfWar_MTL`
+- `/Game/UI/FrontEnd/Starmap/Materials/FogOfWarRenderTarget`
+- `/Game/UI/FrontEnd/Starmap/Materials/FogOfWarRenderTarget.FogOfWarRenderTarget`
+- `/Game/UI/FrontEnd/Starmap/Materials/FogOfWarSplat_MTL`
+- `/Game/UI/FrontEnd/Starmap/Materials/FogOfWarSplat_MTL.FogOfWarSplat_MTL`
+- `/Game/UI/FrontEnd/Starmap/MaxTravelDistance_MTI`
+- `/Game/UI/FrontEnd/Starmap/MaxTravelDistance_MTI.MaxTravelDistance_MTI`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/Nebula`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/Nebula.Nebula_C`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_AClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_AClass_Star_MTI.StarMap_AClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_BClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_BClass_Star_MTI.StarMap_BClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_FClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_FClass_Star_MTI.StarMap_FClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_GClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_GClass_Star_MTI.StarMap_GClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_KClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_KClass_Star_MTI.StarMap_KClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_MClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_MClass_Star_MTI.StarMap_MClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/StarMapRoute_MTI`
+- `/Game/UI/FrontEnd/Starmap/StarMapRoute_MTI.StarMapRoute_MTI`
+- `/Game/UI/FrontEnd/Starmap/StarMapSelectionActor`
+- `/Game/UI/FrontEnd/Starmap/StarMapSelectionActor.Default__StarMapSelectionActor_C`
+- `/Game/UI/FrontEnd/Starmap/StarMapSelectionActor.StarMapSelectionActor_C`
+- key exports:
+- `ExecuteUbergraph_StarMapActor` class `Import[15] Function (/Script/CoreUObject::Class)` super `None`
+- `UpdateStarMapBorders` class `Import[15] Function (/Script/CoreUObject::Class)` super `None`
+- `OnInitializeStarMap` class `Import[15] Function (/Script/CoreUObject::Class)` super `Import[120] OnInitializeStarMap (/Script/CoreUObject::Function)`
+- `CreateStarMap` class `Import[15] Function (/Script/CoreUObject::Class)` super `None`
+- `StarMapActor_C` class `Import[19] BlueprintGeneratedClass (/Script/CoreUObject::Class)` super `Import[46] MWStarMap (/Script/CoreUObject::Class)`
+- `Default__StarMapActor_C` class `Export[27] StarMapActor_C` super `None`
+- `StarMapRoot_GEN_VARIABLE` class `Import[34] SceneComponent (/Script/CoreUObject::Class)` super `None`
+
+### `vanilla_game` `/Game/UI/FrontEnd/Starmap/StarMapActor`
+
+- status: `parsed`
+- payload: `/Game/UI/FrontEnd/Starmap/StarMapActor.uasset`
+- sidecars: `/Game/UI/FrontEnd/Starmap/StarMapActor.uasset, /Game/UI/FrontEnd/Starmap/StarMapActor.uexp`
+- summary: names `537`, imports `237`, exports `61`, package flags `0x80000000`
+- native class refs:
+- `Export[26] StarMapActor_C class=Import[20] BlueprintGeneratedClass (/Script/CoreUObject::Class) super=Import[48] MWStarMap (/Script/CoreUObject::Class) template=Import[8] Default__BlueprintGeneratedClass (/Script/Engine::BlueprintGeneratedClass)`
+- `Export[27] Default__StarMapActor_C class=Export[26] StarMapActor_C super=None template=Import[152] Default__MWStarMap (/Script/MechWarrior::MWStarMap)`
+- `Import[152] Default__MWStarMap (/Script/MechWarrior::MWStarMap)`
+- `Import[45] MWInnerSphereData (/Script/CoreUObject::Class)`
+- `Import[48] MWStarMap (/Script/CoreUObject::Class)`
+- `Import[49] MWStarMapBorderActor (/Script/CoreUObject::Class)`
+- `Import[50] MWStarMapBorderAsset (/Script/CoreUObject::Class)`
+- `Import[51] MWStarMapModel (/Script/CoreUObject::Class)`
+- `Import[52] MWStarSystemBody (/Script/CoreUObject::Class)`
+- high-signal hard refs:
+- `/Game/InnerSphereData/StarMapBP_UTILS`
+- `/Game/InnerSphereData/StarMapBP_UTILS.Default__StarMapBP_UTILS_C`
+- `/Game/InnerSphereData/StarMapBP_UTILS.StarMapBP_UTILS_C`
+- `/Game/UI/FrontEnd/Starmap/AbstractStarSystem`
+- `/Game/UI/FrontEnd/Starmap/AbstractStarSystem.AbstractStarSystem_C`
+- `/Game/UI/FrontEnd/Starmap/AbstractStarSystem.AbstractStarSystem_C.DefaultSceneRoot_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/AbstractStarSystem.Default__AbstractStarSystem_C`
+- `/Game/UI/FrontEnd/Starmap/Cluster_MTI`
+- `/Game/UI/FrontEnd/Starmap/Cluster_MTI.Cluster_MTI`
+- `/Game/UI/FrontEnd/Starmap/CurrentCourse_MTI`
+- `/Game/UI/FrontEnd/Starmap/CurrentCourse_MTI.CurrentCourse_MTI`
+- `/Game/UI/FrontEnd/Starmap/cylinder_STM`
+- `/Game/UI/FrontEnd/Starmap/cylinder_STM.cylinder_STM`
+- `/Game/UI/FrontEnd/Starmap/Materials/FogOfWar_MTL`
+- `/Game/UI/FrontEnd/Starmap/Materials/FogOfWar_MTL.FogOfWar_MTL`
+- `/Game/UI/FrontEnd/Starmap/Materials/FogOfWarRenderTarget`
+- `/Game/UI/FrontEnd/Starmap/Materials/FogOfWarRenderTarget.FogOfWarRenderTarget`
+- `/Game/UI/FrontEnd/Starmap/Materials/FogOfWarSplat_MTL`
+- `/Game/UI/FrontEnd/Starmap/Materials/FogOfWarSplat_MTL.FogOfWarSplat_MTL`
+- `/Game/UI/FrontEnd/Starmap/MaxTravelDistance_MTI`
+- `/Game/UI/FrontEnd/Starmap/MaxTravelDistance_MTI.MaxTravelDistance_MTI`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/Nebula`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/Nebula.Nebula_C`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula.Default__StarMap_Nebula_C`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula.StarMap_Nebula_C`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula.StarMap_Nebula_C.DefaultSceneRoot_REMOVED_8417F7C34E5A753B2781DA9BDDEB28C1`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula.StarMap_Nebula_C.StarSphere_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula.StarMap_Nebula_C.StaticMesh_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_AClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_AClass_Star_MTI.StarMap_AClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_BClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_BClass_Star_MTI.StarMap_BClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_FClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_FClass_Star_MTI.StarMap_FClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_GClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_GClass_Star_MTI.StarMap_GClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_KClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_KClass_Star_MTI.StarMap_KClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_MClass_Star_MTI`
+- key exports:
+- `ExecuteUbergraph_StarMapActor` class `Import[17] Function (/Script/CoreUObject::Class)` super `None`
+- `UpdateStarMapBorders` class `Import[17] Function (/Script/CoreUObject::Class)` super `None`
+- `OnInitializeStarMap` class `Import[17] Function (/Script/CoreUObject::Class)` super `Import[126] OnInitializeStarMap (/Script/CoreUObject::Function)`
+- `CreateStarMap` class `Import[17] Function (/Script/CoreUObject::Class)` super `None`
+- `StarMapActor_C` class `Import[20] BlueprintGeneratedClass (/Script/CoreUObject::Class)` super `Import[48] MWStarMap (/Script/CoreUObject::Class)`
+- `Default__StarMapActor_C` class `Export[26] StarMapActor_C` super `None`
+- `StarMapRoot_GEN_VARIABLE` class `Import[36] SceneComponent (/Script/CoreUObject::Class)` super `None`
+- `Nebula_GEN_VARIABLE_StarMap_Nebula_C_CAT` class `Import[4] StarMap_Nebula_C (/Script/Engine::BlueprintGeneratedClass)` super `None`
+
+### `required_loose_override` `/Game/UI/FrontEnd/Starmap/StarSystemBody`
+
+- status: `missing`
+
+### `original_tku_mod` `/Game/UI/FrontEnd/Starmap/StarSystemBody`
+
+- status: `parsed`
+- payload: `/Game/UI/FrontEnd/Starmap/StarSystemBody.uasset`
+- sidecars: `/Game/UI/FrontEnd/Starmap/StarSystemBody.uasset, /Game/UI/FrontEnd/Starmap/StarSystemBody.uexp`
+- summary: names `370`, imports `138`, exports `36`, package flags `0x80000000`
+- native class refs:
+- `Export[25] StarSystemBody_C class=Import[9] BlueprintGeneratedClass (/Script/CoreUObject::Class) super=Import[28] MWStarSystemBody (/Script/CoreUObject::Class) template=Import[2] Default__BlueprintGeneratedClass (/Script/Engine::BlueprintGeneratedClass)`
+- `Export[26] Default__StarSystemBody_C class=Export[25] StarSystemBody_C super=None template=Import[90] Default__MWStarSystemBody (/Script/MechWarrior::MWStarSystemBody)`
+- `Import[27] MWStarMapModel (/Script/CoreUObject::Class)`
+- `Import[28] MWStarSystemBody (/Script/CoreUObject::Class)`
+- `Import[90] Default__MWStarSystemBody (/Script/MechWarrior::MWStarSystemBody)`
+- high-signal hard refs:
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Safezone_MTI1`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Safezone_MTI1.Safezone_MTI1`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/SafezoneLine_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/SafezoneLine_MTI.SafezoneLine_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Warzone_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Warzone_MTI.Warzone_MTI`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C.CurrentTravelRoute`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C.DefaultComponent`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C.PreviewTravelRoute`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C.ProceduralMeshComponent`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C.ProceduralMeshComponent.BodySetup#1`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.Box_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.DefaultSceneRoot_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.FogOfWar_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.PostProcesssVolume_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarMapRoot_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeA_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeB_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeF_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeG_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeK_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeM_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StaticMeshBlocker_GEN_VARIABLE`
+- `/Script/MechWarrior`
+- `/Script/MechWarrior.Default__MWStarSystemBody`
+- `/Script/MechWarrior.Default__MWStarSystemBody.Scene`
+- `/Script/MechWarrior.DisplayInfoStruct`
+- `/Script/MechWarrior.EClusterOverlayState`
+- `/Script/MechWarrior.MWBlueprintUtils`
+- `/Script/MechWarrior.MWBlueprintUtils.GetGameStateFromWorldOnce`
+- `/Script/MechWarrior.MWClusterToiLogic`
+- `/Script/MechWarrior.MWErrandModel`
+- `/Script/MechWarrior.MWGameState`
+- `/Script/MechWarrior.MWGameState.GetPersistentModel_Unsafe`
+- `/Script/MechWarrior.MWPersistentModel`
+- `/Script/MechWarrior.MWStarMapModel`
+- `/Script/MechWarrior.MWStarMapModel.GetHiddenStarSystems`
+- key exports:
+- `StarSystemBody_C` class `Import[9] BlueprintGeneratedClass (/Script/CoreUObject::Class)` super `Import[28] MWStarSystemBody (/Script/CoreUObject::Class)`
+- `Default__StarSystemBody_C` class `Export[25] StarSystemBody_C` super `None`
+
+### `vanilla_game` `/Game/UI/FrontEnd/Starmap/StarSystemBody`
+
+- status: `parsed`
+- payload: `/Game/UI/FrontEnd/Starmap/StarSystemBody.uasset`
+- sidecars: `/Game/UI/FrontEnd/Starmap/StarSystemBody.uasset, /Game/UI/FrontEnd/Starmap/StarSystemBody.uexp`
+- summary: names `383`, imports `142`, exports `39`, package flags `0x80000000`
+- native class refs:
+- `Export[28] StarSystemBody_C class=Import[11] BlueprintGeneratedClass (/Script/CoreUObject::Class) super=Import[31] MWStarSystemBody (/Script/CoreUObject::Class) template=Import[3] Default__BlueprintGeneratedClass (/Script/Engine::BlueprintGeneratedClass)`
+- `Export[29] Default__StarSystemBody_C class=Export[28] StarSystemBody_C super=None template=Import[93] Default__MWStarSystemBody (/Script/MechWarrior::MWStarSystemBody)`
+- `Import[25] MWClusterDataAsset (/Script/CoreUObject::Class)`
+- `Import[30] MWStarMapModel (/Script/CoreUObject::Class)`
+- `Import[31] MWStarSystemBody (/Script/CoreUObject::Class)`
+- `Import[93] Default__MWStarSystemBody (/Script/MechWarrior::MWStarSystemBody)`
+- high-signal hard refs:
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Safezone_MTI1`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Safezone_MTI1.Safezone_MTI1`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/SafezoneLine_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/SafezoneLine_MTI.SafezoneLine_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Warzone_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Warzone_MTI.Warzone_MTI`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula.StarMap_Nebula_C`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C.CurrentTravelRoute`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C.DefaultComponent`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C.PreviewTravelRoute`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C.ProceduralMeshComponent`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C.ProceduralMeshComponent.BodySetup#1`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.Box_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.DefaultSceneRoot_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.FogOfWar_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.Nebula_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.Nebula_GEN_VARIABLE.Nebula_GEN_VARIABLE_StarMap_Nebula_C_CAT`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.PostProcesssVolume_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarMapRoot_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeA_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeB_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeF_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeG_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeK_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeM_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StaticMeshBlocker_GEN_VARIABLE`
+- `/Script/MechWarrior`
+- `/Script/MechWarrior.Default__MWStarSystemBody`
+- `/Script/MechWarrior.Default__MWStarSystemBody.Scene`
+- `/Script/MechWarrior.DisplayInfoStruct`
+- `/Script/MechWarrior.EClusterOverlayState`
+- `/Script/MechWarrior.MWBlueprintUtils`
+- `/Script/MechWarrior.MWBlueprintUtils.GetGameStateFromWorldOnce`
+- `/Script/MechWarrior.MWClusterDataAsset`
+- `/Script/MechWarrior.MWClusterToiLogic`
+- `/Script/MechWarrior.MWErrandModel`
+- key exports:
+- `StarSystemBody_C` class `Import[11] BlueprintGeneratedClass (/Script/CoreUObject::Class)` super `Import[31] MWStarSystemBody (/Script/CoreUObject::Class)`
+- `Default__StarSystemBody_C` class `Export[28] StarSystemBody_C` super `None`
+
+### `required_loose_override` `/Game/UI/FrontEnd/StarMapPawn`
+
+- status: `missing`
+
+### `original_tku_mod` `/Game/UI/FrontEnd/StarMapPawn`
+
+- status: `parsed`
+- payload: `/Game/UI/FrontEnd/StarMapPawn.uasset`
+- sidecars: `/Game/UI/FrontEnd/StarMapPawn.uasset, /Game/UI/FrontEnd/StarMapPawn.uexp`
+- summary: names `56`, imports `23`, exports `7`, package flags `0x80000000`
+- native class refs:
+- `Export[0] StarMapPawn_C class=Import[2] BlueprintGeneratedClass (/Script/CoreUObject::Class) super=Import[8] MWStarMapPawn (/Script/CoreUObject::Class) template=Import[0] Default__BlueprintGeneratedClass (/Script/Engine::BlueprintGeneratedClass)`
+- `Export[1] Default__StarMapPawn_C class=Export[0] StarMapPawn_C super=None template=Import[10] Default__MWStarMapPawn (/Script/MechWarrior::MWStarMapPawn)`
+- `Import[10] Default__MWStarMapPawn (/Script/MechWarrior::MWStarMapPawn)`
+- `Import[8] MWStarMapPawn (/Script/CoreUObject::Class)`
+- high-signal hard refs:
+- `/Game/UI/FrontEnd/StarmapGamepadWidget`
+- `/Game/UI/FrontEnd/StarmapGamepadWidget.Default__StarmapGamepadWidget_C`
+- `/Game/UI/FrontEnd/StarmapGamepadWidget.StarmapGamepadWidget_C`
+- `/Script/MechWarrior`
+- `/Script/MechWarrior.Default__MWStarMapPawn`
+- `/Script/MechWarrior.Default__MWStarMapPawn.CollisionComponent0`
+- `/Script/MechWarrior.Default__MWStarMapPawn.MovementComponent0`
+- `/Script/MechWarrior.MWStarMapPawn`
+- key exports:
+- `StarMapPawn_C` class `Import[2] BlueprintGeneratedClass (/Script/CoreUObject::Class)` super `Import[8] MWStarMapPawn (/Script/CoreUObject::Class)`
+- `Default__StarMapPawn_C` class `Export[0] StarMapPawn_C` super `None`
+
+### `vanilla_game` `/Game/UI/FrontEnd/StarMapPawn`
+
+- status: `parsed`
+- payload: `/Game/UI/FrontEnd/StarMapPawn.uasset`
+- sidecars: `/Game/UI/FrontEnd/StarMapPawn.uasset, /Game/UI/FrontEnd/StarMapPawn.uexp`
+- summary: names `58`, imports `26`, exports `7`, package flags `0x80000000`
+- native class refs:
+- `Export[0] StarMapPawn_C class=Import[2] BlueprintGeneratedClass (/Script/CoreUObject::Class) super=Import[8] MWStarMapPawn (/Script/CoreUObject::Class) template=Import[0] Default__BlueprintGeneratedClass (/Script/Engine::BlueprintGeneratedClass)`
+- `Export[1] Default__StarMapPawn_C class=Export[0] StarMapPawn_C super=None template=Import[10] Default__MWStarMapPawn (/Script/MechWarrior::MWStarMapPawn)`
+- `Import[10] Default__MWStarMapPawn (/Script/MechWarrior::MWStarMapPawn)`
+- `Import[8] MWStarMapPawn (/Script/CoreUObject::Class)`
+- high-signal hard refs:
+- `/Game/UI/FrontEnd/StarmapGamepadWidget`
+- `/Game/UI/FrontEnd/StarmapGamepadWidget.Default__StarmapGamepadWidget_C`
+- `/Game/UI/FrontEnd/StarmapGamepadWidget.StarmapGamepadWidget_C`
+- `/Script/MechWarrior`
+- `/Script/MechWarrior.Default__MWStarMapPawn`
+- `/Script/MechWarrior.Default__MWStarMapPawn.CollisionComponent0`
+- `/Script/MechWarrior.Default__MWStarMapPawn.MovementComponent0`
+- `/Script/MechWarrior.MWStarMapPawn`
+- key exports:
+- `StarMapPawn_C` class `Import[2] BlueprintGeneratedClass (/Script/CoreUObject::Class)` super `Import[8] MWStarMapPawn (/Script/CoreUObject::Class)`
+- `Default__StarMapPawn_C` class `Export[0] StarMapPawn_C` super `None`
+
+### `required_loose_override` `/Game/InnerSphereData/MW5_InnerSphereData`
+
+- status: `parsed`
+- payload: `/Game/InnerSphereData/MW5_InnerSphereData.uasset`
+- sidecars: `/Game/InnerSphereData/MW5_InnerSphereData.uasset, /Game/InnerSphereData/MW5_InnerSphereData.uexp`
+- summary: names `4307`, imports `5`, exports `1`, package flags `0x80040000`
+- high-signal hard refs:
+- `/Script/MechWarrior`
+- `/Script/MechWarrior.InnerSphereMapData`
+
+### `original_tku_mod` `/Game/InnerSphereData/MW5_InnerSphereData`
+
+- status: `parsed`
+- payload: `/Game/InnerSphereData/MW5_InnerSphereData.uasset`
+- sidecars: `/Game/InnerSphereData/MW5_InnerSphereData.uasset, /Game/InnerSphereData/MW5_InnerSphereData.uexp`
+- summary: names `4307`, imports `5`, exports `1`, package flags `0x80040000`
+- high-signal hard refs:
+- `/Script/MechWarrior`
+- `/Script/MechWarrior.InnerSphereMapData`
+
+### `vanilla_game` `/Game/InnerSphereData/MW5_InnerSphereData`
+
+- status: `parsed`
+- payload: `/Game/InnerSphereData/MW5_InnerSphereData.uasset`
+- sidecars: `/Game/InnerSphereData/MW5_InnerSphereData.uasset, /Game/InnerSphereData/MW5_InnerSphereData.uexp`
+- summary: names `2560`, imports `5`, exports `1`, package flags `0x80040000`
+- high-signal hard refs:
+- `/Script/MechWarrior`
+- `/Script/MechWarrior.InnerSphereMapData`
+
+### `required_loose_override` `/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor`
+
+- status: `missing`
+
+### `original_tku_mod` `/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor`
+
+- status: `parsed`
+- payload: `/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.uasset`
+- sidecars: `/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.uasset, /Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.uexp`
+- summary: names `80`, imports `35`, exports `7`, package flags `0x80000000`
+- native class refs:
+- `Export[2] BaseStarMapBorderActor_C class=Import[4] BlueprintGeneratedClass (/Script/CoreUObject::Class) super=Import[14] MWStarMapBorderActor (/Script/CoreUObject::Class) template=Import[0] Default__BlueprintGeneratedClass (/Script/Engine::BlueprintGeneratedClass)`
+- `Export[3] Default__BaseStarMapBorderActor_C class=Export[2] BaseStarMapBorderActor_C super=None template=Import[28] Default__MWStarMapBorderActor (/Script/MechWarrior::MWStarMapBorderActor)`
+- `Import[14] MWStarMapBorderActor (/Script/CoreUObject::Class)`
+- `Import[28] Default__MWStarMapBorderActor (/Script/MechWarrior::MWStarMapBorderActor)`
+- high-signal hard refs:
+- `/Script/MechWarrior`
+- `/Script/MechWarrior.Default__MWStarMapBorderActor`
+- `/Script/MechWarrior.MWStarMapBorderActor`
+- key exports:
+- `BaseStarMapBorderActor_C` class `Import[4] BlueprintGeneratedClass (/Script/CoreUObject::Class)` super `Import[14] MWStarMapBorderActor (/Script/CoreUObject::Class)`
+- `Default__BaseStarMapBorderActor_C` class `Export[2] BaseStarMapBorderActor_C` super `None`
+
+### `vanilla_game` `/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor`
+
+- status: `parsed`
+- payload: `/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.uasset`
+- sidecars: `/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.uasset, /Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.uexp`
+- summary: names `64`, imports `27`, exports `6`, package flags `0x80000000`
+- native class refs:
+- `Export[1] BaseStarMapBorderActor_C class=Import[4] BlueprintGeneratedClass (/Script/CoreUObject::Class) super=Import[11] MWStarMapBorderActor (/Script/CoreUObject::Class) template=Import[0] Default__BlueprintGeneratedClass (/Script/Engine::BlueprintGeneratedClass)`
+- `Export[2] Default__BaseStarMapBorderActor_C class=Export[1] BaseStarMapBorderActor_C super=None template=Import[20] Default__MWStarMapBorderActor (/Script/MechWarrior::MWStarMapBorderActor)`
+- `Import[11] MWStarMapBorderActor (/Script/CoreUObject::Class)`
+- `Import[20] Default__MWStarMapBorderActor (/Script/MechWarrior::MWStarMapBorderActor)`
+- high-signal hard refs:
+- `/Script/MechWarrior`
+- `/Script/MechWarrior.Default__MWStarMapBorderActor`
+- `/Script/MechWarrior.MWStarMapBorderActor`
+- key exports:
+- `BaseStarMapBorderActor_C` class `Import[4] BlueprintGeneratedClass (/Script/CoreUObject::Class)` super `Import[11] MWStarMapBorderActor (/Script/CoreUObject::Class)`
+- `Default__BaseStarMapBorderActor_C` class `Export[1] BaseStarMapBorderActor_C` super `None`
+
+## Comparison Diffs
+
+### `/Game/Levels/FrontEnd/StarMap`
+
+- high-signal refs only in TKU:
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C.CurrentTravelRoute`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C.DefaultComponent`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C.PreviewTravelRoute`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C.ProceduralMeshComponent`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C.ProceduralMeshComponent.BodySetup#1`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.Box_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.DefaultSceneRoot_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.FogOfWar_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.PostProcesssVolume_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarMapRoot_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeA_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeB_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeF_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeG_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeK_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeM_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StaticMeshBlocker_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarSystemBody`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarSystemBody.Default__StarSystemBody_C`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarSystemBody.Default__StarSystemBody_C.Scene`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarSystemBody.StarSystemBody_C`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarSystemBody.StarSystemBody_C.DefaultSceneRoot_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarSystemBody.StarSystemBody_C.NODE_AddStaticMeshComponent-4`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarSystemBody.StarSystemBody_C.NODE_AddStaticMeshComponent-5`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarSystemBody.StarSystemBody_C.NODE_AddWidgetComponent-1`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarSystemBody.StarSystemBody_C.Plane_GEN_VARIABLE`
+- high-signal refs only in vanilla:
+- `/Game/UI/FrontEnd/Starmap/Materials/StarMap_Nebula_MST`
+- `/Game/UI/FrontEnd/Starmap/Materials/StarMap_Nebula_MST.StarMap_Nebula_MST`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula.Default__StarMap_Nebula_C`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula.StarMap_Nebula_C`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula.StarMap_Nebula_C.DefaultSceneRoot_REMOVED_8417F7C34E5A753B2781DA9BDDEB28C1`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula.StarMap_Nebula_C.StarSphere_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula.StarMap_Nebula_C.StaticMesh_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C.CurrentTravelRoute`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C.DefaultComponent`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C.PreviewTravelRoute`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C.ProceduralMeshComponent`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C.ProceduralMeshComponent.BodySetup#1`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.Box_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.DefaultSceneRoot_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.FogOfWar_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.Nebula_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.Nebula_GEN_VARIABLE.Nebula_GEN_VARIABLE_StarMap_Nebula_C_CAT`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.PostProcesssVolume_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarMapRoot_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeA_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeB_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeF_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeG_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeK_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeM_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StaticMeshBlocker_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarSystemBody`
+- `/Game/UI/FrontEnd/Starmap/StarSystemBody.Default__StarSystemBody_C`
+- `/Game/UI/FrontEnd/Starmap/StarSystemBody.Default__StarSystemBody_C.Scene`
+- `/Game/UI/FrontEnd/Starmap/StarSystemBody.StarSystemBody_C`
+- `/Game/UI/FrontEnd/Starmap/StarSystemBody.StarSystemBody_C.DefaultSceneRoot_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarSystemBody.StarSystemBody_C.NODE_AddStaticMeshComponent-4`
+- `/Game/UI/FrontEnd/Starmap/StarSystemBody.StarSystemBody_C.NODE_AddStaticMeshComponent-5`
+- `/Game/UI/FrontEnd/Starmap/StarSystemBody.StarSystemBody_C.NODE_AddWidgetComponent-1`
+- `/Game/UI/FrontEnd/Starmap/StarSystemBody.StarSystemBody_C.Plane_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/Textures/Nebula_CLR`
+- `/Game/UI/FrontEnd/Starmap/Textures/Nebula_CLR.Nebula_CLR`
+- export names only in TKU:
+- `DynamicNebula_GEN_VARIABLE_DynamicNebula_C_CAT#1`
+- `StarSystemBody_C#2173`
+- `StarSystemBody_C#2174`
+- `StarSystemBody_C#2175`
+- `StarSystemBody_C#2176`
+- `StarSystemBody_C#2177`
+- `StarSystemBody_C#2178`
+- `StarSystemBody_C#2179`
+- `StarSystemBody_C#2180`
+- `StarSystemBody_C#2181`
+- `StarSystemBody_C#2182`
+- `StarSystemBody_C#2183`
+- `StarSystemBody_C#2184`
+- `StarSystemBody_C#2185`
+- `StarSystemBody_C#2186`
+- `StarSystemBody_C#2187`
+- `StarSystemBody_C#2188`
+- `StarSystemBody_C#2189`
+- `StarSystemBody_C#2190`
+- `StarSystemBody_C#2191`
+- `StarSystemBody_C#2192`
+- `StarSystemBody_C#2193`
+- `StarSystemBody_C#2194`
+- `StarSystemBody_C#2195`
+- `StarSystemBody_C#2196`
+- `StarSystemBody_C#2197`
+- `StarSystemBody_C#2198`
+- `StarSystemBody_C#2199`
+- `StarSystemBody_C#2200`
+- `StarSystemBody_C#2201`
+- `StarSystemBody_C#2202`
+- `StarSystemBody_C#2203`
+- `StarSystemBody_C#2204`
+- `StarSystemBody_C#2205`
+- `StarSystemBody_C#2206`
+- `StarSystemBody_C#2207`
+- `StarSystemBody_C#2208`
+- `StarSystemBody_C#2209`
+- `StarSystemBody_C#2210`
+- `StarSystemBody_C#2211`
+- `StarSystemBody_C#2212`
+- `StarSystemBody_C#2213`
+- `StarSystemBody_C#2214`
+- `StarSystemBody_C#2215`
+- `StarSystemBody_C#2216`
+- `StarSystemBody_C#2217`
+- `StarSystemBody_C#2218`
+- `StarSystemBody_C#2219`
+- `StarSystemBody_C#2220`
+- `StarSystemBody_C#2221`
+- export names only in vanilla:
+- `DynamicNebula_GEN_VARIABLE_DynamicNebula_C_CAT#783`
+- `Nebula`
+- `Nebula_GEN_VARIABLE_StarMap_Nebula_C_CAT#33`
+- `StarSystemBody_C#1`
+- `StarSystemBody_C#10`
+- `StarSystemBody_C#100`
+- `StarSystemBody_C#1000`
+- `StarSystemBody_C#1001`
+- `StarSystemBody_C#1002`
+- `StarSystemBody_C#1003`
+- `StarSystemBody_C#1004`
+- `StarSystemBody_C#1005`
+- `StarSystemBody_C#1006`
+- `StarSystemBody_C#1007`
+- `StarSystemBody_C#1008`
+- `StarSystemBody_C#1009`
+- `StarSystemBody_C#101`
+- `StarSystemBody_C#1010`
+- `StarSystemBody_C#1011`
+- `StarSystemBody_C#1012`
+- `StarSystemBody_C#1013`
+- `StarSystemBody_C#1014`
+- `StarSystemBody_C#1015`
+- `StarSystemBody_C#1016`
+- `StarSystemBody_C#1017`
+- `StarSystemBody_C#1018`
+- `StarSystemBody_C#1019`
+- `StarSystemBody_C#102`
+- `StarSystemBody_C#1020`
+- `StarSystemBody_C#1021`
+- `StarSystemBody_C#1022`
+- `StarSystemBody_C#1023`
+- `StarSystemBody_C#1024`
+- `StarSystemBody_C#1025`
+- `StarSystemBody_C#1026`
+- `StarSystemBody_C#1027`
+- `StarSystemBody_C#1028`
+- `StarSystemBody_C#1029`
+- `StarSystemBody_C#103`
+- `StarSystemBody_C#1030`
+- `StarSystemBody_C#1031`
+- `StarSystemBody_C#1032`
+- `StarSystemBody_C#1033`
+- `StarSystemBody_C#1034`
+- `StarSystemBody_C#1035`
+- `StarSystemBody_C#1036`
+- `StarSystemBody_C#1037`
+- `StarSystemBody_C#1038`
+- `StarSystemBody_C#1039`
+- `StarSystemBody_C#104`
+
+### `/Game/UI/FrontEnd/Starmap/StarMapActor`
+
+- high-signal refs only in TKU:
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarSystemBody`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarSystemBody.Default__StarSystemBody_C`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarSystemBody.Default__StarSystemBody_C.Scene`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarSystemBody.StarSystemBody_C`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarSystemBody.StarSystemBody_C.DefaultSceneRoot_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarSystemBody.StarSystemBody_C.NODE_AddStaticMeshComponent-4`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarSystemBody.StarSystemBody_C.NODE_AddStaticMeshComponent-5`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarSystemBody.StarSystemBody_C.NODE_AddWidgetComponent-1`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarSystemBody.StarSystemBody_C.Plane_GEN_VARIABLE`
+- high-signal refs only in vanilla:
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula.Default__StarMap_Nebula_C`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula.StarMap_Nebula_C`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula.StarMap_Nebula_C.DefaultSceneRoot_REMOVED_8417F7C34E5A753B2781DA9BDDEB28C1`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula.StarMap_Nebula_C.StarSphere_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula.StarMap_Nebula_C.StaticMesh_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarSystemBody`
+- `/Game/UI/FrontEnd/Starmap/StarSystemBody.Default__StarSystemBody_C`
+- `/Game/UI/FrontEnd/Starmap/StarSystemBody.Default__StarSystemBody_C.Scene`
+- `/Game/UI/FrontEnd/Starmap/StarSystemBody.StarSystemBody_C`
+- `/Game/UI/FrontEnd/Starmap/StarSystemBody.StarSystemBody_C.DefaultSceneRoot_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarSystemBody.StarSystemBody_C.NODE_AddStaticMeshComponent-4`
+- `/Game/UI/FrontEnd/Starmap/StarSystemBody.StarSystemBody_C.NODE_AddStaticMeshComponent-5`
+- `/Game/UI/FrontEnd/Starmap/StarSystemBody.StarSystemBody_C.NODE_AddWidgetComponent-1`
+- `/Game/UI/FrontEnd/Starmap/StarSystemBody.StarSystemBody_C.Plane_GEN_VARIABLE`
+- `/Script/MechWarrior.MWInnerSphereData.RetrieveEdgeIndexList`
+- `/Script/MechWarrior.MWInnerSphereData.RetrieveStarSystemEdges`
+- `/Script/MechWarrior.MWStarMap.MouseOverStarSystem`
+- export names only in TKU:
+- `MouseOverStarSystem`
+- `OnLoaded_2D49E5414F4295B1C08BC0BDD0A19CA9`
+- `OnLoaded_AA610B92476E7C01EB5A23A63A44A1BF`
+- `OnMouseOverStarSystem__DelegateSignature`
+- export names only in vanilla:
+- `Nebula_GEN_VARIABLE`
+- `Nebula_GEN_VARIABLE_StarMap_Nebula_C_CAT`
+- `OnLoaded_20E24F934BB44E0DEB67D793A04982CD`
+- `OnLoaded_B12F3EC24C6B52FD60F6FFBAD962640B`
+- `SCS_Node#2`
+- `SetMouseOverStarSystem`
+
+### `/Game/UI/FrontEnd/Starmap/StarSystemBody`
+
+- high-signal refs only in TKU:
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C.CurrentTravelRoute`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C.DefaultComponent`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C.PreviewTravelRoute`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C.ProceduralMeshComponent`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C.ProceduralMeshComponent.BodySetup#1`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.Box_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.DefaultSceneRoot_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.FogOfWar_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.PostProcesssVolume_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarMapRoot_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeA_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeB_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeF_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeG_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeK_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeM_GEN_VARIABLE`
+- `/ModOverride/TheKnownUniverse/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StaticMeshBlocker_GEN_VARIABLE`
+- `/Script/MechWarrior.MWStarMapModel.GetStarSystemInfoById`
+- `/Script/MechWarrior.StarSystemInfo`
+- high-signal refs only in vanilla:
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula.StarMap_Nebula_C`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C.CurrentTravelRoute`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C.DefaultComponent`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C.PreviewTravelRoute`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C.ProceduralMeshComponent`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C.ProceduralMeshComponent.BodySetup#1`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.Box_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.DefaultSceneRoot_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.FogOfWar_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.Nebula_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.Nebula_GEN_VARIABLE.Nebula_GEN_VARIABLE_StarMap_Nebula_C_CAT`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.PostProcesssVolume_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarMapRoot_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeA_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeB_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeF_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeG_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeK_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StarTypeM_GEN_VARIABLE`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C.StaticMeshBlocker_GEN_VARIABLE`
+- `/Script/MechWarrior.MWClusterDataAsset`
+- export names only in vanilla:
+- `GetClusterConstellationMesh`
+- `GetClusterOverlayMesh`
+- `ResetClusterMeshes`
+
+### `/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor`
+
+- export names only in TKU:
+- `AddDepthStencil`
+
+### `/Game/Campaign/CampaignArcs/BorderChanges/AllStarMapBorderChanges`
+
+- high-signal refs only in vanilla:
+- `/Game/Campaign/CampaignArcs/BorderChanges/3025_ThirdSuccession/3025_ThirdSuccession`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3025_ThirdSuccession/3025_ThirdSuccession.3025_ThirdSuccession`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3029_FormationOfTikinovAndStIves/3029_FormationOfTikinovAndStIves`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3029_FormationOfTikinovAndStIves/3029_FormationOfTikinovAndStIves.3029_FormationOfTikinovAndStIves`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3030_FourthSuccession/3030_FourthSuccession`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3030_FourthSuccession/3030_FourthSuccession.3030_FourthSuccession`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3031_TikinovJoinsFederatedSuns/3031_TikinovJoinsFederatedSuns`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3031_TikinovJoinsFederatedSuns/3031_TikinovJoinsFederatedSuns.3031_TikinovJoinsFederatedSuns`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/Borders_Year3034_RassalhaugeRecognized`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/Borders_Year3034_RassalhaugeRecognized.Borders_Year3034_RassalhaugeRecognized`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3039_WarOf3039/3039_WarOf3039`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3039_WarOf3039/3039_WarOf3039.3039_WarOf3039`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3041_FormationOfFederatedCommonwealth/3041_FormationOfFederatedCommonwealth`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3041_FormationOfFederatedCommonwealth/3041_FormationOfFederatedCommonwealth.3041_FormationOfFederatedCommonwealth`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3049_ClanInvasion/3049_ClanInvasion`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3049_ClanInvasion/3049_ClanInvasion.3049_ClanInvasion`

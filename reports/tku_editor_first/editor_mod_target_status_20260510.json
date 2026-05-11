@@ -1,0 +1,102 @@
+{
+  "candidate_tku_related_mod_targets": [],
+  "decision": {
+    "build_authorized": false,
+    "existing_editor_compat_mod_found": false,
+    "manual_create_mod_required": true,
+    "reason": "No dedicated TKU compatibility mod target exists in the MW5 Mod Editor project."
+  },
+  "editor_project": "E:\\Games\\MechWarrior5Editor\\MW5Mercs",
+  "editor_root": "E:\\Games\\MechWarrior5Editor",
+  "generated_utc": "2026-05-10T12:33:45.274925+00:00",
+  "mods_dir": {
+    "exists": true,
+    "items": [
+      {
+        "is_dir": false,
+        "mtime": "2026-05-09T21:43:22.686262+00:00",
+        "name": "modlist.json",
+        "path": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Mods\\modlist.json",
+        "size": 55
+      }
+    ],
+    "path": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Mods"
+  },
+  "non_mutating": true,
+  "plugins_dir": {
+    "exists": true,
+    "items": [
+      {
+        "is_dir": true,
+        "mtime": "2026-05-09T21:47:30.867162+00:00",
+        "name": "ChromaSDKPlugin",
+        "path": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\ChromaSDKPlugin",
+        "size": null
+      },
+      {
+        "is_dir": true,
+        "mtime": "2026-05-08T22:16:36.584837+00:00",
+        "name": "DialoguePlugin",
+        "path": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\DialoguePlugin",
+        "size": null
+      },
+      {
+        "is_dir": true,
+        "mtime": "2026-05-08T22:16:36.587894+00:00",
+        "name": "Igor",
+        "path": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\Igor",
+        "size": null
+      },
+      {
+        "is_dir": true,
+        "mtime": "2026-05-08T22:16:36.642875+00:00",
+        "name": "ImpostorBaker-master",
+        "path": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\ImpostorBaker-master",
+        "size": null
+      },
+      {
+        "is_dir": true,
+        "mtime": "2026-05-08T22:16:36.648604+00:00",
+        "name": "LowEntryJson",
+        "path": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\LowEntryJson",
+        "size": null
+      },
+      {
+        "is_dir": true,
+        "mtime": "2026-05-08T22:16:36.660412+00:00",
+        "name": "MWShaders",
+        "path": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\MWShaders",
+        "size": null
+      },
+      {
+        "is_dir": true,
+        "mtime": "2026-05-08T22:16:36.663412+00:00",
+        "name": "OceanPlugin",
+        "path": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\OceanPlugin",
+        "size": null
+      },
+      {
+        "is_dir": true,
+        "mtime": "2026-05-08T22:16:36.666411+00:00",
+        "name": "OnlineSubsystemEpic",
+        "path": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\OnlineSubsystemEpic",
+        "size": null
+      },
+      {
+        "is_dir": true,
+        "mtime": "2026-05-08T22:16:36.671411+00:00",
+        "name": "UE4Duino",
+        "path": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\UE4Duino",
+        "size": null
+      },
+      {
+        "is_dir": true,
+        "mtime": "2026-05-08T22:16:36.674766+00:00",
+        "name": "VictoryPlugin",
+        "path": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\VictoryPlugin",
+        "size": null
+      }
+    ],
+    "path": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins"
+  }
+}

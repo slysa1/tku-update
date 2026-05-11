@@ -1,0 +1,1131 @@
+# UE4 Editor Asset Dump
+
+Editor dump of the MW5 Mod Editor project. TKU comparisons should use the restored Nexus build-38 live folder at MW5Mercs/Mods/TheKnownUniverse. Quarantined blind-build artifacts are not source evidence.
+
+## Discovery
+
+- `/Game/Campaign/CampaignArcs/BorderChanges` asset_count: `190`
+- `/Game/Campaign/Clusters` asset_count: `261`
+- `/Game/UI/Editor/Utils` asset_count: `6`
+- `/Game/UI/FrontEnd/Starmap` asset_count: `323`
+
+## Focus Assets
+
+### `/Game/Levels/FrontEnd/StarMap`
+
+- exists: `True`
+- asset_class: `World`
+- load skipped: EditorAssetLibrary.load_asset/find_asset_data does not support level assets.
+- `get_dependencies` count: 26
+- `/Engine/EngineMaterials/Good64x64TilingNoiseHighFreq`
+- `/Engine/EngineMaterials/WorldGridMaterial`
+- `/Game/Levels/FrontEnd/StarMap`
+- `/Game/Levels/FrontEnd/StarMapSceneManager`
+- `/Game/Levels/FrontEnd/StarSystemSceneManager`
+- `/Game/Levels/Lighting/_common/Textures/Starfields/hdr_starfield_01_TEX`
+- `/Game/Modes/SceneManagers/SceneManager`
+- `/Game/UI/FrontEnd/Starmap/AbstractStarSystem`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionBorder_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Nebula_MST`
+- `/Game/UI/FrontEnd/Starmap/Materials/StarMap_Nebula_MST`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/Nebula`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_AClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_BClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_FClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_GClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_KClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_MClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor`
+- `/Game/UI/FrontEnd/Starmap/StarSystem`
+- `/Game/UI/FrontEnd/Starmap/StarSystemBody`
+- `/Game/UI/FrontEnd/Starmap/Textures/Nebula_CLR`
+- `/Script/MechWarrior`
+- `/Script/NavigationSystem`
+- `get_referencers` count: 5
+- `/Game/Levels/AuthoredMissions/IntroTutorial/AreaTiles/IntroTutorial_AreaSpec`
+- `/Game/Levels/FrontEnd/StarMap`
+- `/Game/Levels/TileElements/Leopard/OperationsStart/EmptyMissionHub/EmptyMissionHubArea`
+- `/Game/Levels/TileElements/Leopard/OperationsStart/LeopardMissionHubArea`
+- `/Game/Scenarios/CavaliersIntro/CavaliersIntroArea`
+
+### `/Game/Levels/FrontEnd/StarMapSceneManager`
+
+- exists: `True`
+- asset_class: `Blueprint`
+- loaded class: `Blueprint`
+- selected tags:
+- `GeneratedClass` = `BlueprintGeneratedClass'/Game/Levels/FrontEnd/StarMapSceneManager.StarMapSceneManager_C'`
+- `ParentClass` = `BlueprintGeneratedClass'/Game/Modes/SceneManagers/SceneManager.SceneManager_C'`
+- `NativeParentClass` = `Class'/Script/MechWarrior.MWSceneManager'`
+- `BlueprintType` = `BPTYPE_Normal`
+- `ClassFlags` = `12847124`
+- blueprint:
+- `class_name` = `StarMapSceneManager_C`
+- `class_path` = `/Game/Levels/FrontEnd/StarMapSceneManager.StarMapSceneManager_C`
+- `default_object_class` = `StarMapSceneManager_C`
+- `default_object_path` = `/Game/Levels/FrontEnd/StarMapSceneManager.Default__StarMapSceneManager_C`
+- default object known properties:
+- `StarMapActor` = `None`
+- `get_dependencies` count: 6
+- `/Engine/EditorBlueprintResources/StandardMacros`
+- `/Game/Levels/FrontEnd/StarMapSceneManager`
+- `/Game/Modes/SceneManagers/SceneManager`
+- `/Game/UI/FrontEnd/StarMapPawn`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor`
+- `/Script/MechWarrior`
+- `get_referencers` count: 3
+- `/Game/Levels/FrontEnd/StarMap`
+- `/Game/Levels/FrontEnd/StarMapSceneManager`
+- `/Game/UI/FrontEnd/StarSystemScreen`
+
+### `/Game/UI/FrontEnd/Starmap/StarMapActor`
+
+- exists: `True`
+- asset_class: `Blueprint`
+- loaded class: `Blueprint`
+- selected tags:
+- `GeneratedClass` = `BlueprintGeneratedClass'/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C'`
+- `ParentClass` = `Class'/Script/MechWarrior.MWStarMap'`
+- `NativeParentClass` = `Class'/Script/MechWarrior.MWStarMap'`
+- `BlueprintType` = `BPTYPE_Normal`
+- `ClassFlags` = `12847124`
+- blueprint:
+- `class_name` = `StarMapActor_C`
+- `class_path` = `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C`
+- `default_object_class` = `StarMapActor_C`
+- `default_object_path` = `/Game/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C`
+- default object known properties:
+- `StarMapCamera` = `None`
+- `InitialCameraTransform` = `<Struct 'Transform' (0x00000250192B1C20) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: 0.000000, y: 0.000000, z: 0.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>`
+- `BorderActor` = `None`
+- `get_dependencies` count: 31
+- `/Engine/BasicShapes/BasicShapeMaterial`
+- `/Engine/BasicShapes/Sphere`
+- `/Engine/EditorBlueprintResources/StandardMacros`
+- `/Game/InnerSphereData/StarMapBP_UTILS`
+- `/Game/Libraries/MW5_PersistentModel_ActorLibrary`
+- `/Game/UI/FrontEnd/Starmap/AbstractStarSystem`
+- `/Game/UI/FrontEnd/Starmap/Cluster_MTI`
+- `/Game/UI/FrontEnd/Starmap/CurrentCourse_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/FogOfWarRenderTarget`
+- `/Game/UI/FrontEnd/Starmap/Materials/FogOfWarSplat_MTL`
+- `/Game/UI/FrontEnd/Starmap/Materials/FogOfWar_MTL`
+- `/Game/UI/FrontEnd/Starmap/MaxTravelDistance_MTI`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_AClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_BClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_FClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_GClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_KClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_MClass_Star_MTI`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor`
+- `/Game/UI/FrontEnd/Starmap/StarMapRoute_MTI`
+- `/Game/UI/FrontEnd/Starmap/StarMapSelectionActor`
+- `/Game/UI/FrontEnd/Starmap/StarSystem`
+- `/Game/UI/FrontEnd/Starmap/StarSystemBody`
+- `/Game/UI/FrontEnd/Starmap/UnaffordableRoute_MTI`
+- `get_referencers` count: 6
+- `/Game/Levels/FrontEnd/StarMap`
+- `/Game/Levels/FrontEnd/StarMapSceneManager`
+- `/Game/UI/Components/StarSystemTagWidget`
+- `/Game/UI/FrontEnd/StarSystemScreen`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor`
+- `/Game/UI/FrontEnd/Starmap/StarSystemBody`
+
+### `/Game/UI/FrontEnd/StarMapPawn`
+
+- exists: `True`
+- asset_class: `Blueprint`
+- loaded class: `Blueprint`
+- selected tags:
+- `GeneratedClass` = `BlueprintGeneratedClass'/Game/UI/FrontEnd/StarMapPawn.StarMapPawn_C'`
+- `ParentClass` = `Class'/Script/MechWarrior.MWStarMapPawn'`
+- `NativeParentClass` = `Class'/Script/MechWarrior.MWStarMapPawn'`
+- `BlueprintType` = `BPTYPE_Normal`
+- `ClassFlags` = `12847636`
+- blueprint:
+- `class_name` = `StarMapPawn_C`
+- `class_path` = `/Game/UI/FrontEnd/StarMapPawn.StarMapPawn_C`
+- `default_object_class` = `StarMapPawn_C`
+- `default_object_path` = `/Game/UI/FrontEnd/StarMapPawn.Default__StarMapPawn_C`
+- default object known properties:
+- `PanBoundsHorizontal` = `5500.0`
+- `pan_bounds_horizontal` = `5500.0`
+- `PanBoundsVertical` = `4500.0`
+- `pan_bounds_vertical` = `4500.0`
+- `ZoomDistanceList` = `[400.0, 550.0, 700.0, 1400.0, 1600.0, 1800.0, 3500.0]`
+- `zoom_distance_list` = `[400.0, 550.0, 700.0, 1400.0, 1600.0, 1800.0, 3500.0]`
+- `ZoomLevelThresholds` = `[2000, 1000]`
+- `zoom_level_thresholds` = `[2000, 1000]`
+- `get_dependencies` count: 5
+- `/Game/UI/Components/StarSystemTOITooltip`
+- `/Game/UI/FrontEnd/StarMapPawn`
+- `/Game/UI/FrontEnd/StarMap_MPC`
+- `/Game/UI/FrontEnd/StarmapGamepadWidget`
+- `/Script/MechWarrior`
+- `get_referencers` count: 3
+- `/Game/Levels/FrontEnd/StarMapSceneManager`
+- `/Game/Levels/FrontEnd/StarSystemSceneManager`
+- `/Game/UI/FrontEnd/StarMapPawn`
+
+### `/Game/UI/FrontEnd/Starmap/StarSystemBody`
+
+- exists: `True`
+- asset_class: `Blueprint`
+- loaded class: `Blueprint`
+- selected tags:
+- `GeneratedClass` = `BlueprintGeneratedClass'/Game/UI/FrontEnd/Starmap/StarSystemBody.StarSystemBody_C'`
+- `ParentClass` = `Class'/Script/MechWarrior.MWStarSystemBody'`
+- `NativeParentClass` = `Class'/Script/MechWarrior.MWStarSystemBody'`
+- `BlueprintType` = `BPTYPE_Normal`
+- `ClassFlags` = `12847124`
+- blueprint:
+- `class_name` = `StarSystemBody_C`
+- `class_path` = `/Game/UI/FrontEnd/Starmap/StarSystemBody.StarSystemBody_C`
+- `default_object_class` = `StarSystemBody_C`
+- `default_object_path` = `/Game/UI/FrontEnd/Starmap/StarSystemBody.Default__StarSystemBody_C`
+- `get_dependencies` count: 15
+- `/Engine/BasicShapes/Plane`
+- `/Engine/EditorBlueprintResources/StandardMacros`
+- `/Game/Campaign/TOIs/ClusterToiLogic`
+- `/Game/Libraries/MW5_PersistentModel_ActorLibrary`
+- `/Game/UI/Components/StarSystemBannerWidget`
+- `/Game/UI/Components/StarSystemTagWidget`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/SafezoneLine_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Safezone_MTI1`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Warzone_MTI`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor`
+- `/Game/UI/FrontEnd/Starmap/StarSystemBody`
+- `/Game/UI/Mech/Materials/VerticalMask_MTL`
+- `/Script/InputCore`
+- `/Script/MechWarrior`
+- `/Script/UMG`
+- `get_referencers` count: 3
+- `/Game/Levels/FrontEnd/StarMap`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor`
+- `/Game/UI/FrontEnd/Starmap/StarSystemBody`
+
+### `/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor`
+
+- exists: `True`
+- asset_class: `Blueprint`
+- loaded class: `Blueprint`
+- selected tags:
+- `GeneratedClass` = `BlueprintGeneratedClass'/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.BaseStarMapBorderActor_C'`
+- `ParentClass` = `Class'/Script/MechWarrior.MWStarMapBorderActor'`
+- `NativeParentClass` = `Class'/Script/MechWarrior.MWStarMapBorderActor'`
+- `BlueprintType` = `BPTYPE_Normal`
+- `ClassFlags` = `12847124`
+- blueprint:
+- `class_name` = `BaseStarMapBorderActor_C`
+- `class_path` = `/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.BaseStarMapBorderActor_C`
+- `default_object_class` = `BaseStarMapBorderActor_C`
+- `default_object_path` = `/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.Default__BaseStarMapBorderActor_C`
+- `get_dependencies` count: 3
+- `/Engine/EditorBlueprintResources/StandardMacros`
+- `/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor`
+- `/Script/MechWarrior`
+- `get_referencers` count: 17
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/StarMapBorderActor3015`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3025_ThirdSuccession/StarMapBorderActor3025`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3029_FormationOfTikinovAndStIves/StarMapBorderActor3029`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3030_FourthSuccession/StarMapBorderActor3030`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3031_TikinovJoinsFederatedSuns/StarMapBorderActor3031`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/StarMapBorderActor3034`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3039_WarOf3039/StarMapBorderActor3039`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3041_FormationOfFederatedCommonwealth/StarMapBorderActor3041`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3049_ClanInvasion/StarMapBorderActor3049`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave1/StarMapBorderActor3050_Wave1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave2/StarMapBorderActor3050_Wave2`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave3/StarMapBorderActor3050_Wave3`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_YearOfPeace_Wave4/StarMapBorderActor3050_Wave4`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3051_EndOfOperationRevival_Wave5/StarMapBorderActor3050_Wave5`
+- `/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor`
+- `/Game/Campaign/Dialogue/HoloTable/StarMapActor_2570`
+- `/Game/Levels/Dropships/Leopard_Level`
+
+### `/Game/Campaign/CampaignArcs/BorderChanges/AllStarMapBorderChanges`
+
+- exists: `True`
+- asset_class: `MWCampaignArcAsset`
+- loaded class: `MWCampaignArcAsset`
+- `get_dependencies` count: 9
+- `/Game/Campaign/CampaignArcs/BorderChanges/3025_ThirdSuccession/3025_ThirdSuccession`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3029_FormationOfTikinovAndStIves/3029_FormationOfTikinovAndStIves`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3030_FourthSuccession/3030_FourthSuccession`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3031_TikinovJoinsFederatedSuns/3031_TikinovJoinsFederatedSuns`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/Borders_Year3034_RassalhaugeRecognized`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3039_WarOf3039/3039_WarOf3039`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3041_FormationOfFederatedCommonwealth/3041_FormationOfFederatedCommonwealth`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3049_ClanInvasion/3049_ClanInvasion`
+- `/Script/MechWarrior`
+- `get_referencers` count: 4
+- `/Game/Campaign/CampaignArcs/MW5CoreCampaign`
+- `/Game/DLC1/CareerMode/CareerModeCoreCampaign`
+- `/Game/DLC7/CampaignData/DEBUG_DLC7_Act2_CampaignArc`
+- `/Game/DLC7/CampaignData/DEBUG_DLC7_Act3_CampaignArc`
+
+### `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015`
+
+- exists: `True`
+- asset_class: `MWStarMapBorderAsset`
+- loaded class: `MWStarMapBorderAsset`
+- known properties:
+- `BorderActor` = `<Object '/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/StarMapBorderActor3015.StarMapBorderActor3015_C' (0x000002501225F900) Class 'BlueprintGeneratedClass'>`
+- `border_actor` = `<Object '/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/StarMapBorderActor3015.StarMapBorderActor3015_C' (0x000002501225F900) Class 'BlueprintGeneratedClass'>`
+- `get_dependencies` count: 2
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/StarMapBorderActor3015`
+- `/Script/MechWarrior`
+- `get_referencers` count: 22
+- `/Game/Campaign/StartConditions/Act1Complete_StartConditions`
+- `/Game/Campaign/StartConditions/Act1Complete_TutorialStartConditions`
+- `/Game/Campaign/StartConditions/Act2Complete_StartConditions`
+- `/Game/Campaign/StartConditions/Act2Complete_TutorialStartConditions`
+- `/Game/Campaign/StartConditions/Dev/Post_A1M1_Start`
+- `/Game/Campaign/StartConditions/MainCampaign_StartConditionsAsset`
+- `/Game/Campaign/StartConditions/MainCampaign_TutorialStartConditionsAsset`
+- `/Game/Campaign/StartConditions/PostAct3_StartConditions`
+- `/Game/Campaign/StartConditions/PreAct2_StartConditions`
+- `/Game/Campaign/StartConditions/PreAct2_TutorialStartConditions`
+- `/Game/Campaign/StartConditions/PreAct3_StartConditions`
+- `/Game/Campaign/StartConditions/PreAct3_TutorialStartConditions`
+- `/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start`
+- `/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial`
+- `/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start`
+- `/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial`
+- `/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start`
+- `/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial`
+- `/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start`
+- `/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial`
+- `/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start`
+- `/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial`
+
+### `/Game/InnerSphereData/MW5_InnerSphereData`
+
+- exists: `True`
+- asset_class: `DataTable`
+- loaded class: `DataTable`
+- selected tags:
+- `RowStructure` = `InnerSphereMapData`
+- data table rows: `2173`
+- row_struct: `/Script/MechWarrior.InnerSphereMapData`
+- sample row `0`
+- sample row `1`
+- sample row `2`
+- sample row `3`
+- sample row `4`
+- sample row `5`
+- sample row `6`
+- sample row `7`
+- sample row `8`
+- sample row `9`
+- sample row `10`
+- sample row `11`
+- sample row `12`
+- sample row `13`
+- sample row `14`
+- sample row `15`
+- sample row `16`
+- sample row `17`
+- sample row `18`
+- sample row `19`
+- known properties:
+- `RowStruct` = `<Object '/Script/MechWarrior.InnerSphereMapData' (0x0000024F4A979440) Class 'ScriptStruct'>`
+- `row_struct` = `<Object '/Script/MechWarrior.InnerSphereMapData' (0x0000024F4A979440) Class 'ScriptStruct'>`
+- `get_dependencies` count: 126
+- `/Game/Campaign/Clusters/A2M1/A2M1`
+- `/Game/Campaign/Clusters/A2M2/A2M2`
+- `/Game/Campaign/Clusters/A2M3/A2M3`
+- `/Game/Campaign/Clusters/Alarion/15_2`
+- `/Game/Campaign/Clusters/BackwaterRegion/8_4`
+- `/Game/Campaign/Clusters/Davion-KuritaFrontline/5_1_Mesh`
+- `/Game/Campaign/Clusters/DavionBorderlands/6_2_Mesh`
+- `/Game/Campaign/Clusters/DraconisBadlands/13_1`
+- `/Game/Campaign/Clusters/DroughtWorlds/13_2`
+- `/Game/Campaign/Clusters/DuchyOfAndurien/8_3`
+- `/Game/Campaign/Clusters/DuchyOfTamarind/10_2`
+- `/Game/Campaign/Clusters/DuchyOfTsitsang/7_2_Mesh`
+- `/Game/Campaign/Clusters/FWL_ShippingLane/10_1`
+- `/Game/Campaign/Clusters/FreeWorldCommerceHub/9_4`
+- `/Game/Campaign/Clusters/FreeWorldInterior/9_3`
+- `/Game/Campaign/Clusters/IndustrialHub_1/Safezone_1`
+- `/Game/Campaign/Clusters/IndustrialHub_1/Safezone_1_Blob`
+- `/Game/Campaign/Clusters/IndustrialHub_10/Safezone_10`
+- `/Game/Campaign/Clusters/IndustrialHub_10/Safezone_10_Blob`
+- `/Game/Campaign/Clusters/IndustrialHub_11/Safezone_11`
+- `/Game/Campaign/Clusters/IndustrialHub_11/Safezone_11_Blob`
+- `/Game/Campaign/Clusters/IndustrialHub_12/Safezone_12`
+- `/Game/Campaign/Clusters/IndustrialHub_12/Safezone_12_Blob`
+- `/Game/Campaign/Clusters/IndustrialHub_13/Safezone_13`
+- `/Game/Campaign/Clusters/IndustrialHub_13/Safezone_13_Blob`
+- `get_referencers` count: 7
+- `/Game/DLC6/LevelGenerators/ArenaToiLogic`
+- `/Game/Libraries/MW5_AssetAccess`
+- `/Game/Libraries/MW5_DataTableAccess`
+- `/Game/Libraries/MW5_FunctionLibrary`
+- `/Game/UI/Editor/Utils/EUW_MigratePlaceClusterTOIsToClusterAssets`
+- `/Game/UI/FrontEnd/FactionSelect/FactionInfoPanel`
+- `/Game/UI/FrontEnd/FactionSelect/PlayerOriginStartLogo`
+
+### `/Game/InnerSphereData/Updated/EmployerInfoData`
+
+- exists: `True`
+- asset_class: `DataTable`
+- loaded class: `DataTable`
+- selected tags:
+- `RowStructure` = `EmployerInfoData`
+- data table rows: `143`
+- row_struct: `/Script/MechWarrior.EmployerInfoData`
+- sample row `ABN`
+- sample row `AB`
+- sample row `AC`
+- sample row `AE`
+- sample row `AG`
+- sample row `AXP`
+- sample row `CB`
+- sample row `CBS`
+- sample row `CC`
+- sample row `CCC`
+- sample row `CCom`
+- sample row `CCO`
+- sample row `CDP`
+- sample row `CDS`
+- sample row `CF`
+- sample row `CFM`
+- sample row `CGB`
+- sample row `CGS`
+- sample row `CH`
+- sample row `CHH`
+- known properties:
+- `RowStruct` = `<Object '/Script/MechWarrior.EmployerInfoData' (0x0000024F4AA13900) Class 'ScriptStruct'>`
+- `row_struct` = `<Object '/Script/MechWarrior.EmployerInfoData' (0x0000024F4AA13900) Class 'ScriptStruct'>`
+- `get_dependencies` count: 1
+- `/Script/MechWarrior`
+- `get_referencers` count: 1
+- `/Game/Libraries/MW5_FunctionLibrary`
+
+### `/Game/InnerSphereData/Updated/SystemFactionChanges`
+
+- exists: `True`
+- asset_class: `DataTable`
+- loaded class: `DataTable`
+- selected tags:
+- `RowStructure` = `SystemFactionChanges`
+- data table rows: `3158`
+- row_struct: `/Script/MechWarrior.SystemFactionChanges`
+- sample row `APlace`
+- sample row `Abadan`
+- sample row `Abagnar`
+- sample row `Abbadiyah`
+- sample row `Abbeville`
+- sample row `Abejorral`
+- sample row `Aberystwyth`
+- sample row `AbiyAdi`
+- sample row `Abramkovo`
+- sample row `Abruzzi`
+- sample row `Acala`
+- sample row `Acamar`
+- sample row `Accrington`
+- sample row `Achernar`
+- sample row `Aconcagua`
+- sample row `Acrux`
+- sample row `Acubens`
+- sample row `AdDuwayd`
+- sample row `Addasar`
+- sample row `Addhara`
+- known properties:
+- `RowStruct` = `<Object '/Script/MechWarrior.SystemFactionChanges' (0x0000024F4A89D1A0) Class 'ScriptStruct'>`
+- `row_struct` = `<Object '/Script/MechWarrior.SystemFactionChanges' (0x0000024F4A89D1A0) Class 'ScriptStruct'>`
+- `get_dependencies` count: 1
+- `/Script/MechWarrior`
+- `get_referencers` count: 2
+- `/Game/DLC6/LevelGenerators/ArenaToiLogic`
+- `/Game/Libraries/MW5_FunctionLibrary`
+
+### `/Game/UI/FrontEnd/Starmap/Materials/Factions/Faction_MTL`
+
+- exists: `True`
+- asset_class: `Material`
+- loaded class: `Material`
+- `get_dependencies` count: 23
+- `/Engine/EngineMaterials/BlendFunc_DefBase`
+- `/Engine/EngineMaterials/BlendFunc_DefBlend`
+- `/Engine/EngineVolumetrics/Fogsheet/Materials/T_EV_BlankWhite_01`
+- `/Engine/Functions/Engine_MaterialFunctions01/Texturing/ParallaxOcclusionMapping`
+- `/Engine/Functions/Engine_MaterialFunctions01/Texturing/ScaleUVsByCenter`
+- `/Engine/Functions/Engine_MaterialFunctions02/Math/CreateThirdOrthogonalVector`
+- `/Engine/Functions/Engine_MaterialFunctions02/Math/InverseTransformMatrix`
+- `/Engine/Functions/Engine_MaterialFunctions02/Math/TransformToZVector`
+- `/Engine/Functions/Engine_MaterialFunctions02/ObjectLocalBounds`
+- `/Engine/Functions/Engine_MaterialFunctions02/SafeNormalize`
+- `/Engine/Functions/Engine_MaterialFunctions02/ScreenResolution`
+- `/Engine/Functions/Engine_MaterialFunctions02/Texturing/ScreenAlignedUVs`
+- `/Engine/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat2Components`
+- `/Engine/Functions/Engine_MaterialFunctions02/Utility/CameraDirectionVector`
+- `/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat3`
+- `/Engine/Functions/Engine_MaterialFunctions02/Utility/MakeFloat4`
+- `/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength`
+- `/Engine/Functions/Engine_MaterialFunctions03/Blends/Blend_LinearLight`
+- `/Game/Objects/Environments/Buildings/Urban/ModularCity/Material/MasterMaterials/DetailTextures/2kMasks/Fratical_sum2k_MSK`
+- `/Game/Objects/_common/Effects/Materials/Noise/Noise_Clouds_01_MSK`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionColours_MTF`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Faction_Colours_MPC`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Textures/Clouds_Starmap_MSK`
+- `get_referencers` count: 123
+- `/Game/Campaign/CampaignArcs/BorderChanges/3025_ThirdSuccession/FactionBorder_3025/1_3025`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3025_ThirdSuccession/FactionBorder_3025/2_3025`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3025_ThirdSuccession/FactionBorder_3025/3_3025`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3025_ThirdSuccession/FactionBorder_3025/4_3025`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3025_ThirdSuccession/FactionBorder_3025/5_3025`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3025_ThirdSuccession/FactionBorder_3025/6_3025`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3029_FormationOfTikinovAndStIves/FactionBorders_3029/1_3029`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3029_FormationOfTikinovAndStIves/FactionBorders_3029/2_3029`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3029_FormationOfTikinovAndStIves/FactionBorders_3029/3_3029`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3029_FormationOfTikinovAndStIves/FactionBorders_3029/4_3029`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3029_FormationOfTikinovAndStIves/FactionBorders_3029/5_3029`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3029_FormationOfTikinovAndStIves/FactionBorders_3029/6_3029`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3029_FormationOfTikinovAndStIves/FactionBorders_3029/7_3029`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3030_FourthSuccession/FactionBorder3030/1_3030`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3030_FourthSuccession/FactionBorder3030/2_3030`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3030_FourthSuccession/FactionBorder3030/3_3030`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3030_FourthSuccession/FactionBorder3030/4_3030`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3030_FourthSuccession/FactionBorder3030/5_3030`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3030_FourthSuccession/FactionBorder3030/6_3030`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3030_FourthSuccession/FactionBorder3030/7_3030`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3031_TikinovJoinsFederatedSuns/FactionBorder3031/1_3031`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3031_TikinovJoinsFederatedSuns/FactionBorder3031/2_3031`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3031_TikinovJoinsFederatedSuns/FactionBorder3031/3_3031`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3031_TikinovJoinsFederatedSuns/FactionBorder3031/4_3031`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3031_TikinovJoinsFederatedSuns/FactionBorder3031/5_3031`
+
+### `/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionBorder_MTL`
+
+- exists: `True`
+- asset_class: `Material`
+- loaded class: `Material`
+- `get_dependencies` count: 8
+- `/Engine/EngineMaterials/DefaultDiffuse`
+- `/Engine/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient`
+- `/Engine/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast`
+- `/Engine/Functions/Engine_MaterialFunctions01/Texturing/WorldAlignedTexture`
+- `/Engine/Functions/Engine_MaterialFunctions02/Utility/Sine_Remapped`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionColours_MTF`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Faction_Colours_MPC`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Textures/Stripe_CLR`
+- `get_referencers` count: 1
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionBorder_MTI`
+
+### `/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionColours_MTF`
+
+- exists: `True`
+- asset_class: `MaterialFunction`
+- loaded class: `MaterialFunction`
+- `get_dependencies` count: 1
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Faction_Colours_MPC`
+- `get_referencers` count: 4
+- `/Game/Campaign/Dialogue/HoloTable/Materials/Holo_Faction_MTL`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionBorder_MTL`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Faction_ClanInvasion_MTL`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Faction_MTL`
+
+### `/Game/UI/Editor/Utils/EUW_MigratePlaceClusterTOIsToClusterAssets`
+
+- exists: `True`
+- asset_class: `EditorUtilityWidgetBlueprint`
+- loaded class: `EditorUtilityWidgetBlueprint`
+- selected tags:
+- `GeneratedClass` = `WidgetBlueprintGeneratedClass'/Game/UI/Editor/Utils/EUW_MigratePlaceClusterTOIsToClusterAssets.EUW_MigratePlaceClusterTOIsToClusterAssets_C'`
+- `ParentClass` = `Class'/Script/Blutility.EditorUtilityWidget'`
+- `NativeParentClass` = `Class'/Script/Blutility.EditorUtilityWidget'`
+- `BlueprintType` = `BPTYPE_Normal`
+- `ClassFlags` = `14948372`
+- blueprint:
+- `class_name` = `EUW_MigratePlaceClusterTOIsToClusterAssets_C`
+- `class_path` = `/Game/UI/Editor/Utils/EUW_MigratePlaceClusterTOIsToClusterAssets.EUW_MigratePlaceClusterTOIsToClusterAssets_C`
+- `default_object_class` = `EUW_MigratePlaceClusterTOIsToClusterAssets_C`
+- `default_object_path` = `/Game/UI/Editor/Utils/EUW_MigratePlaceClusterTOIsToClusterAssets.Default__EUW_MigratePlaceClusterTOIsToClusterAssets_C`
+- `get_dependencies` count: 18
+- `/Engine/EditorBlueprintResources/StandardMacros`
+- `/Game/Campaign/CampaignArcActions/MissionActions/MissionConfigs/PlaceClusterToi_Config`
+- `/Game/Campaign/CampaignArcActions/MissionActions/MissionConfigs/PlaceClusterToi_Markups`
+- `/Game/Campaign/CampaignArcActions/MissionActions/PlaceClusterToi_ArcAction`
+- `/Game/Campaign/_common/ClusterToiDataFragment`
+- `/Game/InnerSphereData/MW5_InnerSphereData`
+- `/Game/UI/Editor/Utils/EUW_MigratePlaceClusterTOIsToClusterAssets`
+- `/Game/UI/Font/Futura/Futura`
+- `/Game/UI/FrontEnd/Codex/Codex_TextBox_Style`
+- `/Script/AssetRegistry`
+- `/Script/AssetTools`
+- `/Script/Blutility`
+- `/Script/EditorScriptingUtilities`
+- `/Script/MechWarrior`
+- `/Script/PythonScriptPlugin`
+- `/Script/UMG`
+- `/Script/UMGEditor`
+- `/Script/VictoryBPLibrary`
+- `get_referencers` count: 1
+- `/Game/UI/Editor/Utils/EUW_MigratePlaceClusterTOIsToClusterAssets`
+
+## Border Asset Summary
+
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/3015_Safezone_1` class `StaticMesh` deps `2` refs `0`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/3015_Safezone_2_Curved` class `StaticMesh` deps `2` refs `0`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/3015_Safezone_3_Beveled` class `StaticMesh` deps `2` refs `0`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/3015_Warzone_1` class `StaticMesh` deps `2` refs `0`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/3015_Warzone_2_Curved` class `StaticMesh` deps `2` refs `0`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/3015_Warzone_3_Beveled` class `StaticMesh` deps `2` refs `0`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Constellation_Safezone_1` class `StaticMesh` deps `2` refs `0`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/FactionBorder_3015` class `StaticMesh` deps `7` refs `0`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/FactionBorder_3015/1_3015` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/FactionBorder_3015/2_3015` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/FactionBorder_3015/3_3015` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/FactionBorder_3015/4_3015` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/FactionBorder_3015/5_3015` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/FactionBorder_3015/6_3015` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/FactionBorder_3015/StarMesh_3015_001_STM` class `StaticMesh` deps `2` refs `0`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/FactionBorder_3015/StarMesh_3015_002_STM` class `StaticMesh` deps `2` refs `0`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/FactionBorder_3015/StarMesh_3015_003_STM` class `StaticMesh` deps `2` refs `0`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/FactionBorder_3015/StarMesh_3015_004_STM` class `StaticMesh` deps `2` refs `0`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/FactionBorder_3015/StarMesh_3015_005_STM` class `StaticMesh` deps `2` refs `0`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/FactionBorder_3015/StarMesh_3015_006_STM` class `StaticMesh` deps `2` refs `0`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/StarMapBorderActor3015` class `Blueprint` deps `8` refs `2`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Tight_Warzone_1` class `StaticMesh` deps `2` refs `0`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3025_ThirdSuccession/3025_ThirdSuccession` class `MWCampaignArcAsset` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3025_ThirdSuccession/Borders3025` class `MWStarMapBorderAsset` deps `2` refs `4`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3025_ThirdSuccession/FactionBorder_3025` class `StaticMesh` deps `7` refs `0`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3025_ThirdSuccession/FactionBorder_3025/1_3025` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3025_ThirdSuccession/FactionBorder_3025/2_3025` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3025_ThirdSuccession/FactionBorder_3025/3_3025` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3025_ThirdSuccession/FactionBorder_3025/4_3025` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3025_ThirdSuccession/FactionBorder_3025/5_3025` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3025_ThirdSuccession/FactionBorder_3025/6_3025` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3025_ThirdSuccession/StarMapBorderActor3025` class `Blueprint` deps `8` refs `2`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3025_ThirdSuccession/StarMapBordersUpdate_3025_ArcAction` class `Blueprint` deps `3` refs `2`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3029_FormationOfTikinovAndStIves/3029_FormationOfTikinovAndStIves` class `MWCampaignArcAsset` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3029_FormationOfTikinovAndStIves/Borders3029` class `MWStarMapBorderAsset` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3029_FormationOfTikinovAndStIves/FactionBorder_3029` class `StaticMesh` deps `8` refs `0`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3029_FormationOfTikinovAndStIves/FactionBorders_3029/1_3029` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3029_FormationOfTikinovAndStIves/FactionBorders_3029/2_3029` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3029_FormationOfTikinovAndStIves/FactionBorders_3029/3_3029` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3029_FormationOfTikinovAndStIves/FactionBorders_3029/4_3029` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3029_FormationOfTikinovAndStIves/FactionBorders_3029/5_3029` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3029_FormationOfTikinovAndStIves/FactionBorders_3029/6_3029` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3029_FormationOfTikinovAndStIves/FactionBorders_3029/7_3029` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3029_FormationOfTikinovAndStIves/StarMapBorderActor3029` class `Blueprint` deps `9` refs `2`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3029_FormationOfTikinovAndStIves/StarMapBordersUpdate_3029_ArcAction` class `Blueprint` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3030_FourthSuccession/3030_FourthSuccession` class `MWCampaignArcAsset` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3030_FourthSuccession/Borders3030` class `MWStarMapBorderAsset` deps `2` refs `2`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3030_FourthSuccession/FactionBorder3030/1_3030` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3030_FourthSuccession/FactionBorder3030/2_3030` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3030_FourthSuccession/FactionBorder3030/3_3030` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3030_FourthSuccession/FactionBorder3030/4_3030` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3030_FourthSuccession/FactionBorder3030/5_3030` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3030_FourthSuccession/FactionBorder3030/6_3030` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3030_FourthSuccession/FactionBorder3030/7_3030` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3030_FourthSuccession/FactionBorder_3030` class `StaticMesh` deps `8` refs `0`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3030_FourthSuccession/StarMapBorderActor3030` class `Blueprint` deps `9` refs `2`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3030_FourthSuccession/StarMapBordersUpdate_3030_ArcAction` class `Blueprint` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3031_TikinovJoinsFederatedSuns/3031_TikinovJoinsFederatedSuns` class `MWCampaignArcAsset` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3031_TikinovJoinsFederatedSuns/Borders3031` class `MWStarMapBorderAsset` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3031_TikinovJoinsFederatedSuns/FactionBorder3031/1_3031` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3031_TikinovJoinsFederatedSuns/FactionBorder3031/2_3031` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3031_TikinovJoinsFederatedSuns/FactionBorder3031/3_3031` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3031_TikinovJoinsFederatedSuns/FactionBorder3031/4_3031` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3031_TikinovJoinsFederatedSuns/FactionBorder3031/5_3031` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3031_TikinovJoinsFederatedSuns/FactionBorder3031/6_3031` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3031_TikinovJoinsFederatedSuns/FactionBorder3031/7_3031` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3031_TikinovJoinsFederatedSuns/FactionBorder_3031` class `StaticMesh` deps `8` refs `0`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3031_TikinovJoinsFederatedSuns/StarMapBorderActor3031` class `Blueprint` deps `9` refs `2`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3031_TikinovJoinsFederatedSuns/StarMapBordersUpdate_3031_ArcAction` class `Blueprint` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/Borders3034` class `MWStarMapBorderAsset` deps `2` refs `4`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/Borders_Year3034_RassalhaugeRecognized` class `MWCampaignArcAsset` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/FactionBorder3034/1_3034` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/FactionBorder3034/2_3034` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/FactionBorder3034/3_3034` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/FactionBorder3034/4_3034` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/FactionBorder3034/5_3034` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/FactionBorder3034/6_3034` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/FactionBorder3034/7_3034` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/FactionBorder3034/8_3034` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/FactionBorder_3034` class `StaticMesh` deps `9` refs `0`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/StarMapBorderActor3034` class `Blueprint` deps `10` refs `2`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/StarMapBordersUpdate_3034_ArcAction` class `Blueprint` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3039_WarOf3039/3039_WarOf3039` class `MWCampaignArcAsset` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3039_WarOf3039/Borders3039` class `MWStarMapBorderAsset` deps `2` refs `2`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3039_WarOf3039/FactionBorder3039/1_3039` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3039_WarOf3039/FactionBorder3039/2_3039` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3039_WarOf3039/FactionBorder3039/3_3039` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3039_WarOf3039/FactionBorder3039/4_3039` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3039_WarOf3039/FactionBorder3039/5_3039` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3039_WarOf3039/FactionBorder3039/6_3039` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3039_WarOf3039/FactionBorder3039/7_3039` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3039_WarOf3039/FactionBorder3039/8_3039` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3039_WarOf3039/FactionBorder_3039` class `StaticMesh` deps `9` refs `0`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3039_WarOf3039/StarMapBorderActor3039` class `Blueprint` deps `10` refs `2`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3039_WarOf3039/StarMapBordersUpdate_3039_ArcAction` class `Blueprint` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3041_FormationOfFederatedCommonwealth/3041_FormationOfFederatedCommonwealth` class `MWCampaignArcAsset` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3041_FormationOfFederatedCommonwealth/Borders3041` class `MWStarMapBorderAsset` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3041_FormationOfFederatedCommonwealth/FactionBorder3041/1_3041` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3041_FormationOfFederatedCommonwealth/FactionBorder3041/2_3041` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3041_FormationOfFederatedCommonwealth/FactionBorder3041/3_3041` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3041_FormationOfFederatedCommonwealth/FactionBorder3041/4_3041` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3041_FormationOfFederatedCommonwealth/FactionBorder3041/5_3041` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3041_FormationOfFederatedCommonwealth/FactionBorder3041/6_3041` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3041_FormationOfFederatedCommonwealth/FactionBorder3041/7_3041` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3041_FormationOfFederatedCommonwealth/FactionBorder_3041` class `StaticMesh` deps `8` refs `0`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3041_FormationOfFederatedCommonwealth/StarMapBorderActor3041` class `Blueprint` deps `9` refs `2`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3041_FormationOfFederatedCommonwealth/StarMapBordersUpdate_3041_ArcAction` class `Blueprint` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3049_ClanInvasion/3049_ClanInvasion` class `MWCampaignArcAsset` deps `8` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3049_ClanInvasion/Borders3049` class `MWStarMapBorderAsset` deps `2` refs `5`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3049_ClanInvasion/FactionBorder3049/1_3049` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3049_ClanInvasion/FactionBorder3049/2_3049` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3049_ClanInvasion/FactionBorder3049/3_3049` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3049_ClanInvasion/FactionBorder3049/4_3049` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3049_ClanInvasion/FactionBorder3049/5_3049` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3049_ClanInvasion/FactionBorder3049/6_3049` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3049_ClanInvasion/FactionBorder3049/7_3049` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3049_ClanInvasion/FactionBorder_3049` class `StaticMesh` deps `8` refs `0`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3049_ClanInvasion/StarMapBorderActor3049` class `Blueprint` deps `9` refs `2`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3049_ClanInvasion/StarMapBordersUpdate_3049_ArcAction` class `Blueprint` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave1/3050_ClanInvasion_Wave1` class `MWCampaignArcAsset` deps `3` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave1/Borders3050_Wave1` class `MWStarMapBorderAsset` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave1/FactionBorder3050_Wave1/1_3050_wave1` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave1/FactionBorder3050_Wave1/2_3050_wave1` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave1/FactionBorder3050_Wave1/3_3050_wave1` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave1/FactionBorder3050_Wave1/4_3050_wave1` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave1/FactionBorder3050_Wave1/5_3050_wave1` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave1/FactionBorder3050_Wave1/6_3050_wave1` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave1/FactionBorder3050_Wave1/7_3050_wave1` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave1/FactionBorder3050_Wave1/dark_3050_wave1` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave1/StarMapBorderActor3050_Wave1` class `Blueprint` deps `11` refs `2`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave1/StarMapBordersUpdate_3050_Wave1_ArcAction` class `Blueprint` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave2/3050_ClanInvasion_Wave2` class `MWCampaignArcAsset` deps `3` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave2/Borders3050_Wave2` class `MWStarMapBorderAsset` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave2/FactionBorder3050_Wave2/1_3050_wave2` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave2/FactionBorder3050_Wave2/2_3050_wave2` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave2/FactionBorder3050_Wave2/3_3050_wave2` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave2/FactionBorder3050_Wave2/4_3050_wave2` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave2/FactionBorder3050_Wave2/5_3050_wave2` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave2/FactionBorder3050_Wave2/6_3050_wave2` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave2/FactionBorder3050_Wave2/7_3050_wave2` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave2/FactionBorder3050_Wave2/dark_3050_wave2` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave2/StarMapBorderActor3050_Wave2` class `Blueprint` deps `11` refs `2`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave2/StarMapBordersUpdate_3050_Wave2_ArcAction` class `Blueprint` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave3/3050_ClanInvasion_Wave3` class `MWCampaignArcAsset` deps `3` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave3/Borders3050_Wave3` class `MWStarMapBorderAsset` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave3/FactionBorder3050_Wave3/1_3050_wave3` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave3/FactionBorder3050_Wave3/2_3050_wave3` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave3/FactionBorder3050_Wave3/3_3050_wave3` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave3/FactionBorder3050_Wave3/4_3050_wave3` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave3/FactionBorder3050_Wave3/5_3050_wave3` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave3/FactionBorder3050_Wave3/6_3050_wave3` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave3/FactionBorder3050_Wave3/7_3050_wave3` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave3/FactionBorder3050_Wave3/dark_3050_wave3` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave3/StarMapBorderActor3050_Wave3` class `Blueprint` deps `11` refs `2`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_OperationRevival_Wave3/StarMapBordersUpdate_3050_Wave3_ArcAction` class `Blueprint` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_YearOfPeace_Wave4/3050_ClanInvasion_Wave4` class `MWCampaignArcAsset` deps `3` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_YearOfPeace_Wave4/Borders3050_Wave4` class `MWStarMapBorderAsset` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_YearOfPeace_Wave4/FactionBorder3050_Wave4/1_3050_wave4` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_YearOfPeace_Wave4/FactionBorder3050_Wave4/2_3050_wave4` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_YearOfPeace_Wave4/FactionBorder3050_Wave4/3_3050_wave4` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_YearOfPeace_Wave4/FactionBorder3050_Wave4/4_3050_wave4` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_YearOfPeace_Wave4/FactionBorder3050_Wave4/5_3050_wave4` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_YearOfPeace_Wave4/FactionBorder3050_Wave4/6_3050_wave4` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_YearOfPeace_Wave4/FactionBorder3050_Wave4/7_3050_wave4` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_YearOfPeace_Wave4/FactionBorder3050_Wave4/clan_1_3050_wave4` class `StaticMesh` deps `2` refs `0`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_YearOfPeace_Wave4/FactionBorder3050_Wave4/clan_2_3050_wave4` class `StaticMesh` deps `2` refs `0`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_YearOfPeace_Wave4/FactionBorder3050_Wave4/clan_3_3050_wave4` class `StaticMesh` deps `2` refs `0`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_YearOfPeace_Wave4/FactionBorder3050_Wave4/clan_4_3050_wave4` class `StaticMesh` deps `2` refs `0`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_YearOfPeace_Wave4/FactionBorder3050_Wave4/dark_3050_wave4` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_YearOfPeace_Wave4/StarMapBorderActor3050_Wave4` class `Blueprint` deps `11` refs `2`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3050_YearOfPeace_Wave4/StarMapBordersUpdate_3050_Wave4_ArcAction` class `Blueprint` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3051_EndOfOperationRevival_Wave5/3050_ClanInvasion_Wave5` class `MWCampaignArcAsset` deps `3` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3051_EndOfOperationRevival_Wave5/Borders3050_Wave5` class `MWStarMapBorderAsset` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3051_EndOfOperationRevival_Wave5/FactionBorder3051_Wave5/1_3051_wave5` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3051_EndOfOperationRevival_Wave5/FactionBorder3051_Wave5/2_3051_wave5` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3051_EndOfOperationRevival_Wave5/FactionBorder3051_Wave5/3_3051_wave5` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3051_EndOfOperationRevival_Wave5/FactionBorder3051_Wave5/4_3051_wave5` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3051_EndOfOperationRevival_Wave5/FactionBorder3051_Wave5/5_3051_wave5` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3051_EndOfOperationRevival_Wave5/FactionBorder3051_Wave5/6_3051_wave5` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3051_EndOfOperationRevival_Wave5/FactionBorder3051_Wave5/7_3051_wave5` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3051_EndOfOperationRevival_Wave5/FactionBorder3051_Wave5/clan_1_3051_wave5` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3051_EndOfOperationRevival_Wave5/FactionBorder3051_Wave5/clan_2_3051_wave5` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3051_EndOfOperationRevival_Wave5/FactionBorder3051_Wave5/clan_3_3051_wave5` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3051_EndOfOperationRevival_Wave5/FactionBorder3051_Wave5/clan_4_3051_wave5` class `StaticMesh` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3051_EndOfOperationRevival_Wave5/StarMapBorderActor3050_Wave5` class `Blueprint` deps `14` refs `2`
+- `/Game/Campaign/CampaignArcs/BorderChanges/3051_EndOfOperationRevival_Wave5/StarMapBordersUpdate_3050_Wave5_ArcAction` class `Blueprint` deps `2` refs `1`
+- `/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/TempStoryWarzoneFolder/7_0_Mesh` class `StaticMesh` deps `2` refs `0`
+
+## Cluster Asset Summary
+
+- `/Game/Campaign/Clusters/A2M1/A2M1` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/A2M1/A2M1_ClusterAsset` class `MWClusterDataAsset` systems `10` faction `<Object '/Game/Factions/ClusterOwners/RefinerySystems.RefinerySystems' (0x0000024F0F28FE40) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/A2M1/A2M1.A2M1' (0x000002500B329800) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/A2M2/A2M2` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/A2M2/A2M2_ClusterAsset` class `MWClusterDataAsset` systems `13` faction `<Object '/Game/Campaign/Clusters/A2M2/TheJunkyard.TheJunkyard' (0x0000024F0F2550C0) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/A2M2/A2M2.A2M2' (0x000002500B328C00) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/A2M2/TheJunkyard` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/A2M3/A2M3` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/A2M3/A2M3_ClusterAsset` class `MWClusterDataAsset` systems `15` faction `<Object '/Game/Campaign/Clusters/A2M3/AgriculturalBelt.AgriculturalBelt' (0x0000024F0F255B40) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/A2M3/A2M3.A2M3' (0x000002500B5A7800) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/A2M3/AgriculturalBelt` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/Alarion/15_2` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/Alarion/AlarionPeriphery` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/Alarion/Alarion_ClusterAsset` class `MWClusterDataAsset` systems `24` faction `<Object '/Game/Campaign/Clusters/Alarion/AlarionPeriphery.AlarionPeriphery' (0x0000024F0F255600) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/Alarion/15_2.15_2' (0x000002500B5A6C00) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/BackwaterRegion/8_4` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/BackwaterRegion/BackwaterRegion` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/BackwaterRegion/BackwaterRegion_ClusterAsset` class `MWClusterDataAsset` systems `11` faction `<Object '/Game/Campaign/Clusters/BackwaterRegion/BackwaterRegion.BackwaterRegion' (0x0000024F0F256080) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/BackwaterRegion/8_4.8_4' (0x000002500B5A6000) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/Davion-KuritaFrontline/5_1_Mesh` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/Davion-KuritaFrontline/Davion-KuritaFrontline_ClusterAsset` class `MWClusterDataAsset` systems `21` faction `<Object '/Game/Campaign/Clusters/Davion-KuritaFrontline/DavionKurita_1.DavionKurita_1' (0x0000024F0F255D00) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/Davion-KuritaFrontline/5_1_Mesh.5_1_Mesh' (0x000002500B5A5400) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/Davion-KuritaFrontline/DavionKurita_1` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/DavionBorderlands/6_2_Mesh` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/DavionBorderlands/DavionBorderlands` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/DavionBorderlands/DavionBorderlands_ClusterAsset` class `MWClusterDataAsset` systems `14` faction `<Object '/Game/Campaign/Clusters/DavionBorderlands/DavionBorderlands.DavionBorderlands' (0x0000024F0F256780) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/DavionBorderlands/6_2_Mesh.6_2_Mesh' (0x000002500B5A4800) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/DraconisBadlands/13_1` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/DraconisBadlands/DraconisBadlands_ClusterAsset` class `MWClusterDataAsset` systems `11` faction `<Object '/Game/Campaign/Clusters/DraconisBadlands/KuritanBadlands.KuritanBadlands' (0x0000024F0F256240) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/DraconisBadlands/13_1.13_1' (0x000002500B6D3800) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/DraconisBadlands/KuritanBadlands` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/DroughtWorlds/13_2` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/DroughtWorlds/DroughtWorlds` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/DroughtWorlds/DroughtWorlds_ClusterAsset` class `MWClusterDataAsset` systems `16` faction `<Object '/Game/Campaign/Clusters/DroughtWorlds/DroughtWorlds.DroughtWorlds' (0x0000024F0F256CC0) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/DroughtWorlds/13_2.13_2' (0x000002500B6D2C00) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/DuchyOfAndurien/8_3` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/DuchyOfAndurien/DuchyOfAndurien_ClusterAsset` class `MWClusterDataAsset` systems `17` faction `<Object '/Game/Campaign/Clusters/DuchyOfAndurien/DutchyOfAndurien.DutchyOfAndurien' (0x0000024F0F256940) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/DuchyOfAndurien/8_3.8_3' (0x000002500B6D2000) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/DuchyOfAndurien/DutchyOfAndurien` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/DuchyOfTamarind/10_2` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/DuchyOfTamarind/DuchyOfTamarind_ClusterAsset` class `MWClusterDataAsset` systems `11` faction `<Object '/Game/Campaign/Clusters/DuchyOfTamarind/TamarindAbbey.TamarindAbbey' (0x0000024F0F2573C0) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/DuchyOfTamarind/10_2.10_2' (0x000002500B6D1400) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/DuchyOfTamarind/TamarindAbbey` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/DuchyOfTsitsang/7_2_Mesh` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/DuchyOfTsitsang/DuchyOfTsitsang_ClusterAsset` class `MWClusterDataAsset` systems `10` faction `<Object '/Game/Campaign/Clusters/DuchyOfTsitsang/TsinghaiCommonality.TsinghaiCommonality' (0x0000024F0F256E80) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/DuchyOfTsitsang/7_2_Mesh.7_2_Mesh' (0x000002500B6D0800) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/DuchyOfTsitsang/TsinghaiCommonality` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/FWL_ShippingLane/10_1` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/FWL_ShippingLane/FWLShippingRoute` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/FWL_ShippingLane/FWL_ShippingLane_ClusterAsset` class `MWClusterDataAsset` systems `12` faction `<Object '/Game/Campaign/Clusters/FWL_ShippingLane/FWLShippingRoute.FWLShippingRoute' (0x0000024F0F257AC0) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/FWL_ShippingLane/10_1.10_1' (0x000002500B9A7800) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/FreeWorldCommerceHub/9_4` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/FreeWorldCommerceHub/FWLInterior` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/FreeWorldCommerceHub/FreeWorldCommerceHub_ClusterAsset` class `MWClusterDataAsset` systems `17` faction `<Object '/Game/Campaign/Clusters/FreeWorldInterior/FWLCommercialHub.FWLCommercialHub' (0x0000024F0F257580) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/FreeWorldCommerceHub/9_4.9_4' (0x000002500B9A6C00) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/FreeWorldInterior/9_3` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/FreeWorldInterior/FWLCommercialHub` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/FreeWorldInterior/FreeWorldInterior_ClusterAsset` class `MWClusterDataAsset` systems `17` faction `<Object '/Game/Campaign/Clusters/FreeWorldCommerceHub/FWLInterior.FWLInterior' (0x0000024F0F257900) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/FreeWorldInterior/9_3.9_3' (0x000002500B9A6000) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/HerotitusZone/Herotitus` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/HerotitusZone/HerotitusZone_ClusterAsset` class `MWClusterDataAsset` systems `1` faction `<Object '/Game/Campaign/Clusters/HerotitusZone/Herotitus.Herotitus' (0x0000024F0F25C100) Class 'MWFactionAsset'>` overlay `None` constellation `None`
+- `/Game/Campaign/Clusters/IndustrialHub_1/IndustrialHub_1_ClusterAsset` class `MWClusterDataAsset` systems `6` faction `<Object '/Game/Campaign/Clusters/IndustrialHub_1/RepairSystem_1.RepairSystem_1' (0x0000024F0F25C640) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/IndustrialHub_1/Safezone_1_Blob.Safezone_1_Blob' (0x000002500B9A5400) Class 'StaticMesh'>` constellation `<Object '/Game/Campaign/Clusters/IndustrialHub_1/Safezone_1.Safezone_1' (0x000002500B9A4800) Class 'StaticMesh'>`
+- `/Game/Campaign/Clusters/IndustrialHub_1/RepairSystem_1` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_1/Safezone_1` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_1/Safezone_1_Blob` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_10/IndustrialHub_10_ClusterAsset` class `MWClusterDataAsset` systems `6` faction `<Object '/Game/Campaign/Clusters/IndustrialHub_10/RepairSystem_11.RepairSystem_11' (0x0000024F0F25C2C0) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/IndustrialHub_10/Safezone_10_Blob.Safezone_10_Blob' (0x000002500AC83400) Class 'StaticMesh'>` constellation `<Object '/Game/Campaign/Clusters/IndustrialHub_10/Safezone_10.Safezone_10' (0x000002500AC82800) Class 'StaticMesh'>`
+- `/Game/Campaign/Clusters/IndustrialHub_10/RepairSystem_11` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_10/Safezone_10` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_10/Safezone_10_Blob` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_11/IndustrialHub_11_ClusterAsset` class `MWClusterDataAsset` systems `6` faction `<Object '/Game/Campaign/Clusters/IndustrialHub_11/RepairSystem_12.RepairSystem_12' (0x0000024F0F25CD40) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/IndustrialHub_11/Safezone_11_Blob.Safezone_11_Blob' (0x000002500AC81C00) Class 'StaticMesh'>` constellation `<Object '/Game/Campaign/Clusters/IndustrialHub_11/Safezone_11.Safezone_11' (0x000002500AC81000) Class 'StaticMesh'>`
+- `/Game/Campaign/Clusters/IndustrialHub_11/RepairSystem_12` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_11/Safezone_11` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_11/Safezone_11_Blob` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_12/IndustrialHub_12_ClusterAsset` class `MWClusterDataAsset` systems `5` faction `<Object '/Game/Campaign/Clusters/IndustrialHub_12/RepairSystem_14.RepairSystem_14' (0x0000024F0F25C800) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/IndustrialHub_12/Safezone_12_Blob.Safezone_12_Blob' (0x000002500A0B3400) Class 'StaticMesh'>` constellation `<Object '/Game/Campaign/Clusters/IndustrialHub_12/Safezone_12.Safezone_12' (0x000002500A0B2800) Class 'StaticMesh'>`
+- `/Game/Campaign/Clusters/IndustrialHub_12/RepairSystem_14` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_12/Safezone_12` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_12/Safezone_12_Blob` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_13/IndustrialHub_13_ClusterAsset` class `MWClusterDataAsset` systems `6` faction `<Object '/Game/Campaign/Clusters/IndustrialHub_13/RepairSystem_13.RepairSystem_13' (0x0000024F0F25D280) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/IndustrialHub_13/Safezone_13_Blob.Safezone_13_Blob' (0x000002500A0B1C00) Class 'StaticMesh'>` constellation `<Object '/Game/Campaign/Clusters/IndustrialHub_13/Safezone_13.Safezone_13' (0x000002500A0B1000) Class 'StaticMesh'>`
+- `/Game/Campaign/Clusters/IndustrialHub_13/RepairSystem_13` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_13/Safezone_13` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_13/Safezone_13_Blob` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_14/IndustrialHub_14_ClusterAsset` class `MWClusterDataAsset` systems `5` faction `<Object '/Game/Campaign/Clusters/IndustrialHub_14/RepairSystem_15.RepairSystem_15' (0x0000024F0F25CF00) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/IndustrialHub_14/Safezone_14_Blob.Safezone_14_Blob' (0x000002500A343400) Class 'StaticMesh'>` constellation `<Object '/Game/Campaign/Clusters/IndustrialHub_14/Safezone_14.Safezone_14' (0x000002500A342800) Class 'StaticMesh'>`
+- `/Game/Campaign/Clusters/IndustrialHub_14/RepairSystem_15` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_14/Safezone_14` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_14/Safezone_14_Blob` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_15/IndustrialHub_15_ClusterAsset` class `MWClusterDataAsset` systems `4` faction `<Object '/Game/Campaign/Clusters/IndustrialHub_15/RepairSystem_16.RepairSystem_16' (0x0000024F0F25D980) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/IndustrialHub_15/Safezone_15_Blob.Safezone_15_Blob' (0x000002500A341000) Class 'StaticMesh'>` constellation `<Object '/Game/Campaign/Clusters/IndustrialHub_15/Safezone_15.Safezone_15' (0x0000024F9F003800) Class 'StaticMesh'>`
+- `/Game/Campaign/Clusters/IndustrialHub_15/RepairSystem_16` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_15/Safezone_15` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_15/Safezone_15_Blob` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_16/IndustrialHub_16_ClusterAsset` class `MWClusterDataAsset` systems `6` faction `<Object '/Game/Campaign/Clusters/IndustrialHub_16/RepairSystem_18.RepairSystem_18' (0x0000024F0F25D440) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/IndustrialHub_16/Safezone_16_Blob.Safezone_16_Blob' (0x0000024F9F002C00) Class 'StaticMesh'>` constellation `<Object '/Game/Campaign/Clusters/IndustrialHub_16/Safezone_16.Safezone_16' (0x0000024F9F002000) Class 'StaticMesh'>`
+- `/Game/Campaign/Clusters/IndustrialHub_16/RepairSystem_18` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_16/Safezone_16` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_16/Safezone_16_Blob` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_17/IndustrialHub_17_ClusterAsset` class `MWClusterDataAsset` systems `4` faction `<Object '/Game/Campaign/Clusters/IndustrialHub_17/RepairSystem_17.RepairSystem_17' (0x0000024F0F25DEC0) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/IndustrialHub_17/Safezone_17_Blob.Safezone_17_Blob' (0x0000024F9F001400) Class 'StaticMesh'>` constellation `<Object '/Game/Campaign/Clusters/IndustrialHub_17/Safezone_17.Safezone_17' (0x0000024F9F000800) Class 'StaticMesh'>`
+- `/Game/Campaign/Clusters/IndustrialHub_17/RepairSystem_17` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_17/Safezone_17` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_17/Safezone_17_Blob` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_18/IndustrialHub_18_ClusterAsset` class `MWClusterDataAsset` systems `5` faction `<Object '/Game/Campaign/Clusters/IndustrialHub_18/RepairSystem_19.RepairSystem_19' (0x0000024F0F25DB40) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/IndustrialHub_18/Safezone_18_Blob.Safezone_18_Blob' (0x0000024FAB4BF800) Class 'StaticMesh'>` constellation `<Object '/Game/Campaign/Clusters/IndustrialHub_18/Safezone_18.Safezone_18' (0x0000024FAB4BEC00) Class 'StaticMesh'>`
+- `/Game/Campaign/Clusters/IndustrialHub_18/RepairSystem_19` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_18/Safezone_18` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_18/Safezone_18_Blob` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_19/IndustrialHub_19_ClusterAsset` class `MWClusterDataAsset` systems `4` faction `<Object '/Game/Campaign/Clusters/IndustrialHub_19/RepairSystem_7.RepairSystem_7' (0x0000024F0F25E400) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/IndustrialHub_19/Safezone_7_Blob.Safezone_7_Blob' (0x0000024FAB4BE000) Class 'StaticMesh'>` constellation `<Object '/Game/Campaign/Clusters/IndustrialHub_19/Safezone_7.Safezone_7' (0x0000024FAB4BD400) Class 'StaticMesh'>`
+- `/Game/Campaign/Clusters/IndustrialHub_19/RepairSystem_7` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_19/Safezone_7` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_19/Safezone_7_Blob` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_2/IndustrialHub_2_ClusterAsset` class `MWClusterDataAsset` systems `7` faction `<Object '/Game/Campaign/Clusters/IndustrialHub_2/RepairSystem_2.RepairSystem_2' (0x0000024F0F25E080) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/IndustrialHub_2/Safezone_2_Blob.Safezone_2_Blob' (0x0000024FAB4BC800) Class 'StaticMesh'>` constellation `<Object '/Game/Campaign/Clusters/IndustrialHub_2/Safezone_2.Safezone_2' (0x0000024FA4917800) Class 'StaticMesh'>`
+- `/Game/Campaign/Clusters/IndustrialHub_2/RepairSystem_2` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_2/Safezone_2` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_2/Safezone_2_Blob` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_20/IndustrialHub_20_ClusterAsset` class `MWClusterDataAsset` systems `4` faction `<Object '/Game/Campaign/Clusters/IndustrialHub_20/RepairSystem_21.RepairSystem_21' (0x0000024F0F25E940) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/IndustrialHub_20/Safezone2_Collision.Safezone2_Collision' (0x0000024FA4916C00) Class 'StaticMesh'>` constellation `<Object '/Game/Campaign/Clusters/IndustrialHub_20/Safezone2.Safezone2' (0x0000024FA4916000) Class 'StaticMesh'>`
+- `/Game/Campaign/Clusters/IndustrialHub_20/RepairSystem_21` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_20/Safezone2` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_20/Safezone2_Collision` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_21/IndustrialHub_21_ClusterAsset` class `MWClusterDataAsset` systems `10` faction `<Object '/Game/Campaign/Clusters/IndustrialHub_21/RepairSystem_22.RepairSystem_22' (0x0000024F0F25E5C0) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/IndustrialHub_21/Safezone3_Collision.Safezone3_Collision' (0x0000024FA4915000) Class 'StaticMesh'>` constellation `<Object '/Game/Campaign/Clusters/IndustrialHub_21/Safezone3.Safezone3' (0x0000024FB02D3800) Class 'StaticMesh'>`
+- `/Game/Campaign/Clusters/IndustrialHub_21/RepairSystem_22` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_21/Safezone3` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_21/Safezone3_Collision` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_22/IndustrialHub_22_ClusterAsset` class `MWClusterDataAsset` systems `8` faction `<Object '/Game/Campaign/Clusters/IndustrialHub_22/RepairSystem_23.RepairSystem_23' (0x0000024F0F25EE80) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/IndustrialHub_22/Safezone4_Collision.Safezone4_Collision' (0x0000024FB02D2C00) Class 'StaticMesh'>` constellation `<Object '/Game/Campaign/Clusters/IndustrialHub_22/Safezone4.Safezone4' (0x0000024FB02D2000) Class 'StaticMesh'>`
+- `/Game/Campaign/Clusters/IndustrialHub_22/RepairSystem_23` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_22/Safezone4` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_22/Safezone4_Collision` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_23/IndustrialHub_23_ClusterAsset` class `MWClusterDataAsset` systems `6` faction `<Object '/Game/Campaign/Clusters/IndustrialHub_23/RepairSystem_24.RepairSystem_24' (0x0000024F0F25EB00) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/IndustrialHub_23/Safezone5_Collision.Safezone5_Collision' (0x0000024FB02D1400) Class 'StaticMesh'>` constellation `<Object '/Game/Campaign/Clusters/IndustrialHub_23/Safezone5.Safezone5' (0x0000024FB02D0800) Class 'StaticMesh'>`
+- `/Game/Campaign/Clusters/IndustrialHub_23/RepairSystem_24` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_23/Safezone5` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_23/Safezone5_Collision` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_24/IndustrialHub_24_ClusterAsset` class `MWClusterDataAsset` systems `6` faction `<Object '/Game/Campaign/Clusters/IndustrialHub_24/RepairSystem_25.RepairSystem_25' (0x0000024F0F25F3C0) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/IndustrialHub_24/Safezone6_Collision.Safezone6_Collision' (0x0000024FB0807800) Class 'StaticMesh'>` constellation `<Object '/Game/Campaign/Clusters/IndustrialHub_24/Safezone6.Safezone6' (0x0000024FB0806C00) Class 'StaticMesh'>`
+- `/Game/Campaign/Clusters/IndustrialHub_24/RepairSystem_25` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_24/Safezone6` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_24/Safezone6_Collision` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_25/IndustrialHub_25_ClusterAsset` class `MWClusterDataAsset` systems `20` faction `<Object '/Game/Campaign/Clusters/IndustrialHub_25/RepairSystem_20.RepairSystem_20' (0x0000024F0F25F040) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/IndustrialHub_25/Safezone1_Collision.Safezone1_Collision' (0x0000024FB0806000) Class 'StaticMesh'>` constellation `<Object '/Game/Campaign/Clusters/IndustrialHub_25/Safezone1.Safezone1' (0x0000024FB0805400) Class 'StaticMesh'>`
+- `/Game/Campaign/Clusters/IndustrialHub_25/RepairSystem_20` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_25/Safezone1` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_25/Safezone1_Collision` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_26/IndustrialHub_26_ClusterAsset` class `MWClusterDataAsset` systems `13` faction `<Object '/Game/Campaign/Clusters/IndustrialHub_26/RepairSystem_26.RepairSystem_26' (0x0000024F0F25F900) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/IndustrialHub_26/Safezone7_Collision.Safezone7_Collision' (0x0000024FB0804400) Class 'StaticMesh'>` constellation `<Object '/Game/Campaign/Clusters/IndustrialHub_26/Safezone7.Safezone7' (0x0000024F9EE0B400) Class 'StaticMesh'>`
+- `/Game/Campaign/Clusters/IndustrialHub_26/RepairSystem_26` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_26/Safezone7` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_26/Safezone7_Collision` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_27/IndustrialHub_27_ClusterAsset` class `MWClusterDataAsset` systems `9` faction `<Object '/Game/Campaign/Clusters/IndustrialHub_27/RepairSystem_27.RepairSystem_27' (0x0000024F0F25F580) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/IndustrialHub_27/Safezone8_Collision.Safezone8_Collision' (0x0000024F9EE0A800) Class 'StaticMesh'>` constellation `<Object '/Game/Campaign/Clusters/IndustrialHub_27/Safezone8.Safezone8' (0x0000024F9EE09C00) Class 'StaticMesh'>`
+- `/Game/Campaign/Clusters/IndustrialHub_27/RepairSystem_27` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_27/Safezone8` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_27/Safezone8_Collision` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_28/IndustrialHub_28_ClusterAsset` class `MWClusterDataAsset` systems `4` faction `<Object '/Game/Campaign/Clusters/IndustrialHub_28/RepairSystem_28.RepairSystem_28' (0x0000024F0F25FE40) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/IndustrialHub_28/Safezone9_Collision.Safezone9_Collision' (0x0000024F9EE09000) Class 'StaticMesh'>` constellation `<Object '/Game/Campaign/Clusters/IndustrialHub_28/Safezone9.Safezone9' (0x0000024FA7DF7800) Class 'StaticMesh'>`
+- `/Game/Campaign/Clusters/IndustrialHub_28/RepairSystem_28` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_28/Safezone9` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_28/Safezone9_Collision` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_29/29_Collision` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_29/IndustrialHub_29_ClusterAsset` class `MWClusterDataAsset` systems `4` faction `<Object '/Game/Campaign/Clusters/IndustrialHub_29/RepairSystem_29.RepairSystem_29' (0x0000024F0F25FAC0) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/IndustrialHub_29/29_Collision.29_Collision' (0x0000024FA7DF6C00) Class 'StaticMesh'>` constellation `<Object '/Game/Campaign/Clusters/IndustrialHub_29/Safezone_29.Safezone_29' (0x0000024FA7DF6000) Class 'StaticMesh'>`
+- `/Game/Campaign/Clusters/IndustrialHub_29/RepairSystem_29` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_29/Safezone_29` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_3/IndustrialHub_3_ClusterAsset` class `MWClusterDataAsset` systems `5` faction `<Object '/Game/Campaign/Clusters/IndustrialHub_3/RepairSystem_6.RepairSystem_6' (0x0000024F0F264480) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/IndustrialHub_3/Safezone_3_Blob.Safezone_3_Blob' (0x0000024FA7DF5400) Class 'StaticMesh'>` constellation `<Object '/Game/Campaign/Clusters/IndustrialHub_3/Safezone_3.Safezone_3' (0x0000024FA7DF4800) Class 'StaticMesh'>`
+- `/Game/Campaign/Clusters/IndustrialHub_3/RepairSystem_6` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_3/Safezone_3` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_3/Safezone_3_Blob` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_30/30_Collision` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_30/IndustrialHub_30_ClusterAsset` class `MWClusterDataAsset` systems `5` faction `<Object '/Game/Campaign/Clusters/IndustrialHub_30/RepairSystem_30.RepairSystem_30' (0x0000024F0F264100) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/IndustrialHub_30/30_Collision.30_Collision' (0x0000024F1D66F800) Class 'StaticMesh'>` constellation `<Object '/Game/Campaign/Clusters/IndustrialHub_30/Safezone_30.Safezone_30' (0x0000024F1D66EC00) Class 'StaticMesh'>`
+- `/Game/Campaign/Clusters/IndustrialHub_30/RepairSystem_30` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_30/Safezone_30` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_31/31_Collision` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_31/IndustrialHub_31_ClusterAsset` class `MWClusterDataAsset` systems `4` faction `<Object '/Game/Campaign/Clusters/IndustrialHub_31/RepairSystem_31.RepairSystem_31' (0x0000024F0F2649C0) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/IndustrialHub_31/31_Collision.31_Collision' (0x0000024F1D66E000) Class 'StaticMesh'>` constellation `<Object '/Game/Campaign/Clusters/IndustrialHub_31/Safezone_31.Safezone_31' (0x0000024F1D66D400) Class 'StaticMesh'>`
+- `/Game/Campaign/Clusters/IndustrialHub_31/RepairSystem_31` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_31/Safezone_31` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_4/IndustrialHub_4_ClusterAsset` class `MWClusterDataAsset` systems `5` faction `<Object '/Game/Campaign/Clusters/IndustrialHub_4/RepairSystem_3.RepairSystem_3' (0x0000024F0F264640) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/IndustrialHub_4/Safezone_4_Blob.Safezone_4_Blob' (0x0000024FA515F800) Class 'StaticMesh'>` constellation `<Object '/Game/Campaign/Clusters/IndustrialHub_4/Safezone_4.Safezone_4' (0x0000024FA515E800) Class 'StaticMesh'>`
+- `/Game/Campaign/Clusters/IndustrialHub_4/RepairSystem_3` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_4/Safezone_4` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_4/Safezone_4_Blob` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_5/IndustrialHub_5_ClusterAsset` class `MWClusterDataAsset` systems `4` faction `<Object '/Game/Campaign/Clusters/IndustrialHub_5/RepairSystem_4.RepairSystem_4' (0x0000024F0F264F00) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/IndustrialHub_5/Safezone_5_Blob.Safezone_5_Blob' (0x0000024FA515DC00) Class 'StaticMesh'>` constellation `<Object '/Game/Campaign/Clusters/IndustrialHub_5/Safezone_5.Safezone_5' (0x0000024FA515D000) Class 'StaticMesh'>`
+- `/Game/Campaign/Clusters/IndustrialHub_5/RepairSystem_4` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_5/Safezone_5` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_5/Safezone_5_Blob` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_6/IndustrialHub_6_ClusterAsset` class `MWClusterDataAsset` systems `4` faction `<Object '/Game/Campaign/Clusters/IndustrialHub_6/RepairSystem_8.RepairSystem_8' (0x0000024F0F264B80) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/IndustrialHub_6/Safezone_6_Blob.Safezone_6_Blob' (0x0000024FAF6BB800) Class 'StaticMesh'>` constellation `<Object '/Game/Campaign/Clusters/IndustrialHub_6/Safezone_6.Safezone_6' (0x0000024FAF6BAC00) Class 'StaticMesh'>`
+- `/Game/Campaign/Clusters/IndustrialHub_6/RepairSystem_8` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_6/Safezone_6` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_6/Safezone_6_Blob` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_7/IndustrialHub_7_ClusterAsset` class `MWClusterDataAsset` systems `7` faction `<Object '/Game/Campaign/Clusters/IndustrialHub_7/RepairSystem_5.RepairSystem_5' (0x0000024F0F265440) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/IndustrialHub_7/Safezone_7_5_Blob.Safezone_7_5_Blob' (0x0000024FAF6BA000) Class 'StaticMesh'>` constellation `<Object '/Game/Campaign/Clusters/IndustrialHub_7/Safezone_7_5.Safezone_7_5' (0x0000024FAF6B9000) Class 'StaticMesh'>`
+- `/Game/Campaign/Clusters/IndustrialHub_7/RepairSystem_5` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_7/Safezone_7_5` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_7/Safezone_7_5_Blob` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_8/IndustrialHub_8_ClusterAsset` class `MWClusterDataAsset` systems `4` faction `<Object '/Game/Campaign/Clusters/IndustrialHub_8/RepairSystem_9.RepairSystem_9' (0x0000024F0F2650C0) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/IndustrialHub_8/Safezone_8_Blob.Safezone_8_Blob' (0x0000024FB204F800) Class 'StaticMesh'>` constellation `<Object '/Game/Campaign/Clusters/IndustrialHub_8/Safezone_8.Safezone_8' (0x0000024FB204EC00) Class 'StaticMesh'>`
+- `/Game/Campaign/Clusters/IndustrialHub_8/RepairSystem_9` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_8/Safezone_8` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_8/Safezone_8_Blob` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_9/IndustrialHub_9_ClusterAsset` class `MWClusterDataAsset` systems `5` faction `<Object '/Game/Campaign/Clusters/IndustrialHub_9/RepairSystem_10.RepairSystem_10' (0x0000024F0F265980) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/IndustrialHub_9/Safezone_9_Blob.Safezone_9_Blob' (0x0000024FB204DC00) Class 'StaticMesh'>` constellation `<Object '/Game/Campaign/Clusters/IndustrialHub_9/Safezone_9.Safezone_9' (0x0000024FB204CC00) Class 'StaticMesh'>`
+- `/Game/Campaign/Clusters/IndustrialHub_9/RepairSystem_10` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_9/Safezone_9` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialHub_9/Safezone_9_Blob` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialMiningCollective/5_2_Mesh` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/IndustrialMiningCollective/IndustrialMiningCollective_ClusterAsset` class `MWClusterDataAsset` systems `14` faction `<Object '/Game/Campaign/Clusters/IndustrialMiningCollective/IndustrialMiningCompany.IndustrialMiningCompany' (0x0000024F0F265600) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/IndustrialMiningCollective/5_2_Mesh.5_2_Mesh' (0x0000024F54917800) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/IndustrialMiningCollective/IndustrialMiningCompany` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/InfernosWake/4_1_Mesh` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/InfernosWake/InfernosWake` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/InfernosWake/InfernosWake_ClusterAsset` class `MWClusterDataAsset` systems `14` faction `<Object '/Game/Campaign/Clusters/InfernosWake/InfernosWake.InfernosWake' (0x0000024F0F266080) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/InfernosWake/4_1_Mesh.4_1_Mesh' (0x0000024F54916C00) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/Kurita-DavionFrontLine/6_1_Mesh` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/Kurita-DavionFrontLine/Kurita-DavionFrontLine_ClusterAsset` class `MWClusterDataAsset` systems `11` faction `<Object '/Game/Campaign/Clusters/Kurita-DavionFrontLine/KuritaDavion.KuritaDavion' (0x0000024F0F265B40) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/Kurita-DavionFrontLine/6_1_Mesh.6_1_Mesh' (0x0000024F54916000) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/Kurita-DavionFrontLine/KuritaDavion` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/Liao-DavionBorder/8_2` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/Liao-DavionBorder/DavionBorder` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/Liao-DavionBorder/Liao-DavionBorder_ClusterAsset` class `MWClusterDataAsset` systems `22` faction `<Object '/Game/Campaign/Clusters/Liao-DavionBorder/DavionBorder.DavionBorder' (0x0000024F0F266780) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/Liao-DavionBorder/8_2.8_2' (0x0000024F54915400) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/Lower-ClassKuritanWorlds/12_2` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/Lower-ClassKuritanWorlds/Lower-ClassKuritanWorlds_ClusterAsset` class `MWClusterDataAsset` systems `25` faction `<Object '/Game/Campaign/Clusters/Lower-ClassKuritanWorlds/LowerClassWorlds.LowerClassWorlds' (0x0000024F0F266240) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/Lower-ClassKuritanWorlds/12_2.12_2' (0x0000024F54914800) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/Lower-ClassKuritanWorlds/LowerClassWorlds` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/LyranMilitaryStrongholds/11_3` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/LyranMilitaryStrongholds/LyranMilitaryStrongholds_ClusterAsset` class `MWClusterDataAsset` systems `22` faction `<Object '/Game/Campaign/Clusters/LyranMilitaryStrongholds/LyranStrongholds.LyranStrongholds' (0x0000024F0F266E80) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/LyranMilitaryStrongholds/11_3.11_3' (0x0000024F9F75F800) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/LyranMilitaryStrongholds/LyranStrongholds` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/Marik-LiaoBorder/9_1` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/Marik-LiaoBorder/Marik-LiaoBorder_ClusterAsset` class `MWClusterDataAsset` systems `17` faction `<Object '/Game/Campaign/Clusters/Marik-LiaoBorder/MarikLiaoBorder.MarikLiaoBorder' (0x0000024F0F266940) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/Marik-LiaoBorder/9_1.9_1' (0x0000024F9F75EC00) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/Marik-LiaoBorder/MarikLiaoBorder` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/Marik-StrinerBorder/10_3` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/Marik-StrinerBorder/Marik-StrinerBorder_ClusterAsset` class `MWClusterDataAsset` systems `16` faction `<Object '/Game/Campaign/Clusters/Marik-StrinerBorder/SteinerMarikBorder.SteinerMarikBorder' (0x0000024F0F267580) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/Marik-StrinerBorder/10_3.10_3' (0x0000024F9F75E000) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/Marik-StrinerBorder/SteinerMarikBorder` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/MercenaryRow/3_1_Mesh` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/MercenaryRow/MercenaryRow` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/MercenaryRow/MercenaryRow_ClusterAsset` class `MWClusterDataAsset` systems `13` faction `<Object '/Game/Campaign/Clusters/MercenaryRow/MercenaryRow.MercenaryRow' (0x0000024F0F267040) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/MercenaryRow/3_1_Mesh.3_1_Mesh' (0x0000024F9F75D400) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/Outreach/Outreach` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/Outreach/Outreach_ClusterAsset` class `MWClusterDataAsset` systems `1` faction `<Object '/Game/Campaign/Clusters/Outreach/Outreach.Outreach' (0x0000024F0F267C80) Class 'MWFactionAsset'>` overlay `None` constellation `None`
+- `/Game/Campaign/Clusters/OutworldsAlliance/15_1` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/OutworldsAlliance/OutworldsAlliance_ClusterAsset` class `MWClusterDataAsset` systems `28` faction `<Object '/Game/Campaign/Clusters/OutworldsAlliance/OutworldsBorder.OutworldsBorder' (0x0000024F0F267740) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/OutworldsAlliance/15_1.15_1' (0x0000024F9F75C800) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/OutworldsAlliance/OutworldsBorder` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/PiratesLair/12_4` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/PiratesLair/PirateCluster` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/PiratesLair/PiratesLair_ClusterAsset` class `MWClusterDataAsset` systems `13` faction `<Object '/Game/Campaign/Clusters/PiratesLair/PirateCluster.PirateCluster' (0x0000024F0F267E40) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/PiratesLair/12_4.12_4' (0x0000024FB3333400) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/Rasalhague/15_3` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/Rasalhague/RasalagueReaches` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/Rasalhague/Rasalhague_ClusterAsset` class `MWClusterDataAsset` systems `18` faction `<Object '/Game/Campaign/Clusters/Rasalhague/RasalagueReaches.RasalagueReaches' (0x0000024F0F270480) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/Rasalhague/15_3.15_3' (0x0000024FB3332800) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/Rashpur-OwensMenufacturingWorlds/7_1_Mesh` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/Rashpur-OwensMenufacturingWorlds/Rashpur-OwensMenufacturingWorlds_ClusterAsset` class `MWClusterDataAsset` systems `9` faction `<Object '/Game/Campaign/Clusters/Rashpur-OwensMenufacturingWorlds/RashpurOwensInc.RashpurOwensInc' (0x0000024F0F270B80) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/Rashpur-OwensMenufacturingWorlds/7_1_Mesh.7_1_Mesh' (0x0000024FB3331C00) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/Rashpur-OwensMenufacturingWorlds/RashpurOwensInc` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/RebelliousLyranPrince/11_2` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/RebelliousLyranPrince/RebeliousLyranTerritory` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/RebelliousLyranPrince/RebelliousLyranPrince_ClusterAsset` class `MWClusterDataAsset` systems `17` faction `<Object '/Game/Campaign/Clusters/RebelliousLyranPrince/RebeliousLyranTerritory.RebeliousLyranTerritory' (0x0000024F0F270640) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/RebelliousLyranPrince/11_2.11_2' (0x0000024FB3331000) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/Rogue/12_3` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/Rogue/RogueSystems` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/Rogue/Rogue_ClusterAsset` class `MWClusterDataAsset` systems `14` faction `<Object '/Game/Campaign/Clusters/Rogue/RogueSystems.RogueSystems' (0x0000024F0F2710C0) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/Rogue/12_3.12_3' (0x0000024FB33A3800) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/SC01/SC01_ClusterAsset` class `MWClusterDataAsset` systems `5` faction `<Object '/Game/Campaign/Clusters/SC01/StoryCluster1.StoryCluster1' (0x0000024F0F270D40) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/SC01/StoryCluster_1_STM.StoryCluster_1_STM' (0x0000024FB33A2C00) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/SC01/StoryCluster1` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/SC01/StoryCluster_1_STM` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/SC02/SC02_ClusterAsset` class `MWClusterDataAsset` systems `1` faction `None` overlay `None` constellation `None`
+- `/Game/Campaign/Clusters/SC03/SC03_ClusterAsset` class `MWClusterDataAsset` systems `5` faction `<Object '/Game/Campaign/Clusters/SC03/StoryCluster3.StoryCluster3' (0x0000024F0F271600) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/SC03/StoryMixer_3_STM.StoryMixer_3_STM' (0x0000024FB33A2000) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/SC03/StoryCluster3` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/SC03/StoryMixer_3_STM` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/SC04/SC04_ClusterAsset` class `MWClusterDataAsset` systems `3` faction `<Object '/Game/Campaign/Clusters/SC04/StoryCluster4.StoryCluster4' (0x0000024F0F271280) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/SC04/StoryCluster_4_STM.StoryCluster_4_STM' (0x0000024FB33A1400) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/SC04/StoryCluster4` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/SC04/StoryCluster_4_STM` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/SC05/SC05_ClusterAsset` class `MWClusterDataAsset` systems `5` faction `<Object '/Game/Campaign/Clusters/SC05/StoryCluster5.StoryCluster5' (0x0000024F0F271D00) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/SC05/StoryCluster_5_STM.StoryCluster_5_STM' (0x0000024FB33A0800) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/SC05/StoryCluster5` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/SC05/StoryCluster_5_STM` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/SC06/SC06_ClusterAsset` class `MWClusterDataAsset` systems `3` faction `<Object '/Game/Campaign/Clusters/SC06/StoryCluster6.StoryCluster6' (0x0000024F0F2717C0) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/SC06/StoryCluster_6_STM.StoryCluster_6_STM' (0x0000024FAF3D3800) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/SC06/StoryCluster6` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/SC06/StoryCluster_6_STM` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/SC07/SC07_ClusterAsset` class `MWClusterDataAsset` systems `3` faction `<Object '/Game/Campaign/Clusters/SC07/StoryCluster7.StoryCluster7' (0x0000024F0F272400) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/SC07/StoryCluster_7_STM.StoryCluster_7_STM' (0x0000024FAF3D2C00) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/SC07/StoryCluster7` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/SC07/StoryCluster_7_STM` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/ShippingRoute/6_3_Mesh` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/ShippingRoute/ShippingRoute` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/ShippingRoute/ShippingRoute_ClusterAsset` class `MWClusterDataAsset` systems `11` faction `<Object '/Game/Campaign/Clusters/ShippingRoute/ShippingRoute.ShippingRoute' (0x0000024F0F271EC0) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/ShippingRoute/6_3_Mesh.6_3_Mesh' (0x0000024FAF3D2000) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/SianCommonality/8_1` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/SianCommonality/SianCommonality` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/SianCommonality/SianCommonality_ClusterAsset` class `MWClusterDataAsset` systems `17` faction `<Object '/Game/Campaign/Clusters/SianCommonality/SianCommonality.SianCommonality' (0x0000024F0F272B00) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/SianCommonality/8_1.8_1' (0x0000024FAF3D1400) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/Steiner-KuritaBorder/12_1` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/Steiner-KuritaBorder/Steiner-KuritaBorder_ClusterAsset` class `MWClusterDataAsset` systems `21` faction `<Object '/Game/Campaign/Clusters/Steiner-KuritaBorder/SteinerBorder.SteinerBorder' (0x0000024F0F2725C0) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/Steiner-KuritaBorder/12_1.12_1' (0x0000024FAF3D0800) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/Steiner-KuritaBorder/Steiner-KuritaBorder_PostClanReplacement_ClusterAsset` class `MWClusterDataAsset` systems `1` faction `<Object '/Game/Campaign/Clusters/Steiner-KuritaBorder/SteinerBorder.SteinerBorder' (0x0000024F0F2725C0) Class 'MWFactionAsset'>` overlay `None` constellation `None`
+- `/Game/Campaign/Clusters/Steiner-KuritaBorder/SteinerBorder` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/StweartCommonwealth/11_1` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/StweartCommonwealth/StewartCommonality` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/StweartCommonwealth/StweartCommonwealth_ClusterAsset` class `MWClusterDataAsset` systems `14` faction `<Object '/Game/Campaign/Clusters/StweartCommonwealth/StewartCommonality.StewartCommonality' (0x0000024F0F273200) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/StweartCommonwealth/11_1.11_1' (0x0000024FA0753800) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/Taurian/15_4` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/Taurian/TaurianCorridor` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/Taurian/Taurian_ClusterAsset` class `MWClusterDataAsset` systems `42` faction `<Object '/Game/Campaign/Clusters/Taurian/TaurianCorridor.TaurianCorridor' (0x0000024F0F272CC0) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/Taurian/15_4.15_4' (0x0000024FA0752C00) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/TheGraveyard/13_3` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/TheGraveyard/DropshipGraveyard` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/TheGraveyard/TheGraveyard_ClusterAsset` class `MWClusterDataAsset` systems `12` faction `<Object '/Game/Campaign/Clusters/TheGraveyard/DropshipGraveyard.DropshipGraveyard' (0x0000024F0F273900) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/TheGraveyard/13_3.13_3' (0x0000024FA0752000) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/VacantWorlds/9_2` class `StaticMesh` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/VacantWorlds/EmptyWorlds` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/VacantWorlds/VacantWorlds_ClusterAsset` class `MWClusterDataAsset` systems `6` faction `<Object '/Game/Campaign/Clusters/VacantWorlds/EmptyWorlds.EmptyWorlds' (0x0000024F0F2733C0) Class 'MWFactionAsset'>` overlay `<Object '/Game/Campaign/Clusters/VacantWorlds/9_2.9_2' (0x0000024FA0751400) Class 'StaticMesh'>` constellation `None`
+- `/Game/Campaign/Clusters/WesterhandZone/Westerhand` class `MWFactionAsset` systems `0` faction `` overlay `` constellation ``
+- `/Game/Campaign/Clusters/WesterhandZone/WesterhandZone_ClusterAsset` class `MWClusterDataAsset` systems `1` faction `<Object '/Game/Campaign/Clusters/WesterhandZone/Westerhand.Westerhand' (0x0000024F0F273AC0) Class 'MWFactionAsset'>` overlay `None` constellation `None`
+- `/Game/Campaign/Clusters/_common/Faction_StringTable` class `StringTable` systems `0` faction `` overlay `` constellation ``
+
+## StarMap Level
+
+- loaded: `True`
+- actor_count: `2182`
+- StarSystemBody bounds: count `2172`, x `47144.0`..`55752.0` (span `8608.0`), y `46903.0`..`56519.0` (span `9616.0`)
+- top actor classes:
+- `StarSystemBody_C` = `2172`
+- `Nebula_C` = `2`
+- `CameraActor` = `1`
+- `PostProcessVolume` = `1`
+- `StarSystemSceneManager_C` = `1`
+- `StarSystem_C` = `1`
+- `StarMapActor_C` = `1`
+- `StarMapSceneManager_C` = `1`
+- `MWLightingVolume` = `1`
+- `StarMap_Nebula_C` = `1`
+- focus class default objects:
+- `CameraActor` CDO `/Script/Engine.Default__CameraActor`
+- `StarSystemSceneManager_C` CDO `/Game/Levels/FrontEnd/StarSystemSceneManager.Default__StarSystemSceneManager_C`
+- `StarSystem_C` CDO `/Game/UI/FrontEnd/Starmap/StarSystem.Default__StarSystem_C`
+- `StarMapActor_C` CDO `/Game/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C`
+- `StarMapActor_C.StarMapCamera` = `None`
+- `StarMapActor_C.InitialCameraTransform` = `<Struct 'Transform' (0x00000250192B1C20) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: 0.000000, y: 0.000000, z: 0.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>`
+- `StarMapActor_C.BorderActor` = `None`
+- `StarMapSceneManager_C` CDO `/Game/Levels/FrontEnd/StarMapSceneManager.Default__StarMapSceneManager_C`
+- `StarMapSceneManager_C.StarMapActor` = `None`
+- `StarSystemBody_C` CDO `/Game/UI/FrontEnd/Starmap/StarSystemBody.Default__StarSystemBody_C`
+- focus actors:
+- `StarMapCamera` class `CameraActor` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapCamera` loc `{'x': 51336.0, 'y': 51039.0, 'z': 0.0}`
+- `StarSystemSceneManager` class `StarSystemSceneManager_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemSceneManager_2` loc `{'x': 51690.0, 'y': 52600.0, 'z': 620.0}`
+- `StarSystem` class `StarSystem_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystem` loc `{'x': 51336.0, 'y': 51039.0, 'z': 400.0}`
+- `StarMapActor` class `StarMapActor_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapActor_2` loc `{'x': 51336.0, 'y': 51039.0, 'z': 0.0}`
+- `StarMapSceneManager` class `StarMapSceneManager_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapSceneManager_2` loc `{'x': 51690.0, 'y': 52600.0, 'z': 620.0}`
+- `StarSystemBody` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_0` loc `{'x': 51336.0, 'y': 51039.0, 'z': 0.0}`
+- `StarSystemBody1` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_1` loc `{'x': 51352.0, 'y': 50935.0, 'z': 0.0}`
+- `StarSystemBody2` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_2` loc `{'x': 51368.0, 'y': 51015.0, 'z': 0.0}`
+- `StarSystemBody3` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_3` loc `{'x': 51656.0, 'y': 51199.0, 'z': 0.0}`
+- `StarSystemBody4` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_4` loc `{'x': 51208.0, 'y': 50119.0, 'z': 0.0}`
+- `StarSystemBody5` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_5` loc `{'x': 52208.0, 'y': 50519.0, 'z': 0.0}`
+- `StarSystemBody6` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_6` loc `{'x': 52072.0, 'y': 50671.0, 'z': 0.0}`
+- `StarSystemBody7` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_7` loc `{'x': 53864.0, 'y': 50679.0, 'z': 0.0}`
+- `StarSystemBody8` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_8` loc `{'x': 51400.0, 'y': 50847.0, 'z': 0.0}`
+- `StarSystemBody9` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_9` loc `{'x': 51496.0, 'y': 51319.0, 'z': 0.0}`
+- `StarSystemBody10` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_10` loc `{'x': 50800.0, 'y': 51047.0, 'z': 0.0}`
+- `StarSystemBody11` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_11` loc `{'x': 50832.0, 'y': 51191.0, 'z': 0.0}`
+- `StarSystemBody12` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_12` loc `{'x': 51320.0, 'y': 50735.0, 'z': 0.0}`
+- `StarSystemBody13` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_13` loc `{'x': 51280.0, 'y': 50783.0, 'z': 0.0}`
+- `StarSystemBody14` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_14` loc `{'x': 51232.0, 'y': 50999.0, 'z': 0.0}`
+- `StarSystemBody15` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_15` loc `{'x': 51456.0, 'y': 50815.0, 'z': 0.0}`
+- `StarSystemBody16` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_16` loc `{'x': 51312.0, 'y': 51311.0, 'z': 0.0}`
+- `StarSystemBody17` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_17` loc `{'x': 51296.0, 'y': 50327.0, 'z': 0.0}`
+- `StarSystemBody18` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_18` loc `{'x': 51200.0, 'y': 50711.0, 'z': 0.0}`
+- `StarSystemBody19` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_19` loc `{'x': 51432.0, 'y': 51247.0, 'z': 0.0}`
+- `StarSystemBody20` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_20` loc `{'x': 50728.0, 'y': 50399.0, 'z': 0.0}`
+- `StarSystemBody21` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_21` loc `{'x': 51432.0, 'y': 51407.0, 'z': 0.0}`
+- `StarSystemBody22` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_22` loc `{'x': 51096.0, 'y': 51639.0, 'z': 0.0}`
+- `StarSystemBody23` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_23` loc `{'x': 51128.0, 'y': 50431.0, 'z': 0.0}`
+- `StarSystemBody24` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_24` loc `{'x': 51688.0, 'y': 50759.0, 'z': 0.0}`
+- `StarSystemBody25` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_25` loc `{'x': 51384.0, 'y': 50759.0, 'z': 0.0}`
+- `StarSystemBody26` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_26` loc `{'x': 50976.0, 'y': 50927.0, 'z': 0.0}`
+- `StarSystemBody27` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_27` loc `{'x': 51232.0, 'y': 51087.0, 'z': 0.0}`
+- `StarSystemBody28` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_28` loc `{'x': 51544.0, 'y': 50679.0, 'z': 0.0}`
+- `StarSystemBody29` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_29` loc `{'x': 51168.0, 'y': 51191.0, 'z': 0.0}`
+- `StarSystemBody30` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_30` loc `{'x': 51608.0, 'y': 51423.0, 'z': 0.0}`
+- `StarSystemBody31` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_31` loc `{'x': 51184.0, 'y': 51439.0, 'z': 0.0}`
+- `StarSystemBody32` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_32` loc `{'x': 51688.0, 'y': 50895.0, 'z': 0.0}`
+- `StarSystemBody33` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_33` loc `{'x': 51464.0, 'y': 50535.0, 'z': 0.0}`
+- `StarSystemBody34` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_34` loc `{'x': 51328.0, 'y': 51143.0, 'z': 0.0}`
+- `StarSystemBody35` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_35` loc `{'x': 50760.0, 'y': 51975.0, 'z': 0.0}`
+- `StarSystemBody36` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_36` loc `{'x': 51704.0, 'y': 51311.0, 'z': 0.0}`
+- `StarSystemBody37` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_37` loc `{'x': 51256.0, 'y': 52167.0, 'z': 0.0}`
+- `StarSystemBody38` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_38` loc `{'x': 51168.0, 'y': 50999.0, 'z': 0.0}`
+- `StarSystemBody39` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_39` loc `{'x': 51544.0, 'y': 51071.0, 'z': 0.0}`
+- `StarSystemBody40` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_40` loc `{'x': 51208.0, 'y': 51271.0, 'z': 0.0}`
+- `StarSystemBody41` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_41` loc `{'x': 51360.0, 'y': 51719.0, 'z': 0.0}`
+- `StarSystemBody42` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_42` loc `{'x': 51368.0, 'y': 50527.0, 'z': 0.0}`
+- `StarSystemBody43` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_43` loc `{'x': 51544.0, 'y': 51247.0, 'z': 0.0}`
+- `StarSystemBody44` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_44` loc `{'x': 51056.0, 'y': 51015.0, 'z': 0.0}`
+- `StarSystemBody45` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_45` loc `{'x': 51072.0, 'y': 52103.0, 'z': 0.0}`
+- `StarSystemBody46` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_46` loc `{'x': 51408.0, 'y': 52639.0, 'z': 0.0}`
+- `StarSystemBody47` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_47` loc `{'x': 51216.0, 'y': 50535.0, 'z': 0.0}`
+- `StarSystemBody48` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_48` loc `{'x': 51268.0, 'y': 51063.0, 'z': 0.0}`
+- `StarSystemBody49` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_49` loc `{'x': 51608.0, 'y': 51023.0, 'z': 0.0}`
+- `StarSystemBody50` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_50` loc `{'x': 51384.0, 'y': 51935.0, 'z': 0.0}`
+- `StarSystemBody51` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_51` loc `{'x': 51648.0, 'y': 50575.0, 'z': 0.0}`
+- `StarSystemBody52` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_52` loc `{'x': 51504.0, 'y': 50599.0, 'z': 0.0}`
+- `StarSystemBody53` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_53` loc `{'x': 51448.0, 'y': 51111.0, 'z': 0.0}`
+- `StarSystemBody54` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_54` loc `{'x': 51800.0, 'y': 51151.0, 'z': 0.0}`
+- `StarSystemBody55` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_55` loc `{'x': 51936.0, 'y': 51207.0, 'z': 0.0}`
+- `StarSystemBody56` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_56` loc `{'x': 51104.0, 'y': 51575.0, 'z': 0.0}`
+- `StarSystemBody57` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_57` loc `{'x': 50664.0, 'y': 51159.0, 'z': 0.0}`
+- `StarSystemBody58` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_58` loc `{'x': 51664.0, 'y': 51391.0, 'z': 0.0}`
+- `StarSystemBody59` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_59` loc `{'x': 52136.0, 'y': 51023.0, 'z': 0.0}`
+- `StarSystemBody60` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_60` loc `{'x': 52216.0, 'y': 51375.0, 'z': 0.0}`
+- `StarSystemBody61` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_61` loc `{'x': 50656.0, 'y': 52487.0, 'z': 0.0}`
+- `StarSystemBody62` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_62` loc `{'x': 51664.0, 'y': 51087.0, 'z': 0.0}`
+- `StarSystemBody63` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_63` loc `{'x': 50776.0, 'y': 51775.0, 'z': 0.0}`
+- `StarSystemBody64` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_64` loc `{'x': 52248.0, 'y': 50383.0, 'z': 0.0}`
+- `StarSystemBody65` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_65` loc `{'x': 52800.0, 'y': 50703.0, 'z': 0.0}`
+- `StarSystemBody66` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_66` loc `{'x': 51776.0, 'y': 50231.0, 'z': 0.0}`
+- `StarSystemBody67` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_67` loc `{'x': 51000.0, 'y': 51103.0, 'z': 0.0}`
+- `StarSystemBody68` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_68` loc `{'x': 51064.0, 'y': 51223.0, 'z': 0.0}`
+- `StarSystemBody69` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_69` loc `{'x': 51552.0, 'y': 51791.0, 'z': 0.0}`
+- `StarSystemBody70` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_70` loc `{'x': 51376.0, 'y': 51207.0, 'z': 0.0}`
+- `StarSystemBody71` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_71` loc `{'x': 51168.0, 'y': 51359.0, 'z': 0.0}`
+- `StarSystemBody72` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_72` loc `{'x': 51960.0, 'y': 51679.0, 'z': 0.0}`
+- `StarSystemBody73` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_73` loc `{'x': 51224.0, 'y': 51151.0, 'z': 0.0}`
+- `StarSystemBody74` class `StarSystemBody_C` path `/Game/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarSystemBody_C_74` loc `{'x': 51416.0, 'y': 51503.0, 'z': 0.0}`

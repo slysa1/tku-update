@@ -1,0 +1,54 @@
+{
+  "date": "2026-05-10",
+  "verified_state": {
+    "active_modlist": "Only TKUEvidenceCorePluginOnly enabled",
+    "running_mw5_or_editor_process": false,
+    "runtime_floor": "Root-stripped TKU plugin content only"
+  },
+  "api_gate": {
+    "commandlet_python_role": "non-mutating inspection/export only",
+    "found_symbols": [
+      "MWModPluginInfo",
+      "ModPackageArgs",
+      "MWModUtils",
+      "MWModEditorWidget.package_mod(args)"
+    ],
+    "missing_symbols": [
+      "CreateMod",
+      "SaveToMod",
+      "SaveTo",
+      "module-level PackageMod"
+    ],
+    "decision": "Use MW5 Mod Editor UI for first Create Mod and Save To Mod authoring unless a later widget-spawn or AutomationTool workflow is proven."
+  },
+  "bounds_track": {
+    "selected": "Track B2",
+    "summary": "Inspect and reconstruct through current StarMapActor, StarMap level generation/placement, and source-to-runtime InnerSphere data import before another pawn-only patch.",
+    "evidence": {
+      "current_starmap_actor_count": 2182,
+      "current_starmap_star_system_body_count": 2172,
+      "runtime_csv_rows": 2173,
+      "wide_source_json_rows": 3446
+    },
+    "decision": "Do not build another pawn-only bounds patch next."
+  },
+  "overlay_track": {
+    "selected": "Track A1",
+    "summary": "Migrate or recreate current-schema MWClusterDataAsset territory data.",
+    "evidence": {
+      "mw_cluster_data_asset_count": 79,
+      "total_system_memberships": 815,
+      "assets_with_overlay_mesh": 74,
+      "assets_with_constellation_mesh": 31,
+      "migration_utility": "/Game/UI/Editor/Utils/EUW_MigratePlaceClusterTOIsToClusterAssets"
+    },
+    "decision": "Inspect the migration utility graph in the editor UI before running it; use it as a recipe until write behavior is understood."
+  },
+  "build_authorized": false,
+  "next_evidence_tasks": [
+    "Inspect EUW_MigratePlaceClusterTOIsToClusterAssets graph in the MW5 Mod Editor UI without running it.",
+    "Trace source-to-runtime import for MW5_InnerSphereData.json/csv and placed StarSystemBody_C generation.",
+    "Inspect current StarMapActor graph/defaults around star body lookup, cluster material use, border mesh generation, and data-table reads.",
+    "After those inspections, choose a narrow editor-authored ModOverride candidate and write a build manifest before packaging."
+  ]
+}

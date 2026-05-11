@@ -1,0 +1,40 @@
+{
+  "restore_mod_name": "TheKnownUniverseCompatTierCRestore",
+  "source_mod_name": "TheKnownUniverseCompatPluginOnly",
+  "compat_patch_name": "TheKnownUniverseCompatPatch",
+  "restore": {
+    "restore_root": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\TheKnownUniverseCompatTierCRestore",
+    "restore_pak": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\TheKnownUniverseCompatTierCRestore\\Paks\\TheKnownUniverseCompatTierCRestore.pak",
+    "content_restore_pak": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Content\\Paks\\MW5Mercs-zzzzKnownUniverseTierCRestore.pak",
+    "pak_size": 351979,
+    "content_pak_size": 351979,
+    "reused_existing_restore_mod": true,
+    "exact_paths": [
+      "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.uasset",
+      "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.uexp",
+      "/Game/Campaign/CampaignArcs/BorderChanges/AllStarMapBorderChanges.uasset",
+      "/Game/Campaign/CampaignArcs/BorderChanges/AllStarMapBorderChanges.uexp",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.uasset",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.uexp",
+      "/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionBorder_MTL.uasset",
+      "/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionBorder_MTL.uexp",
+      "/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionColours_MTF.uasset",
+      "/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionColours_MTF.uexp",
+      "/Game/UI/FrontEnd/Starmap/Materials/Factions/Faction_MTL.uasset",
+      "/Game/UI/FrontEnd/Starmap/Materials/Factions/Faction_MTL.uexp"
+    ],
+    "manifest_paths": [
+      "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.uasset",
+      "/Game/Campaign/CampaignArcs/BorderChanges/AllStarMapBorderChanges.uasset",
+      "/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.uasset",
+      "/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionBorder_MTL.uasset",
+      "/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionColours_MTF.uasset",
+      "/Game/UI/FrontEnd/Starmap/Materials/Factions/Faction_MTL.uasset"
+    ]
+  },
+  "profiles": {
+    "single": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\modlist.profile-single-knownuniverse-plugin-tierc-compat-20260506.json",
+    "named_local": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\modlist.profile-named-local-plugin-tierc-compat-20260506.json",
+    "full_stack": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\modlist.profile-full-stack-plugin-tierc-compat-20260506.json"
+  }
+}

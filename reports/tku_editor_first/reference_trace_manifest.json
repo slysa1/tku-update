@@ -1,0 +1,134 @@
+{
+  "source_discipline": {
+    "original_tku_root": "MW5Mercs\\Mods\\TheKnownUniverse",
+    "original_tku_build": 38,
+    "original_tku_pak": "MW5Mercs\\Mods\\TheKnownUniverse\\Paks\\TheKnownUniverse.pak",
+    "original_tku_pak_sha256": "0F23FC683DEBEC27D07FF6739137BA1E4069934082D5AFFF6B3F2161CC64C678",
+    "restored_live_tku_root": "MW5Mercs\\Mods\\TheKnownUniverse",
+    "failed_blind_build_artifacts": "codex_quarantine\\tku_failed_compat_20260510",
+    "rule": "Use restored build 38 files for TKU evidence. Use quarantined blind-build artifacts only to document failed history, not as source evidence."
+  },
+  "editor_baseline": {
+    "root": "E:\\Games\\MechWarrior5Editor",
+    "project": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\MW5Mercs.uproject",
+    "project_sha256": "A66A2197DF7AE9780A648735520884D04A7BDB2CCE656E324E9ECD5AC4EBAEAB",
+    "binaries": {
+      "editor": "E:\\Games\\MechWarrior5Editor\\Engine\\Binaries\\Win64\\UE4Editor.exe",
+      "editor_cmd": "E:\\Games\\MechWarrior5Editor\\Engine\\Binaries\\Win64\\UE4Editor-Cmd.exe",
+      "unreal_pak": "E:\\Games\\MechWarrior5Editor\\Engine\\Binaries\\Win64\\UnrealPak.exe"
+    },
+    "plugins_observed": [
+      "PythonScriptPlugin",
+      "EditorScriptingUtilities"
+    ]
+  },
+  "evidence_outputs": [
+    "reports\\tku_editor_first\\tku_cooked_asset_string_scan.md",
+    "reports\\tku_editor_first\\tku_cooked_asset_string_scan.json",
+    "reports\\tku_editor_first\\vanilla_editor_asset_string_scan.md",
+    "reports\\tku_editor_first\\vanilla_editor_asset_string_scan.json",
+    "reports\\tku_editor_first\\editor_inner_sphere_source_analysis.md",
+    "reports\\tku_editor_first\\editor_inner_sphere_source_analysis.json",
+    "reports\\tku_editor_first\\original_tku_pak_inventory.md",
+    "reports\\tku_editor_first\\original_tku_pak_inventory.json",
+    "reports\\tku_editor_first\\cluster_migration_inputs.md",
+    "reports\\tku_editor_first\\cluster_migration_inputs.json",
+    "reports\\tku_editor_first\\ue4_editor_asset_dump.md",
+    "reports\\tku_editor_first\\ue4_editor_asset_dump.json",
+    "reports\\tku_editor_first\\tku_cooked_package_refs.md",
+    "reports\\tku_editor_first\\tku_cooked_package_refs.json",
+    "reports\\tku_editor_first\\tku_structured_reference_findings_20260510.md",
+    "reports\\tku_editor_first\\tku_evidence_starmap_class_patch_20260510.md",
+    "reports\\tku_editor_first\\tku_evidence_starmap_class_patch_20260510.json",
+    "reports\\tku_editor_first\\tku_evidence_start_border_patch_20260510.md",
+    "reports\\tku_editor_first\\tku_evidence_start_border_patch_20260510.json",
+    "reports\\tku_editor_first\\ue4_starmap_border_path_inspection.md",
+    "reports\\tku_editor_first\\ue4_starmap_border_path_inspection.json",
+    "reports\\tku_editor_first\\tku_evidence_core_plugin_only_20260510.md",
+    "reports\\tku_editor_first\\tku_evidence_core_plugin_only_20260510.json",
+    "reports\\tku_editor_first\\tku_evidence_bounds_pawn_20260510.md",
+    "reports\\tku_editor_first\\tku_evidence_bounds_pawn_20260510.json",
+    "reports\\tku_editor_first\\tku_evidence_current_pawn_bounds_20260510.md",
+    "reports\\tku_editor_first\\tku_evidence_current_pawn_bounds_20260510.json"
+  ],
+  "asset_status": {
+    "/Game/Levels/FrontEnd/StarMap": {
+      "status": "split_loose_override_conditionally_safe_tku_mod_map_unsafe",
+      "evidence": "Loose override StarMap.umap binds to current /Game starmap classes and passed override-only career load; TKU mod pak StarMap.umap binds to /ModOverride/TheKnownUniverse starmap classes.",
+      "next_action": "Prefer loose/current-class map path for stabilization; do not restore TKU mod map directly."
+    },
+    "/Game/UI/FrontEnd/Starmap/StarMapActor": {
+      "status": "unsafe_old_tku_class_stack_vanilla_replacement_alone_insufficient",
+      "evidence": "Structured package parse shows TKU binds to TKU StarSystemBody through /ModOverride paths and differs from current vanilla function/import shape. TKUEvidenceStarmapCompat changed the repeated 0x4C fatal into a hard loading stall, so this class pair is implicated but not sufficient as a standalone fix.",
+      "next_action": "Trace remaining root asset interactions before building another starmap class patch."
+    },
+    "/Game/UI/FrontEnd/StarMapPawn": {
+      "status": "cooked_substitution_ruled_out",
+      "evidence": "Both old cooked TKU StarMapPawn and current-package CDO patch broke starmap open into first-person hangar view. Readable CDO/default evidence was not sufficient for runtime safety.",
+      "next_action": "Move to editor-authored asset workflow or inspect other bounds loci such as StarMapActor and the StarMap level before any further build."
+    },
+    "/Game/UI/FrontEnd/Starmap/StarSystemBody": {
+      "status": "unsafe_old_tku_class_stack_vanilla_replacement_alone_insufficient",
+      "evidence": "Structured package parse shows vanilla imports MWClusterDataAsset and exports current cluster-mesh functions; TKU lacks them and binds back to TKU StarMapActor. TKUEvidenceStarmapCompat changed the repeated 0x4C fatal into a hard loading stall, so current StarSystemBody must be reconciled with remaining TKU root data/border/material assets.",
+      "next_action": "Inspect vanilla ownership/faction display paths plus TKU border/data/faction material interactions; recreate or derive rather than restore the TKU cooked class."
+    },
+    "/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor": {
+      "status": "unsafe_blind_restore",
+      "evidence": "Previous fatal SuperStruct error; cooked scan shows /ModOverride/TheKnownUniverse class path.",
+      "next_action": "Inspect vanilla parent class and dated border actor inheritance."
+    },
+    "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015": {
+      "status": "unsafe_as_cooked_substitution",
+      "evidence": "Current Davion career start conditions reference this asset. TKU Borders3015 redirects BorderActor to /TheKnownUniverse/2864-01-01/StarMapBorderActor2864-01-01, which depends on TKU old /ModOverride BaseStarMapBorderActor. TKUEvidenceStartBorderCompat still crashed with BaseStarMapBorderActor_C through vanilla StarMapActor_2570.",
+      "next_action": "Recreate or reparent in the editor; do not direct-override cooked border assets again."
+    },
+    "InnerSphere source data": {
+      "status": "promising_current_schema_source",
+      "evidence": "Editor source JSON has 3446 systems and wide coordinates; source faction/employer data includes Clan and Lyran codes.",
+      "next_action": "Find editor import/generation path into current runtime uassets."
+    },
+    "/Game/Campaign/Clusters/*": {
+      "status": "needs_schema_port_or_recreation",
+      "evidence": "Current editor has 79 MWClusterDataAsset assets, current CSV has 77 nonempty cluster ids, and 44 current Place* region assets reference cluster assets. Original TKU build 38 has no /Game/Campaign/Clusters paths, but 46 current cluster ids appear in its cooked InnerSphere strings.",
+      "next_action": "Inspect representative cluster assets and the migration utility before testing old cooked border actors."
+    },
+    "/Game/UI/Editor/Utils/EUW_MigratePlaceClusterTOIsToClusterAssets": {
+      "status": "needs_editor_inspection",
+      "evidence": "Editor string scan says it migrates PlaceClusterTOI_ArcAction and InnerSphereMap data into MWClusterDataAsset files.",
+      "next_action": "Decide whether it can safely run on copied/editor-authored data or should only be used as a migration recipe."
+    },
+    "/Plugins/TheKnownUniverse/Content/Regions/War/CareerModeCustomClusters": {
+      "status": "needs_source_role_classification",
+      "evidence": "It is the only cluster-named original TKU path and references PlaceClanConflict and PlaceCustomConflict.",
+      "next_action": "Determine whether it provides cluster overlay data, conflict-zone placement data, or only campaign arc grouping."
+    }
+  },
+  "latest_runtime_gate": {
+    "profile": "TKUEvidenceCorePluginOnly + TKUEvidenceCurrentPawnBounds",
+    "result": "career loaded, but pressing starmap entered first-person hangar view instead of opening the starmap",
+    "meaning": "cooked StarMapPawn substitution is unsafe for this setup, even when starting from the current vanilla package and patching only serialized defaults",
+    "rollback": "TKUEvidenceCurrentPawnBounds disabled; MW5Mercs\\Mods\\modlist.profile-tku-evidence-core-after-current-pawn-bounds-fail-20260510.json"
+  },
+  "pending_runtime_gate": {
+    "profile": "TKUEvidenceCorePluginOnly only",
+    "expected_result": "stable floor: career loads and starmap opens, but vanilla bounds and incomplete overlay remain",
+    "next_if_fail": "find unexpected active override or stale loaded session; no bounds patch should be active"
+  },
+  "current_active_profile": {
+    "enabled_mods": [
+      "TKUEvidenceCorePluginOnly"
+    ],
+    "modlist_profile": "MW5Mercs\\Mods\\modlist.profile-tku-evidence-core-after-current-pawn-bounds-fail-20260510.json",
+    "source": "clean-source root-stripped repack of restored original TKU build 38",
+    "removed_root_game_entries": 282
+  },
+  "failed_runtime_gate": {
+    "profile": "TheKnownUniverse + TKUEvidenceStarmapCompat + TKUEvidenceStartBorderCompat",
+    "result": "crashed after 34 seconds with BaseStarMapBorderActor_C superstruct failure while creating StarMapActor_2570_C",
+    "crash_hash": "6B39ADBEAC4A925A9AA74C71905744CB2C6A6097",
+    "rollback": "TKUEvidenceStartBorderCompat disabled in modlist.json"
+  },
+  "build_authorized": false,
+  "authorized_build_scope": "none; cooked StarMapPawn substitution is ruled out; next work must inspect/editor-author before building",
+  "broader_build_authorized": false
+}

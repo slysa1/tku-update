@@ -1,0 +1,25 @@
+{
+  "plugin_only_mod_name": "TheKnownUniverseCompatPluginOnly",
+  "compat_patch_name": "TheKnownUniverseCompatPatch",
+  "plugin_only_mod": {
+    "mod_root": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\TheKnownUniverseCompatPluginOnly",
+    "mod_json": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\TheKnownUniverseCompatPluginOnly\\mod.json",
+    "pak": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\TheKnownUniverseCompatPluginOnly\\Paks\\TheKnownUniverseCompatPluginOnly.pak",
+    "pak_size": 124631145,
+    "plugin_entry_count": 2425,
+    "game_entry_count_removed": 282,
+    "other_entry_count": 2
+  },
+  "override": {
+    "live_override_pak": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Content\\Paks\\MW5Mercs-zKnownUniverseStarmap.pak",
+    "backup_override_pak": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Content\\Paks\\MW5Mercs-zKnownUniverseStarmap.original-20260506.pak",
+    "entry_count": 36,
+    "customcontent_entry_count": 36,
+    "conflict_entry_count": 0
+  },
+  "profiles": {
+    "single": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\modlist.profile-single-knownuniverse-plugin-only-compat-20260506.json",
+    "named_local": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\modlist.profile-named-local-plugin-only-compat-20260506.json",
+    "full_stack": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\modlist.profile-full-stack-plugin-only-compat-20260506.json"
+  }
+}

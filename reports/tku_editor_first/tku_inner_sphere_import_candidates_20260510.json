@@ -1,0 +1,1709 @@
+{
+  "cluster_counts": {
+    "current": {
+      "(Id=\"MWFactionAsset:A2M1_Cluster\")": 10,
+      "(Id=\"MWFactionAsset:AgriculturalBelt\")": 16,
+      "(Id=\"MWFactionAsset:AlarionPeriphery\")": 24,
+      "(Id=\"MWFactionAsset:BackwaterRegion\")": 12,
+      "(Id=\"MWFactionAsset:DavionBorder\")": 22,
+      "(Id=\"MWFactionAsset:DavionBorderlands\")": 16,
+      "(Id=\"MWFactionAsset:DavionKurita_1\")": 21,
+      "(Id=\"MWFactionAsset:DropshipGraveyard\")": 12,
+      "(Id=\"MWFactionAsset:DroughtWorlds\")": 16,
+      "(Id=\"MWFactionAsset:DutchyOfAndurien\")": 17,
+      "(Id=\"MWFactionAsset:EmptyWorlds\")": 6,
+      "(Id=\"MWFactionAsset:FWLCommercialHub\")": 16,
+      "(Id=\"MWFactionAsset:FWLInterior\")": 17,
+      "(Id=\"MWFactionAsset:FWLShippingRoute\")": 12,
+      "(Id=\"MWFactionAsset:IndustrialMiningCompany\")": 14,
+      "(Id=\"MWFactionAsset:InfernosWake\")": 15,
+      "(Id=\"MWFactionAsset:KuritaBorder\")": 1,
+      "(Id=\"MWFactionAsset:KuritaDavion\")": 11,
+      "(Id=\"MWFactionAsset:KuritanBadlands\")": 11,
+      "(Id=\"MWFactionAsset:LowerClassWorlds\")": 25,
+      "(Id=\"MWFactionAsset:LyranStrongholds\")": 23,
+      "(Id=\"MWFactionAsset:MarikLiaoBorder\")": 17,
+      "(Id=\"MWFactionAsset:MercenaryRow\")": 12,
+      "(Id=\"MWFactionAsset:OutworldsBorder\")": 28,
+      "(Id=\"MWFactionAsset:PirateCluster\")": 13,
+      "(Id=\"MWFactionAsset:RasalagueReaches\")": 18,
+      "(Id=\"MWFactionAsset:RashpurOwensInc\")": 9,
+      "(Id=\"MWFactionAsset:RebeliousLyranTerritory\")": 18,
+      "(Id=\"MWFactionAsset:RepairSystem_1\")": 6,
+      "(Id=\"MWFactionAsset:RepairSystem_10\")": 5,
+      "(Id=\"MWFactionAsset:RepairSystem_11\")": 6,
+      "(Id=\"MWFactionAsset:RepairSystem_12\")": 6,
+      "(Id=\"MWFactionAsset:RepairSystem_13\")": 6,
+      "(Id=\"MWFactionAsset:RepairSystem_14\")": 5,
+      "(Id=\"MWFactionAsset:RepairSystem_15\")": 5,
+      "(Id=\"MWFactionAsset:RepairSystem_16\")": 4,
+      "(Id=\"MWFactionAsset:RepairSystem_17\")": 4,
+      "(Id=\"MWFactionAsset:RepairSystem_18\")": 6,
+      "(Id=\"MWFactionAsset:RepairSystem_19\")": 5,
+      "(Id=\"MWFactionAsset:RepairSystem_2\")": 7,
+      "(Id=\"MWFactionAsset:RepairSystem_20\")": 21,
+      "(Id=\"MWFactionAsset:RepairSystem_21\")": 4,
+      "(Id=\"MWFactionAsset:RepairSystem_22\")": 10,
+      "(Id=\"MWFactionAsset:RepairSystem_23\")": 8,
+      "(Id=\"MWFactionAsset:RepairSystem_24\")": 6,
+      "(Id=\"MWFactionAsset:RepairSystem_25\")": 6,
+      "(Id=\"MWFactionAsset:RepairSystem_26\")": 14,
+      "(Id=\"MWFactionAsset:RepairSystem_27\")": 12,
+      "(Id=\"MWFactionAsset:RepairSystem_28\")": 4,
+      "(Id=\"MWFactionAsset:RepairSystem_29\")": 4,
+      "(Id=\"MWFactionAsset:RepairSystem_3\")": 5,
+      "(Id=\"MWFactionAsset:RepairSystem_30\")": 5,
+      "(Id=\"MWFactionAsset:RepairSystem_31\")": 4,
+      "(Id=\"MWFactionAsset:RepairSystem_4\")": 3,
+      "(Id=\"MWFactionAsset:RepairSystem_5\")": 7,
+      "(Id=\"MWFactionAsset:RepairSystem_6\")": 5,
+      "(Id=\"MWFactionAsset:RepairSystem_7\")": 4,
+      "(Id=\"MWFactionAsset:RepairSystem_8\")": 4,
+      "(Id=\"MWFactionAsset:RepairSystem_9\")": 4,
+      "(Id=\"MWFactionAsset:RogueSystems\")": 12,
+      "(Id=\"MWFactionAsset:ShippingRoute\")": 11,
+      "(Id=\"MWFactionAsset:SianCommonality\")": 17,
+      "(Id=\"MWFactionAsset:SteinerBorder\")": 18,
+      "(Id=\"MWFactionAsset:SteinerMarikBorder\")": 15,
+      "(Id=\"MWFactionAsset:StewartCommonality\")": 13,
+      "(Id=\"MWFactionAsset:StoryCluster1\")": 7,
+      "(Id=\"MWFactionAsset:StoryCluster10\")": 1,
+      "(Id=\"MWFactionAsset:StoryCluster2\")": 5,
+      "(Id=\"MWFactionAsset:StoryCluster3\")": 5,
+      "(Id=\"MWFactionAsset:StoryCluster4\")": 4,
+      "(Id=\"MWFactionAsset:StoryCluster5\")": 5,
+      "(Id=\"MWFactionAsset:StoryCluster6\")": 3,
+      "(Id=\"MWFactionAsset:StoryCluster7\")": 3,
+      "(Id=\"MWFactionAsset:TamarindAbbey\")": 11,
+      "(Id=\"MWFactionAsset:TaurianCorridor\")": 43,
+      "(Id=\"MWFactionAsset:TheJunkyard\")": 13,
+      "(Id=\"MWFactionAsset:TsinghaiCommonality\")": 11
+    },
+    "merged": {
+      "(Id=\"MWFactionAsset:A2M1_Cluster\")": 10,
+      "(Id=\"MWFactionAsset:AgriculturalBelt\")": 16,
+      "(Id=\"MWFactionAsset:AlarionPeriphery\")": 24,
+      "(Id=\"MWFactionAsset:BackwaterRegion\")": 12,
+      "(Id=\"MWFactionAsset:ClanConflict\")": 29,
+      "(Id=\"MWFactionAsset:DavionBorder\")": 22,
+      "(Id=\"MWFactionAsset:DavionBorderlands\")": 16,
+      "(Id=\"MWFactionAsset:DavionKurita_1\")": 21,
+      "(Id=\"MWFactionAsset:DropshipGraveyard\")": 12,
+      "(Id=\"MWFactionAsset:DroughtWorlds\")": 16,
+      "(Id=\"MWFactionAsset:DutchyOfAndurien\")": 17,
+      "(Id=\"MWFactionAsset:EmptyWorlds\")": 6,
+      "(Id=\"MWFactionAsset:FWLCommercialHub\")": 16,
+      "(Id=\"MWFactionAsset:FWLInterior\")": 17,
+      "(Id=\"MWFactionAsset:FWLShippingRoute\")": 12,
+      "(Id=\"MWFactionAsset:IndustrialMiningCompany\")": 14,
+      "(Id=\"MWFactionAsset:InfernosWake\")": 15,
+      "(Id=\"MWFactionAsset:KuritaBorder\")": 1,
+      "(Id=\"MWFactionAsset:KuritaDavion\")": 11,
+      "(Id=\"MWFactionAsset:KuritanBadlands\")": 11,
+      "(Id=\"MWFactionAsset:LowerClassWorlds\")": 25,
+      "(Id=\"MWFactionAsset:LyranStrongholds\")": 23,
+      "(Id=\"MWFactionAsset:MarikLiaoBorder\")": 17,
+      "(Id=\"MWFactionAsset:MercenaryRow\")": 12,
+      "(Id=\"MWFactionAsset:OutworldsBorder\")": 28,
+      "(Id=\"MWFactionAsset:PirateCluster\")": 13,
+      "(Id=\"MWFactionAsset:PirateKingdoms\")": 2,
+      "(Id=\"MWFactionAsset:RasalagueReaches\")": 18,
+      "(Id=\"MWFactionAsset:RashpurOwensInc\")": 9,
+      "(Id=\"MWFactionAsset:RebeliousLyranTerritory\")": 18,
+      "(Id=\"MWFactionAsset:RepairSystem_1\")": 6,
+      "(Id=\"MWFactionAsset:RepairSystem_10\")": 5,
+      "(Id=\"MWFactionAsset:RepairSystem_11\")": 6,
+      "(Id=\"MWFactionAsset:RepairSystem_12\")": 6,
+      "(Id=\"MWFactionAsset:RepairSystem_13\")": 6,
+      "(Id=\"MWFactionAsset:RepairSystem_14\")": 5,
+      "(Id=\"MWFactionAsset:RepairSystem_15\")": 5,
+      "(Id=\"MWFactionAsset:RepairSystem_16\")": 4,
+      "(Id=\"MWFactionAsset:RepairSystem_17\")": 4,
+      "(Id=\"MWFactionAsset:RepairSystem_18\")": 6,
+      "(Id=\"MWFactionAsset:RepairSystem_19\")": 5,
+      "(Id=\"MWFactionAsset:RepairSystem_2\")": 7,
+      "(Id=\"MWFactionAsset:RepairSystem_20\")": 21,
+      "(Id=\"MWFactionAsset:RepairSystem_21\")": 4,
+      "(Id=\"MWFactionAsset:RepairSystem_22\")": 10,
+      "(Id=\"MWFactionAsset:RepairSystem_23\")": 8,
+      "(Id=\"MWFactionAsset:RepairSystem_24\")": 6,
+      "(Id=\"MWFactionAsset:RepairSystem_25\")": 6,
+      "(Id=\"MWFactionAsset:RepairSystem_26\")": 14,
+      "(Id=\"MWFactionAsset:RepairSystem_27\")": 12,
+      "(Id=\"MWFactionAsset:RepairSystem_28\")": 4,
+      "(Id=\"MWFactionAsset:RepairSystem_29\")": 4,
+      "(Id=\"MWFactionAsset:RepairSystem_3\")": 5,
+      "(Id=\"MWFactionAsset:RepairSystem_30\")": 5,
+      "(Id=\"MWFactionAsset:RepairSystem_31\")": 4,
+      "(Id=\"MWFactionAsset:RepairSystem_4\")": 3,
+      "(Id=\"MWFactionAsset:RepairSystem_5\")": 7,
+      "(Id=\"MWFactionAsset:RepairSystem_6\")": 5,
+      "(Id=\"MWFactionAsset:RepairSystem_7\")": 4,
+      "(Id=\"MWFactionAsset:RepairSystem_8\")": 4,
+      "(Id=\"MWFactionAsset:RepairSystem_9\")": 4,
+      "(Id=\"MWFactionAsset:RepairSystem_Clan\")": 11,
+      "(Id=\"MWFactionAsset:RepairSystem_Custom\")": 5,
+      "(Id=\"MWFactionAsset:RogueSystems\")": 12,
+      "(Id=\"MWFactionAsset:ShippingRoute\")": 11,
+      "(Id=\"MWFactionAsset:SianCommonality\")": 17,
+      "(Id=\"MWFactionAsset:SteinerBorder\")": 18,
+      "(Id=\"MWFactionAsset:SteinerMarikBorder\")": 15,
+      "(Id=\"MWFactionAsset:StewartCommonality\")": 13,
+      "(Id=\"MWFactionAsset:StoryCluster1\")": 7,
+      "(Id=\"MWFactionAsset:StoryCluster2\")": 5,
+      "(Id=\"MWFactionAsset:StoryCluster3\")": 5,
+      "(Id=\"MWFactionAsset:StoryCluster4\")": 4,
+      "(Id=\"MWFactionAsset:StoryCluster5\")": 5,
+      "(Id=\"MWFactionAsset:StoryCluster6\")": 3,
+      "(Id=\"MWFactionAsset:StoryCluster7\")": 3,
+      "(Id=\"MWFactionAsset:TamarindAbbey\")": 11,
+      "(Id=\"MWFactionAsset:TaurianCorridor\")": 43,
+      "(Id=\"MWFactionAsset:TheJunkyard\")": 13,
+      "(Id=\"MWFactionAsset:TsinghaiCommonality\")": 11
+    },
+    "raw_original_tku": {
+      "(Id=\"MWFactionAsset:A2M1_Cluster\")": 10,
+      "(Id=\"MWFactionAsset:AgriculturalBelt\")": 15,
+      "(Id=\"MWFactionAsset:AlarionPeriphery\")": 21,
+      "(Id=\"MWFactionAsset:Arcturus\")": 1,
+      "(Id=\"MWFactionAsset:Auldhouse\")": 1,
+      "(Id=\"MWFactionAsset:BackwaterRegion\")": 11,
+      "(Id=\"MWFactionAsset:Bethonolog\")": 1,
+      "(Id=\"MWFactionAsset:CareerCluster\")": 189,
+      "(Id=\"MWFactionAsset:ClanConflict\")": 29,
+      "(Id=\"MWFactionAsset:DavionBorder\")": 22,
+      "(Id=\"MWFactionAsset:DavionBorderlands\")": 14,
+      "(Id=\"MWFactionAsset:DavionKurita\")": 21,
+      "(Id=\"MWFactionAsset:Dieron\")": 1,
+      "(Id=\"MWFactionAsset:DropshipGraveyard\")": 12,
+      "(Id=\"MWFactionAsset:DroughtWorlds\")": 16,
+      "(Id=\"MWFactionAsset:DutchyOfAndurien\")": 17,
+      "(Id=\"MWFactionAsset:EmptyWorlds\")": 6,
+      "(Id=\"MWFactionAsset:FWLCommercialHub\")": 17,
+      "(Id=\"MWFactionAsset:FWLInterior\")": 17,
+      "(Id=\"MWFactionAsset:FWLShippingRoute\")": 12,
+      "(Id=\"MWFactionAsset:Galatea\")": 1,
+      "(Id=\"MWFactionAsset:Hardcore\")": 1,
+      "(Id=\"MWFactionAsset:Herotitus\")": 1,
+      "(Id=\"MWFactionAsset:IndustrialMiningCompany\")": 14,
+      "(Id=\"MWFactionAsset:InfernosWake\")": 14,
+      "(Id=\"MWFactionAsset:KuritaBorder\")": 1,
+      "(Id=\"MWFactionAsset:KuritaDavion\")": 11,
+      "(Id=\"MWFactionAsset:KuritanBadlands\")": 11,
+      "(Id=\"MWFactionAsset:LowerClassWorlds\")": 25,
+      "(Id=\"MWFactionAsset:LyranStrongholds\")": 22,
+      "(Id=\"MWFactionAsset:MarikLiaoBorder\")": 17,
+      "(Id=\"MWFactionAsset:MercenaryRow\")": 13,
+      "(Id=\"MWFactionAsset:Outreach\")": 1,
+      "(Id=\"MWFactionAsset:OutworldsBorder\")": 28,
+      "(Id=\"MWFactionAsset:PirateCluster\")": 13,
+      "(Id=\"MWFactionAsset:PirateKingdoms\")": 10,
+      "(Id=\"MWFactionAsset:PiratesHaven\")": 1,
+      "(Id=\"MWFactionAsset:Radstadt\")": 1,
+      "(Id=\"MWFactionAsset:RasalagueReaches\")": 18,
+      "(Id=\"MWFactionAsset:RashpurOwensInc\")": 9,
+      "(Id=\"MWFactionAsset:RebeliousLyranTerritory\")": 17,
+      "(Id=\"MWFactionAsset:RepairSystem\")": 204,
+      "(Id=\"MWFactionAsset:RepairSystem_Clan\")": 11,
+      "(Id=\"MWFactionAsset:RepairSystem_Custom\")": 8,
+      "(Id=\"MWFactionAsset:RogueSystems\")": 14,
+      "(Id=\"MWFactionAsset:Sarna\")": 1,
+      "(Id=\"MWFactionAsset:ShippingRoute\")": 11,
+      "(Id=\"MWFactionAsset:SianCommonality\")": 17,
+      "(Id=\"MWFactionAsset:Solaris\")": 1,
+      "(Id=\"MWFactionAsset:SteinerBorder\")": 21,
+      "(Id=\"MWFactionAsset:SteinerMarikBorder\")": 16,
+      "(Id=\"MWFactionAsset:StewartCommonality\")": 14,
+      "(Id=\"MWFactionAsset:StoryCluster1\")": 5,
+      "(Id=\"MWFactionAsset:StoryCluster10\")": 1,
+      "(Id=\"MWFactionAsset:StoryCluster2\")": 5,
+      "(Id=\"MWFactionAsset:StoryCluster3\")": 5,
+      "(Id=\"MWFactionAsset:StoryCluster4\")": 3,
+      "(Id=\"MWFactionAsset:StoryCluster5\")": 5,
+      "(Id=\"MWFactionAsset:StoryCluster6\")": 3,
+      "(Id=\"MWFactionAsset:StoryCluster7\")": 3,
+      "(Id=\"MWFactionAsset:TamarindAbbey\")": 11,
+      "(Id=\"MWFactionAsset:TaurianCorridor\")": 42,
+      "(Id=\"MWFactionAsset:TheJunkyard\")": 13,
+      "(Id=\"MWFactionAsset:Tigress\")": 1,
+      "(Id=\"MWFactionAsset:Tikonov\")": 1,
+      "(Id=\"MWFactionAsset:TrollocPrime\")": 1,
+      "(Id=\"MWFactionAsset:TsinghaiCommonality\")": 10,
+      "(Id=\"MWFactionAsset:Vega\")": 1,
+      "(Id=\"MWFactionAsset:Westerhand\")": 1
+    }
+  },
+  "decision": {
+    "build_authorized": false,
+    "preferred_first_editor_data_candidate": "merged_current_plus_tku_additions",
+    "reason": "The merged candidate preserves current 1.13 rows and descriptions while adding TKU-only systems; raw original TKU rows are retained only as clean-source reference."
+  },
+  "enum_compatibility": {
+    "ChargingStation": {
+      "current_observed_values_missing_from_tku": [],
+      "tku_values_missing_from_current_observed_values": []
+    },
+    "Habitable": {
+      "current_observed_values_missing_from_tku": [],
+      "tku_values_missing_from_current_observed_values": []
+    },
+    "Luminosity": {
+      "current_observed_values_missing_from_tku": [
+        "I",
+        "III,V",
+        "VI,V",
+        "v"
+      ],
+      "tku_values_missing_from_current_observed_values": []
+    },
+    "Orbitals": {
+      "current_observed_values_missing_from_tku": [
+        "C_1"
+      ],
+      "tku_values_missing_from_current_observed_values": []
+    },
+    "SpectralType": {
+      "current_observed_values_missing_from_tku": [],
+      "tku_values_missing_from_current_observed_values": []
+    },
+    "SystemStatus": {
+      "current_observed_values_missing_from_tku": [],
+      "tku_values_missing_from_current_observed_values": []
+    },
+    "SystemType": {
+      "current_observed_values_missing_from_tku": [],
+      "tku_values_missing_from_current_observed_values": []
+    }
+  },
+  "fieldnames": [
+    "---",
+    "Name",
+    "StarSystemName",
+    "PosX",
+    "PosY",
+    "SystemType",
+    "SpectralType",
+    "Luminosity",
+    "SubType",
+    "SystemStatus",
+    "ChargingStation",
+    "Orbitals",
+    "Habitable",
+    "Description",
+    "Cluster",
+    "ClusterOverlay",
+    "ClusterConstellation"
+  ],
+  "generated_utc": "2026-05-10T12:37:58.630897+00:00",
+  "inputs": {
+    "current_runtime_csv": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\InnerSphereData\\MW5_InnerSphereData.csv",
+    "original_tku_parsed_csv": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\reports\\tku_editor_first\\original_tku_inner_sphere_datatable_rows_20260510.csv"
+  },
+  "non_mutating": true,
+  "outputs": {
+    "merged_current_plus_tku_additions_utf16": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\reports\\tku_editor_first\\tku_inner_sphere_merged_current_plus_tku_additions_20260510.csv",
+    "merged_current_plus_tku_additions_utf8": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\reports\\tku_editor_first\\tku_inner_sphere_merged_current_plus_tku_additions_20260510.utf8.csv",
+    "raw_original_current_schema_utf16": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\reports\\tku_editor_first\\tku_inner_sphere_raw_original_current_schema_20260510.csv",
+    "raw_original_current_schema_utf8": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\reports\\tku_editor_first\\tku_inner_sphere_raw_original_current_schema_20260510.utf8.csv"
+  },
+  "row_counts": {
+    "current_only_rows_retained_in_merged": 45,
+    "current_rows": 2173,
+    "merged_rows": 3974,
+    "raw_original_tku_rows": 3929,
+    "shared_rows": 2128,
+    "tku_addition_rows": 1801
+  },
+  "samples": {
+    "current_only_ids": [
+      3450,
+      3451,
+      3452,
+      3453,
+      3454,
+      3455,
+      3456,
+      3457,
+      3458,
+      3459,
+      3460,
+      3461,
+      3462,
+      3465,
+      3466,
+      3467,
+      3468,
+      3469,
+      3470,
+      3471,
+      3472,
+      3473,
+      3474,
+      3475,
+      3476,
+      3477,
+      3478,
+      3479,
+      3480,
+      3481,
+      3482,
+      3483,
+      3484,
+      3485,
+      3486,
+      3487,
+      3488,
+      3489,
+      3490,
+      3491,
+      3492,
+      3493,
+      3494,
+      3495,
+      3496
+    ],
+    "merged_tku_additions": [
+      {
+        "---": "4001",
+        "ChargingStation": "None",
+        "Cluster": "(Id=\"\")",
+        "ClusterConstellation": "None",
+        "ClusterOverlay": "None",
+        "Description": "",
+        "Habitable": "Unspecified",
+        "Luminosity": "V",
+        "Name": "4001",
+        "Orbitals": "Unspecified",
+        "PosX": "-365.9739990234375",
+        "PosY": "930.9940185546875",
+        "SpectralType": "F",
+        "StarSystemName": "Santiago IV",
+        "SubType": "1",
+        "SystemStatus": "Normal",
+        "SystemType": "Normal"
+      },
+      {
+        "---": "4002",
+        "ChargingStation": "None",
+        "Cluster": "(Id=\"\")",
+        "ClusterConstellation": "None",
+        "ClusterOverlay": "None",
+        "Description": "",
+        "Habitable": "Unspecified",
+        "Luminosity": "V",
+        "Name": "4002",
+        "Orbitals": "Unspecified",
+        "PosX": "-996.5070190429688",
+        "PosY": "100.03399658203125",
+        "SpectralType": "K",
+        "StarSystemName": "Mostaganem",
+        "SubType": "2",
+        "SystemStatus": "Normal",
+        "SystemType": "Normal"
+      },
+      {
+        "---": "4003",
+        "ChargingStation": "None",
+        "Cluster": "(Id=\"\")",
+        "ClusterConstellation": "None",
+        "ClusterOverlay": "None",
+        "Description": "",
+        "Habitable": "Unspecified",
+        "Luminosity": "V",
+        "Name": "4003",
+        "Orbitals": "Unspecified",
+        "PosX": "982.3289794921875",
+        "PosY": "202.08200073242188",
+        "SpectralType": "F",
+        "StarSystemName": "Halkidik",
+        "SubType": "7",
+        "SystemStatus": "Normal",
+        "SystemType": "Normal"
+      },
+      {
+        "---": "4004",
+        "ChargingStation": "None",
+        "Cluster": "(Id=\"\")",
+        "ClusterConstellation": "None",
+        "ClusterOverlay": "None",
+        "Description": "",
+        "Habitable": "Unspecified",
+        "Luminosity": "V",
+        "Name": "4004",
+        "Orbitals": "Unspecified",
+        "PosX": "852.9299926757812",
+        "PosY": "538.7559814453125",
+        "SpectralType": "M",
+        "StarSystemName": "SLSC A0V.4900 (Monument to Man)",
+        "SubType": "1",
+        "SystemStatus": "Normal",
+        "SystemType": "Normal"
+      },
+      {
+        "---": "4005",
+        "ChargingStation": "None",
+        "Cluster": "(Id=\"\")",
+        "ClusterConstellation": "None",
+        "ClusterOverlay": "None",
+        "Description": "",
+        "Habitable": "Unspecified",
+        "Luminosity": "V",
+        "Name": "4005",
+        "Orbitals": "Unspecified",
+        "PosX": "990.468994140625",
+        "PosY": "192.53799438476562",
+        "SpectralType": "K",
+        "StarSystemName": "Lemnos",
+        "SubType": "7",
+        "SystemStatus": "Normal",
+        "SystemType": "Normal"
+      },
+      {
+        "---": "4006",
+        "ChargingStation": "None",
+        "Cluster": "(Id=\"\")",
+        "ClusterConstellation": "None",
+        "ClusterOverlay": "None",
+        "Description": "",
+        "Habitable": "Unspecified",
+        "Luminosity": "V",
+        "Name": "4006",
+        "Orbitals": "Unspecified",
+        "PosX": "-705.9190063476562",
+        "PosY": "721.7230224609375",
+        "SpectralType": "G",
+        "StarSystemName": "K\u00f6l\ufffd",
+        "SubType": "1",
+        "SystemStatus": "Normal",
+        "SystemType": "Normal"
+      },
+      {
+        "---": "4007",
+        "ChargingStation": "None",
+        "Cluster": "(Id=\"\")",
+        "ClusterConstellation": "None",
+        "ClusterOverlay": "None",
+        "Description": "",
+        "Habitable": "Unspecified",
+        "Luminosity": "V",
+        "Name": "4007",
+        "Orbitals": "Unspecified",
+        "PosX": "-995.551025390625",
+        "PosY": "174.9250030517578",
+        "SpectralType": "F",
+        "StarSystemName": "Tadjoura",
+        "SubType": "6",
+        "SystemStatus": "Normal",
+        "SystemType": "Normal"
+      },
+      {
+        "---": "4008",
+        "ChargingStation": "None",
+        "Cluster": "(Id=\"\")",
+        "ClusterConstellation": "None",
+        "ClusterOverlay": "None",
+        "Description": "",
+        "Habitable": "Unspecified",
+        "Luminosity": "V",
+        "Name": "4008",
+        "Orbitals": "Unspecified",
+        "PosX": "-999.989990234375",
+        "PosY": "149.70199584960938",
+        "SpectralType": "G",
+        "StarSystemName": "Nyamlell",
+        "SubType": "2",
+        "SystemStatus": "Normal",
+        "SystemType": "Normal"
+      },
+      {
+        "---": "4009",
+        "ChargingStation": "None",
+        "Cluster": "(Id=\"\")",
+        "ClusterConstellation": "None",
+        "ClusterOverlay": "None",
+        "Description": "",
+        "Habitable": "Unspecified",
+        "Luminosity": "V",
+        "Name": "4009",
+        "Orbitals": "Unspecified",
+        "PosX": "994.4639892578125",
+        "PosY": "204.91799926757812",
+        "SpectralType": "F",
+        "StarSystemName": "Anglia",
+        "SubType": "7",
+        "SystemStatus": "Normal",
+        "SystemType": "Normal"
+      },
+      {
+        "---": "4010",
+        "ChargingStation": "None",
+        "Cluster": "(Id=\"\")",
+        "ClusterConstellation": "None",
+        "ClusterOverlay": "None",
+        "Description": "",
+        "Habitable": "Unspecified",
+        "Luminosity": "V",
+        "Name": "4010",
+        "Orbitals": "Unspecified",
+        "PosX": "-1008.1599731445312",
+        "PosY": "124.2020034790039",
+        "SpectralType": "G",
+        "StarSystemName": "Saidia",
+        "SubType": "7",
+        "SystemStatus": "Normal",
+        "SystemType": "Normal"
+      }
+    ],
+    "raw_rows": [
+      {
+        "---": "0",
+        "ChargingStation": "None",
+        "Cluster": "(Id=\"\")",
+        "ClusterConstellation": "None",
+        "ClusterOverlay": "None",
+        "Description": "",
+        "Habitable": "Unspecified",
+        "Luminosity": "",
+        "Name": "0",
+        "Orbitals": "Unspecified",
+        "PosX": "0.0",
+        "PosY": "0.0",
+        "SpectralType": "None",
+        "StarSystemName": "INVALID",
+        "SubType": "0",
+        "SystemStatus": "Normal",
+        "SystemType": "Normal"
+      },
+      {
+        "---": "1",
+        "ChargingStation": "None",
+        "Cluster": "(Id=\"MWFactionAsset:RepairSystem\")",
+        "ClusterConstellation": "None",
+        "ClusterOverlay": "None",
+        "Description": "",
+        "Habitable": "H_0",
+        "Luminosity": "V",
+        "Name": "1",
+        "Orbitals": "C_8",
+        "PosX": "0.0",
+        "PosY": "0.0",
+        "SpectralType": "G",
+        "StarSystemName": "Terra",
+        "SubType": "2",
+        "SystemStatus": "Normal",
+        "SystemType": "Normal"
+      },
+      {
+        "---": "4001",
+        "ChargingStation": "None",
+        "Cluster": "(Id=\"\")",
+        "ClusterConstellation": "None",
+        "ClusterOverlay": "None",
+        "Description": "",
+        "Habitable": "Unspecified",
+        "Luminosity": "V",
+        "Name": "4001",
+        "Orbitals": "Unspecified",
+        "PosX": "-365.9739990234375",
+        "PosY": "930.9940185546875",
+        "SpectralType": "F",
+        "StarSystemName": "Santiago IV",
+        "SubType": "1",
+        "SystemStatus": "Normal",
+        "SystemType": "Normal"
+      },
+      {
+        "---": "4002",
+        "ChargingStation": "None",
+        "Cluster": "(Id=\"\")",
+        "ClusterConstellation": "None",
+        "ClusterOverlay": "None",
+        "Description": "",
+        "Habitable": "Unspecified",
+        "Luminosity": "V",
+        "Name": "4002",
+        "Orbitals": "Unspecified",
+        "PosX": "-996.5070190429688",
+        "PosY": "100.03399658203125",
+        "SpectralType": "K",
+        "StarSystemName": "Mostaganem",
+        "SubType": "2",
+        "SystemStatus": "Normal",
+        "SystemType": "Normal"
+      },
+      {
+        "---": "4003",
+        "ChargingStation": "None",
+        "Cluster": "(Id=\"\")",
+        "ClusterConstellation": "None",
+        "ClusterOverlay": "None",
+        "Description": "",
+        "Habitable": "Unspecified",
+        "Luminosity": "V",
+        "Name": "4003",
+        "Orbitals": "Unspecified",
+        "PosX": "982.3289794921875",
+        "PosY": "202.08200073242188",
+        "SpectralType": "F",
+        "StarSystemName": "Halkidik",
+        "SubType": "7",
+        "SystemStatus": "Normal",
+        "SystemType": "Normal"
+      }
+    ],
+    "tku_addition_ids": [
+      4001,
+      4002,
+      4003,
+      4004,
+      4005,
+      4006,
+      4007,
+      4008,
+      4009,
+      4010,
+      4011,
+      4012,
+      4013,
+      4014,
+      4015,
+      4016,
+      4017,
+      4018,
+      4019,
+      4020,
+      4021,
+      4022,
+      4023,
+      4024,
+      4025,
+      4026,
+      4027,
+      4028,
+      4029,
+      4030,
+      4031,
+      4032,
+      4033,
+      4034,
+      4035,
+      4036,
+      4037,
+      4038,
+      4039,
+      4040,
+      4041,
+      4042,
+      4043,
+      4044,
+      4045,
+      4046,
+      4047,
+      4048,
+      4049,
+      4050,
+      4051,
+      4052,
+      4053,
+      4054,
+      4055,
+      4056,
+      4057,
+      4058,
+      4059,
+      4060,
+      4061,
+      4062,
+      4063,
+      4064,
+      4065,
+      4066,
+      4067,
+      4068,
+      4069,
+      4070,
+      4071,
+      4072,
+      4073,
+      4074,
+      4075,
+      4076,
+      4077,
+      4078,
+      4079,
+      4080,
+      4081,
+      4082,
+      4083,
+      4084,
+      4085,
+      4086,
+      4087,
+      4088,
+      4089,
+      4090,
+      4091,
+      4092,
+      4093,
+      4094,
+      4095,
+      4096,
+      4097,
+      4098,
+      4099,
+      4100,
+      4101,
+      4102,
+      4103,
+      4104,
+      4105,
+      4106,
+      4107,
+      4108,
+      4109,
+      4110,
+      4111,
+      4112,
+      4113,
+      4114,
+      4115,
+      4116,
+      4117,
+      4118,
+      4119,
+      4120
+    ]
+  },
+  "shared_row_differences": {
+    "cluster_diff_count": 468,
+    "cluster_diff_sample": [
+      {
+        "current": "(Id=\"MWFactionAsset:RepairSystem_26\")",
+        "id": 1,
+        "name": "Terra",
+        "tku": "(Id=\"MWFactionAsset:RepairSystem\")"
+      },
+      {
+        "current": "(Id=\"MWFactionAsset:RepairSystem_26\")",
+        "id": 2,
+        "name": "Tau Ceti (New Earth (2116+))",
+        "tku": "(Id=\"MWFactionAsset:RepairSystem\")"
+      },
+      {
+        "current": "(Id=\"MWFactionAsset:RepairSystem_26\")",
+        "id": 3,
+        "name": "Rigil Kentarus (Alpha Centauri)",
+        "tku": "(Id=\"\")"
+      },
+      {
+        "current": "(Id=\"\")",
+        "id": 4,
+        "name": "Pike",
+        "tku": "(Id=\"MWFactionAsset:CareerCluster\")"
+      },
+      {
+        "current": "(Id=\"MWFactionAsset:StoryCluster1\")",
+        "id": 5,
+        "name": "Rochelle",
+        "tku": "(Id=\"\")"
+      },
+      {
+        "current": "(Id=\"MWFactionAsset:RepairSystem_27\")",
+        "id": 9,
+        "name": "Thorin",
+        "tku": "(Id=\"\")"
+      },
+      {
+        "current": "(Id=\"\")",
+        "id": 13,
+        "name": "Denebola",
+        "tku": "(Id=\"MWFactionAsset:CareerCluster\")"
+      },
+      {
+        "current": "(Id=\"\")",
+        "id": 14,
+        "name": "Oliver",
+        "tku": "(Id=\"MWFactionAsset:CareerCluster\")"
+      },
+      {
+        "current": "(Id=\"MWFactionAsset:RepairSystem_26\")",
+        "id": 15,
+        "name": "Procyon",
+        "tku": "(Id=\"MWFactionAsset:RepairSystem\")"
+      },
+      {
+        "current": "(Id=\"MWFactionAsset:RepairSystem_26\")",
+        "id": 17,
+        "name": "Northwind",
+        "tku": "(Id=\"MWFactionAsset:RepairSystem\")"
+      },
+      {
+        "current": "(Id=\"\")",
+        "id": 19,
+        "name": "Castor",
+        "tku": "(Id=\"MWFactionAsset:CareerCluster\")"
+      },
+      {
+        "current": "(Id=\"MWFactionAsset:DavionBorderlands\")",
+        "id": 23,
+        "name": "Tigress",
+        "tku": "(Id=\"MWFactionAsset:Tigress\")"
+      },
+      {
+        "current": "(Id=\"MWFactionAsset:RepairSystem_27\")",
+        "id": 24,
+        "name": "Dieudonn\ufffd",
+        "tku": "(Id=\"MWFactionAsset:RepairSystem\")"
+      },
+      {
+        "current": "(Id=\"MWFactionAsset:RepairSystem_26\")",
+        "id": 28,
+        "name": "New Home",
+        "tku": "(Id=\"MWFactionAsset:RepairSystem\")"
+      },
+      {
+        "current": "(Id=\"\")",
+        "id": 31,
+        "name": "Nashira",
+        "tku": "(Id=\"MWFactionAsset:CareerCluster\")"
+      },
+      {
+        "current": "(Id=\"\")",
+        "id": 32,
+        "name": "Ingress",
+        "tku": "(Id=\"MWFactionAsset:CareerCluster\")"
+      },
+      {
+        "current": "(Id=\"\")",
+        "id": 33,
+        "name": "Ko",
+        "tku": "(Id=\"MWFactionAsset:CareerCluster\")"
+      },
+      {
+        "current": "(Id=\"MWFactionAsset:RepairSystem_26\")",
+        "id": 35,
+        "name": "Caph (Barnard)",
+        "tku": "(Id=\"MWFactionAsset:RepairSystem\")"
+      },
+      {
+        "current": "(Id=\"\")",
+        "id": 37,
+        "name": "Kervil",
+        "tku": "(Id=\"MWFactionAsset:CareerCluster\")"
+      },
+      {
+        "current": "(Id=\"MWFactionAsset:RepairSystem_26\")",
+        "id": 40,
+        "name": "Asta",
+        "tku": "(Id=\"MWFactionAsset:RepairSystem\")"
+      },
+      {
+        "current": "(Id=\"\")",
+        "id": 41,
+        "name": "Epsilon Indi",
+        "tku": "(Id=\"MWFactionAsset:CareerCluster\")"
+      },
+      {
+        "current": "(Id=\"\")",
+        "id": 44,
+        "name": "Styx",
+        "tku": "(Id=\"MWFactionAsset:CareerCluster\")"
+      },
+      {
+        "current": "(Id=\"\")",
+        "id": 45,
+        "name": "Outreach",
+        "tku": "(Id=\"MWFactionAsset:Outreach\")"
+      },
+      {
+        "current": "(Id=\"MWFactionAsset:RepairSystem_26\")",
+        "id": 49,
+        "name": "Keid",
+        "tku": "(Id=\"MWFactionAsset:RepairSystem\")"
+      },
+      {
+        "current": "(Id=\"\")",
+        "id": 50,
+        "name": "Imbros",
+        "tku": "(Id=\"MWFactionAsset:CareerCluster\")"
+      },
+      {
+        "current": "(Id=\"MWFactionAsset:RepairSystem_26\")",
+        "id": 54,
+        "name": "Altair",
+        "tku": "(Id=\"MWFactionAsset:RepairSystem\")"
+      },
+      {
+        "current": "(Id=\"\")",
+        "id": 55,
+        "name": "Lambrecht",
+        "tku": "(Id=\"MWFactionAsset:CareerCluster\")"
+      },
+      {
+        "current": "(Id=\"MWFactionAsset:RepairSystem_27\")",
+        "id": 58,
+        "name": "Zion",
+        "tku": "(Id=\"\")"
+      },
+      {
+        "current": "(Id=\"\")",
+        "id": 59,
+        "name": "Telos",
+        "tku": "(Id=\"MWFactionAsset:CareerCluster\")"
+      },
+      {
+        "current": "(Id=\"MWFactionAsset:RepairSystem_7\")",
+        "id": 62,
+        "name": "McHenry",
+        "tku": "(Id=\"MWFactionAsset:RepairSystem\")"
+      },
+      {
+        "current": "(Id=\"\")",
+        "id": 63,
+        "name": "Dyev",
+        "tku": "(Id=\"MWFactionAsset:CareerCluster\")"
+      },
+      {
+        "current": "(Id=\"MWFactionAsset:RepairSystem_5\")",
+        "id": 64,
+        "name": "Demeter",
+        "tku": "(Id=\"MWFactionAsset:RepairSystem\")"
+      },
+      {
+        "current": "(Id=\"MWFactionAsset:RepairSystem_28\")",
+        "id": 66,
+        "name": "Blue Diamond",
+        "tku": "(Id=\"MWFactionAsset:RepairSystem\")"
+      },
+      {
+        "current": "(Id=\"MWFactionAsset:RepairSystem_8\")",
+        "id": 70,
+        "name": "Skat",
+        "tku": "(Id=\"MWFactionAsset:RepairSystem\")"
+      },
+      {
+        "current": "(Id=\"MWFactionAsset:RepairSystem_26\")",
+        "id": 72,
+        "name": "Fomalhaut",
+        "tku": "(Id=\"MWFactionAsset:RepairSystem\")"
+      },
+      {
+        "current": "(Id=\"\")",
+        "id": 73,
+        "name": "Sheratan",
+        "tku": "(Id=\"MWFactionAsset:CareerCluster\")"
+      },
+      {
+        "current": "(Id=\"MWFactionAsset:RepairSystem_26\")",
+        "id": 75,
+        "name": "Bryant",
+        "tku": "(Id=\"MWFactionAsset:RepairSystem\")"
+      },
+      {
+        "current": "(Id=\"\")",
+        "id": 76,
+        "name": "Helen",
+        "tku": "(Id=\"MWFactionAsset:CareerCluster\")"
+      },
+      {
+        "current": "(Id=\"MWFactionAsset:RepairSystem_7\")",
+        "id": 77,
+        "name": "Muskegon",
+        "tku": "(Id=\"MWFactionAsset:RepairSystem\")"
+      },
+      {
+        "current": "(Id=\"\")",
+        "id": 78,
+        "name": "Zavijava",
+        "tku": "(Id=\"MWFactionAsset:CareerCluster\")"
+      }
+    ],
+    "name_diff_count": 48,
+    "name_diff_sample": [
+      {
+        "current": "Tau Ceti",
+        "id": 2,
+        "tku": "Tau Ceti (New Earth (2116+))"
+      },
+      {
+        "current": "Rigil Kentarus",
+        "id": 3,
+        "tku": "Rigil Kentarus (Alpha Centauri)"
+      },
+      {
+        "current": "Dieudonne",
+        "id": 24,
+        "tku": "Dieudonn\ufffd"
+      },
+      {
+        "current": "Caph",
+        "id": 35,
+        "tku": "Caph (Barnard)"
+      },
+      {
+        "current": "Carver",
+        "id": 39,
+        "tku": "Carver (Liberty (3063+))"
+      },
+      {
+        "current": "Alula Australis",
+        "id": 144,
+        "tku": "Xi Ursae Majoris (Alula Australis)"
+      },
+      {
+        "current": "Chara",
+        "id": 167,
+        "tku": "Chara (Pacifica)"
+      },
+      {
+        "current": "Liao",
+        "id": 168,
+        "tku": "Cynthiana (Liao (2202+))"
+      },
+      {
+        "current": "Elgin",
+        "id": 174,
+        "tku": "Chisholm (Elgin (2878+))"
+      },
+      {
+        "current": "Yance",
+        "id": 284,
+        "tku": "Agador (Yance I)"
+      },
+      {
+        "current": "Mesartim",
+        "id": 299,
+        "tku": "Mesartim (Conway)"
+      },
+      {
+        "current": "Achernar",
+        "id": 306,
+        "tku": "Alpha Eridani (Achernar)"
+      },
+      {
+        "current": "Tsinghai",
+        "id": 348,
+        "tku": "New Sarna (Tsinghai)"
+      },
+      {
+        "current": "Alnasi",
+        "id": 439,
+        "tku": "Gamma Sagittarius (Alnasl)"
+      },
+      {
+        "current": "Odessa",
+        "id": 498,
+        "tku": "Odessa (The Ruins of Gabriel)"
+      },
+      {
+        "current": "Barlow's Folly",
+        "id": 596,
+        "tku": "Cussar (Barlow's Folly (2864+))"
+      },
+      {
+        "current": "Kandersteg",
+        "id": 616,
+        "tku": "Matahari (Kandersteg)"
+      },
+      {
+        "current": "Wernke",
+        "id": 786,
+        "tku": "Wernke (Talon)"
+      },
+      {
+        "current": "Star's End",
+        "id": 893,
+        "tku": "Star's End (Novo Cressidas)"
+      },
+      {
+        "current": "Gotterdammerung",
+        "id": 921,
+        "tku": "G\u00f6tterd\u00e4mmerun\ufffd"
+      },
+      {
+        "current": "Winfield",
+        "id": 925,
+        "tku": "Treeline (Winfield (2863+))"
+      },
+      {
+        "current": "Antallos",
+        "id": 1068,
+        "tku": "Antallos (Port Krin)"
+      },
+      {
+        "current": "Micanos",
+        "id": 1069,
+        "tku": "Micanos (Mica II, Mica V, Mica VII)"
+      },
+      {
+        "current": "Winfield (FS)",
+        "id": 1091,
+        "tku": "Winfield"
+      },
+      {
+        "current": "Randis",
+        "id": 1098,
+        "tku": "Hope (Randis IV (2988+))"
+      },
+      {
+        "current": "Blantleff",
+        "id": 1101,
+        "tku": "Dersidatz (Blantleff (3025+))"
+      },
+      {
+        "current": "Andiron",
+        "id": 1103,
+        "tku": "Helbrent (Andiron (3025+))"
+      },
+      {
+        "current": "Clayborne",
+        "id": 1108,
+        "tku": "Green Stone (Clayborne II (3025+))"
+      },
+      {
+        "current": "Diedre's Den",
+        "id": 1111,
+        "tku": "Iolas (Diedre's Den (3025+))"
+      },
+      {
+        "current": "Baltazar",
+        "id": 1116,
+        "tku": "Himmels (Baltazar III (2864+))"
+      },
+      {
+        "current": "Sterope",
+        "id": 1125,
+        "tku": "Sterope (New Taurus)"
+      },
+      {
+        "current": "Pain",
+        "id": 1219,
+        "tku": "Dijonne (Pain (3050+))"
+      },
+      {
+        "current": "The Rack",
+        "id": 1228,
+        "tku": "Port Vail (The Rack (3050+))"
+      },
+      {
+        "current": "Gulf Breeze",
+        "id": 1357,
+        "tku": "Commonwealth Mining Outpost 26 (Gulf Breeze (2864+))"
+      },
+      {
+        "current": "Kooken's Pleasure Pit",
+        "id": 1477,
+        "tku": "Kookens Pleasure Pit"
+      },
+      {
+        "current": "Von Strang",
+        "id": 1483,
+        "tku": "Erin (Von Strang's World (2786+))"
+      },
+      {
+        "current": "Crevedia",
+        "id": 1506,
+        "tku": "Vaj (Crevedia)"
+      },
+      {
+        "current": "Adhara",
+        "id": 1514,
+        "tku": "Adhara (Trip (3040+))"
+      },
+      {
+        "current": "Verthandi",
+        "id": 1586,
+        "tku": "Norn (Verthandi)"
+      },
+      {
+        "current": "Shaula",
+        "id": 1611,
+        "tku": "Perrot (Shaula (3025+))"
+      }
+    ],
+    "position_diff_count": 2119,
+    "position_diff_sample": [
+      {
+        "current": {
+          "x": -13.0,
+          "y": 2.0
+        },
+        "id": 2,
+        "name": "Tau Ceti (New Earth (2116+))",
+        "tku": {
+          "x": -12.414999961853027,
+          "y": 3.055000066757202
+        }
+      },
+      {
+        "current": {
+          "x": -3.0,
+          "y": 4.0
+        },
+        "id": 3,
+        "name": "Rigil Kentarus (Alpha Centauri)",
+        "tku": {
+          "x": -2.8519999980926514,
+          "y": 2.5399999618530273
+        }
+      },
+      {
+        "current": {
+          "x": 20.0,
+          "y": 40.0
+        },
+        "id": 4,
+        "name": "Pike",
+        "tku": {
+          "x": 20.152999877929688,
+          "y": 39.2400016784668
+        }
+      },
+      {
+        "current": {
+          "x": -115.0,
+          "y": -16.0
+        },
+        "id": 5,
+        "name": "Rochelle",
+        "tku": {
+          "x": -113.79100036621094,
+          "y": -15.8149995803833
+        }
+      },
+      {
+        "current": {
+          "x": -65.0,
+          "y": 109.0
+        },
+        "id": 6,
+        "name": "Freedom",
+        "tku": {
+          "x": -64.2750015258789,
+          "y": 107.73899841308594
+        }
+      },
+      {
+        "current": {
+          "x": -46.0,
+          "y": 92.0
+        },
+        "id": 7,
+        "name": "Ryde",
+        "tku": {
+          "x": -45.35599899291992,
+          "y": 91.72200012207031
+        }
+      },
+      {
+        "current": {
+          "x": -45.0,
+          "y": 316.0
+        },
+        "id": 8,
+        "name": "Sevren",
+        "tku": {
+          "x": -44.46799850463867,
+          "y": 313.24700927734375
+        }
+      },
+      {
+        "current": {
+          "x": -24.0,
+          "y": 8.0
+        },
+        "id": 9,
+        "name": "Thorin",
+        "tku": {
+          "x": -23.525999069213867,
+          "y": 7.960999965667725
+        }
+      },
+      {
+        "current": {
+          "x": 35.0,
+          "y": 20.0
+        },
+        "id": 10,
+        "name": "Nirasaki",
+        "tku": {
+          "x": 34.37799835205078,
+          "y": 19.339000701904297
+        }
+      },
+      {
+        "current": {
+          "x": 1.0,
+          "y": -67.0
+        },
+        "id": 11,
+        "name": "Tall Trees",
+        "tku": {
+          "x": 0.7670000195503235,
+          "y": -66.74299621582031
+        }
+      },
+      {
+        "current": {
+          "x": 19.0,
+          "y": -63.0
+        },
+        "id": 12,
+        "name": "Zurich",
+        "tku": {
+          "x": 20.152999877929688,
+          "y": -63.125999450683594
+        }
+      },
+      {
+        "current": {
+          "x": -38.0,
+          "y": -2.0
+        },
+        "id": 13,
+        "name": "Denebola",
+        "tku": {
+          "x": -37.84299850463867,
+          "y": -1.621000051498413
+        }
+      },
+      {
+        "current": {
+          "x": -32.0,
+          "y": -7.0
+        },
+        "id": 14,
+        "name": "Oliver",
+        "tku": {
+          "x": -31.80299949645996,
+          "y": -7.025000095367432
+        }
+      },
+      {
+        "current": {
+          "x": -5.0,
+          "y": -13.0
+        },
+        "id": 15,
+        "name": "Procyon",
+        "tku": {
+          "x": -5.043000221252441,
+          "y": -11.064000129699707
+        }
+      },
+      {
+        "current": {
+          "x": -28.0,
+          "y": 15.0
+        },
+        "id": 16,
+        "name": "Muphrid",
+        "tku": {
+          "x": -27.402000427246094,
+          "y": 15.206999778747559
+        }
+      },
+      {
+        "current": {
+          "x": 34.0,
+          "y": -3.0
+        },
+        "id": 17,
+        "name": "Northwind",
+        "tku": {
+          "x": 34.11800003051758,
+          "y": -2.8910000324249268
+        }
+      },
+      {
+        "current": {
+          "x": -89.0,
+          "y": -5.0
+        },
+        "id": 18,
+        "name": "Shiloh",
+        "tku": {
+          "x": -88.14900207519531,
+          "y": -4.964000225067139
+        }
+      },
+      {
+        "current": {
+          "x": -41.0,
+          "y": -17.0
+        },
+        "id": 19,
+        "name": "Castor",
+        "tku": {
+          "x": -40.43000030517578,
+          "y": -16.683000564575195
+        }
+      },
+      {
+        "current": {
+          "x": 26.0,
+          "y": 12.0
+        },
+        "id": 20,
+        "name": "Saffel",
+        "tku": {
+          "x": 25.586000442504883,
+          "y": 11.845999717712402
+        }
+      },
+      {
+        "current": {
+          "x": -80.0,
+          "y": -76.0
+        },
+        "id": 21,
+        "name": "Marik",
+        "tku": {
+          "x": -79.62100219726562,
+          "y": -75.27999877929688
+        }
+      },
+      {
+        "current": {
+          "x": 46.0,
+          "y": 12.0
+        },
+        "id": 22,
+        "name": "Quentin",
+        "tku": {
+          "x": 46.00199890136719,
+          "y": 12.361000061035156
+        }
+      },
+      {
+        "current": {
+          "x": 75.0,
+          "y": -30.0
+        },
+        "id": 23,
+        "name": "Tigress",
+        "tku": {
+          "x": 74.6969985961914,
+          "y": -29.513999938964844
+        }
+      },
+      {
+        "current": {
+          "x": -76.0,
+          "y": -26.0
+        },
+        "id": 24,
+        "name": "Dieudonn\ufffd",
+        "tku": {
+          "x": -75.2239990234375,
+          "y": -25.895000457763672
+        }
+      },
+      {
+        "current": {
+          "x": -35.0,
+          "y": 44.0
+        },
+        "id": 25,
+        "name": "Nusakan",
+        "tku": {
+          "x": -34.77199935913086,
+          "y": 43.290000915527344
+        }
+      },
+      {
+        "current": {
+          "x": -35.0,
+          "y": 6.0
+        },
+        "id": 26,
+        "name": "Lipton",
+        "tku": {
+          "x": -33.86399841308594,
+          "y": 6.414000034332275
+        }
+      },
+      {
+        "current": {
+          "x": -14.0,
+          "y": -45.0
+        },
+        "id": 27,
+        "name": "Hall",
+        "tku": {
+          "x": -13.961000442504883,
+          "y": -44.250999450683594
+        }
+      },
+      {
+        "current": {
+          "x": 6.0,
+          "y": -13.0
+        },
+        "id": 28,
+        "name": "New Home",
+        "tku": {
+          "x": 7.229000091552734,
+          "y": -12.71500015258789
+        }
+      },
+      {
+        "current": {
+          "x": -45.0,
+          "y": 26.0
+        },
+        "id": 29,
+        "name": "Summer",
+        "tku": {
+          "x": -44.46799850463867,
+          "y": 26.058000564575195
+        }
+      },
+      {
+        "current": {
+          "x": 19.0,
+          "y": -21.0
+        },
+        "id": 30,
+        "name": "Epsilon Eridani",
+        "tku": {
+          "x": 18.350000381469727,
+          "y": -21.24799919128418
+        }
+      },
+      {
+        "current": {
+          "x": 48.0,
+          "y": 34.0
+        },
+        "id": 31,
+        "name": "Nashira",
+        "tku": {
+          "x": 47.654998779296875,
+          "y": 33.58700180053711
+        }
+      },
+      {
+        "current": {
+          "x": 50.0,
+          "y": -19.0
+        },
+        "id": 32,
+        "name": "Ingress",
+        "tku": {
+          "x": 49.62200164794922,
+          "y": -18.660999298095703
+        }
+      },
+      {
+        "current": {
+          "x": -18.0,
+          "y": 44.0
+        },
+        "id": 33,
+        "name": "Ko",
+        "tku": {
+          "x": -18.104999542236328,
+          "y": 43.900001525878906
+        }
+      },
+      {
+        "current": {
+          "x": -63.0,
+          "y": 16.0
+        },
+        "id": 34,
+        "name": "Cor Caroli",
+        "tku": {
+          "x": -62.30099868774414,
+          "y": 15.463000297546387
+        }
+      },
+      {
+        "current": {
+          "x": 13.0,
+          "y": -1.0
+        },
+        "id": 35,
+        "name": "Caph (Barnard)",
+        "tku": {
+          "x": 12.916999816894531,
+          "y": -0.5640000104904175
+        }
+      },
+      {
+        "current": {
+          "x": 117.0,
+          "y": -72.0
+        },
+        "id": 36,
+        "name": "Chesterton",
+        "tku": {
+          "x": 115.61900329589844,
+          "y": -71.03700256347656
+        }
+      },
+      {
+        "current": {
+          "x": 34.0,
+          "y": 46.0
+        },
+        "id": 37,
+        "name": "Kervil",
+        "tku": {
+          "x": 34.11899948120117,
+          "y": 45.96099853515625
+        }
+      },
+      {
+        "current": {
+          "x": 141.0,
+          "y": -10.0
+        },
+        "id": 38,
+        "name": "Cartago",
+        "tku": {
+          "x": 139.83599853515625,
+          "y": -10.126999855041504
+        }
+      },
+      {
+        "current": {
+          "x": -5.0,
+          "y": -21.0
+        },
+        "id": 39,
+        "name": "Carver (Liberty (3063+))",
+        "tku": {
+          "x": -5.435999870300293,
+          "y": -20.722000122070312
+        }
+      },
+      {
+        "current": {
+          "x": 4.0,
+          "y": 26.0
+        },
+        "id": 40,
+        "name": "Asta",
+        "tku": {
+          "x": 4.129000186920166,
+          "y": 25.542999267578125
+        }
+      },
+      {
+        "current": {
+          "x": 29.0,
+          "y": -16.0
+        },
+        "id": 41,
+        "name": "Epsilon Indi",
+        "tku": {
+          "x": 29.202999114990234,
+          "y": -15.557999610900879
+        }
+      }
+    ],
+    "shared_id_count": 2128
+  }
+}

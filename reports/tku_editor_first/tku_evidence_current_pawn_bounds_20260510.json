@@ -1,0 +1,74 @@
+{
+  "output_mod_name": "TKUEvidenceCurrentPawnBounds",
+  "output_root": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\TKUEvidenceCurrentPawnBounds",
+  "output_pak": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\TKUEvidenceCurrentPawnBounds\\Paks\\TKUEvidenceCurrentPawnBounds.pak",
+  "output_pak_sha256": "A7C5625A726B02256A5E79E8967F00162B52AB645B832D38994FF18763A4CA4F",
+  "output_pak_size": 4637,
+  "vanilla_pak": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Content\\Paks\\MW5Mercs-WindowsNoEditor.pak",
+  "vanilla_pak_sha256": "DE272882DD376AF73364D6960B6F12842FB2A03B26FC82571DF10A32AC079124",
+  "original_tku_pak": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\TheKnownUniverse\\Paks\\TheKnownUniverse.pak",
+  "original_tku_pak_sha256": "0F23FC683DEBEC27D07FF6739137BA1E4069934082D5AFFF6B3F2161CC64C678",
+  "target_paths": [
+    "/Game/UI/FrontEnd/StarMapPawn.uasset",
+    "/Game/UI/FrontEnd/StarMapPawn.uexp"
+  ],
+  "patch_report": {
+    "name_delta": 54,
+    "cdo_delta": 74,
+    "added_names": [
+      "PanBoundsVertical",
+      "PanBoundsHorizontal"
+    ],
+    "new_name_indices": {
+      "PanBoundsVertical": 58,
+      "PanBoundsHorizontal": 59
+    },
+    "before_values": {
+      "ZoomDistanceList": [
+        400.0,
+        550.0,
+        700.0,
+        1400.0,
+        1600.0,
+        1800.0,
+        3500.0
+      ],
+      "ZoomLevelThresholds": [
+        2000,
+        1000
+      ]
+    },
+    "after_values": {
+      "PanBoundsVertical": 16000.0,
+      "PanBoundsHorizontal": 8500.0,
+      "ZoomDistanceList": [
+        300.0,
+        600.0,
+        900.0,
+        1300.0,
+        1800.0,
+        2200.0,
+        2800.0,
+        3500.0,
+        5000.0,
+        7500.0,
+        9000.0
+      ],
+      "ZoomLevelThresholds": [
+        3500,
+        1000
+      ]
+    },
+    "old_cdo_size": 292,
+    "new_cdo_size": 366,
+    "old_uasset_size": 3442,
+    "new_uasset_size": 3496,
+    "old_uexp_size": 650,
+    "new_uexp_size": 724
+  },
+  "expected_runtime_meaning": {
+    "success": "Career loads, starmap opens normally, and map bounds/zoom expand.",
+    "no_bounds_change": "Bounds are likely controlled outside StarMapPawn CDO defaults.",
+    "crash_or_starmap_button_failure": "Manual current-package CDO patch is unsafe; disable this mod and return to core-only baseline."
+  }
+}

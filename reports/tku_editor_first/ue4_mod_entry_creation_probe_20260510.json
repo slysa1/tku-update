@@ -1,0 +1,78 @@
+{
+  "after_counts": {
+    "mods": 1,
+    "plugins": 226
+  },
+  "before_counts": {
+    "mods": 1,
+    "plugins": 226
+  },
+  "called_functions": [
+    "MWModUtils.create_mod_entry"
+  ],
+  "create_mod_entry": {
+    "ok": true,
+    "value": {
+      "editor_properties": {
+        "bEnabled__error": "Exception: ModListEntry: Failed to find property 'bEnabled' for attribute 'bEnabled' on 'ModListEntry'",
+        "category__error": "Exception: ModListEntry: Failed to find property 'category' for attribute 'category' on 'ModListEntry'",
+        "created_by__error": "Exception: ModListEntry: Failed to find property 'created_by' for attribute 'created_by' on 'ModListEntry'",
+        "description__error": "Exception: ModListEntry: Failed to find property 'description' for attribute 'description' on 'ModListEntry'",
+        "display_name__error": "Exception: ModListEntry: Failed to find property 'display_name' for attribute 'display_name' on 'ModListEntry'",
+        "enabled__error": "Exception: ModListEntry: Failed to find property 'enabled' for attribute 'enabled' on 'ModListEntry'",
+        "friendly_name__error": "Exception: ModListEntry: Failed to find property 'friendly_name' for attribute 'friendly_name' on 'ModListEntry'",
+        "load_order__error": "Exception: ModListEntry: Failed to find property 'load_order' for attribute 'load_order' on 'ModListEntry'",
+        "mod_name": "__TKUProbeEntryOnly_NoDisk__",
+        "name__error": "Exception: ModListEntry: Failed to find property 'name' for attribute 'name' on 'ModListEntry'",
+        "plugin_path__error": "Exception: ModListEntry: Failed to find property 'plugin_path' for attribute 'plugin_path' on 'ModListEntry'",
+        "version_name__error": "Exception: ModListEntry: Failed to find property 'version_name' for attribute 'version_name' on 'ModListEntry'"
+      },
+      "python_type": "ModListEntry",
+      "repr": "<ModListEntry object at 0x00000186B0F91420>"
+    }
+  },
+  "decision": {
+    "build_authorized": false,
+    "create_mod_entry_is_sufficient_for_mod_scaffold": false,
+    "created_editor_mod_target": false,
+    "manual_create_mod_required": true
+  },
+  "explicitly_not_called": [
+    "MWModUtils.set_active_mod",
+    "MWModUtils.save_mod_info_to_file",
+    "MWModEditorWidget.package_mod",
+    "EditorAssetLibrary.save_asset",
+    "EditorAssetLibrary.duplicate_asset"
+  ],
+  "filesystem_delta": {
+    "mods": {
+      "added": [],
+      "removed": []
+    },
+    "plugins": {
+      "added": [],
+      "removed": []
+    }
+  },
+  "generated_utc": "2026-05-10T13:47:27.534080+00:00",
+  "non_mutating_intent": true,
+  "plugin_info": {
+    "editor_properties": {
+      "bEnabled__error": "Exception: MWModPluginInfo: Failed to find property 'bEnabled' for attribute 'bEnabled' on 'MWModPluginInfo'",
+      "category": "Probe",
+      "created_by": "Codex",
+      "description": "Non-mutating create_mod_entry probe",
+      "display_name__error": "Exception: MWModPluginInfo: Failed to find property 'display_name' for attribute 'display_name' on 'MWModPluginInfo'",
+      "enabled__error": "Exception: MWModPluginInfo: Failed to find property 'enabled' for attribute 'enabled' on 'MWModPluginInfo'",
+      "friendly_name": "TKU Probe Entry Only",
+      "load_order__error": "Exception: MWModPluginInfo: Failed to find property 'load_order' for attribute 'load_order' on 'MWModPluginInfo'",
+      "mod_name": "__TKUProbeEntryOnly_NoDisk__",
+      "name__error": "Exception: MWModPluginInfo: Failed to find property 'name' for attribute 'name' on 'MWModPluginInfo'",
+      "plugin_path": "",
+      "version_name": "0.0-probe"
+    },
+    "python_type": "MWModPluginInfo",
+    "repr": "<MWModPluginInfo object at 0x00000186B0F913F0>"
+  },
+  "probe_mod_name": "__TKUProbeEntryOnly_NoDisk__"
+}

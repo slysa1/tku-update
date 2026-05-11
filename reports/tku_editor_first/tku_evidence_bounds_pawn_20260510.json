@@ -1,0 +1,212 @@
+{
+  "output_mod_name": "TKUEvidenceBoundsPawn",
+  "source_mod": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\TheKnownUniverse",
+  "source_pak": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\TheKnownUniverse\\Paks\\TheKnownUniverse.pak",
+  "source_pak_sha256": "0F23FC683DEBEC27D07FF6739137BA1E4069934082D5AFFF6B3F2161CC64C678",
+  "output_root": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\TKUEvidenceBoundsPawn",
+  "output_pak": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\TKUEvidenceBoundsPawn\\Paks\\TKUEvidenceBoundsPawn.pak",
+  "output_pak_sha256": "0212E693BF2BB50F651235FB4A0BE7136B406C93133E09BFA86837D8B38410F0",
+  "output_pak_size": 4390,
+  "target_paths": [
+    "/Game/UI/FrontEnd/StarMapPawn.uasset",
+    "/Game/UI/FrontEnd/StarMapPawn.uexp"
+  ],
+  "decoded_starmap_pawn_defaults": {
+    "summary": {
+      "name_count": 56,
+      "import_count": 23,
+      "export_count": 7,
+      "package_flags_hex": "0x80000000"
+    },
+    "high_signal_refs": [
+      "/Game/UI/FrontEnd/StarmapGamepadWidget",
+      "/Game/UI/FrontEnd/StarmapGamepadWidget.Default__StarmapGamepadWidget_C",
+      "/Game/UI/FrontEnd/StarmapGamepadWidget.StarmapGamepadWidget_C",
+      "/Script/MechWarrior",
+      "/Script/MechWarrior.Default__MWStarMapPawn",
+      "/Script/MechWarrior.Default__MWStarMapPawn.CollisionComponent0",
+      "/Script/MechWarrior.Default__MWStarMapPawn.MovementComponent0",
+      "/Script/MechWarrior.MWStarMapPawn"
+    ],
+    "exports": [
+      {
+        "object_name": "StarMapPawn_C",
+        "serial_size": 109,
+        "serial_offset": 3278
+      },
+      {
+        "object_name": "Default__StarMapPawn_C",
+        "serial_size": 337,
+        "serial_offset": 3387
+      },
+      {
+        "object_name": "DefaultSceneRoot_GEN_VARIABLE",
+        "serial_size": 12,
+        "serial_offset": 3724
+      },
+      {
+        "object_name": "SCS_Node#1",
+        "serial_size": 168,
+        "serial_offset": 3736
+      },
+      {
+        "object_name": "SimpleConstructionScript#1",
+        "serial_size": 41,
+        "serial_offset": 3904
+      },
+      {
+        "object_name": "MovementComponent0",
+        "serial_size": 12,
+        "serial_offset": 3945
+      },
+      {
+        "object_name": "CollisionComponent0",
+        "serial_size": 12,
+        "serial_offset": 3957
+      }
+    ],
+    "recovered_default_values": {
+      "PanBoundsVertical": 16000.0,
+      "PanBoundsHorizontal": 8500.0,
+      "ZoomDistanceList": [
+        300.0,
+        600.0,
+        900.0,
+        1300.0,
+        1800.0,
+        2200.0,
+        2800.0,
+        3500.0,
+        5000.0,
+        7500.0,
+        9000.0
+      ],
+      "ZoomLevelThresholds": [
+        3500,
+        1000
+      ]
+    },
+    "decoded_tags": [
+      {
+        "name": "PanBoundsVertical",
+        "name_number": 0,
+        "type": "FloatProperty",
+        "type_number": 0,
+        "size": 4,
+        "array_index": 0,
+        "has_property_guid": false,
+        "offset": 109,
+        "value": 16000.0
+      },
+      {
+        "name": "PanBoundsHorizontal",
+        "name_number": 0,
+        "type": "FloatProperty",
+        "type_number": 0,
+        "size": 4,
+        "array_index": 0,
+        "has_property_guid": false,
+        "offset": 138,
+        "value": 8500.0
+      },
+      {
+        "name": "ZoomDistanceList",
+        "name_number": 0,
+        "type": "ArrayProperty",
+        "type_number": 0,
+        "size": 48,
+        "array_index": 0,
+        "has_property_guid": false,
+        "offset": 167,
+        "inner_type": "FloatProperty",
+        "value": [
+          300.0,
+          600.0,
+          900.0,
+          1300.0,
+          1800.0,
+          2200.0,
+          2800.0,
+          3500.0,
+          5000.0,
+          7500.0,
+          9000.0
+        ]
+      },
+      {
+        "name": "ZoomLevelThresholds",
+        "name_number": 0,
+        "type": "ArrayProperty",
+        "type_number": 0,
+        "size": 12,
+        "array_index": 0,
+        "has_property_guid": false,
+        "offset": 248,
+        "inner_type": "IntProperty",
+        "value": [
+          3500,
+          1000
+        ]
+      },
+      {
+        "name": "GamepadWidgetClass",
+        "name_number": 0,
+        "type": "ObjectProperty",
+        "type_number": 0,
+        "size": 4,
+        "array_index": 0,
+        "has_property_guid": false,
+        "offset": 293
+      },
+      {
+        "name": "StarMapMaterialParams",
+        "name_number": 0,
+        "type": "ObjectProperty",
+        "type_number": 0,
+        "size": 4,
+        "array_index": 0,
+        "has_property_guid": false,
+        "offset": 322
+      },
+      {
+        "name": "MovementComponent",
+        "name_number": 0,
+        "type": "ObjectProperty",
+        "type_number": 0,
+        "size": 4,
+        "array_index": 0,
+        "has_property_guid": false,
+        "offset": 351
+      },
+      {
+        "name": "CollisionComponent",
+        "name_number": 0,
+        "type": "ObjectProperty",
+        "type_number": 0,
+        "size": 4,
+        "array_index": 0,
+        "has_property_guid": false,
+        "offset": 380
+      },
+      {
+        "name": "RootComponent",
+        "name_number": 0,
+        "type": "ObjectProperty",
+        "type_number": 0,
+        "size": 4,
+        "array_index": 0,
+        "has_property_guid": false,
+        "offset": 409
+      },
+      {
+        "name": "None",
+        "offset": 438
+      }
+    ]
+  },
+  "expected_runtime_meaning": {
+    "success": "Career still loads and the starmap can pan/zoom beyond vanilla bounds. This validates StarMapPawn defaults as the bounds source and leaves overlay as a separate cluster-data problem.",
+    "no_bounds_change": "Bounds are controlled elsewhere, likely StarMap level actors or StarMapActor logic, and StarMapPawn should be removed again.",
+    "crash_or_stall": "Even though package tables looked compatible, the old cooked StarMapPawn is not safe; disable this patch and recreate the defaults in the editor/current asset pipeline."
+  }
+}

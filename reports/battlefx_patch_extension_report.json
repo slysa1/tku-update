@@ -1,0 +1,13 @@
+{
+  "patch_pak": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\BattleFXPatch\\Paks\\BattleFXPatch.pak",
+  "patch_pak_size": 3413276,
+  "added_base_paths": [
+    "/Game/Objects/Projectiles/Missile/Particles/Missile_Impact_Dirt_PCL",
+    "/Game/Objects/_common/Effects/ExplosionsMegaPack/Particles/Volataile/Explosion_Mech_Alt"
+  ],
+  "added_exact_paths": [],
+  "status": "no_exact_vanilla_sources_found",
+  "total_exact_paths": 90,
+  "version": "4.0",
+  "buildNumber": 4
+}

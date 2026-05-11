@@ -1,0 +1,161 @@
+# TKU Source Strip Variant
+
+- Strategy: keep the original TKU download untouched, build a plugin-only TKU source mod, and replace the old content override with a backed-up customcontent-only copy.
+- Source compat mod: `E:\SteamLibrary\steamapps\common\MechWarrior 5 Mercenaries\MW5Mercs\Mods\TheKnownUniverseCompatSource`
+- Live override pak: `E:\SteamLibrary\steamapps\common\MechWarrior 5 Mercenaries\MW5Mercs\Content\Paks\MW5Mercs-zKnownUniverseStarmap.pak`
+- Override backup pak: `E:\SteamLibrary\steamapps\common\MechWarrior 5 Mercenaries\MW5Mercs\Content\Paks\MW5Mercs-zKnownUniverseStarmap.original-20260506.pak`
+
+## Excluded Mod Bases
+
+- `/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015`
+- `/Game/Campaign/CampaignArcs/BorderChanges/AllStarMapBorderChanges`
+- `/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor`
+- `/Game/Campaign/Personas/ProcMissionPersonas/PersonaAnonymousEmployer`
+- `/Game/Campaign/Personas/ProcMissionPersonas/PersonaAnonymousEmployer2`
+- `/Game/Employers/ClanGhostBear`
+- `/Game/Employers/ClanJadeFalcon`
+- `/Game/Employers/ClanSmokeJaguar`
+- `/Game/Employers/ClanWolf`
+- `/Game/Employers/Unused/AllianceOfGaledon`
+- `/Game/Employers/Unused/AmarisEmpire`
+- `/Game/Employers/Unused/AxumiteProvidence`
+- `/Game/Employers/Unused/AzamiBrotherhood`
+- `/Game/Employers/Unused/AzamiCaliphate`
+- `/Game/Employers/Unused/CalderonProtectorate`
+- `/Game/Employers/Unused/CapellanCommonality`
+- `/Game/Employers/Unused/CapellanHegemony`
+- `/Game/Employers/Unused/ChainelaneIsles`
+- `/Game/Employers/Unused/ChaosMarch`
+- `/Game/Employers/Unused/ChestertonTradeFederation`
+- `/Game/Employers/Unused/ClanBloodSpirit`
+- `/Game/Employers/Unused/ClanBurrock`
+- `/Game/Employers/Unused/ClanCloudCobra`
+- `/Game/Employers/Unused/ClanCoyote`
+- `/Game/Employers/Unused/ClanDiamondShark`
+- `/Game/Employers/Unused/ClanFireMandrill`
+- `/Game/Employers/Unused/ClanGoliathScorpion`
+- `/Game/Employers/Unused/ClanHellsHorses`
+- `/Game/Employers/Unused/ClanIceHellion`
+- `/Game/Employers/Unused/ClanMongoose`
+- `/Game/Employers/Unused/ClanNovaCat`
+- `/Game/Employers/Unused/ClanSeaFox`
+- `/Game/Employers/Unused/ClanSnowRaven`
+- `/Game/Employers/Unused/ClanStarAdder`
+- `/Game/Employers/Unused/ClanSteelViper`
+- `/Game/Employers/Unused/ClanStoneLion`
+- `/Game/Employers/Unused/ClanWidowmaker`
+- `/Game/Employers/Unused/ClanWolfinExile`
+- `/Game/Employers/Unused/ClanWolverine`
+- `/Game/Employers/Unused/CoalitionForces`
+- `/Game/Employers/Unused/DuchyOfGrahamMarik`
+- `/Game/Employers/Unused/DuchyOfLiao`
+- `/Game/Employers/Unused/DuchyOfOriente`
+- `/Game/Employers/Unused/DuchyOfOrloff`
+- `/Game/Employers/Unused/DuchyOfSmall`
+- `/Game/Employers/Unused/DuchyOfTamarind`
+- `/Game/Employers/Unused/DuchyOfTamarindAbbey`
+- `/Game/Employers/Unused/EscorpinImperio`
+- `/Game/Employers/Unused/FederationOfOriente`
+- `/Game/Employers/Unused/FederationOfSkye`
+- `/Game/Employers/Unused/FerrisCollective`
+- `/Game/Employers/Unused/FiltveltCoalition`
+- `/Game/Employers/Unused/FinmarkFreeRepublic`
+- `/Game/Employers/Unused/FreeWorldsLeagueMilitaryRegion`
+- `/Game/Employers/Unused/FroncReaches`
+- `/Game/Employers/Unused/GalateanLeague`
+- `/Game/Employers/Unused/GhostBearDominion`
+- `/Game/Employers/Unused/HanseaticLeague`
+- `/Game/Employers/Unused/Jarnfolk`
+- `/Game/Employers/Unused/KhwarazmEmpire`
+- `/Game/Employers/Unused/KitteryPrefecture`
+- `/Game/Employers/Unused/LiaoRepublic`
+- `/Game/Employers/Unused/LyranAlliance`
+- `/Game/Employers/Unused/MalagrottaCooperative`
+- `/Game/Employers/Unused/MarikCommonwealth`
+- `/Game/Employers/Unused/MarikRepublic`
+- `/Game/Employers/Unused/MarikStewartCommonwealth`
+- `/Game/Employers/Unused/MarletteAssociation`
+- `/Game/Employers/Unused/MosiroArchipelago`
+- `/Game/Employers/Unused/MuskegonCoalition`
+- `/Game/Employers/Unused/NewColonyRegion`
+- `/Game/Employers/Unused/NewDelphiCompact`
+- `/Game/Employers/Unused/NewOberonConfederation`
+- `/Game/Employers/Unused/NuevaCastile`
+- `/Game/Employers/Unused/OhrensonZionProvince`
+- `/Game/Employers/Unused/OrienteProtectorate`
+- `/Game/Employers/Unused/OzawaMercantileAssociation`
+- `/Game/Employers/Unused/PrincipalityOfGibson`
+- `/Game/Employers/Unused/PrincipalityOfRasalhague`
+- `/Game/Employers/Unused/PrincipalityOfRegulus`
+- `/Game/Employers/Unused/ProtectorateOfDonegal`
+- `/Game/Employers/Unused/RagnarkUnion`
+- `/Game/Employers/Unused/RasalhagueDominion`
+- `/Game/Employers/Unused/RavenAlliance`
+- `/Game/Employers/Unused/RegulanFiefs`
+- `/Game/Employers/Unused/RegulanFreeStates`
+- `/Game/Employers/Unused/RegulanPrincipality`
+- `/Game/Employers/Unused/RepublicOfTheBarrens`
+- `/Game/Employers/Unused/RepublicOfTheSphere`
+- `/Game/Employers/Unused/RimCommonality`
+- `/Game/Employers/Unused/RimTerritories`
+- `/Game/Employers/Unused/RimWorldsRepublic`
+- `/Game/Employers/Unused/SaiphTriumvirate`
+- `/Game/Employers/Unused/SarnaSupremacy`
+- `/Game/Employers/Unused/SenateAlliance`
+- `/Game/Employers/Unused/SianCommonwealth`
+- `/Game/Employers/Unused/SilverHawkCoalition`
+- `/Game/Employers/Unused/StIvesMercantileAssociation`
+- `/Game/Employers/Unused/StarLeagueinExile`
+- `/Game/Employers/Unused/StewartConfederation`
+- `/Game/Employers/Unused/StykCommonality`
+- `/Game/Employers/Unused/TamarPact`
+- `/Game/Employers/Unused/TaurianHomeworlds`
+- `/Game/Employers/Unused/TerracapConfederation`
+- `/Game/Employers/Unused/TerranAlliance`
+- `/Game/Employers/Unused/TerranHegemony`
+- `/Game/Employers/Unused/TheHavens`
+- `/Game/Employers/Unused/TheProtectorate`
+- `/Game/Employers/Unused/TheRepublicRemnant`
+- `/Game/Employers/Unused/TikonovGrandUnion`
+- `/Game/Employers/Unused/UnitedHinduCollective`
+- `/Game/Employers/Unused/WolfEmpire`
+- `/Game/Employers/Unused/WordOfBlake`
+- `/Game/Factions/CircinusFederation`
+- `/Game/Factions/Clan`
+- `/Game/Factions/ElysianFields`
+- `/Game/Factions/GreaterValkyrate`
+- `/Game/Factions/IllyrianPalatinate`
+- `/Game/Factions/LothianLeague`
+- `/Game/Factions/MarianHegemony`
+- `/Game/Factions/MorgrainesValkyrate`
+- `/Game/Factions/NiopsAssociation`
+- `/Game/Factions/NoFaction`
+- `/Game/Factions/OutworldsAlliance`
+- `/Game/Factions/RimCollection`
+- `/Game/Factions/TortugaDominions`
+- `/Game/Factions/Unused/Amaris`
+- `/Game/Factions/Unused/StarLeague`
+- `/Game/Factions/Unused/TikonovGrandUnion`
+- `/Game/Factions/Unused/WordOfBlake`
+- `/Game/InnerSphereData/MW5_InnerSphereData`
+- `/Game/InnerSphereData/Updated/EmployerInfoData`
+- `/Game/InnerSphereData/Updated/SystemFactionChanges`
+- `/Game/Levels/FrontEnd/StarMap`
+- `/Game/Libraries/MW5_TOI_Functions`
+- `/Game/UI/FrontEnd/StarMapPawn`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionBorder_MTL`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionColours_MTF`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Faction_MTL`
+- `/Game/UI/FrontEnd/Starmap/StarMapActor`
+- `/Game/UI/FrontEnd/Starmap/StarSystemBody`
+
+## Excluded Override Bases
+
+- `/Game/InnerSphereData/MW5_InnerSphereData`
+- `/Game/Levels/FrontEnd/StarMap`
+
+## Generated Profiles
+
+- `single`: `E:\SteamLibrary\steamapps\common\MechWarrior 5 Mercenaries\MW5Mercs\Mods\modlist.profile-single-knownuniverse-source-compat-20260506.json`
+- `named_local`: `E:\SteamLibrary\steamapps\common\MechWarrior 5 Mercenaries\MW5Mercs\Mods\modlist.profile-named-local-source-compat-20260506.json`
+- `full_stack`: `E:\SteamLibrary\steamapps\common\MechWarrior 5 Mercenaries\MW5Mercs\Mods\modlist.profile-full-stack-source-compat-20260506.json`

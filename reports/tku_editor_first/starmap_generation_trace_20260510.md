@@ -1,0 +1,1707 @@
+# Starmap Generation Trace - 2026-05-10
+
+- Generated: `2026-05-10T12:10:38.815665+00:00`
+- Method: non-mutating MW5 Mod Editor commandlet plus read-only package string scanning.
+- Safety: no assets were saved, duplicated, packaged, moved, or modified.
+
+## Decision
+
+- Build authorized: `False`
+- Manual editor UI required for first authoring step: `True`
+- Next repair candidate: Editor-authored data/level/cluster migration candidate; no cooked direct substitution.
+
+Evidence gates:
+- Current StarMap level actor set is vanilla-sized relative to the wide source JSON.
+- Current editor DataTable row count matches the vanilla runtime CSV.
+- Wide source JSON has additional systems not present in the current cooked/editor DataTable.
+- Current territory overlays are represented by MWClusterDataAsset assets, not only deprecated DataTable cluster columns.
+
+## Data Sources
+
+- Current DataTable rows: `2173` row struct `/Script/MechWarrior.InnerSphereMapData`
+- Runtime CSV rows/range: `2173` `{'count': 2173, 'x': {'min': -517.0, 'max': 685.0, 'span': 1202.0}, 'y': {'min': -524.0, 'max': 552.0, 'span': 1076.0}}`
+- Wide JSON rows/range: `3446` `{'count': 3446, 'x': {'min': -1875.9410400390625, 'max': 1935.8389892578125, 'span': 3811.780029296875}, 'y': {'min': -1919.68896484375, 'max': 1910.759033203125, 'span': 3830.447998046875}}`
+- DataTable `Name`: `{'ok': True, 'count': 2173, 'sample': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'], 'tail_sample': ['3492', '3493', '3494', '3495', '3496', '3497', '3498', '3499', '3500', '3501']}`
+- DataTable `StarSystemName`: `{'ok': True, 'count': 2173, 'sample': ['INVALID', 'Terra', 'Tau Ceti', 'Rigil Kentarus', 'Pike', 'Rochelle', 'Freedom', 'Ryde', 'Sevren', 'Thorin'], 'tail_sample': ['JP-S-305', 'JP-H-287', 'JP-K-241', 'JP-Q-39', 'JP-O-329', 'HD-389202', 'HD-348126', 'HD-367482', 'HD-438297', 'HD-384971']}`
+- DataTable `PosX`: `{'ok': True, 'count': 2173, 'sample': ['0.000000', '0.000000', '-13.000000', '-3.000000', '20.000000', '-115.000000', '-65.000000', '-46.000000', '-45.000000', '-24.000000'], 'tail_sample': ['-475.000000', '-486.000000', '-457.000000', '-399.000000', '-167.000000', '370.000000', '370.000000', '350.000000', '345.000000', '380.000000'], 'range': {'min': -517.0, 'max': 685.0, 'span': 1202.0}}`
+- DataTable `PosY`: `{'ok': True, 'count': 2173, 'sample': ['0.000000', '0.000000', '2.000000', '4.000000', '40.000000', '-16.000000', '109.000000', '92.000000', '316.000000', '8.000000'], 'tail_sample': ['170.000000', '199.000000', '216.000000', '360.000000', '496.000000', '485.000000', '510.000000', '530.000000', '552.000000', '465.000000'], 'range': {'min': -524.0, 'max': 552.0, 'span': 1076.0}}`
+- DataTable `Cluster`: `{'ok': True, 'count': 2173, 'sample': ['(Id="")', '(Id="MWFactionAsset:RepairSystem_26")', '(Id="MWFactionAsset:RepairSystem_26")', '(Id="")', '(Id="MWFactionAsset:CareerCluster_5")', '(Id="")', '(Id="")', '(Id="")', '(Id="")', '(Id="")'], 'tail_sample': ['(Id="MWFactionAsset:AlarionPeriphery")', '(Id="MWFactionAsset:AlarionPeriphery")', '(Id="MWFactionAsset:AlarionPeriphery")', '(Id="")', '(Id="")', '(Id="")', '(Id="")', '(Id="")', '(Id="")', '(Id="")'], 'non_empty_count': 1046}`
+- DataTable `ClusterOverlay`: `{'ok': True, 'count': 2173, 'sample': ['None', 'None', '/Game/Campaign/Clusters/IndustrialHub_26/Safezone7_Collision.Safezone7_Collision', 'None', '/Game/DLC1/CareerMode/Clusters/K_13_14/K_13_14.K_13_14', 'None', 'None', 'None', 'None', 'None'], 'tail_sample': ['None', 'None', 'None', 'None', 'None', 'None', 'None', 'None', 'None', 'None'], 'non_empty_count': 94}`
+- DataTable `ClusterConstellation`: `{'ok': True, 'count': 2173, 'sample': ['None', 'None', '/Game/Campaign/Clusters/IndustrialHub_26/Safezone7.Safezone7', 'None', 'None', 'None', 'None', 'None', 'None', 'None'], 'tail_sample': ['None', 'None', 'None', 'None', 'None', 'None', 'None', 'None', 'None', 'None'], 'non_empty_count': 34}`
+
+## Current Level Actors
+
+- StarMap actors total: `2182`
+- StarSystemBody count: `2172`
+- StarSystemBody id range: `{'min': 1, 'max': 3501}`
+- Duplicate StarSystemBody ids: `[]`
+- Top classes: `{'StarSystemBody_C': 2172, 'Nebula_C': 2, 'CameraActor': 1, 'PostProcessVolume': 1, 'StarSystemSceneManager_C': 1, 'StarSystem_C': 1, 'StarMapActor_C': 1, 'StarMapSceneManager_C': 1, 'MWLightingVolume': 1, 'StarMap_Nebula_C': 1}`
+- Placement transform: `{'loc_x_from_csv_pos_y': {'count': 2172, 'slope': 8.0, 'intercept': 51336.0, 'max_abs_residual': 0.0, 'worst_residuals': [{'sid': 1, 'residual': 0.0, 'input': 0.0, 'actual': 51336.0}, {'sid': 2, 'residual': 0.0, 'input': 2.0, 'actual': 51352.0}, {'sid': 3, 'residual': 0.0, 'input': 4.0, 'actual': 51368.0}, {'sid': 4, 'residual': 0.0, 'input': 40.0, 'actual': 51656.0}, {'sid': 5, 'residual': 0.0, 'input': -16.0, 'actual': 51208.0}, {'sid': 6, 'residual': 0.0, 'input': 109.0, 'actual': 52208.0}, {'sid': 7, 'residual': 0.0, 'input': 92.0, 'actual': 52072.0}, {'sid': 8, 'residual': 0.0, 'input': 316.0, 'actual': 53864.0}, {'sid': 9, 'residual': 0.0, 'input': 8.0, 'actual': 51400.0}, {'sid': 10, 'residual': 0.0, 'input': 20.0, 'actual': 51496.0}]}, 'loc_y_from_csv_pos_x': {'count': 2172, 'slope': 8.000000000000002, 'intercept': 51039.0, 'max_abs_residual': 0.0, 'worst_residuals': [{'sid': 1, 'residual': 0.0, 'input': 0.0, 'actual': 51039.0}, {'sid': 2, 'residual': 0.0, 'input': -13.0, 'actual': 50935.0}, {'sid': 3, 'residual': 0.0, 'input': -3.0, 'actual': 51015.0}, {'sid': 4, 'residual': 0.0, 'input': 20.0, 'actual': 51199.0}, {'sid': 5, 'residual': 0.0, 'input': -115.0, 'actual': 50119.0}, {'sid': 6, 'residual': 0.0, 'input': -65.0, 'actual': 50519.0}, {'sid': 7, 'residual': 0.0, 'input': -46.0, 'actual': 50671.0}, {'sid': 8, 'residual': 0.0, 'input': -45.0, 'actual': 50679.0}, {'sid': 9, 'residual': 0.0, 'input': -24.0, 'actual': 50847.0}, {'sid': 10, 'residual': 0.0, 'input': 35.0, 'actual': 51319.0}]}}`
+- Projected wide JSON level bounds: `{'x': {'min': 35978.48828125, 'max': 66622.072265625}, 'y': {'min': 36031.4716796875, 'max': 66525.7119140625}}`
+- Joined sample: `{'star_system_id': 1, 'actor_label': 'StarSystemBody', 'actor_location': {'x': 51336.0, 'y': 51039.0, 'z': 0.0}, 'csv_star_system_name': 'Terra', 'csv_pos': {'x': 0.0, 'y': 0.0}}`
+- Joined sample: `{'star_system_id': 2, 'actor_label': 'StarSystemBody1', 'actor_location': {'x': 51352.0, 'y': 50935.0, 'z': 0.0}, 'csv_star_system_name': 'Tau Ceti', 'csv_pos': {'x': -13.0, 'y': 2.0}}`
+- Joined sample: `{'star_system_id': 3, 'actor_label': 'StarSystemBody2', 'actor_location': {'x': 51368.0, 'y': 51015.0, 'z': 0.0}, 'csv_star_system_name': 'Rigil Kentarus', 'csv_pos': {'x': -3.0, 'y': 4.0}}`
+- Joined sample: `{'star_system_id': 4, 'actor_label': 'StarSystemBody3', 'actor_location': {'x': 51656.0, 'y': 51199.0, 'z': 0.0}, 'csv_star_system_name': 'Pike', 'csv_pos': {'x': 20.0, 'y': 40.0}}`
+- Joined sample: `{'star_system_id': 5, 'actor_label': 'StarSystemBody4', 'actor_location': {'x': 51208.0, 'y': 50119.0, 'z': 0.0}, 'csv_star_system_name': 'Rochelle', 'csv_pos': {'x': -115.0, 'y': -16.0}}`
+- Joined sample: `{'star_system_id': 6, 'actor_label': 'StarSystemBody5', 'actor_location': {'x': 52208.0, 'y': 50519.0, 'z': 0.0}, 'csv_star_system_name': 'Freedom', 'csv_pos': {'x': -65.0, 'y': 109.0}}`
+- Joined sample: `{'star_system_id': 7, 'actor_label': 'StarSystemBody6', 'actor_location': {'x': 52072.0, 'y': 50671.0, 'z': 0.0}, 'csv_star_system_name': 'Ryde', 'csv_pos': {'x': -46.0, 'y': 92.0}}`
+- Joined sample: `{'star_system_id': 8, 'actor_label': 'StarSystemBody7', 'actor_location': {'x': 53864.0, 'y': 50679.0, 'z': 0.0}, 'csv_star_system_name': 'Sevren', 'csv_pos': {'x': -45.0, 'y': 316.0}}`
+- Joined sample: `{'star_system_id': 9, 'actor_label': 'StarSystemBody8', 'actor_location': {'x': 51400.0, 'y': 50847.0, 'z': 0.0}, 'csv_star_system_name': 'Thorin', 'csv_pos': {'x': -24.0, 'y': 8.0}}`
+- Joined sample: `{'star_system_id': 10, 'actor_label': 'StarSystemBody9', 'actor_location': {'x': 51496.0, 'y': 51319.0, 'z': 0.0}, 'csv_star_system_name': 'Nirasaki', 'csv_pos': {'x': 35.0, 'y': 20.0}}`
+- Joined sample: `{'star_system_id': 11, 'actor_label': 'StarSystemBody10', 'actor_location': {'x': 50800.0, 'y': 51047.0, 'z': 0.0}, 'csv_star_system_name': 'Tall Trees', 'csv_pos': {'x': 1.0, 'y': -67.0}}`
+- Joined sample: `{'star_system_id': 12, 'actor_label': 'StarSystemBody11', 'actor_location': {'x': 50832.0, 'y': 51191.0, 'z': 0.0}, 'csv_star_system_name': 'Zurich', 'csv_pos': {'x': 19.0, 'y': -63.0}}`
+- Joined sample: `{'star_system_id': 13, 'actor_label': 'StarSystemBody12', 'actor_location': {'x': 51320.0, 'y': 50735.0, 'z': 0.0}, 'csv_star_system_name': 'Denebola', 'csv_pos': {'x': -38.0, 'y': -2.0}}`
+- Joined sample: `{'star_system_id': 14, 'actor_label': 'StarSystemBody13', 'actor_location': {'x': 51280.0, 'y': 50783.0, 'z': 0.0}, 'csv_star_system_name': 'Oliver', 'csv_pos': {'x': -32.0, 'y': -7.0}}`
+- Joined sample: `{'star_system_id': 15, 'actor_label': 'StarSystemBody14', 'actor_location': {'x': 51232.0, 'y': 50999.0, 'z': 0.0}, 'csv_star_system_name': 'Procyon', 'csv_pos': {'x': -5.0, 'y': -13.0}}`
+- Joined sample: `{'star_system_id': 16, 'actor_label': 'StarSystemBody15', 'actor_location': {'x': 51456.0, 'y': 50815.0, 'z': 0.0}, 'csv_star_system_name': 'Muphrid', 'csv_pos': {'x': -28.0, 'y': 15.0}}`
+- Joined sample: `{'star_system_id': 17, 'actor_label': 'StarSystemBody16', 'actor_location': {'x': 51312.0, 'y': 51311.0, 'z': 0.0}, 'csv_star_system_name': 'Northwind', 'csv_pos': {'x': 34.0, 'y': -3.0}}`
+- Joined sample: `{'star_system_id': 18, 'actor_label': 'StarSystemBody17', 'actor_location': {'x': 51296.0, 'y': 50327.0, 'z': 0.0}, 'csv_star_system_name': 'Shiloh', 'csv_pos': {'x': -89.0, 'y': -5.0}}`
+- Joined sample: `{'star_system_id': 19, 'actor_label': 'StarSystemBody18', 'actor_location': {'x': 51200.0, 'y': 50711.0, 'z': 0.0}, 'csv_star_system_name': 'Castor', 'csv_pos': {'x': -41.0, 'y': -17.0}}`
+- Joined sample: `{'star_system_id': 20, 'actor_label': 'StarSystemBody19', 'actor_location': {'x': 51432.0, 'y': 51247.0, 'z': 0.0}, 'csv_star_system_name': 'Saffel', 'csv_pos': {'x': 26.0, 'y': 12.0}}`
+- Joined sample: `{'star_system_id': 21, 'actor_label': 'StarSystemBody20', 'actor_location': {'x': 50728.0, 'y': 50399.0, 'z': 0.0}, 'csv_star_system_name': 'Marik', 'csv_pos': {'x': -80.0, 'y': -76.0}}`
+- Joined sample: `{'star_system_id': 22, 'actor_label': 'StarSystemBody21', 'actor_location': {'x': 51432.0, 'y': 51407.0, 'z': 0.0}, 'csv_star_system_name': 'Quentin', 'csv_pos': {'x': 46.0, 'y': 12.0}}`
+- Joined sample: `{'star_system_id': 23, 'actor_label': 'StarSystemBody22', 'actor_location': {'x': 51096.0, 'y': 51639.0, 'z': 0.0}, 'csv_star_system_name': 'Tigress', 'csv_pos': {'x': 75.0, 'y': -30.0}}`
+- Joined sample: `{'star_system_id': 24, 'actor_label': 'StarSystemBody23', 'actor_location': {'x': 51128.0, 'y': 50431.0, 'z': 0.0}, 'csv_star_system_name': 'Dieudonne', 'csv_pos': {'x': -76.0, 'y': -26.0}}`
+- Joined sample: `{'star_system_id': 25, 'actor_label': 'StarSystemBody24', 'actor_location': {'x': 51688.0, 'y': 50759.0, 'z': 0.0}, 'csv_star_system_name': 'Nusakan', 'csv_pos': {'x': -35.0, 'y': 44.0}}`
+- Joined sample: `{'star_system_id': 26, 'actor_label': 'StarSystemBody25', 'actor_location': {'x': 51384.0, 'y': 50759.0, 'z': 0.0}, 'csv_star_system_name': 'Lipton', 'csv_pos': {'x': -35.0, 'y': 6.0}}`
+- Joined sample: `{'star_system_id': 27, 'actor_label': 'StarSystemBody26', 'actor_location': {'x': 50976.0, 'y': 50927.0, 'z': 0.0}, 'csv_star_system_name': 'Hall', 'csv_pos': {'x': -14.0, 'y': -45.0}}`
+- Joined sample: `{'star_system_id': 28, 'actor_label': 'StarSystemBody27', 'actor_location': {'x': 51232.0, 'y': 51087.0, 'z': 0.0}, 'csv_star_system_name': 'New Home', 'csv_pos': {'x': 6.0, 'y': -13.0}}`
+- Joined sample: `{'star_system_id': 29, 'actor_label': 'StarSystemBody28', 'actor_location': {'x': 51544.0, 'y': 50679.0, 'z': 0.0}, 'csv_star_system_name': 'Summer', 'csv_pos': {'x': -45.0, 'y': 26.0}}`
+- Joined sample: `{'star_system_id': 30, 'actor_label': 'StarSystemBody29', 'actor_location': {'x': 51168.0, 'y': 51191.0, 'z': 0.0}, 'csv_star_system_name': 'Epsilon Eridani', 'csv_pos': {'x': 19.0, 'y': -21.0}}`
+
+## Cluster Assets
+
+- Cluster asset count: `79`
+- Total system memberships: `815`
+- With overlay: `74`
+- With constellation: `31`
+- Duplicate memberships: `1`
+
+## Focus Asset Metadata
+
+### `/Game/UI/Editor/Utils/EUW_MigratePlaceClusterTOIsToClusterAssets`
+- Class: `EditorUtilityWidgetBlueprint`
+- Dependencies: `18`
+  - `/Engine/EditorBlueprintResources/StandardMacros`
+  - `/Game/Campaign/CampaignArcActions/MissionActions/MissionConfigs/PlaceClusterToi_Config`
+  - `/Game/Campaign/CampaignArcActions/MissionActions/MissionConfigs/PlaceClusterToi_Markups`
+  - `/Game/Campaign/CampaignArcActions/MissionActions/PlaceClusterToi_ArcAction`
+  - `/Game/Campaign/_common/ClusterToiDataFragment`
+  - `/Game/InnerSphereData/MW5_InnerSphereData`
+  - `/Game/UI/Editor/Utils/EUW_MigratePlaceClusterTOIsToClusterAssets`
+  - `/Game/UI/Font/Futura/Futura`
+  - `/Game/UI/FrontEnd/Codex/Codex_TextBox_Style`
+  - `/Script/AssetRegistry`
+  - `/Script/AssetTools`
+  - `/Script/Blutility`
+  - `/Script/EditorScriptingUtilities`
+  - `/Script/MechWarrior`
+  - `/Script/PythonScriptPlugin`
+  - `/Script/UMG`
+  - `/Script/UMGEditor`
+  - `/Script/VictoryBPLibrary`
+- Referencers: `1`
+- Decoded FiB focused token count: `148`
+  - `Innersphere Data`
+  - `DataTable`
+  - `DataTable'/Game/InnerSphereData/MW5_InnerSphereData.MW5_InnerSphereData'`
+  - `L Current TOI`
+  - `PlaceClusterToi_ArcAction_C`
+  - `L Cluster Data Asset`
+  - `MWClusterDataAsset`
+  - `Toi Assets to Save`
+  - `L Cluster System Ids`
+  - `L Cluster to Match`
+  - `FactionAssetId`
+  - `New Cluster Asset Path`
+  - `Place Cluster TOIs Array`
+  - `Current TOI Index`
+  - `Cluster Asset Sub Folder Root`
+  - `/Campaign/Clusters`
+  - `New Cluster Asset Toi Data`
+  - `ClusterToiDataFragment_C`
+  - `L Existing Cluster Asset`
+  - `Gather Place Cluster TOIArc Actions`
+  - `GatherPlaceClusterTOIArcActions`
+  - `Out Place Cluster TOISet`
+  - `PlaceClusterTOIsArray`
+  - `Make Cluster Asset Paths`
+  - `MakeClusterAssetPaths`
+  - `Out Cluster Asset Name`
+  - `Out Cluster Asset Path`
+  - `Out Cluster Asset Package Path`
+  - `L_CurrentTOI`
+  - `Create Cluster Data Asset`
+  - `Out New Cluster Asset`
+  - `L_ClusterDataAsset`
+  - `ClassIcon.DataAsset`
+  - `Save Loaded Assets`
+  - `SaveLoadedAssets`
+  - `Assets to Save`
+  - `Copy TOIData to Cluster Asset`
+  - `In Place Cluster TOI`
+  - `In Cluster Data Asset`
+  - `Set Cluster data asset in Place Cluster TOI`
+  - `InnerSphereMapData`
+  - `Cluster`
+  - `L_ClusterToMatch`
+  - `InnersphereData`
+  - `ClassIcon.DataTable`
+  - `DataTableFunctionLibrary:GetDataTableRowNames`
+  - `GetDataTableRowNames`
+  - `L_InnerSphereRowNames`
+  - `L_ClusterSystemIds`
+  - `Do Match Systems for Cluster`
+  - `In Cluster to Match`
+  - `Set Cluster System Ids EDITORONLY`
+  - `SetClusterSystemIds_EDITORONLY`
+  - `Set the system ids that belong to this cluster`
+  - `Copy Cluster Data from Data Row`
+  - `In Cluster Asset`
+  - `Find the capital star system and copy out it's data to the cluster asset`
+  - `Iterate over the innersphere map data table to find all systems that match the same cluster (faction asset id)`
+  - `cb_OverwriteClusterAsset`
+  - `Cb Overwrite Cluster Asset`
+  - `NewClusterAssetPath`
+  - `Process Next TOI`
+  - `ProcessNextTOI`
+  - `Current_TOI_Index`
+  - `Processing TOI:`
+  - `Processing TOI #`
+  - `ToiData`
+  - `Toi Data`
+  - `Class'/Script/MechWarrior.MWClusterDataAsset'`
+  - `ClusterToiDataFragment`
+  - `As Cluster Toi Data Fragment`
+  - `PlaceClusterToi_Config`
+  - `BlueprintGeneratedClass'/Game/Campaign/_common/ClusterToiDataFragment.ClusterToiDataFragment_C'`
+  - `Place Cluster Toi Config`
+  - `Cluster Capital Star System Id`
+  - `ClusterOverlay`
+  - `Cluster Overlay`
+  - `ClusterConstellation`
+  - `Cluster Constellation`
+  - `ToiAssetsToSave`
+- Raw package focused strings: `182`
+  - `/Game/Campaign/_common/ClusterToiDataFragment`
+  - `/Game/Campaign/CampaignArcActions/MissionActions/MissionConfigs/PlaceClusterToi_Config`
+  - `/Game/Campaign/CampaignArcActions/MissionActions/MissionConfigs/PlaceClusterToi_Markups`
+  - `/Game/Campaign/CampaignArcActions/MissionActions/PlaceClusterToi_ArcAction`
+  - `/Game/InnerSphereData/MW5_InnerSphereData`
+  - `/Game/UI/Editor/Utils/EUW_MigratePlaceClusterTOIsToClusterAssets`
+  - `/Game/UI/Editor/Utils/EUW_MigratePlaceClusterTOIsToClusterAssets.EUW_MigratePlaceClusterTOIsToClusterAssets`
+  - `AsCluster Toi Data Fragment`
+  - `AsMWCluster Data Asset`
+  - `AsPlace Cluster Toi Arc Action`
+  - `AssetsToSave`
+  - `BlueprintGeneratedClass`
+  - `BndEvt__EUW_MigratePlaceClusterTOIsToClusterAssets_btn_Stop_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature`
+  - `BndEvt__EUW_MigratePlaceClusterTOIsToClusterAssets_Button_0_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature`
+  - `bRepairCluster_34_5793AFCB476350D699A6469CD2ED220B`
+  - `CallFunc_Conv_StringToInt_ReturnValue`
+  - `CallFunc_CreateAsset_ReturnValue`
+  - `CallFunc_GatherPlaceClusterTOIArcActions_OutPlaceClusterTOISet`
+  - `CallFunc_GetDataTableRowFromName_OutRow`
+  - `CallFunc_GetDataTableRowFromName_ReturnValue`
+  - `CallFunc_GetDataTableRowNames_OutRowNames`
+  - `CallFunc_GetToiSavePythonScript_OutPythonScript`
+  - `CallFunc_MakeClusterAssetPaths_OutClusterAssetName`
+  - `CallFunc_MakeClusterAssetPaths_OutClusterAssetPackagePath`
+  - `CallFunc_MakeClusterAssetPaths_OutClusterAssetPath`
+  - `CallFunc_SaveLoadedAssets_ReturnValue`
+  - `cb_OverwriteClusterAsset`
+  - `Cluster`
+  - `ClusterAssetName`
+  - `ClusterAssetPackagePath`
+  - `ClusterAssetPath`
+  - `ClusterAssetSubFolderRoot`
+  - `ClusterCapitalStarSystemId_27_9D54CE8845D3E2EA1190078ADA0165AD`
+  - `ClusterConstellation`
+  - `ClusterDataAsset`
+  - `ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B`
+  - `ClusterFactionAsset`
+  - `ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3`
+  - `ClusterOverlay`
+  - `ClusterToiDataFragment_C`
+  - `Conv_StringToInt`
+  - `CopyClusterDataFromDataRow`
+  - `CopyTOIDataToClusterAsset`
+  - `CreateAsset`
+  - `CreateClusterDataAsset`
+  - `Current_TOI_Index`
+  - `DataTable`
+  - `DataTableFunctionLibrary`
+  - `Default__DataTableFunctionLibrary`
+  - `Default__EUW_MigratePlaceClusterTOIsToClusterAssets_C`
+  - `Default__MWFactionAsset`
+  - `DoMatchSystemsForCluster`
+  - `EUW Migrate Place Cluster TOIs to Cluster Assets`
+  - `EUW_MigratePlaceClusterTOIsToClusterAssets`
+  - `EUW_MigratePlaceClusterTOIsToClusterAssets_C`
+  - `ExecuteUbergraph_EUW_MigratePlaceClusterTOIsToClusterAssets`
+  - `FactionAssetId`
+  - `GatherPlaceClusterTOIArcActions`
+  - `GeneratedClass`
+  - `GetDataTableRowFromName`
+  - `GetDataTableRowNames`
+  - `GetToiSavePythonScript`
+  - `InClusterAsset`
+  - `InClusterConstellation`
+  - `InClusterDataAsset`
+  - `InClusterOverlay`
+  - `InClusterToMatch`
+  - `InFactionAsset`
+  - `InnersphereData`
+  - `InnerSphereMapData`
+  - `InPlaceClusterTOI`
+  - `InSystemIds`
+  - `InToiObjects`
+  - `K2Node_DynamicCast_AsCluster_Toi_Data_Fragment`
+  - `K2Node_DynamicCast_AsMWCluster_Data_Asset`
+  - `K2Node_DynamicCast_AsPlace_Cluster_Toi_Arc_Action`
+  - `K2Node_GetDataTableRow`
+  - `L_ClusterAssetPathArray`
+  - `L_ClusterAssetPathName`
+  - `L_ClusterDataAsset`
+
+### `/Game/Campaign/CampaignArcActions/MissionActions/PlaceClusterToi_ArcAction`
+- Class: `Blueprint`
+- Dependencies: `8`
+  - `/Engine/EditorBlueprintResources/StandardMacros`
+  - `/Game/Campaign/CampaignArcActions/MissionActions/MissionConfigs/PlaceClusterToi_Config`
+  - `/Game/Campaign/CampaignArcActions/MissionActions/MissionConfigs/PlaceClusterToi_Markups`
+  - `/Game/Campaign/CampaignArcActions/MissionActions/PlaceClusterToi_ArcAction`
+  - `/Game/Campaign/TOIs/CLusterToi`
+  - `/Game/Campaign/TOIs/ClusterToiLogic`
+  - `/Game/Campaign/_common/ClusterToiDataFragment`
+  - `/Script/MechWarrior`
+- Referencers: `229`
+- Decoded FiB focused token count: `42`
+  - `PlaceClusterToi_Config`
+  - `Toi Id`
+  - `PlaceClusterToi_Markups`
+  - `Cluster Data Asset Id`
+  - `ClusterDataAssetId`
+  - `Cluster Data Asset`
+  - `MWClusterDataAsset`
+  - `Related Cluster Toi`
+  - `MWToiLogic`
+  - `Add Toi`
+  - `AddToi`
+  - `MWToiModel`
+  - `Toi Asset`
+  - `/Game/Campaign/TOIs/CLusterToi.ClusterToi`
+  - `MWToiAsset`
+  - `ToiModel`
+  - `Toi Model`
+  - `ClusterToiLogic`
+  - `As Cluster Toi Logic`
+  - `ClusterToiLogic_C`
+  - `BlueprintGeneratedClass'/Game/Campaign/TOIs/ClusterToiLogic.ClusterToiLogic_C'`
+  - `ToiId`
+  - `Class'/Script/MechWarrior.MWToiLogic'`
+  - `On Server Toi Initialized`
+  - `Place Cluster Toi Config`
+  - `Cluster Capital Star System Id`
+  - `ClusterToiDataFragment`
+  - `As Cluster Toi Data Fragment`
+  - `ClusterToiDataFragment_C`
+  - `BlueprintGeneratedClass'/Game/Campaign/_common/ClusterToiDataFragment.ClusterToiDataFragment_C'`
+  - `ClusterDataAsset`
+  - `ClassIcon.DataAsset`
+  - `ToiData`
+  - `Toi Data`
+  - `Class'/Script/MechWarrior.MWClusterDataAsset'`
+  - `SavedClusterDataAssetId`
+  - `Saved Cluster Data Asset Id`
+  - `RelatedClusterToi`
+  - `In Cluster Data Asset Id`
+  - `After loading the game we want to ensure this instance gets it's Cluster Asset set`
+  - `Mark Cluster Discovered`
+  - `MarkClusterDiscovered`
+- Raw package focused strings: `71`
+  - `/Game/Campaign/_common/ClusterToiDataFragment`
+  - `/Game/Campaign/CampaignArcActions/MissionActions/MissionConfigs/PlaceClusterToi_Config`
+  - `/Game/Campaign/CampaignArcActions/MissionActions/MissionConfigs/PlaceClusterToi_Markups`
+  - `/Game/Campaign/CampaignArcActions/MissionActions/PlaceClusterToi_ArcAction`
+  - `/Game/Campaign/CampaignArcActions/MissionActions/PlaceClusterToi_ArcAction.PlaceClusterToi_ArcAction`
+  - `/Game/Campaign/TOIs/CLusterToi`
+  - `/Game/Campaign/TOIs/ClusterToiLogic`
+  - `AddToi`
+  - `AsCluster Toi Data Fragment`
+  - `AsCluster Toi Logic`
+  - `BlueprintGeneratedClass`
+  - `bRepairCluster_34_5793AFCB476350D699A6469CD2ED220B`
+  - `CallFunc_AddToi_ReturnValue`
+  - `ClusterCapitalStarSystemId_27_9D54CE8845D3E2EA1190078ADA0165AD`
+  - `ClusterDataAsset`
+  - `ClusterDataAssetId`
+  - `ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B`
+  - `ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3`
+  - `ClusterToi`
+  - `ClusterToiDataFragment_C`
+  - `ClusterToiLogic_C`
+  - `Default__MWClusterDataAsset`
+  - `Default__PlaceClusterToi_ArcAction_C`
+  - `GeneratedClass`
+  - `InClusterDataAssetId`
+  - `K2Node_DynamicCast_AsCluster_Toi_Data_Fragment`
+  - `K2Node_DynamicCast_AsCluster_Toi_Logic`
+  - `K2Node_MakeStruct_ClusterDataAssetId`
+  - `MarkClusterDiscovered`
+  - `MWClusterDataAsset`
+  - `MWToiAsset`
+  - `MWToiLogic`
+  - `MWToiModel`
+  - `NodePosX`
+  - `NodePosY`
+  - `On Server Toi Initialized`
+  - `OnToiLogicChanged__DelegateSignature`
+  - `PlaceClusterToi_ArcAction`
+  - `PlaceClusterToi_ArcAction_C`
+  - `PlaceClusterToi_Config`
+  - `PlaceClusterToi_Markups`
+  - `RelatedClusterToi`
+  - `SavedClusterDataAssetId`
+  - `SavedViewOffset`
+  - `SavedZoomAmount`
+  - `StarSystemId`
+  - `ToiAsset`
+  - `ToiData`
+  - `ToiId`
+  - `ToiModel`
+  - `BlueprintGeneratedClass'/Game/Campaign/CampaignArcActions/MissionActions/PlaceClusterToi_ArcAction.PlaceClusterToi_ArcAction_C'`
+  - `Toi Id`
+  - `Cluster Data Asset Id`
+  - `Cluster Data Asset`
+  - `Related Cluster Toi`
+  - `After loading the game we want to ensure this instance gets it's Cluster Asset set`
+  - `ClusterCapitalStarSystemId`
+  - `Cluster Capital Star System Id`
+  - `ClusterName`
+  - `Cluster Name`
+  - `ClusterDescription`
+  - `Cluster Description`
+  - `bRepairCluster`
+  - `Cluster Toi Logic Object Reference`
+  - `MWToi Model Object Reference`
+  - `Toi Asset`
+  - `MWToi Asset Object Reference`
+  - `MWToi Logic Object Reference`
+  - `Add Toi`
+  - `Toi Model`
+  - `Toi Data`
+
+### `/Game/Campaign/CampaignArcActions/MissionActions/MissionConfigs/PlaceClusterToi_Config`
+- Class: `UserDefinedStruct`
+- Dependencies: `1`
+  - `/Script/CoreUObject`
+- Referencers: `8`
+- Raw package focused strings: `11`
+  - `/Game/Campaign/CampaignArcActions/MissionActions/MissionConfigs/PlaceClusterToi_Config`
+  - `bEnableSaveGame`
+  - `bRepairCluster_34_5793AFCB476350D699A6469CD2ED220B`
+  - `ClusterCapitalStarSystemId_27_9D54CE8845D3E2EA1190078ADA0165AD`
+  - `ClusterDescription_30_F1B437BE45A1CF4607718997C2E6083B`
+  - `ClusterName_29_7CF8DD9C4FCA2F09F5FFE08E4F5F0BB3`
+  - `PlaceClusterToi_Config`
+  - `ClusterCapitalStarSystemId`
+  - `ClusterName`
+  - `ClusterDescription`
+  - `bRepairCluster`
+
+### `/Game/Campaign/CampaignArcActions/MissionActions/MissionConfigs/PlaceClusterToi_Markups`
+- Class: `UserDefinedStruct`
+- Dependencies: `0`
+- Referencers: `14`
+- Raw package focused strings: `5`
+  - `/Game/Campaign/CampaignArcActions/MissionActions/MissionConfigs/PlaceClusterToi_Markups`
+  - `bEnableSaveGame`
+  - `bRepairCluster_45_C81FCB354B16213CC889FF9CB7B68FC6`
+  - `PlaceClusterToi_Markups`
+  - `bRepairCluster`
+
+### `/Game/Campaign/_common/ClusterToiDataFragment`
+- Class: `Blueprint`
+- Dependencies: `4`
+  - `/Game/Campaign/CampaignArcActions/MissionActions/MissionConfigs/PlaceClusterToi_Config`
+  - `/Game/Campaign/CampaignArcActions/MissionActions/MissionConfigs/PlaceClusterToi_Markups`
+  - `/Game/Campaign/_common/ClusterToiDataFragment`
+  - `/Script/MechWarrior`
+- Referencers: `228`
+- Decoded FiB focused token count: `2`
+  - `PlaceClusterToi_Config`
+  - `PlaceClusterToi_Markups`
+- Raw package focused strings: `14`
+  - `/Game/Campaign/_common/ClusterToiDataFragment`
+  - `/Game/Campaign/_common/ClusterToiDataFragment.ClusterToiDataFragment`
+  - `/Game/Campaign/CampaignArcActions/MissionActions/MissionConfigs/PlaceClusterToi_Config`
+  - `/Game/Campaign/CampaignArcActions/MissionActions/MissionConfigs/PlaceClusterToi_Markups`
+  - `BlueprintGeneratedClass`
+  - `ClusterToiDataFragment`
+  - `ClusterToiDataFragment_C`
+  - `Default__ClusterToiDataFragment_C`
+  - `GeneratedClass`
+  - `PlaceClusterToi_Config`
+  - `PlaceClusterToi_Markups`
+  - `SavedViewOffset`
+  - `SavedZoomAmount`
+  - `BlueprintGeneratedClass'/Game/Campaign/_common/ClusterToiDataFragment.ClusterToiDataFragment_C'`
+
+### `/Game/InnerSphereData/StarSystemGenerator`
+- Class: `Blueprint`
+- Dependencies: `14`
+  - `/Engine/EditorBlueprintResources/StandardMacros`
+  - `/Game/InnerSphereData/PlanetaryDescriptions`
+  - `/Game/InnerSphereData/StarMapBP_UTILS`
+  - `/Game/InnerSphereData/StarSystemGenerator`
+  - `/Game/InnerSphereData/Updated/NearStarSummary_STRUCT`
+  - `/Game/InnerSphereData/Updated/OrbitalAttribute_STRUCT`
+  - `/Game/InnerSphereData/Updated/OrbitalBodyInfoData_STRUCT1`
+  - `/Game/InnerSphereData/Updated/StarSystemOrbitalData`
+  - `/Game/InnerSphereData/Updated/SystemPlanetaryInfo_STRUCT1`
+  - `/Game/Libraries/MW5_FunctionLibrary`
+  - `/Game/Libraries/MW5_StdMacroLibrary`
+  - `/Script/GameplayTags`
+  - `/Script/MechWarrior`
+  - `/Script/VictoryBPLibrary`
+- Referencers: `2`
+- Decoded FiB focused token count: `38`
+  - `GenerateCelestialBodies`
+  - `StarSystemInfo`
+  - `EStarMapStencilId`
+  - `Cluster`
+  - `FactionAssetId`
+  - `Cluster Overlay`
+  - `Cluster Constellation`
+  - `Controlling Faction Id`
+  - `System Faction`
+  - `ControllingFaction`
+  - `Controlling Faction`
+  - `Get System Faction Asset`
+  - `This get controlling faction at a given date`
+  - `GetSystemFactionAsset`
+  - `Faction Asset Id`
+  - `StarMapStencilId`
+  - `MWFactionAsset`
+  - `Class'/Script/MechWarrior.MWFactionAsset'`
+  - `MWFactionAsset:NoFaction`
+  - `ConvertStringToDataTableName`
+  - `StarSystemName`
+  - `DataTable`
+  - `DataTableName`
+  - `StarSystemOrbitalData`
+  - `K2Node_GetDataTableRow`
+  - `/Game/InnerSphereData/Updated/StarSystemOrbitalData.StarSystemOrbitalData`
+  - `KismetStringLibrary:Conv_StringToInt`
+  - `Conv_StringToInt`
+  - `Other Factions`
+  - `Any more habitable planets to generate`
+  - `/Game/InnerSphereData/PlanetaryDescriptions.PlanetaryDescriptions`
+  - `Remove planets already generated from list of orbital slots`
+  - `SystemFaction`
+  - `Generate Celestial Body Name`
+  - `GenerateCelestialBodyName`
+  - `MWInnerSphereData`
+  - `EmptyFactionList`
+  - `Empty Faction List`
+- Raw package focused strings: `88`
+  - `/Game/InnerSphereData/PlanetaryDescriptions`
+  - `/Game/InnerSphereData/PlanetaryDescriptions.PlanetaryDescriptions`
+  - `/Game/InnerSphereData/StarMapBP_UTILS`
+  - `/Game/InnerSphereData/StarSystemGenerator`
+  - `/Game/InnerSphereData/StarSystemGenerator.StarSystemGenerator`
+  - `/Game/InnerSphereData/Updated/NearStarSummary_STRUCT`
+  - `/Game/InnerSphereData/Updated/OrbitalAttribute_STRUCT`
+  - `/Game/InnerSphereData/Updated/OrbitalBodyInfoData_STRUCT1`
+  - `/Game/InnerSphereData/Updated/StarSystemOrbitalData`
+  - `/Game/InnerSphereData/Updated/SystemPlanetaryInfo_STRUCT1`
+  - `>ControllingFaction`
+  - `>EmptyFactionList`
+  - `BlueprintGeneratedClass`
+  - `CallFunc_Conv_StringToInt_ReturnValue`
+  - `CallFunc_ConvertStringToDataTableName_Name`
+  - `CallFunc_GenerateCelestialBodyName_ReturnValue`
+  - `CallFunc_GetCorrectTerritory_ControllingFactionId`
+  - `CallFunc_GetDataTableRowFromName_OutRow`
+  - `CallFunc_GetDataTableRowFromName_ReturnValue`
+  - `CallFunc_GetSystemFactionAsset_Abandoned`
+  - `CallFunc_GetSystemFactionAsset_ChangeDate`
+  - `CallFunc_GetSystemFactionAsset_EmployerAssetID`
+  - `CallFunc_GetSystemFactionAsset_FactionAssetId`
+  - `Cluster`
+  - `ClusterConstellation`
+  - `ClusterOverlay`
+  - `Controlling Faction`
+  - `ControllingFaction`
+  - `ControllingFactionId`
+  - `Conv_StringToInt`
+  - `ConvertStringToDataTableName`
+  - `DataTable`
+  - `DataTableFunctionLibrary`
+  - `Default__DataTableFunctionLibrary`
+  - `Default__MWFactionAsset`
+  - `Default__MWInnerSphereData`
+  - `Default__StarMapBP_UTILS_C`
+  - `Default__StarSystemGenerator_C`
+  - `EStarMapStencilId`
+  - `EStarMapStencilId::None`
+  - `FactionAssetId`
+  - `GenerateCelestialBodies`
+  - `GenerateCelestialBodyName`
+  - `GeneratedClass`
+  - `GetDataTableRowFromName`
+  - `GetSystemFactionAsset`
+  - `K2Node_GetDataTableRow`
+  - `K2Node_MakeStruct_FactionAssetId`
+  - `MWFactionAsset`
+  - `MWInnerSphereData`
+  - `NodePosX`
+  - `NodePosY`
+  - `NoFaction`
+  - `OtherFactions`
+  - `PosX`
+  - `PosY`
+  - `SavedViewOffset`
+  - `SavedZoomAmount`
+  - `StarMapBP_UTILS_C`
+  - `StarMapStencilId`
+  - `StarSystemGenerator`
+  - `StarSystemGenerator_C`
+  - `StarSystemId`
+  - `StarSystemInfo`
+  - `StarSystemName`
+  - `StarSystemOrbitalData`
+  - `SystemFaction`
+  - `BlueprintGeneratedClass'/Game/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C'`
+  - `Class'/Script/MechWarrior.MWInnerSphereData'`
+  - `> Controlling Faction`
+  - `> Empty Faction List`
+  - `Remove planets already generated from list of orbital slots`
+  - `Cluster Overlay`
+  - `Cluster Constellation`
+  - `Faction Asset Id Structure`
+  - `EStarMapStencilId Enum`
+  - `This get controlling faction at a given date`
+  - `LOCTABLE("/Game/InnerSphereData/PlanetaryDescriptions.PlanetaryDescriptions", "PlanetsNoPlanets:LDescription")`
+  - `Generate Celestial Bodies`
+  - `GetDataTableRow Row Found Exec pin`
+
+### `/Game/InnerSphereData/StarMapBP_UTILS`
+- Class: `Blueprint`
+- Dependencies: `2`
+  - `/Game/InnerSphereData/StarMapBP_UTILS`
+  - `/Script/MechWarrior`
+- Referencers: `3`
+- Decoded FiB focused token count: `6`
+  - `StarSystemInfo`
+  - `EStarMapStencilId`
+  - `Cluster`
+  - `FactionAssetId`
+  - `Cluster Overlay`
+  - `Cluster Constellation`
+- Raw package focused strings: `27`
+  - `/Game/InnerSphereData/StarMapBP_UTILS`
+  - `/Game/InnerSphereData/StarMapBP_UTILS.StarMapBP_UTILS`
+  - `BlueprintGeneratedClass`
+  - `Cluster`
+  - `ClusterConstellation`
+  - `ClusterOverlay`
+  - `Default__StarMapBP_UTILS_C`
+  - `EStarMapStencilId`
+  - `FactionAssetId`
+  - `GeneratedClass`
+  - `NodePosX`
+  - `NodePosY`
+  - `PosX`
+  - `PosY`
+  - `SavedViewOffset`
+  - `SavedZoomAmount`
+  - `StarMapBP_UTILS`
+  - `StarMapBP_UTILS_C`
+  - `StarMapStencilId`
+  - `StarSystemId`
+  - `StarSystemInfo`
+  - `StarSystemName`
+  - `BlueprintGeneratedClass'/Game/InnerSphereData/StarMapBP_UTILS.StarMapBP_UTILS_C'`
+  - `Cluster Overlay`
+  - `Cluster Constellation`
+  - `EStarMapStencilId Enum`
+  - `Faction Asset Id Structure`
+
+### `/Game/InnerSphereData/MW5_InnerSphereData`
+- Class: `DataTable`
+- Dependencies: `126`
+  - `/Game/Campaign/Clusters/A2M1/A2M1`
+  - `/Game/Campaign/Clusters/A2M2/A2M2`
+  - `/Game/Campaign/Clusters/A2M3/A2M3`
+  - `/Game/Campaign/Clusters/Alarion/15_2`
+  - `/Game/Campaign/Clusters/BackwaterRegion/8_4`
+  - `/Game/Campaign/Clusters/Davion-KuritaFrontline/5_1_Mesh`
+  - `/Game/Campaign/Clusters/DavionBorderlands/6_2_Mesh`
+  - `/Game/Campaign/Clusters/DraconisBadlands/13_1`
+  - `/Game/Campaign/Clusters/DroughtWorlds/13_2`
+  - `/Game/Campaign/Clusters/DuchyOfAndurien/8_3`
+  - `/Game/Campaign/Clusters/DuchyOfTamarind/10_2`
+  - `/Game/Campaign/Clusters/DuchyOfTsitsang/7_2_Mesh`
+  - `/Game/Campaign/Clusters/FWL_ShippingLane/10_1`
+  - `/Game/Campaign/Clusters/FreeWorldCommerceHub/9_4`
+  - `/Game/Campaign/Clusters/FreeWorldInterior/9_3`
+  - `/Game/Campaign/Clusters/IndustrialHub_1/Safezone_1`
+  - `/Game/Campaign/Clusters/IndustrialHub_1/Safezone_1_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_10/Safezone_10`
+  - `/Game/Campaign/Clusters/IndustrialHub_10/Safezone_10_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_11/Safezone_11`
+  - `/Game/Campaign/Clusters/IndustrialHub_11/Safezone_11_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_12/Safezone_12`
+  - `/Game/Campaign/Clusters/IndustrialHub_12/Safezone_12_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_13/Safezone_13`
+  - `/Game/Campaign/Clusters/IndustrialHub_13/Safezone_13_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_14/Safezone_14`
+  - `/Game/Campaign/Clusters/IndustrialHub_14/Safezone_14_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_15/Safezone_15`
+  - `/Game/Campaign/Clusters/IndustrialHub_15/Safezone_15_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_16/Safezone_16`
+  - `/Game/Campaign/Clusters/IndustrialHub_16/Safezone_16_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_17/Safezone_17`
+  - `/Game/Campaign/Clusters/IndustrialHub_17/Safezone_17_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_18/Safezone_18`
+  - `/Game/Campaign/Clusters/IndustrialHub_18/Safezone_18_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_19/Safezone_7`
+  - `/Game/Campaign/Clusters/IndustrialHub_19/Safezone_7_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_2/Safezone_2`
+  - `/Game/Campaign/Clusters/IndustrialHub_2/Safezone_2_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_20/Safezone2`
+  - `/Game/Campaign/Clusters/IndustrialHub_20/Safezone2_Collision`
+  - `/Game/Campaign/Clusters/IndustrialHub_21/Safezone3`
+  - `/Game/Campaign/Clusters/IndustrialHub_21/Safezone3_Collision`
+  - `/Game/Campaign/Clusters/IndustrialHub_22/Safezone4`
+  - `/Game/Campaign/Clusters/IndustrialHub_22/Safezone4_Collision`
+  - `/Game/Campaign/Clusters/IndustrialHub_23/Safezone5`
+  - `/Game/Campaign/Clusters/IndustrialHub_23/Safezone5_Collision`
+  - `/Game/Campaign/Clusters/IndustrialHub_24/Safezone6`
+  - `/Game/Campaign/Clusters/IndustrialHub_24/Safezone6_Collision`
+  - `/Game/Campaign/Clusters/IndustrialHub_25/Safezone1`
+  - `/Game/Campaign/Clusters/IndustrialHub_25/Safezone1_Collision`
+  - `/Game/Campaign/Clusters/IndustrialHub_26/Safezone7`
+  - `/Game/Campaign/Clusters/IndustrialHub_26/Safezone7_Collision`
+  - `/Game/Campaign/Clusters/IndustrialHub_27/Safezone8`
+  - `/Game/Campaign/Clusters/IndustrialHub_27/Safezone8_Collision`
+  - `/Game/Campaign/Clusters/IndustrialHub_28/Safezone9`
+  - `/Game/Campaign/Clusters/IndustrialHub_28/Safezone9_Collision`
+  - `/Game/Campaign/Clusters/IndustrialHub_29/29_Collision`
+  - `/Game/Campaign/Clusters/IndustrialHub_29/Safezone_29`
+  - `/Game/Campaign/Clusters/IndustrialHub_3/Safezone_3`
+- Referencers: `7`
+- Raw package focused strings: `250`
+  - `/Game/Campaign/Clusters/A2M1/A2M1`
+  - `/Game/Campaign/Clusters/A2M1/A2M1.A2M1`
+  - `/Game/Campaign/Clusters/A2M2/A2M2`
+  - `/Game/Campaign/Clusters/A2M2/A2M2.A2M2`
+  - `/Game/Campaign/Clusters/A2M3/A2M3`
+  - `/Game/Campaign/Clusters/A2M3/A2M3.A2M3`
+  - `/Game/Campaign/Clusters/Alarion/15`
+  - `/Game/Campaign/Clusters/Alarion/15_2.15`
+  - `/Game/Campaign/Clusters/BackwaterRegion/8`
+  - `/Game/Campaign/Clusters/BackwaterRegion/8_4.8`
+  - `/Game/Campaign/Clusters/Davion-KuritaFrontline/5_1_Mesh`
+  - `/Game/Campaign/Clusters/Davion-KuritaFrontline/5_1_Mesh.5_1_Mesh`
+  - `/Game/Campaign/Clusters/DavionBorderlands/6_2_Mesh`
+  - `/Game/Campaign/Clusters/DavionBorderlands/6_2_Mesh.6_2_Mesh`
+  - `/Game/Campaign/Clusters/DraconisBadlands/13`
+  - `/Game/Campaign/Clusters/DraconisBadlands/13_1.13`
+  - `/Game/Campaign/Clusters/DroughtWorlds/13`
+  - `/Game/Campaign/Clusters/DroughtWorlds/13_2.13`
+  - `/Game/Campaign/Clusters/DuchyOfAndurien/8`
+  - `/Game/Campaign/Clusters/DuchyOfAndurien/8_3.8`
+  - `/Game/Campaign/Clusters/DuchyOfTamarind/10`
+  - `/Game/Campaign/Clusters/DuchyOfTamarind/10_2.10`
+  - `/Game/Campaign/Clusters/DuchyOfTsitsang/7_2_Mesh`
+  - `/Game/Campaign/Clusters/DuchyOfTsitsang/7_2_Mesh.7_2_Mesh`
+  - `/Game/Campaign/Clusters/FreeWorldCommerceHub/9`
+  - `/Game/Campaign/Clusters/FreeWorldCommerceHub/9_4.9`
+  - `/Game/Campaign/Clusters/FreeWorldInterior/9`
+  - `/Game/Campaign/Clusters/FreeWorldInterior/9_3.9`
+  - `/Game/Campaign/Clusters/FWL_ShippingLane/10`
+  - `/Game/Campaign/Clusters/FWL_ShippingLane/10_1.10`
+  - `/Game/Campaign/Clusters/IndustrialHub_1/Safezone`
+  - `/Game/Campaign/Clusters/IndustrialHub_1/Safezone_1.Safezone`
+  - `/Game/Campaign/Clusters/IndustrialHub_1/Safezone_1_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_1/Safezone_1_Blob.Safezone_1_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_10/Safezone`
+  - `/Game/Campaign/Clusters/IndustrialHub_10/Safezone_10.Safezone`
+  - `/Game/Campaign/Clusters/IndustrialHub_10/Safezone_10_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_10/Safezone_10_Blob.Safezone_10_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_11/Safezone`
+  - `/Game/Campaign/Clusters/IndustrialHub_11/Safezone_11.Safezone`
+  - `/Game/Campaign/Clusters/IndustrialHub_11/Safezone_11_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_11/Safezone_11_Blob.Safezone_11_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_12/Safezone`
+  - `/Game/Campaign/Clusters/IndustrialHub_12/Safezone_12.Safezone`
+  - `/Game/Campaign/Clusters/IndustrialHub_12/Safezone_12_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_12/Safezone_12_Blob.Safezone_12_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_13/Safezone`
+  - `/Game/Campaign/Clusters/IndustrialHub_13/Safezone_13.Safezone`
+  - `/Game/Campaign/Clusters/IndustrialHub_13/Safezone_13_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_13/Safezone_13_Blob.Safezone_13_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_14/Safezone`
+  - `/Game/Campaign/Clusters/IndustrialHub_14/Safezone_14.Safezone`
+  - `/Game/Campaign/Clusters/IndustrialHub_14/Safezone_14_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_14/Safezone_14_Blob.Safezone_14_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_15/Safezone`
+  - `/Game/Campaign/Clusters/IndustrialHub_15/Safezone_15.Safezone`
+  - `/Game/Campaign/Clusters/IndustrialHub_15/Safezone_15_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_15/Safezone_15_Blob.Safezone_15_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_16/Safezone`
+  - `/Game/Campaign/Clusters/IndustrialHub_16/Safezone_16.Safezone`
+  - `/Game/Campaign/Clusters/IndustrialHub_16/Safezone_16_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_16/Safezone_16_Blob.Safezone_16_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_17/Safezone`
+  - `/Game/Campaign/Clusters/IndustrialHub_17/Safezone_17.Safezone`
+  - `/Game/Campaign/Clusters/IndustrialHub_17/Safezone_17_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_17/Safezone_17_Blob.Safezone_17_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_18/Safezone`
+  - `/Game/Campaign/Clusters/IndustrialHub_18/Safezone_18.Safezone`
+  - `/Game/Campaign/Clusters/IndustrialHub_18/Safezone_18_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_18/Safezone_18_Blob.Safezone_18_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_19/Safezone`
+  - `/Game/Campaign/Clusters/IndustrialHub_19/Safezone_7.Safezone`
+  - `/Game/Campaign/Clusters/IndustrialHub_19/Safezone_7_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_19/Safezone_7_Blob.Safezone_7_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_2/Safezone`
+  - `/Game/Campaign/Clusters/IndustrialHub_2/Safezone_2.Safezone`
+  - `/Game/Campaign/Clusters/IndustrialHub_2/Safezone_2_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_2/Safezone_2_Blob.Safezone_2_Blob`
+  - `/Game/Campaign/Clusters/IndustrialHub_20/Safezone2`
+  - `/Game/Campaign/Clusters/IndustrialHub_20/Safezone2.Safezone2`
+
+### `/Game/Levels/FrontEnd/StarMap`
+- Class: `World/Map`
+- Dependencies: `26`
+  - `/Engine/EngineMaterials/Good64x64TilingNoiseHighFreq`
+  - `/Engine/EngineMaterials/WorldGridMaterial`
+  - `/Game/Levels/FrontEnd/StarMap`
+  - `/Game/Levels/FrontEnd/StarMapSceneManager`
+  - `/Game/Levels/FrontEnd/StarSystemSceneManager`
+  - `/Game/Levels/Lighting/_common/Textures/Starfields/hdr_starfield_01_TEX`
+  - `/Game/Modes/SceneManagers/SceneManager`
+  - `/Game/UI/FrontEnd/Starmap/AbstractStarSystem`
+  - `/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionBorder_MTI`
+  - `/Game/UI/FrontEnd/Starmap/Materials/Nebula_MST`
+  - `/Game/UI/FrontEnd/Starmap/Materials/StarMap_Nebula_MST`
+  - `/Game/UI/FrontEnd/Starmap/Nebulae/Nebula`
+  - `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula`
+  - `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_AClass_Star_MTI`
+  - `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_BClass_Star_MTI`
+  - `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_FClass_Star_MTI`
+  - `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_GClass_Star_MTI`
+  - `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_KClass_Star_MTI`
+  - `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_MClass_Star_MTI`
+  - `/Game/UI/FrontEnd/Starmap/StarMapActor`
+  - `/Game/UI/FrontEnd/Starmap/StarSystem`
+  - `/Game/UI/FrontEnd/Starmap/StarSystemBody`
+  - `/Game/UI/FrontEnd/Starmap/Textures/Nebula_CLR`
+  - `/Script/MechWarrior`
+  - `/Script/NavigationSystem`
+  - `/Script/ProceduralMeshComponent`
+- Referencers: `5`
+- Raw package focused strings: `250`
+  - `/Game/Levels/FrontEnd/StarMap`
+  - `/Game/Levels/FrontEnd/StarMap.StarMap`
+  - `/Game/Levels/FrontEnd/StarMapSceneManager`
+  - `/Game/Levels/FrontEnd/StarSystemSceneManager`
+  - `/Game/UI/FrontEnd/Starmap/AbstractStarSystem`
+  - `/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionBorder_MTI`
+  - `/Game/UI/FrontEnd/Starmap/Materials/Nebula_MST`
+  - `/Game/UI/FrontEnd/Starmap/Materials/StarMap_Nebula_MST`
+  - `/Game/UI/FrontEnd/Starmap/Nebulae/Nebula`
+  - `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula`
+  - `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_AClass_Star_MTI`
+  - `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_BClass_Star_MTI`
+  - `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_FClass_Star_MTI`
+  - `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_GClass_Star_MTI`
+  - `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_KClass_Star_MTI`
+  - `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_MClass_Star_MTI`
+  - `/Game/UI/FrontEnd/Starmap/StarMapActor`
+  - `/Game/UI/FrontEnd/Starmap/StarSystem`
+  - `/Game/UI/FrontEnd/Starmap/StarSystemBody`
+  - `/Game/UI/FrontEnd/Starmap/Textures/Nebula_CLR`
+  - `AbstractStarSystem_C`
+  - `bGenerateLightMapUV`
+  - `bGenerateLightmapUVs`
+  - `bGenerateMirroredCollision`
+  - `bIsGenerated`
+  - `BlueprintGeneratedClass`
+  - `bOnlyGenerateClustersForVolumes`
+  - `bReusePreviousLevelClusters`
+  - `CamOrthoZoom`
+  - `Default__StarMap_C`
+  - `Default__StarMapActor_C`
+  - `Default__StarSystemBody_C`
+  - `ESpawnActorCollisionHandlingMethod`
+  - `ESpawnActorCollisionHandlingMethod::AlwaysSpawn`
+  - `ExecuteUbergraph_StarMap`
+  - `FactionBorder_MTI`
+  - `GeneratedClass`
+  - `Nebula Overlay Max`
+  - `Nebula Overlay Min`
+  - `Nebula_GEN_VARIABLE_StarMap_Nebula_C_CAT`
+  - `NodePosX`
+  - `NodePosY`
+  - `Overlay Layer Brightness`
+  - `Overlay Layer Color`
+  - `ProceduralBorderMesh`
+  - `SavedViewOffset`
+  - `SavedZoomAmount`
+  - `StarMap`
+  - `StarMap_AClass_Star_MTI`
+  - `StarMap_BClass_Star_MTI`
+  - `StarMap_C`
+  - `StarMap_FClass_Star_MTI`
+  - `StarMap_GClass_Star_MTI`
+  - `StarMap_KClass_Star_MTI`
+  - `StarMap_MClass_Star_MTI`
+  - `StarMap_Nebula_C`
+  - `StarMap_Nebula_MST`
+  - `StarMapActor`
+  - `StarMapActor_C`
+  - `StarMapCamera`
+  - `StarMapRoot`
+  - `StarMapRoot_GEN_VARIABLE`
+  - `StarMapSceneManager`
+  - `StarMapSceneManager_C`
+  - `StarSystem`
+  - `StarSystem_C`
+  - `StarSystemBody_C`
+  - `StarSystemCamera`
+  - `StarSystemCamera_GEN_VARIABLE`
+  - `StarSystemId`
+  - `StarSystemRoot`
+  - `StarSystemRoot_GEN_VARIABLE`
+  - `StarSystemSceneManager`
+  - `StarSystemSceneManager_C`
+  - `StarMap:PersistentLevel.StarMap`
+  - `BlueprintGeneratedClass'/Game/Levels/FrontEnd/StarMap.StarMap_C'`
+  - `PersistentLevel.StarMap.EventGraph`
+  - `StarMap1`
+  - `StarMap_Nebula32`
+  - `StarSystemBody`
+
+### `/Game/UI/FrontEnd/Starmap/StarMapActor`
+- Class: `Blueprint`
+- Dependencies: `31`
+  - `/Engine/BasicShapes/BasicShapeMaterial`
+  - `/Engine/BasicShapes/Sphere`
+  - `/Engine/EditorBlueprintResources/StandardMacros`
+  - `/Game/InnerSphereData/StarMapBP_UTILS`
+  - `/Game/Libraries/MW5_PersistentModel_ActorLibrary`
+  - `/Game/UI/FrontEnd/Starmap/AbstractStarSystem`
+  - `/Game/UI/FrontEnd/Starmap/Cluster_MTI`
+  - `/Game/UI/FrontEnd/Starmap/CurrentCourse_MTI`
+  - `/Game/UI/FrontEnd/Starmap/Materials/FogOfWarRenderTarget`
+  - `/Game/UI/FrontEnd/Starmap/Materials/FogOfWarSplat_MTL`
+  - `/Game/UI/FrontEnd/Starmap/Materials/FogOfWar_MTL`
+  - `/Game/UI/FrontEnd/Starmap/MaxTravelDistance_MTI`
+  - `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula`
+  - `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_AClass_Star_MTI`
+  - `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_BClass_Star_MTI`
+  - `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_FClass_Star_MTI`
+  - `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_GClass_Star_MTI`
+  - `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_KClass_Star_MTI`
+  - `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_MClass_Star_MTI`
+  - `/Game/UI/FrontEnd/Starmap/StarMapActor`
+  - `/Game/UI/FrontEnd/Starmap/StarMapRoute_MTI`
+  - `/Game/UI/FrontEnd/Starmap/StarMapSelectionActor`
+  - `/Game/UI/FrontEnd/Starmap/StarSystem`
+  - `/Game/UI/FrontEnd/Starmap/StarSystemBody`
+  - `/Game/UI/FrontEnd/Starmap/UnaffordableRoute_MTI`
+  - `/Game/UI/FrontEnd/Starmap/cylinder_STM`
+  - `/Script/InputCore`
+  - `/Script/MechWarrior`
+  - `/Script/NavigationSystem`
+  - `/Script/ProceduralMeshComponent`
+  - `/Script/UMG`
+- Referencers: `6`
+- Decoded FiB focused token count: `78`
+  - `AbstractStarSystem_C`
+  - `Border Actor`
+  - `MWStarMapBorderActor`
+  - `Border Scale`
+  - `StarSystem_C`
+  - `On Mouse Over Cluster`
+  - `CanvasRenderTarget2D'/Game/UI/FrontEnd/Starmap/Materials/FogOfWarRenderTarget.FogOfWarRenderTarget'`
+  - `StarMapSelectionActor_C`
+  - `/Game/UI/FrontEnd/Starmap/StarMapSelectionActor.StarMapSelectionActor_C`
+  - `GetStarSystemIdArray`
+  - `MWStarMapModel`
+  - `StarMapModel`
+  - `StarSystemBodyLookUp`
+  - `MWStarSystemBody`
+  - `GetStarSystemInfoById`
+  - `EStarMapStencilId`
+  - `StarSystemId`
+  - `Class'/Script/MechWarrior.MWStarSystemBody'`
+  - `StarSystemInfo`
+  - `/Game/UI/FrontEnd/Starmap/StarSystemBody.StarSystemBody_C`
+  - `StarSystemBody_C`
+  - `On Star Map Border Changed`
+  - `UpdateStarMapBorders`
+  - `Update Star Map Borders`
+  - `Get Star Map Border Asset Id`
+  - `GetStarMapBorderAssetId`
+  - `StarMapBorderAssetId`
+  - `MWStarMapBorderAsset`
+  - `BorderActor`
+  - `Class'/Script/MechWarrior.MWStarMapBorderAsset'`
+  - `BorderScale`
+  - `SpawnActor_Title_Unknown`
+  - `SpawnActor`
+  - `K2Node_SpawnActorFromClass`
+  - `GraphEditor.SpawnActor_16x`
+  - `ESpawnActorCollisionHandlingMethod`
+  - `As MWStar Map Border Actor`
+  - `NOTE: Using SpawnActor here instead of SpawnActorIntoCurrentArea because the latter doesn't seem to set the Transform early enough for the (static`
+  - `StarMap_Nebula`
+  - `StarMap_Nebula_C`
+  - `Faction Color`
+  - `GetUnfoggedStarSystems`
+  - `/Game/UI/FrontEnd/Starmap/Materials/FogOfWarSplat_MTL.FogOfWarSplat_MTL`
+  - `MWStarMap`
+  - `StarSystemSelectionIndicatorClass`
+  - `SpawnActorWithLifetime`
+  - `StarMapSelectionActor`
+  - `StarSystemIndicator`
+  - `CreateStarSystemIndicator`
+  - `UpdateStarSystemIndicator`
+  - `OnSelectedStarSystemChanged`
+  - `StarMapActor_C`
+  - `ClearSelectedStarSystem`
+  - `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_AClass_Star_MTI.StarMap_AClass_Star_MTI`
+  - `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_BClass_Star_MTI.StarMap_BClass_Star_MTI`
+  - `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_FClass_Star_MTI.StarMap_FClass_Star_MTI`
+  - `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_GClass_Star_MTI.StarMap_GClass_Star_MTI`
+  - `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_KClass_Star_MTI.StarMap_KClass_Star_MTI`
+  - `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_MClass_Star_MTI.StarMap_MClass_Star_MTI`
+  - `CreateStarMap`
+  - `StarMapRoot`
+  - `Generate Inner Sphere Data`
+  - `GenerateInnerSphereData`
+  - `MWInnerSphereData`
+  - `RetrieveStarSystemEdges`
+  - `Generate Border Polygon`
+  - `SpawnActorIntoCurrentArea`
+  - `/Script/MechWarrior.MWInnerSphereData`
+  - `If you want to dynamically generate boarders when creating the star map hook this back up`
+  - `SetSelectedStarSystem`
+  - `MouseOverCluster`
+  - `Mouse Over Cluster`
+  - `Cluster Star System Id`
+  - `ClusterStarSystemId`
+  - `SetMouseOverStarSystem`
+  - `MouseOverStarSystem`
+  - `GetSelectedStarSystemId`
+  - `FindStarSystemBodyById`
+- Raw package focused strings: `145`
+  - `/Game/InnerSphereData/StarMapBP_UTILS`
+  - `/Game/UI/FrontEnd/Starmap/AbstractStarSystem`
+  - `/Game/UI/FrontEnd/Starmap/Cluster_MTI`
+  - `/Game/UI/FrontEnd/Starmap/CurrentCourse_MTI`
+  - `/Game/UI/FrontEnd/Starmap/cylinder_STM`
+  - `/Game/UI/FrontEnd/Starmap/Materials/FogOfWar_MTL`
+  - `/Game/UI/FrontEnd/Starmap/Materials/FogOfWarRenderTarget`
+  - `/Game/UI/FrontEnd/Starmap/Materials/FogOfWarSplat_MTL`
+  - `/Game/UI/FrontEnd/Starmap/MaxTravelDistance_MTI`
+  - `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula`
+  - `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_AClass_Star_MTI`
+  - `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_BClass_Star_MTI`
+  - `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_FClass_Star_MTI`
+  - `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_GClass_Star_MTI`
+  - `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_KClass_Star_MTI`
+  - `/Game/UI/FrontEnd/Starmap/Star/Materials/StarMap_MClass_Star_MTI`
+  - `/Game/UI/FrontEnd/Starmap/StarMapActor`
+  - `/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor`
+  - `/Game/UI/FrontEnd/Starmap/StarMapRoute_MTI`
+  - `/Game/UI/FrontEnd/Starmap/StarMapSelectionActor`
+  - `/Game/UI/FrontEnd/Starmap/StarMapSelectionActor.StarMapSelectionActor_C`
+  - `/Game/UI/FrontEnd/Starmap/StarSystem`
+  - `/Game/UI/FrontEnd/Starmap/StarSystemBody`
+  - `/Game/UI/FrontEnd/Starmap/UnaffordableRoute_MTI`
+  - `AbstractStarSystem_C`
+  - `AsMWStar Map Border Actor`
+  - `bGenerateInstanceScalingRange`
+  - `bGenerateMirroredCollision`
+  - `BlueprintGeneratedClass`
+  - `BorderActor`
+  - `BorderScale`
+  - `CallFunc_GenerateInnerSphereData_ReturnValue`
+  - `CallFunc_GenerateInnerSphereData_ReturnValue_Value`
+  - `CallFunc_GetStarMapBorderAssetId_ReturnValue`
+  - `CallFunc_GetStarSystemIdArray_ReturnValue`
+  - `CallFunc_GetStarSystemInfoById_ReturnValue`
+  - `CallFunc_RetrieveStarSystemEdges_ReturnValue`
+  - `CallFunc_RetrieveStarSystemEdges_ReturnValue_Value`
+  - `CallFunc_SpawnActorIntoCurrentArea_ReturnValue`
+  - `CallFunc_SpawnActorWithLifetime_ReturnValue`
+  - `ClearSelectedStarSystem`
+  - `Cluster_MTI`
+  - `ClusterMaterial`
+  - `ClusterStarSystemId`
+  - `CreateStarMap`
+  - `CreateStarSystemIndicator`
+  - `Default__MWStarMap`
+  - `Default__MWStarMapBorderAsset`
+  - `Default__StarMapActor_C`
+  - `Default__StarMapBP_UTILS_C`
+  - `ESpawnActorCollisionHandlingMethod`
+  - `EStarMapStencilId`
+  - `ExecuteUbergraph_StarMapActor`
+  - `FactionColor`
+  - `FindStarSystemBodyById`
+  - `GenerateBorderPolygon`
+  - `GeneratedClass`
+  - `GenerateInnerSphereData`
+  - `GetSelectedStarSystemId`
+  - `GetStarMapBorderAssetId`
+  - `GetStarSystemIdArray`
+  - `GetStarSystemInfoById`
+  - `GetUnfoggedStarSystems`
+  - `InStarSystemId`
+  - `K2Node_ClassDynamicCast_AsMWStar_Map_Border_Actor`
+  - `K2Node_Event_StarSystemId`
+  - `K2Node_SpawnActorFromClass`
+  - `MouseOverCluster`
+  - `MouseOverStarSystem`
+  - `MWInnerSphereData`
+  - `MWStarMap`
+  - `MWStarMapBorderActor`
+  - `MWStarMapBorderAsset`
+  - `MWStarMapModel`
+  - `MWStarSystemBody`
+  - `Nebula_GEN_VARIABLE_StarMap_Nebula_C_CAT`
+  - `NodePosX`
+  - `NodePosY`
+  - `OnClearSelectedStarSystem`
+  - `OnClearSelectedStarSystem__DelegateSignature`
+
+### `/Game/UI/FrontEnd/Starmap/StarSystemBody`
+- Class: `Blueprint`
+- Dependencies: `15`
+  - `/Engine/BasicShapes/Plane`
+  - `/Engine/EditorBlueprintResources/StandardMacros`
+  - `/Game/Campaign/TOIs/ClusterToiLogic`
+  - `/Game/Libraries/MW5_PersistentModel_ActorLibrary`
+  - `/Game/UI/Components/StarSystemBannerWidget`
+  - `/Game/UI/Components/StarSystemTagWidget`
+  - `/Game/UI/FrontEnd/Starmap/Materials/Factions/SafezoneLine_MTI`
+  - `/Game/UI/FrontEnd/Starmap/Materials/Factions/Safezone_MTI1`
+  - `/Game/UI/FrontEnd/Starmap/Materials/Factions/Warzone_MTI`
+  - `/Game/UI/FrontEnd/Starmap/StarMapActor`
+  - `/Game/UI/FrontEnd/Starmap/StarSystemBody`
+  - `/Game/UI/Mech/Materials/VerticalMask_MTL`
+  - `/Script/InputCore`
+  - `/Script/MechWarrior`
+  - `/Script/UMG`
+- Referencers: `3`
+- Decoded FiB focused token count: `113`
+  - `StarSystemBannerWidget_C`
+  - `Cluster Overlay Mesh Component`
+  - `Cluster Overlay State`
+  - `EClusterOverlayState`
+  - `Has Created Cluster Mesh`
+  - `Cluster Constellation Mesh Component`
+  - `Cluster Toi`
+  - `ClusterToiLogic_C`
+  - `Update Toi Data`
+  - `UpdateToiData`
+  - `ToiModel`
+  - `Toi Model`
+  - `MWToiModel`
+  - `On Update Tois in System`
+  - `On System Tois Changed`
+  - `OnSystemToisChanged`
+  - `StarSystemId`
+  - `Create Cluster Overlay Mesh`
+  - `CreateClusterOverlayMesh`
+  - `ClusterOverlayMeshComponent`
+  - `On Overlay State Changed`
+  - `OnOverlayStateChanged`
+  - `On Begin Cursor Over Cluster`
+  - `OnBeginCursorOverCluster`
+  - `On End Cursor Over Cluster`
+  - `OnEndCursorOverCluster`
+  - `OnZoomLevelChanged`
+  - `New Zoom Level`
+  - `In Zoom Level`
+  - `Zoom Level`
+  - `On Zoom Level Changed Helper`
+  - `OnZoomLevelChangedHelper`
+  - `On Clicked Cluster`
+  - `OnClickedCluster`
+  - `ClearSelectedStarSystem`
+  - `StarMapActor_C`
+  - `Get Starmap Actor`
+  - `GetStarmapActor`
+  - `Mouse Over Cluster`
+  - `MouseOverCluster`
+  - `Cluster Star System Id`
+  - `bHasCreatedClusterMesh`
+  - `ClusterConstellationMeshComponent`
+  - `On Cluster Display Info Changed`
+  - `OnClusterDisplayInfoChanged`
+  - `Set Dynamic Cluster Pulsing`
+  - `SetDynamicClusterPulsing`
+  - `StarMapModel`
+  - `MWStarMapModel`
+  - `OnStarSystemSelected`
+  - `StarSystemTagWidget`
+  - `StarSystemTagWidget_C`
+  - `StarSystemTagWidgetComponent`
+  - `Reset Cluster Meshes`
+  - `ResetClusterMeshes`
+  - `Get Cluster Overlay Mesh`
+  - `GetClusterOverlayMesh`
+  - `Get Cluster Constellation Mesh`
+  - `GetClusterConstellationMesh`
+  - `Get Tois for System`
+  - `GetToisForSystem`
+  - `MWToiLogic`
+  - `L_SystemTois`
+  - `L System Tois`
+  - `L ToiDisplayInfoList`
+  - `L Toi Display Info List`
+  - `Update Overlay State`
+  - `UpdateOverlayState`
+  - `Toi List`
+  - `StarSystemBannerWidget`
+  - `WidgetBlueprintGeneratedClass'/Game/UI/Components/StarSystemBannerWidget.StarSystemBannerWidget_C'`
+  - `ClusterToiLogic`
+  - `As Cluster Toi Logic`
+  - `Get Cluster Overlay State`
+  - `GetClusterOverlayState`
+  - `MWClusterToiLogic`
+  - `ClusterOverlayState`
+  - `L NewClusterOverlayState`
+  - `L New Cluster Overlay State`
+  - `L WasOverlayFound`
+- Raw package focused strings: `144`
+  - `/Game/Campaign/TOIs/ClusterToiLogic`
+  - `/Game/UI/Components/StarSystemBannerWidget`
+  - `/Game/UI/Components/StarSystemTagWidget`
+  - `/Game/UI/FrontEnd/Starmap/Materials/Factions/Safezone_MTI1`
+  - `/Game/UI/FrontEnd/Starmap/Materials/Factions/SafezoneLine_MTI`
+  - `/Game/UI/FrontEnd/Starmap/Materials/Factions/Warzone_MTI`
+  - `/Game/UI/FrontEnd/Starmap/StarMapActor`
+  - `/Game/UI/FrontEnd/Starmap/StarSystemBody`
+  - `/Game/UI/FrontEnd/Starmap/StarSystemBody.StarSystemBody`
+  - `AsCluster Toi Logic`
+  - `bHasCreatedClusterMesh`
+  - `bIsStarSystemHidden`
+  - `BlueprintGeneratedClass`
+  - `bShouldDisplayOnStarmap`
+  - `CallFunc_GetClusterConstellationMesh_OutStaticMesh`
+  - `CallFunc_GetClusterOverlayMesh_OutStaticMesh`
+  - `CallFunc_GetClusterOverlayState_ReturnValue`
+  - `CallFunc_GetClusterToiForSystem_ReturnValue`
+  - `CallFunc_GetHiddenStarSystems_ReturnValue`
+  - `CallFunc_GetStarmapActor_Output`
+  - `CallFunc_GetToisForSystem_ReturnValue`
+  - `ClearSelectedStarSystem`
+  - `ClusterConstellation`
+  - `ClusterConstellationMeshComponent`
+  - `ClusterDataAsset`
+  - `ClusterOverlay`
+  - `ClusterOverlayMeshComponent`
+  - `ClusterOverlayState`
+  - `ClusterStarSystemId`
+  - `ClusterToi`
+  - `ClusterToiLogic_C`
+  - `CreateClusterOverlayMesh`
+  - `Default__MWStarSystemBody`
+  - `Default__StarSystemBody_C`
+  - `EClusterOverlayState`
+  - `ExecuteUbergraph_StarSystemBody`
+  - `GeneratedClass`
+  - `GetClusterConstellationMesh`
+  - `GetClusterOverlayMesh`
+  - `GetClusterOverlayState`
+  - `GetClusterToiForSystem`
+  - `GetHiddenStarSystems`
+  - `GetStarmapActor`
+  - `GetToisForSystem`
+  - `HandleZoomChange`
+  - `InStarSystemIds`
+  - `InZoomLevel`
+  - `K2Node_CustomEvent_InStarSystemIds`
+  - `K2Node_DynamicCast_AsCluster_Toi_Logic`
+  - `K2Node_Event_InZoomLevel`
+  - `K2Node_Event_NewZoomLevel`
+  - `L NewClusterOverlayState`
+  - `L ToiDisplayInfoList`
+  - `L WasOverlayFound`
+  - `L_SystemTois`
+  - `MouseOverCluster`
+  - `MWClusterDataAsset`
+  - `MWClusterToiLogic`
+  - `MWStarMapModel`
+  - `MWStarSystemBody`
+  - `MWToiLogic`
+  - `MWToiModel`
+  - `NewClusterToi`
+  - `NewZoomLevel`
+  - `NodePosX`
+  - `NodePosY`
+  - `OnBeginCursorOverCluster`
+  - `OnClickedCluster`
+  - `OnClusterDisplayInfoChanged`
+  - `OnEndCursorOverCluster`
+  - `OnOverlayStateChanged`
+  - `OnStarSystemVisibilityChanged`
+  - `OnSystemToisChanged`
+  - `OnUpdateToisInSystem`
+  - `OnZoomChange`
+  - `OnZoomLevelChangedHelper`
+  - `ReceiveOnStarSystemSelected`
+  - `ReceiveOnZoomLevelChanged`
+  - `ResetClusterMeshes`
+  - `SavedViewOffset`
+
+### `/Game/UI/FrontEnd/StarMapPawn`
+- Class: `Blueprint`
+- Dependencies: `5`
+  - `/Game/UI/Components/StarSystemTOITooltip`
+  - `/Game/UI/FrontEnd/StarMapPawn`
+  - `/Game/UI/FrontEnd/StarMap_MPC`
+  - `/Game/UI/FrontEnd/StarmapGamepadWidget`
+  - `/Script/MechWarrior`
+- Referencers: `3`
+- Decoded FiB focused token count: `0`
+- Raw package focused strings: `28`
+  - `/Game/UI/Components/StarSystemTOITooltip`
+  - `/Game/UI/FrontEnd/StarMap_MPC`
+  - `/Game/UI/FrontEnd/StarmapGamepadWidget`
+  - `/Game/UI/FrontEnd/StarMapPawn`
+  - `/Game/UI/FrontEnd/StarMapPawn.StarMapPawn`
+  - `BlueprintGeneratedClass`
+  - `Default__MWStarMapPawn`
+  - `Default__StarMapPawn_C`
+  - `GeneratedClass`
+  - `MWStarMapPawn`
+  - `NodePosY`
+  - `SavedViewOffset`
+  - `SavedZoomAmount`
+  - `StarMap_MPC`
+  - `StarmapGamepadWidget_C`
+  - `StarMapMaterialParams`
+  - `StarMapPawn`
+  - `StarMapPawn_C`
+  - `StarMapTooltipWidgetClass`
+  - `StarSystemTOITooltip_C`
+  - `WidgetBlueprintGeneratedClass`
+  - `ZoomDistanceList`
+  - `ZoomLevelThresholds`
+  - `/Game/UI/FrontEnd/StarMapPawn.StarMapPawn_C:SimpleConstructionScript_0.SCS_Node_0.CategoryName`
+  - `BlueprintGeneratedClass'/Game/UI/FrontEnd/StarMapPawn.StarMapPawn_C'`
+  - `Class'/Script/MechWarrior.MWStarMapPawn'`
+  - `@note Components on both this and the other Actor must have bGenerateOverlapEvents set to true to generate overlap events.`
+  - `StarMapPawn-1`
+
+## Discovered Focus Assets
+
+### `/Game/UI/Editor`
+- Exists: `True` count `9`
+- `/Game/UI/Editor/Utils/EUW_MigratePlaceClusterTOIsToClusterAssets.EUW_MigratePlaceClusterTOIsToClusterAssets`
+
+### `/Game/InnerSphereData`
+- Exists: `True` count `23`
+- `/Game/InnerSphereData/Archetypes/DeprecatedCelestialArchetypes.DeprecatedCelestialArchetypes`
+- `/Game/InnerSphereData/EdgeIndexListData.EdgeIndexListData`
+- `/Game/InnerSphereData/MW5_InnerSphereData.MW5_InnerSphereData`
+- `/Game/InnerSphereData/MechCon2017_Struct.MechCon2017_Struct`
+- `/Game/InnerSphereData/PlanetaryDescriptions.PlanetaryDescriptions`
+- `/Game/InnerSphereData/StarMapBP_UTILS.StarMapBP_UTILS`
+- `/Game/InnerSphereData/StarSystemEdgesData.StarSystemEdgesData`
+- `/Game/InnerSphereData/StarSystemGenerator.StarSystemGenerator`
+- `/Game/InnerSphereData/Updated/EmployerInfoData.EmployerInfoData`
+- `/Game/InnerSphereData/Updated/FactionAlliances.FactionAlliances`
+- `/Game/InnerSphereData/Updated/FactionAlliesSTRUCT.FactionAlliesSTRUCT`
+- `/Game/InnerSphereData/Updated/NearStarSummary_STRUCT.NearStarSummary_STRUCT`
+- `/Game/InnerSphereData/Updated/OrbitalAttribute_STRUCT.OrbitalAttribute_STRUCT`
+- `/Game/InnerSphereData/Updated/OrbitalBodyInfoData_STRUCT1.OrbitalBodyInfoData_STRUCT1`
+- `/Game/InnerSphereData/Updated/PlanetData_STRUCT.PlanetData_STRUCT`
+- `/Game/InnerSphereData/Updated/StarChargingStations.StarChargingStations`
+- `/Game/InnerSphereData/Updated/StarSystemData_STRUCT.StarSystemData_STRUCT`
+- `/Game/InnerSphereData/Updated/StarSystemHabitalCount.StarSystemHabitalCount`
+- `/Game/InnerSphereData/Updated/StarSystemOrbitalCount.StarSystemOrbitalCount`
+- `/Game/InnerSphereData/Updated/StarSystemOrbitalData.StarSystemOrbitalData`
+- `/Game/InnerSphereData/Updated/SystemFactionChanges.SystemFactionChanges`
+- `/Game/InnerSphereData/Updated/SystemPlanetaryInfo_STRUCT1.SystemPlanetaryInfo_STRUCT1`
+- `/Game/InnerSphereData/sername.SerName`
+
+### `/Game/UI/FrontEnd/Starmap`
+- Exists: `True` count `323`
+- `/Game/UI/FrontEnd/Starmap/AbstractStarSystem.AbstractStarSystem`
+- `/Game/UI/FrontEnd/Starmap/Astroids/asteroids_2.asteroids_2`
+- `/Game/UI/FrontEnd/Starmap/ClusterInfoPanel.ClusterInfoPanel`
+- `/Game/UI/FrontEnd/Starmap/Cluster_MTI.Cluster_MTI`
+- `/Game/UI/FrontEnd/Starmap/CurrentCourse_MTI.CurrentCourse_MTI`
+- `/Game/UI/FrontEnd/Starmap/CurrentLoc_PIP.CurrentLoc_PIP`
+- `/Game/UI/FrontEnd/Starmap/CurrentObj_PIP.CurrentObj_PIP`
+- `/Game/UI/FrontEnd/Starmap/Disc/disc.disc`
+- `/Game/UI/FrontEnd/Starmap/Enum/AtmosphericComposition.AtmosphericComposition`
+- `/Game/UI/FrontEnd/Starmap/Enum/MoonTypes.MoonTypes`
+- `/Game/UI/FrontEnd/Starmap/Enum/TerrestrialType.TerrestrialType`
+- `/Game/UI/FrontEnd/Starmap/FactionMeshes/3015_01_01_FactionMesh.3015_01_01_FactionMesh`
+- `/Game/UI/FrontEnd/Starmap/Materials/Atmosphere_MTI.Atmosphere_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Atmosphere_MTL.Atmosphere_MTL`
+- `/Game/UI/FrontEnd/Starmap/Materials/CelestialRing_MST.CelestialRing_MST`
+- `/Game/UI/FrontEnd/Starmap/Materials/Desert_MTL.Desert_MTL`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/CapellanConfederation_MTI.CapellanConfederation_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/ClusterZones_MTL.ClusterZones_MTL`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/ComStar_MTI.ComStar_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/DraconisCombine_MTI.DraconisCombine_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionBorder_FUNC.FactionBorder_FUNC`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionBorder_MTI.FactionBorder_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionBorder_MTL.FactionBorder_MTL`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionColours_MTF.FactionColours_MTF`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Faction_ClanInvasion_MTL.Faction_ClanInvasion_MTL`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Faction_ClanInvasion_PreCorridorMTI.Faction_ClanInvasion_PreCorridorMTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Faction_Colours_MPC.Faction_Colours_MPC`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Faction_MTL.Faction_MTL`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/FederatedCommonwealth_MTI.FederatedCommonwealth_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/FederatedSuns_MTI.FederatedSuns_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/FreeRasalhagueRepublic_MTI.FreeRasalhagueRepublic_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/FreeWorldsLeague_MTI.FreeWorldsLeague_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Indpendent.Indpendent`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/LyranCommonwealth_MTI.LyranCommonwealth_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/None_MTI.None_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Periphery.Periphery`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/SafezoneLine_MTI.SafezoneLine_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Safezone_MTI1.Safezone_MTI1`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/SystemSelection_MTI.SystemSelection_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Textures/Clouds_Starmap_MSK.Clouds_Starmap_MSK`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Textures/StarMapFogOverlay.StarMapFogOverlay`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Textures/StarMapFogOverlay_Highlight.StarMapFogOverlay_Highlight`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Textures/Stripe_CLR.Stripe_CLR`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Warzone_MTI.Warzone_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/FogOfWarRenderTarget.FogOfWarRenderTarget`
+- `/Game/UI/FrontEnd/Starmap/Materials/FogOfWarSplat_MTL.FogOfWarSplat_MTL`
+- `/Game/UI/FrontEnd/Starmap/Materials/FogOfWar_MTL.FogOfWar_MTL`
+- `/Game/UI/FrontEnd/Starmap/Materials/Functions/Biome_Generator_MTF.Biome_Generator_MTF`
+- `/Game/UI/FrontEnd/Starmap/Materials/Functions/CircularMask_MTF.CircularMask_MTF`
+- `/Game/UI/FrontEnd/Starmap/Materials/Functions/Clouds_MTF.Clouds_MTF`
+- `/Game/UI/FrontEnd/Starmap/Materials/Functions/Continents_MTF.Continents_MTF`
+- `/Game/UI/FrontEnd/Starmap/Materials/Functions/FindHeight_MTF.FindHeight_MTF`
+- `/Game/UI/FrontEnd/Starmap/Materials/Functions/NewMaterialFunction.NewMaterialFunction`
+- `/Game/UI/FrontEnd/Starmap/Materials/Functions/PolarCaps_MTF.PolarCaps_MTF`
+- `/Game/UI/FrontEnd/Starmap/Materials/Functions/PolarCoord_MTF.PolarCoord_MTF`
+- `/Game/UI/FrontEnd/Starmap/Materials/Functions/RingCoord_MTF.RingCoord_MTF`
+- `/Game/UI/FrontEnd/Starmap/Materials/Functions/SeamlessGeo_MTF.SeamlessGeo_MTF`
+- `/Game/UI/FrontEnd/Starmap/Materials/Functions/TileNormalToHeightmap.TileNormalToHeightmap`
+- `/Game/UI/FrontEnd/Starmap/Materials/Functions/UVSplit_MTF.UVSplit_MTF`
+- `/Game/UI/FrontEnd/Starmap/Materials/HoloTable_Nebula_MST.HoloTable_Nebula_MST`
+- `/Game/UI/FrontEnd/Starmap/Materials/Nebula_MST.Nebula_MST`
+- `/Game/UI/FrontEnd/Starmap/Materials/Nebula_Milky_Way_Material.Nebula_Milky_Way_Material`
+- `/Game/UI/FrontEnd/Starmap/Materials/Nebula_Milky_Way_Material_MTI.Nebula_Milky_Way_Material_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Orbital_MTL.Orbital_MTL`
+- `/Game/UI/FrontEnd/Starmap/Materials/RingA_MTL.RingA_MTL`
+- `/Game/UI/FrontEnd/Starmap/Materials/StarMap_Nebula_MST.StarMap_Nebula_MST`
+- `/Game/UI/FrontEnd/Starmap/Materials/Terrestrial_MST.Terrestrial_MST`
+- `/Game/UI/FrontEnd/Starmap/MaxTravelDistance_MTI.MaxTravelDistance_MTI`
+- `/Game/UI/FrontEnd/Starmap/MissionPanelWidget.MissionPanelWidget`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/Nebula.Nebula`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/Nebula_STM.Nebula_STM`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/Nebula_Sphere_STM.Nebula_Sphere_STM`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/ReverseSphere_STM.ReverseSphere_STM`
+- `/Game/UI/FrontEnd/Starmap/Nebulae/StarMap_Nebula.StarMap_Nebula`
+- `/Game/UI/FrontEnd/Starmap/PlanetSelectionRing.PlanetSelectionRing`
+- `/Game/UI/FrontEnd/Starmap/Planets/Biome_Types.Biome_Types`
+- `/Game/UI/FrontEnd/Starmap/Planets/Gas_Creator/Blueprints/GasPlanet_Holo_BP.GasPlanet_Holo_BP`
+- `/Game/UI/FrontEnd/Starmap/Planets/Gas_Creator/Blueprints/Gas_Planet_BP.Gas_Planet_BP`
+- `/Game/UI/FrontEnd/Starmap/Planets/Gas_Creator/Material_Functions/Storm_1_MTF.Storm_1_MTF`
+- `/Game/UI/FrontEnd/Starmap/Planets/Gas_Creator/Material_Instances/GasPlanet_MTI.GasPlanet_MTI`
+- `/Game/UI/FrontEnd/Starmap/Planets/Gas_Creator/Material_Instances/GasPlanet_Translucent_MTI.GasPlanet_Translucent_MTI`
+- `/Game/UI/FrontEnd/Starmap/Planets/Gas_Creator/Material_Instances/MI_Atmo.MI_Atmo`
+- `/Game/UI/FrontEnd/Starmap/Planets/Gas_Creator/Material_Instances/MI_Ring_1.MI_Ring_1`
+- `/Game/UI/FrontEnd/Starmap/Planets/Gas_Creator/Materials/GasPlanet_Holo_MTI.GasPlanet_Holo_MTI`
+- `/Game/UI/FrontEnd/Starmap/Planets/Gas_Creator/Materials/GasPlanet_MTL.GasPlanet_MTL`
+- `/Game/UI/FrontEnd/Starmap/Planets/Gas_Creator/Materials/M_Atmo.M_Atmo`
+- `/Game/UI/FrontEnd/Starmap/Planets/Gas_Creator/Materials/M_Ring_1.M_Ring_1`
+- `/Game/UI/FrontEnd/Starmap/Planets/Gas_Creator/Meshes/GasPlanet_STM.GasPlanet_STM`
+- `/Game/UI/FrontEnd/Starmap/Planets/Gas_Creator/Meshes/Mesh_Atmosphere.Mesh_Atmosphere`
+- `/Game/UI/FrontEnd/Starmap/Planets/Gas_Creator/Textures/Band_Maps/Bands_1_HGT.Bands_1_HGT`
+- `/Game/UI/FrontEnd/Starmap/Planets/Gas_Creator/Textures/Band_Maps/Bands_2_HGT.Bands_2_HGT`
+- `/Game/UI/FrontEnd/Starmap/Planets/Gas_Creator/Textures/Band_Maps/Bands_3_HGT.Bands_3_HGT`
+- `/Game/UI/FrontEnd/Starmap/Planets/Gas_Creator/Textures/Band_Maps/Bands_4_HGT.Bands_4_HGT`
+- `/Game/UI/FrontEnd/Starmap/Planets/Gas_Creator/Textures/Cloud_Masks/Noise_2_MSK.Noise_2_MSK`
+- `/Game/UI/FrontEnd/Starmap/Planets/Gas_Creator/Textures/Cloud_Masks/Noise_3_MSK.Noise_3_MSK`
+- `/Game/UI/FrontEnd/Starmap/Planets/Gas_Creator/Textures/Cloud_Masks/Smoke_1_MSK.Smoke_1_MSK`
+- `/Game/UI/FrontEnd/Starmap/Planets/Gas_Creator/Textures/Maps_Uncategorized/Map_1_MSK.Map_1_MSK`
+- `/Game/UI/FrontEnd/Starmap/Planets/Gas_Creator/Textures/Maps_Uncategorized/Map_2_MSK.Map_2_MSK`
+- `/Game/UI/FrontEnd/Starmap/Planets/Gas_Creator/Textures/Maps_Uncategorized/Polar_Spiral01_UV.Polar_Spiral01_UV`
+- `/Game/UI/FrontEnd/Starmap/Planets/Gas_Creator/Textures/Maps_Uncategorized/Polar_UV.Polar_UV`
+- `/Game/UI/FrontEnd/Starmap/Planets/Gas_Creator/Textures/Maps_Uncategorized/Pole_CLR.Pole_CLR`
+- `/Game/UI/FrontEnd/Starmap/Planets/Gas_Creator/Textures/Maps_Uncategorized/Spiral02_UV.Spiral02_UV`
+- `/Game/UI/FrontEnd/Starmap/Planets/Gas_Creator/Textures/Maps_Uncategorized/TimeMap_1_MSK.TimeMap_1_MSK`
+- `/Game/UI/FrontEnd/Starmap/Planets/Gas_Creator/Textures/Storm_Maps/Storm_1_UV.Storm_1_UV`
+- `/Game/UI/FrontEnd/Starmap/Planets/Gas_Creator/Textures/Storm_Maps/Storm_2_UV.Storm_2_UV`
+- `/Game/UI/FrontEnd/Starmap/Planets/Gas_Creator/Textures/Storm_Maps/Storm_3_UV.Storm_3_UV`
+- `/Game/UI/FrontEnd/Starmap/Planets/Planet_STM.Planet_STM`
+- `/Game/UI/FrontEnd/Starmap/Planets/Terrestrial.Terrestrial`
+- `/Game/UI/FrontEnd/Starmap/Planets/TerrestrialSatellite.TerrestrialSatellite`
+- `/Game/UI/FrontEnd/Starmap/Planets/Terrestrial_Creator/Enums/ETerrestrial_Biome.ETerrestrial_Biome`
+- `/Game/UI/FrontEnd/Starmap/Planets/Terrestrial_Creator/Materials/RockyPlanet_HoloTable_MTI.RockyPlanet_HoloTable_MTI`
+- `/Game/UI/FrontEnd/Starmap/Planets/Terrestrial_Creator/Materials/RockyPlanet_MTI.RockyPlanet_MTI`
+- `/Game/UI/FrontEnd/Starmap/Planets/Terrestrial_Creator/Materials/RockyPlanet_MTL.RockyPlanet_MTL`
+- `/Game/UI/FrontEnd/Starmap/Planets/Terrestrial_Creator/Materials/RockyPlanet_Translucent_MTI.RockyPlanet_Translucent_MTI`
+- `/Game/UI/FrontEnd/Starmap/Planets/Terrestrial_Creator/Textures/Cloud_Maps/Clouds_1_MSK.Clouds_1_MSK`
+- `/Game/UI/FrontEnd/Starmap/Planets/Terrestrial_Creator/Textures/Cloud_Maps/Clouds_2_MSK.Clouds_2_MSK`
+- `/Game/UI/FrontEnd/Starmap/Planets/Terrestrial_Creator/Textures/Cloud_Maps/Clouds_3_MSK.Clouds_3_MSK`
+- `/Game/UI/FrontEnd/Starmap/Planets/Terrestrial_Creator/Textures/Cloud_Maps/Clouds_4_MSK.Clouds_4_MSK`
+- `/Game/UI/FrontEnd/Starmap/Planets/Terrestrial_Creator/Textures/Cloud_Maps/Clouds_5_MSK.Clouds_5_MSK`
+- `/Game/UI/FrontEnd/Starmap/Planets/Terrestrial_Creator/Textures/Cloud_Maps/Clouds_6_MSK.Clouds_6_MSK`
+
+### `/Game/UI/FrontEnd`
+- Exists: `True` count `1245`
+- `/Game/UI/FrontEnd/Achievement/ach_border_frame_bright_gradientl.ach_border_frame_bright_gradientl`
+- `/Game/UI/FrontEnd/Achievement/ach_border_frame_full.ach_border_frame_full`
+- `/Game/UI/FrontEnd/Achievement/ach_border_frame_partial.ach_border_frame_partial`
+- `/Game/UI/FrontEnd/Achievement/achievement-window-border-solid.achievement-window-border-solid`
+- `/Game/UI/FrontEnd/Achievement/achievement-window-border.achievement-window-border`
+- `/Game/UI/FrontEnd/Backsplash/BacksplashBorder_MTI.BacksplashBorder_MTI`
+- `/Game/UI/FrontEnd/Backsplash/BacksplashBorder_MTL.BacksplashBorder_MTL`
+- `/Game/UI/FrontEnd/Backsplash/StarMapBackgroundStripes_MTI.StarMapBackgroundStripes_MTI`
+- `/Game/UI/FrontEnd/Backsplash/StarMapBackgroundStripes_MTL.StarMapBackgroundStripes_MTL`
+- `/Game/UI/FrontEnd/CinematicOverlay.CinematicOverlay`
+- `/Game/UI/FrontEnd/Codex/Entries/RivalMercenaries/RivalMercsNonAlignedFactions_CodexEntry.RivalMercsNonAlignedFactions_CodexEntry`
+- `/Game/UI/FrontEnd/Codex/Entries/StarMap/ClustersOverview_CodexEntry.ClustersOverview_CodexEntry`
+- `/Game/UI/FrontEnd/Codex/Entries/StarMap/Clusters_CodexSubCategory.Clusters_CodexSubCategory`
+- `/Game/UI/FrontEnd/Codex/Entries/StarMap/ConflictZones_CodexEntry.ConflictZones_CodexEntry`
+- `/Game/UI/FrontEnd/Codex/Entries/StarMap/IndustrialHubs_CodexEntry.IndustrialHubs_CodexEntry`
+- `/Game/UI/FrontEnd/Codex/Entries/StarMap/NavigatingTheStarmap_CodexEntry.NavigatingTheStarmap_CodexEntry`
+- `/Game/UI/FrontEnd/Codex/Entries/StarMap/NavigationAndTravel_CodexSubCategory.NavigationAndTravel_CodexSubCategory`
+- `/Game/UI/FrontEnd/Codex/Entries/StarMap/NeutralSystems_CodexEntry.NeutralSystems_CodexEntry`
+- `/Game/UI/FrontEnd/Codex/Entries/StarMap/StarMapClusters_Intro_CodexEntry.StarMapClusters_Intro_CodexEntry`
+- `/Game/UI/FrontEnd/Codex/Entries/StarMap/StarMapNavigating_Intro_CodexEntry.StarMapNavigating_Intro_CodexEntry`
+- `/Game/UI/FrontEnd/Codex/Entries/StarMap/StarmapCampaignMissions_CodexEntry.StarmapCampaignMissions_CodexEntry`
+- `/Game/UI/FrontEnd/Codex/Entries/StarMap/StarmapContracts_CodexSubCategory.StarmapContracts_CodexSubCategory`
+- `/Game/UI/FrontEnd/Codex/Entries/StarMap/StarmapHighRepQuests_CodexEntry.StarmapHighRepQuests_CodexEntry`
+- `/Game/UI/FrontEnd/Codex/Entries/StarMap/StarmapRivalMercs.StarmapRivalMercs`
+- `/Game/UI/FrontEnd/Codex/Entries/StarMap/StarmapRivalMercsInterventionsCodexEntry.StarmapRivalMercsInterventionsCodexEntry`
+- `/Game/UI/FrontEnd/Codex/Entries/StarMap/StarmapRivalMercsTerritoriesCodexEntry.StarmapRivalMercsTerritoriesCodexEntry`
+- `/Game/UI/FrontEnd/Codex/Entries/StarMap/StarmapRivalMercs_CodexEntry.StarmapRivalMercs_CodexEntry`
+- `/Game/UI/FrontEnd/Codex/Entries/StarMap/StarmapStandardContracts_CodexEntry.StarmapStandardContracts_CodexEntry`
+- `/Game/UI/FrontEnd/Codex/Entries/StarMap/Starmap_CodexSubCategory.Starmap_CodexSubCategory`
+- `/Game/UI/FrontEnd/Codex/Entries/StarMap/Travel_CodexEntry.Travel_CodexEntry`
+- `/Game/UI/FrontEnd/Components/Buttons/StarmapTravelCallouts.StarmapTravelCallouts`
+- `/Game/UI/FrontEnd/Components/CareerProgressOverlayWidget.CareerProgressOverlayWidget`
+- `/Game/UI/FrontEnd/Components/FactionBarBorder_MTI.FactionBarBorder_MTI`
+- `/Game/UI/FrontEnd/Components/FactionRepBar_MTL.FactionRepBar_MTL`
+- `/Game/UI/FrontEnd/Components/FactionStandingBar.FactionStandingBar`
+- `/Game/UI/FrontEnd/Components/MWBorderWidget.MWBorderWidget`
+- `/Game/UI/FrontEnd/Components/MiniFactionRepBar.MiniFactionRepBar`
+- `/Game/UI/FrontEnd/Components/NewFactionStandingBar.NewFactionStandingBar`
+- `/Game/UI/FrontEnd/Components/PortraitBorder_MTI.PortraitBorder_MTI`
+- `/Game/UI/FrontEnd/Components/SaveMechDialogBox.SaveMechDialogBox`
+- `/Game/UI/FrontEnd/Contracts/ContractBorderImage_MTL.ContractBorderImage_MTL`
+- `/Game/UI/FrontEnd/Contracts/ContractBorderImage_ParentFaction_MTI.ContractBorderImage_ParentFaction_MTI`
+- `/Game/UI/FrontEnd/Contracts/ContractFactionIcon.ContractFactionIcon`
+- `/Game/UI/FrontEnd/Coop/CrossplayInviteOverlay.CrossplayInviteOverlay`
+- `/Game/UI/FrontEnd/FactionSelect/FactionBackground_MTI.FactionBackground_MTI`
+- `/Game/UI/FrontEnd/FactionSelect/FactionBackground_STM.FactionBackground_STM`
+- `/Game/UI/FrontEnd/FactionSelect/FactionInfoPanel.FactionInfoPanel`
+- `/Game/UI/FrontEnd/FactionSelect/FactionSelectObject.FactionSelectObject`
+- `/Game/UI/FrontEnd/FactionSelect/FactionSelectSceneManager.FactionSelectSceneManager`
+- `/Game/UI/FrontEnd/FactionSelect/PlayerOriginFactionSelectScreen.PlayerOriginFactionSelectScreen`
+- `/Game/UI/FrontEnd/FactionSelect/PlayerOriginInfoPanel.PlayerOriginInfoPanel`
+- `/Game/UI/FrontEnd/FactionSelect/PlayerOriginMechList.PlayerOriginMechList`
+- `/Game/UI/FrontEnd/FactionSelect/PlayerOriginMechListItem.PlayerOriginMechListItem`
+- `/Game/UI/FrontEnd/FactionSelect/PlayerOriginStartList.PlayerOriginStartList`
+- `/Game/UI/FrontEnd/FactionSelect/PlayerOriginStartLogo.PlayerOriginStartLogo`
+- `/Game/UI/FrontEnd/FactionSelect/PreLaunchBriefSceneManager.PreLaunchBriefSceneManager`
+- `/Game/UI/FrontEnd/FactionSelect/StartConditionItemStruct.StartConditionItemStruct`
+- `/Game/UI/FrontEnd/FactionSelect/StartLocationMediaPlayer.StartLocationMediaPlayer`
+- `/Game/UI/FrontEnd/FactionSelect/StartLocationMediaPlayer_Tex.StartLocationMediaPlayer_Tex`
+- `/Game/UI/FrontEnd/FactionSelect/UIFactionBackground_MTI.UIFactionBackground_MTI`
+- `/Game/UI/FrontEnd/HomeScreen/HomeScreenClusterInfoItem.HomeScreenClusterInfoItem`
+- `/Game/UI/FrontEnd/HomeScreen/HomeScreenToIPanel.HomeScreenToIPanel`
+- `/Game/UI/FrontEnd/HomeScreen/HomeScreenToiListItem.HomeScreenToiListItem`
+- `/Game/UI/FrontEnd/HomeScreen/MenuPanel/ButtonLogic/HomeButtonLogic_Starmap.HomeButtonLogic_Starmap`
+- `/Game/UI/FrontEnd/HomeScreen/MenuPanel/ButtonLogic/HomeButtonLogic_Toi.HomeButtonLogic_Toi`
+- `/Game/UI/FrontEnd/HomeScreen/MenuPanel/HomeMenuButtonBorder_MTI.HomeMenuButtonBorder_MTI`
+- `/Game/UI/FrontEnd/HomeScreen/MenuPanel/HomeMenuButtonBorder_MTL.HomeMenuButtonBorder_MTL`
+- `/Game/UI/FrontEnd/Materials/Anim_Screen_Overlay_MTL.Anim_Screen_Overlay_MTL`
+- `/Game/UI/FrontEnd/Mechlab/Textures/Slot_text_overlay_UIX.Slot_text_overlay_UIX`
+- `/Game/UI/FrontEnd/Operations/FactionStandingsWidget.FactionStandingsWidget`
+- `/Game/UI/FrontEnd/Operations/MechDex/ChassisFactionRarity.ChassisFactionRarity`
+- `/Game/UI/FrontEnd/Operations/OperationsFactionItem.OperationsFactionItem`
+- `/Game/UI/FrontEnd/Operations/OperationsFactionItemBackdrop_MTL.OperationsFactionItemBackdrop_MTL`
+- `/Game/UI/FrontEnd/Operations/OperationsFactionList.OperationsFactionList`
+- `/Game/UI/FrontEnd/StarMapPawn.StarMapPawn`
+- `/Game/UI/FrontEnd/StarMapWidgetEnum.StarMapWidgetEnum`
+- `/Game/UI/FrontEnd/StarMap_MPC.StarMap_MPC`
+- `/Game/UI/FrontEnd/StarSystemLoadScreen.StarSystemLoadScreen`
+- `/Game/UI/FrontEnd/StarSystemScreen.StarSystemScreen`
+- `/Game/UI/FrontEnd/Starmap/AbstractStarSystem.AbstractStarSystem`
+- `/Game/UI/FrontEnd/Starmap/Astroids/asteroids_2.asteroids_2`
+- `/Game/UI/FrontEnd/Starmap/ClusterInfoPanel.ClusterInfoPanel`
+- `/Game/UI/FrontEnd/Starmap/Cluster_MTI.Cluster_MTI`
+- `/Game/UI/FrontEnd/Starmap/CurrentCourse_MTI.CurrentCourse_MTI`
+- `/Game/UI/FrontEnd/Starmap/CurrentLoc_PIP.CurrentLoc_PIP`
+- `/Game/UI/FrontEnd/Starmap/CurrentObj_PIP.CurrentObj_PIP`
+- `/Game/UI/FrontEnd/Starmap/Disc/disc.disc`
+- `/Game/UI/FrontEnd/Starmap/Enum/AtmosphericComposition.AtmosphericComposition`
+- `/Game/UI/FrontEnd/Starmap/Enum/MoonTypes.MoonTypes`
+- `/Game/UI/FrontEnd/Starmap/Enum/TerrestrialType.TerrestrialType`
+- `/Game/UI/FrontEnd/Starmap/FactionMeshes/3015_01_01_FactionMesh.3015_01_01_FactionMesh`
+- `/Game/UI/FrontEnd/Starmap/Materials/Atmosphere_MTI.Atmosphere_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Atmosphere_MTL.Atmosphere_MTL`
+- `/Game/UI/FrontEnd/Starmap/Materials/CelestialRing_MST.CelestialRing_MST`
+- `/Game/UI/FrontEnd/Starmap/Materials/Desert_MTL.Desert_MTL`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/CapellanConfederation_MTI.CapellanConfederation_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/ClusterZones_MTL.ClusterZones_MTL`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/ComStar_MTI.ComStar_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/DraconisCombine_MTI.DraconisCombine_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionBorder_FUNC.FactionBorder_FUNC`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionBorder_MTI.FactionBorder_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionBorder_MTL.FactionBorder_MTL`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionColours_MTF.FactionColours_MTF`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Faction_ClanInvasion_MTL.Faction_ClanInvasion_MTL`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Faction_ClanInvasion_PreCorridorMTI.Faction_ClanInvasion_PreCorridorMTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Faction_Colours_MPC.Faction_Colours_MPC`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Faction_MTL.Faction_MTL`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/FederatedCommonwealth_MTI.FederatedCommonwealth_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/FederatedSuns_MTI.FederatedSuns_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/FreeRasalhagueRepublic_MTI.FreeRasalhagueRepublic_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/FreeWorldsLeague_MTI.FreeWorldsLeague_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Indpendent.Indpendent`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/LyranCommonwealth_MTI.LyranCommonwealth_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/None_MTI.None_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Periphery.Periphery`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/SafezoneLine_MTI.SafezoneLine_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Safezone_MTI1.Safezone_MTI1`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/SystemSelection_MTI.SystemSelection_MTI`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Textures/Clouds_Starmap_MSK.Clouds_Starmap_MSK`
+- `/Game/UI/FrontEnd/Starmap/Materials/Factions/Textures/StarMapFogOverlay.StarMapFogOverlay`
+
+### `/Game/Campaign/Clusters`
+- Exists: `True` count `261`
+- `/Game/Campaign/Clusters/A2M1/A2M1.A2M1`
+- `/Game/Campaign/Clusters/A2M1/A2M1_ClusterAsset.A2M1_ClusterAsset`
+- `/Game/Campaign/Clusters/A2M2/A2M2.A2M2`
+- `/Game/Campaign/Clusters/A2M2/A2M2_ClusterAsset.A2M2_ClusterAsset`
+- `/Game/Campaign/Clusters/A2M2/TheJunkyard.TheJunkyard`
+- `/Game/Campaign/Clusters/A2M3/A2M3.A2M3`
+- `/Game/Campaign/Clusters/A2M3/A2M3_ClusterAsset.A2M3_ClusterAsset`
+- `/Game/Campaign/Clusters/A2M3/AgriculturalBelt.AgriculturalBelt`
+- `/Game/Campaign/Clusters/Alarion/15_2.15_2`
+- `/Game/Campaign/Clusters/Alarion/AlarionPeriphery.AlarionPeriphery`
+- `/Game/Campaign/Clusters/Alarion/Alarion_ClusterAsset.Alarion_ClusterAsset`
+- `/Game/Campaign/Clusters/BackwaterRegion/8_4.8_4`
+- `/Game/Campaign/Clusters/BackwaterRegion/BackwaterRegion.BackwaterRegion`
+- `/Game/Campaign/Clusters/BackwaterRegion/BackwaterRegion_ClusterAsset.BackwaterRegion_ClusterAsset`
+- `/Game/Campaign/Clusters/Davion-KuritaFrontline/5_1_Mesh.5_1_Mesh`
+- `/Game/Campaign/Clusters/Davion-KuritaFrontline/Davion-KuritaFrontline_ClusterAsset.Davion-KuritaFrontline_ClusterAsset`
+- `/Game/Campaign/Clusters/Davion-KuritaFrontline/DavionKurita_1.DavionKurita_1`
+- `/Game/Campaign/Clusters/DavionBorderlands/6_2_Mesh.6_2_Mesh`
+- `/Game/Campaign/Clusters/DavionBorderlands/DavionBorderlands.DavionBorderlands`
+- `/Game/Campaign/Clusters/DavionBorderlands/DavionBorderlands_ClusterAsset.DavionBorderlands_ClusterAsset`
+- `/Game/Campaign/Clusters/DraconisBadlands/13_1.13_1`
+- `/Game/Campaign/Clusters/DraconisBadlands/DraconisBadlands_ClusterAsset.DraconisBadlands_ClusterAsset`
+- `/Game/Campaign/Clusters/DraconisBadlands/KuritanBadlands.KuritanBadlands`
+- `/Game/Campaign/Clusters/DroughtWorlds/13_2.13_2`
+- `/Game/Campaign/Clusters/DroughtWorlds/DroughtWorlds.DroughtWorlds`
+- `/Game/Campaign/Clusters/DroughtWorlds/DroughtWorlds_ClusterAsset.DroughtWorlds_ClusterAsset`
+- `/Game/Campaign/Clusters/DuchyOfAndurien/8_3.8_3`
+- `/Game/Campaign/Clusters/DuchyOfAndurien/DuchyOfAndurien_ClusterAsset.DuchyOfAndurien_ClusterAsset`
+- `/Game/Campaign/Clusters/DuchyOfAndurien/DutchyOfAndurien.DutchyOfAndurien`
+- `/Game/Campaign/Clusters/DuchyOfTamarind/10_2.10_2`
+- `/Game/Campaign/Clusters/DuchyOfTamarind/DuchyOfTamarind_ClusterAsset.DuchyOfTamarind_ClusterAsset`
+- `/Game/Campaign/Clusters/DuchyOfTamarind/TamarindAbbey.TamarindAbbey`
+- `/Game/Campaign/Clusters/DuchyOfTsitsang/7_2_Mesh.7_2_Mesh`
+- `/Game/Campaign/Clusters/DuchyOfTsitsang/DuchyOfTsitsang_ClusterAsset.DuchyOfTsitsang_ClusterAsset`
+- `/Game/Campaign/Clusters/DuchyOfTsitsang/TsinghaiCommonality.TsinghaiCommonality`
+- `/Game/Campaign/Clusters/FWL_ShippingLane/10_1.10_1`
+- `/Game/Campaign/Clusters/FWL_ShippingLane/FWLShippingRoute.FWLShippingRoute`
+- `/Game/Campaign/Clusters/FWL_ShippingLane/FWL_ShippingLane_ClusterAsset.FWL_ShippingLane_ClusterAsset`
+- `/Game/Campaign/Clusters/FreeWorldCommerceHub/9_4.9_4`
+- `/Game/Campaign/Clusters/FreeWorldCommerceHub/FWLInterior.FWLInterior`
+- `/Game/Campaign/Clusters/FreeWorldCommerceHub/FreeWorldCommerceHub_ClusterAsset.FreeWorldCommerceHub_ClusterAsset`
+- `/Game/Campaign/Clusters/FreeWorldInterior/9_3.9_3`
+- `/Game/Campaign/Clusters/FreeWorldInterior/FWLCommercialHub.FWLCommercialHub`
+- `/Game/Campaign/Clusters/FreeWorldInterior/FreeWorldInterior_ClusterAsset.FreeWorldInterior_ClusterAsset`
+- `/Game/Campaign/Clusters/HerotitusZone/Herotitus.Herotitus`
+- `/Game/Campaign/Clusters/HerotitusZone/HerotitusZone_ClusterAsset.HerotitusZone_ClusterAsset`
+- `/Game/Campaign/Clusters/IndustrialHub_1/IndustrialHub_1_ClusterAsset.IndustrialHub_1_ClusterAsset`
+- `/Game/Campaign/Clusters/IndustrialHub_1/RepairSystem_1.RepairSystem_1`
+- `/Game/Campaign/Clusters/IndustrialHub_1/Safezone_1.Safezone_1`
+- `/Game/Campaign/Clusters/IndustrialHub_1/Safezone_1_Blob.Safezone_1_Blob`
+- `/Game/Campaign/Clusters/IndustrialHub_10/IndustrialHub_10_ClusterAsset.IndustrialHub_10_ClusterAsset`
+- `/Game/Campaign/Clusters/IndustrialHub_10/RepairSystem_11.RepairSystem_11`
+- `/Game/Campaign/Clusters/IndustrialHub_10/Safezone_10.Safezone_10`
+- `/Game/Campaign/Clusters/IndustrialHub_10/Safezone_10_Blob.Safezone_10_Blob`
+- `/Game/Campaign/Clusters/IndustrialHub_11/IndustrialHub_11_ClusterAsset.IndustrialHub_11_ClusterAsset`
+- `/Game/Campaign/Clusters/IndustrialHub_11/RepairSystem_12.RepairSystem_12`
+- `/Game/Campaign/Clusters/IndustrialHub_11/Safezone_11.Safezone_11`
+- `/Game/Campaign/Clusters/IndustrialHub_11/Safezone_11_Blob.Safezone_11_Blob`
+- `/Game/Campaign/Clusters/IndustrialHub_12/IndustrialHub_12_ClusterAsset.IndustrialHub_12_ClusterAsset`
+- `/Game/Campaign/Clusters/IndustrialHub_12/RepairSystem_14.RepairSystem_14`
+- `/Game/Campaign/Clusters/IndustrialHub_12/Safezone_12.Safezone_12`
+- `/Game/Campaign/Clusters/IndustrialHub_12/Safezone_12_Blob.Safezone_12_Blob`
+- `/Game/Campaign/Clusters/IndustrialHub_13/IndustrialHub_13_ClusterAsset.IndustrialHub_13_ClusterAsset`
+- `/Game/Campaign/Clusters/IndustrialHub_13/RepairSystem_13.RepairSystem_13`
+- `/Game/Campaign/Clusters/IndustrialHub_13/Safezone_13.Safezone_13`
+- `/Game/Campaign/Clusters/IndustrialHub_13/Safezone_13_Blob.Safezone_13_Blob`
+- `/Game/Campaign/Clusters/IndustrialHub_14/IndustrialHub_14_ClusterAsset.IndustrialHub_14_ClusterAsset`
+- `/Game/Campaign/Clusters/IndustrialHub_14/RepairSystem_15.RepairSystem_15`
+- `/Game/Campaign/Clusters/IndustrialHub_14/Safezone_14.Safezone_14`
+- `/Game/Campaign/Clusters/IndustrialHub_14/Safezone_14_Blob.Safezone_14_Blob`
+- `/Game/Campaign/Clusters/IndustrialHub_15/IndustrialHub_15_ClusterAsset.IndustrialHub_15_ClusterAsset`
+- `/Game/Campaign/Clusters/IndustrialHub_15/RepairSystem_16.RepairSystem_16`
+- `/Game/Campaign/Clusters/IndustrialHub_15/Safezone_15.Safezone_15`
+- `/Game/Campaign/Clusters/IndustrialHub_15/Safezone_15_Blob.Safezone_15_Blob`
+- `/Game/Campaign/Clusters/IndustrialHub_16/IndustrialHub_16_ClusterAsset.IndustrialHub_16_ClusterAsset`
+- `/Game/Campaign/Clusters/IndustrialHub_16/RepairSystem_18.RepairSystem_18`
+- `/Game/Campaign/Clusters/IndustrialHub_16/Safezone_16.Safezone_16`
+- `/Game/Campaign/Clusters/IndustrialHub_16/Safezone_16_Blob.Safezone_16_Blob`
+- `/Game/Campaign/Clusters/IndustrialHub_17/IndustrialHub_17_ClusterAsset.IndustrialHub_17_ClusterAsset`
+- `/Game/Campaign/Clusters/IndustrialHub_17/RepairSystem_17.RepairSystem_17`
+- `/Game/Campaign/Clusters/IndustrialHub_17/Safezone_17.Safezone_17`
+- `/Game/Campaign/Clusters/IndustrialHub_17/Safezone_17_Blob.Safezone_17_Blob`
+- `/Game/Campaign/Clusters/IndustrialHub_18/IndustrialHub_18_ClusterAsset.IndustrialHub_18_ClusterAsset`
+- `/Game/Campaign/Clusters/IndustrialHub_18/RepairSystem_19.RepairSystem_19`
+- `/Game/Campaign/Clusters/IndustrialHub_18/Safezone_18.Safezone_18`
+- `/Game/Campaign/Clusters/IndustrialHub_18/Safezone_18_Blob.Safezone_18_Blob`
+- `/Game/Campaign/Clusters/IndustrialHub_19/IndustrialHub_19_ClusterAsset.IndustrialHub_19_ClusterAsset`
+- `/Game/Campaign/Clusters/IndustrialHub_19/RepairSystem_7.RepairSystem_7`
+- `/Game/Campaign/Clusters/IndustrialHub_19/Safezone_7.Safezone_7`
+- `/Game/Campaign/Clusters/IndustrialHub_19/Safezone_7_Blob.Safezone_7_Blob`
+- `/Game/Campaign/Clusters/IndustrialHub_2/IndustrialHub_2_ClusterAsset.IndustrialHub_2_ClusterAsset`
+- `/Game/Campaign/Clusters/IndustrialHub_2/RepairSystem_2.RepairSystem_2`
+- `/Game/Campaign/Clusters/IndustrialHub_2/Safezone_2.Safezone_2`
+- `/Game/Campaign/Clusters/IndustrialHub_2/Safezone_2_Blob.Safezone_2_Blob`
+- `/Game/Campaign/Clusters/IndustrialHub_20/IndustrialHub_20_ClusterAsset.IndustrialHub_20_ClusterAsset`
+- `/Game/Campaign/Clusters/IndustrialHub_20/RepairSystem_21.RepairSystem_21`
+- `/Game/Campaign/Clusters/IndustrialHub_20/Safezone2.Safezone2`
+- `/Game/Campaign/Clusters/IndustrialHub_20/Safezone2_Collision.Safezone2_Collision`
+- `/Game/Campaign/Clusters/IndustrialHub_21/IndustrialHub_21_ClusterAsset.IndustrialHub_21_ClusterAsset`
+- `/Game/Campaign/Clusters/IndustrialHub_21/RepairSystem_22.RepairSystem_22`
+- `/Game/Campaign/Clusters/IndustrialHub_21/Safezone3.Safezone3`
+- `/Game/Campaign/Clusters/IndustrialHub_21/Safezone3_Collision.Safezone3_Collision`
+- `/Game/Campaign/Clusters/IndustrialHub_22/IndustrialHub_22_ClusterAsset.IndustrialHub_22_ClusterAsset`
+- `/Game/Campaign/Clusters/IndustrialHub_22/RepairSystem_23.RepairSystem_23`
+- `/Game/Campaign/Clusters/IndustrialHub_22/Safezone4.Safezone4`
+- `/Game/Campaign/Clusters/IndustrialHub_22/Safezone4_Collision.Safezone4_Collision`
+- `/Game/Campaign/Clusters/IndustrialHub_23/IndustrialHub_23_ClusterAsset.IndustrialHub_23_ClusterAsset`
+- `/Game/Campaign/Clusters/IndustrialHub_23/RepairSystem_24.RepairSystem_24`
+- `/Game/Campaign/Clusters/IndustrialHub_23/Safezone5.Safezone5`
+- `/Game/Campaign/Clusters/IndustrialHub_23/Safezone5_Collision.Safezone5_Collision`
+- `/Game/Campaign/Clusters/IndustrialHub_24/IndustrialHub_24_ClusterAsset.IndustrialHub_24_ClusterAsset`
+- `/Game/Campaign/Clusters/IndustrialHub_24/RepairSystem_25.RepairSystem_25`
+- `/Game/Campaign/Clusters/IndustrialHub_24/Safezone6.Safezone6`
+- `/Game/Campaign/Clusters/IndustrialHub_24/Safezone6_Collision.Safezone6_Collision`
+- `/Game/Campaign/Clusters/IndustrialHub_25/IndustrialHub_25_ClusterAsset.IndustrialHub_25_ClusterAsset`
+- `/Game/Campaign/Clusters/IndustrialHub_25/RepairSystem_20.RepairSystem_20`
+- `/Game/Campaign/Clusters/IndustrialHub_25/Safezone1.Safezone1`
+- `/Game/Campaign/Clusters/IndustrialHub_25/Safezone1_Collision.Safezone1_Collision`
+- `/Game/Campaign/Clusters/IndustrialHub_26/IndustrialHub_26_ClusterAsset.IndustrialHub_26_ClusterAsset`
+- `/Game/Campaign/Clusters/IndustrialHub_26/RepairSystem_26.RepairSystem_26`

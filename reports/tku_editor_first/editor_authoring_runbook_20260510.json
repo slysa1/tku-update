@@ -1,0 +1,50 @@
+{
+  "build_authorized": false,
+  "generated_utc": "2026-05-10T12:40:00Z",
+  "mod_target": {
+    "existing_target_found": false,
+    "manual_create_mod_required": true,
+    "suggested_name": "TKUCompatEditorPatch"
+  },
+  "non_mutating": true,
+  "guide_evidence": {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\MW5Mercs_Mod_Editor_Guide_(v2.3).pdf",
+    "notes": [
+      "Create Mod builds required mod folder structure.",
+      "Save To Mod duplicates existing game assets into ModOverride for the active mod.",
+      "Package Mod is run through Manage Mod.",
+      "ModOverride assets must preserve the original folder structure.",
+      "Copied custom DataTables can live in mod content when affected assets are pointed at them."
+    ]
+  },
+  "preferred_data_candidate": {
+    "path": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\reports\\tku_editor_first\\tku_inner_sphere_merged_current_plus_tku_additions_20260510.csv",
+    "row_count": 3974,
+    "reason": "Preserves current MW5 v1.13 rows and descriptions while adding TKU-only systems."
+  },
+  "runtime_pak_authorized": false,
+  "starmap_generation": {
+    "actor_class": "/Game/UI/FrontEnd/Starmap/StarSystemBody.StarSystemBody_C",
+    "level_source": "/Game/Levels/FrontEnd/StarMap",
+    "location_formula": {
+      "x": "51336 + 8 * PosY",
+      "y": "51039 + 8 * PosX",
+      "z": "0"
+    }
+  },
+  "blocked_sources": [
+    "old TKU StarMap.umap",
+    "old TKU StarMapActor",
+    "old TKU StarSystemBody",
+    "old TKU StarMapPawn",
+    "old TKU BaseStarMapBorderActor",
+    "old TKU dated border actor cooked substitutions",
+    "quarantined failed builds"
+  ],
+  "cluster_policy_blockers": [
+    "TKU RepairSystem is generic and splits across many current RepairSystem_* clusters.",
+    "TKU CareerCluster is generic and maps to current rows with no active CSV cluster.",
+    "ClanConflict and Clan/custom repair rows are absent from current runtime CSV.",
+    "Most old TKU overlay soft paths are absent from current content and original TKU pak."
+  ]
+}

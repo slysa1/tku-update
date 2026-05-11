@@ -1,0 +1,30 @@
+{
+  "created_at": "2026-05-10T19:47:38",
+  "mod_root": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\TKUEvidenceStartBorderCompat",
+  "pak_path": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\TKUEvidenceStartBorderCompat\\Paks\\TKUEvidenceStartBorderCompat.pak",
+  "pak_size": 9670,
+  "file_count": 6,
+  "sources": {
+    "game_pak": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Content\\Paks\\MW5Mercs-WindowsNoEditor.pak"
+  },
+  "included_from_vanilla": [
+    "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.uasset",
+    "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.uexp",
+    "/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.uasset",
+    "/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.uexp",
+    "/Game/Campaign/CampaignArcs/BorderChanges/AllStarMapBorderChanges.uasset",
+    "/Game/Campaign/CampaignArcs/BorderChanges/AllStarMapBorderChanges.uexp"
+  ],
+  "expected_result": "Progress past Davion loading if TKU old start-border chain caused the hard stall.",
+  "known_limit": "Full TKU historical territory overlays still require current-schema reconstruction.",
+  "runtime_result": {
+    "status": "failed",
+    "profile": "TheKnownUniverse + TKUEvidenceStarmapCompat + TKUEvidenceStartBorderCompat",
+    "error": "LowLevelFatalError [File:Unknown] [Line: 3146] Could not find SuperStruct BaseStarMapBorderActor_C to create StarMapActor_2570_C",
+    "crash_folder": "C:\\Users\\dogpe\\AppData\\Local\\MW5Mercs\\Saved\\Crashes\\UE4CC-Windows-087ADFB744721A7DFFAFE5A08D1F5254_0000",
+    "call_stack_hash": "6B39ADBEAC4A925A9AA74C71905744CB2C6A6097",
+    "seconds_since_start": 34,
+    "rollback": "TKUEvidenceStartBorderCompat disabled in modlist.json",
+    "interpretation": "Direct cooked vanilla border reassertion is unsafe; border assets need editor-authored reconstruction/reparenting or exclusion."
+  }
+}

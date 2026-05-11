@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.tmp
+*.log
+config/tku_paths.local.json
+.claude/settings.local.json
+reports/**/.cache/
+tools/**/__pycache__/

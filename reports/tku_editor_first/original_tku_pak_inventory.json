@@ -1,0 +1,1578 @@
+{
+  "source_pak": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\TheKnownUniverse\\Paks\\TheKnownUniverse.pak",
+  "mount_point": "../../../MW5Mercs/",
+  "pak_version": 11,
+  "entry_count": 2709,
+  "compressed_or_encrypted_entries": 0,
+  "extension_counts": {
+    ".bin": 1,
+    ".ini": 2,
+    ".uasset": 1314,
+    ".ubulk": 76,
+    ".uexp": 1315,
+    ".umap": 1
+  },
+  "prefix_counts": {
+    "/": 2,
+    "/Game/Campaign": 10,
+    "/Game/Employers": 216,
+    "/Game/Factions": 34,
+    "/Game/InnerSphereData": 6,
+    "/Game/Levels": 2,
+    "/Game/Libraries": 2,
+    "/Game/UI": 12,
+    "/Plugins": 1,
+    "/Plugins/TheKnownUniverse/Content/2864-01-01": 68,
+    "/Plugins/TheKnownUniverse/Content/3025-01-01": 64,
+    "/Plugins/TheKnownUniverse/Content/3030-01-01": 68,
+    "/Plugins/TheKnownUniverse/Content/3034-01-01": 70,
+    "/Plugins/TheKnownUniverse/Content/3040-01-01": 66,
+    "/Plugins/TheKnownUniverse/Content/3049-09-01": 72,
+    "/Plugins/TheKnownUniverse/Content/3050-04-01": 72,
+    "/Plugins/TheKnownUniverse/Content/3050-06-01": 72,
+    "/Plugins/TheKnownUniverse/Content/3050-08-01": 72,
+    "/Plugins/TheKnownUniverse/Content/3050-10-01": 72,
+    "/Plugins/TheKnownUniverse/Content/3052-01-01": 72,
+    "/Plugins/TheKnownUniverse/Content/3057-01-01": 72,
+    "/Plugins/TheKnownUniverse/Content/3058-01-01": 74,
+    "/Plugins/TheKnownUniverse/Content/3059-01-01": 72,
+    "/Plugins/TheKnownUniverse/Content/3059-04-01": 72,
+    "/Plugins/TheKnownUniverse/Content/3059-08-01": 72,
+    "/Plugins/TheKnownUniverse/Content/3060-01-01": 72,
+    "/Plugins/TheKnownUniverse/Content/3063-01-01": 68,
+    "/Plugins/TheKnownUniverse/Content/3067-01-01": 66,
+    "/Plugins/TheKnownUniverse/Content/3068-01-01": 64,
+    "/Plugins/TheKnownUniverse/Content/3075-01-01": 66,
+    "/Plugins/TheKnownUniverse/Content/3079-01-01": 68,
+    "/Plugins/TheKnownUniverse/Content/3081-01-01": 72,
+    "/Plugins/TheKnownUniverse/Content/3085-01-01": 68,
+    "/Plugins/TheKnownUniverse/Content/3095-01-01": 72,
+    "/Plugins/TheKnownUniverse/Content/3130-01-01": 64,
+    "/Plugins/TheKnownUniverse/Content/3135-01-01": 66,
+    "/Plugins/TheKnownUniverse/Content/3145-01-01": 62,
+    "/Plugins/TheKnownUniverse/Content/3151-01-01": 60,
+    "/Plugins/TheKnownUniverse/Content/Employers": 12,
+    "/Plugins/TheKnownUniverse/Content/FactionColorMangle_MTF.uasset": 1,
+    "/Plugins/TheKnownUniverse/Content/FactionColorMangle_MTF.uexp": 1,
+    "/Plugins/TheKnownUniverse/Content/FactionColorMap.uasset": 1,
+    "/Plugins/TheKnownUniverse/Content/FactionColorMap.uexp": 1,
+    "/Plugins/TheKnownUniverse/Content/FactionMPC.uasset": 1,
+    "/Plugins/TheKnownUniverse/Content/FactionMPC.uexp": 1,
+    "/Plugins/TheKnownUniverse/Content/Factions": 372,
+    "/Plugins/TheKnownUniverse/Content/Regions": 34,
+    "/Plugins/TheKnownUniverse/Content/TKUColorMap.uasset": 1,
+    "/Plugins/TheKnownUniverse/Content/TKUColorMap.uexp": 1
+  },
+  "path_categories": {
+    "modern_cluster_assets": {
+      "count": 0,
+      "sample": []
+    },
+    "cluster_named_assets": {
+      "count": 2,
+      "sample": [
+        "/Plugins/TheKnownUniverse/Content/Regions/War/CareerModeCustomClusters.uasset",
+        "/Plugins/TheKnownUniverse/Content/Regions/War/CareerModeCustomClusters.uexp"
+      ]
+    },
+    "starmap_assets": {
+      "count": 134,
+      "sample": [
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.uasset",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.uexp",
+        "/Game/Campaign/CampaignArcs/BorderChanges/AllStarMapBorderChanges.uasset",
+        "/Game/Campaign/CampaignArcs/BorderChanges/AllStarMapBorderChanges.uexp",
+        "/Game/Levels/FrontEnd/StarMap.uexp",
+        "/Game/Levels/FrontEnd/StarMap.umap",
+        "/Game/UI/FrontEnd/Starmap/Materials/Factions/Faction_MTL.uasset",
+        "/Game/UI/FrontEnd/Starmap/Materials/Factions/Faction_MTL.uexp",
+        "/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionBorder_MTL.uasset",
+        "/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionBorder_MTL.uexp",
+        "/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionColours_MTF.uasset",
+        "/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionColours_MTF.uexp",
+        "/Game/UI/FrontEnd/Starmap/StarMapActor.uasset",
+        "/Game/UI/FrontEnd/Starmap/StarMapActor.uexp",
+        "/Game/UI/FrontEnd/Starmap/StarSystemBody.uasset",
+        "/Game/UI/FrontEnd/Starmap/StarSystemBody.uexp",
+        "/Game/UI/FrontEnd/StarMapPawn.uasset",
+        "/Game/UI/FrontEnd/StarMapPawn.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/StarMapBorderActor2864-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/StarMapBorderActor2864-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/StarMapBordersUpdate_Action_2864-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/StarMapBordersUpdate_Action_2864-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/StarMapBorderActor3025-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/StarMapBorderActor3025-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/StarMapBordersUpdate_Action_3025-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/StarMapBordersUpdate_Action_3025-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3030-01-01/StarMapBorderActor3030-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3030-01-01/StarMapBorderActor3030-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3030-01-01/StarMapBordersUpdate_Action_3030-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3030-01-01/StarMapBordersUpdate_Action_3030-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3034-01-01/StarMapBorderActor3034-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3034-01-01/StarMapBorderActor3034-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3034-01-01/StarMapBordersUpdate_Action_3034-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3034-01-01/StarMapBordersUpdate_Action_3034-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3040-01-01/StarMapBorderActor3040-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3040-01-01/StarMapBorderActor3040-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3040-01-01/StarMapBordersUpdate_Action_3040-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3040-01-01/StarMapBordersUpdate_Action_3040-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3049-09-01/StarMapBorderActor3049-09-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3049-09-01/StarMapBorderActor3049-09-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3049-09-01/StarMapBordersUpdate_Action_3049-09-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3049-09-01/StarMapBordersUpdate_Action_3049-09-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3050-04-01/StarMapBorderActor3050-04-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-04-01/StarMapBorderActor3050-04-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3050-04-01/StarMapBordersUpdate_Action_3050-04-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-04-01/StarMapBordersUpdate_Action_3050-04-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3050-06-01/StarMapBorderActor3050-06-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-06-01/StarMapBorderActor3050-06-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3050-06-01/StarMapBordersUpdate_Action_3050-06-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-06-01/StarMapBordersUpdate_Action_3050-06-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3050-08-01/StarMapBorderActor3050-08-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-08-01/StarMapBorderActor3050-08-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3050-08-01/StarMapBordersUpdate_Action_3050-08-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-08-01/StarMapBordersUpdate_Action_3050-08-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3050-10-01/StarMapBorderActor3050-10-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-10-01/StarMapBorderActor3050-10-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3050-10-01/StarMapBordersUpdate_Action_3050-10-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-10-01/StarMapBordersUpdate_Action_3050-10-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3052-01-01/StarMapBorderActor3052-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3052-01-01/StarMapBorderActor3052-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3052-01-01/StarMapBordersUpdate_Action_3052-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3052-01-01/StarMapBordersUpdate_Action_3052-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3057-01-01/StarMapBorderActor3057-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3057-01-01/StarMapBorderActor3057-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3057-01-01/StarMapBordersUpdate_Action_3057-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3057-01-01/StarMapBordersUpdate_Action_3057-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3058-01-01/StarMapBorderActor3058-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3058-01-01/StarMapBorderActor3058-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3058-01-01/StarMapBordersUpdate_Action_3058-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3058-01-01/StarMapBordersUpdate_Action_3058-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3059-01-01/StarMapBorderActor3059-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-01-01/StarMapBorderActor3059-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3059-01-01/StarMapBordersUpdate_Action_3059-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-01-01/StarMapBordersUpdate_Action_3059-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3059-04-01/StarMapBorderActor3059-04-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-04-01/StarMapBorderActor3059-04-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3059-04-01/StarMapBordersUpdate_Action_3059-04-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-04-01/StarMapBordersUpdate_Action_3059-04-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3059-08-01/StarMapBorderActor3059-08-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-08-01/StarMapBorderActor3059-08-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3059-08-01/StarMapBordersUpdate_Action_3059-08-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-08-01/StarMapBordersUpdate_Action_3059-08-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3060-01-01/StarMapBorderActor3060-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3060-01-01/StarMapBorderActor3060-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3060-01-01/StarMapBordersUpdate_Action_3060-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3060-01-01/StarMapBordersUpdate_Action_3060-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3063-01-01/StarMapBorderActor3063-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3063-01-01/StarMapBorderActor3063-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3063-01-01/StarMapBordersUpdate_Action_3063-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3063-01-01/StarMapBordersUpdate_Action_3063-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3067-01-01/StarMapBorderActor3067-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3067-01-01/StarMapBorderActor3067-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3067-01-01/StarMapBordersUpdate_Action_3067-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3067-01-01/StarMapBordersUpdate_Action_3067-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3068-01-01/StarMapBorderActor3068-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3068-01-01/StarMapBorderActor3068-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3068-01-01/StarMapBordersUpdate_Action_3068-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3068-01-01/StarMapBordersUpdate_Action_3068-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3075-01-01/StarMapBorderActor3075-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3075-01-01/StarMapBorderActor3075-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3075-01-01/StarMapBordersUpdate_Action_3075-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3075-01-01/StarMapBordersUpdate_Action_3075-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3079-01-01/StarMapBorderActor3079-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3079-01-01/StarMapBorderActor3079-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3079-01-01/StarMapBordersUpdate_Action_3079-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3079-01-01/StarMapBordersUpdate_Action_3079-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3081-01-01/StarMapBorderActor3081-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3081-01-01/StarMapBorderActor3081-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3081-01-01/StarMapBordersUpdate_Action_3081-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3081-01-01/StarMapBordersUpdate_Action_3081-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3085-01-01/StarMapBorderActor3085-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3085-01-01/StarMapBorderActor3085-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3085-01-01/StarMapBordersUpdate_Action_3085-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3085-01-01/StarMapBordersUpdate_Action_3085-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3095-01-01/StarMapBorderActor3095-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3095-01-01/StarMapBorderActor3095-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3095-01-01/StarMapBordersUpdate_Action_3095-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3095-01-01/StarMapBordersUpdate_Action_3095-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3130-01-01/StarMapBorderActor3130-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3130-01-01/StarMapBorderActor3130-01-01.uexp"
+      ]
+    },
+    "border_assets": {
+      "count": 182,
+      "sample": [
+        "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.uasset",
+        "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.uexp",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.uasset",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.uexp",
+        "/Game/Campaign/CampaignArcs/BorderChanges/AllStarMapBorderChanges.uasset",
+        "/Game/Campaign/CampaignArcs/BorderChanges/AllStarMapBorderChanges.uexp",
+        "/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionBorder_MTL.uasset",
+        "/Game/UI/FrontEnd/Starmap/Materials/Factions/FactionBorder_MTL.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/Borders2864-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/Borders2864-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/StarMapBorderActor2864-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/StarMapBorderActor2864-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/StarMapBordersUpdate_Action_2864-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/StarMapBordersUpdate_Action_2864-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/Borders3025-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/Borders3025-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/StarMapBorderActor3025-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/StarMapBorderActor3025-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/StarMapBordersUpdate_Action_3025-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/StarMapBordersUpdate_Action_3025-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3030-01-01/Borders3030-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3030-01-01/Borders3030-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3030-01-01/StarMapBorderActor3030-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3030-01-01/StarMapBorderActor3030-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3030-01-01/StarMapBordersUpdate_Action_3030-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3030-01-01/StarMapBordersUpdate_Action_3030-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3034-01-01/Borders3034-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3034-01-01/Borders3034-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3034-01-01/StarMapBorderActor3034-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3034-01-01/StarMapBorderActor3034-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3034-01-01/StarMapBordersUpdate_Action_3034-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3034-01-01/StarMapBordersUpdate_Action_3034-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3040-01-01/Borders3040-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3040-01-01/Borders3040-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3040-01-01/StarMapBorderActor3040-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3040-01-01/StarMapBorderActor3040-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3040-01-01/StarMapBordersUpdate_Action_3040-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3040-01-01/StarMapBordersUpdate_Action_3040-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3049-09-01/Borders3049-09-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3049-09-01/Borders3049-09-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3049-09-01/StarMapBorderActor3049-09-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3049-09-01/StarMapBorderActor3049-09-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3049-09-01/StarMapBordersUpdate_Action_3049-09-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3049-09-01/StarMapBordersUpdate_Action_3049-09-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3050-04-01/Borders3050-04-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-04-01/Borders3050-04-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3050-04-01/StarMapBorderActor3050-04-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-04-01/StarMapBorderActor3050-04-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3050-04-01/StarMapBordersUpdate_Action_3050-04-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-04-01/StarMapBordersUpdate_Action_3050-04-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3050-06-01/Borders3050-06-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-06-01/Borders3050-06-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3050-06-01/StarMapBorderActor3050-06-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-06-01/StarMapBorderActor3050-06-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3050-06-01/StarMapBordersUpdate_Action_3050-06-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-06-01/StarMapBordersUpdate_Action_3050-06-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3050-08-01/Borders3050-08-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-08-01/Borders3050-08-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3050-08-01/StarMapBorderActor3050-08-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-08-01/StarMapBorderActor3050-08-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3050-08-01/StarMapBordersUpdate_Action_3050-08-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-08-01/StarMapBordersUpdate_Action_3050-08-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3050-10-01/Borders3050-10-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-10-01/Borders3050-10-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3050-10-01/StarMapBorderActor3050-10-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-10-01/StarMapBorderActor3050-10-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3050-10-01/StarMapBordersUpdate_Action_3050-10-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-10-01/StarMapBordersUpdate_Action_3050-10-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3052-01-01/Borders3052-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3052-01-01/Borders3052-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3052-01-01/StarMapBorderActor3052-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3052-01-01/StarMapBorderActor3052-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3052-01-01/StarMapBordersUpdate_Action_3052-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3052-01-01/StarMapBordersUpdate_Action_3052-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3057-01-01/Borders3057-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3057-01-01/Borders3057-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3057-01-01/StarMapBorderActor3057-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3057-01-01/StarMapBorderActor3057-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3057-01-01/StarMapBordersUpdate_Action_3057-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3057-01-01/StarMapBordersUpdate_Action_3057-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3058-01-01/Borders3058-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3058-01-01/Borders3058-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3058-01-01/StarMapBorderActor3058-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3058-01-01/StarMapBorderActor3058-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3058-01-01/StarMapBordersUpdate_Action_3058-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3058-01-01/StarMapBordersUpdate_Action_3058-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3059-01-01/Borders3059-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-01-01/Borders3059-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3059-01-01/StarMapBorderActor3059-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-01-01/StarMapBorderActor3059-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3059-01-01/StarMapBordersUpdate_Action_3059-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-01-01/StarMapBordersUpdate_Action_3059-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3059-04-01/Borders3059-04-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-04-01/Borders3059-04-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3059-04-01/StarMapBorderActor3059-04-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-04-01/StarMapBorderActor3059-04-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3059-04-01/StarMapBordersUpdate_Action_3059-04-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-04-01/StarMapBordersUpdate_Action_3059-04-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3059-08-01/Borders3059-08-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-08-01/Borders3059-08-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3059-08-01/StarMapBorderActor3059-08-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-08-01/StarMapBorderActor3059-08-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3059-08-01/StarMapBordersUpdate_Action_3059-08-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-08-01/StarMapBordersUpdate_Action_3059-08-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3060-01-01/Borders3060-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3060-01-01/Borders3060-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3060-01-01/StarMapBorderActor3060-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3060-01-01/StarMapBorderActor3060-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3060-01-01/StarMapBordersUpdate_Action_3060-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3060-01-01/StarMapBordersUpdate_Action_3060-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3063-01-01/Borders3063-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3063-01-01/Borders3063-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3063-01-01/StarMapBorderActor3063-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3063-01-01/StarMapBorderActor3063-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3063-01-01/StarMapBordersUpdate_Action_3063-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3063-01-01/StarMapBordersUpdate_Action_3063-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3067-01-01/Borders3067-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3067-01-01/Borders3067-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3067-01-01/StarMapBorderActor3067-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3067-01-01/StarMapBorderActor3067-01-01.uexp"
+      ]
+    },
+    "inner_sphere_data": {
+      "count": 6,
+      "sample": [
+        "/Game/InnerSphereData/MW5_InnerSphereData.uasset",
+        "/Game/InnerSphereData/MW5_InnerSphereData.uexp",
+        "/Game/InnerSphereData/Updated/EmployerInfoData.uasset",
+        "/Game/InnerSphereData/Updated/EmployerInfoData.uexp",
+        "/Game/InnerSphereData/Updated/SystemFactionChanges.uasset",
+        "/Game/InnerSphereData/Updated/SystemFactionChanges.uexp"
+      ]
+    },
+    "root_factions_employers": {
+      "count": 250,
+      "sample": [
+        "/Game/Employers/ClanGhostBear.uasset",
+        "/Game/Employers/ClanGhostBear.uexp",
+        "/Game/Employers/ClanJadeFalcon.uasset",
+        "/Game/Employers/ClanJadeFalcon.uexp",
+        "/Game/Employers/ClanSmokeJaguar.uasset",
+        "/Game/Employers/ClanSmokeJaguar.uexp",
+        "/Game/Employers/ClanWolf.uasset",
+        "/Game/Employers/ClanWolf.uexp",
+        "/Game/Employers/Unused/AllianceOfGaledon.uasset",
+        "/Game/Employers/Unused/AllianceOfGaledon.uexp",
+        "/Game/Employers/Unused/AmarisEmpire.uasset",
+        "/Game/Employers/Unused/AmarisEmpire.uexp",
+        "/Game/Employers/Unused/AxumiteProvidence.uasset",
+        "/Game/Employers/Unused/AxumiteProvidence.uexp",
+        "/Game/Employers/Unused/AzamiBrotherhood.uasset",
+        "/Game/Employers/Unused/AzamiBrotherhood.uexp",
+        "/Game/Employers/Unused/AzamiCaliphate.uasset",
+        "/Game/Employers/Unused/AzamiCaliphate.uexp",
+        "/Game/Employers/Unused/CalderonProtectorate.uasset",
+        "/Game/Employers/Unused/CalderonProtectorate.uexp",
+        "/Game/Employers/Unused/CapellanCommonality.uasset",
+        "/Game/Employers/Unused/CapellanCommonality.uexp",
+        "/Game/Employers/Unused/CapellanHegemony.uasset",
+        "/Game/Employers/Unused/CapellanHegemony.uexp",
+        "/Game/Employers/Unused/ChainelaneIsles.uasset",
+        "/Game/Employers/Unused/ChainelaneIsles.uexp",
+        "/Game/Employers/Unused/ChaosMarch.uasset",
+        "/Game/Employers/Unused/ChaosMarch.uexp",
+        "/Game/Employers/Unused/ChestertonTradeFederation.uasset",
+        "/Game/Employers/Unused/ChestertonTradeFederation.uexp",
+        "/Game/Employers/Unused/ClanBloodSpirit.uasset",
+        "/Game/Employers/Unused/ClanBloodSpirit.uexp",
+        "/Game/Employers/Unused/ClanBurrock.uasset",
+        "/Game/Employers/Unused/ClanBurrock.uexp",
+        "/Game/Employers/Unused/ClanCloudCobra.uasset",
+        "/Game/Employers/Unused/ClanCloudCobra.uexp",
+        "/Game/Employers/Unused/ClanCoyote.uasset",
+        "/Game/Employers/Unused/ClanCoyote.uexp",
+        "/Game/Employers/Unused/ClanDiamondShark.uasset",
+        "/Game/Employers/Unused/ClanDiamondShark.uexp",
+        "/Game/Employers/Unused/ClanFireMandrill.uasset",
+        "/Game/Employers/Unused/ClanFireMandrill.uexp",
+        "/Game/Employers/Unused/ClanGoliathScorpion.uasset",
+        "/Game/Employers/Unused/ClanGoliathScorpion.uexp",
+        "/Game/Employers/Unused/ClanHellsHorses.uasset",
+        "/Game/Employers/Unused/ClanHellsHorses.uexp",
+        "/Game/Employers/Unused/ClanIceHellion.uasset",
+        "/Game/Employers/Unused/ClanIceHellion.uexp",
+        "/Game/Employers/Unused/ClanMongoose.uasset",
+        "/Game/Employers/Unused/ClanMongoose.uexp",
+        "/Game/Employers/Unused/ClanNovaCat.uasset",
+        "/Game/Employers/Unused/ClanNovaCat.uexp",
+        "/Game/Employers/Unused/ClanSeaFox.uasset",
+        "/Game/Employers/Unused/ClanSeaFox.uexp",
+        "/Game/Employers/Unused/ClanSnowRaven.uasset",
+        "/Game/Employers/Unused/ClanSnowRaven.uexp",
+        "/Game/Employers/Unused/ClanStarAdder.uasset",
+        "/Game/Employers/Unused/ClanStarAdder.uexp",
+        "/Game/Employers/Unused/ClanSteelViper.uasset",
+        "/Game/Employers/Unused/ClanSteelViper.uexp",
+        "/Game/Employers/Unused/ClanStoneLion.uasset",
+        "/Game/Employers/Unused/ClanStoneLion.uexp",
+        "/Game/Employers/Unused/ClanWidowmaker.uasset",
+        "/Game/Employers/Unused/ClanWidowmaker.uexp",
+        "/Game/Employers/Unused/ClanWolfinExile.uasset",
+        "/Game/Employers/Unused/ClanWolfinExile.uexp",
+        "/Game/Employers/Unused/ClanWolverine.uasset",
+        "/Game/Employers/Unused/ClanWolverine.uexp",
+        "/Game/Employers/Unused/CoalitionForces.uasset",
+        "/Game/Employers/Unused/CoalitionForces.uexp",
+        "/Game/Employers/Unused/DuchyOfGrahamMarik.uasset",
+        "/Game/Employers/Unused/DuchyOfGrahamMarik.uexp",
+        "/Game/Employers/Unused/DuchyOfLiao.uasset",
+        "/Game/Employers/Unused/DuchyOfLiao.uexp",
+        "/Game/Employers/Unused/DuchyOfOriente.uasset",
+        "/Game/Employers/Unused/DuchyOfOriente.uexp",
+        "/Game/Employers/Unused/DuchyOfOrloff.uasset",
+        "/Game/Employers/Unused/DuchyOfOrloff.uexp",
+        "/Game/Employers/Unused/DuchyOfSmall.uasset",
+        "/Game/Employers/Unused/DuchyOfSmall.uexp",
+        "/Game/Employers/Unused/DuchyOfTamarind.uasset",
+        "/Game/Employers/Unused/DuchyOfTamarind.uexp",
+        "/Game/Employers/Unused/DuchyOfTamarindAbbey.uasset",
+        "/Game/Employers/Unused/DuchyOfTamarindAbbey.uexp",
+        "/Game/Employers/Unused/EscorpinImperio.uasset",
+        "/Game/Employers/Unused/EscorpinImperio.uexp",
+        "/Game/Employers/Unused/FederationOfOriente.uasset",
+        "/Game/Employers/Unused/FederationOfOriente.uexp",
+        "/Game/Employers/Unused/FederationOfSkye.uasset",
+        "/Game/Employers/Unused/FederationOfSkye.uexp",
+        "/Game/Employers/Unused/FerrisCollective.uasset",
+        "/Game/Employers/Unused/FerrisCollective.uexp",
+        "/Game/Employers/Unused/FiltveltCoalition.uasset",
+        "/Game/Employers/Unused/FiltveltCoalition.uexp",
+        "/Game/Employers/Unused/FinmarkFreeRepublic.uasset",
+        "/Game/Employers/Unused/FinmarkFreeRepublic.uexp",
+        "/Game/Employers/Unused/FreeWorldsLeagueMilitaryRegion.uasset",
+        "/Game/Employers/Unused/FreeWorldsLeagueMilitaryRegion.uexp",
+        "/Game/Employers/Unused/FroncReaches.uasset",
+        "/Game/Employers/Unused/FroncReaches.uexp",
+        "/Game/Employers/Unused/GalateanLeague.uasset",
+        "/Game/Employers/Unused/GalateanLeague.uexp",
+        "/Game/Employers/Unused/GhostBearDominion.uasset",
+        "/Game/Employers/Unused/GhostBearDominion.uexp",
+        "/Game/Employers/Unused/HanseaticLeague.uasset",
+        "/Game/Employers/Unused/HanseaticLeague.uexp",
+        "/Game/Employers/Unused/Jarnfolk.uasset",
+        "/Game/Employers/Unused/Jarnfolk.uexp",
+        "/Game/Employers/Unused/KhwarazmEmpire.uasset",
+        "/Game/Employers/Unused/KhwarazmEmpire.uexp",
+        "/Game/Employers/Unused/KitteryPrefecture.uasset",
+        "/Game/Employers/Unused/KitteryPrefecture.uexp",
+        "/Game/Employers/Unused/LiaoRepublic.uasset",
+        "/Game/Employers/Unused/LiaoRepublic.uexp",
+        "/Game/Employers/Unused/LyranAlliance.uasset",
+        "/Game/Employers/Unused/LyranAlliance.uexp",
+        "/Game/Employers/Unused/MalagrottaCooperative.uasset",
+        "/Game/Employers/Unused/MalagrottaCooperative.uexp",
+        "/Game/Employers/Unused/MarikCommonwealth.uasset",
+        "/Game/Employers/Unused/MarikCommonwealth.uexp"
+      ]
+    },
+    "plugin_campaign_arcs": {
+      "count": 2424,
+      "sample": [
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_10.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_10.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_12.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_12.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_13.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_13.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_14.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_14.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_15.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_15.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_16.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_16.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_17.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_17.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_18.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_18.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_19.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_19.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_2.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_2.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_20.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_20.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_25.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_25.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_26.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_26.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_27.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_27.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_28.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_28.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_29.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_29.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_3.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_3.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_30.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_30.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_32.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_32.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_34.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_34.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_35.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_35.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_37.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_37.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_38.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_38.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_39.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_39.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_4.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_4.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_40.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_40.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_5.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_5.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_6.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_6.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_7.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_7.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_8.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/2864-01-01_8.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/Borders2864-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/Borders2864-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/StarMapBorderActor2864-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/StarMapBorderActor2864-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/StarMapBordersUpdate_Action_2864-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/StarMapBordersUpdate_Action_2864-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/year_2864-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/year_2864-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_10.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_10.uexp",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_12.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_12.uexp",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_14.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_14.uexp",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_15.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_15.uexp",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_17.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_17.uexp",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_19.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_19.uexp",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_2.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_2.uexp",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_20.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_20.uexp",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_22.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_22.uexp",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_25.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_25.uexp",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_26.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_26.uexp",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_27.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_27.uexp",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_28.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_28.uexp",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_29.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_29.uexp",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_3.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_3.uexp",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_30.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_30.uexp",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_32.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_32.uexp",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_34.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_34.uexp",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_35.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_35.uexp",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_37.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_37.uexp",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_38.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_38.uexp",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_39.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_39.uexp",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_4.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_4.uexp",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_40.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_40.uexp",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_5.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_5.uexp",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_6.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/3025-01-01_6.uexp"
+      ]
+    }
+  },
+  "string_tokens": [
+    "/Game/Campaign/Clusters",
+    "MWClusterDataAsset",
+    "ClusterDataAsset",
+    "ClusterOverlay",
+    "ClusterConstellation",
+    "cluster_overlay",
+    "cluster_constellation",
+    "PlaceCluster",
+    "PlaceClusterToi",
+    "CareerModeCustomClusters",
+    "StarMapBorderActor",
+    "BaseStarMapBorderActor",
+    "StarMapBordersUpdate_Action",
+    "PanBoundsHorizontal",
+    "PanBoundsVertical",
+    "ZoomDistanceList",
+    "ZoomLevelThresholds",
+    "Lyran",
+    "Steiner",
+    "Clan"
+  ],
+  "string_hits": {
+    "/Game/Campaign/Clusters": {
+      "asset_count": 0,
+      "sample_assets": [],
+      "sample_strings": []
+    },
+    "MWClusterDataAsset": {
+      "asset_count": 0,
+      "sample_assets": [],
+      "sample_strings": []
+    },
+    "ClusterDataAsset": {
+      "asset_count": 0,
+      "sample_assets": [],
+      "sample_strings": []
+    },
+    "ClusterOverlay": {
+      "asset_count": 2,
+      "sample_assets": [
+        "/Game/InnerSphereData/MW5_InnerSphereData.uasset",
+        "/Game/UI/FrontEnd/Starmap/StarSystemBody.uasset"
+      ],
+      "sample_strings": [
+        "ClusterOverlay",
+        "CallFunc_GetClusterOverlayState_ReturnValue",
+        "ClusterOverlayMeshComponent",
+        "ClusterOverlayState",
+        "CreateClusterOverlayMesh",
+        "EClusterOverlayState",
+        "GetClusterOverlayState",
+        "L NewClusterOverlayState"
+      ]
+    },
+    "ClusterConstellation": {
+      "asset_count": 2,
+      "sample_assets": [
+        "/Game/InnerSphereData/MW5_InnerSphereData.uasset",
+        "/Game/UI/FrontEnd/Starmap/StarSystemBody.uasset"
+      ],
+      "sample_strings": [
+        "ClusterConstellation",
+        "ClusterConstellationMeshComponent"
+      ]
+    },
+    "cluster_overlay": {
+      "asset_count": 0,
+      "sample_assets": [],
+      "sample_strings": []
+    },
+    "cluster_constellation": {
+      "asset_count": 0,
+      "sample_assets": [],
+      "sample_strings": []
+    },
+    "PlaceCluster": {
+      "asset_count": 9,
+      "sample_assets": [
+        "/Plugins/TheKnownUniverse/Content/Regions/Safezones/PlaceSafeZone_Clan1_ArcAction.uasset",
+        "/Plugins/TheKnownUniverse/Content/Regions/Safezones/PlaceSafeZone_Clan2_ArcAction.uasset",
+        "/Plugins/TheKnownUniverse/Content/Regions/Safezones/PlaceSafeZone_Custom1_ArcAction.uasset",
+        "/Plugins/TheKnownUniverse/Content/Regions/Safezones/PlaceSafeZone_Custom2_ArcAction.uasset",
+        "/Plugins/TheKnownUniverse/Content/Regions/War/Place_ClanConflict_1.uasset",
+        "/Plugins/TheKnownUniverse/Content/Regions/War/Place_ClanConflict_2.uasset",
+        "/Plugins/TheKnownUniverse/Content/Regions/War/Place_ClanConflict_3.uasset",
+        "/Plugins/TheKnownUniverse/Content/Regions/War/Place_ClanConflict_4.uasset",
+        "/Plugins/TheKnownUniverse/Content/Regions/War/Place_CustomConflict.uasset"
+      ],
+      "sample_strings": [
+        "/Game/Campaign/CampaignArcActions/MissionActions/PlaceClusterToi_ArcAction",
+        "Default__PlaceClusterToi_ArcAction_C",
+        "PlaceClusterToi_ArcAction_C",
+        "PlaceClusterToi_Config",
+        "PlaceClusterToi_Markups"
+      ]
+    },
+    "PlaceClusterToi": {
+      "asset_count": 9,
+      "sample_assets": [
+        "/Plugins/TheKnownUniverse/Content/Regions/Safezones/PlaceSafeZone_Clan1_ArcAction.uasset",
+        "/Plugins/TheKnownUniverse/Content/Regions/Safezones/PlaceSafeZone_Clan2_ArcAction.uasset",
+        "/Plugins/TheKnownUniverse/Content/Regions/Safezones/PlaceSafeZone_Custom1_ArcAction.uasset",
+        "/Plugins/TheKnownUniverse/Content/Regions/Safezones/PlaceSafeZone_Custom2_ArcAction.uasset",
+        "/Plugins/TheKnownUniverse/Content/Regions/War/Place_ClanConflict_1.uasset",
+        "/Plugins/TheKnownUniverse/Content/Regions/War/Place_ClanConflict_2.uasset",
+        "/Plugins/TheKnownUniverse/Content/Regions/War/Place_ClanConflict_3.uasset",
+        "/Plugins/TheKnownUniverse/Content/Regions/War/Place_ClanConflict_4.uasset",
+        "/Plugins/TheKnownUniverse/Content/Regions/War/Place_CustomConflict.uasset"
+      ],
+      "sample_strings": [
+        "/Game/Campaign/CampaignArcActions/MissionActions/PlaceClusterToi_ArcAction",
+        "Default__PlaceClusterToi_ArcAction_C",
+        "PlaceClusterToi_ArcAction_C",
+        "PlaceClusterToi_Config",
+        "PlaceClusterToi_Markups"
+      ]
+    },
+    "CareerModeCustomClusters": {
+      "asset_count": 2,
+      "sample_assets": [
+        "/Plugins/TheKnownUniverse/Content/Regions/TKU_Zones.uasset",
+        "/Plugins/TheKnownUniverse/Content/Regions/War/CareerModeCustomClusters.uasset"
+      ],
+      "sample_strings": [
+        "/TheKnownUniverse/Regions/War/CareerModeCustomClusters",
+        "CareerModeCustomClusters"
+      ]
+    },
+    "StarMapBorderActor": {
+      "asset_count": 61,
+      "sample_assets": [
+        "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.uasset",
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.uasset",
+        "/Game/UI/FrontEnd/Starmap/StarMapActor.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/Borders2864-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/StarMapBorderActor2864-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/Borders3025-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/StarMapBorderActor3025-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3030-01-01/Borders3030-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3030-01-01/StarMapBorderActor3030-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3034-01-01/Borders3034-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3034-01-01/StarMapBorderActor3034-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3040-01-01/Borders3040-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3040-01-01/StarMapBorderActor3040-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3049-09-01/Borders3049-09-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3049-09-01/StarMapBorderActor3049-09-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-04-01/Borders3050-04-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-04-01/StarMapBorderActor3050-04-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-06-01/Borders3050-06-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-06-01/StarMapBorderActor3050-06-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-08-01/Borders3050-08-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-08-01/StarMapBorderActor3050-08-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-10-01/Borders3050-10-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-10-01/StarMapBorderActor3050-10-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3052-01-01/Borders3052-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3052-01-01/StarMapBorderActor3052-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3057-01-01/Borders3057-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3057-01-01/StarMapBorderActor3057-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3058-01-01/Borders3058-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3058-01-01/StarMapBorderActor3058-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-01-01/Borders3059-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-01-01/StarMapBorderActor3059-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-04-01/Borders3059-04-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-04-01/StarMapBorderActor3059-04-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-08-01/Borders3059-08-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-08-01/StarMapBorderActor3059-08-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3060-01-01/Borders3060-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3060-01-01/StarMapBorderActor3060-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3063-01-01/Borders3063-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3063-01-01/StarMapBorderActor3063-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3067-01-01/Borders3067-01-01.uasset"
+      ],
+      "sample_strings": [
+        "/TheKnownUniverse/2864-01-01/StarMapBorderActor2864-01-01",
+        "/TheKnownUniverse/2864-01-01/StarMapBorderActor2864-01-01.StarMapBorderActor2864-01-01_C",
+        "/ModOverride/TheKnownUniverse/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor",
+        "BaseStarMapBorderActor_C",
+        "Default__BaseStarMapBorderActor_C",
+        "Default__MWStarMapBorderActor",
+        "MWStarMapBorderActor",
+        "Default__StarMapBorderActor2864-01-01_C",
+        "StarMapBorderActor2864-01-01_C",
+        "/TheKnownUniverse/3025-01-01/StarMapBorderActor3025-01-01",
+        "/TheKnownUniverse/3025-01-01/StarMapBorderActor3025-01-01.StarMapBorderActor3025-01-01_C",
+        "Default__StarMapBorderActor3025-01-01_C",
+        "StarMapBorderActor3025-01-01_C",
+        "/TheKnownUniverse/3030-01-01/StarMapBorderActor3030-01-01",
+        "/TheKnownUniverse/3030-01-01/StarMapBorderActor3030-01-01.StarMapBorderActor3030-01-01_C",
+        "Default__StarMapBorderActor3030-01-01_C",
+        "StarMapBorderActor3030-01-01_C",
+        "/TheKnownUniverse/3034-01-01/StarMapBorderActor3034-01-01",
+        "/TheKnownUniverse/3034-01-01/StarMapBorderActor3034-01-01.StarMapBorderActor3034-01-01_C",
+        "Default__StarMapBorderActor3034-01-01_C",
+        "StarMapBorderActor3034-01-01_C",
+        "/TheKnownUniverse/3040-01-01/StarMapBorderActor3040-01-01",
+        "/TheKnownUniverse/3040-01-01/StarMapBorderActor3040-01-01.StarMapBorderActor3040-01-01_C",
+        "Default__StarMapBorderActor3040-01-01_C",
+        "StarMapBorderActor3040-01-01_C",
+        "/TheKnownUniverse/3049-09-01/StarMapBorderActor3049-09-01",
+        "/TheKnownUniverse/3049-09-01/StarMapBorderActor3049-09-01.StarMapBorderActor3049-09-01_C",
+        "Default__StarMapBorderActor3049-09-01_C",
+        "StarMapBorderActor3049-09-01_C",
+        "/TheKnownUniverse/3050-04-01/StarMapBorderActor3050-04-01",
+        "/TheKnownUniverse/3050-04-01/StarMapBorderActor3050-04-01.StarMapBorderActor3050-04-01_C",
+        "Default__StarMapBorderActor3050-04-01_C",
+        "StarMapBorderActor3050-04-01_C",
+        "/TheKnownUniverse/3050-06-01/StarMapBorderActor3050-06-01",
+        "/TheKnownUniverse/3050-06-01/StarMapBorderActor3050-06-01.StarMapBorderActor3050-06-01_C",
+        "Default__StarMapBorderActor3050-06-01_C",
+        "StarMapBorderActor3050-06-01_C",
+        "/TheKnownUniverse/3050-08-01/StarMapBorderActor3050-08-01",
+        "/TheKnownUniverse/3050-08-01/StarMapBorderActor3050-08-01.StarMapBorderActor3050-08-01_C",
+        "Default__StarMapBorderActor3050-08-01_C",
+        "StarMapBorderActor3050-08-01_C",
+        "/TheKnownUniverse/3050-10-01/StarMapBorderActor3050-10-01",
+        "/TheKnownUniverse/3050-10-01/StarMapBorderActor3050-10-01.StarMapBorderActor3050-10-01_C",
+        "Default__StarMapBorderActor3050-10-01_C",
+        "StarMapBorderActor3050-10-01_C",
+        "/TheKnownUniverse/3052-01-01/StarMapBorderActor3052-01-01",
+        "/TheKnownUniverse/3052-01-01/StarMapBorderActor3052-01-01.StarMapBorderActor3052-01-01_C",
+        "Default__StarMapBorderActor3052-01-01_C",
+        "StarMapBorderActor3052-01-01_C",
+        "/TheKnownUniverse/3057-01-01/StarMapBorderActor3057-01-01",
+        "/TheKnownUniverse/3057-01-01/StarMapBorderActor3057-01-01.StarMapBorderActor3057-01-01_C",
+        "Default__StarMapBorderActor3057-01-01_C",
+        "StarMapBorderActor3057-01-01_C",
+        "/TheKnownUniverse/3058-01-01/StarMapBorderActor3058-01-01",
+        "/TheKnownUniverse/3058-01-01/StarMapBorderActor3058-01-01.StarMapBorderActor3058-01-01_C",
+        "Default__StarMapBorderActor3058-01-01_C",
+        "StarMapBorderActor3058-01-01_C",
+        "/TheKnownUniverse/3059-01-01/StarMapBorderActor3059-01-01",
+        "/TheKnownUniverse/3059-01-01/StarMapBorderActor3059-01-01.StarMapBorderActor3059-01-01_C",
+        "Default__StarMapBorderActor3059-01-01_C",
+        "StarMapBorderActor3059-01-01_C",
+        "/TheKnownUniverse/3059-04-01/StarMapBorderActor3059-04-01",
+        "/TheKnownUniverse/3059-04-01/StarMapBorderActor3059-04-01.StarMapBorderActor3059-04-01_C",
+        "Default__StarMapBorderActor3059-04-01_C",
+        "StarMapBorderActor3059-04-01_C",
+        "/TheKnownUniverse/3059-08-01/StarMapBorderActor3059-08-01",
+        "/TheKnownUniverse/3059-08-01/StarMapBorderActor3059-08-01.StarMapBorderActor3059-08-01_C",
+        "Default__StarMapBorderActor3059-08-01_C",
+        "StarMapBorderActor3059-08-01_C",
+        "/TheKnownUniverse/3060-01-01/StarMapBorderActor3060-01-01",
+        "/TheKnownUniverse/3060-01-01/StarMapBorderActor3060-01-01.StarMapBorderActor3060-01-01_C",
+        "Default__StarMapBorderActor3060-01-01_C",
+        "StarMapBorderActor3060-01-01_C",
+        "/TheKnownUniverse/3063-01-01/StarMapBorderActor3063-01-01",
+        "/TheKnownUniverse/3063-01-01/StarMapBorderActor3063-01-01.StarMapBorderActor3063-01-01_C",
+        "Default__StarMapBorderActor3063-01-01_C",
+        "StarMapBorderActor3063-01-01_C",
+        "/TheKnownUniverse/3067-01-01/StarMapBorderActor3067-01-01",
+        "/TheKnownUniverse/3067-01-01/StarMapBorderActor3067-01-01.StarMapBorderActor3067-01-01_C",
+        "Default__StarMapBorderActor3067-01-01_C"
+      ]
+    },
+    "BaseStarMapBorderActor": {
+      "asset_count": 30,
+      "sample_assets": [
+        "/Game/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/StarMapBorderActor2864-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/StarMapBorderActor3025-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3030-01-01/StarMapBorderActor3030-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3034-01-01/StarMapBorderActor3034-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3040-01-01/StarMapBorderActor3040-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3049-09-01/StarMapBorderActor3049-09-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-04-01/StarMapBorderActor3050-04-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-06-01/StarMapBorderActor3050-06-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-08-01/StarMapBorderActor3050-08-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-10-01/StarMapBorderActor3050-10-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3052-01-01/StarMapBorderActor3052-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3057-01-01/StarMapBorderActor3057-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3058-01-01/StarMapBorderActor3058-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-01-01/StarMapBorderActor3059-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-04-01/StarMapBorderActor3059-04-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-08-01/StarMapBorderActor3059-08-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3060-01-01/StarMapBorderActor3060-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3063-01-01/StarMapBorderActor3063-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3067-01-01/StarMapBorderActor3067-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3068-01-01/StarMapBorderActor3068-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3075-01-01/StarMapBorderActor3075-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3079-01-01/StarMapBorderActor3079-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3081-01-01/StarMapBorderActor3081-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3085-01-01/StarMapBorderActor3085-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3095-01-01/StarMapBorderActor3095-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3130-01-01/StarMapBorderActor3130-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3135-01-01/StarMapBorderActor3135-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3145-01-01/StarMapBorderActor3145-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3151-01-01/StarMapBorderActor3151-01-01.uasset"
+      ],
+      "sample_strings": [
+        "/ModOverride/TheKnownUniverse/Campaign/CampaignArcs/BorderChanges/_common/BaseStarMapBorderActor",
+        "BaseStarMapBorderActor_C",
+        "Default__BaseStarMapBorderActor_C"
+      ]
+    },
+    "StarMapBordersUpdate_Action": {
+      "asset_count": 58,
+      "sample_assets": [
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/StarMapBordersUpdate_Action_2864-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/year_2864-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/StarMapBordersUpdate_Action_3025-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/year_3025-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3030-01-01/StarMapBordersUpdate_Action_3030-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3030-01-01/year_3030-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3034-01-01/StarMapBordersUpdate_Action_3034-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3034-01-01/year_3034-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3040-01-01/StarMapBordersUpdate_Action_3040-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3040-01-01/year_3040-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3049-09-01/StarMapBordersUpdate_Action_3049-09-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3049-09-01/year_3049-09-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-04-01/StarMapBordersUpdate_Action_3050-04-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-04-01/year_3050-04-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-06-01/StarMapBordersUpdate_Action_3050-06-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-06-01/year_3050-06-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-08-01/StarMapBordersUpdate_Action_3050-08-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-08-01/year_3050-08-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-10-01/StarMapBordersUpdate_Action_3050-10-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-10-01/year_3050-10-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3052-01-01/StarMapBordersUpdate_Action_3052-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3052-01-01/year_3052-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3057-01-01/StarMapBordersUpdate_Action_3057-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3057-01-01/year_3057-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3058-01-01/StarMapBordersUpdate_Action_3058-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3058-01-01/year_3058-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-01-01/StarMapBordersUpdate_Action_3059-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-01-01/year_3059-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-04-01/StarMapBordersUpdate_Action_3059-04-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-04-01/year_3059-04-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-08-01/StarMapBordersUpdate_Action_3059-08-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-08-01/year_3059-08-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3060-01-01/StarMapBordersUpdate_Action_3060-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3060-01-01/year_3060-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3063-01-01/StarMapBordersUpdate_Action_3063-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3063-01-01/year_3063-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3067-01-01/StarMapBordersUpdate_Action_3067-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3067-01-01/year_3067-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3068-01-01/StarMapBordersUpdate_Action_3068-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3068-01-01/year_3068-01-01.uasset"
+      ],
+      "sample_strings": [
+        "/TheKnownUniverse/2864-01-01/StarMapBordersUpdate_Action_2864-01-01",
+        "Default__StarMapBordersUpdate_Action_2864-01-01_C",
+        "StarMapBordersUpdate_Action_2864-01-01_C",
+        "/TheKnownUniverse/2864-01-01/StarMapBordersUpdate_Action_2864-01-01.StarMapBordersUpdate_Action_2864-01-01_C",
+        "/TheKnownUniverse/3025-01-01/StarMapBordersUpdate_Action_3025-01-01",
+        "Default__StarMapBordersUpdate_Action_3025-01-01_C",
+        "StarMapBordersUpdate_Action_3025-01-01_C",
+        "/TheKnownUniverse/3025-01-01/StarMapBordersUpdate_Action_3025-01-01.StarMapBordersUpdate_Action_3025-01-01_C",
+        "/TheKnownUniverse/3030-01-01/StarMapBordersUpdate_Action_3030-01-01",
+        "Default__StarMapBordersUpdate_Action_3030-01-01_C",
+        "StarMapBordersUpdate_Action_3030-01-01_C",
+        "/TheKnownUniverse/3030-01-01/StarMapBordersUpdate_Action_3030-01-01.StarMapBordersUpdate_Action_3030-01-01_C",
+        "/TheKnownUniverse/3034-01-01/StarMapBordersUpdate_Action_3034-01-01",
+        "Default__StarMapBordersUpdate_Action_3034-01-01_C",
+        "StarMapBordersUpdate_Action_3034-01-01_C",
+        "/TheKnownUniverse/3034-01-01/StarMapBordersUpdate_Action_3034-01-01.StarMapBordersUpdate_Action_3034-01-01_C",
+        "/TheKnownUniverse/3040-01-01/StarMapBordersUpdate_Action_3040-01-01",
+        "Default__StarMapBordersUpdate_Action_3040-01-01_C",
+        "StarMapBordersUpdate_Action_3040-01-01_C",
+        "/TheKnownUniverse/3040-01-01/StarMapBordersUpdate_Action_3040-01-01.StarMapBordersUpdate_Action_3040-01-01_C",
+        "/TheKnownUniverse/3049-09-01/StarMapBordersUpdate_Action_3049-09-01",
+        "Default__StarMapBordersUpdate_Action_3049-09-01_C",
+        "StarMapBordersUpdate_Action_3049-09-01_C",
+        "/TheKnownUniverse/3049-09-01/StarMapBordersUpdate_Action_3049-09-01.StarMapBordersUpdate_Action_3049-09-01_C",
+        "/TheKnownUniverse/3050-04-01/StarMapBordersUpdate_Action_3050-04-01",
+        "Default__StarMapBordersUpdate_Action_3050-04-01_C",
+        "StarMapBordersUpdate_Action_3050-04-01_C",
+        "/TheKnownUniverse/3050-04-01/StarMapBordersUpdate_Action_3050-04-01.StarMapBordersUpdate_Action_3050-04-01_C",
+        "/TheKnownUniverse/3050-06-01/StarMapBordersUpdate_Action_3050-06-01",
+        "Default__StarMapBordersUpdate_Action_3050-06-01_C",
+        "StarMapBordersUpdate_Action_3050-06-01_C",
+        "/TheKnownUniverse/3050-06-01/StarMapBordersUpdate_Action_3050-06-01.StarMapBordersUpdate_Action_3050-06-01_C",
+        "/TheKnownUniverse/3050-08-01/StarMapBordersUpdate_Action_3050-08-01",
+        "Default__StarMapBordersUpdate_Action_3050-08-01_C",
+        "StarMapBordersUpdate_Action_3050-08-01_C",
+        "/TheKnownUniverse/3050-08-01/StarMapBordersUpdate_Action_3050-08-01.StarMapBordersUpdate_Action_3050-08-01_C",
+        "/TheKnownUniverse/3050-10-01/StarMapBordersUpdate_Action_3050-10-01",
+        "Default__StarMapBordersUpdate_Action_3050-10-01_C",
+        "StarMapBordersUpdate_Action_3050-10-01_C",
+        "/TheKnownUniverse/3050-10-01/StarMapBordersUpdate_Action_3050-10-01.StarMapBordersUpdate_Action_3050-10-01_C",
+        "/TheKnownUniverse/3052-01-01/StarMapBordersUpdate_Action_3052-01-01",
+        "Default__StarMapBordersUpdate_Action_3052-01-01_C",
+        "StarMapBordersUpdate_Action_3052-01-01_C",
+        "/TheKnownUniverse/3052-01-01/StarMapBordersUpdate_Action_3052-01-01.StarMapBordersUpdate_Action_3052-01-01_C",
+        "/TheKnownUniverse/3057-01-01/StarMapBordersUpdate_Action_3057-01-01",
+        "Default__StarMapBordersUpdate_Action_3057-01-01_C",
+        "StarMapBordersUpdate_Action_3057-01-01_C",
+        "/TheKnownUniverse/3057-01-01/StarMapBordersUpdate_Action_3057-01-01.StarMapBordersUpdate_Action_3057-01-01_C",
+        "/TheKnownUniverse/3058-01-01/StarMapBordersUpdate_Action_3058-01-01",
+        "Default__StarMapBordersUpdate_Action_3058-01-01_C",
+        "StarMapBordersUpdate_Action_3058-01-01_C",
+        "/TheKnownUniverse/3058-01-01/StarMapBordersUpdate_Action_3058-01-01.StarMapBordersUpdate_Action_3058-01-01_C",
+        "/TheKnownUniverse/3059-01-01/StarMapBordersUpdate_Action_3059-01-01",
+        "Default__StarMapBordersUpdate_Action_3059-01-01_C",
+        "StarMapBordersUpdate_Action_3059-01-01_C",
+        "/TheKnownUniverse/3059-01-01/StarMapBordersUpdate_Action_3059-01-01.StarMapBordersUpdate_Action_3059-01-01_C",
+        "/TheKnownUniverse/3059-04-01/StarMapBordersUpdate_Action_3059-04-01",
+        "Default__StarMapBordersUpdate_Action_3059-04-01_C",
+        "StarMapBordersUpdate_Action_3059-04-01_C",
+        "/TheKnownUniverse/3059-04-01/StarMapBordersUpdate_Action_3059-04-01.StarMapBordersUpdate_Action_3059-04-01_C",
+        "/TheKnownUniverse/3059-08-01/StarMapBordersUpdate_Action_3059-08-01",
+        "Default__StarMapBordersUpdate_Action_3059-08-01_C",
+        "StarMapBordersUpdate_Action_3059-08-01_C",
+        "/TheKnownUniverse/3059-08-01/StarMapBordersUpdate_Action_3059-08-01.StarMapBordersUpdate_Action_3059-08-01_C",
+        "/TheKnownUniverse/3060-01-01/StarMapBordersUpdate_Action_3060-01-01",
+        "Default__StarMapBordersUpdate_Action_3060-01-01_C",
+        "StarMapBordersUpdate_Action_3060-01-01_C",
+        "/TheKnownUniverse/3060-01-01/StarMapBordersUpdate_Action_3060-01-01.StarMapBordersUpdate_Action_3060-01-01_C",
+        "/TheKnownUniverse/3063-01-01/StarMapBordersUpdate_Action_3063-01-01",
+        "Default__StarMapBordersUpdate_Action_3063-01-01_C",
+        "StarMapBordersUpdate_Action_3063-01-01_C",
+        "/TheKnownUniverse/3063-01-01/StarMapBordersUpdate_Action_3063-01-01.StarMapBordersUpdate_Action_3063-01-01_C",
+        "/TheKnownUniverse/3067-01-01/StarMapBordersUpdate_Action_3067-01-01",
+        "Default__StarMapBordersUpdate_Action_3067-01-01_C",
+        "StarMapBordersUpdate_Action_3067-01-01_C",
+        "/TheKnownUniverse/3067-01-01/StarMapBordersUpdate_Action_3067-01-01.StarMapBordersUpdate_Action_3067-01-01_C",
+        "/TheKnownUniverse/3068-01-01/StarMapBordersUpdate_Action_3068-01-01",
+        "Default__StarMapBordersUpdate_Action_3068-01-01_C",
+        "StarMapBordersUpdate_Action_3068-01-01_C",
+        "/TheKnownUniverse/3068-01-01/StarMapBordersUpdate_Action_3068-01-01.StarMapBordersUpdate_Action_3068-01-01_C"
+      ]
+    },
+    "PanBoundsHorizontal": {
+      "asset_count": 1,
+      "sample_assets": [
+        "/Game/UI/FrontEnd/StarMapPawn.uasset"
+      ],
+      "sample_strings": [
+        "PanBoundsHorizontal"
+      ]
+    },
+    "PanBoundsVertical": {
+      "asset_count": 1,
+      "sample_assets": [
+        "/Game/UI/FrontEnd/StarMapPawn.uasset"
+      ],
+      "sample_strings": [
+        "PanBoundsVertical"
+      ]
+    },
+    "ZoomDistanceList": {
+      "asset_count": 1,
+      "sample_assets": [
+        "/Game/UI/FrontEnd/StarMapPawn.uasset"
+      ],
+      "sample_strings": [
+        "ZoomDistanceList"
+      ]
+    },
+    "ZoomLevelThresholds": {
+      "asset_count": 1,
+      "sample_assets": [
+        "/Game/UI/FrontEnd/StarMapPawn.uasset"
+      ],
+      "sample_strings": [
+        "ZoomLevelThresholds"
+      ]
+    },
+    "Lyran": {
+      "asset_count": 8,
+      "sample_assets": [
+        "/Game/Employers/Unused/LyranAlliance.uasset",
+        "/Game/Employers/Unused/LyranAlliance.uexp",
+        "/Game/InnerSphereData/MW5_InnerSphereData.uasset",
+        "/Game/InnerSphereData/Updated/EmployerInfoData.uasset",
+        "/Plugins/TheKnownUniverse/Content/FactionColorMap.uasset",
+        "/Plugins/TheKnownUniverse/Content/FactionMPC.uasset",
+        "/Plugins/TheKnownUniverse/Content/Factions/LyranAlliance.uasset",
+        "/Plugins/TheKnownUniverse/Content/Factions/LyranAlliance.uexp"
+      ],
+      "sample_strings": [
+        "/ModOverride/TheKnownUniverse/Employers/Unused/LyranAlliance",
+        "LyranAlliance",
+        "Lyran Alliance",
+        "LyranStrongholds",
+        "RebeliousLyranTerritory",
+        "LyranCommonwealth",
+        "/TheKnownUniverse/Factions/LyranAlliance",
+        "EStarMapStencilId::LyranCommonwealth"
+      ]
+    },
+    "Steiner": {
+      "asset_count": 4,
+      "sample_assets": [
+        "/Game/Employers/Unused/FederationOfSkye.uasset",
+        "/Game/InnerSphereData/MW5_InnerSphereData.uasset",
+        "/Game/Libraries/MW5_TOI_Functions.uasset",
+        "/Plugins/TheKnownUniverse/Content/Factions/LyranAlliance.uasset"
+      ],
+      "sample_strings": [
+        "Steiner",
+        "SteinerBorder",
+        "SteinerMarikBorder",
+        "/Game/UI/Textures/Factions/main_factions/Faction_Steiner_1024PX_STD_UIX",
+        "/Game/UI/Textures/Factions/main_factions/Faction_Steiner_1024PX_STD_UIX.Faction_Steiner_1024PX_STD_UIX",
+        "/Game/UI/Textures/Factions/main_factions/Faction_Steiner_Logo_32px_UIX",
+        "/Game/UI/Textures/Factions/main_factions/Faction_Steiner_Logo_32px_UIX.Faction_Steiner_Logo_32px_UIX",
+        "PaintTheme.Faction.Steiner",
+        "Persona.Faction.Steiner"
+      ]
+    },
+    "Clan": {
+      "asset_count": 149,
+      "sample_assets": [
+        "/Game/Campaign/Personas/ProcMissionPersonas/PersonaAnonymousEmployer.uasset",
+        "/Game/Campaign/Personas/ProcMissionPersonas/PersonaAnonymousEmployer2.uasset",
+        "/Game/Employers/ClanGhostBear.uasset",
+        "/Game/Employers/ClanGhostBear.uexp",
+        "/Game/Employers/ClanJadeFalcon.uasset",
+        "/Game/Employers/ClanJadeFalcon.uexp",
+        "/Game/Employers/ClanSmokeJaguar.uasset",
+        "/Game/Employers/ClanSmokeJaguar.uexp",
+        "/Game/Employers/ClanWolf.uasset",
+        "/Game/Employers/ClanWolf.uexp",
+        "/Game/Employers/Unused/ClanBloodSpirit.uasset",
+        "/Game/Employers/Unused/ClanBloodSpirit.uexp",
+        "/Game/Employers/Unused/ClanBurrock.uasset",
+        "/Game/Employers/Unused/ClanBurrock.uexp",
+        "/Game/Employers/Unused/ClanCloudCobra.uasset",
+        "/Game/Employers/Unused/ClanCloudCobra.uexp",
+        "/Game/Employers/Unused/ClanCoyote.uasset",
+        "/Game/Employers/Unused/ClanCoyote.uexp",
+        "/Game/Employers/Unused/ClanDiamondShark.uasset",
+        "/Game/Employers/Unused/ClanDiamondShark.uexp",
+        "/Game/Employers/Unused/ClanFireMandrill.uasset",
+        "/Game/Employers/Unused/ClanFireMandrill.uexp",
+        "/Game/Employers/Unused/ClanGoliathScorpion.uasset",
+        "/Game/Employers/Unused/ClanGoliathScorpion.uexp",
+        "/Game/Employers/Unused/ClanHellsHorses.uasset",
+        "/Game/Employers/Unused/ClanHellsHorses.uexp",
+        "/Game/Employers/Unused/ClanIceHellion.uasset",
+        "/Game/Employers/Unused/ClanIceHellion.uexp",
+        "/Game/Employers/Unused/ClanMongoose.uasset",
+        "/Game/Employers/Unused/ClanMongoose.uexp",
+        "/Game/Employers/Unused/ClanNovaCat.uasset",
+        "/Game/Employers/Unused/ClanNovaCat.uexp",
+        "/Game/Employers/Unused/ClanSeaFox.uasset",
+        "/Game/Employers/Unused/ClanSeaFox.uexp",
+        "/Game/Employers/Unused/ClanSnowRaven.uasset",
+        "/Game/Employers/Unused/ClanSnowRaven.uexp",
+        "/Game/Employers/Unused/ClanStarAdder.uasset",
+        "/Game/Employers/Unused/ClanStarAdder.uexp",
+        "/Game/Employers/Unused/ClanSteelViper.uasset",
+        "/Game/Employers/Unused/ClanSteelViper.uexp"
+      ],
+      "sample_strings": [
+        "Persona.Faction.Clan",
+        "/ModOverride/TheKnownUniverse/Employers/ClanGhostBear",
+        "ClanGhostBear",
+        "Clan Ghost Bear",
+        "/ModOverride/TheKnownUniverse/Employers/ClanJadeFalcon",
+        "ClanJadeFalcon",
+        "Clan Jade Falcon",
+        "/ModOverride/TheKnownUniverse/Employers/ClanSmokeJaguar",
+        "ClanSmokeJaguar",
+        "Clan Smoke Jaguar",
+        "/ModOverride/TheKnownUniverse/Employers/ClanWolf",
+        "ClanWolf",
+        "Clan Wolf",
+        "/ModOverride/TheKnownUniverse/Employers/Unused/ClanBloodSpirit",
+        "ClanBloodSpirit",
+        "Clan Blood Spirit",
+        "/ModOverride/TheKnownUniverse/Employers/Unused/ClanBurrock",
+        "ClanBurrock",
+        "Clan Burrock",
+        "/ModOverride/TheKnownUniverse/Employers/Unused/ClanCloudCobra",
+        "ClanCloudCobra",
+        "Clan Cloud Cobra",
+        "/ModOverride/TheKnownUniverse/Employers/Unused/ClanCoyote",
+        "ClanCoyote",
+        "Clan Coyote",
+        "/ModOverride/TheKnownUniverse/Employers/Unused/ClanDiamondShark",
+        "ClanDiamondShark",
+        "Clan Diamond Shark",
+        "/ModOverride/TheKnownUniverse/Employers/Unused/ClanFireMandrill",
+        "ClanFireMandrill",
+        "Clan Fire Mandrill",
+        "/ModOverride/TheKnownUniverse/Employers/Unused/ClanGoliathScorpion",
+        "ClanGoliathScorpion",
+        "Clan Goliath Scorpion",
+        "/ModOverride/TheKnownUniverse/Employers/Unused/ClanHellsHorses",
+        "ClanHellsHorses",
+        "Clan Hell's Horses",
+        "/ModOverride/TheKnownUniverse/Employers/Unused/ClanIceHellion",
+        "ClanIceHellion",
+        "Clan Ice Hellion",
+        "/ModOverride/TheKnownUniverse/Employers/Unused/ClanMongoose",
+        "ClanMongoose",
+        "Clan Mongoose",
+        "/ModOverride/TheKnownUniverse/Employers/Unused/ClanNovaCat",
+        "ClanNovaCat",
+        "Clan Nova Cat",
+        "/ModOverride/TheKnownUniverse/Employers/Unused/ClanSeaFox",
+        "ClanSeaFox",
+        "Clan Sea Fox",
+        "/ModOverride/TheKnownUniverse/Employers/Unused/ClanSnowRaven",
+        "ClanSnowRaven",
+        "Clan Snow Raven",
+        "/ModOverride/TheKnownUniverse/Employers/Unused/ClanStarAdder",
+        "ClanStarAdder",
+        "Clan Star Adder",
+        "/ModOverride/TheKnownUniverse/Employers/Unused/ClanSteelViper",
+        "ClanSteelViper",
+        "Clan Steel Viper",
+        "/ModOverride/TheKnownUniverse/Employers/Unused/ClanStoneLion",
+        "ClanStoneLion",
+        "Clan Stone Lion",
+        "/ModOverride/TheKnownUniverse/Employers/Unused/ClanWidowmaker",
+        "ClanWidowmaker",
+        "ClanWidowMaker",
+        "Clan Widowmaker",
+        "/ModOverride/TheKnownUniverse/Employers/Unused/ClanWolfinExile",
+        "ClanWolfinExile",
+        "ClanWolfInExile",
+        "Clan Wolf-in-Exile",
+        "/ModOverride/TheKnownUniverse/Employers/Unused/ClanWolverine",
+        "ClanWolverine",
+        "Clan Wolverine",
+        "/ModOverride/TheKnownUniverse/Factions/Clan",
+        "Clan",
+        "/Game/CustomContent/Zones_Clan_Safezone",
+        "/Game/CustomContent/Zones_Clan_Safezone_1.Zones_Clan_Safezone",
+        "/Game/CustomContent/Zones_Clan_Safezone_2.Zones_Clan_Safezone",
+        "/Game/CustomContent/Zones_ClanConf",
+        "/Game/CustomContent/Zones_ClanConf_1.Zones_ClanConf",
+        "/Game/CustomContent/Zones_ClanConf_2.Zones_ClanConf"
+      ]
+    }
+  },
+  "high_signal_findings": [
+    "No path-level `/Game/Campaign/Clusters` assets exist in the original TKU pak.",
+    "No scanned original TKU cooked asset strings mention `MWClusterDataAsset`.",
+    "No scanned original TKU cooked asset strings mention `/Game/Campaign/Clusters`.",
+    "The only path-level cluster-named original TKU assets are the `CareerModeCustomClusters` campaign arc sidecars.",
+    "Original TKU contains many dated `StarMapBorderActor`, `Borders`, and `StarMapBordersUpdate_Action` plugin assets, consistent with an older border-overlay pipeline.",
+    "Current MW5 editor evidence shows modern overlays also depend on `/Game/Campaign/Clusters` `MWClusterDataAsset` assets, which are absent from original TKU build 38."
+  ],
+  "border_timeline_buckets": {
+    "2864-01-01": {
+      ".uasset": [
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/Borders2864-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/StarMapBorderActor2864-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/StarMapBordersUpdate_Action_2864-01-01.uasset"
+      ],
+      ".uexp": [
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/Borders2864-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/StarMapBorderActor2864-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/2864-01-01/StarMapBordersUpdate_Action_2864-01-01.uexp"
+      ]
+    },
+    "3025-01-01": {
+      ".uasset": [
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/Borders3025-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/StarMapBorderActor3025-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/StarMapBordersUpdate_Action_3025-01-01.uasset"
+      ],
+      ".uexp": [
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/Borders3025-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/StarMapBorderActor3025-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3025-01-01/StarMapBordersUpdate_Action_3025-01-01.uexp"
+      ]
+    },
+    "3030-01-01": {
+      ".uasset": [
+        "/Plugins/TheKnownUniverse/Content/3030-01-01/Borders3030-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3030-01-01/StarMapBorderActor3030-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3030-01-01/StarMapBordersUpdate_Action_3030-01-01.uasset"
+      ],
+      ".uexp": [
+        "/Plugins/TheKnownUniverse/Content/3030-01-01/Borders3030-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3030-01-01/StarMapBorderActor3030-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3030-01-01/StarMapBordersUpdate_Action_3030-01-01.uexp"
+      ]
+    },
+    "3034-01-01": {
+      ".uasset": [
+        "/Plugins/TheKnownUniverse/Content/3034-01-01/Borders3034-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3034-01-01/StarMapBorderActor3034-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3034-01-01/StarMapBordersUpdate_Action_3034-01-01.uasset"
+      ],
+      ".uexp": [
+        "/Plugins/TheKnownUniverse/Content/3034-01-01/Borders3034-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3034-01-01/StarMapBorderActor3034-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3034-01-01/StarMapBordersUpdate_Action_3034-01-01.uexp"
+      ]
+    },
+    "3040-01-01": {
+      ".uasset": [
+        "/Plugins/TheKnownUniverse/Content/3040-01-01/Borders3040-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3040-01-01/StarMapBorderActor3040-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3040-01-01/StarMapBordersUpdate_Action_3040-01-01.uasset"
+      ],
+      ".uexp": [
+        "/Plugins/TheKnownUniverse/Content/3040-01-01/Borders3040-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3040-01-01/StarMapBorderActor3040-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3040-01-01/StarMapBordersUpdate_Action_3040-01-01.uexp"
+      ]
+    },
+    "3049-09-01": {
+      ".uasset": [
+        "/Plugins/TheKnownUniverse/Content/3049-09-01/Borders3049-09-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3049-09-01/StarMapBorderActor3049-09-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3049-09-01/StarMapBordersUpdate_Action_3049-09-01.uasset"
+      ],
+      ".uexp": [
+        "/Plugins/TheKnownUniverse/Content/3049-09-01/Borders3049-09-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3049-09-01/StarMapBorderActor3049-09-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3049-09-01/StarMapBordersUpdate_Action_3049-09-01.uexp"
+      ]
+    },
+    "3050-04-01": {
+      ".uasset": [
+        "/Plugins/TheKnownUniverse/Content/3050-04-01/Borders3050-04-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-04-01/StarMapBorderActor3050-04-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-04-01/StarMapBordersUpdate_Action_3050-04-01.uasset"
+      ],
+      ".uexp": [
+        "/Plugins/TheKnownUniverse/Content/3050-04-01/Borders3050-04-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3050-04-01/StarMapBorderActor3050-04-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3050-04-01/StarMapBordersUpdate_Action_3050-04-01.uexp"
+      ]
+    },
+    "3050-06-01": {
+      ".uasset": [
+        "/Plugins/TheKnownUniverse/Content/3050-06-01/Borders3050-06-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-06-01/StarMapBorderActor3050-06-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-06-01/StarMapBordersUpdate_Action_3050-06-01.uasset"
+      ],
+      ".uexp": [
+        "/Plugins/TheKnownUniverse/Content/3050-06-01/Borders3050-06-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3050-06-01/StarMapBorderActor3050-06-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3050-06-01/StarMapBordersUpdate_Action_3050-06-01.uexp"
+      ]
+    },
+    "3050-08-01": {
+      ".uasset": [
+        "/Plugins/TheKnownUniverse/Content/3050-08-01/Borders3050-08-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-08-01/StarMapBorderActor3050-08-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-08-01/StarMapBordersUpdate_Action_3050-08-01.uasset"
+      ],
+      ".uexp": [
+        "/Plugins/TheKnownUniverse/Content/3050-08-01/Borders3050-08-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3050-08-01/StarMapBorderActor3050-08-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3050-08-01/StarMapBordersUpdate_Action_3050-08-01.uexp"
+      ]
+    },
+    "3050-10-01": {
+      ".uasset": [
+        "/Plugins/TheKnownUniverse/Content/3050-10-01/Borders3050-10-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-10-01/StarMapBorderActor3050-10-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3050-10-01/StarMapBordersUpdate_Action_3050-10-01.uasset"
+      ],
+      ".uexp": [
+        "/Plugins/TheKnownUniverse/Content/3050-10-01/Borders3050-10-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3050-10-01/StarMapBorderActor3050-10-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3050-10-01/StarMapBordersUpdate_Action_3050-10-01.uexp"
+      ]
+    },
+    "3052-01-01": {
+      ".uasset": [
+        "/Plugins/TheKnownUniverse/Content/3052-01-01/Borders3052-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3052-01-01/StarMapBorderActor3052-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3052-01-01/StarMapBordersUpdate_Action_3052-01-01.uasset"
+      ],
+      ".uexp": [
+        "/Plugins/TheKnownUniverse/Content/3052-01-01/Borders3052-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3052-01-01/StarMapBorderActor3052-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3052-01-01/StarMapBordersUpdate_Action_3052-01-01.uexp"
+      ]
+    },
+    "3057-01-01": {
+      ".uasset": [
+        "/Plugins/TheKnownUniverse/Content/3057-01-01/Borders3057-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3057-01-01/StarMapBorderActor3057-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3057-01-01/StarMapBordersUpdate_Action_3057-01-01.uasset"
+      ],
+      ".uexp": [
+        "/Plugins/TheKnownUniverse/Content/3057-01-01/Borders3057-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3057-01-01/StarMapBorderActor3057-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3057-01-01/StarMapBordersUpdate_Action_3057-01-01.uexp"
+      ]
+    },
+    "3058-01-01": {
+      ".uasset": [
+        "/Plugins/TheKnownUniverse/Content/3058-01-01/Borders3058-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3058-01-01/StarMapBorderActor3058-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3058-01-01/StarMapBordersUpdate_Action_3058-01-01.uasset"
+      ],
+      ".uexp": [
+        "/Plugins/TheKnownUniverse/Content/3058-01-01/Borders3058-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3058-01-01/StarMapBorderActor3058-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3058-01-01/StarMapBordersUpdate_Action_3058-01-01.uexp"
+      ]
+    },
+    "3059-01-01": {
+      ".uasset": [
+        "/Plugins/TheKnownUniverse/Content/3059-01-01/Borders3059-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-01-01/StarMapBorderActor3059-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-01-01/StarMapBordersUpdate_Action_3059-01-01.uasset"
+      ],
+      ".uexp": [
+        "/Plugins/TheKnownUniverse/Content/3059-01-01/Borders3059-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3059-01-01/StarMapBorderActor3059-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3059-01-01/StarMapBordersUpdate_Action_3059-01-01.uexp"
+      ]
+    },
+    "3059-04-01": {
+      ".uasset": [
+        "/Plugins/TheKnownUniverse/Content/3059-04-01/Borders3059-04-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-04-01/StarMapBorderActor3059-04-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-04-01/StarMapBordersUpdate_Action_3059-04-01.uasset"
+      ],
+      ".uexp": [
+        "/Plugins/TheKnownUniverse/Content/3059-04-01/Borders3059-04-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3059-04-01/StarMapBorderActor3059-04-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3059-04-01/StarMapBordersUpdate_Action_3059-04-01.uexp"
+      ]
+    },
+    "3059-08-01": {
+      ".uasset": [
+        "/Plugins/TheKnownUniverse/Content/3059-08-01/Borders3059-08-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-08-01/StarMapBorderActor3059-08-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3059-08-01/StarMapBordersUpdate_Action_3059-08-01.uasset"
+      ],
+      ".uexp": [
+        "/Plugins/TheKnownUniverse/Content/3059-08-01/Borders3059-08-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3059-08-01/StarMapBorderActor3059-08-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3059-08-01/StarMapBordersUpdate_Action_3059-08-01.uexp"
+      ]
+    },
+    "3060-01-01": {
+      ".uasset": [
+        "/Plugins/TheKnownUniverse/Content/3060-01-01/Borders3060-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3060-01-01/StarMapBorderActor3060-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3060-01-01/StarMapBordersUpdate_Action_3060-01-01.uasset"
+      ],
+      ".uexp": [
+        "/Plugins/TheKnownUniverse/Content/3060-01-01/Borders3060-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3060-01-01/StarMapBorderActor3060-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3060-01-01/StarMapBordersUpdate_Action_3060-01-01.uexp"
+      ]
+    },
+    "3063-01-01": {
+      ".uasset": [
+        "/Plugins/TheKnownUniverse/Content/3063-01-01/Borders3063-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3063-01-01/StarMapBorderActor3063-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3063-01-01/StarMapBordersUpdate_Action_3063-01-01.uasset"
+      ],
+      ".uexp": [
+        "/Plugins/TheKnownUniverse/Content/3063-01-01/Borders3063-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3063-01-01/StarMapBorderActor3063-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3063-01-01/StarMapBordersUpdate_Action_3063-01-01.uexp"
+      ]
+    },
+    "3067-01-01": {
+      ".uasset": [
+        "/Plugins/TheKnownUniverse/Content/3067-01-01/Borders3067-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3067-01-01/StarMapBorderActor3067-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3067-01-01/StarMapBordersUpdate_Action_3067-01-01.uasset"
+      ],
+      ".uexp": [
+        "/Plugins/TheKnownUniverse/Content/3067-01-01/Borders3067-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3067-01-01/StarMapBorderActor3067-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3067-01-01/StarMapBordersUpdate_Action_3067-01-01.uexp"
+      ]
+    },
+    "3068-01-01": {
+      ".uasset": [
+        "/Plugins/TheKnownUniverse/Content/3068-01-01/Borders3068-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3068-01-01/StarMapBorderActor3068-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3068-01-01/StarMapBordersUpdate_Action_3068-01-01.uasset"
+      ],
+      ".uexp": [
+        "/Plugins/TheKnownUniverse/Content/3068-01-01/Borders3068-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3068-01-01/StarMapBorderActor3068-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3068-01-01/StarMapBordersUpdate_Action_3068-01-01.uexp"
+      ]
+    },
+    "3075-01-01": {
+      ".uasset": [
+        "/Plugins/TheKnownUniverse/Content/3075-01-01/Borders3075-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3075-01-01/StarMapBorderActor3075-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3075-01-01/StarMapBordersUpdate_Action_3075-01-01.uasset"
+      ],
+      ".uexp": [
+        "/Plugins/TheKnownUniverse/Content/3075-01-01/Borders3075-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3075-01-01/StarMapBorderActor3075-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3075-01-01/StarMapBordersUpdate_Action_3075-01-01.uexp"
+      ]
+    },
+    "3079-01-01": {
+      ".uasset": [
+        "/Plugins/TheKnownUniverse/Content/3079-01-01/Borders3079-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3079-01-01/StarMapBorderActor3079-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3079-01-01/StarMapBordersUpdate_Action_3079-01-01.uasset"
+      ],
+      ".uexp": [
+        "/Plugins/TheKnownUniverse/Content/3079-01-01/Borders3079-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3079-01-01/StarMapBorderActor3079-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3079-01-01/StarMapBordersUpdate_Action_3079-01-01.uexp"
+      ]
+    },
+    "3081-01-01": {
+      ".uasset": [
+        "/Plugins/TheKnownUniverse/Content/3081-01-01/Borders3081-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3081-01-01/StarMapBorderActor3081-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3081-01-01/StarMapBordersUpdate_Action_3081-01-01.uasset"
+      ],
+      ".uexp": [
+        "/Plugins/TheKnownUniverse/Content/3081-01-01/Borders3081-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3081-01-01/StarMapBorderActor3081-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3081-01-01/StarMapBordersUpdate_Action_3081-01-01.uexp"
+      ]
+    },
+    "3085-01-01": {
+      ".uasset": [
+        "/Plugins/TheKnownUniverse/Content/3085-01-01/Borders3085-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3085-01-01/StarMapBorderActor3085-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3085-01-01/StarMapBordersUpdate_Action_3085-01-01.uasset"
+      ],
+      ".uexp": [
+        "/Plugins/TheKnownUniverse/Content/3085-01-01/Borders3085-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3085-01-01/StarMapBorderActor3085-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3085-01-01/StarMapBordersUpdate_Action_3085-01-01.uexp"
+      ]
+    },
+    "3095-01-01": {
+      ".uasset": [
+        "/Plugins/TheKnownUniverse/Content/3095-01-01/Borders3095-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3095-01-01/StarMapBorderActor3095-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3095-01-01/StarMapBordersUpdate_Action_3095-01-01.uasset"
+      ],
+      ".uexp": [
+        "/Plugins/TheKnownUniverse/Content/3095-01-01/Borders3095-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3095-01-01/StarMapBorderActor3095-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3095-01-01/StarMapBordersUpdate_Action_3095-01-01.uexp"
+      ]
+    },
+    "3130-01-01": {
+      ".uasset": [
+        "/Plugins/TheKnownUniverse/Content/3130-01-01/Borders3130-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3130-01-01/StarMapBorderActor3130-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3130-01-01/StarMapBordersUpdate_Action_3130-01-01.uasset"
+      ],
+      ".uexp": [
+        "/Plugins/TheKnownUniverse/Content/3130-01-01/Borders3130-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3130-01-01/StarMapBorderActor3130-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3130-01-01/StarMapBordersUpdate_Action_3130-01-01.uexp"
+      ]
+    },
+    "3135-01-01": {
+      ".uasset": [
+        "/Plugins/TheKnownUniverse/Content/3135-01-01/Borders3135-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3135-01-01/StarMapBorderActor3135-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3135-01-01/StarMapBordersUpdate_Action_3135-01-01.uasset"
+      ],
+      ".uexp": [
+        "/Plugins/TheKnownUniverse/Content/3135-01-01/Borders3135-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3135-01-01/StarMapBorderActor3135-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3135-01-01/StarMapBordersUpdate_Action_3135-01-01.uexp"
+      ]
+    },
+    "3145-01-01": {
+      ".uasset": [
+        "/Plugins/TheKnownUniverse/Content/3145-01-01/Borders3145-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3145-01-01/StarMapBorderActor3145-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3145-01-01/StarMapBordersUpdate_Action_3145-01-01.uasset"
+      ],
+      ".uexp": [
+        "/Plugins/TheKnownUniverse/Content/3145-01-01/Borders3145-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3145-01-01/StarMapBorderActor3145-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3145-01-01/StarMapBordersUpdate_Action_3145-01-01.uexp"
+      ]
+    },
+    "3151-01-01": {
+      ".uasset": [
+        "/Plugins/TheKnownUniverse/Content/3151-01-01/Borders3151-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3151-01-01/StarMapBorderActor3151-01-01.uasset",
+        "/Plugins/TheKnownUniverse/Content/3151-01-01/StarMapBordersUpdate_Action_3151-01-01.uasset"
+      ],
+      ".uexp": [
+        "/Plugins/TheKnownUniverse/Content/3151-01-01/Borders3151-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3151-01-01/StarMapBorderActor3151-01-01.uexp",
+        "/Plugins/TheKnownUniverse/Content/3151-01-01/StarMapBordersUpdate_Action_3151-01-01.uexp"
+      ]
+    }
+  }
+}

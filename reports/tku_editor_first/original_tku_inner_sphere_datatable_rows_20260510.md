@@ -1,0 +1,176 @@
+# Original TKU InnerSphere DataTable Rows - 2026-05-10
+
+- Generated: `2026-05-10T12:35:56.748212+00:00`
+- Source pak: `E:\SteamLibrary\steamapps\common\MechWarrior 5 Mercenaries\MW5Mercs\Mods\TheKnownUniverse\Paks\TheKnownUniverse.pak`
+- Source asset: `/Game/InnerSphereData/MW5_InnerSphereData.uasset` / `/Game/InnerSphereData/MW5_InnerSphereData.uexp`
+- Method: read-only local pak extraction plus UE4 package/DataTable row-map parsing.
+- Safety: no game, editor, or pak assets were modified.
+
+## Parse Result
+
+- Expected row count: `3929`
+- Parsed row count: `3929`
+- Parse errors: `[]`
+- Row-map info: `{'top_level_properties': {'RowStruct': -5, '__meta_RowStruct': {'type': 'ObjectProperty', 'size': 4, 'array_index': 0}}, 'pos': 41, 'row_count': 3929, 'skipped_bytes_after_properties': 4}`
+- Derived CSV: `D:\Downloads\OneDrive\Documents\code\tku-update\reports\tku_editor_first\original_tku_inner_sphere_datatable_rows_20260510.csv`
+
+## Summary
+
+- Row IDs: `0` to `7921` across `3929` rows
+- Coordinate range: `{'count': 3929, 'x': {'min': -1877.4300537109375, 'max': 1937.3699951171875, 'span': 3814.800048828125}, 'y': {'min': -2003.9000244140625, 'max': 1912.1800537109375, 'span': 3916.080078125}}`
+- Non-empty cluster rows: `1091`
+- Unique cluster ids: `69`
+- Overlay rows: `103`
+- Constellation rows: `38`
+- IDs missing from current CSV: `1801`
+- IDs missing from wide source JSON: `1808`
+- Current CSV IDs missing from TKU: `45`
+- Wide source IDs missing from TKU: `1325`
+
+Top TKU cluster ids:
+- `RepairSystem`: `204`
+- `CareerCluster`: `189`
+- `TaurianCorridor`: `42`
+- `ClanConflict`: `29`
+- `OutworldsBorder`: `28`
+- `LowerClassWorlds`: `25`
+- `LyranStrongholds`: `22`
+- `DavionBorder`: `22`
+- `DavionKurita`: `21`
+- `SteinerBorder`: `21`
+- `AlarionPeriphery`: `21`
+- `RasalagueReaches`: `18`
+- `RebeliousLyranTerritory`: `17`
+- `MarikLiaoBorder`: `17`
+- `SianCommonality`: `17`
+- `FWLCommercialHub`: `17`
+- `DutchyOfAndurien`: `17`
+- `FWLInterior`: `17`
+- `SteinerMarikBorder`: `16`
+- `DroughtWorlds`: `16`
+- `AgriculturalBelt`: `15`
+- `RogueSystems`: `14`
+- `DavionBorderlands`: `14`
+- `StewartCommonality`: `14`
+- `IndustrialMiningCompany`: `14`
+- `InfernosWake`: `14`
+- `TheJunkyard`: `13`
+- `PirateCluster`: `13`
+- `MercenaryRow`: `13`
+- `FWLShippingRoute`: `12`
+- `DropshipGraveyard`: `12`
+- `RepairSystem_Clan`: `11`
+- `ShippingRoute`: `11`
+- `KuritaDavion`: `11`
+- `TamarindAbbey`: `11`
+- `KuritanBadlands`: `11`
+- `BackwaterRegion`: `11`
+- `A2M1_Cluster`: `10`
+- `TsinghaiCommonality`: `10`
+- `PirateKingdoms`: `10`
+- `RashpurOwensInc`: `9`
+- `RepairSystem_Custom`: `8`
+- `EmptyWorlds`: `6`
+- `StoryCluster2`: `5`
+- `StoryCluster3`: `5`
+- `StoryCluster5`: `5`
+- `StoryCluster1`: `5`
+- `StoryCluster4`: `3`
+- `StoryCluster6`: `3`
+- `StoryCluster7`: `3`
+- `Vega`: `1`
+- `Tikonov`: `1`
+- `Solaris`: `1`
+- `Auldhouse`: `1`
+- `Sarna`: `1`
+- `TrollocPrime`: `1`
+- `Dieron`: `1`
+- `Arcturus`: `1`
+- `KuritaBorder`: `1`
+- `Westerhand`: `1`
+
+## Sample Overlay Rows
+
+- `{'row_name': '4088', 'Name': '4088', 'StarSystemName': 'Babylon', 'Cluster': 'MWFactionAsset:RepairSystem_Clan', 'ClusterOverlay': '/Game/CustomContent/Zones_Clan_Safezone_2.Zones_Clan_Safezone', 'ClusterConstellation': '/Game/CustomContent/Zones_Clan_Safezone_2.Zones_Clan_Safezone'}`
+- `{'row_name': '4110', 'Name': '4110', 'StarSystemName': 'Strana Mechty', 'Cluster': 'MWFactionAsset:ClanConflict', 'ClusterOverlay': '/Game/CustomContent/Zones_ClanConf_1.Zones_ClanConf', 'ClusterConstellation': 'None'}`
+- `{'row_name': '4120', 'Name': '4120', 'StarSystemName': 'Sheridan (Clan)', 'Cluster': 'MWFactionAsset:ClanConflict', 'ClusterOverlay': '/Game/CustomContent/Zones_ClanConf_2.Zones_ClanConf', 'ClusterConstellation': 'None'}`
+- `{'row_name': '4127', 'Name': '4127', 'StarSystemName': 'Kirin', 'Cluster': 'MWFactionAsset:ClanConflict', 'ClusterOverlay': '/Game/CustomContent/Zones_ClanConf_4.Zones_ClanConf', 'ClusterConstellation': 'None'}`
+- `{'row_name': '4132', 'Name': '4132', 'StarSystemName': 'Roche', 'Cluster': 'MWFactionAsset:ClanConflict', 'ClusterOverlay': '/Game/CustomContent/Zones_ClanConf_3.Zones_ClanConf', 'ClusterConstellation': 'None'}`
+- `{'row_name': '4143', 'Name': '4143', 'StarSystemName': 'Vinton', 'Cluster': 'MWFactionAsset:RepairSystem_Clan', 'ClusterOverlay': '/Game/CustomContent/Zones_Clan_Safezone_1.Zones_Clan_Safezone', 'ClusterConstellation': '/Game/CustomContent/Zones_Clan_Safezone_1.Zones_Clan_Safezone'}`
+- `{'row_name': '1539', 'Name': '1539', 'StarSystemName': 'Vindemiatrix', 'Cluster': 'MWFactionAsset:RepairSystem', 'ClusterOverlay': '/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_14_Blob.Safezone_14_Blob', 'ClusterConstellation': '/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_14.Safezone'}`
+- `{'row_name': '64', 'Name': '64', 'StarSystemName': 'Demeter', 'Cluster': 'MWFactionAsset:RepairSystem', 'ClusterOverlay': '/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_7_5_Blob.Safezone_7_5_Blob', 'ClusterConstellation': '/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_7_5.Safezone_7'}`
+- `{'row_name': '61', 'Name': '61', 'StarSystemName': 'Rukbat', 'Cluster': 'MWFactionAsset:RogueSystems', 'ClusterOverlay': '/Game/Campaign/CampaignArcs/Regions/12_3/12_3.12', 'ClusterConstellation': 'None'}`
+- `{'row_name': '2', 'Name': '2', 'StarSystemName': 'Tau Ceti (New Earth (2116+))', 'Cluster': 'MWFactionAsset:RepairSystem', 'ClusterOverlay': '/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/SafezoneCollision/Safezone7_Collision.Safezone7_Collision', 'ClusterConstellation': '/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone7.Safezone7'}`
+- `{'row_name': '90', 'Name': '90', 'StarSystemName': 'Foot Fall', 'Cluster': 'MWFactionAsset:A2M1_Cluster', 'ClusterOverlay': '/Game/Campaign/CampaignArcs/MetagameObjectives/CampaignClusters/A2M1.A2M1', 'ClusterConstellation': 'None'}`
+- `{'row_name': '764', 'Name': '764', 'StarSystemName': 'Tania Australis', 'Cluster': 'MWFactionAsset:StewartCommonality', 'ClusterOverlay': '/Game/Campaign/CampaignArcs/Regions/11_1/11_1.11', 'ClusterConstellation': 'None'}`
+- `{'row_name': '440', 'Name': '440', 'StarSystemName': 'Port Moseby', 'Cluster': 'MWFactionAsset:CareerCluster', 'ClusterOverlay': '/Game/DLC1/CareerMode/Warzones/S_10_12/S_10_12.S_10', 'ClusterConstellation': 'None'}`
+- `{'row_name': '333', 'Name': '333', 'StarSystemName': 'Raman', 'Cluster': 'MWFactionAsset:KuritaDavion', 'ClusterOverlay': '/Game/Campaign/CampaignArcs/Regions/6_1/6_1_Mesh.6_1_Mesh', 'ClusterConstellation': 'None'}`
+- `{'row_name': '280', 'Name': '280', 'StarSystemName': 'Breukelen', 'Cluster': 'MWFactionAsset:LyranStrongholds', 'ClusterOverlay': '/Game/Campaign/CampaignArcs/Regions/11_3/11_3.11', 'ClusterConstellation': 'None'}`
+- `{'row_name': '1474', 'Name': '1474', 'StarSystemName': 'Launam', 'Cluster': 'MWFactionAsset:SteinerMarikBorder', 'ClusterOverlay': '/Game/Campaign/CampaignArcs/Regions/10_3/10_3.10', 'ClusterConstellation': 'None'}`
+- `{'row_name': '713', 'Name': '713', 'StarSystemName': 'Clinton', 'Cluster': 'MWFactionAsset:RebeliousLyranTerritory', 'ClusterOverlay': '/Game/Campaign/CampaignArcs/Regions/11_2/11_2.11', 'ClusterConstellation': 'None'}`
+- `{'row_name': '203', 'Name': '203', 'StarSystemName': 'Capella', 'Cluster': 'MWFactionAsset:TsinghaiCommonality', 'ClusterOverlay': '/Game/Campaign/CampaignArcs/Regions/7_2/7_2_Mesh.7_2_Mesh', 'ClusterConstellation': 'None'}`
+- `{'row_name': '291', 'Name': '291', 'StarSystemName': 'Wroxeter', 'Cluster': 'MWFactionAsset:ShippingRoute', 'ClusterOverlay': '/Game/Campaign/CampaignArcs/Regions/6_3/6_3_Mesh.6_3_Mesh', 'ClusterConstellation': 'None'}`
+- `{'row_name': '742', 'Name': '742', 'StarSystemName': 'Grumium', 'Cluster': 'MWFactionAsset:StoryCluster4', 'ClusterOverlay': '/Game/Campaign/CampaignArcs/Regions/StoryCluster_04/StoryCluster_4_STM.StoryCluster_4_STM', 'ClusterConstellation': 'None'}`
+- `{'row_name': '77', 'Name': '77', 'StarSystemName': 'Muskegon', 'Cluster': 'MWFactionAsset:RepairSystem', 'ClusterOverlay': '/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_7_Blob.Safezone_7_Blob', 'ClusterConstellation': '/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_7.Safezone'}`
+- `{'row_name': '377', 'Name': '377', 'StarSystemName': 'Paris', 'Cluster': 'MWFactionAsset:RepairSystem', 'ClusterOverlay': '/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_5_Blob.Safezone_5_Blob', 'ClusterConstellation': '/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_5.Safezone'}`
+- `{'row_name': '209', 'Name': '209', 'StarSystemName': 'Kurragin', 'Cluster': 'MWFactionAsset:RepairSystem', 'ClusterOverlay': '/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_9_Blob.Safezone_9_Blob', 'ClusterConstellation': '/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_9.Safezone'}`
+- `{'row_name': '422', 'Name': '422', 'StarSystemName': 'Kelenfold', 'Cluster': 'MWFactionAsset:RepairSystem', 'ClusterOverlay': '/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/SafezoneCollision/Safezone9_Collision.Safezone9_Collision', 'ClusterConstellation': '/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone9.Safezone9'}`
+- `{'row_name': '765', 'Name': '765', 'StarSystemName': 'Calloway', 'Cluster': 'MWFactionAsset:MarikLiaoBorder', 'ClusterOverlay': '/Game/Campaign/CampaignArcs/Regions/9_1/9_1.9', 'ClusterConstellation': 'None'}`
+- `{'row_name': '357', 'Name': '357', 'StarSystemName': 'Helsingfors', 'Cluster': 'MWFactionAsset:RepairSystem', 'ClusterOverlay': '/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_16_Blob.Safezone_16_Blob', 'ClusterConstellation': '/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_16.Safezone'}`
+- `{'row_name': '962', 'Name': '962', 'StarSystemName': 'Gallitzin', 'Cluster': 'MWFactionAsset:RepairSystem', 'ClusterOverlay': '/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_8_Blob.Safezone_8_Blob', 'ClusterConstellation': '/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_8.Safezone'}`
+- `{'row_name': '500', 'Name': '500', 'StarSystemName': 'Elektrougli', 'Cluster': 'MWFactionAsset:RepairSystem', 'ClusterOverlay': '/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_11_Blob.Safezone_11_Blob', 'ClusterConstellation': '/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_11.Safezone'}`
+- `{'row_name': '1803', 'Name': '1803', 'StarSystemName': 'Monhegan', 'Cluster': 'MWFactionAsset:RashpurOwensInc', 'ClusterOverlay': '/Game/Campaign/CampaignArcs/Regions/7_1/7_1_Mesh.7_1_Mesh', 'ClusterConstellation': 'None'}`
+- `{'row_name': '416', 'Name': '416', 'StarSystemName': 'Midkiff', 'Cluster': 'MWFactionAsset:RepairSystem', 'ClusterOverlay': '/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_13_Blob.Safezone_13_Blob', 'ClusterConstellation': '/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_13.Safezone'}`
+- `{'row_name': '360', 'Name': '360', 'StarSystemName': 'Ljugarn', 'Cluster': 'MWFactionAsset:CareerCluster', 'ClusterOverlay': '/Game/DLC1/CareerMode/Warzones/K_8_10/K_8_10.K_8', 'ClusterConstellation': 'None'}`
+- `{'row_name': '1711', 'Name': '1711', 'StarSystemName': 'Setubal', 'Cluster': 'MWFactionAsset:LowerClassWorlds', 'ClusterOverlay': '/Game/Campaign/CampaignArcs/Regions/12_2/12_2.12', 'ClusterConstellation': 'None'}`
+- `{'row_name': '316', 'Name': '316', 'StarSystemName': 'Franklin', 'Cluster': 'MWFactionAsset:IndustrialMiningCompany', 'ClusterOverlay': '/Game/Campaign/CampaignArcs/Regions/5_2/5_2_Mesh.5_2_Mesh', 'ClusterConstellation': 'None'}`
+- `{'row_name': '1453', 'Name': '1453', 'StarSystemName': 'Atreus', 'Cluster': 'MWFactionAsset:RepairSystem', 'ClusterOverlay': '/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/SafezoneCollision/Safezone2_Collision.Safezone2_Collision', 'ClusterConstellation': '/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone2.Safezone2'}`
+- `{'row_name': '208', 'Name': '208', 'StarSystemName': 'La Grave', 'Cluster': 'MWFactionAsset:SteinerBorder', 'ClusterOverlay': '/Game/Campaign/CampaignArcs/Regions/12_1/12_1.12', 'ClusterConstellation': 'None'}`
+- `{'row_name': '1712', 'Name': '1712', 'StarSystemName': 'Decus', 'Cluster': 'MWFactionAsset:SianCommonality', 'ClusterOverlay': '/Game/Campaign/CampaignArcs/Regions/8_1/8_1.8', 'ClusterConstellation': 'None'}`
+- `{'row_name': '984', 'Name': '984', 'StarSystemName': 'Tharkad', 'Cluster': 'MWFactionAsset:RepairSystem', 'ClusterOverlay': '/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/SafezoneCollision/Safezone3_Collision.Safezone3_Collision', 'ClusterConstellation': '/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneSection2/Safezone3.Safezone3'}`
+- `{'row_name': '996', 'Name': '996', 'StarSystemName': 'Halfway', 'Cluster': 'MWFactionAsset:RepairSystem', 'ClusterOverlay': '/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/SafezoneCollision/Safezone_15_Blob.Safezone_15_Blob', 'ClusterConstellation': '/Game/Campaign/CampaignArcs/BorderChanges/_common/FactionBorderMeshes/SafezoneTempFolder/Safezone_15.Safezone'}`
+- `{'row_name': '465', 'Name': '465', 'StarSystemName': "Harrow's Sun", 'Cluster': 'MWFactionAsset:DavionKurita', 'ClusterOverlay': '/Game/Campaign/CampaignArcs/Regions/5_1/5_1_Mesh.5_1_Mesh', 'ClusterConstellation': 'None'}`
+- `{'row_name': '367', 'Name': '367', 'StarSystemName': 'Wallis', 'Cluster': 'MWFactionAsset:FWLCommercialHub', 'ClusterOverlay': '/Game/Campaign/CampaignArcs/Regions/9_3/9_3.9', 'ClusterConstellation': 'None'}`
+
+## Farthest Systems
+
+- `{'row_name': '4551', 'Name': '4551', 'StarSystemName': 'Saggina', 'PosX': -605.8740234375, 'PosY': -2003.9000244140625, 'Cluster': ''}`
+- `{'row_name': '4149', 'Name': '4149', 'StarSystemName': 'Star Cluster 1108 (Spinward)', 'PosX': 1871.1300048828125, 'PosY': -672.8670043945312, 'Cluster': ''}`
+- `{'row_name': '4147', 'Name': '4147', 'StarSystemName': 'Nebula D77', 'PosX': 705.2979736328125, 'PosY': -1815.02001953125, 'Cluster': ''}`
+- `{'row_name': '4142', 'Name': '4142', 'StarSystemName': 'Interstellar Expeditions Base #22', 'PosX': -734.2940063476562, 'PosY': -1753.1099853515625, 'Cluster': ''}`
+- `{'row_name': '4148', 'Name': '4148', 'StarSystemName': 'Star Cluster 1108 (Rimward)', 'PosX': 528.2490234375, 'PosY': -1890.27001953125, 'Cluster': ''}`
+- `{'row_name': '4139', 'Name': '4139', 'StarSystemName': 'Knechee', 'PosX': -591.1790161132812, 'PosY': -1793.4300537109375, 'Cluster': ''}`
+- `{'row_name': '4133', 'Name': '4133', 'StarSystemName': 'Joradian Cluster', 'PosX': -1778.6600341796875, 'PosY': 585.4639892578125, 'Cluster': ''}`
+- `{'row_name': '4145', 'Name': '4145', 'StarSystemName': 'Brundams', 'PosX': -1877.4300537109375, 'PosY': -441.99200439453125, 'Cluster': ''}`
+- `{'row_name': '4095', 'Name': '4095', 'StarSystemName': 'Kazlam', 'PosX': -1420.699951171875, 'PosY': 804.1300048828125, 'Cluster': ''}`
+- `{'row_name': '4097', 'Name': '4097', 'StarSystemName': 'Rim Worlds Republic Outpost #11', 'PosX': 777.947998046875, 'PosY': -1438.219970703125, 'Cluster': ''}`
+- `{'row_name': '4114', 'Name': '4114', 'StarSystemName': "Death's Gaze Cluster", 'PosX': 487.1969909667969, 'PosY': -1708.989990234375, 'Cluster': ''}`
+- `{'row_name': '4141', 'Name': '4141', 'StarSystemName': 'Heidrunn', 'PosX': -1877.199951171875, 'PosY': 279.1730041503906, 'Cluster': ''}`
+- `{'row_name': '4112', 'Name': '4112', 'StarSystemName': 'Rim Worlds Republic Outpost #4', 'PosX': 1721.9200439453125, 'PosY': 424.9100036621094, 'Cluster': ''}`
+- `{'row_name': '4085', 'Name': '4085', 'StarSystemName': 'Star Cluster A51', 'PosX': 750.5079956054688, 'PosY': 1390.52001953125, 'Cluster': ''}`
+- `{'row_name': '7793', 'Name': '7793', 'StarSystemName': 'JP-KW-213', 'PosX': 734.552001953125, 'PosY': 1401.3399658203125, 'Cluster': ''}`
+- `{'row_name': '7794', 'Name': '7794', 'StarSystemName': 'JP-HO-212', 'PosX': 760.3670043945312, 'PosY': 1366.362060546875, 'Cluster': ''}`
+- `{'row_name': '7644', 'Name': '7644', 'StarSystemName': 'JP-NW-632', 'PosX': -744.6519775390625, 'PosY': 1377.4990234375, 'Cluster': ''}`
+- `{'row_name': '7206', 'Name': '7206', 'StarSystemName': 'JP-QP-667', 'PosX': -724.9349975585938, 'PosY': 1392.791015625, 'Cluster': ''}`
+- `{'row_name': '4146', 'Name': '4146', 'StarSystemName': 'Star Cluster 643', 'PosX': 1937.3699951171875, 'PosY': -172.0229949951172, 'Cluster': ''}`
+- `{'row_name': '7796', 'Name': '7796', 'StarSystemName': 'JP-TM-210', 'PosX': 699.6079711914062, 'PosY': 1405.512939453125, 'Cluster': ''}`
+- `{'row_name': '7795', 'Name': '7795', 'StarSystemName': 'JP-KL-210', 'PosX': 717.1489868164062, 'PosY': 1386.093017578125, 'Cluster': ''}`
+- `{'row_name': '7792', 'Name': '7792', 'StarSystemName': 'JP-WQ-209', 'PosX': 758.801025390625, 'PosY': 1340.26904296875, 'Cluster': ''}`
+- `{'row_name': '4081', 'Name': '4081', 'StarSystemName': 'Aurigae', 'PosX': 868.6179809570312, 'PosY': -1226.969970703125, 'Cluster': ''}`
+- `{'row_name': '4083', 'Name': '4083', 'StarSystemName': 'Waystation 531 (Waypoint 531)', 'PosX': -742.5579833984375, 'PosY': 1349.2099609375, 'Cluster': ''}`
+- `{'row_name': '7204', 'Name': '7204', 'StarSystemName': 'JP-VW-785', 'PosX': -652.5, 'PosY': 1438.375, 'Cluster': ''}`
+- `{'row_name': '7799', 'Name': '7799', 'StarSystemName': 'JP-GZ-208', 'PosX': 644.2020263671875, 'PosY': 1442.7130126953125, 'Cluster': ''}`
+- `{'row_name': '7645', 'Name': '7645', 'StarSystemName': 'JP-RM-682', 'PosX': -701.9819946289062, 'PosY': 1384.7840576171875, 'Cluster': ''}`
+- `{'row_name': '7205', 'Name': '7205', 'StarSystemName': 'JP-CG-720', 'PosX': -679.3510131835938, 'PosY': 1400.2850341796875, 'Cluster': ''}`
+- `{'row_name': '7797', 'Name': '7797', 'StarSystemName': 'JP-JW-207', 'PosX': 673.7449951171875, 'PosY': 1404.572998046875, 'Cluster': ''}`
+- `{'row_name': '7798', 'Name': '7798', 'StarSystemName': 'JP-VN-207', 'PosX': 658.4500122070312, 'PosY': 1419.760009765625, 'Cluster': ''}`
+- `{'row_name': '7646', 'Name': '7646', 'StarSystemName': 'JP-AS-755', 'PosX': -656.8109741210938, 'PosY': 1412.18701171875, 'Cluster': ''}`
+- `{'row_name': '7801', 'Name': '7801', 'StarSystemName': 'JP-QW-206', 'PosX': 605.4190063476562, 'PosY': 1462.5009765625, 'Cluster': ''}`
+- `{'row_name': '7643', 'Name': '7643', 'StarSystemName': 'JP-NH-578', 'PosX': -744.6519775390625, 'PosY': 1322.8599853515625, 'Cluster': ''}`
+- `{'row_name': '7791', 'Name': '7791', 'StarSystemName': 'JP-UA-206', 'PosX': 732.9660034179688, 'PosY': 1332.873046875, 'Cluster': ''}`
+- `{'row_name': '4096', 'Name': '4096', 'StarSystemName': 'Tansalir', 'PosX': -1550.81005859375, 'PosY': -513.9520263671875, 'Cluster': ''}`
+- `{'row_name': '4144', 'Name': '4144', 'StarSystemName': 'Leviathans Rest', 'PosX': -141.0709991455078, 'PosY': -1921.199951171875, 'Cluster': ''}`
+- `{'row_name': '7647', 'Name': '7647', 'StarSystemName': 'JP-VD-798', 'PosX': -631.2139892578125, 'PosY': 1429.9549560546875, 'Cluster': ''}`
+- `{'row_name': '7800', 'Name': '7800', 'StarSystemName': 'JP-CM-205', 'PosX': 618.8740234375, 'PosY': 1438.7559814453125, 'Cluster': ''}`
+- `{'row_name': '7203', 'Name': '7203', 'StarSystemName': 'JP-PI-822', 'PosX': -607.5399780273438, 'PosY': 1430.258056640625, 'Cluster': ''}`
+- `{'row_name': '4116', 'Name': '4116', 'StarSystemName': 'Chaffee (DP)', 'PosX': 275.8349914550781, 'PosY': -1758.010009765625, 'Cluster': ''}`
