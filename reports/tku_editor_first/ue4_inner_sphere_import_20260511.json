@@ -1,0 +1,165 @@
+{
+  "allow_root_override": false,
+  "apply_requested": false,
+  "apply_result": {
+    "applied": false,
+    "attempted": false,
+    "reason": "safety_failures"
+  },
+  "csv": {
+    "encoding": "utf-16",
+    "exists": true,
+    "header": [
+      "---",
+      "Name",
+      "StarSystemName",
+      "PosX",
+      "PosY",
+      "SystemType",
+      "SpectralType",
+      "Luminosity",
+      "SubType",
+      "SystemStatus",
+      "ChargingStation",
+      "Orbitals",
+      "Habitable",
+      "Description",
+      "Cluster",
+      "ClusterOverlay",
+      "ClusterConstellation"
+    ],
+    "path": "D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\tku_inner_sphere_merged_current_plus_tku_additions_20260510.csv",
+    "preview": [
+      [
+        "0",
+        "0",
+        "INVALID",
+        "0.000000",
+        "0.000000",
+        "Normal",
+        "None",
+        ""
+      ],
+      [
+        "1",
+        "1",
+        "Terra",
+        "0.000000",
+        "0.000000",
+        "Normal",
+        "G",
+        "V"
+      ],
+      [
+        "2",
+        "2",
+        "Tau Ceti",
+        "-13.000000",
+        "2.000000",
+        "Normal",
+        "G",
+        "V"
+      ],
+      [
+        "3",
+        "3",
+        "Rigil Kentarus",
+        "-3.000000",
+        "4.000000",
+        "Normal",
+        "G",
+        "V"
+      ],
+      [
+        "4",
+        "4",
+        "Pike",
+        "20.000000",
+        "40.000000",
+        "Normal",
+        "K",
+        "IV"
+      ]
+    ],
+    "row_count": 3974,
+    "sample_rows_present": {
+      "0": true,
+      "1": true,
+      "2": true,
+      "3501": true,
+      "4001": true,
+      "4110": true,
+      "7921": true
+    }
+  },
+  "csv_path": "D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\tku_inner_sphere_merged_current_plus_tku_additions_20260510.csv",
+  "editor_project": "E:\\Games\\MechWarrior5Editor\\MW5Mercs",
+  "editor_root": "E:\\Games\\MechWarrior5Editor",
+  "expected_row_count": 3974,
+  "expected_row_struct": "/Script/MechWarrior.InnerSphereMapData",
+  "generated_utc": "2026-05-11T08:47:53.901322+00:00",
+  "mod_target": {
+    "filesystem": {
+      "mods_dir": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Mods\\TKUCompatEditorPatch",
+      "mods_dir_exists": false,
+      "plugin_file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch\\TKUCompatEditorPatch.uplugin",
+      "plugin_file_exists": true,
+      "plugins_dir": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch",
+      "plugins_dir_exists": true
+    },
+    "found": true,
+    "mwmodutils": {
+      "available": true,
+      "get_active_mod_entry": {
+        "ok": true,
+        "value": {
+          "python_type": "ModListEntry",
+          "repr": "<Struct 'ModListEntry' (0x000001AB8A5E1240) {mod_name: \"TKUCompatEditorPatch\", info: {display_name: \"TKUCompatEditorPatch\", version: \"1.0\", build_number: 0, description: \"Editor-authored compatibility patch for Known Universe on MW5 1.1.380\", author: \"Codex/TKU Recovery\", author_url: \"\", default_load_order: 0.000000, game_version: \"\", manifest: , steam_published_file_id: 0, steam_last_submitted_build_number: 0, steam_mod_visibility: Private}, status: {enabled: False}, origin: None}>"
+        }
+      },
+      "get_active_mod_plugin": {
+        "ok": true,
+        "value": {
+          "python_type": "MWModPluginInfo",
+          "repr": "<Struct 'MWModPluginInfo' (0x000001AB8A5E0F40) {mod_name: \"TKUCompatEditorPatch\", plugin_path: \"../../../MW5Mercs/Plugins/TKUCompatEditorPatch\", version_name: \"1.0\", friendly_name: \"TKUCompatEditorPatch\", description: \"Editor-authored compatibility patch for Known Universe on MW5 1.1.380\", category: \"Other\", created_by: \"Codex/TKU Recovery\", created_by_url: \"\", docs_url: \"\", marketplace_url: \"\", support_url: \"\", engine_version: \"\"}>"
+        }
+      },
+      "get_mod_plugin_names": {
+        "ok": true,
+        "value": [
+          "TKUCompatEditorPatch"
+        ]
+      },
+      "get_mods_install_path": {
+        "ok": true,
+        "value": "E:/Games/MechWarrior5Editor/MW5Mercs/Mods/"
+      }
+    },
+    "target_mod_name": "TKUCompatEditorPatch"
+  },
+  "project_root": "D:\\Downloads\\OneDrive\\Documents\\code\\tku-update",
+  "safety_failures": [
+    "Target DataTable asset does not exist: /ModOverride/TKUCompatEditorPatch/InnerSphereData/MW5_InnerSphereData"
+  ],
+  "sample_rows": [
+    "0",
+    "1",
+    "2",
+    "3501",
+    "4001",
+    "4110",
+    "7921"
+  ],
+  "script": null,
+  "source_asset_path": "/Game/InnerSphereData/MW5_InnerSphereData",
+  "target_asset_path": "/ModOverride/TKUCompatEditorPatch/InnerSphereData/MW5_InnerSphereData",
+  "target_data_table": {
+    "asset_path": "/ModOverride/TKUCompatEditorPatch/InnerSphereData/MW5_InnerSphereData",
+    "exists": false,
+    "exists_call": {
+      "ok": true,
+      "value": false
+    }
+  },
+  "target_mod_name": "TKUCompatEditorPatch"
+}

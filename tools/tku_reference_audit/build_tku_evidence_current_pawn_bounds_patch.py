@@ -15,7 +15,7 @@ from mw5_pak import build_pak, extract_exact_paths
 from parse_ue4_package_refs import Reader, parse_exports, parse_names, parse_summary
 
 
-from tku_project_paths import GAME_ROOT as WORKSPACE, PROJECT_ROOT, REPORTS_DIR, TOOLS_ROOT
+from tku_project_paths import GAME_ROOT as WORKSPACE, GAME_VERSION, PROJECT_ROOT, REPORTS_DIR, TOOLS_ROOT
 VANILLA_PAK = WORKSPACE / "MW5Mercs" / "Content" / "Paks" / "MW5Mercs-WindowsNoEditor.pak"
 ORIGINAL_TKU_PAK = WORKSPACE / "MW5Mercs" / "Mods" / "TheKnownUniverse" / "Paks" / "TheKnownUniverse.pak"
 
@@ -353,7 +353,7 @@ def build() -> dict[str, Any]:
                 "author": "local evidence rebuild",
                 "authorURL": "",
                 "defaultLoadOrder": 96,
-                "gameVersion": "1.13.378",
+                "gameVersion": GAME_VERSION,
                 "manifest": [],
                 "steamPublishedFileId": 0,
                 "steamLastSubmittedBuildNumber": 0,

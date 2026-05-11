@@ -23,7 +23,7 @@ from parse_ue4_package_refs import (
 )
 
 
-from tku_project_paths import GAME_ROOT as WORKSPACE, PROJECT_ROOT, REPORTS_DIR, TOOLS_ROOT
+from tku_project_paths import GAME_ROOT as WORKSPACE, GAME_VERSION, PROJECT_ROOT, REPORTS_DIR, TOOLS_ROOT
 SOURCE_MOD = WORKSPACE / "MW5Mercs" / "Mods" / "TheKnownUniverse"
 SOURCE_PAK = SOURCE_MOD / "Paks" / "TheKnownUniverse.pak"
 SOURCE_MOD_JSON = SOURCE_MOD / "mod.json"
@@ -204,7 +204,7 @@ def build() -> dict[str, Any]:
         "author": f"{original_mod_json.get('author', 'TePa')} / local evidence rebuild",
         "authorURL": original_mod_json.get("authorURL", ""),
         "defaultLoadOrder": 95,
-        "gameVersion": "1.13.378",
+        "gameVersion": GAME_VERSION,
         "manifest": [],
         "steamPublishedFileId": 0,
         "steamLastSubmittedBuildNumber": 0,

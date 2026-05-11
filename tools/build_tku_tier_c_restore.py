@@ -6,7 +6,7 @@ from pathlib import Path
 
 from mw5_pak import build_pak, extract_exact_paths, gather_sidecar_paths, iter_entries
 
-from tku_project_paths import GAME_ROOT as WORKSPACE_ROOT, REPORTS_DIR
+from tku_project_paths import GAME_ROOT as WORKSPACE_ROOT, GAME_VERSION, REPORTS_DIR
 
 SOURCE_MOD_NAME = "TheKnownUniverseCompatPluginOnly"
 COMPAT_PATCH_NAME = "TheKnownUniverseCompatPatch"
@@ -82,7 +82,7 @@ def build_restore_mod() -> dict[str, object]:
         "author": "codex",
         "authorURL": "",
         "defaultLoadOrder": 1001,
-        "gameVersion": "1.13.378",
+        "gameVersion": GAME_VERSION,
         "manifest": primary_manifest_paths(exact_paths),
         "steamPublishedFileId": 0,
         "steamLastSubmittedBuildNumber": 0,

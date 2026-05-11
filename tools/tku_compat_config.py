@@ -2,6 +2,8 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
+from tku_project_paths import GAME_VERSION
+
 
 @dataclass(frozen=True)
 class TierRule:
@@ -16,7 +18,7 @@ PATCH_DISPLAY_NAME = "The Known Universe Compatibility Patch"
 PATCH_VERSION = "0.3.0"
 PATCH_BUILD_NUMBER = 3
 PATCH_LOAD_ORDER = 999
-PATCH_GAME_VERSION = "1.13.378"
+PATCH_GAME_VERSION = GAME_VERSION
 TIER_ORDER = ("A", "B", "C")
 
 TIER_RULES: tuple[TierRule, ...] = (
@@ -73,24 +75,24 @@ def classify_path(base_path: str) -> tuple[str, str, str]:
 def patch_description(max_tier: str, full_root_vanilla: bool = False) -> str:
     if full_root_vanilla:
         return (
-            "Local MW5 v1.13.378 compatibility patch for TheKnownUniverse. "
+            f"Local MW5 v{PATCH_GAME_VERSION} compatibility patch for TheKnownUniverse. "
             "This rescue build replaces every TKU root /Game asset that has a current vanilla counterpart, "
             "while leaving TKU-only plugin and custom content intact."
         )
     if max_tier == "A":
         return (
-            "Local MW5 v1.13.378 compatibility patch for TheKnownUniverse. "
+            f"Local MW5 v{PATCH_GAME_VERSION} compatibility patch for TheKnownUniverse. "
             "Tier A replaces stale frontend/starmap glue with current vanilla assets "
             "while leaving TKU plugin content and gameplay data intact."
         )
     if max_tier == "B":
         return (
-            "Local MW5 v1.13.378 compatibility patch for TheKnownUniverse. "
+            f"Local MW5 v{PATCH_GAME_VERSION} compatibility patch for TheKnownUniverse. "
             "Tier B extends the frontend rescue set with current vanilla InnerSphere data "
             "to reduce legacy starmap deserialization failures."
         )
     return (
-        "Local MW5 v1.13.378 compatibility patch for TheKnownUniverse. "
+        f"Local MW5 v{PATCH_GAME_VERSION} compatibility patch for TheKnownUniverse. "
         "This build includes the current vanilla rescue sets through Tier C."
     )
 
@@ -99,3 +101,7 @@ def tier_bases(base_paths: list[str], max_tier: str) -> list[str]:
     max_index = TIER_ORDER.index(max_tier)
     prefixes = [rule.prefix for rule in TIER_RULES if TIER_ORDER.index(rule.patch_tier) <= max_index]
     return [base for base in base_paths if any(base.startswith(prefix) for prefix in prefixes)]
+
+
+def tier_a_bases(base_paths: list[str]) -> list[str]:
+    return tier_bases(base_paths, "A")

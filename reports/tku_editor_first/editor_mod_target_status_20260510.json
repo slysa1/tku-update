@@ -1,14 +1,16 @@
 {
-  "candidate_tku_related_mod_targets": [],
+  "candidate_tku_related_mod_targets": [
+    "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch\\TKUCompatEditorPatch.uplugin"
+  ],
   "decision": {
     "build_authorized": false,
-    "existing_editor_compat_mod_found": false,
-    "manual_create_mod_required": true,
-    "reason": "No dedicated TKU compatibility mod target exists in the MW5 Mod Editor project."
+    "existing_editor_compat_mod_found": true,
+    "manual_create_mod_required": false,
+    "reason": "Dedicated TKU compatibility mod target exists in the MW5 Mod Editor project."
   },
   "editor_project": "E:\\Games\\MechWarrior5Editor\\MW5Mercs",
   "editor_root": "E:\\Games\\MechWarrior5Editor",
-  "generated_utc": "2026-05-10T12:33:45.274925+00:00",
+  "generated_utc": "2026-05-11T08:34:43.977073+00:00",
   "mods_dir": {
     "exists": true,
     "items": [
@@ -80,6 +82,13 @@
         "mtime": "2026-05-08T22:16:36.666411+00:00",
         "name": "OnlineSubsystemEpic",
         "path": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\OnlineSubsystemEpic",
+        "size": null
+      },
+      {
+        "is_dir": true,
+        "mtime": "2026-05-11T08:30:32.727764+00:00",
+        "name": "TKUCompatEditorPatch",
+        "path": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch",
         "size": null
       },
       {

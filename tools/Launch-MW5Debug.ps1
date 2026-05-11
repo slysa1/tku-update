@@ -5,7 +5,29 @@ param(
 
 $ErrorActionPreference = 'Stop'
 
-$gameRoot = Split-Path -Parent $PSScriptRoot
+function Get-TkuPathConfig {
+    $projectRoot = Split-Path -Parent $PSScriptRoot
+    $configCandidates = @()
+    if ($env:TKU_PATHS_CONFIG) {
+        $configCandidates += $env:TKU_PATHS_CONFIG
+    }
+    $configCandidates += @(
+        (Join-Path $projectRoot 'config\tku_paths.local.json'),
+        (Join-Path $projectRoot 'config\tku_paths.json'),
+        (Join-Path $projectRoot 'config\tku_paths.example.json')
+    )
+
+    foreach ($candidate in $configCandidates) {
+        if (Test-Path -LiteralPath $candidate) {
+            return Get-Content -LiteralPath $candidate -Raw | ConvertFrom-Json
+        }
+    }
+
+    throw "No TKU path config found. Expected config\tku_paths.local.json or TKU_PATHS_CONFIG."
+}
+
+$pathConfig = Get-TkuPathConfig
+$gameRoot = if ($env:TKU_GAME_ROOT) { $env:TKU_GAME_ROOT } else { $pathConfig.game_root }
 $exePath = Join-Path $gameRoot 'MW5Mercs\Binaries\Win64\MechWarrior-Win64-Shipping.exe'
 $savedRoot = Join-Path $env:LOCALAPPDATA 'MW5Mercs\Saved'
 $configDir = Join-Path $savedRoot 'Config\WindowsNoEditor'

@@ -5,7 +5,7 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-from tku_project_paths import GAME_ROOT as WORKSPACE, PROJECT_ROOT, REPORTS_DIR, TOOLS_ROOT
+from tku_project_paths import GAME_ROOT as WORKSPACE, GAME_VERSION, PROJECT_ROOT, REPORTS_DIR, TOOLS_ROOT
 sys.path.insert(0, str(TOOLS_ROOT))
 
 from mw5_pak import build_pak, extract_exact_paths, iter_entries  # noqa: E402
@@ -47,7 +47,7 @@ def write_mod_json(manifest: list[str]) -> None:
         "author": "Codex local compatibility build",
         "authorURL": "",
         "defaultLoadOrder": 99,
-        "gameVersion": "1.13.378",
+        "gameVersion": GAME_VERSION,
         "manifest": sorted(manifest, key=str.lower),
         "steamPublishedFileId": 0,
         "steamLastSubmittedBuildNumber": 0,

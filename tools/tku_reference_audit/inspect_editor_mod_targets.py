@@ -47,6 +47,12 @@ def main() -> None:
         for path in find_files(EDITOR_PROJECT, ("*.uplugin", "*.mod", "mod.json", "modinfo.json"))
         if any(token in path.lower() for token in ("tku", "known", "compat", "evidence", "theknownuniverse"))
     ]
+    existing_target_found = bool(mod_targets)
+    reason = (
+        "Dedicated TKU compatibility mod target exists in the MW5 Mod Editor project."
+        if existing_target_found
+        else "No dedicated TKU compatibility mod target exists in the MW5 Mod Editor project."
+    )
     data = {
         "generated_utc": datetime.now(timezone.utc).isoformat(),
         "non_mutating": True,
@@ -64,10 +70,10 @@ def main() -> None:
         },
         "candidate_tku_related_mod_targets": mod_targets,
         "decision": {
-            "existing_editor_compat_mod_found": bool(mod_targets),
-            "manual_create_mod_required": not bool(mod_targets),
+            "existing_editor_compat_mod_found": existing_target_found,
+            "manual_create_mod_required": not existing_target_found,
             "build_authorized": False,
-            "reason": "No dedicated TKU compatibility mod target exists in the MW5 Mod Editor project.",
+            "reason": reason,
         },
     }
     OUT_DIR.mkdir(parents=True, exist_ok=True)

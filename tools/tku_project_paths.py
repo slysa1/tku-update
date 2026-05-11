@@ -76,6 +76,29 @@ UE4SS_WIN64_ROOT = _configured_path("ue4ss_win64_root", _DEFAULTS["ue4ss_win64_r
 REPORTS_DIR = PROJECT_ROOT / "reports"
 TKU_EDITOR_FIRST_REPORTS_DIR = REPORTS_DIR / "tku_editor_first"
 
+
+def _configured_game_version() -> str:
+    explicit = os.environ.get("TKU_GAME_VERSION") or _CONFIG.get("game_version")
+    if explicit:
+        return str(explicit)
+
+    for candidate in (
+        MODS_ROOT / "modlist.json",
+        MW5_EDITOR_ROOT / "MW5Mercs" / "Mods" / "modlist.json",
+    ):
+        try:
+            data = json.loads(candidate.read_text(encoding="utf-8-sig"))
+        except (FileNotFoundError, json.JSONDecodeError, OSError):
+            continue
+        game_version = data.get("gameVersion")
+        if game_version:
+            return str(game_version)
+
+    return "1.1.380"
+
+
+GAME_VERSION = _configured_game_version()
+
 __all__ = [
     "PROJECT_ROOT",
     "TOOLS_ROOT",
@@ -91,6 +114,7 @@ __all__ = [
     "UASSETAPI_ROOT",
     "UASSETGUI_ROOT",
     "UE4SS_WIN64_ROOT",
+    "GAME_VERSION",
     "REPORTS_DIR",
     "TKU_EDITOR_FIRST_REPORTS_DIR",
 ]

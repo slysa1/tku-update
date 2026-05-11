@@ -5,7 +5,36 @@ param(
 
 $ErrorActionPreference = 'Stop'
 
-$modsRoot = Join-Path (Split-Path -Parent $PSScriptRoot) 'MW5Mercs\Mods'
+function Get-TkuPathConfig {
+    $projectRoot = Split-Path -Parent $PSScriptRoot
+    $configCandidates = @()
+    if ($env:TKU_PATHS_CONFIG) {
+        $configCandidates += $env:TKU_PATHS_CONFIG
+    }
+    $configCandidates += @(
+        (Join-Path $projectRoot 'config\tku_paths.local.json'),
+        (Join-Path $projectRoot 'config\tku_paths.json'),
+        (Join-Path $projectRoot 'config\tku_paths.example.json')
+    )
+
+    foreach ($candidate in $configCandidates) {
+        if (Test-Path -LiteralPath $candidate) {
+            return Get-Content -LiteralPath $candidate -Raw | ConvertFrom-Json
+        }
+    }
+
+    throw "No TKU path config found. Expected config\tku_paths.local.json or TKU_PATHS_CONFIG."
+}
+
+$pathConfig = Get-TkuPathConfig
+$gameRoot = if ($env:TKU_GAME_ROOT) { $env:TKU_GAME_ROOT } else { $pathConfig.game_root }
+$modsRoot = if ($env:TKU_LOCAL_MODS_ROOT) {
+    $env:TKU_LOCAL_MODS_ROOT
+} elseif ($pathConfig.local_mods_root) {
+    $pathConfig.local_mods_root
+} else {
+    Join-Path $gameRoot 'MW5Mercs\Mods'
+}
 $activePath = Join-Path $modsRoot 'modlist.json'
 $profilePath = if ([IO.Path]::IsPathRooted($Profile)) {
     $Profile
