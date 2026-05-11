@@ -37,7 +37,7 @@
       "span": 9616.0
     }
   },
-  "generated_utc": "2026-05-11T21:17:33.245202+00:00",
+  "generated_utc": "2026-05-11T21:35:05.513929+00:00",
   "pawn": {
     "asset_class": "Blueprint",
     "asset_exists": {
@@ -45,12 +45,12 @@
       "value": true
     },
     "asset_loaded": true,
-    "asset_object_path": "/Game/UI/FrontEnd/StarMapPawn.StarMapPawn",
+    "asset_object_path": "/ModOverride/TKUCompatEditorPatch/UI/FrontEnd/StarMapPawn.StarMapPawn",
     "asset_path": "/Game/UI/FrontEnd/StarMapPawn",
     "blueprint_class_loaded": true,
-    "blueprint_class_path": "/Game/UI/FrontEnd/StarMapPawn.StarMapPawn_C",
+    "blueprint_class_path": "/ModOverride/TKUCompatEditorPatch/UI/FrontEnd/StarMapPawn.StarMapPawn_C",
     "cdo_class": "StarMapPawn_C",
-    "cdo_path": "/Game/UI/FrontEnd/StarMapPawn.Default__StarMapPawn_C",
+    "cdo_path": "/ModOverride/TKUCompatEditorPatch/UI/FrontEnd/StarMapPawn.Default__StarMapPawn_C",
     "defaults": {
       "pan_bounds_horizontal": 5500.0,
       "pan_bounds_vertical": 4500.0,
@@ -72,19 +72,13 @@
   "result": {
     "applied": false,
     "attempted": false,
-    "reason": "safety failures",
+    "reason": "dry run only",
     "saved": false
   },
-  "safety_failures": [
-    "mod-owned StarMapPawn file missing; use MW5 Mod Editor Save To Mod first: E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch\\ModOverride\\UI\\FrontEnd\\StarMapPawn.uasset",
-    "could not hash target StarMapPawn before operation",
-    "asset_object_path is not resolving through mod override: /Game/UI/FrontEnd/StarMapPawn.StarMapPawn",
-    "blueprint_class_path is not resolving through mod override: /Game/UI/FrontEnd/StarMapPawn.StarMapPawn_C",
-    "cdo_path is not resolving through mod override: /Game/UI/FrontEnd/StarMapPawn.Default__StarMapPawn_C"
-  ],
+  "safety_failures": [],
   "target_asset_file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch\\ModOverride\\UI\\FrontEnd\\StarMapPawn.uasset",
-  "target_asset_hash_after": null,
-  "target_asset_hash_before": null,
+  "target_asset_hash_after": "2C2121628B6B968B158C2A87CDF2E50E1541761B82103A0CE0B2BDA15D4097B9",
+  "target_asset_hash_before": "2C2121628B6B968B158C2A87CDF2E50E1541761B82103A0CE0B2BDA15D4097B9",
   "target_mod_name": "TKUCompatEditorPatch",
   "targets": {
     "pan_bounds_horizontal": 17500.0,

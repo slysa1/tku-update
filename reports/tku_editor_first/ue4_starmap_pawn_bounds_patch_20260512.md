@@ -1,6 +1,6 @@
 # UE4 StarMapPawn Bounds Patch Gate - 2026-05-12
 
-- Generated: `2026-05-11T21:17:33.245202+00:00`
+- Generated: `2026-05-11T21:35:05.513929+00:00`
 - Apply requested: `False`
 - Asset path: `/Game/UI/FrontEnd/StarMapPawn`
 - Target mod file: `E:\Games\MechWarrior5Editor\MW5Mercs\Plugins\TKUCompatEditorPatch\ModOverride\UI\FrontEnd\StarMapPawn.uasset`
@@ -15,30 +15,26 @@
 
 ## Pawn
 
-- Asset object path: `/Game/UI/FrontEnd/StarMapPawn.StarMapPawn`
-- Blueprint class: `/Game/UI/FrontEnd/StarMapPawn.StarMapPawn_C`
-- CDO path: `/Game/UI/FrontEnd/StarMapPawn.Default__StarMapPawn_C`
+- Asset object path: `/ModOverride/TKUCompatEditorPatch/UI/FrontEnd/StarMapPawn.StarMapPawn`
+- Blueprint class: `/ModOverride/TKUCompatEditorPatch/UI/FrontEnd/StarMapPawn.StarMapPawn_C`
+- CDO path: `/ModOverride/TKUCompatEditorPatch/UI/FrontEnd/StarMapPawn.Default__StarMapPawn_C`
 - Defaults before: `{'pan_bounds_horizontal': 5500.0, 'pan_bounds_vertical': 4500.0, 'zoom_distance_list': [400.0, 550.0, 700.0, 1400.0, 1600.0, 1800.0, 3500.0], 'zoom_level_thresholds': [2000, 1000]}`
 
 ## Safety
 
-- FAIL: mod-owned StarMapPawn file missing; use MW5 Mod Editor Save To Mod first: E:\Games\MechWarrior5Editor\MW5Mercs\Plugins\TKUCompatEditorPatch\ModOverride\UI\FrontEnd\StarMapPawn.uasset
-- FAIL: could not hash target StarMapPawn before operation
-- FAIL: asset_object_path is not resolving through mod override: /Game/UI/FrontEnd/StarMapPawn.StarMapPawn
-- FAIL: blueprint_class_path is not resolving through mod override: /Game/UI/FrontEnd/StarMapPawn.StarMapPawn_C
-- FAIL: cdo_path is not resolving through mod override: /Game/UI/FrontEnd/StarMapPawn.Default__StarMapPawn_C
+- No safety failures.
 
 ## Result
 
 - Attempted: `False`
 - Applied: `False`
 - Saved: `False`
-- Reason: `safety failures`
+- Reason: `dry run only`
 - Writes: `None`
 - Backup: `None`
 
 ## Hashes
 
-- Target before: `None`
-- Target after: `None`
+- Target before: `2C2121628B6B968B158C2A87CDF2E50E1541761B82103A0CE0B2BDA15D4097B9`
+- Target after: `2C2121628B6B968B158C2A87CDF2E50E1541761B82103A0CE0B2BDA15D4097B9`
 - Base unchanged: `True`
