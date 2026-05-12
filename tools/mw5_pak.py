@@ -208,7 +208,7 @@ def resolve_data_offset(handle, raw_offset: int) -> int:
     return raw_offset + PF_HEADER_SZ
 
 
-def normalise_game_path(dir_path: str, filename: str) -> str:
+def normalise_game_path(dir_path: str, filename: str, mount_point: str = "") -> str:
     combined = (dir_path + filename).replace("\\", "/")
     for marker in ("/Game/", "Game/", "/Plugins/", "Plugins/"):
         idx = combined.find(marker)
@@ -222,6 +222,8 @@ def normalise_game_path(dir_path: str, filename: str) -> str:
             start = idx + (1 if marker.startswith("/") else 0)
             content_path = combined[start:]
             return "/Game/" + content_path[len("Content/") :]
+    if mount_point.replace("\\", "/").rstrip("/").endswith("/Content"):
+        return "/Game/" + combined.strip("/")
     if combined.startswith("Content/"):
         return "/Game/" + combined[len("Content/") :]
     return "/" + combined.strip("/")
@@ -247,7 +249,7 @@ def iter_entries(pak_path: Path) -> tuple[PakFooter, str, list[PakEntry]]:
                 pos += 20
                 encrypted_raw, pos = _u8(encoded, pos)
                 _, pos = _u32(encoded, pos)
-                game_path = normalise_game_path(mount_point, filename)
+                game_path = normalise_game_path(mount_point, filename, mount_point)
                 entries.append(
                     PakEntry(
                         pak_path=(mount_point + filename).replace("\\", "/"),
@@ -270,7 +272,7 @@ def iter_entries(pak_path: Path) -> tuple[PakFooter, str, list[PakEntry]]:
         for dir_path, file_map in directory_map.items():
             for filename, encoded_offset in file_map.items():
                 entry, _ = decode_entry(encoded, encoded_offset)
-                game_path = normalise_game_path(dir_path, filename)
+                game_path = normalise_game_path(dir_path, filename, mount_point)
                 entries.append(
                     PakEntry(
                         pak_path=(dir_path + filename).replace("\\", "/"),

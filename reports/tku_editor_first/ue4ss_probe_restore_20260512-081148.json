@@ -1,0 +1,12 @@
+{
+  "generated": "2026-05-12T08:11:48.3356800+10:00",
+  "apply_requested": false,
+  "probe_name": "TKURuntimeProbe",
+  "win64_root": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Binaries\\Win64",
+  "settings_path": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Binaries\\Win64\\UE4SS-settings.ini",
+  "settings_backup": "D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\backups\\ue4ss_probe_state_20260512-080610\\UE4SS-settings.ini",
+  "mods_txt": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Binaries\\Win64\\Mods\\mods.txt",
+  "backup_dir": null,
+  "safety_failures": [],
+  "actions": []
+}

@@ -1,0 +1,56 @@
+{
+  "apply_requested": true,
+  "assets": [
+    {
+      "duplicate_result": {
+        "get_full_name": "Blueprint /ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator",
+        "get_name": "StarSystemGenerator",
+        "get_path_name": "/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator",
+        "python_type": "Blueprint",
+        "repr": "<Object '/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator' (0x0000018D2F496B00) Class 'Blueprint'>",
+        "unreal_class": "Blueprint",
+        "unreal_class_path": "/Script/Engine.Blueprint"
+      },
+      "result": {
+        "attempted": true,
+        "reason": null,
+        "saved": true
+      },
+      "safety_failures": [],
+      "source_asset_path": "/Game/InnerSphereData/StarSystemGenerator",
+      "source_file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Content\\InnerSphereData\\StarSystemGenerator.uasset",
+      "source_file_exists": true,
+      "source_load": {
+        "get_full_name": "Blueprint /Game/InnerSphereData/StarSystemGenerator.StarSystemGenerator",
+        "get_name": "StarSystemGenerator",
+        "get_path_name": "/Game/InnerSphereData/StarSystemGenerator.StarSystemGenerator",
+        "python_type": "Blueprint",
+        "repr": "<Object '/Game/InnerSphereData/StarSystemGenerator.StarSystemGenerator' (0x0000018D8DE0C800) Class 'Blueprint'>",
+        "unreal_class": "Blueprint",
+        "unreal_class_path": "/Script/Engine.Blueprint"
+      },
+      "source_sha256_before": "2A7722E3A62B708C5894C5A990249208441585EF6907ACFB8730EAA7D207053A",
+      "target_asset_exists_before": false,
+      "target_asset_path": "/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator",
+      "target_file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch\\ModOverride\\InnerSphereData\\StarSystemGenerator.uasset",
+      "target_file_exists_after": true,
+      "target_file_exists_before": false,
+      "target_load_after": {
+        "get_full_name": "Blueprint /ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator",
+        "get_name": "StarSystemGenerator",
+        "get_path_name": "/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator",
+        "python_type": "Blueprint",
+        "repr": "<Object '/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator' (0x0000018D2F496B00) Class 'Blueprint'>",
+        "unreal_class": "Blueprint",
+        "unreal_class_path": "/Script/Engine.Blueprint"
+      },
+      "target_load_before": null,
+      "target_sha256_after": "7121AC63E9FBAB713CA9010EE43E3D99236EA2BDC0F1C8CE2FE84829A7CD8C18",
+      "target_sha256_before": null
+    }
+  ],
+  "errors": [],
+  "generated_utc": "2026-05-11T23:10:53.348535+00:00",
+  "plugin_dir": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch",
+  "target_mod_name": "TKUCompatEditorPatch"
+}

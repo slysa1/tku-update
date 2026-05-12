@@ -1,0 +1,15 @@
+{
+  "generated": "2026-05-12T08:00:11.7621736+10:00",
+  "apply_requested": true,
+  "probe_name": "TKURuntimeProbe",
+  "win64_root": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Binaries\\Win64",
+  "mods_root": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Binaries\\Win64\\Mods",
+  "target_lua": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Binaries\\Win64\\Mods\\TKURuntimeProbe\\Scripts\\main.lua",
+  "mods_txt": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Binaries\\Win64\\Mods\\mods.txt",
+  "backup_dir": "D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\backups\\ue4ss_runtime_probe_20260512-080011",
+  "safety_failures": [],
+  "actions": [
+    "installed probe Lua to E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Binaries\\Win64\\Mods\\TKURuntimeProbe\\Scripts\\main.lua",
+    "enabled TKURuntimeProbe in E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Binaries\\Win64\\Mods\\mods.txt"
+  ]
+}

@@ -538,3 +538,216 @@ Current live deployed metadata after correction:
   - `TKUCompatEditorPatch`
 
 The next asset repair step is unchanged: save `/Game/UI/FrontEnd/StarMapPawn` into `TKUCompatEditorPatch`, then apply the guarded bounds/zoom patch from `tools\Invoke-TKUStarMapPawnBoundsPatch.ps1`.
+
+## StarMapPawn Bounds Repair - 2026-05-12
+
+The human operator saved `/Game/UI/FrontEnd/StarMapPawn` into `TKUCompatEditorPatch`, creating the mod-owned override:
+
+- `E:\Games\MechWarrior5Editor\MW5Mercs\Plugins\TKUCompatEditorPatch\ModOverride\UI\FrontEnd\StarMapPawn.uasset`
+
+The guarded pawn bounds commandlet was run first as a dry run, then with `-Apply`.
+
+Dry-run evidence:
+
+- Active object resolved to `/ModOverride/TKUCompatEditorPatch/UI/FrontEnd/StarMapPawn.StarMapPawn`
+- Active class resolved to `/ModOverride/TKUCompatEditorPatch/UI/FrontEnd/StarMapPawn.StarMapPawn_C`
+- CDO resolved to `/ModOverride/TKUCompatEditorPatch/UI/FrontEnd/StarMapPawn.Default__StarMapPawn_C`
+- Vanilla defaults before patch:
+  - `pan_bounds_horizontal`: `5500`
+  - `pan_bounds_vertical`: `4500`
+  - `zoom_distance_list`: `[400,550,700,1400,1600,1800,3500]`
+  - `zoom_level_thresholds`: `[2000,1000]`
+- Merged TKU coordinate extents require approximately `15664` half-span in X and `15259` half-span in Y.
+- Safety failures: none
+
+Apply result:
+
+- Command: `.\tools\Invoke-TKUStarMapPawnBoundsPatch.ps1 -Apply -SpawnMethod object`
+- Unreal result: `Success - 0 error(s), 31 warning(s)`
+- Warnings were the same stock editor missing-effect references seen in prior commandlets.
+- New mod-owned pawn defaults:
+  - `pan_bounds_horizontal`: `17500`
+  - `pan_bounds_vertical`: `17500`
+  - `zoom_distance_list`: `[300,600,900,1300,1800,2200,2800,3500,5000,7500,9000]`
+  - `zoom_level_thresholds`: `[3500,1000]`
+- Backup: `reports\tku_editor_first\backups\TKUCompatEditorPatch_starmap_pawn_pre_bounds_patch_20260512\StarMapPawn.uasset`
+- Mod-owned pawn SHA256 before: `2C2121628B6B968B158C2A87CDF2E50E1541761B82103A0CE0B2BDA15D4097B9`
+- Mod-owned pawn SHA256 after: `3A4EC0F8DE697928057F24985E9715B6EEFA199FB56776E0C89C34212FDF1FF0`
+- Base editor asset unchanged: `true`
+
+The patch was then repackaged by the human operator through the MW5 Mod Editor. Package inspection passed:
+
+- Package folder: `E:\Games\MechWarrior5Editor\MW5Mercs\Mods\TKUCompatEditorPatch`
+- Pak SHA256: `43F98D4D171E1F189D96E3D5D7DA5BF6F2355C603381ED3E05AD5649811DA30D`
+- `UnrealPak -List` expected entries present:
+  - `Content/InnerSphereData/MW5_InnerSphereData.uasset`
+  - `Content/InnerSphereData/MW5_InnerSphereData.uexp`
+  - `Content/Levels/FrontEnd/StarMap.umap`
+  - `Content/Levels/FrontEnd/StarMap.uexp`
+  - `Content/UI/FrontEnd/StarMapPawn.uasset`
+  - `Content/UI/FrontEnd/StarMapPawn.uexp`
+- Package inspection report: `reports\tku_editor_first\tku_packaged_mod_inspection_20260511.md`
+
+The editor regenerated packaged `mod.json` with `gameVersion: 1.13.64` and the old `1.1.380` description. This was corrected again with `tools\Set-TKUCompatVersionMetadata.ps1`.
+
+Live isolated redeploy was then applied:
+
+- Command: `.\tools\Deploy-TKUCompatTestProfile.ps1 -Apply -ReplaceExisting`
+- Deployment report: `reports\tku_editor_first\tkucompat_live_test_deploy_20260512-074753.md`
+- Existing live deployed patch backup: `reports\tku_editor_first\backups\live_mod_before_deploy_TKUCompatEditorPatch_20260512-074753`
+- Live modlist backup: `E:\SteamLibrary\steamapps\common\MechWarrior 5 Mercenaries\MW5Mercs\Mods\modlist.backup-before-TKUCompatEditorPatch-20260512-074753.json`
+- Live deployed pak SHA256: `43F98D4D171E1F189D96E3D5D7DA5BF6F2355C603381ED3E05AD5649811DA30D`
+- Live deployed `mod.json`:
+  - `gameVersion`: `1.13.378`
+  - `defaultLoadOrder`: `95`
+  - manifest includes `MW5_InnerSphereData`, `StarMapPawn`, and `StarMap`
+- Active isolated test profile remains:
+  - `TKUEvidenceCorePluginOnly`
+  - `TKUCompatEditorPatch`
+
+Next runtime validation:
+
+1. Launch MW5.
+2. Confirm only `TKUEvidenceCorePluginOnly` and `TKUCompatEditorPatch` are enabled.
+3. Load or start a Career.
+4. Open the starmap.
+5. Check whether TKU-added stars are visible or reachable with the expanded pan/zoom range.
+6. Check whether the starmap still looks vanilla in faction/territory overlay. A vanilla overlay is expected until the separate current-schema `MWClusterDataAsset` migration is implemented.
+7. Exit after the result is clear so logs and crash folders can be inspected.
+
+## Runtime Result After Pawn Repair - 2026-05-12
+
+Human runtime result with build `2`:
+
+- MW5 loaded successfully.
+- Starmap opened successfully.
+- The user could pan farther than before, confirming the packaged `StarMapPawn` override is mounted and active at runtime.
+- Faction overlay remained vanilla.
+- Base starmap star population remained effectively vanilla/incomplete:
+  - many periphery stars are missing around the cluster;
+  - Clans, Taurians, Rim Worlds Republic, and Magistracy of Canopus cannot be represented without their star systems;
+  - the core appears to have fewer stars than remembered from TKU.
+
+Interpretation:
+
+- The mod pak mounts and at least `/Game/UI/FrontEnd/StarMapPawn` overrides successfully.
+- The remaining failure is not a simple package/load-order failure.
+- Either `/Game/Levels/FrontEnd/StarMap` and/or `/Game/InnerSphereData/MW5_InnerSphereData` is not the runtime source that controls visible star population in the tested career starmap, or the current runtime starmap path filters/regenerates bodies from another current data source after level load.
+- A save-cache possibility remains: an existing career may preserve or derive starmap state differently from a new career after data changes.
+
+UE4SS runtime instrumentation attempt:
+
+- Temporary probe installed: `tools\tku_reference_audit\ue4ss_tku_runtime_probe.lua`
+- Installer report: `reports\tku_editor_first\ue4ss_runtime_probe_install_20260512-080011.md`
+- UE4SS failed before Lua mods could start; no `ue4ss_tku_runtime_probe_*.txt` files were written.
+- Log evidence: `E:\SteamLibrary\steamapps\common\MechWarrior 5 Mercenaries\MW5Mercs\Binaries\Win64\UE4SS.log` repeatedly reports failure to find `FText::FText(FString&&)` and ends with `Fatal Error: PS scan timed out`.
+- Setting `EngineVersionOverride` to `4.27` did not resolve the missing FText signature.
+- Probe and settings were restored/disabled:
+  - restore report: `reports\tku_editor_first\ue4ss_probe_restore_20260512-081158.md`
+  - `TKURuntimeProbe : 0`
+  - `EngineVersionOverride` fields blank again
+
+Next clean discriminator:
+
+1. Run one new-career starmap test using the same isolated live mod profile.
+2. If a new career still shows vanilla/incomplete stars, treat this as confirmed runtime data path mismatch rather than save-cache.
+3. Inspect current MW5 editor references to identify the actual star population path used by the career starmap in DLC7 `1.13.378`, especially references to `StarMap`, `StarSystemSceneManager`, `StarMapActor`, `MW5_InnerSphereData`, current runtime CSV/data assets, and cluster assets.
+
+## New-Career Result And Content-Pak Mirror Test - 2026-05-12
+
+The new-career discriminator was run by the human tester after the pawn repair. Result:
+
+- A new career still looked the same as the previous test.
+- The user could still pan farther than the vanilla camera bounds.
+- The missing periphery/clan-area stars remained missing.
+
+Interpretation:
+
+- Save-game starmap caching is no longer the leading explanation.
+- The patched `StarMapPawn` is still proven active at runtime.
+- The patched `StarMap.umap` and/or `MW5_InnerSphereData` are either being beaten by another root `/Game` package, or the current runtime starmap path is not using those authored root assets as the visible-star source.
+
+Content-pak evidence gathered next:
+
+- Active `MW5Mercs\Content\Paks` contained:
+  - `MW5Mercs-WindowsNoEditor.pak`
+  - `MW5Mercs-zKnownUniverseStarmap.pak`
+  - `REQUIRED Override PAK-786-1-0-1713972397.7z`
+- `MW5Mercs-zKnownUniverseStarmap.pak` is outside the in-game modlist and still contains root replacements for:
+  - `/Game/InnerSphereData/MW5_InnerSphereData`
+  - `/Game/Levels/FrontEnd/StarMap`
+- That makes it a direct root-path conflict with the editor-authored `TKUCompatEditorPatch` package for the two assets still failing at runtime.
+
+New tooling added:
+
+- `tools\tku_reference_audit\build_tku_content_mirror.py`
+- `tools\Build-TKUCompatContentMirror.ps1`
+
+The tool stages a separate late-loading content mirror pak from the current editor-authored package without modifying the original game pak or original TKU loose override pak.
+
+Dry-run/staging report:
+
+- `reports\tku_editor_first\tku_content_mirror_20260512-082143.md`
+- Staged mirror pak: `reports\tku_editor_first\staging\MW5Mercs-zzzzTKUCompatEditorPatch.pak`
+- Staged mirror SHA256: `34A15D270F1041CEB315A26940DF026E603F2E04E44B6D2DE07BA2FDCF837C7D`
+- Staged mirror contains all six expected files:
+  - `/Game/InnerSphereData/MW5_InnerSphereData.uasset`
+  - `/Game/InnerSphereData/MW5_InnerSphereData.uexp`
+  - `/Game/Levels/FrontEnd/StarMap.umap`
+  - `/Game/Levels/FrontEnd/StarMap.uexp`
+  - `/Game/UI/FrontEnd/StarMapPawn.uasset`
+  - `/Game/UI/FrontEnd/StarMapPawn.uexp`
+
+Live mirror deployment:
+
+- Command: `.\tools\Build-TKUCompatContentMirror.ps1 -Apply`
+- Deployment report: `reports\tku_editor_first\tku_content_mirror_20260512-082155.md`
+- Live mirror pak: `E:\SteamLibrary\steamapps\common\MechWarrior 5 Mercenaries\MW5Mercs\Content\Paks\MW5Mercs-zzzzTKUCompatEditorPatch.pak`
+- Live mirror SHA256: `34A15D270F1041CEB315A26940DF026E603F2E04E44B6D2DE07BA2FDCF837C7D`
+- Original `MW5Mercs-zKnownUniverseStarmap.pak` was not overwritten or edited.
+- Rollback for this test is to remove only `MW5Mercs-zzzzTKUCompatEditorPatch.pak`.
+
+Runtime mirror test now in progress:
+
+1. Launch MW5.
+2. Keep the isolated mod profile:
+   - `TKUEvidenceCorePluginOnly`
+   - `TKUCompatEditorPatch`
+3. Start a new career or load the fresh test career.
+4. Open the starmap.
+5. Check whether TKU-added periphery/clan-area stars and core density appear.
+6. Close MW5 after the result is clear.
+
+Decision gate:
+
+- If the mirror test restores the missing stars, root `/Game` package precedence is confirmed as the main blocker for the star population.
+- If the mirror test is unchanged, the next target is the current `StarMapActor` / `MWInnerSphereData` runtime flow rather than packaging precedence.
+
+First mirror attempt result:
+
+- The first live mirror was built with the repository lightweight pak writer and mounted as a normal mod-root pak.
+- Runtime produced a `failed to find data table MW5_InnerSphereData` style error but still reached the main menu.
+- The starmap still appeared the same as the previous test.
+- The test mirror was removed from `MW5Mercs\Content\Paks`; original game/TKU paks were untouched.
+
+Correction:
+
+- `tools\tku_reference_audit\build_tku_content_mirror.py` now builds the mirror with Epic `UnrealPak.exe`, not the lightweight writer.
+- The corrected mirror uses the same legacy content-root mount style as the original required override:
+  - mount point: `../../../MW5Mercs/Content/`
+  - entries such as `InnerSphereData/MW5_InnerSphereData.uasset`
+- `tools\mw5_pak.py` was updated so repository inspections correctly normalize content-root paks back to `/Game/...` paths.
+
+Corrected mirror deployment:
+
+- Command: `.\tools\Build-TKUCompatContentMirror.ps1 -Apply`
+- Deployment report: `reports\tku_editor_first\tku_content_mirror_20260512-082819.md`
+- Live mirror pak: `E:\SteamLibrary\steamapps\common\MechWarrior 5 Mercenaries\MW5Mercs\Content\Paks\MW5Mercs-zzzzTKUCompatEditorPatch.pak`
+- Live mirror SHA256: `4E40BDBF396D776870896DCE890B23C8D834A357168FC80CDAC7E85CAD0D965A`
+- `UnrealPak -List` verifies the corrected mount and six expected entries:
+  - `InnerSphereData/MW5_InnerSphereData.uasset`
+  - `InnerSphereData/MW5_InnerSphereData.uexp`
+  - `Levels/FrontEnd/StarMap.umap`
+  - `Levels/FrontEnd/StarMap.uexp`
+  - `UI/FrontEnd/StarMapPawn.uasset`
+  - `UI/FrontEnd/StarMapPawn.uexp`

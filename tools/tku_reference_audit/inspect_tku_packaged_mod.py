@@ -15,6 +15,8 @@ DEFAULT_MOD_NAME = "TKUCompatEditorPatch"
 EXPECTED_PAK_FRAGMENTS = [
     "Content/InnerSphereData/MW5_InnerSphereData.uasset",
     "Content/InnerSphereData/MW5_InnerSphereData.uexp",
+    "Content/InnerSphereData/StarSystemGenerator.uasset",
+    "Content/InnerSphereData/StarSystemGenerator.uexp",
     "Content/Levels/FrontEnd/StarMap.umap",
     "Content/Levels/FrontEnd/StarMap.uexp",
     "Content/UI/FrontEnd/StarMapPawn.uasset",
@@ -25,6 +27,7 @@ FOCUS_TERMS = [
     "ModOverride",
     "InnerSphereData",
     "MW5_InnerSphereData",
+    "StarSystemGenerator",
     "Levels/FrontEnd/StarMap",
     "Levels\\FrontEnd\\StarMap",
     "UI/FrontEnd/StarMapPawn",

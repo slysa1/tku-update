@@ -1,0 +1,6 @@
+"D:\Downloads\OneDrive\Documents\code\tku-update\reports\tku_editor_first\staging\content_mirror_loose_20260512-082819\InnerSphereData\MW5_InnerSphereData.uasset" "../../../MW5Mercs/Content/InnerSphereData/MW5_InnerSphereData.uasset"
+"D:\Downloads\OneDrive\Documents\code\tku-update\reports\tku_editor_first\staging\content_mirror_loose_20260512-082819\InnerSphereData\MW5_InnerSphereData.uexp" "../../../MW5Mercs/Content/InnerSphereData/MW5_InnerSphereData.uexp"
+"D:\Downloads\OneDrive\Documents\code\tku-update\reports\tku_editor_first\staging\content_mirror_loose_20260512-082819\Levels\FrontEnd\StarMap.uexp" "../../../MW5Mercs/Content/Levels/FrontEnd/StarMap.uexp"
+"D:\Downloads\OneDrive\Documents\code\tku-update\reports\tku_editor_first\staging\content_mirror_loose_20260512-082819\Levels\FrontEnd\StarMap.umap" "../../../MW5Mercs/Content/Levels/FrontEnd/StarMap.umap"
+"D:\Downloads\OneDrive\Documents\code\tku-update\reports\tku_editor_first\staging\content_mirror_loose_20260512-082819\UI\FrontEnd\StarMapPawn.uasset" "../../../MW5Mercs/Content/UI/FrontEnd/StarMapPawn.uasset"
+"D:\Downloads\OneDrive\Documents\code\tku-update\reports\tku_editor_first\staging\content_mirror_loose_20260512-082819\UI\FrontEnd\StarMapPawn.uexp" "../../../MW5Mercs/Content/UI/FrontEnd/StarMapPawn.uexp"

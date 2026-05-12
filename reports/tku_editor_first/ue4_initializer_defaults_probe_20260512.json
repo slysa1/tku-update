@@ -1,0 +1,647 @@
+{
+  "assets": {
+    "/Game/Campaign/_common/DefaultSystemGenerator": {
+      "asset": {
+        "get_full_name": "Blueprint /Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator",
+        "get_name": "DefaultSystemGenerator",
+        "get_path_name": "/Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator",
+        "python_type": "Blueprint",
+        "repr": "<Object '/Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator' (0x0000027999A3B900) Class 'Blueprint'>",
+        "unreal_class": "Blueprint",
+        "unreal_class_path": "/Script/Engine.Blueprint"
+      },
+      "calls": {},
+      "cdo": {
+        "get_full_name": "DefaultSystemGenerator_C /Game/Campaign/_common/DefaultSystemGenerator.Default__DefaultSystemGenerator_C",
+        "get_name": "Default__DefaultSystemGenerator_C",
+        "get_path_name": "/Game/Campaign/_common/DefaultSystemGenerator.Default__DefaultSystemGenerator_C",
+        "python_type": "MWCampaignSystemGenerator",
+        "repr": "<Object '/Game/Campaign/_common/DefaultSystemGenerator.Default__DefaultSystemGenerator_C' (0x0000027A3078F000) Class 'DefaultSystemGenerator_C'>",
+        "unreal_class": "DefaultSystemGenerator_C",
+        "unreal_class_path": "/Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C"
+      },
+      "generated_class": {
+        "get_full_name": "BlueprintGeneratedClass /Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C",
+        "get_name": "DefaultSystemGenerator_C",
+        "get_path_name": "/Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C",
+        "python_type": "BlueprintGeneratedClass",
+        "repr": "<Object '/Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C' (0x0000027999A39D00) Class 'BlueprintGeneratedClass'>",
+        "unreal_class": "BlueprintGeneratedClass",
+        "unreal_class_path": "/Script/Engine.BlueprintGeneratedClass"
+      },
+      "members": [
+        "_wrapper_meta_data",
+        "persistent_model",
+        "system_blackboard"
+      ],
+      "properties": {
+        "persistent_model": {
+          "ok": true,
+          "value": null
+        },
+        "system_blackboard": {
+          "ok": true,
+          "value": {
+            "python_type": "StarSystemBlackboard",
+            "repr": "<Struct 'StarSystemBlackboard' (0x0000027A3078F0C8) {mission_modifiers: {premade_missions: , orbital_toi_map: ()}, market_data: {market_inventory_map: ()}, market_modifiers: {all_item_discount: 0, mech_discount: 0, weapon_discount: 0, equipment_discount: 0}, contains_market_history: False, special_item_list_history: , parameters: }>"
+          }
+        }
+      },
+      "property_errors": {
+        "campaign_system_generator_class": "Exception: MWCampaignSystemGenerator: Failed to find property 'campaign_system_generator_class' for attribute 'campaign_system_generator_class' on 'DefaultSystemGenerator_C'",
+        "default_inner_sphere_class": "Exception: MWCampaignSystemGenerator: Failed to find property 'default_inner_sphere_class' for attribute 'default_inner_sphere_class' on 'DefaultSystemGenerator_C'",
+        "inner_sphere_data": "Exception: MWCampaignSystemGenerator: Failed to find property 'inner_sphere_data' for attribute 'inner_sphere_data' on 'DefaultSystemGenerator_C'",
+        "star_map_model": "Exception: MWCampaignSystemGenerator: Failed to find property 'star_map_model' for attribute 'star_map_model' on 'DefaultSystemGenerator_C'",
+        "star_system_body_look_up": "Exception: MWCampaignSystemGenerator: Failed to find property 'star_system_body_look_up' for attribute 'star_system_body_look_up' on 'DefaultSystemGenerator_C'",
+        "star_system_generator": "Exception: MWCampaignSystemGenerator: Failed to find property 'star_system_generator' for attribute 'star_system_generator' on 'DefaultSystemGenerator_C'",
+        "star_system_generator_class": "Exception: MWCampaignSystemGenerator: Failed to find property 'star_system_generator_class' for attribute 'star_system_generator_class' on 'DefaultSystemGenerator_C'",
+        "travel_path_model": "Exception: MWCampaignSystemGenerator: Failed to find property 'travel_path_model' for attribute 'travel_path_model' on 'DefaultSystemGenerator_C'"
+      }
+    },
+    "/Game/InnerSphereData/StarSystemGenerator": {
+      "asset": {
+        "get_full_name": "Blueprint /Game/InnerSphereData/StarSystemGenerator.StarSystemGenerator",
+        "get_name": "StarSystemGenerator",
+        "get_path_name": "/Game/InnerSphereData/StarSystemGenerator.StarSystemGenerator",
+        "python_type": "Blueprint",
+        "repr": "<Object '/Game/InnerSphereData/StarSystemGenerator.StarSystemGenerator' (0x0000027A8B1A0800) Class 'Blueprint'>",
+        "unreal_class": "Blueprint",
+        "unreal_class_path": "/Script/Engine.Blueprint"
+      },
+      "calls": {
+        "generate_inner_sphere_data": {
+          "ok": true,
+          "value": {
+            "count": 3974,
+            "kind": "Map",
+            "sample": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19
+            ],
+            "tail_sample": [
+              7912,
+              7913,
+              7914,
+              7915,
+              7916,
+              7917,
+              7918,
+              7919,
+              7920,
+              7921
+            ]
+          }
+        },
+        "retrieve_edge_index_list": {
+          "ok": true,
+          "value": {
+            "count": 6674,
+            "kind": "Map",
+            "sample": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19
+            ],
+            "tail_sample": [
+              6664,
+              6665,
+              6666,
+              6667,
+              6668,
+              6669,
+              6670,
+              6671,
+              6672,
+              6673
+            ]
+          }
+        },
+        "retrieve_star_system_clusters": {
+          "ok": true,
+          "value": {
+            "count": 138,
+            "kind": "Map",
+            "sample": [
+              {
+                "python_type": "FactionAssetId",
+                "repr": "<Struct 'FactionAssetId' (0x0000027A881347A0) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"RefinerySystems\"}}>"
+              },
+              {
+                "python_type": "FactionAssetId",
+                "repr": "<Struct 'FactionAssetId' (0x0000027A88136480) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"TheJunkyard\"}}>"
+              },
+              {
+                "python_type": "FactionAssetId",
+                "repr": "<Struct 'FactionAssetId' (0x0000027A88134140) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"AgriculturalBelt\"}}>"
+              },
+              {
+                "python_type": "FactionAssetId",
+                "repr": "<Struct 'FactionAssetId' (0x0000027A88136420) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"AlarionPeriphery\"}}>"
+              },
+              {
+                "python_type": "FactionAssetId",
+                "repr": "<Struct 'FactionAssetId' (0x0000027A88134B00) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"BackwaterRegion\"}}>"
+              },
+              {
+                "python_type": "FactionAssetId",
+                "repr": "<Struct 'FactionAssetId' (0x0000027A88136320) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"DavionKurita_1\"}}>"
+              },
+              {
+                "python_type": "FactionAssetId",
+                "repr": "<Struct 'FactionAssetId' (0x0000027A88136540) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"DavionBorderlands\"}}>"
+              },
+              {
+                "python_type": "FactionAssetId",
+                "repr": "<Struct 'FactionAssetId' (0x0000027A881353A0) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"KuritanBadlands\"}}>"
+              },
+              {
+                "python_type": "FactionAssetId",
+                "repr": "<Struct 'FactionAssetId' (0x0000027A88135CA0) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"DroughtWorlds\"}}>"
+              },
+              {
+                "python_type": "FactionAssetId",
+                "repr": "<Struct 'FactionAssetId' (0x0000027A88136300) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"DutchyOfAndurien\"}}>"
+              },
+              {
+                "python_type": "FactionAssetId",
+                "repr": "<Struct 'FactionAssetId' (0x0000027A881359C0) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"TamarindAbbey\"}}>"
+              },
+              {
+                "python_type": "FactionAssetId",
+                "repr": "<Struct 'FactionAssetId' (0x0000027A881365A0) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"TsinghaiCommonality\"}}>"
+              },
+              {
+                "python_type": "FactionAssetId",
+                "repr": "<Struct 'FactionAssetId' (0x0000027A88136200) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"FWLCommercialHub\"}}>"
+              },
+              {
+                "python_type": "FactionAssetId",
+                "repr": "<Struct 'FactionAssetId' (0x0000027A88136260) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"FWLInterior\"}}>"
+              },
+              {
+                "python_type": "FactionAssetId",
+                "repr": "<Struct 'FactionAssetId' (0x0000027A88135600) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"FWLShippingRoute\"}}>"
+              },
+              {
+                "python_type": "FactionAssetId",
+                "repr": "<Struct 'FactionAssetId' (0x0000027A88136240) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"Herotitus\"}}>"
+              },
+              {
+                "python_type": "FactionAssetId",
+                "repr": "<Struct 'FactionAssetId' (0x0000027A88136280) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"RepairSystem_1\"}}>"
+              },
+              {
+                "python_type": "FactionAssetId",
+                "repr": "<Struct 'FactionAssetId' (0x0000027A881354A0) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"RepairSystem_11\"}}>"
+              },
+              {
+                "python_type": "FactionAssetId",
+                "repr": "<Struct 'FactionAssetId' (0x0000027A881362C0) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"RepairSystem_12\"}}>"
+              },
+              {
+                "python_type": "FactionAssetId",
+                "repr": "<Struct 'FactionAssetId' (0x0000027A88135A60) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"RepairSystem_14\"}}>"
+              }
+            ],
+            "tail_sample": [
+              {
+                "python_type": "FactionAssetId",
+                "repr": "<Struct 'FactionAssetId' (0x0000027A88134500) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"CSJ_Wave3_Faction\"}}>"
+              },
+              {
+                "python_type": "FactionAssetId",
+                "repr": "<Struct 'FactionAssetId' (0x0000027A881351A0) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"CWF_Wave3_Faction\"}}>"
+              },
+              {
+                "python_type": "FactionAssetId",
+                "repr": "<Struct 'FactionAssetId' (0x0000027A88134EA0) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"CGB_Wave4_Faction\"}}>"
+              },
+              {
+                "python_type": "FactionAssetId",
+                "repr": "<Struct 'FactionAssetId' (0x0000027A88135100) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"CJF_Wave4_Faction\"}}>"
+              },
+              {
+                "python_type": "FactionAssetId",
+                "repr": "<Struct 'FactionAssetId' (0x0000027A88135000) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"CSJ_Wave4_Faction\"}}>"
+              },
+              {
+                "python_type": "FactionAssetId",
+                "repr": "<Struct 'FactionAssetId' (0x0000027A88135040) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"CWF_Wave4_Faction\"}}>"
+              },
+              {
+                "python_type": "FactionAssetId",
+                "repr": "<Struct 'FactionAssetId' (0x0000027A881350E0) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"CGB_Wave5_Faction\"}}>"
+              },
+              {
+                "python_type": "FactionAssetId",
+                "repr": "<Struct 'FactionAssetId' (0x0000027A88134C00) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"CJF_Wave5_Faction\"}}>"
+              },
+              {
+                "python_type": "FactionAssetId",
+                "repr": "<Struct 'FactionAssetId' (0x0000027A88135180) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"CSJ_Wave5_Faction\"}}>"
+              },
+              {
+                "python_type": "FactionAssetId",
+                "repr": "<Struct 'FactionAssetId' (0x0000027A88135120) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"CWF_Wave5_Faction\"}}>"
+              }
+            ]
+          }
+        },
+        "retrieve_star_system_edges": {
+          "ok": true,
+          "value": {
+            "count": 2233,
+            "kind": "Map",
+            "sample": [
+              1439,
+              1914,
+              2151,
+              2168,
+              2202,
+              1098,
+              1133,
+              1140,
+              1069,
+              2224,
+              1843,
+              1778,
+              1668,
+              1569,
+              1151,
+              970,
+              1150,
+              1184,
+              1402,
+              2099
+            ],
+            "tail_sample": [
+              1536,
+              1867,
+              1485,
+              1024,
+              2091,
+              2125,
+              1615,
+              1469,
+              1565,
+              1088
+            ]
+          }
+        }
+      },
+      "cdo": {
+        "get_full_name": "StarSystemGenerator_C /Game/InnerSphereData/StarSystemGenerator.Default__StarSystemGenerator_C",
+        "get_name": "Default__StarSystemGenerator_C",
+        "get_path_name": "/Game/InnerSphereData/StarSystemGenerator.Default__StarSystemGenerator_C",
+        "python_type": "MWInnerSphereData",
+        "repr": "<Object '/Game/InnerSphereData/StarSystemGenerator.Default__StarSystemGenerator_C' (0x0000027A891BBC00) Class 'StarSystemGenerator_C'>",
+        "unreal_class": "StarSystemGenerator_C",
+        "unreal_class_path": "/Game/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C"
+      },
+      "generated_class": {
+        "get_full_name": "BlueprintGeneratedClass /Game/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C",
+        "get_name": "StarSystemGenerator_C",
+        "get_path_name": "/Game/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C",
+        "python_type": "BlueprintGeneratedClass",
+        "repr": "<Object '/Game/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C' (0x0000027A8B1A0F00) Class 'BlueprintGeneratedClass'>",
+        "unreal_class": "BlueprintGeneratedClass",
+        "unreal_class_path": "/Script/Engine.BlueprintGeneratedClass"
+      },
+      "members": [
+        "_wrapper_meta_data",
+        "generate_inner_sphere_data",
+        "is_hidden_ed_at_startup",
+        "retrieve_edge_index_list",
+        "retrieve_star_system_clusters",
+        "retrieve_star_system_edges"
+      ],
+      "properties": {},
+      "property_errors": {
+        "campaign_system_generator_class": "Exception: MWInnerSphereData: Failed to find property 'campaign_system_generator_class' for attribute 'campaign_system_generator_class' on 'StarSystemGenerator_C'",
+        "default_inner_sphere_class": "Exception: MWInnerSphereData: Failed to find property 'default_inner_sphere_class' for attribute 'default_inner_sphere_class' on 'StarSystemGenerator_C'",
+        "inner_sphere_data": "Exception: MWInnerSphereData: Failed to find property 'inner_sphere_data' for attribute 'inner_sphere_data' on 'StarSystemGenerator_C'",
+        "persistent_model": "Exception: MWInnerSphereData: Failed to find property 'persistent_model' for attribute 'persistent_model' on 'StarSystemGenerator_C'",
+        "star_map_model": "Exception: MWInnerSphereData: Failed to find property 'star_map_model' for attribute 'star_map_model' on 'StarSystemGenerator_C'",
+        "star_system_body_look_up": "Exception: MWInnerSphereData: Failed to find property 'star_system_body_look_up' for attribute 'star_system_body_look_up' on 'StarSystemGenerator_C'",
+        "star_system_generator": "Exception: MWInnerSphereData: Failed to find property 'star_system_generator' for attribute 'star_system_generator' on 'StarSystemGenerator_C'",
+        "star_system_generator_class": "Exception: MWInnerSphereData: Failed to find property 'star_system_generator_class' for attribute 'star_system_generator_class' on 'StarSystemGenerator_C'",
+        "system_blackboard": "Exception: MWInnerSphereData: Failed to find property 'system_blackboard' for attribute 'system_blackboard' on 'StarSystemGenerator_C'",
+        "travel_path_model": "Exception: MWInnerSphereData: Failed to find property 'travel_path_model' for attribute 'travel_path_model' on 'StarSystemGenerator_C'"
+      }
+    },
+    "/Game/Modes/CampaignMode": {
+      "asset": {
+        "get_full_name": "Blueprint /Game/Modes/CampaignMode.CampaignMode",
+        "get_name": "CampaignMode",
+        "get_path_name": "/Game/Modes/CampaignMode.CampaignMode",
+        "python_type": "Blueprint",
+        "repr": "<Object '/Game/Modes/CampaignMode.CampaignMode' (0x0000027A2ED1C800) Class 'Blueprint'>",
+        "unreal_class": "Blueprint",
+        "unreal_class_path": "/Script/Engine.Blueprint"
+      },
+      "calls": {},
+      "cdo": {
+        "get_full_name": "CampaignMode_C /Game/Modes/CampaignMode.Default__CampaignMode_C",
+        "get_name": "Default__CampaignMode_C",
+        "get_path_name": "/Game/Modes/CampaignMode.Default__CampaignMode_C",
+        "python_type": "MWGameMode",
+        "repr": "<Object '/Game/Modes/CampaignMode.Default__CampaignMode_C' (0x0000027A9A4CB040) Class 'CampaignMode_C'>",
+        "unreal_class": "CampaignMode_C",
+        "unreal_class_path": "/Game/Modes/CampaignMode.CampaignMode_C"
+      },
+      "generated_class": {
+        "get_full_name": "BlueprintGeneratedClass /Game/Modes/CampaignMode.CampaignMode_C",
+        "get_name": "CampaignMode_C",
+        "get_path_name": "/Game/Modes/CampaignMode.CampaignMode_C",
+        "python_type": "BlueprintGeneratedClass",
+        "repr": "<Object '/Game/Modes/CampaignMode.CampaignMode_C' (0x0000027A2ED1C100) Class 'BlueprintGeneratedClass'>",
+        "unreal_class": "BlueprintGeneratedClass",
+        "unreal_class_path": "/Script/Engine.BlueprintGeneratedClass"
+      },
+      "members": [
+        "_wrapper_meta_data",
+        "campaign_system_generator_class",
+        "choose_player_start",
+        "default_inner_sphere_class",
+        "default_player_coms_system_class",
+        "find_player_start",
+        "get_save_load_system",
+        "handle_starting_new_player",
+        "has_match_started",
+        "init_start_spot",
+        "is_hidden_ed_at_startup",
+        "k2_find_player_start",
+        "on_restart_player",
+        "player_can_restart",
+        "receive_import_save_data",
+        "receive_process_start_conditions",
+        "receive_start_new_game",
+        "restart_player",
+        "restart_player_at_player_start",
+        "restart_player_at_transform",
+        "start_play",
+        "start_players_as_spectators"
+      ],
+      "properties": {
+        "campaign_system_generator_class": {
+          "ok": true,
+          "value": {
+            "get_full_name": "BlueprintGeneratedClass /Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C",
+            "get_name": "DefaultSystemGenerator_C",
+            "get_path_name": "/Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C",
+            "python_type": "BlueprintGeneratedClass",
+            "repr": "<Object '/Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C' (0x0000027999A39D00) Class 'BlueprintGeneratedClass'>",
+            "unreal_class": "BlueprintGeneratedClass",
+            "unreal_class_path": "/Script/Engine.BlueprintGeneratedClass"
+          }
+        },
+        "default_inner_sphere_class": {
+          "ok": true,
+          "value": {
+            "get_full_name": "BlueprintGeneratedClass /Game/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C",
+            "get_name": "StarSystemGenerator_C",
+            "get_path_name": "/Game/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C",
+            "python_type": "BlueprintGeneratedClass",
+            "repr": "<Object '/Game/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C' (0x0000027A8B1A0F00) Class 'BlueprintGeneratedClass'>",
+            "unreal_class": "BlueprintGeneratedClass",
+            "unreal_class_path": "/Script/Engine.BlueprintGeneratedClass"
+          }
+        }
+      },
+      "property_errors": {
+        "inner_sphere_data": "Exception: MWGameMode: Failed to find property 'inner_sphere_data' for attribute 'inner_sphere_data' on 'CampaignMode_C'",
+        "persistent_model": "Exception: MWGameMode: Failed to find property 'persistent_model' for attribute 'persistent_model' on 'CampaignMode_C'",
+        "star_map_model": "Exception: MWGameMode: Failed to find property 'star_map_model' for attribute 'star_map_model' on 'CampaignMode_C'",
+        "star_system_body_look_up": "Exception: MWGameMode: Failed to find property 'star_system_body_look_up' for attribute 'star_system_body_look_up' on 'CampaignMode_C'",
+        "star_system_generator": "Exception: MWGameMode: Failed to find property 'star_system_generator' for attribute 'star_system_generator' on 'CampaignMode_C'",
+        "star_system_generator_class": "Exception: MWGameMode: Failed to find property 'star_system_generator_class' for attribute 'star_system_generator_class' on 'CampaignMode_C'",
+        "system_blackboard": "Exception: MWGameMode: Failed to find property 'system_blackboard' for attribute 'system_blackboard' on 'CampaignMode_C'",
+        "travel_path_model": "Exception: MWGameMode: Failed to find property 'travel_path_model' for attribute 'travel_path_model' on 'CampaignMode_C'"
+      }
+    },
+    "/Game/Modes/MW5GameMode": {
+      "asset": {
+        "get_full_name": "Blueprint /Game/Modes/MW5GameMode.MW5GameMode",
+        "get_name": "MW5GameMode",
+        "get_path_name": "/Game/Modes/MW5GameMode.MW5GameMode",
+        "python_type": "Blueprint",
+        "repr": "<Object '/Game/Modes/MW5GameMode.MW5GameMode' (0x0000027A29546400) Class 'Blueprint'>",
+        "unreal_class": "Blueprint",
+        "unreal_class_path": "/Script/Engine.Blueprint"
+      },
+      "calls": {},
+      "cdo": {
+        "get_full_name": "MW5GameMode_C /Game/Modes/MW5GameMode.Default__MW5GameMode_C",
+        "get_name": "Default__MW5GameMode_C",
+        "get_path_name": "/Game/Modes/MW5GameMode.Default__MW5GameMode_C",
+        "python_type": "MWGameMode",
+        "repr": "<Object '/Game/Modes/MW5GameMode.Default__MW5GameMode_C' (0x0000027A99D1B040) Class 'MW5GameMode_C'>",
+        "unreal_class": "MW5GameMode_C",
+        "unreal_class_path": "/Game/Modes/MW5GameMode.MW5GameMode_C"
+      },
+      "generated_class": {
+        "get_full_name": "BlueprintGeneratedClass /Game/Modes/MW5GameMode.MW5GameMode_C",
+        "get_name": "MW5GameMode_C",
+        "get_path_name": "/Game/Modes/MW5GameMode.MW5GameMode_C",
+        "python_type": "BlueprintGeneratedClass",
+        "repr": "<Object '/Game/Modes/MW5GameMode.MW5GameMode_C' (0x0000027A29545D00) Class 'BlueprintGeneratedClass'>",
+        "unreal_class": "BlueprintGeneratedClass",
+        "unreal_class_path": "/Script/Engine.BlueprintGeneratedClass"
+      },
+      "members": [
+        "_wrapper_meta_data",
+        "campaign_system_generator_class",
+        "choose_player_start",
+        "default_inner_sphere_class",
+        "default_player_coms_system_class",
+        "find_player_start",
+        "get_save_load_system",
+        "handle_starting_new_player",
+        "has_match_started",
+        "init_start_spot",
+        "is_hidden_ed_at_startup",
+        "k2_find_player_start",
+        "on_restart_player",
+        "player_can_restart",
+        "receive_import_save_data",
+        "receive_process_start_conditions",
+        "receive_start_new_game",
+        "restart_player",
+        "restart_player_at_player_start",
+        "restart_player_at_transform",
+        "start_play",
+        "start_players_as_spectators"
+      ],
+      "properties": {
+        "campaign_system_generator_class": {
+          "ok": true,
+          "value": {
+            "get_full_name": "BlueprintGeneratedClass /Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C",
+            "get_name": "DefaultSystemGenerator_C",
+            "get_path_name": "/Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C",
+            "python_type": "BlueprintGeneratedClass",
+            "repr": "<Object '/Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C' (0x0000027999A39D00) Class 'BlueprintGeneratedClass'>",
+            "unreal_class": "BlueprintGeneratedClass",
+            "unreal_class_path": "/Script/Engine.BlueprintGeneratedClass"
+          }
+        },
+        "default_inner_sphere_class": {
+          "ok": true,
+          "value": {
+            "get_full_name": "BlueprintGeneratedClass /Game/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C",
+            "get_name": "StarSystemGenerator_C",
+            "get_path_name": "/Game/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C",
+            "python_type": "BlueprintGeneratedClass",
+            "repr": "<Object '/Game/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C' (0x0000027A8B1A0F00) Class 'BlueprintGeneratedClass'>",
+            "unreal_class": "BlueprintGeneratedClass",
+            "unreal_class_path": "/Script/Engine.BlueprintGeneratedClass"
+          }
+        }
+      },
+      "property_errors": {
+        "inner_sphere_data": "Exception: MWGameMode: Failed to find property 'inner_sphere_data' for attribute 'inner_sphere_data' on 'MW5GameMode_C'",
+        "persistent_model": "Exception: MWGameMode: Failed to find property 'persistent_model' for attribute 'persistent_model' on 'MW5GameMode_C'",
+        "star_map_model": "Exception: MWGameMode: Failed to find property 'star_map_model' for attribute 'star_map_model' on 'MW5GameMode_C'",
+        "star_system_body_look_up": "Exception: MWGameMode: Failed to find property 'star_system_body_look_up' for attribute 'star_system_body_look_up' on 'MW5GameMode_C'",
+        "star_system_generator": "Exception: MWGameMode: Failed to find property 'star_system_generator' for attribute 'star_system_generator' on 'MW5GameMode_C'",
+        "star_system_generator_class": "Exception: MWGameMode: Failed to find property 'star_system_generator_class' for attribute 'star_system_generator_class' on 'MW5GameMode_C'",
+        "system_blackboard": "Exception: MWGameMode: Failed to find property 'system_blackboard' for attribute 'system_blackboard' on 'MW5GameMode_C'",
+        "travel_path_model": "Exception: MWGameMode: Failed to find property 'travel_path_model' for attribute 'travel_path_model' on 'MW5GameMode_C'"
+      }
+    },
+    "/Game/UI/FrontEnd/Starmap/StarMapActor": {
+      "asset": {
+        "get_full_name": "Blueprint /Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor",
+        "get_name": "StarMapActor",
+        "get_path_name": "/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor",
+        "python_type": "Blueprint",
+        "repr": "<Object '/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor' (0x0000027A280AB200) Class 'Blueprint'>",
+        "unreal_class": "Blueprint",
+        "unreal_class_path": "/Script/Engine.Blueprint"
+      },
+      "calls": {},
+      "cdo": {
+        "get_full_name": "StarMapActor_C /Game/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C",
+        "get_name": "Default__StarMapActor_C",
+        "get_path_name": "/Game/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C",
+        "python_type": "MWStarMap",
+        "repr": "<Object '/Game/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C' (0x0000027A979D5D00) Class 'StarMapActor_C'>",
+        "unreal_class": "StarMapActor_C",
+        "unreal_class_path": "/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C"
+      },
+      "generated_class": {
+        "get_full_name": "BlueprintGeneratedClass /Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C",
+        "get_name": "StarMapActor_C",
+        "get_path_name": "/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C",
+        "python_type": "BlueprintGeneratedClass",
+        "repr": "<Object '/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C' (0x0000027A280A9600) Class 'BlueprintGeneratedClass'>",
+        "unreal_class": "BlueprintGeneratedClass",
+        "unreal_class_path": "/Script/Engine.BlueprintGeneratedClass"
+      },
+      "members": [
+        "_wrapper_meta_data",
+        "cluster_material",
+        "draw_clusters",
+        "find_star_system_body_by_id",
+        "generate_star_map_border_polygon",
+        "get_hismc_star",
+        "get_influencers_for_star_system",
+        "get_selected_star_system_id",
+        "get_star_map_pawn",
+        "is_hidden_ed_at_startup",
+        "mouse_over_star_system",
+        "on_initialize_star_map",
+        "on_mouse_over_star_system",
+        "on_star_system_selected",
+        "on_travel_to_star_system",
+        "on_view_star_system",
+        "receive_on_selected_star_system_changed",
+        "set_selected_star_system",
+        "star_system_body_look_up",
+        "travel_path_model",
+        "travel_to_system"
+      ],
+      "properties": {
+        "star_system_body_look_up": {
+          "ok": true,
+          "value": {
+            "count": 0,
+            "kind": "Map",
+            "sample": [],
+            "tail_sample": []
+          }
+        },
+        "travel_path_model": {
+          "ok": true,
+          "value": {
+            "get_full_name": "StaticMesh /Game/UI/FrontEnd/Starmap/cylinder_STM.cylinder_STM",
+            "get_name": "cylinder_STM",
+            "get_path_name": "/Game/UI/FrontEnd/Starmap/cylinder_STM.cylinder_STM",
+            "python_type": "StaticMesh",
+            "repr": "<Object '/Game/UI/FrontEnd/Starmap/cylinder_STM.cylinder_STM' (0x0000027A2E50E000) Class 'StaticMesh'>",
+            "unreal_class": "StaticMesh",
+            "unreal_class_path": "/Script/Engine.StaticMesh"
+          }
+        }
+      },
+      "property_errors": {
+        "campaign_system_generator_class": "Exception: MWStarMap: Failed to find property 'campaign_system_generator_class' for attribute 'campaign_system_generator_class' on 'StarMapActor_C'",
+        "default_inner_sphere_class": "Exception: MWStarMap: Failed to find property 'default_inner_sphere_class' for attribute 'default_inner_sphere_class' on 'StarMapActor_C'",
+        "inner_sphere_data": "Exception: MWStarMap: Failed to find property 'inner_sphere_data' for attribute 'inner_sphere_data' on 'StarMapActor_C'",
+        "persistent_model": "Exception: MWStarMap: Failed to find property 'persistent_model' for attribute 'persistent_model' on 'StarMapActor_C'",
+        "star_map_model": "Exception: MWStarMap: Failed to find property 'star_map_model' for attribute 'star_map_model' on 'StarMapActor_C'",
+        "star_system_generator": "Exception: MWStarMap: Failed to find property 'star_system_generator' for attribute 'star_system_generator' on 'StarMapActor_C'",
+        "star_system_generator_class": "Exception: MWStarMap: Failed to find property 'star_system_generator_class' for attribute 'star_system_generator_class' on 'StarMapActor_C'",
+        "system_blackboard": "Exception: MWStarMap: Failed to find property 'system_blackboard' for attribute 'system_blackboard' on 'StarMapActor_C'"
+      }
+    }
+  },
+  "errors": [],
+  "findings": [
+    "/Game/Modes/MW5GameMode.default_inner_sphere_class -> /Game/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C",
+    "/Game/Modes/MW5GameMode.campaign_system_generator_class -> /Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C",
+    "/Game/Modes/CampaignMode.default_inner_sphere_class -> /Game/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C",
+    "/Game/Modes/CampaignMode.campaign_system_generator_class -> /Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C",
+    "/Game/Campaign/_common/DefaultSystemGenerator.persistent_model -> None",
+    "/Game/Campaign/_common/DefaultSystemGenerator.system_blackboard -> <Struct 'StarSystemBlackboard' (0x0000027A3078F0C8) {mission_modifiers: {premade_missions: , orbital_toi_map: ()}, market_data: {market_inventory_map: ()}, market_modifiers: {all_item_discount: 0, mech_discount: 0, weapon_discount: 0, equipment_discount: 0}, contains_market_history: False, special_item_list_history: , parameters: }>",
+    "/Game/UI/FrontEnd/Starmap/StarMapActor.travel_path_model -> /Game/UI/FrontEnd/Starmap/cylinder_STM.cylinder_STM",
+    "/Game/UI/FrontEnd/Starmap/StarMapActor.star_system_body_look_up -> None",
+    "StarSystemGenerator.generate_inner_sphere_data count -> 3974"
+  ],
+  "generated_utc": "2026-05-11T23:01:28.270607+00:00"
+}

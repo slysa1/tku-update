@@ -1,0 +1,14 @@
+{
+  "generated": "2026-05-12T07:59:17.9119675+10:00",
+  "apply_requested": false,
+  "probe_name": "TKURuntimeProbe",
+  "win64_root": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Binaries\\Win64",
+  "mods_root": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Binaries\\Win64\\Mods",
+  "target_lua": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Binaries\\Win64\\Mods\\TKURuntimeProbe\\Scripts\\main.lua",
+  "mods_txt": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Binaries\\Win64\\Mods\\mods.txt",
+  "backup_dir": null,
+  "safety_failures": [
+    "MW5 is still running; close the game before installing the UE4SS probe."
+  ],
+  "actions": []
+}
