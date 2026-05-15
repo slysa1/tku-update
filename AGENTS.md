@@ -30,3 +30,8 @@ This workspace is the TKU update project root, intentionally separate from the l
 - Do not install duplicate asset-inspection tools unless the user explicitly asks for it.
 - Do not overwrite original TKU paks or loose required override paks in place.
 - Do not treat this project folder as the game install folder. Use the configured paths for all live mod, pak, and Workshop locations.
+
+<!-- SPECKIT START -->
+For additional context about technologies to be used, project structure,
+shell commands, and other important information, read the current plan
+<!-- SPECKIT END -->
