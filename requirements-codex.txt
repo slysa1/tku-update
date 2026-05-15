@@ -1,50 +1,7 @@
-# requirements-codex.txt
+# Codex/operator helper dependencies only.
+# All-in helper environment. For smaller installs, use one of the group files.
 
-# File/repo inspection
-pathspec
-GitPython
-python-magic
-charset-normalizer
-
-# Document readers
-pypdf
-PyMuPDF
-python-docx
-python-pptx
-openpyxl
-odfpy
-beautifulsoup4
-lxml
-markdown-it-py
-ruamel.yaml
-tomli-w
-
-# Code analysis/refactoring
-libcst
-astroid
-rope
-tree-sitter
-tree-sitter-language-pack
-radon
-vulture
-
-# Testing/quality
-pytest
-pytest-cov
-hypothesis
-coverage
-ruff
-mypy
-bandit
-pip-audit
-
-# Tooling/API/CLI building
-typer
-rich
-textual
-fastapi
-uvicorn
-pydantic
-pydantic-settings
-python-dotenv
-watchdog
+-r requirements-codex-minimal.txt
+-r requirements-codex-readers.txt
+-r requirements-codex-analysis.txt
+-r requirements-codex-cli.txt

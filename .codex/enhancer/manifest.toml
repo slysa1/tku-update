@@ -1,0 +1,94 @@
+schema_version = 3
+enhancer_version = "4.2.0"
+selected_packs = []
+selected_workflows = []
+
+[lifecycle]
+state = "active"
+pack_selection = "manifest"
+managed_sections = ["AGENTS.md:selected-stack-packs", "AGENTS.md:spec-kit-bridge"]
+
+[[detected_packs]]
+name = "monorepo-workspace"
+selected = false
+recommended = false
+detected = false
+reason = "missing detection signal from files pnpm-workspace.yaml, turbo.json, nx.json, rush.json, lerna.json"
+evidence = ["missing detection signal from files pnpm-workspace.yaml, turbo.json, nx.json, rush.json, lerna.json"]
+
+[[detected_packs]]
+name = "javascript-typescript-app"
+selected = false
+recommended = false
+detected = false
+reason = "missing required file package.json"
+evidence = ["missing required file package.json"]
+
+[[detected_packs]]
+name = "frontend-ui"
+selected = false
+recommended = false
+detected = false
+reason = "missing detection signal from globs src/**/*.tsx, src/**/*.jsx, src/**/*.vue, src/**/*.svelte, app/**/*.tsx, app/**/*.jsx, pages/**/*.tsx, pages/**/*.jsx, components/**/*.tsx, components/**/*.jsx, vite.config.*, next.config.*, astro.config.*, svelte.config.*"
+evidence = ["missing detection signal from globs src/**/*.tsx, src/**/*.jsx, src/**/*.vue, src/**/*.svelte, app/**/*.tsx, app/**/*.jsx, pages/**/*.tsx, pages/**/*.jsx, components/**/*.tsx, components/**/*.jsx, vite.config.*, next.config.*, astro.config.*, svelte.config.*"]
+
+[[detected_packs]]
+name = "python-service"
+selected = false
+recommended = false
+detected = false
+reason = "missing detection signal from files pyproject.toml, requirements.txt, setup.cfg, setup.py"
+evidence = ["missing detection signal from files pyproject.toml, requirements.txt, setup.cfg, setup.py"]
+
+[[detected_packs]]
+name = "node-api-service"
+selected = false
+recommended = false
+detected = false
+reason = "missing required file package.json"
+evidence = ["missing required file package.json"]
+
+[[detected_packs]]
+name = "library-package"
+selected = false
+recommended = false
+detected = false
+reason = "missing required file package.json"
+evidence = ["missing required file package.json"]
+
+[generated_files]
+stack_guidance = "docs/ai/stack-guidance.md"
+spec_kit_bridge = "docs/ai/spec-kit-bridge.md"
+
+[managed_outputs]
+safe_to_regenerate = ["docs/ai/stack-guidance.md", "docs/ai/spec-kit-bridge.md", ".codex/enhancer/manifest.toml"]
+adapt_manually = ["AGENTS.md", "docs/ai/architecture.md", "docs/ai/code-review.md", "scripts/check.py", "tests/test_check.py", ".github/workflows/validate.yml", ".codex/skills/adapt-enhancer/SKILL.md", ".codex/skills/AGENTS.md", ".codex/skills/plan-change/SKILL.md", ".codex/skills/review-prep/SKILL.md", "scripts/enhancer_spec.py", "scripts/spec_kit_bridge.py", "scripts/utility_harness.py", "scripts/enhancer_validator.py", ".codex/skills/spec-implement-bridge/SKILL.md", ".codex/skills/spec-sync-check/SKILL.md", ".codex/skills/spec-review-bridge/SKILL.md", "requirements-codex.txt", "requirements-codex-minimal.txt", "requirements-codex-readers.txt", "requirements-codex-analysis.txt", "requirements-codex-cli.txt", "tools/ai/audit_inputs.py", "tools/ai/inspect_repo.py", "tools/ai/read_any.py", "tools/ai/summarize_tree.py", "tools/ai/run_checks.py", "docs/ai/utility-harness.md"]
+
+[integrations.spec_kit]
+mode = "attach"
+state = "attached"
+managed_by = "spec-kit"
+origin = "preexisting"
+integration_key = "codex"
+script_type = "ps"
+command_surface = "dollar"
+command_label = "$speckit-<command>"
+cli_version = "0.8.9.dev0"
+available_commands = ["constitution", "specify", "clarify", "plan", "analyze", "tasks", "implement", "checklist", "taskstoissues", "git.commit", "git.feature", "git.initialize", "git.remote", "git.validate"]
+detection_evidence = ["found .specify/", "found Spec Kit skills under .agents/skills/", "integration: codex", "script type: ps", "Spec Kit version: 0.8.9.dev0", "git extension hooks configured"]
+
+[integrations.spec_kit.paths]
+specify_root = ".specify"
+codex_skills_root = ".agents/skills"
+context_file = "AGENTS.md"
+constitution = ".specify/memory/constitution.md"
+
+[integrations.utility_harness]
+mode = "install"
+state = "installed"
+managed_by = "codex-enhancer"
+dependency_policy = "Codex/operator helper dependencies only; install manually into a local helper environment."
+requirements_file = "requirements-codex.txt"
+dependency_files = ["requirements-codex.txt", "requirements-codex-minimal.txt", "requirements-codex-readers.txt", "requirements-codex-analysis.txt", "requirements-codex-cli.txt"]
+docs_file = "docs/ai/utility-harness.md"
+tool_files = ["tools/ai/audit_inputs.py", "tools/ai/inspect_repo.py", "tools/ai/read_any.py", "tools/ai/summarize_tree.py", "tools/ai/run_checks.py"]

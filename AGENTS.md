@@ -1,37 +1,93 @@
-# Workspace Notes
+# tku-update
 
-This workspace is the TKU update project root, intentionally separate from the live MechWarrior 5 install.
+## Purpose
+This repository uses a Codex-native workflow layer so Codex can understand the repo faster, follow clearer conventions, and validate changes with less prompt repetition.
 
-## Project And Runtime Paths
+## Current State
+- This workflow layer was bootstrapped by Codex Enhancer.
+- Treat inherited generic guidance as a starting point, not final truth.
+- Use the `adapt-enhancer` skill until this file, the docs under `docs/ai/`, and the validation rules match this repository's real shape.
 
-- Project root: `D:\Downloads\OneDrive\Documents\code\tku-update`
-- Game install root: `E:\SteamLibrary\steamapps\common\MechWarrior 5 Mercenaries`
-- Local MW5 mod root: `E:\SteamLibrary\steamapps\common\MechWarrior 5 Mercenaries\MW5Mercs\Mods`
-- Game content pak root: `E:\SteamLibrary\steamapps\common\MechWarrior 5 Mercenaries\MW5Mercs\Content\Paks`
-- Steam Workshop MW5 mods: `E:\SteamLibrary\steamapps\workshop\content\784080`
-- Path config: `config\tku_paths.local.json`; fallback example: `config\tku_paths.example.json`.
-- Path helper for scripts: `tools\tku_project_paths.py`.
+## Repo Map
+- [AGENTS.md](AGENTS.md): repo-wide operating map and default workflow.
+- [docs/ai/architecture.md](docs/ai/architecture.md): what should stay minimal and what should be moved into deeper docs or skills.
+- [docs/ai/code-review.md](docs/ai/code-review.md): review and PR-prep checklist for workflow assets and future repo rules.
+- [docs/ai/spec-kit-bridge.md](docs/ai/spec-kit-bridge.md): how this repo should coexist with official GitHub Spec Kit if the team uses it.
+- [docs/ai/stack-guidance.md](docs/ai/stack-guidance.md): optional stack-pack guidance selected during enhancer install.
+- [.codex/skills/](.codex/skills/): repo-local skills for repeated procedures. Read [.codex/skills/AGENTS.md](.codex/skills/AGENTS.md) before editing or adding skills.
+- [.codex/enhancer/manifest.toml](.codex/enhancer/manifest.toml): record of detected and selected enhancer stack packs.
+- [scripts/check.py](scripts/check.py): deterministic validation for this repo's Codex workflow layer.
+- [tests/](tests/): unit tests for the validator.
+- [.github/workflows/validate.yml](.github/workflows/validate.yml): CI that mirrors the local validation commands.
 
-## Available Tooling
+## Discovered Commands
+- No install/build/lint/test/check/dev commands were auto-confirmed yet.
+- Inspect the repo and replace this section with commands verified from manifests, scripts, or CI.
 
-- MW5 Mod Editor is available at `E:\Games\MechWarrior5Editor`; use it as the preferred source for Blueprint parents, asset references, schemas, editor-authored overrides, and package/build behavior.
-- UEViewer/umodel is available at `C:\Program Files\umodel`; its use is encouraged for cooked asset inspection, export checks, package contents, and reference evidence.
-- FModel is available at `C:\Program Files\fmodel`; its use is encouraged for pak browsing, cooked asset review, string searches, and reference evidence.
-- Blender 5.1 is available at `C:\Program Files\Blender Foundation\Blender 5.1` with the Unreal PSK/PSA addon installed; use it where appropriate for mesh, animation, import/export, and visual inspection work.
-- UAssetAPI/MW5AssetTool is available at `D:\Downloads\OneDrive\Documents\code\tku-update\tools\MW5AssetTool`; use it where appropriate for structured UAsset inspection or automation, while keeping editor-authored fixes in the MW5 Mod Editor unless a workflow is explicitly proven safe.
-- UAssetGUI is available at `C:\Program Files\UassetGUI`; use it where appropriate for asset inspection and comparison.
-- `zDEV-UE4SS_v3.0.1.zip` has been extracted into `E:\SteamLibrary\steamapps\common\MechWarrior 5 Mercenaries\MW5Mercs\Binaries\Win64`; use that UE4SS install where appropriate for runtime instrumentation, Lua/mod hooks, or evidence gathering.
-- Keep evidence outputs under `reports\tku_editor_first\`, helper scripts under `tools\tku_reference_audit\`, or a clearly named staging directory in this project.
+## Existing Repo Guidance To Review
+- Review existing guidance in `AGENTS.md` before leaving inherited enhancer text in place.
 
-## Safety
+## Selected Stack Packs
+<!-- codex-enhancer:managed-section AGENTS.md:selected-stack-packs start -->
+- No stack packs are selected yet. Keep [docs/ai/stack-guidance.md](docs/ai/stack-guidance.md) and [.codex/enhancer/manifest.toml](.codex/enhancer/manifest.toml) aligned if pack selection changes later.
+<!-- codex-enhancer:managed-section AGENTS.md:selected-stack-packs end -->
 
-- Treat FModel, umodel, Blender, UAssetAPI/MW5AssetTool, and UAssetGUI output as supporting evidence unless the workflow has been separately validated. Prefer MW5 Mod Editor behavior and UE4.27 documentation for final compatibility decisions and authored asset changes.
-- Treat UE4SS runtime observations as supporting runtime evidence. Prefer MW5 Mod Editor behavior for asset repair decisions, and do not remove or re-extract UE4SS without an explicit reason.
-- Do not install duplicate asset-inspection tools unless the user explicitly asks for it.
-- Do not overwrite original TKU paks or loose required override paks in place.
-- Do not treat this project folder as the game install folder. Use the configured paths for all live mod, pak, and Workshop locations.
+## Spec Kit Bridge
+<!-- codex-enhancer:managed-section AGENTS.md:spec-kit-bridge start -->
+- Spec Kit bridge is attached to an existing official install.
+- Official integration: `codex`.
+- Default command surface: $speckit-<command>.
+- Bridge-aware commands: `constitution`, `specify`, `clarify`, `plan`, `analyze`, `tasks`, `implement`, `checklist`, `taskstoissues`, `git.commit`, `git.feature`, `git.initialize`, `git.remote`, `git.validate`.
+- Read feature artifacts in `specs/` before implementation or review, and keep enhancer validation or review notes aligned with the current spec, plan, tasks, contracts, and quickstart.
+- Treat `.specify/`, `specs/`, and official Spec Kit prompt, agent, or skill files as separately owned.
+<!-- codex-enhancer:managed-section AGENTS.md:spec-kit-bridge end -->
 
-<!-- SPECKIT START -->
-For additional context about technologies to be used, project structure,
-shell commands, and other important information, read the current plan
-<!-- SPECKIT END -->
+## Utility Harness
+- Codex Utility Harness is installed for explicit Codex/operator use.
+- Read [docs/ai/utility-harness.md](docs/ai/utility-harness.md) before using the helper scripts.
+- Optional helper dependency groups are listed in `requirements-codex.txt` and the narrower `requirements-codex-*.txt` files; install only the groups you need outside production dependency files.
+- Available tools: `python tools/ai/audit_inputs.py`, `python tools/ai/inspect_repo.py`, `python tools/ai/read_any.py`, `python tools/ai/summarize_tree.py`, `python tools/ai/run_checks.py`.
+
+## Default Workflow
+1. Inspect the relevant files before editing anything.
+2. For non-trivial workflow changes, use the `plan-change` skill in [.codex/skills/plan-change/](.codex/skills/plan-change/).
+3. Prefer editing an existing file over creating a new one.
+4. Keep AGENTS files short; move durable detail into [docs/ai/](docs/ai/).
+5. After changes, run `python scripts/check.py` and `python -m unittest discover -s tests -p "test_*.py" -v`.
+6. Before handing a patch off for review, use the `review-prep` skill in [.codex/skills/review-prep/](.codex/skills/review-prep/).
+7. If this bootstrap layer still contains inherited generic guidance, use [.codex/skills/adapt-enhancer/](.codex/skills/adapt-enhancer/) to make it repo-specific.
+8. After adaptation, run `codex-enhancer audit <this-repo>` from the enhancer CLI when available, or ask Codex to inspect inherited guidance and proposal files manually.
+
+## Engineering Rules
+- Replace guessed commands with commands confirmed from the repo.
+- Treat commands marked as prose-extracted by `tools/ai/run_checks.py` as review findings, not default executable commands.
+- Prefer `AGENTS.md`, concise docs, narrow skills, and small scripts over packages, daemons, or hidden state.
+- Add nested `AGENTS.md` files only when a subtree has materially different rules.
+- Add repo-local skills only for repeated, narrow procedures with clear triggers and explicit non-goals.
+- Add scripts only when they provide deterministic validation or remove repeated manual steps.
+- Keep local commands and CI in sync. If one changes, update the other in the same patch.
+- Delete inherited enhancer assets that do not solve a real problem in this repository.
+- Treat official Spec Kit files such as `.specify/`, `specs/`, `.github/prompts/`, and `.github/agents/` as separately owned unless this repo explicitly chooses a deeper bridge later.
+
+## Review Expectations
+- Explain why each workflow file exists and why a simpler alternative was not enough.
+- Record the exact validation performed.
+- Call out what was intentionally omitted so the repo does not accumulate speculative workflow machinery.
+- Flag any inherited generic guidance that still needs repo-specific replacement.
+
+## Definition Of Done
+- The requested change is implemented with the smallest useful file set.
+- `python scripts/check.py` passes.
+- `python -m unittest discover -s tests -p "test_*.py" -v` passes.
+- Paths, commands, and links in docs resolve correctly.
+- Any remaining inherited generic guidance is called out explicitly, not left implied.
+- If validation commands changed, [.github/workflows/validate.yml](.github/workflows/validate.yml) changed with them.
+
+## Subagents
+Use subagents only when parallel exploration or an independent review materially speeds up a large change.
+Do not use subagents for small doc edits, single-skill changes, or work blocked on one local file.
+
+## Immediate Follow-up
+1. Inspect the repo's real build, lint, test, and dev commands.
+2. Replace any inherited generic sections with repo-specific guidance.
+3. Remove skills, docs, or checks that do not solve a real problem here.
