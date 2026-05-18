@@ -75,7 +75,7 @@ command_surface = "dollar"
 command_label = "$speckit-<command>"
 cli_version = "0.8.9.dev0"
 available_commands = ["constitution", "specify", "clarify", "plan", "analyze", "tasks", "implement", "checklist", "taskstoissues", "git.commit", "git.feature", "git.initialize", "git.remote", "git.validate"]
-detection_evidence = ["found .specify/", "found Spec Kit skills under .agents/skills/", "integration: codex", "script type: ps", "Spec Kit version: 0.8.9.dev0", "git extension hooks configured"]
+detection_evidence = ["found .specify/", "found Spec Kit skills under .agents/skills/", "integration: codex", "default integration: codex", "installed integrations: codex", "integration settings: codex", "script type: ps", "script directory: .specify/scripts/powershell", "Spec Kit version: 0.8.9.dev0", "branch numbering: sequential", "extensions detected: 1", "git extension hooks configured"]
 
 [integrations.spec_kit.paths]
 specify_root = ".specify"

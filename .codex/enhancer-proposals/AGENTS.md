@@ -25,7 +25,7 @@ This repository uses a Codex-native workflow layer so Codex can understand the r
 - Inspect the repo and replace this section with commands verified from manifests, scripts, or CI.
 
 ## Existing Repo Guidance To Review
-- Review existing guidance in `AGENTS.md` before leaving inherited enhancer text in place.
+- No existing AGENTS/Claude/Cursor/Copilot guidance was auto-detected.
 
 ## Selected Stack Packs
 <!-- codex-enhancer:managed-section AGENTS.md:selected-stack-packs start -->
@@ -35,7 +35,6 @@ This repository uses a Codex-native workflow layer so Codex can understand the r
 ## Spec Kit Bridge
 <!-- codex-enhancer:managed-section AGENTS.md:spec-kit-bridge start -->
 - Spec Kit bridge is attached to an existing official install.
-- Read [docs/ai/spec-kit-bridge.md](docs/ai/spec-kit-bridge.md) for bridge ownership, workflow, and safety guidance.
 - Official integration: `codex`.
 - Default command surface: $speckit-<command>.
 - Bridge-aware commands: `constitution`, `specify`, `clarify`, `plan`, `analyze`, `tasks`, `implement`, `checklist`, `taskstoissues`, `git.commit`, `git.feature`, `git.initialize`, `git.remote`, `git.validate`.
@@ -48,7 +47,7 @@ This repository uses a Codex-native workflow layer so Codex can understand the r
 ## Utility Harness
 - Codex Utility Harness is installed for explicit Codex/operator use.
 - Read [docs/ai/utility-harness.md](docs/ai/utility-harness.md) before using the helper scripts.
-- Optional helper dependency groups are listed in `requirements-codex.txt` and the narrower `requirements-codex-*.txt` files; install only the groups you need outside production dependency files.
+- Optional helper dependency groups are listed in `requirements-codex.txt` and the narrower `requirements-codex-*.txt` files; install only the groups you need into a local helper environment.
 - Available tools: `python tools/ai/audit_inputs.py`, `python tools/ai/inspect_repo.py`, `python tools/ai/read_any.py`, `python tools/ai/summarize_tree.py`, `python tools/ai/run_checks.py`.
 
 ## Default Workflow
