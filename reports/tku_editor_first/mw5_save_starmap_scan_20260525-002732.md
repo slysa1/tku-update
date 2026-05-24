@@ -1,0 +1,153 @@
+# MW5 Save StarMap Scan - 20260525-002732
+
+- Method: read-only binary/string scan of the latest MW5 save directory.
+- Safety: no save files, game files, mod files, or editor assets were modified.
+
+## Findings
+
+- Latest campaign save advertises DLC tags: DLC.DLC1, DLC.DLC2, DLC.DLC3, DLC.DLC4, DLC.DLC5, DLC.DLC6, DLC.DLC7.
+- 51FCD52C42E1AC5924E9DDAB3A25286E.sav serializes a StarMapModel segment of 109284 bytes; first focused tokens: StarMapModel | /Script/MechWarrior.MWStarMapModel | OnStarSystemInfoChanged | OnTravelToNewStarSystem | OnStarSystemInfoChanged | OnStarSystemInfoChanged_Event_0 | OnUserStarSystemChanged | OnUserStarSystemChanged | OnUserStarSystemChanged | OnStarMapInitialized | OnInitializeStarMap | OnUpdateHiddenSystems | OnHiddenSystemsUpdated | OnHiddenSystemsUpdated | OnHiddenSystemsUpdated | OnHiddenSystemsUpdated.
+- 51FCD52C42E1AC5924E9DDAB3A25286E.sav StarMapModel sample-id occurrences: {'1': 7, '3501': 1, '3502': 0, '4001': 0, '4110': 0, '5000': 0, '6000': 0, '7000': 0, '7912': 0, '7921': 0}.
+- 51FCD52C42E1AC5924E9DDAB3A25286E.sav references StarSystemGenerator 2 time(s).
+- 51FCD52C42E1AC5924E9DDAB3A25286E.sav contains Taurian/Canopus faction references.
+- 06A26CC149B273CD19B05394737515AE.sav serializes a StarMapModel segment of 1302 bytes; first focused tokens: StarMapModel | /Script/MechWarrior.MWStarMapModel | OnUserStarSystemChanged | OnUserStarSystemChanged | HiddenStarSystems | CurrentStarSystemId | InnerSphereMapInfo | InnerSphereMapInfo | InnerSphereClass | /Game/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C | StarMapBorderAssetId | StarMapBorderAssetId | PrimaryAssetId | PrimaryAssetType | PrimaryAssetType | MWStarMapBorderAsset.
+- 06A26CC149B273CD19B05394737515AE.sav StarMapModel sample-id occurrences: {'1': 3, '3501': 1, '3502': 0, '4001': 0, '4110': 0, '5000': 0, '6000': 0, '7000': 0, '7912': 0, '7921': 0}.
+- 06A26CC149B273CD19B05394737515AE.sav references StarSystemGenerator 2 time(s).
+- 06A26CC149B273CD19B05394737515AE.sav contains Taurian/Canopus faction references.
+
+## Campaign
+
+- Path: `C:\Users\dogpe\AppData\Local\MW5Mercs\Saved\SaveGames\4799962B4197457772A3A8A05865F29D\Campaign.json`
+- Name: `House Davion`
+- Game date: `3015.01.15-14.00.00`
+- Last save date: `2026.05.24-14.16.28`
+- Start condition: `MWStartConditionsAsset:CareerMode_Davion_Start`
+- Last save file: `51FCD52C42E1AC5924E9DDAB3A25286E`
+- Save count: `2`
+
+## `51FCD52C42E1AC5924E9DDAB3A25286E.sav`
+
+- Size: `2117180`
+- Last write: `2026-05-25T00:16:28.594414`
+- SHA256: `2FC4B50478B2D1119D76B03A264A3B781FEBE91FC9115628625BBDCE991040E2`
+- StarMapModel segment count: `1`
+- Marker `StarMapModel` count `2` sample offsets `[5068, 5135]`
+- Marker `MWStarMapModel` count `1` sample offsets `[5133]`
+- Marker `InnerSphereMapInfo` count `2` sample offsets `[113389, 113439]`
+- Marker `InnerSphereClass` count `1` sample offsets `[113479]`
+- Marker `StarSystemGenerator` count `2` sample offsets `[113550, 113570]`
+- Marker `HiddenStarSystems` count `1` sample offsets `[113239]`
+- Marker `CurrentStarSystemId` count `1` sample offsets `[113336]`
+- Marker `StarSystemId` count `80` sample offsets `[113343, 114845, 429777, 431544, 432517, 434089, 434982, 436554]`
+- Marker `MWClusterDataAsset` count `80` sample offsets `[431375, 433925, 436390, 438855, 441224, 443593, 445962, 448331]`
+- Marker `ClusterAsset` count `80` sample offsets `[431470, 434015, 436480, 438945, 441314, 443683, 446052, 448421]`
+- Marker `TaurianConcordat` count `1` sample offsets `[294867]`
+- Marker `MagistracyOfCanopus` count `1` sample offsets `[295298]`
+- Marker `OutworldsAlliance` count `51` sample offsets `[294011, 709502, 713397, 717289, 721176, 736710, 744493, 747889]`
+- Marker `Periphery` count `49` sample offsets `[294443, 710916, 714811, 718703, 722590, 738129, 745907, 749373]`
+- Segment start `4908` end `114192` length `109284`
+  - Segment int `1` offsets `[5102, 5520, 5618, 5712, 113066, 113632, 113690]`
+  - Segment int `3501` offsets `[113316]`
+  - Token `5068` `StarMapModel`
+  - Token `5113` `/Script/MechWarrior.MWStarMapModel`
+  - Token `5152` `OnStarSystemInfoChanged`
+  - Token `5229` `OnTravelToNewStarSystem`
+  - Token `5257` `OnStarSystemInfoChanged`
+  - Token `5285` `OnStarSystemInfoChanged_Event_0`
+  - Token `5321` `OnUserStarSystemChanged`
+  - Token `5398` `OnUserStarSystemChanged`
+  - Token `5426` `OnUserStarSystemChanged`
+  - Token `5454` `OnStarMapInitialized`
+  - Token `5528` `OnInitializeStarMap`
+  - Token `5652` `OnUpdateHiddenSystems`
+  - Token `5727` `OnHiddenSystemsUpdated`
+  - Token `5754` `OnHiddenSystemsUpdated`
+  - Token `5781` `OnHiddenSystemsUpdated`
+  - Token `5808` `OnHiddenSystemsUpdated`
+  - Token `5835` `OnHiddenSystemsUpdated`
+  - Token `5862` `OnHiddenSystemsUpdated`
+  - Token `5889` `OnHiddenSystemsUpdated`
+  - Token `5916` `OnHiddenSystemsUpdated`
+  - Token `5943` `OnHiddenSystemsUpdated`
+  - Token `5970` `OnHiddenSystemsUpdated`
+  - Token `5997` `OnHiddenSystemsUpdated`
+  - Token `6024` `OnHiddenSystemsUpdated`
+  - Token `6051` `OnHiddenSystemsUpdated`
+  - Token `6078` `OnHiddenSystemsUpdated`
+  - Token `6105` `OnHiddenSystemsUpdated`
+  - Token `6132` `OnHiddenSystemsUpdated`
+  - Token `6159` `OnHiddenSystemsUpdated`
+  - Token `6186` `OnHiddenSystemsUpdated`
+  - Token `6213` `OnHiddenSystemsUpdated`
+  - Token `6240` `OnHiddenSystemsUpdated`
+  - Token `6267` `OnHiddenSystemsUpdated`
+  - Token `6294` `OnHiddenSystemsUpdated`
+  - Token `6321` `OnHiddenSystemsUpdated`
+  - Token `6348` `OnHiddenSystemsUpdated`
+  - Token `6375` `OnHiddenSystemsUpdated`
+  - Token `6402` `OnHiddenSystemsUpdated`
+  - Token `6429` `OnHiddenSystemsUpdated`
+  - Token `6456` `OnHiddenSystemsUpdated`
+- Global sample ID occurrence counts:
+  - `1`: `50`
+  - `3501`: `1`
+  - `3502`: `0`
+  - `4001`: `0`
+  - `4110`: `1`
+  - `5000`: `0`
+  - `6000`: `0`
+  - `7000`: `0`
+  - `7912`: `0`
+  - `7921`: `0`
+
+## `06A26CC149B273CD19B05394737515AE.sav`
+
+- Size: `456367`
+- Last write: `2026-05-25T00:16:02.355644`
+- SHA256: `E94E51D8B8BDD0738EC75D11C549190624FE1A110814CD705B4269DC1E362174`
+- StarMapModel segment count: `1`
+- Marker `StarMapModel` count `2` sample offsets `[3894, 3961]`
+- Marker `MWStarMapModel` count `1` sample offsets `[3959]`
+- Marker `InnerSphereMapInfo` count `2` sample offsets `[4233, 4283]`
+- Marker `InnerSphereClass` count `1` sample offsets `[4323]`
+- Marker `StarSystemGenerator` count `2` sample offsets `[4394, 4414]`
+- Marker `HiddenStarSystems` count `1` sample offsets `[4083]`
+- Marker `CurrentStarSystemId` count `1` sample offsets `[4180]`
+- Marker `StarSystemId` count `80` sample offsets `[4187, 47718, 48811, 49904, 50997, 52090, 53183, 54276]`
+- Marker `MWClusterDataAsset` count `80` sample offsets `[47549, 48647, 49740, 50833, 51926, 53019, 54112, 55205]`
+- Marker `ClusterAsset` count `80` sample offsets `[47644, 48737, 49830, 50923, 52016, 53109, 54202, 55295]`
+- Marker `TaurianConcordat` count `1` sample offsets `[27247]`
+- Marker `MagistracyOfCanopus` count `1` sample offsets `[27678]`
+- Marker `OutworldsAlliance` count `1` sample offsets `[26391]`
+- Marker `Periphery` count `1` sample offsets `[26823]`
+- Segment start `3734` end `5036` length `1302`
+  - Segment int `1` offsets `[4047, 4476, 4534]`
+  - Segment int `3501` offsets `[4160]`
+  - Token `3894` `StarMapModel`
+  - Token `3939` `/Script/MechWarrior.MWStarMapModel`
+  - Token `3978` `OnUserStarSystemChanged`
+  - Token `4055` `OnUserStarSystemChanged`
+  - Token `4083` `HiddenStarSystems`
+  - Token `4180` `CurrentStarSystemId`
+  - Token `4233` `InnerSphereMapInfo`
+  - Token `4283` `InnerSphereMapInfo`
+  - Token `4323` `InnerSphereClass`
+  - Token `4372` `/Game/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C`
+  - Token `4493` `StarMapBorderAssetId`
+  - Token `4545` `StarMapBorderAssetId`
+  - Token `4621` `PrimaryAssetId`
+  - Token `4657` `PrimaryAssetType`
+  - Token `4705` `PrimaryAssetType`
+  - Token `4778` `MWStarMapBorderAsset`
+  - Token `4812` `PrimaryAssetName`
+- Global sample ID occurrence counts:
+  - `1`: `50`
+  - `3501`: `1`
+  - `3502`: `0`
+  - `4001`: `0`
+  - `4110`: `0`
+  - `5000`: `0`
+  - `6000`: `0`
+  - `7000`: `0`
+  - `7912`: `0`
+  - `7921`: `0`
