@@ -1,0 +1,23 @@
+{
+   "displayName" : "TKUCompatEditorPatch",
+   "version" : "1.0",
+   "buildNumber" : 5,
+   "description" : "Editor-authored compatibility patch for Known Universe on MW5 1.1.380",
+   "author" : "Codex/TKU Recovery",
+   "authorURL" : "",
+   "defaultLoadOrder" : 0,
+   "gameVersion" : "1.13.64",
+   "manifest" : [
+      "/Game/Campaign/_common/DefaultSystemGenerator.uasset",
+      "/Game/DLC1/CareerMode/StartConditions/CareerMode.uasset",
+      "/Game/InnerSphereData/MW5_InnerSphereData.uasset",
+      "/Game/InnerSphereData/StarSystemGenerator.uasset",
+      "/Game/Modes/CampaignMode.uasset",
+      "/Game/Modes/MW5GameMode.uasset",
+      "/Game/UI/FrontEnd/StarMapPawn.uasset",
+      "/Game/Levels/FrontEnd/StarMap.umap"
+   ],
+   "steamPublishedFileId" : 0,
+   "steamLastSubmittedBuildNumber" : 0,
+   "steamModVisibility" : "Private"
+}

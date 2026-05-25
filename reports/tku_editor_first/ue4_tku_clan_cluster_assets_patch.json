@@ -1,0 +1,1820 @@
+{
+  "apply_requested": true,
+  "errors": [],
+  "generated_utc": "2026-05-24T18:20:05.794517+00:00",
+  "omitted_candidates": [
+    {
+      "cluster_id": "",
+      "reason": "not one of the targeted current-schema clan cluster ids",
+      "star_system_name": "Qualip (Kerensky's Vision (3130+))",
+      "system_id": 4565
+    },
+    {
+      "cluster_id": "",
+      "reason": "not one of the targeted current-schema clan cluster ids",
+      "star_system_name": "Declan",
+      "system_id": 5554
+    },
+    {
+      "cluster_id": "",
+      "reason": "not one of the targeted current-schema clan cluster ids",
+      "star_system_name": "Wolf Orbital 82",
+      "system_id": 6979
+    }
+  ],
+  "planned_groups": [
+    {
+      "cluster_id": "ClanConflict",
+      "constellation": "None",
+      "overlay": "/Game/CustomContent/Zones_ClanConf_1.Zones_ClanConf",
+      "source_cluster_asset": "/Game/Campaign/Clusters/OutworldsAlliance/OutworldsAlliance_ClusterAsset",
+      "source_faction_asset": "/Game/Campaign/Clusters/OutworldsAlliance/OutworldsBorder",
+      "system_ids": [
+        4110
+      ],
+      "systems": [
+        {
+          "constellation": "None",
+          "overlay": "/Game/CustomContent/Zones_ClanConf_1.Zones_ClanConf",
+          "star_system_name": "Strana Mechty",
+          "system_id": 4110
+        }
+      ],
+      "target_cluster_asset": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_1/TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset",
+      "target_dir": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_1",
+      "target_faction_asset": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict"
+    },
+    {
+      "cluster_id": "ClanConflict",
+      "constellation": "None",
+      "overlay": "/Game/CustomContent/Zones_ClanConf_2.Zones_ClanConf",
+      "source_cluster_asset": "/Game/Campaign/Clusters/OutworldsAlliance/OutworldsAlliance_ClusterAsset",
+      "source_faction_asset": "/Game/Campaign/Clusters/OutworldsAlliance/OutworldsBorder",
+      "system_ids": [
+        4120
+      ],
+      "systems": [
+        {
+          "constellation": "None",
+          "overlay": "/Game/CustomContent/Zones_ClanConf_2.Zones_ClanConf",
+          "star_system_name": "Sheridan (Clan)",
+          "system_id": 4120
+        }
+      ],
+      "target_cluster_asset": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_2/TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset",
+      "target_dir": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_2",
+      "target_faction_asset": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict"
+    },
+    {
+      "cluster_id": "ClanConflict",
+      "constellation": "None",
+      "overlay": "/Game/CustomContent/Zones_ClanConf_3.Zones_ClanConf",
+      "source_cluster_asset": "/Game/Campaign/Clusters/OutworldsAlliance/OutworldsAlliance_ClusterAsset",
+      "source_faction_asset": "/Game/Campaign/Clusters/OutworldsAlliance/OutworldsBorder",
+      "system_ids": [
+        4132
+      ],
+      "systems": [
+        {
+          "constellation": "None",
+          "overlay": "/Game/CustomContent/Zones_ClanConf_3.Zones_ClanConf",
+          "star_system_name": "Roche",
+          "system_id": 4132
+        }
+      ],
+      "target_cluster_asset": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_3/TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset",
+      "target_dir": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_3",
+      "target_faction_asset": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict"
+    },
+    {
+      "cluster_id": "ClanConflict",
+      "constellation": "None",
+      "overlay": "/Game/CustomContent/Zones_ClanConf_4.Zones_ClanConf",
+      "source_cluster_asset": "/Game/Campaign/Clusters/OutworldsAlliance/OutworldsAlliance_ClusterAsset",
+      "source_faction_asset": "/Game/Campaign/Clusters/OutworldsAlliance/OutworldsBorder",
+      "system_ids": [
+        4127
+      ],
+      "systems": [
+        {
+          "constellation": "None",
+          "overlay": "/Game/CustomContent/Zones_ClanConf_4.Zones_ClanConf",
+          "star_system_name": "Kirin",
+          "system_id": 4127
+        }
+      ],
+      "target_cluster_asset": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_4/TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset",
+      "target_dir": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_4",
+      "target_faction_asset": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict"
+    },
+    {
+      "cluster_id": "ClanConflict",
+      "constellation": "None",
+      "overlay": "None",
+      "source_cluster_asset": "/Game/Campaign/Clusters/OutworldsAlliance/OutworldsAlliance_ClusterAsset",
+      "source_faction_asset": "/Game/Campaign/Clusters/OutworldsAlliance/OutworldsBorder",
+      "system_ids": [
+        4098,
+        4100,
+        4101,
+        4102,
+        4103,
+        4105,
+        4106,
+        4107,
+        4108,
+        4109,
+        4111,
+        4113,
+        4115,
+        4117,
+        4118,
+        4119,
+        4122,
+        4123,
+        4125,
+        4128,
+        4130,
+        4131,
+        4135,
+        4136,
+        4137
+      ],
+      "systems": [
+        {
+          "constellation": "None",
+          "overlay": "None",
+          "star_system_name": "Niles (Clan)",
+          "system_id": 4098
+        },
+        {
+          "constellation": "None",
+          "overlay": "None",
+          "star_system_name": "Bearclaw",
+          "system_id": 4100
+        },
+        {
+          "constellation": "None",
+          "overlay": "None",
+          "star_system_name": "Tokasha",
+          "system_id": 4101
+        },
+        {
+          "constellation": "None",
+          "overlay": "None",
+          "star_system_name": "Foster",
+          "system_id": 4102
+        },
+        {
+          "constellation": "None",
+          "overlay": "None",
+          "star_system_name": "Atreus (Clan)",
+          "system_id": 4103
+        },
+        {
+          "constellation": "None",
+          "overlay": "None",
+          "star_system_name": "Ironhold",
+          "system_id": 4105
+        },
+        {
+          "constellation": "None",
+          "overlay": "None",
+          "star_system_name": "Shadow",
+          "system_id": 4106
+        },
+        {
+          "constellation": "None",
+          "overlay": "None",
+          "star_system_name": "Lum",
+          "system_id": 4107
+        },
+        {
+          "constellation": "None",
+          "overlay": "None",
+          "star_system_name": "Huntress",
+          "system_id": 4108
+        },
+        {
+          "constellation": "None",
+          "overlay": "None",
+          "star_system_name": "Tranquil",
+          "system_id": 4109
+        },
+        {
+          "constellation": "None",
+          "overlay": "None",
+          "star_system_name": "Brim",
+          "system_id": 4111
+        },
+        {
+          "constellation": "None",
+          "overlay": "None",
+          "star_system_name": "Hector",
+          "system_id": 4113
+        },
+        {
+          "constellation": "None",
+          "overlay": "None",
+          "star_system_name": "Gatekeeper",
+          "system_id": 4115
+        },
+        {
+          "constellation": "None",
+          "overlay": "None",
+          "star_system_name": "New Kent",
+          "system_id": 4117
+        },
+        {
+          "constellation": "None",
+          "overlay": "None",
+          "star_system_name": "Albion (Clan)",
+          "system_id": 4118
+        },
+        {
+          "constellation": "None",
+          "overlay": "None",
+          "star_system_name": "Marshall",
+          "system_id": 4119
+        },
+        {
+          "constellation": "None",
+          "overlay": "None",
+          "star_system_name": "Delios",
+          "system_id": 4122
+        },
+        {
+          "constellation": "None",
+          "overlay": "None",
+          "star_system_name": "Priori",
+          "system_id": 4123
+        },
+        {
+          "constellation": "None",
+          "overlay": "None",
+          "star_system_name": "Tathis",
+          "system_id": 4125
+        },
+        {
+          "constellation": "None",
+          "overlay": "None",
+          "star_system_name": "Glory",
+          "system_id": 4128
+        },
+        {
+          "constellation": "None",
+          "overlay": "None",
+          "star_system_name": "Hellgate",
+          "system_id": 4130
+        },
+        {
+          "constellation": "None",
+          "overlay": "None",
+          "star_system_name": "Tamaron",
+          "system_id": 4131
+        },
+        {
+          "constellation": "None",
+          "overlay": "None",
+          "star_system_name": "Tiber (Clan)",
+          "system_id": 4135
+        },
+        {
+          "constellation": "None",
+          "overlay": "None",
+          "star_system_name": "Hoard",
+          "system_id": 4136
+        },
+        {
+          "constellation": "None",
+          "overlay": "None",
+          "star_system_name": "Strato Domingo",
+          "system_id": 4137
+        }
+      ],
+      "target_cluster_asset": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/TKU_ClanConflict_NoOverlay_ClusterAsset",
+      "target_dir": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict",
+      "target_faction_asset": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict"
+    },
+    {
+      "cluster_id": "RepairSystem_Clan",
+      "constellation": "/Game/CustomContent/Zones_Clan_Safezone_1.Zones_Clan_Safezone",
+      "overlay": "/Game/CustomContent/Zones_Clan_Safezone_1.Zones_Clan_Safezone",
+      "source_cluster_asset": "/Game/Campaign/Clusters/IndustrialHub_25/IndustrialHub_25_ClusterAsset",
+      "source_faction_asset": "/Game/Campaign/Clusters/IndustrialHub_25/RepairSystem_20",
+      "system_ids": [
+        4143
+      ],
+      "systems": [
+        {
+          "constellation": "/Game/CustomContent/Zones_Clan_Safezone_1.Zones_Clan_Safezone",
+          "overlay": "/Game/CustomContent/Zones_Clan_Safezone_1.Zones_Clan_Safezone",
+          "star_system_name": "Vinton",
+          "system_id": 4143
+        }
+      ],
+      "target_cluster_asset": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset",
+      "target_dir": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1",
+      "target_faction_asset": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan"
+    },
+    {
+      "cluster_id": "RepairSystem_Clan",
+      "constellation": "/Game/CustomContent/Zones_Clan_Safezone_2.Zones_Clan_Safezone",
+      "overlay": "/Game/CustomContent/Zones_Clan_Safezone_2.Zones_Clan_Safezone",
+      "source_cluster_asset": "/Game/Campaign/Clusters/IndustrialHub_25/IndustrialHub_25_ClusterAsset",
+      "source_faction_asset": "/Game/Campaign/Clusters/IndustrialHub_25/RepairSystem_20",
+      "system_ids": [
+        4088
+      ],
+      "systems": [
+        {
+          "constellation": "/Game/CustomContent/Zones_Clan_Safezone_2.Zones_Clan_Safezone",
+          "overlay": "/Game/CustomContent/Zones_Clan_Safezone_2.Zones_Clan_Safezone",
+          "star_system_name": "Babylon",
+          "system_id": 4088
+        }
+      ],
+      "target_cluster_asset": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset",
+      "target_dir": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2",
+      "target_faction_asset": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan"
+    },
+    {
+      "cluster_id": "RepairSystem_Clan",
+      "constellation": "None",
+      "overlay": "None",
+      "source_cluster_asset": "/Game/Campaign/Clusters/IndustrialHub_25/IndustrialHub_25_ClusterAsset",
+      "source_faction_asset": "/Game/Campaign/Clusters/IndustrialHub_25/RepairSystem_20",
+      "system_ids": [
+        4089,
+        4090,
+        4091,
+        4092,
+        4121,
+        4124,
+        4126,
+        4134,
+        4140
+      ],
+      "systems": [
+        {
+          "constellation": "None",
+          "overlay": "None",
+          "star_system_name": "Dagda (Clan)",
+          "system_id": 4089
+        },
+        {
+          "constellation": "None",
+          "overlay": "None",
+          "star_system_name": "Arcadia (Clan)",
+          "system_id": 4090
+        },
+        {
+          "constellation": "None",
+          "overlay": "None",
+          "star_system_name": "Eden",
+          "system_id": 4091
+        },
+        {
+          "constellation": "None",
+          "overlay": "None",
+          "star_system_name": "Circe",
+          "system_id": 4092
+        },
+        {
+          "constellation": "None",
+          "overlay": "None",
+          "star_system_name": "Zara (Homer (2850+))",
+          "system_id": 4121
+        },
+        {
+          "constellation": "None",
+          "overlay": "None",
+          "star_system_name": "York (Clan)",
+          "system_id": 4124
+        },
+        {
+          "constellation": "None",
+          "overlay": "None",
+          "star_system_name": "Grant's Station",
+          "system_id": 4126
+        },
+        {
+          "constellation": "None",
+          "overlay": "None",
+          "star_system_name": "Londerholm",
+          "system_id": 4134
+        },
+        {
+          "constellation": "None",
+          "overlay": "None",
+          "star_system_name": "Barcella",
+          "system_id": 4140
+        }
+      ],
+      "target_cluster_asset": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan/TKU_RepairSystem_Clan_NoOverlay_ClusterAsset",
+      "target_dir": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan",
+      "target_faction_asset": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan"
+    }
+  ],
+  "plugin_dir": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch",
+  "results": [
+    {
+      "after_properties": {
+        "cluster_constellation": null,
+        "cluster_faction_asset": {
+          "get_full_name": "MWFactionAsset /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict.ClanConflict",
+          "get_name": "ClanConflict",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict.ClanConflict",
+          "python_type": "MWFactionAsset",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict.ClanConflict' (0x0000017CC6172240) Class 'MWFactionAsset'>",
+          "unreal_class": "MWFactionAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWFactionAsset"
+        },
+        "cluster_overlay": {
+          "get_full_name": "StaticMesh /Game/Campaign/Clusters/OutworldsAlliance/15_1.15_1",
+          "get_name": "15_1",
+          "get_path_name": "/Game/Campaign/Clusters/OutworldsAlliance/15_1.15_1",
+          "python_type": "StaticMesh",
+          "repr": "<Object '/Game/Campaign/Clusters/OutworldsAlliance/15_1.15_1' (0x0000017D9058B000) Class 'StaticMesh'>",
+          "unreal_class": "StaticMesh",
+          "unreal_class_path": "/Script/Engine.StaticMesh"
+        },
+        "is_legacy_cluster": true,
+        "system_ids": {
+          "python_type": "Set",
+          "repr": "set([4110])"
+        },
+        "toi_data": {
+          "get_full_name": "ClusterToiDataFragment_C /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_1/TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset:ClusterToiDataFragment_C_0",
+          "get_name": "ClusterToiDataFragment_C_0",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_1/TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset:ClusterToiDataFragment_C_0",
+          "python_type": "MWDataFragment",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_1/TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset:ClusterToiDataFragment_C_0' (0x0000017C92BAA860) Class 'ClusterToiDataFragment_C'>",
+          "unreal_class": "ClusterToiDataFragment_C",
+          "unreal_class_path": "/Game/Campaign/_common/ClusterToiDataFragment.ClusterToiDataFragment_C"
+        }
+      },
+      "attempted": true,
+      "backup": {
+        "cluster_asset": null,
+        "faction_asset": null
+      },
+      "before_properties": {
+        "cluster_constellation": null,
+        "cluster_faction_asset": {
+          "get_full_name": "MWFactionAsset /Game/Campaign/Clusters/OutworldsAlliance/OutworldsBorder.OutworldsBorder",
+          "get_name": "OutworldsBorder",
+          "get_path_name": "/Game/Campaign/Clusters/OutworldsAlliance/OutworldsBorder.OutworldsBorder",
+          "python_type": "MWFactionAsset",
+          "repr": "<Object '/Game/Campaign/Clusters/OutworldsAlliance/OutworldsBorder.OutworldsBorder' (0x0000017CCE6209C0) Class 'MWFactionAsset'>",
+          "unreal_class": "MWFactionAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWFactionAsset"
+        },
+        "cluster_overlay": {
+          "get_full_name": "StaticMesh /Game/Campaign/Clusters/OutworldsAlliance/15_1.15_1",
+          "get_name": "15_1",
+          "get_path_name": "/Game/Campaign/Clusters/OutworldsAlliance/15_1.15_1",
+          "python_type": "StaticMesh",
+          "repr": "<Object '/Game/Campaign/Clusters/OutworldsAlliance/15_1.15_1' (0x0000017D9058B000) Class 'StaticMesh'>",
+          "unreal_class": "StaticMesh",
+          "unreal_class_path": "/Script/Engine.StaticMesh"
+        },
+        "is_legacy_cluster": true,
+        "system_ids": {
+          "python_type": "Set",
+          "repr": "set([1018, 1020, 1022, 1035, 1043, 1044, 1045, 1046, 1047, 1055, 1056, 1129, 1139, 1144, 2049, 2051, 2055, 2061, 2082, 2092, 2096, 2103, 2104, 2107, 2108, 2118, 2120, 2122])"
+        },
+        "toi_data": {
+          "get_full_name": "ClusterToiDataFragment_C /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_1/TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset:ClusterToiDataFragment_C_0",
+          "get_name": "ClusterToiDataFragment_C_0",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_1/TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset:ClusterToiDataFragment_C_0",
+          "python_type": "MWDataFragment",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_1/TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset:ClusterToiDataFragment_C_0' (0x0000017C92BAA860) Class 'ClusterToiDataFragment_C'>",
+          "unreal_class": "ClusterToiDataFragment_C",
+          "unreal_class_path": "/Game/Campaign/_common/ClusterToiDataFragment.ClusterToiDataFragment_C"
+        }
+      },
+      "cluster_asset": {
+        "get_full_name": "MWClusterDataAsset /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_1/TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset",
+        "get_name": "TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset",
+        "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_1/TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset",
+        "python_type": "MWClusterDataAsset",
+        "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_1/TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset' (0x0000017D3910DE40) Class 'MWClusterDataAsset'>",
+        "unreal_class": "MWClusterDataAsset",
+        "unreal_class_path": "/Script/MechWarrior.MWClusterDataAsset"
+      },
+      "cluster_id": "ClanConflict",
+      "cluster_saved": true,
+      "errors": [],
+      "faction_asset": {
+        "get_full_name": "MWFactionAsset /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict.ClanConflict",
+        "get_name": "ClanConflict",
+        "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict.ClanConflict",
+        "python_type": "MWFactionAsset",
+        "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict.ClanConflict' (0x0000017CC6172240) Class 'MWFactionAsset'>",
+        "unreal_class": "MWFactionAsset",
+        "unreal_class_path": "/Script/MechWarrior.MWFactionAsset"
+      },
+      "faction_saved": true,
+      "modify_cluster": {
+        "ok": true,
+        "value": false
+      },
+      "placeholder_assets": {
+        "constellation_asset": null,
+        "overlay_asset": "/Game/Campaign/Clusters/OutworldsAlliance/15_1"
+      },
+      "saved": true,
+      "set_results": {
+        "constellation": {
+          "method": "set_cluster_constellation_editoronly",
+          "method_result": {
+            "ok": true,
+            "value": null
+          },
+          "property": "cluster_constellation",
+          "property_result": {
+            "ok": true,
+            "value": null
+          }
+        },
+        "faction": {
+          "method": "set_cluster_faction_asset_editoronly",
+          "method_result": {
+            "ok": true,
+            "value": null
+          },
+          "property": "cluster_faction_asset",
+          "property_result": {
+            "ok": true,
+            "value": null
+          }
+        },
+        "overlay": {
+          "method": "set_cluster_overlay_editoronly",
+          "method_result": {
+            "ok": true,
+            "value": null
+          },
+          "property": "cluster_overlay",
+          "property_result": {
+            "ok": true,
+            "value": null
+          }
+        },
+        "system_ids": {
+          "method": "set_cluster_system_ids_editoronly",
+          "method_result": {
+            "ok": true,
+            "value": null
+          },
+          "property": "system_ids",
+          "property_result": {
+            "ok": true,
+            "value": null
+          }
+        }
+      },
+      "system_count": 1,
+      "system_ids": [
+        4110
+      ],
+      "target_cluster_asset": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_1/TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset",
+      "target_faction_asset": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict"
+    },
+    {
+      "after_properties": {
+        "cluster_constellation": null,
+        "cluster_faction_asset": {
+          "get_full_name": "MWFactionAsset /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict.ClanConflict",
+          "get_name": "ClanConflict",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict.ClanConflict",
+          "python_type": "MWFactionAsset",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict.ClanConflict' (0x0000017CC6172240) Class 'MWFactionAsset'>",
+          "unreal_class": "MWFactionAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWFactionAsset"
+        },
+        "cluster_overlay": {
+          "get_full_name": "StaticMesh /Game/Campaign/Clusters/OutworldsAlliance/15_1.15_1",
+          "get_name": "15_1",
+          "get_path_name": "/Game/Campaign/Clusters/OutworldsAlliance/15_1.15_1",
+          "python_type": "StaticMesh",
+          "repr": "<Object '/Game/Campaign/Clusters/OutworldsAlliance/15_1.15_1' (0x0000017D9058B000) Class 'StaticMesh'>",
+          "unreal_class": "StaticMesh",
+          "unreal_class_path": "/Script/Engine.StaticMesh"
+        },
+        "is_legacy_cluster": true,
+        "system_ids": {
+          "python_type": "Set",
+          "repr": "set([4120])"
+        },
+        "toi_data": {
+          "get_full_name": "ClusterToiDataFragment_C /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_2/TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset:ClusterToiDataFragment_C_0",
+          "get_name": "ClusterToiDataFragment_C_0",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_2/TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset:ClusterToiDataFragment_C_0",
+          "python_type": "MWDataFragment",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_2/TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset:ClusterToiDataFragment_C_0' (0x0000017C92BAB2E0) Class 'ClusterToiDataFragment_C'>",
+          "unreal_class": "ClusterToiDataFragment_C",
+          "unreal_class_path": "/Game/Campaign/_common/ClusterToiDataFragment.ClusterToiDataFragment_C"
+        }
+      },
+      "attempted": true,
+      "backup": {
+        "cluster_asset": null,
+        "faction_asset": {
+          "path": "D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\backups\\TKUCompatEditorPatch_clan_cluster_assets_patch\\ModOverride\\Campaign\\Clusters\\TKU_ClanConflict\\ClanConflict.uasset",
+          "sha256": "DB047DE891659F71C0EB2D68CCD05021FC05F95D95F22CB6F8FDC0E1B0F03F8C"
+        }
+      },
+      "before_properties": {
+        "cluster_constellation": null,
+        "cluster_faction_asset": {
+          "get_full_name": "MWFactionAsset /Game/Campaign/Clusters/OutworldsAlliance/OutworldsBorder.OutworldsBorder",
+          "get_name": "OutworldsBorder",
+          "get_path_name": "/Game/Campaign/Clusters/OutworldsAlliance/OutworldsBorder.OutworldsBorder",
+          "python_type": "MWFactionAsset",
+          "repr": "<Object '/Game/Campaign/Clusters/OutworldsAlliance/OutworldsBorder.OutworldsBorder' (0x0000017CCE6209C0) Class 'MWFactionAsset'>",
+          "unreal_class": "MWFactionAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWFactionAsset"
+        },
+        "cluster_overlay": {
+          "get_full_name": "StaticMesh /Game/Campaign/Clusters/OutworldsAlliance/15_1.15_1",
+          "get_name": "15_1",
+          "get_path_name": "/Game/Campaign/Clusters/OutworldsAlliance/15_1.15_1",
+          "python_type": "StaticMesh",
+          "repr": "<Object '/Game/Campaign/Clusters/OutworldsAlliance/15_1.15_1' (0x0000017D9058B000) Class 'StaticMesh'>",
+          "unreal_class": "StaticMesh",
+          "unreal_class_path": "/Script/Engine.StaticMesh"
+        },
+        "is_legacy_cluster": true,
+        "system_ids": {
+          "python_type": "Set",
+          "repr": "set([1018, 1020, 1022, 1035, 1043, 1044, 1045, 1046, 1047, 1055, 1056, 1129, 1139, 1144, 2049, 2051, 2055, 2061, 2082, 2092, 2096, 2103, 2104, 2107, 2108, 2118, 2120, 2122])"
+        },
+        "toi_data": {
+          "get_full_name": "ClusterToiDataFragment_C /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_2/TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset:ClusterToiDataFragment_C_0",
+          "get_name": "ClusterToiDataFragment_C_0",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_2/TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset:ClusterToiDataFragment_C_0",
+          "python_type": "MWDataFragment",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_2/TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset:ClusterToiDataFragment_C_0' (0x0000017C92BAB2E0) Class 'ClusterToiDataFragment_C'>",
+          "unreal_class": "ClusterToiDataFragment_C",
+          "unreal_class_path": "/Game/Campaign/_common/ClusterToiDataFragment.ClusterToiDataFragment_C"
+        }
+      },
+      "cluster_asset": {
+        "get_full_name": "MWClusterDataAsset /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_2/TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset",
+        "get_name": "TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset",
+        "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_2/TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset",
+        "python_type": "MWClusterDataAsset",
+        "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_2/TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset' (0x0000017D3910EAC0) Class 'MWClusterDataAsset'>",
+        "unreal_class": "MWClusterDataAsset",
+        "unreal_class_path": "/Script/MechWarrior.MWClusterDataAsset"
+      },
+      "cluster_id": "ClanConflict",
+      "cluster_saved": true,
+      "errors": [],
+      "faction_asset": {
+        "get_full_name": "MWFactionAsset /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict.ClanConflict",
+        "get_name": "ClanConflict",
+        "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict.ClanConflict",
+        "python_type": "MWFactionAsset",
+        "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict.ClanConflict' (0x0000017CC6172240) Class 'MWFactionAsset'>",
+        "unreal_class": "MWFactionAsset",
+        "unreal_class_path": "/Script/MechWarrior.MWFactionAsset"
+      },
+      "faction_saved": true,
+      "modify_cluster": {
+        "ok": true,
+        "value": false
+      },
+      "placeholder_assets": {
+        "constellation_asset": null,
+        "overlay_asset": "/Game/Campaign/Clusters/OutworldsAlliance/15_1"
+      },
+      "saved": true,
+      "set_results": {
+        "constellation": {
+          "method": "set_cluster_constellation_editoronly",
+          "method_result": {
+            "ok": true,
+            "value": null
+          },
+          "property": "cluster_constellation",
+          "property_result": {
+            "ok": true,
+            "value": null
+          }
+        },
+        "faction": {
+          "method": "set_cluster_faction_asset_editoronly",
+          "method_result": {
+            "ok": true,
+            "value": null
+          },
+          "property": "cluster_faction_asset",
+          "property_result": {
+            "ok": true,
+            "value": null
+          }
+        },
+        "overlay": {
+          "method": "set_cluster_overlay_editoronly",
+          "method_result": {
+            "ok": true,
+            "value": null
+          },
+          "property": "cluster_overlay",
+          "property_result": {
+            "ok": true,
+            "value": null
+          }
+        },
+        "system_ids": {
+          "method": "set_cluster_system_ids_editoronly",
+          "method_result": {
+            "ok": true,
+            "value": null
+          },
+          "property": "system_ids",
+          "property_result": {
+            "ok": true,
+            "value": null
+          }
+        }
+      },
+      "system_count": 1,
+      "system_ids": [
+        4120
+      ],
+      "target_cluster_asset": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_2/TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset",
+      "target_faction_asset": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict"
+    },
+    {
+      "after_properties": {
+        "cluster_constellation": null,
+        "cluster_faction_asset": {
+          "get_full_name": "MWFactionAsset /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict.ClanConflict",
+          "get_name": "ClanConflict",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict.ClanConflict",
+          "python_type": "MWFactionAsset",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict.ClanConflict' (0x0000017CC6172240) Class 'MWFactionAsset'>",
+          "unreal_class": "MWFactionAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWFactionAsset"
+        },
+        "cluster_overlay": {
+          "get_full_name": "StaticMesh /Game/Campaign/Clusters/OutworldsAlliance/15_1.15_1",
+          "get_name": "15_1",
+          "get_path_name": "/Game/Campaign/Clusters/OutworldsAlliance/15_1.15_1",
+          "python_type": "StaticMesh",
+          "repr": "<Object '/Game/Campaign/Clusters/OutworldsAlliance/15_1.15_1' (0x0000017D9058B000) Class 'StaticMesh'>",
+          "unreal_class": "StaticMesh",
+          "unreal_class_path": "/Script/Engine.StaticMesh"
+        },
+        "is_legacy_cluster": true,
+        "system_ids": {
+          "python_type": "Set",
+          "repr": "set([4132])"
+        },
+        "toi_data": {
+          "get_full_name": "ClusterToiDataFragment_C /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_3/TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset:ClusterToiDataFragment_C_0",
+          "get_name": "ClusterToiDataFragment_C_0",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_3/TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset:ClusterToiDataFragment_C_0",
+          "python_type": "MWDataFragment",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_3/TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset:ClusterToiDataFragment_C_0' (0x0000017C92BAB740) Class 'ClusterToiDataFragment_C'>",
+          "unreal_class": "ClusterToiDataFragment_C",
+          "unreal_class_path": "/Game/Campaign/_common/ClusterToiDataFragment.ClusterToiDataFragment_C"
+        }
+      },
+      "attempted": true,
+      "backup": {
+        "cluster_asset": null,
+        "faction_asset": {
+          "path": "D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\backups\\TKUCompatEditorPatch_clan_cluster_assets_patch\\ModOverride\\Campaign\\Clusters\\TKU_ClanConflict\\ClanConflict.uasset",
+          "sha256": "DB047DE891659F71C0EB2D68CCD05021FC05F95D95F22CB6F8FDC0E1B0F03F8C"
+        }
+      },
+      "before_properties": {
+        "cluster_constellation": null,
+        "cluster_faction_asset": {
+          "get_full_name": "MWFactionAsset /Game/Campaign/Clusters/OutworldsAlliance/OutworldsBorder.OutworldsBorder",
+          "get_name": "OutworldsBorder",
+          "get_path_name": "/Game/Campaign/Clusters/OutworldsAlliance/OutworldsBorder.OutworldsBorder",
+          "python_type": "MWFactionAsset",
+          "repr": "<Object '/Game/Campaign/Clusters/OutworldsAlliance/OutworldsBorder.OutworldsBorder' (0x0000017CCE6209C0) Class 'MWFactionAsset'>",
+          "unreal_class": "MWFactionAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWFactionAsset"
+        },
+        "cluster_overlay": {
+          "get_full_name": "StaticMesh /Game/Campaign/Clusters/OutworldsAlliance/15_1.15_1",
+          "get_name": "15_1",
+          "get_path_name": "/Game/Campaign/Clusters/OutworldsAlliance/15_1.15_1",
+          "python_type": "StaticMesh",
+          "repr": "<Object '/Game/Campaign/Clusters/OutworldsAlliance/15_1.15_1' (0x0000017D9058B000) Class 'StaticMesh'>",
+          "unreal_class": "StaticMesh",
+          "unreal_class_path": "/Script/Engine.StaticMesh"
+        },
+        "is_legacy_cluster": true,
+        "system_ids": {
+          "python_type": "Set",
+          "repr": "set([1018, 1020, 1022, 1035, 1043, 1044, 1045, 1046, 1047, 1055, 1056, 1129, 1139, 1144, 2049, 2051, 2055, 2061, 2082, 2092, 2096, 2103, 2104, 2107, 2108, 2118, 2120, 2122])"
+        },
+        "toi_data": {
+          "get_full_name": "ClusterToiDataFragment_C /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_3/TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset:ClusterToiDataFragment_C_0",
+          "get_name": "ClusterToiDataFragment_C_0",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_3/TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset:ClusterToiDataFragment_C_0",
+          "python_type": "MWDataFragment",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_3/TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset:ClusterToiDataFragment_C_0' (0x0000017C92BAB740) Class 'ClusterToiDataFragment_C'>",
+          "unreal_class": "ClusterToiDataFragment_C",
+          "unreal_class_path": "/Game/Campaign/_common/ClusterToiDataFragment.ClusterToiDataFragment_C"
+        }
+      },
+      "cluster_asset": {
+        "get_full_name": "MWClusterDataAsset /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_3/TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset",
+        "get_name": "TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset",
+        "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_3/TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset",
+        "python_type": "MWClusterDataAsset",
+        "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_3/TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset' (0x0000017D390BCE00) Class 'MWClusterDataAsset'>",
+        "unreal_class": "MWClusterDataAsset",
+        "unreal_class_path": "/Script/MechWarrior.MWClusterDataAsset"
+      },
+      "cluster_id": "ClanConflict",
+      "cluster_saved": true,
+      "errors": [],
+      "faction_asset": {
+        "get_full_name": "MWFactionAsset /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict.ClanConflict",
+        "get_name": "ClanConflict",
+        "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict.ClanConflict",
+        "python_type": "MWFactionAsset",
+        "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict.ClanConflict' (0x0000017CC6172240) Class 'MWFactionAsset'>",
+        "unreal_class": "MWFactionAsset",
+        "unreal_class_path": "/Script/MechWarrior.MWFactionAsset"
+      },
+      "faction_saved": true,
+      "modify_cluster": {
+        "ok": true,
+        "value": false
+      },
+      "placeholder_assets": {
+        "constellation_asset": null,
+        "overlay_asset": "/Game/Campaign/Clusters/OutworldsAlliance/15_1"
+      },
+      "saved": true,
+      "set_results": {
+        "constellation": {
+          "method": "set_cluster_constellation_editoronly",
+          "method_result": {
+            "ok": true,
+            "value": null
+          },
+          "property": "cluster_constellation",
+          "property_result": {
+            "ok": true,
+            "value": null
+          }
+        },
+        "faction": {
+          "method": "set_cluster_faction_asset_editoronly",
+          "method_result": {
+            "ok": true,
+            "value": null
+          },
+          "property": "cluster_faction_asset",
+          "property_result": {
+            "ok": true,
+            "value": null
+          }
+        },
+        "overlay": {
+          "method": "set_cluster_overlay_editoronly",
+          "method_result": {
+            "ok": true,
+            "value": null
+          },
+          "property": "cluster_overlay",
+          "property_result": {
+            "ok": true,
+            "value": null
+          }
+        },
+        "system_ids": {
+          "method": "set_cluster_system_ids_editoronly",
+          "method_result": {
+            "ok": true,
+            "value": null
+          },
+          "property": "system_ids",
+          "property_result": {
+            "ok": true,
+            "value": null
+          }
+        }
+      },
+      "system_count": 1,
+      "system_ids": [
+        4132
+      ],
+      "target_cluster_asset": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_3/TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset",
+      "target_faction_asset": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict"
+    },
+    {
+      "after_properties": {
+        "cluster_constellation": null,
+        "cluster_faction_asset": {
+          "get_full_name": "MWFactionAsset /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict.ClanConflict",
+          "get_name": "ClanConflict",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict.ClanConflict",
+          "python_type": "MWFactionAsset",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict.ClanConflict' (0x0000017CC6172240) Class 'MWFactionAsset'>",
+          "unreal_class": "MWFactionAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWFactionAsset"
+        },
+        "cluster_overlay": {
+          "get_full_name": "StaticMesh /Game/Campaign/Clusters/OutworldsAlliance/15_1.15_1",
+          "get_name": "15_1",
+          "get_path_name": "/Game/Campaign/Clusters/OutworldsAlliance/15_1.15_1",
+          "python_type": "StaticMesh",
+          "repr": "<Object '/Game/Campaign/Clusters/OutworldsAlliance/15_1.15_1' (0x0000017D9058B000) Class 'StaticMesh'>",
+          "unreal_class": "StaticMesh",
+          "unreal_class_path": "/Script/Engine.StaticMesh"
+        },
+        "is_legacy_cluster": true,
+        "system_ids": {
+          "python_type": "Set",
+          "repr": "set([4127])"
+        },
+        "toi_data": {
+          "get_full_name": "ClusterToiDataFragment_C /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_4/TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset:ClusterToiDataFragment_C_0",
+          "get_name": "ClusterToiDataFragment_C_0",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_4/TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset:ClusterToiDataFragment_C_0",
+          "python_type": "MWDataFragment",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_4/TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset:ClusterToiDataFragment_C_0' (0x0000017C92BABAC0) Class 'ClusterToiDataFragment_C'>",
+          "unreal_class": "ClusterToiDataFragment_C",
+          "unreal_class_path": "/Game/Campaign/_common/ClusterToiDataFragment.ClusterToiDataFragment_C"
+        }
+      },
+      "attempted": true,
+      "backup": {
+        "cluster_asset": null,
+        "faction_asset": {
+          "path": "D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\backups\\TKUCompatEditorPatch_clan_cluster_assets_patch\\ModOverride\\Campaign\\Clusters\\TKU_ClanConflict\\ClanConflict.uasset",
+          "sha256": "DB047DE891659F71C0EB2D68CCD05021FC05F95D95F22CB6F8FDC0E1B0F03F8C"
+        }
+      },
+      "before_properties": {
+        "cluster_constellation": null,
+        "cluster_faction_asset": {
+          "get_full_name": "MWFactionAsset /Game/Campaign/Clusters/OutworldsAlliance/OutworldsBorder.OutworldsBorder",
+          "get_name": "OutworldsBorder",
+          "get_path_name": "/Game/Campaign/Clusters/OutworldsAlliance/OutworldsBorder.OutworldsBorder",
+          "python_type": "MWFactionAsset",
+          "repr": "<Object '/Game/Campaign/Clusters/OutworldsAlliance/OutworldsBorder.OutworldsBorder' (0x0000017CCE6209C0) Class 'MWFactionAsset'>",
+          "unreal_class": "MWFactionAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWFactionAsset"
+        },
+        "cluster_overlay": {
+          "get_full_name": "StaticMesh /Game/Campaign/Clusters/OutworldsAlliance/15_1.15_1",
+          "get_name": "15_1",
+          "get_path_name": "/Game/Campaign/Clusters/OutworldsAlliance/15_1.15_1",
+          "python_type": "StaticMesh",
+          "repr": "<Object '/Game/Campaign/Clusters/OutworldsAlliance/15_1.15_1' (0x0000017D9058B000) Class 'StaticMesh'>",
+          "unreal_class": "StaticMesh",
+          "unreal_class_path": "/Script/Engine.StaticMesh"
+        },
+        "is_legacy_cluster": true,
+        "system_ids": {
+          "python_type": "Set",
+          "repr": "set([1018, 1020, 1022, 1035, 1043, 1044, 1045, 1046, 1047, 1055, 1056, 1129, 1139, 1144, 2049, 2051, 2055, 2061, 2082, 2092, 2096, 2103, 2104, 2107, 2108, 2118, 2120, 2122])"
+        },
+        "toi_data": {
+          "get_full_name": "ClusterToiDataFragment_C /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_4/TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset:ClusterToiDataFragment_C_0",
+          "get_name": "ClusterToiDataFragment_C_0",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_4/TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset:ClusterToiDataFragment_C_0",
+          "python_type": "MWDataFragment",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_4/TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset:ClusterToiDataFragment_C_0' (0x0000017C92BABAC0) Class 'ClusterToiDataFragment_C'>",
+          "unreal_class": "ClusterToiDataFragment_C",
+          "unreal_class_path": "/Game/Campaign/_common/ClusterToiDataFragment.ClusterToiDataFragment_C"
+        }
+      },
+      "cluster_asset": {
+        "get_full_name": "MWClusterDataAsset /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_4/TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset",
+        "get_name": "TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset",
+        "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_4/TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset",
+        "python_type": "MWClusterDataAsset",
+        "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_4/TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset.TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset' (0x0000017D390BDE40) Class 'MWClusterDataAsset'>",
+        "unreal_class": "MWClusterDataAsset",
+        "unreal_class_path": "/Script/MechWarrior.MWClusterDataAsset"
+      },
+      "cluster_id": "ClanConflict",
+      "cluster_saved": true,
+      "errors": [],
+      "faction_asset": {
+        "get_full_name": "MWFactionAsset /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict.ClanConflict",
+        "get_name": "ClanConflict",
+        "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict.ClanConflict",
+        "python_type": "MWFactionAsset",
+        "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict.ClanConflict' (0x0000017CC6172240) Class 'MWFactionAsset'>",
+        "unreal_class": "MWFactionAsset",
+        "unreal_class_path": "/Script/MechWarrior.MWFactionAsset"
+      },
+      "faction_saved": true,
+      "modify_cluster": {
+        "ok": true,
+        "value": false
+      },
+      "placeholder_assets": {
+        "constellation_asset": null,
+        "overlay_asset": "/Game/Campaign/Clusters/OutworldsAlliance/15_1"
+      },
+      "saved": true,
+      "set_results": {
+        "constellation": {
+          "method": "set_cluster_constellation_editoronly",
+          "method_result": {
+            "ok": true,
+            "value": null
+          },
+          "property": "cluster_constellation",
+          "property_result": {
+            "ok": true,
+            "value": null
+          }
+        },
+        "faction": {
+          "method": "set_cluster_faction_asset_editoronly",
+          "method_result": {
+            "ok": true,
+            "value": null
+          },
+          "property": "cluster_faction_asset",
+          "property_result": {
+            "ok": true,
+            "value": null
+          }
+        },
+        "overlay": {
+          "method": "set_cluster_overlay_editoronly",
+          "method_result": {
+            "ok": true,
+            "value": null
+          },
+          "property": "cluster_overlay",
+          "property_result": {
+            "ok": true,
+            "value": null
+          }
+        },
+        "system_ids": {
+          "method": "set_cluster_system_ids_editoronly",
+          "method_result": {
+            "ok": true,
+            "value": null
+          },
+          "property": "system_ids",
+          "property_result": {
+            "ok": true,
+            "value": null
+          }
+        }
+      },
+      "system_count": 1,
+      "system_ids": [
+        4127
+      ],
+      "target_cluster_asset": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_4/TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset",
+      "target_faction_asset": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict"
+    },
+    {
+      "after_properties": {
+        "cluster_constellation": null,
+        "cluster_faction_asset": {
+          "get_full_name": "MWFactionAsset /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict.ClanConflict",
+          "get_name": "ClanConflict",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict.ClanConflict",
+          "python_type": "MWFactionAsset",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict.ClanConflict' (0x0000017CC6172240) Class 'MWFactionAsset'>",
+          "unreal_class": "MWFactionAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWFactionAsset"
+        },
+        "cluster_overlay": null,
+        "is_legacy_cluster": true,
+        "system_ids": {
+          "python_type": "Set",
+          "repr": "set([4098, 4100, 4101, 4102, 4103, 4105, 4106, 4107, 4108, 4109, 4111, 4113, 4115, 4117, 4118, 4119, 4122, 4123, 4125, 4128, 4130, 4131, 4135, 4136, 4137])"
+        },
+        "toi_data": {
+          "get_full_name": "ClusterToiDataFragment_C /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/TKU_ClanConflict_NoOverlay_ClusterAsset.TKU_ClanConflict_NoOverlay_ClusterAsset:ClusterToiDataFragment_C_0",
+          "get_name": "ClusterToiDataFragment_C_0",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/TKU_ClanConflict_NoOverlay_ClusterAsset.TKU_ClanConflict_NoOverlay_ClusterAsset:ClusterToiDataFragment_C_0",
+          "python_type": "MWDataFragment",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/TKU_ClanConflict_NoOverlay_ClusterAsset.TKU_ClanConflict_NoOverlay_ClusterAsset:ClusterToiDataFragment_C_0' (0x0000017D9059FAC0) Class 'ClusterToiDataFragment_C'>",
+          "unreal_class": "ClusterToiDataFragment_C",
+          "unreal_class_path": "/Game/Campaign/_common/ClusterToiDataFragment.ClusterToiDataFragment_C"
+        }
+      },
+      "attempted": true,
+      "backup": {
+        "cluster_asset": null,
+        "faction_asset": {
+          "path": "D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\backups\\TKUCompatEditorPatch_clan_cluster_assets_patch\\ModOverride\\Campaign\\Clusters\\TKU_ClanConflict\\ClanConflict.uasset",
+          "sha256": "DB047DE891659F71C0EB2D68CCD05021FC05F95D95F22CB6F8FDC0E1B0F03F8C"
+        }
+      },
+      "before_properties": {
+        "cluster_constellation": null,
+        "cluster_faction_asset": {
+          "get_full_name": "MWFactionAsset /Game/Campaign/Clusters/OutworldsAlliance/OutworldsBorder.OutworldsBorder",
+          "get_name": "OutworldsBorder",
+          "get_path_name": "/Game/Campaign/Clusters/OutworldsAlliance/OutworldsBorder.OutworldsBorder",
+          "python_type": "MWFactionAsset",
+          "repr": "<Object '/Game/Campaign/Clusters/OutworldsAlliance/OutworldsBorder.OutworldsBorder' (0x0000017CCE6209C0) Class 'MWFactionAsset'>",
+          "unreal_class": "MWFactionAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWFactionAsset"
+        },
+        "cluster_overlay": {
+          "get_full_name": "StaticMesh /Game/Campaign/Clusters/OutworldsAlliance/15_1.15_1",
+          "get_name": "15_1",
+          "get_path_name": "/Game/Campaign/Clusters/OutworldsAlliance/15_1.15_1",
+          "python_type": "StaticMesh",
+          "repr": "<Object '/Game/Campaign/Clusters/OutworldsAlliance/15_1.15_1' (0x0000017D9058B000) Class 'StaticMesh'>",
+          "unreal_class": "StaticMesh",
+          "unreal_class_path": "/Script/Engine.StaticMesh"
+        },
+        "is_legacy_cluster": true,
+        "system_ids": {
+          "python_type": "Set",
+          "repr": "set([1018, 1020, 1022, 1035, 1043, 1044, 1045, 1046, 1047, 1055, 1056, 1129, 1139, 1144, 2049, 2051, 2055, 2061, 2082, 2092, 2096, 2103, 2104, 2107, 2108, 2118, 2120, 2122])"
+        },
+        "toi_data": {
+          "get_full_name": "ClusterToiDataFragment_C /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/TKU_ClanConflict_NoOverlay_ClusterAsset.TKU_ClanConflict_NoOverlay_ClusterAsset:ClusterToiDataFragment_C_0",
+          "get_name": "ClusterToiDataFragment_C_0",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/TKU_ClanConflict_NoOverlay_ClusterAsset.TKU_ClanConflict_NoOverlay_ClusterAsset:ClusterToiDataFragment_C_0",
+          "python_type": "MWDataFragment",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/TKU_ClanConflict_NoOverlay_ClusterAsset.TKU_ClanConflict_NoOverlay_ClusterAsset:ClusterToiDataFragment_C_0' (0x0000017D9059FAC0) Class 'ClusterToiDataFragment_C'>",
+          "unreal_class": "ClusterToiDataFragment_C",
+          "unreal_class_path": "/Game/Campaign/_common/ClusterToiDataFragment.ClusterToiDataFragment_C"
+        }
+      },
+      "cluster_asset": {
+        "get_full_name": "MWClusterDataAsset /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/TKU_ClanConflict_NoOverlay_ClusterAsset.TKU_ClanConflict_NoOverlay_ClusterAsset",
+        "get_name": "TKU_ClanConflict_NoOverlay_ClusterAsset",
+        "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/TKU_ClanConflict_NoOverlay_ClusterAsset.TKU_ClanConflict_NoOverlay_ClusterAsset",
+        "python_type": "MWClusterDataAsset",
+        "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/TKU_ClanConflict_NoOverlay_ClusterAsset.TKU_ClanConflict_NoOverlay_ClusterAsset' (0x0000017D390BD6C0) Class 'MWClusterDataAsset'>",
+        "unreal_class": "MWClusterDataAsset",
+        "unreal_class_path": "/Script/MechWarrior.MWClusterDataAsset"
+      },
+      "cluster_id": "ClanConflict",
+      "cluster_saved": true,
+      "errors": [],
+      "faction_asset": {
+        "get_full_name": "MWFactionAsset /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict.ClanConflict",
+        "get_name": "ClanConflict",
+        "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict.ClanConflict",
+        "python_type": "MWFactionAsset",
+        "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict.ClanConflict' (0x0000017CC6172240) Class 'MWFactionAsset'>",
+        "unreal_class": "MWFactionAsset",
+        "unreal_class_path": "/Script/MechWarrior.MWFactionAsset"
+      },
+      "faction_saved": true,
+      "modify_cluster": {
+        "ok": true,
+        "value": false
+      },
+      "placeholder_assets": {
+        "constellation_asset": null,
+        "overlay_asset": null
+      },
+      "saved": true,
+      "set_results": {
+        "constellation": {
+          "method": "set_cluster_constellation_editoronly",
+          "method_result": {
+            "ok": true,
+            "value": null
+          },
+          "property": "cluster_constellation",
+          "property_result": {
+            "ok": true,
+            "value": null
+          }
+        },
+        "faction": {
+          "method": "set_cluster_faction_asset_editoronly",
+          "method_result": {
+            "ok": true,
+            "value": null
+          },
+          "property": "cluster_faction_asset",
+          "property_result": {
+            "ok": true,
+            "value": null
+          }
+        },
+        "overlay": {
+          "method": "set_cluster_overlay_editoronly",
+          "method_result": {
+            "ok": true,
+            "value": null
+          },
+          "property": "cluster_overlay",
+          "property_result": {
+            "ok": true,
+            "value": null
+          }
+        },
+        "system_ids": {
+          "method": "set_cluster_system_ids_editoronly",
+          "method_result": {
+            "ok": true,
+            "value": null
+          },
+          "property": "system_ids",
+          "property_result": {
+            "ok": true,
+            "value": null
+          }
+        }
+      },
+      "system_count": 25,
+      "system_ids": [
+        4098,
+        4100,
+        4101,
+        4102,
+        4103,
+        4105,
+        4106,
+        4107,
+        4108,
+        4109,
+        4111,
+        4113,
+        4115,
+        4117,
+        4118,
+        4119,
+        4122,
+        4123,
+        4125,
+        4128,
+        4130,
+        4131,
+        4135,
+        4136,
+        4137
+      ],
+      "target_cluster_asset": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/TKU_ClanConflict_NoOverlay_ClusterAsset",
+      "target_faction_asset": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_ClanConflict/ClanConflict"
+    },
+    {
+      "after_properties": {
+        "cluster_constellation": {
+          "get_full_name": "StaticMesh /Game/Campaign/Clusters/IndustrialHub_25/Safezone1.Safezone1",
+          "get_name": "Safezone1",
+          "get_path_name": "/Game/Campaign/Clusters/IndustrialHub_25/Safezone1.Safezone1",
+          "python_type": "StaticMesh",
+          "repr": "<Object '/Game/Campaign/Clusters/IndustrialHub_25/Safezone1.Safezone1' (0x0000017D90588C00) Class 'StaticMesh'>",
+          "unreal_class": "StaticMesh",
+          "unreal_class_path": "/Script/Engine.StaticMesh"
+        },
+        "cluster_faction_asset": {
+          "get_full_name": "MWFactionAsset /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.RepairSystem_Clan",
+          "get_name": "RepairSystem_Clan",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.RepairSystem_Clan",
+          "python_type": "MWFactionAsset",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.RepairSystem_Clan' (0x0000017CC6173900) Class 'MWFactionAsset'>",
+          "unreal_class": "MWFactionAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWFactionAsset"
+        },
+        "cluster_overlay": {
+          "get_full_name": "StaticMesh /Game/Campaign/Clusters/IndustrialHub_25/Safezone1_Collision.Safezone1_Collision",
+          "get_name": "Safezone1_Collision",
+          "get_path_name": "/Game/Campaign/Clusters/IndustrialHub_25/Safezone1_Collision.Safezone1_Collision",
+          "python_type": "StaticMesh",
+          "repr": "<Object '/Game/Campaign/Clusters/IndustrialHub_25/Safezone1_Collision.Safezone1_Collision' (0x0000017D9058A000) Class 'StaticMesh'>",
+          "unreal_class": "StaticMesh",
+          "unreal_class_path": "/Script/Engine.StaticMesh"
+        },
+        "is_legacy_cluster": true,
+        "system_ids": {
+          "python_type": "Set",
+          "repr": "set([4143])"
+        },
+        "toi_data": {
+          "get_full_name": "ClusterToiDataFragment_C /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset.TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset:ClusterToiDataFragment_C_0",
+          "get_name": "ClusterToiDataFragment_C_0",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset.TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset:ClusterToiDataFragment_C_0",
+          "python_type": "MWDataFragment",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset.TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset:ClusterToiDataFragment_C_0' (0x0000017D9059FC80) Class 'ClusterToiDataFragment_C'>",
+          "unreal_class": "ClusterToiDataFragment_C",
+          "unreal_class_path": "/Game/Campaign/_common/ClusterToiDataFragment.ClusterToiDataFragment_C"
+        }
+      },
+      "attempted": true,
+      "backup": {
+        "cluster_asset": null,
+        "faction_asset": null
+      },
+      "before_properties": {
+        "cluster_constellation": {
+          "get_full_name": "StaticMesh /Game/Campaign/Clusters/IndustrialHub_25/Safezone1.Safezone1",
+          "get_name": "Safezone1",
+          "get_path_name": "/Game/Campaign/Clusters/IndustrialHub_25/Safezone1.Safezone1",
+          "python_type": "StaticMesh",
+          "repr": "<Object '/Game/Campaign/Clusters/IndustrialHub_25/Safezone1.Safezone1' (0x0000017D90588C00) Class 'StaticMesh'>",
+          "unreal_class": "StaticMesh",
+          "unreal_class_path": "/Script/Engine.StaticMesh"
+        },
+        "cluster_faction_asset": {
+          "get_full_name": "MWFactionAsset /Game/Campaign/Clusters/IndustrialHub_25/RepairSystem_20.RepairSystem_20",
+          "get_name": "RepairSystem_20",
+          "get_path_name": "/Game/Campaign/Clusters/IndustrialHub_25/RepairSystem_20.RepairSystem_20",
+          "python_type": "MWFactionAsset",
+          "repr": "<Object '/Game/Campaign/Clusters/IndustrialHub_25/RepairSystem_20.RepairSystem_20' (0x0000017CCE6142C0) Class 'MWFactionAsset'>",
+          "unreal_class": "MWFactionAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWFactionAsset"
+        },
+        "cluster_overlay": {
+          "get_full_name": "StaticMesh /Game/Campaign/Clusters/IndustrialHub_25/Safezone1_Collision.Safezone1_Collision",
+          "get_name": "Safezone1_Collision",
+          "get_path_name": "/Game/Campaign/Clusters/IndustrialHub_25/Safezone1_Collision.Safezone1_Collision",
+          "python_type": "StaticMesh",
+          "repr": "<Object '/Game/Campaign/Clusters/IndustrialHub_25/Safezone1_Collision.Safezone1_Collision' (0x0000017D9058A000) Class 'StaticMesh'>",
+          "unreal_class": "StaticMesh",
+          "unreal_class_path": "/Script/Engine.StaticMesh"
+        },
+        "is_legacy_cluster": true,
+        "system_ids": {
+          "python_type": "Set",
+          "repr": "set([273, 287, 408, 431, 490, 623, 634, 676, 703, 767, 771, 826, 849, 920, 1014, 1930, 1962, 1974, 1977, 1986])"
+        },
+        "toi_data": {
+          "get_full_name": "ClusterToiDataFragment_C /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset.TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset:ClusterToiDataFragment_C_0",
+          "get_name": "ClusterToiDataFragment_C_0",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset.TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset:ClusterToiDataFragment_C_0",
+          "python_type": "MWDataFragment",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset.TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset:ClusterToiDataFragment_C_0' (0x0000017D9059FC80) Class 'ClusterToiDataFragment_C'>",
+          "unreal_class": "ClusterToiDataFragment_C",
+          "unreal_class_path": "/Game/Campaign/_common/ClusterToiDataFragment.ClusterToiDataFragment_C"
+        }
+      },
+      "cluster_asset": {
+        "get_full_name": "MWClusterDataAsset /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset.TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset",
+        "get_name": "TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset",
+        "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset.TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset",
+        "python_type": "MWClusterDataAsset",
+        "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset.TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset' (0x0000017D390BF100) Class 'MWClusterDataAsset'>",
+        "unreal_class": "MWClusterDataAsset",
+        "unreal_class_path": "/Script/MechWarrior.MWClusterDataAsset"
+      },
+      "cluster_id": "RepairSystem_Clan",
+      "cluster_saved": true,
+      "errors": [],
+      "faction_asset": {
+        "get_full_name": "MWFactionAsset /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.RepairSystem_Clan",
+        "get_name": "RepairSystem_Clan",
+        "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.RepairSystem_Clan",
+        "python_type": "MWFactionAsset",
+        "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.RepairSystem_Clan' (0x0000017CC6173900) Class 'MWFactionAsset'>",
+        "unreal_class": "MWFactionAsset",
+        "unreal_class_path": "/Script/MechWarrior.MWFactionAsset"
+      },
+      "faction_saved": true,
+      "modify_cluster": {
+        "ok": true,
+        "value": false
+      },
+      "placeholder_assets": {
+        "constellation_asset": "/Game/Campaign/Clusters/IndustrialHub_25/Safezone1",
+        "overlay_asset": "/Game/Campaign/Clusters/IndustrialHub_25/Safezone1_Collision"
+      },
+      "saved": true,
+      "set_results": {
+        "constellation": {
+          "method": "set_cluster_constellation_editoronly",
+          "method_result": {
+            "ok": true,
+            "value": null
+          },
+          "property": "cluster_constellation",
+          "property_result": {
+            "ok": true,
+            "value": null
+          }
+        },
+        "faction": {
+          "method": "set_cluster_faction_asset_editoronly",
+          "method_result": {
+            "ok": true,
+            "value": null
+          },
+          "property": "cluster_faction_asset",
+          "property_result": {
+            "ok": true,
+            "value": null
+          }
+        },
+        "overlay": {
+          "method": "set_cluster_overlay_editoronly",
+          "method_result": {
+            "ok": true,
+            "value": null
+          },
+          "property": "cluster_overlay",
+          "property_result": {
+            "ok": true,
+            "value": null
+          }
+        },
+        "system_ids": {
+          "method": "set_cluster_system_ids_editoronly",
+          "method_result": {
+            "ok": true,
+            "value": null
+          },
+          "property": "system_ids",
+          "property_result": {
+            "ok": true,
+            "value": null
+          }
+        }
+      },
+      "system_count": 1,
+      "system_ids": [
+        4143
+      ],
+      "target_cluster_asset": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset",
+      "target_faction_asset": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan"
+    },
+    {
+      "after_properties": {
+        "cluster_constellation": {
+          "get_full_name": "StaticMesh /Game/Campaign/Clusters/IndustrialHub_25/Safezone1.Safezone1",
+          "get_name": "Safezone1",
+          "get_path_name": "/Game/Campaign/Clusters/IndustrialHub_25/Safezone1.Safezone1",
+          "python_type": "StaticMesh",
+          "repr": "<Object '/Game/Campaign/Clusters/IndustrialHub_25/Safezone1.Safezone1' (0x0000017D90588C00) Class 'StaticMesh'>",
+          "unreal_class": "StaticMesh",
+          "unreal_class_path": "/Script/Engine.StaticMesh"
+        },
+        "cluster_faction_asset": {
+          "get_full_name": "MWFactionAsset /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.RepairSystem_Clan",
+          "get_name": "RepairSystem_Clan",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.RepairSystem_Clan",
+          "python_type": "MWFactionAsset",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.RepairSystem_Clan' (0x0000017CC6173900) Class 'MWFactionAsset'>",
+          "unreal_class": "MWFactionAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWFactionAsset"
+        },
+        "cluster_overlay": {
+          "get_full_name": "StaticMesh /Game/Campaign/Clusters/IndustrialHub_25/Safezone1_Collision.Safezone1_Collision",
+          "get_name": "Safezone1_Collision",
+          "get_path_name": "/Game/Campaign/Clusters/IndustrialHub_25/Safezone1_Collision.Safezone1_Collision",
+          "python_type": "StaticMesh",
+          "repr": "<Object '/Game/Campaign/Clusters/IndustrialHub_25/Safezone1_Collision.Safezone1_Collision' (0x0000017D9058A000) Class 'StaticMesh'>",
+          "unreal_class": "StaticMesh",
+          "unreal_class_path": "/Script/Engine.StaticMesh"
+        },
+        "is_legacy_cluster": true,
+        "system_ids": {
+          "python_type": "Set",
+          "repr": "set([4088])"
+        },
+        "toi_data": {
+          "get_full_name": "ClusterToiDataFragment_C /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset.TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset:ClusterToiDataFragment_C_0",
+          "get_name": "ClusterToiDataFragment_C_0",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset.TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset:ClusterToiDataFragment_C_0",
+          "python_type": "MWDataFragment",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset.TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset:ClusterToiDataFragment_C_0' (0x0000017D9059E860) Class 'ClusterToiDataFragment_C'>",
+          "unreal_class": "ClusterToiDataFragment_C",
+          "unreal_class_path": "/Game/Campaign/_common/ClusterToiDataFragment.ClusterToiDataFragment_C"
+        }
+      },
+      "attempted": true,
+      "backup": {
+        "cluster_asset": null,
+        "faction_asset": {
+          "path": "D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\backups\\TKUCompatEditorPatch_clan_cluster_assets_patch\\ModOverride\\Campaign\\Clusters\\TKU_RepairSystem_Clan\\RepairSystem_Clan.uasset",
+          "sha256": "26720C5F9374D81515411A7BA5AE7C8675BC86F629348817D71AE2E2E1835125"
+        }
+      },
+      "before_properties": {
+        "cluster_constellation": {
+          "get_full_name": "StaticMesh /Game/Campaign/Clusters/IndustrialHub_25/Safezone1.Safezone1",
+          "get_name": "Safezone1",
+          "get_path_name": "/Game/Campaign/Clusters/IndustrialHub_25/Safezone1.Safezone1",
+          "python_type": "StaticMesh",
+          "repr": "<Object '/Game/Campaign/Clusters/IndustrialHub_25/Safezone1.Safezone1' (0x0000017D90588C00) Class 'StaticMesh'>",
+          "unreal_class": "StaticMesh",
+          "unreal_class_path": "/Script/Engine.StaticMesh"
+        },
+        "cluster_faction_asset": {
+          "get_full_name": "MWFactionAsset /Game/Campaign/Clusters/IndustrialHub_25/RepairSystem_20.RepairSystem_20",
+          "get_name": "RepairSystem_20",
+          "get_path_name": "/Game/Campaign/Clusters/IndustrialHub_25/RepairSystem_20.RepairSystem_20",
+          "python_type": "MWFactionAsset",
+          "repr": "<Object '/Game/Campaign/Clusters/IndustrialHub_25/RepairSystem_20.RepairSystem_20' (0x0000017CCE6142C0) Class 'MWFactionAsset'>",
+          "unreal_class": "MWFactionAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWFactionAsset"
+        },
+        "cluster_overlay": {
+          "get_full_name": "StaticMesh /Game/Campaign/Clusters/IndustrialHub_25/Safezone1_Collision.Safezone1_Collision",
+          "get_name": "Safezone1_Collision",
+          "get_path_name": "/Game/Campaign/Clusters/IndustrialHub_25/Safezone1_Collision.Safezone1_Collision",
+          "python_type": "StaticMesh",
+          "repr": "<Object '/Game/Campaign/Clusters/IndustrialHub_25/Safezone1_Collision.Safezone1_Collision' (0x0000017D9058A000) Class 'StaticMesh'>",
+          "unreal_class": "StaticMesh",
+          "unreal_class_path": "/Script/Engine.StaticMesh"
+        },
+        "is_legacy_cluster": true,
+        "system_ids": {
+          "python_type": "Set",
+          "repr": "set([273, 287, 408, 431, 490, 623, 634, 676, 703, 767, 771, 826, 849, 920, 1014, 1930, 1962, 1974, 1977, 1986])"
+        },
+        "toi_data": {
+          "get_full_name": "ClusterToiDataFragment_C /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset.TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset:ClusterToiDataFragment_C_0",
+          "get_name": "ClusterToiDataFragment_C_0",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset.TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset:ClusterToiDataFragment_C_0",
+          "python_type": "MWDataFragment",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset.TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset:ClusterToiDataFragment_C_0' (0x0000017D9059E860) Class 'ClusterToiDataFragment_C'>",
+          "unreal_class": "ClusterToiDataFragment_C",
+          "unreal_class_path": "/Game/Campaign/_common/ClusterToiDataFragment.ClusterToiDataFragment_C"
+        }
+      },
+      "cluster_asset": {
+        "get_full_name": "MWClusterDataAsset /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset.TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset",
+        "get_name": "TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset",
+        "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset.TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset",
+        "python_type": "MWClusterDataAsset",
+        "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset.TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset' (0x0000017D390BE340) Class 'MWClusterDataAsset'>",
+        "unreal_class": "MWClusterDataAsset",
+        "unreal_class_path": "/Script/MechWarrior.MWClusterDataAsset"
+      },
+      "cluster_id": "RepairSystem_Clan",
+      "cluster_saved": true,
+      "errors": [],
+      "faction_asset": {
+        "get_full_name": "MWFactionAsset /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.RepairSystem_Clan",
+        "get_name": "RepairSystem_Clan",
+        "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.RepairSystem_Clan",
+        "python_type": "MWFactionAsset",
+        "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.RepairSystem_Clan' (0x0000017CC6173900) Class 'MWFactionAsset'>",
+        "unreal_class": "MWFactionAsset",
+        "unreal_class_path": "/Script/MechWarrior.MWFactionAsset"
+      },
+      "faction_saved": true,
+      "modify_cluster": {
+        "ok": true,
+        "value": false
+      },
+      "placeholder_assets": {
+        "constellation_asset": "/Game/Campaign/Clusters/IndustrialHub_25/Safezone1",
+        "overlay_asset": "/Game/Campaign/Clusters/IndustrialHub_25/Safezone1_Collision"
+      },
+      "saved": true,
+      "set_results": {
+        "constellation": {
+          "method": "set_cluster_constellation_editoronly",
+          "method_result": {
+            "ok": true,
+            "value": null
+          },
+          "property": "cluster_constellation",
+          "property_result": {
+            "ok": true,
+            "value": null
+          }
+        },
+        "faction": {
+          "method": "set_cluster_faction_asset_editoronly",
+          "method_result": {
+            "ok": true,
+            "value": null
+          },
+          "property": "cluster_faction_asset",
+          "property_result": {
+            "ok": true,
+            "value": null
+          }
+        },
+        "overlay": {
+          "method": "set_cluster_overlay_editoronly",
+          "method_result": {
+            "ok": true,
+            "value": null
+          },
+          "property": "cluster_overlay",
+          "property_result": {
+            "ok": true,
+            "value": null
+          }
+        },
+        "system_ids": {
+          "method": "set_cluster_system_ids_editoronly",
+          "method_result": {
+            "ok": true,
+            "value": null
+          },
+          "property": "system_ids",
+          "property_result": {
+            "ok": true,
+            "value": null
+          }
+        }
+      },
+      "system_count": 1,
+      "system_ids": [
+        4088
+      ],
+      "target_cluster_asset": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset",
+      "target_faction_asset": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan"
+    },
+    {
+      "after_properties": {
+        "cluster_constellation": null,
+        "cluster_faction_asset": {
+          "get_full_name": "MWFactionAsset /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.RepairSystem_Clan",
+          "get_name": "RepairSystem_Clan",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.RepairSystem_Clan",
+          "python_type": "MWFactionAsset",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.RepairSystem_Clan' (0x0000017CC6173900) Class 'MWFactionAsset'>",
+          "unreal_class": "MWFactionAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWFactionAsset"
+        },
+        "cluster_overlay": null,
+        "is_legacy_cluster": true,
+        "system_ids": {
+          "python_type": "Set",
+          "repr": "set([4089, 4090, 4091, 4092, 4121, 4124, 4126, 4134, 4140])"
+        },
+        "toi_data": {
+          "get_full_name": "ClusterToiDataFragment_C /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan/TKU_RepairSystem_Clan_NoOverlay_ClusterAsset.TKU_RepairSystem_Clan_NoOverlay_ClusterAsset:ClusterToiDataFragment_C_0",
+          "get_name": "ClusterToiDataFragment_C_0",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan/TKU_RepairSystem_Clan_NoOverlay_ClusterAsset.TKU_RepairSystem_Clan_NoOverlay_ClusterAsset:ClusterToiDataFragment_C_0",
+          "python_type": "MWDataFragment",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan/TKU_RepairSystem_Clan_NoOverlay_ClusterAsset.TKU_RepairSystem_Clan_NoOverlay_ClusterAsset:ClusterToiDataFragment_C_0' (0x0000017D9059E4E0) Class 'ClusterToiDataFragment_C'>",
+          "unreal_class": "ClusterToiDataFragment_C",
+          "unreal_class_path": "/Game/Campaign/_common/ClusterToiDataFragment.ClusterToiDataFragment_C"
+        }
+      },
+      "attempted": true,
+      "backup": {
+        "cluster_asset": null,
+        "faction_asset": {
+          "path": "D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\backups\\TKUCompatEditorPatch_clan_cluster_assets_patch\\ModOverride\\Campaign\\Clusters\\TKU_RepairSystem_Clan\\RepairSystem_Clan.uasset",
+          "sha256": "26720C5F9374D81515411A7BA5AE7C8675BC86F629348817D71AE2E2E1835125"
+        }
+      },
+      "before_properties": {
+        "cluster_constellation": {
+          "get_full_name": "StaticMesh /Game/Campaign/Clusters/IndustrialHub_25/Safezone1.Safezone1",
+          "get_name": "Safezone1",
+          "get_path_name": "/Game/Campaign/Clusters/IndustrialHub_25/Safezone1.Safezone1",
+          "python_type": "StaticMesh",
+          "repr": "<Object '/Game/Campaign/Clusters/IndustrialHub_25/Safezone1.Safezone1' (0x0000017D90588C00) Class 'StaticMesh'>",
+          "unreal_class": "StaticMesh",
+          "unreal_class_path": "/Script/Engine.StaticMesh"
+        },
+        "cluster_faction_asset": {
+          "get_full_name": "MWFactionAsset /Game/Campaign/Clusters/IndustrialHub_25/RepairSystem_20.RepairSystem_20",
+          "get_name": "RepairSystem_20",
+          "get_path_name": "/Game/Campaign/Clusters/IndustrialHub_25/RepairSystem_20.RepairSystem_20",
+          "python_type": "MWFactionAsset",
+          "repr": "<Object '/Game/Campaign/Clusters/IndustrialHub_25/RepairSystem_20.RepairSystem_20' (0x0000017CCE6142C0) Class 'MWFactionAsset'>",
+          "unreal_class": "MWFactionAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWFactionAsset"
+        },
+        "cluster_overlay": {
+          "get_full_name": "StaticMesh /Game/Campaign/Clusters/IndustrialHub_25/Safezone1_Collision.Safezone1_Collision",
+          "get_name": "Safezone1_Collision",
+          "get_path_name": "/Game/Campaign/Clusters/IndustrialHub_25/Safezone1_Collision.Safezone1_Collision",
+          "python_type": "StaticMesh",
+          "repr": "<Object '/Game/Campaign/Clusters/IndustrialHub_25/Safezone1_Collision.Safezone1_Collision' (0x0000017D9058A000) Class 'StaticMesh'>",
+          "unreal_class": "StaticMesh",
+          "unreal_class_path": "/Script/Engine.StaticMesh"
+        },
+        "is_legacy_cluster": true,
+        "system_ids": {
+          "python_type": "Set",
+          "repr": "set([273, 287, 408, 431, 490, 623, 634, 676, 703, 767, 771, 826, 849, 920, 1014, 1930, 1962, 1974, 1977, 1986])"
+        },
+        "toi_data": {
+          "get_full_name": "ClusterToiDataFragment_C /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan/TKU_RepairSystem_Clan_NoOverlay_ClusterAsset.TKU_RepairSystem_Clan_NoOverlay_ClusterAsset:ClusterToiDataFragment_C_0",
+          "get_name": "ClusterToiDataFragment_C_0",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan/TKU_RepairSystem_Clan_NoOverlay_ClusterAsset.TKU_RepairSystem_Clan_NoOverlay_ClusterAsset:ClusterToiDataFragment_C_0",
+          "python_type": "MWDataFragment",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan/TKU_RepairSystem_Clan_NoOverlay_ClusterAsset.TKU_RepairSystem_Clan_NoOverlay_ClusterAsset:ClusterToiDataFragment_C_0' (0x0000017D9059E4E0) Class 'ClusterToiDataFragment_C'>",
+          "unreal_class": "ClusterToiDataFragment_C",
+          "unreal_class_path": "/Game/Campaign/_common/ClusterToiDataFragment.ClusterToiDataFragment_C"
+        }
+      },
+      "cluster_asset": {
+        "get_full_name": "MWClusterDataAsset /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan/TKU_RepairSystem_Clan_NoOverlay_ClusterAsset.TKU_RepairSystem_Clan_NoOverlay_ClusterAsset",
+        "get_name": "TKU_RepairSystem_Clan_NoOverlay_ClusterAsset",
+        "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan/TKU_RepairSystem_Clan_NoOverlay_ClusterAsset.TKU_RepairSystem_Clan_NoOverlay_ClusterAsset",
+        "python_type": "MWClusterDataAsset",
+        "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan/TKU_RepairSystem_Clan_NoOverlay_ClusterAsset.TKU_RepairSystem_Clan_NoOverlay_ClusterAsset' (0x0000017D390BF740) Class 'MWClusterDataAsset'>",
+        "unreal_class": "MWClusterDataAsset",
+        "unreal_class_path": "/Script/MechWarrior.MWClusterDataAsset"
+      },
+      "cluster_id": "RepairSystem_Clan",
+      "cluster_saved": true,
+      "errors": [],
+      "faction_asset": {
+        "get_full_name": "MWFactionAsset /ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.RepairSystem_Clan",
+        "get_name": "RepairSystem_Clan",
+        "get_path_name": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.RepairSystem_Clan",
+        "python_type": "MWFactionAsset",
+        "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.RepairSystem_Clan' (0x0000017CC6173900) Class 'MWFactionAsset'>",
+        "unreal_class": "MWFactionAsset",
+        "unreal_class_path": "/Script/MechWarrior.MWFactionAsset"
+      },
+      "faction_saved": true,
+      "modify_cluster": {
+        "ok": true,
+        "value": false
+      },
+      "placeholder_assets": {
+        "constellation_asset": null,
+        "overlay_asset": null
+      },
+      "saved": true,
+      "set_results": {
+        "constellation": {
+          "method": "set_cluster_constellation_editoronly",
+          "method_result": {
+            "ok": true,
+            "value": null
+          },
+          "property": "cluster_constellation",
+          "property_result": {
+            "ok": true,
+            "value": null
+          }
+        },
+        "faction": {
+          "method": "set_cluster_faction_asset_editoronly",
+          "method_result": {
+            "ok": true,
+            "value": null
+          },
+          "property": "cluster_faction_asset",
+          "property_result": {
+            "ok": true,
+            "value": null
+          }
+        },
+        "overlay": {
+          "method": "set_cluster_overlay_editoronly",
+          "method_result": {
+            "ok": true,
+            "value": null
+          },
+          "property": "cluster_overlay",
+          "property_result": {
+            "ok": true,
+            "value": null
+          }
+        },
+        "system_ids": {
+          "method": "set_cluster_system_ids_editoronly",
+          "method_result": {
+            "ok": true,
+            "value": null
+          },
+          "property": "system_ids",
+          "property_result": {
+            "ok": true,
+            "value": null
+          }
+        }
+      },
+      "system_count": 9,
+      "system_ids": [
+        4089,
+        4090,
+        4091,
+        4092,
+        4121,
+        4124,
+        4126,
+        4134,
+        4140
+      ],
+      "target_cluster_asset": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan/TKU_RepairSystem_Clan_NoOverlay_ClusterAsset",
+      "target_faction_asset": "/ModOverride/TKUCompatEditorPatch/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan"
+    }
+  ],
+  "safety_failures": [],
+  "source_assets": {
+    "cluster_conflict_template": "/Game/Campaign/Clusters/OutworldsAlliance/OutworldsAlliance_ClusterAsset",
+    "cluster_repair_template": "/Game/Campaign/Clusters/IndustrialHub_25/IndustrialHub_25_ClusterAsset",
+    "conflict_overlay_placeholder": "/Game/Campaign/Clusters/OutworldsAlliance/15_1",
+    "faction_conflict_template": "/Game/Campaign/Clusters/OutworldsAlliance/OutworldsBorder",
+    "faction_repair_template": "/Game/Campaign/Clusters/IndustrialHub_25/RepairSystem_20",
+    "repair_constellation_placeholder": "/Game/Campaign/Clusters/IndustrialHub_25/Safezone1",
+    "repair_overlay_placeholder": "/Game/Campaign/Clusters/IndustrialHub_25/Safezone1_Collision"
+  },
+  "target_mod_name": "TKUCompatEditorPatch",
+  "use_placeholder_overlays": true
+}

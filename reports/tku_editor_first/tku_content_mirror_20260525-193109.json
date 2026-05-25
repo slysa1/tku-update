@@ -1,0 +1,2171 @@
+{
+  "actions": [
+    "staged UnrealPak-built content-root mirror pak at D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\staging\\MW5Mercs-zzzzTKUCompatEditorPatch-20260525-193109.pak",
+    "backed up existing live mirror pak to D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\backups\\content_mirror_20260525-193109\\MW5Mercs-zzzzTKUCompatEditorPatch.pak",
+    "deployed live mirror pak to E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Content\\Paks\\MW5Mercs-zzzzTKUCompatEditorPatch.pak"
+  ],
+  "apply_requested": true,
+  "content_conflicts_after": [
+    {
+      "entry_count": 239830,
+      "exists": true,
+      "file_size": 79065809048,
+      "mount_point": "../../../",
+      "path": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Content\\Paks\\MW5Mercs-WindowsNoEditor.pak",
+      "sha256": null,
+      "sha256_skipped": "file is larger than 512 MiB",
+      "target_entries": {
+        "/Game/Campaign/Clusters/TKU_ClanConflict/ClanConflict.uasset": null,
+        "/Game/Campaign/Clusters/TKU_ClanConflict/ClanConflict.uexp": null,
+        "/Game/Campaign/Clusters/TKU_ClanConflict/TKU_ClanConflict_NoOverlay_ClusterAsset.uasset": null,
+        "/Game/Campaign/Clusters/TKU_ClanConflict/TKU_ClanConflict_NoOverlay_ClusterAsset.uexp": null,
+        "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_1/TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset.uasset": null,
+        "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_1/TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset.uexp": null,
+        "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_2/TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset.uasset": null,
+        "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_2/TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset.uexp": null,
+        "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_3/TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset.uasset": null,
+        "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_3/TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset.uexp": null,
+        "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_4/TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset.uasset": null,
+        "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_4/TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset.uexp": null,
+        "/Game/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.uasset": null,
+        "/Game/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.uexp": null,
+        "/Game/Campaign/Clusters/TKU_RepairSystem_Clan/TKU_RepairSystem_Clan_NoOverlay_ClusterAsset.uasset": null,
+        "/Game/Campaign/Clusters/TKU_RepairSystem_Clan/TKU_RepairSystem_Clan_NoOverlay_ClusterAsset.uexp": null,
+        "/Game/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset.uasset": null,
+        "/Game/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset.uexp": null,
+        "/Game/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset.uasset": null,
+        "/Game/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset.uexp": null,
+        "/Game/Campaign/_common/DefaultSystemGenerator.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/Campaign/_common/DefaultSystemGenerator.uasset",
+          "size": 6190,
+          "uncompressed_size": 6190
+        },
+        "/Game/Campaign/_common/DefaultSystemGenerator.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/Campaign/_common/DefaultSystemGenerator.uexp",
+          "size": 5182,
+          "uncompressed_size": 5182
+        },
+        "/Game/DLC1/CareerMode/CareerModeCoreCampaign.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/CareerModeCoreCampaign.uasset",
+          "size": 5176,
+          "uncompressed_size": 5176
+        },
+        "/Game/DLC1/CareerMode/CareerModeCoreCampaign.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/CareerModeCoreCampaign.uexp",
+          "size": 12210,
+          "uncompressed_size": 12210
+        },
+        "/Game/DLC1/CareerMode/Clusters/Rasalhague_7_10/Rasalhague_7_10_ClusterAsset.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/Clusters/Rasalhague_7_10/Rasalhague_7_10_ClusterAsset.uasset",
+          "size": 2764,
+          "uncompressed_size": 2764
+        },
+        "/Game/DLC1/CareerMode/Clusters/Rasalhague_7_10/Rasalhague_7_10_ClusterAsset.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/Clusters/Rasalhague_7_10/Rasalhague_7_10_ClusterAsset.uexp",
+          "size": 840,
+          "uncompressed_size": 840
+        },
+        "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.uasset",
+          "size": 8767,
+          "uncompressed_size": 8767
+        },
+        "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.uexp",
+          "size": 297,
+          "uncompressed_size": 297
+        },
+        "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.uasset",
+          "size": 8188,
+          "uncompressed_size": 8188
+        },
+        "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.uexp",
+          "size": 4549,
+          "uncompressed_size": 4549
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode.uasset",
+          "size": 4593,
+          "uncompressed_size": 4593
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode.uexp",
+          "size": 593,
+          "uncompressed_size": 593
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.uasset",
+          "size": 4011,
+          "uncompressed_size": 4011
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.uexp",
+          "size": 20047,
+          "uncompressed_size": 20047
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.uasset",
+          "size": 3549,
+          "uncompressed_size": 3549
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.uexp",
+          "size": 14709,
+          "uncompressed_size": 14709
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.uasset",
+          "size": 4074,
+          "uncompressed_size": 4074
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.uexp",
+          "size": 20863,
+          "uncompressed_size": 20863
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.uasset",
+          "size": 3497,
+          "uncompressed_size": 3497
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.uexp",
+          "size": 15337,
+          "uncompressed_size": 15337
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.uasset",
+          "size": 3912,
+          "uncompressed_size": 3912
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.uexp",
+          "size": 20493,
+          "uncompressed_size": 20493
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.uasset",
+          "size": 3405,
+          "uncompressed_size": 3405
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.uexp",
+          "size": 15155,
+          "uncompressed_size": 15155
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.uasset",
+          "size": 3930,
+          "uncompressed_size": 3930
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.uexp",
+          "size": 20767,
+          "uncompressed_size": 20767
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.uasset",
+          "size": 3417,
+          "uncompressed_size": 3417
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.uexp",
+          "size": 15429,
+          "uncompressed_size": 15429
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.uasset",
+          "size": 4006,
+          "uncompressed_size": 4006
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.uexp",
+          "size": 21838,
+          "uncompressed_size": 21838
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.uasset",
+          "size": 3461,
+          "uncompressed_size": 3461
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.uexp",
+          "size": 16500,
+          "uncompressed_size": 16500
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Start.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Start.uasset",
+          "size": 3289,
+          "uncompressed_size": 3289
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Start.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Start.uexp",
+          "size": 20296,
+          "uncompressed_size": 20296
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.uasset",
+          "size": 4096,
+          "uncompressed_size": 4096
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.uexp",
+          "size": 19850,
+          "uncompressed_size": 19850
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.uasset",
+          "size": 3460,
+          "uncompressed_size": 3460
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.uexp",
+          "size": 14512,
+          "uncompressed_size": 14512
+        },
+        "/Game/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.uasset",
+          "size": 3295,
+          "uncompressed_size": 3295
+        },
+        "/Game/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.uexp",
+          "size": 20296,
+          "uncompressed_size": 20296
+        },
+        "/Game/InnerSphereData/MW5_InnerSphereData.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/InnerSphereData/MW5_InnerSphereData.uasset",
+          "size": 46392,
+          "uncompressed_size": 46392
+        },
+        "/Game/InnerSphereData/MW5_InnerSphereData.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/InnerSphereData/MW5_InnerSphereData.uexp",
+          "size": 1729727,
+          "uncompressed_size": 1729727
+        },
+        "/Game/InnerSphereData/StarSystemGenerator.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/InnerSphereData/StarSystemGenerator.uasset",
+          "size": 18857,
+          "uncompressed_size": 18857
+        },
+        "/Game/InnerSphereData/StarSystemGenerator.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/InnerSphereData/StarSystemGenerator.uexp",
+          "size": 106888,
+          "uncompressed_size": 106888
+        },
+        "/Game/Levels/FrontEnd/StarMap.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/Levels/FrontEnd/StarMap.uexp",
+          "size": 1690408,
+          "uncompressed_size": 1690408
+        },
+        "/Game/Levels/FrontEnd/StarMap.umap": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/Levels/FrontEnd/StarMap.umap",
+          "size": 891398,
+          "uncompressed_size": 891398
+        },
+        "/Game/Modes/CampaignMode.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/Modes/CampaignMode.uasset",
+          "size": 14921,
+          "uncompressed_size": 14921
+        },
+        "/Game/Modes/CampaignMode.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/Modes/CampaignMode.uexp",
+          "size": 34509,
+          "uncompressed_size": 34509
+        },
+        "/Game/Modes/MW5GameMode.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/Modes/MW5GameMode.uasset",
+          "size": 7941,
+          "uncompressed_size": 7941
+        },
+        "/Game/Modes/MW5GameMode.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/Modes/MW5GameMode.uexp",
+          "size": 1480,
+          "uncompressed_size": 1480
+        },
+        "/Game/UI/FrontEnd/StarMapPawn.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/UI/FrontEnd/StarMapPawn.uasset",
+          "size": 3442,
+          "uncompressed_size": 3442
+        },
+        "/Game/UI/FrontEnd/StarMapPawn.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/UI/FrontEnd/StarMapPawn.uexp",
+          "size": 650,
+          "uncompressed_size": 650
+        }
+      },
+      "target_entry_count": 52
+    },
+    {
+      "entry_count": 72,
+      "exists": true,
+      "file_size": 7977893,
+      "mount_point": "../../../MW5Mercs/Content/",
+      "path": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Content\\Paks\\MW5Mercs-zzzzTKUCompatEditorPatch.pak",
+      "sha256": "158B2C6A203646E6595C761F8B8D310B4792A6C9E6C1A9330D34B81E71D2B405",
+      "target_entries": {
+        "/Game/Campaign/Clusters/TKU_ClanConflict/ClanConflict.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "Campaign/Clusters/TKU_ClanConflict/ClanConflict.uasset",
+          "size": 1064,
+          "uncompressed_size": 1064
+        },
+        "/Game/Campaign/Clusters/TKU_ClanConflict/ClanConflict.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "Campaign/Clusters/TKU_ClanConflict/ClanConflict.uexp",
+          "size": 529,
+          "uncompressed_size": 529
+        },
+        "/Game/Campaign/Clusters/TKU_ClanConflict/TKU_ClanConflict_NoOverlay_ClusterAsset.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "Campaign/Clusters/TKU_ClanConflict/TKU_ClanConflict_NoOverlay_ClusterAsset.uasset",
+          "size": 2735,
+          "uncompressed_size": 2735
+        },
+        "/Game/Campaign/Clusters/TKU_ClanConflict/TKU_ClanConflict_NoOverlay_ClusterAsset.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "Campaign/Clusters/TKU_ClanConflict/TKU_ClanConflict_NoOverlay_ClusterAsset.uexp",
+          "size": 949,
+          "uncompressed_size": 949
+        },
+        "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_1/TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_1/TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset.uasset",
+          "size": 2927,
+          "uncompressed_size": 2927
+        },
+        "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_1/TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_1/TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset.uexp",
+          "size": 890,
+          "uncompressed_size": 890
+        },
+        "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_2/TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_2/TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset.uasset",
+          "size": 2927,
+          "uncompressed_size": 2927
+        },
+        "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_2/TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_2/TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset.uexp",
+          "size": 890,
+          "uncompressed_size": 890
+        },
+        "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_3/TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_3/TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset.uasset",
+          "size": 2927,
+          "uncompressed_size": 2927
+        },
+        "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_3/TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_3/TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset.uexp",
+          "size": 890,
+          "uncompressed_size": 890
+        },
+        "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_4/TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_4/TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset.uasset",
+          "size": 2927,
+          "uncompressed_size": 2927
+        },
+        "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_4/TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_4/TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset.uexp",
+          "size": 890,
+          "uncompressed_size": 890
+        },
+        "/Game/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.uasset",
+          "size": 1291,
+          "uncompressed_size": 1291
+        },
+        "/Game/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.uexp",
+          "size": 616,
+          "uncompressed_size": 616
+        },
+        "/Game/Campaign/Clusters/TKU_RepairSystem_Clan/TKU_RepairSystem_Clan_NoOverlay_ClusterAsset.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "Campaign/Clusters/TKU_RepairSystem_Clan/TKU_RepairSystem_Clan_NoOverlay_ClusterAsset.uasset",
+          "size": 2694,
+          "uncompressed_size": 2694
+        },
+        "/Game/Campaign/Clusters/TKU_RepairSystem_Clan/TKU_RepairSystem_Clan_NoOverlay_ClusterAsset.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "Campaign/Clusters/TKU_RepairSystem_Clan/TKU_RepairSystem_Clan_NoOverlay_ClusterAsset.uexp",
+          "size": 757,
+          "uncompressed_size": 757
+        },
+        "/Game/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset.uasset",
+          "size": 3105,
+          "uncompressed_size": 3105
+        },
+        "/Game/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset.uexp",
+          "size": 799,
+          "uncompressed_size": 799
+        },
+        "/Game/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset.uasset",
+          "size": 3105,
+          "uncompressed_size": 3105
+        },
+        "/Game/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset.uexp",
+          "size": 799,
+          "uncompressed_size": 799
+        },
+        "/Game/Campaign/_common/DefaultSystemGenerator.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "Campaign/_common/DefaultSystemGenerator.uasset",
+          "size": 6218,
+          "uncompressed_size": 6218
+        },
+        "/Game/Campaign/_common/DefaultSystemGenerator.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "Campaign/_common/DefaultSystemGenerator.uexp",
+          "size": 5182,
+          "uncompressed_size": 5182
+        },
+        "/Game/DLC1/CareerMode/CareerModeCoreCampaign.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/CareerModeCoreCampaign.uasset",
+          "size": 5260,
+          "uncompressed_size": 5260
+        },
+        "/Game/DLC1/CareerMode/CareerModeCoreCampaign.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/CareerModeCoreCampaign.uexp",
+          "size": 12210,
+          "uncompressed_size": 12210
+        },
+        "/Game/DLC1/CareerMode/Clusters/Rasalhague_7_10/Rasalhague_7_10_ClusterAsset.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/Clusters/Rasalhague_7_10/Rasalhague_7_10_ClusterAsset.uasset",
+          "size": 2792,
+          "uncompressed_size": 2792
+        },
+        "/Game/DLC1/CareerMode/Clusters/Rasalhague_7_10/Rasalhague_7_10_ClusterAsset.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/Clusters/Rasalhague_7_10/Rasalhague_7_10_ClusterAsset.uexp",
+          "size": 852,
+          "uncompressed_size": 852
+        },
+        "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.uasset",
+          "size": 8795,
+          "uncompressed_size": 8795
+        },
+        "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.uexp",
+          "size": 297,
+          "uncompressed_size": 297
+        },
+        "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.uasset",
+          "size": 8216,
+          "uncompressed_size": 8216
+        },
+        "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.uexp",
+          "size": 4549,
+          "uncompressed_size": 4549
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/StartConditions/CareerMode.uasset",
+          "size": 4677,
+          "uncompressed_size": 4677
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/StartConditions/CareerMode.uexp",
+          "size": 593,
+          "uncompressed_size": 593
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.uasset",
+          "size": 4095,
+          "uncompressed_size": 4095
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.uexp",
+          "size": 20047,
+          "uncompressed_size": 20047
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.uasset",
+          "size": 3633,
+          "uncompressed_size": 3633
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.uexp",
+          "size": 14709,
+          "uncompressed_size": 14709
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.uasset",
+          "size": 4158,
+          "uncompressed_size": 4158
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.uexp",
+          "size": 20863,
+          "uncompressed_size": 20863
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.uasset",
+          "size": 3581,
+          "uncompressed_size": 3581
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.uexp",
+          "size": 15337,
+          "uncompressed_size": 15337
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.uasset",
+          "size": 3996,
+          "uncompressed_size": 3996
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.uexp",
+          "size": 20493,
+          "uncompressed_size": 20493
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.uasset",
+          "size": 3489,
+          "uncompressed_size": 3489
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.uexp",
+          "size": 15155,
+          "uncompressed_size": 15155
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.uasset",
+          "size": 4014,
+          "uncompressed_size": 4014
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.uexp",
+          "size": 20767,
+          "uncompressed_size": 20767
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.uasset",
+          "size": 3501,
+          "uncompressed_size": 3501
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.uexp",
+          "size": 15429,
+          "uncompressed_size": 15429
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.uasset",
+          "size": 4090,
+          "uncompressed_size": 4090
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.uexp",
+          "size": 21838,
+          "uncompressed_size": 21838
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.uasset",
+          "size": 3545,
+          "uncompressed_size": 3545
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.uexp",
+          "size": 16500,
+          "uncompressed_size": 16500
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Start.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Start.uasset",
+          "size": 3345,
+          "uncompressed_size": 3345
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Start.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Start.uexp",
+          "size": 20296,
+          "uncompressed_size": 20296
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.uasset",
+          "size": 4180,
+          "uncompressed_size": 4180
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.uexp",
+          "size": 19850,
+          "uncompressed_size": 19850
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.uasset",
+          "size": 3544,
+          "uncompressed_size": 3544
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.uexp",
+          "size": 14512,
+          "uncompressed_size": 14512
+        },
+        "/Game/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.uasset",
+          "size": 3351,
+          "uncompressed_size": 3351
+        },
+        "/Game/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.uexp",
+          "size": 20296,
+          "uncompressed_size": 20296
+        },
+        "/Game/InnerSphereData/MW5_InnerSphereData.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "InnerSphereData/MW5_InnerSphereData.uasset",
+          "size": 73485,
+          "uncompressed_size": 73485
+        },
+        "/Game/InnerSphereData/MW5_InnerSphereData.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "InnerSphereData/MW5_InnerSphereData.uexp",
+          "size": 3167256,
+          "uncompressed_size": 3167256
+        },
+        "/Game/InnerSphereData/StarSystemGenerator.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "InnerSphereData/StarSystemGenerator.uasset",
+          "size": 19081,
+          "uncompressed_size": 19081
+        },
+        "/Game/InnerSphereData/StarSystemGenerator.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "InnerSphereData/StarSystemGenerator.uexp",
+          "size": 106917,
+          "uncompressed_size": 106917
+        },
+        "/Game/Levels/FrontEnd/StarMap.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "Levels/FrontEnd/StarMap.uexp",
+          "size": 2490052,
+          "uncompressed_size": 2490052
+        },
+        "/Game/Levels/FrontEnd/StarMap.umap": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "Levels/FrontEnd/StarMap.umap",
+          "size": 1646045,
+          "uncompressed_size": 1646045
+        },
+        "/Game/Modes/CampaignMode.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "Modes/CampaignMode.uasset",
+          "size": 14977,
+          "uncompressed_size": 14977
+        },
+        "/Game/Modes/CampaignMode.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "Modes/CampaignMode.uexp",
+          "size": 34509,
+          "uncompressed_size": 34509
+        },
+        "/Game/Modes/MW5GameMode.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "Modes/MW5GameMode.uasset",
+          "size": 8081,
+          "uncompressed_size": 8081
+        },
+        "/Game/Modes/MW5GameMode.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "Modes/MW5GameMode.uexp",
+          "size": 1480,
+          "uncompressed_size": 1480
+        },
+        "/Game/UI/FrontEnd/StarMapPawn.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "UI/FrontEnd/StarMapPawn.uasset",
+          "size": 3524,
+          "uncompressed_size": 3524
+        },
+        "/Game/UI/FrontEnd/StarMapPawn.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "UI/FrontEnd/StarMapPawn.uexp",
+          "size": 724,
+          "uncompressed_size": 724
+        }
+      },
+      "target_entry_count": 72
+    }
+  ],
+  "content_conflicts_before": [
+    {
+      "entry_count": 239830,
+      "exists": true,
+      "file_size": 79065809048,
+      "mount_point": "../../../",
+      "path": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Content\\Paks\\MW5Mercs-WindowsNoEditor.pak",
+      "sha256": null,
+      "sha256_skipped": "file is larger than 512 MiB",
+      "target_entries": {
+        "/Game/Campaign/Clusters/TKU_ClanConflict/ClanConflict.uasset": null,
+        "/Game/Campaign/Clusters/TKU_ClanConflict/ClanConflict.uexp": null,
+        "/Game/Campaign/Clusters/TKU_ClanConflict/TKU_ClanConflict_NoOverlay_ClusterAsset.uasset": null,
+        "/Game/Campaign/Clusters/TKU_ClanConflict/TKU_ClanConflict_NoOverlay_ClusterAsset.uexp": null,
+        "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_1/TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset.uasset": null,
+        "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_1/TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset.uexp": null,
+        "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_2/TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset.uasset": null,
+        "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_2/TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset.uexp": null,
+        "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_3/TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset.uasset": null,
+        "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_3/TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset.uexp": null,
+        "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_4/TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset.uasset": null,
+        "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_4/TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset.uexp": null,
+        "/Game/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.uasset": null,
+        "/Game/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.uexp": null,
+        "/Game/Campaign/Clusters/TKU_RepairSystem_Clan/TKU_RepairSystem_Clan_NoOverlay_ClusterAsset.uasset": null,
+        "/Game/Campaign/Clusters/TKU_RepairSystem_Clan/TKU_RepairSystem_Clan_NoOverlay_ClusterAsset.uexp": null,
+        "/Game/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset.uasset": null,
+        "/Game/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset.uexp": null,
+        "/Game/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset.uasset": null,
+        "/Game/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset.uexp": null,
+        "/Game/Campaign/_common/DefaultSystemGenerator.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/Campaign/_common/DefaultSystemGenerator.uasset",
+          "size": 6190,
+          "uncompressed_size": 6190
+        },
+        "/Game/Campaign/_common/DefaultSystemGenerator.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/Campaign/_common/DefaultSystemGenerator.uexp",
+          "size": 5182,
+          "uncompressed_size": 5182
+        },
+        "/Game/DLC1/CareerMode/CareerModeCoreCampaign.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/CareerModeCoreCampaign.uasset",
+          "size": 5176,
+          "uncompressed_size": 5176
+        },
+        "/Game/DLC1/CareerMode/CareerModeCoreCampaign.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/CareerModeCoreCampaign.uexp",
+          "size": 12210,
+          "uncompressed_size": 12210
+        },
+        "/Game/DLC1/CareerMode/Clusters/Rasalhague_7_10/Rasalhague_7_10_ClusterAsset.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/Clusters/Rasalhague_7_10/Rasalhague_7_10_ClusterAsset.uasset",
+          "size": 2764,
+          "uncompressed_size": 2764
+        },
+        "/Game/DLC1/CareerMode/Clusters/Rasalhague_7_10/Rasalhague_7_10_ClusterAsset.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/Clusters/Rasalhague_7_10/Rasalhague_7_10_ClusterAsset.uexp",
+          "size": 840,
+          "uncompressed_size": 840
+        },
+        "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.uasset",
+          "size": 8767,
+          "uncompressed_size": 8767
+        },
+        "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.uexp",
+          "size": 297,
+          "uncompressed_size": 297
+        },
+        "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.uasset",
+          "size": 8188,
+          "uncompressed_size": 8188
+        },
+        "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.uexp",
+          "size": 4549,
+          "uncompressed_size": 4549
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode.uasset",
+          "size": 4593,
+          "uncompressed_size": 4593
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode.uexp",
+          "size": 593,
+          "uncompressed_size": 593
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.uasset",
+          "size": 4011,
+          "uncompressed_size": 4011
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.uexp",
+          "size": 20047,
+          "uncompressed_size": 20047
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.uasset",
+          "size": 3549,
+          "uncompressed_size": 3549
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.uexp",
+          "size": 14709,
+          "uncompressed_size": 14709
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.uasset",
+          "size": 4074,
+          "uncompressed_size": 4074
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.uexp",
+          "size": 20863,
+          "uncompressed_size": 20863
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.uasset",
+          "size": 3497,
+          "uncompressed_size": 3497
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.uexp",
+          "size": 15337,
+          "uncompressed_size": 15337
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.uasset",
+          "size": 3912,
+          "uncompressed_size": 3912
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.uexp",
+          "size": 20493,
+          "uncompressed_size": 20493
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.uasset",
+          "size": 3405,
+          "uncompressed_size": 3405
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.uexp",
+          "size": 15155,
+          "uncompressed_size": 15155
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.uasset",
+          "size": 3930,
+          "uncompressed_size": 3930
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.uexp",
+          "size": 20767,
+          "uncompressed_size": 20767
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.uasset",
+          "size": 3417,
+          "uncompressed_size": 3417
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.uexp",
+          "size": 15429,
+          "uncompressed_size": 15429
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.uasset",
+          "size": 4006,
+          "uncompressed_size": 4006
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.uexp",
+          "size": 21838,
+          "uncompressed_size": 21838
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.uasset",
+          "size": 3461,
+          "uncompressed_size": 3461
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.uexp",
+          "size": 16500,
+          "uncompressed_size": 16500
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Start.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Start.uasset",
+          "size": 3289,
+          "uncompressed_size": 3289
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Start.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Start.uexp",
+          "size": 20296,
+          "uncompressed_size": 20296
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.uasset",
+          "size": 4096,
+          "uncompressed_size": 4096
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.uexp",
+          "size": 19850,
+          "uncompressed_size": 19850
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.uasset",
+          "size": 3460,
+          "uncompressed_size": 3460
+        },
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.uexp",
+          "size": 14512,
+          "uncompressed_size": 14512
+        },
+        "/Game/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.uasset",
+          "size": 3295,
+          "uncompressed_size": 3295
+        },
+        "/Game/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.uexp",
+          "size": 20296,
+          "uncompressed_size": 20296
+        },
+        "/Game/InnerSphereData/MW5_InnerSphereData.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/InnerSphereData/MW5_InnerSphereData.uasset",
+          "size": 46392,
+          "uncompressed_size": 46392
+        },
+        "/Game/InnerSphereData/MW5_InnerSphereData.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/InnerSphereData/MW5_InnerSphereData.uexp",
+          "size": 1729727,
+          "uncompressed_size": 1729727
+        },
+        "/Game/InnerSphereData/StarSystemGenerator.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/InnerSphereData/StarSystemGenerator.uasset",
+          "size": 18857,
+          "uncompressed_size": 18857
+        },
+        "/Game/InnerSphereData/StarSystemGenerator.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/InnerSphereData/StarSystemGenerator.uexp",
+          "size": 106888,
+          "uncompressed_size": 106888
+        },
+        "/Game/Levels/FrontEnd/StarMap.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/Levels/FrontEnd/StarMap.uexp",
+          "size": 1690408,
+          "uncompressed_size": 1690408
+        },
+        "/Game/Levels/FrontEnd/StarMap.umap": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/Levels/FrontEnd/StarMap.umap",
+          "size": 891398,
+          "uncompressed_size": 891398
+        },
+        "/Game/Modes/CampaignMode.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/Modes/CampaignMode.uasset",
+          "size": 14921,
+          "uncompressed_size": 14921
+        },
+        "/Game/Modes/CampaignMode.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/Modes/CampaignMode.uexp",
+          "size": 34509,
+          "uncompressed_size": 34509
+        },
+        "/Game/Modes/MW5GameMode.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/Modes/MW5GameMode.uasset",
+          "size": 7941,
+          "uncompressed_size": 7941
+        },
+        "/Game/Modes/MW5GameMode.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/Modes/MW5GameMode.uexp",
+          "size": 1480,
+          "uncompressed_size": 1480
+        },
+        "/Game/UI/FrontEnd/StarMapPawn.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/UI/FrontEnd/StarMapPawn.uasset",
+          "size": 3442,
+          "uncompressed_size": 3442
+        },
+        "/Game/UI/FrontEnd/StarMapPawn.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/UI/FrontEnd/StarMapPawn.uexp",
+          "size": 650,
+          "uncompressed_size": 650
+        }
+      },
+      "target_entry_count": 52
+    },
+    {
+      "entry_count": 8,
+      "exists": true,
+      "file_size": 7508403,
+      "mount_point": "../../../MW5Mercs/Content/",
+      "path": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Content\\Paks\\MW5Mercs-zzzzTKUCompatEditorPatch.pak",
+      "sha256": "4414AC6DA60FD9D04E5BCB9098E0D716A689912AF4C484288AD54680537860DC",
+      "target_entries": {
+        "/Game/Campaign/Clusters/TKU_ClanConflict/ClanConflict.uasset": null,
+        "/Game/Campaign/Clusters/TKU_ClanConflict/ClanConflict.uexp": null,
+        "/Game/Campaign/Clusters/TKU_ClanConflict/TKU_ClanConflict_NoOverlay_ClusterAsset.uasset": null,
+        "/Game/Campaign/Clusters/TKU_ClanConflict/TKU_ClanConflict_NoOverlay_ClusterAsset.uexp": null,
+        "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_1/TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset.uasset": null,
+        "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_1/TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset.uexp": null,
+        "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_2/TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset.uasset": null,
+        "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_2/TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset.uexp": null,
+        "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_3/TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset.uasset": null,
+        "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_3/TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset.uexp": null,
+        "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_4/TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset.uasset": null,
+        "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_4/TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset.uexp": null,
+        "/Game/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.uasset": null,
+        "/Game/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.uexp": null,
+        "/Game/Campaign/Clusters/TKU_RepairSystem_Clan/TKU_RepairSystem_Clan_NoOverlay_ClusterAsset.uasset": null,
+        "/Game/Campaign/Clusters/TKU_RepairSystem_Clan/TKU_RepairSystem_Clan_NoOverlay_ClusterAsset.uexp": null,
+        "/Game/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset.uasset": null,
+        "/Game/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset.uexp": null,
+        "/Game/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset.uasset": null,
+        "/Game/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset.uexp": null,
+        "/Game/Campaign/_common/DefaultSystemGenerator.uasset": null,
+        "/Game/Campaign/_common/DefaultSystemGenerator.uexp": null,
+        "/Game/DLC1/CareerMode/CareerModeCoreCampaign.uasset": null,
+        "/Game/DLC1/CareerMode/CareerModeCoreCampaign.uexp": null,
+        "/Game/DLC1/CareerMode/Clusters/Rasalhague_7_10/Rasalhague_7_10_ClusterAsset.uasset": null,
+        "/Game/DLC1/CareerMode/Clusters/Rasalhague_7_10/Rasalhague_7_10_ClusterAsset.uexp": null,
+        "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.uasset": null,
+        "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.uexp": null,
+        "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.uasset": null,
+        "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.uexp": null,
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode.uasset": null,
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode.uexp": null,
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.uasset": null,
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.uexp": null,
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.uasset": null,
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.uexp": null,
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.uasset": null,
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.uexp": null,
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.uasset": null,
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.uexp": null,
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.uasset": null,
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.uexp": null,
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.uasset": null,
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.uexp": null,
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.uasset": null,
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.uexp": null,
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.uasset": null,
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.uexp": null,
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.uasset": null,
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.uexp": null,
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.uasset": null,
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.uexp": null,
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Start.uasset": null,
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Start.uexp": null,
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.uasset": null,
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.uexp": null,
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.uasset": null,
+        "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.uexp": null,
+        "/Game/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.uasset": null,
+        "/Game/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.uexp": null,
+        "/Game/InnerSphereData/MW5_InnerSphereData.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "InnerSphereData/MW5_InnerSphereData.uasset",
+          "size": 73485,
+          "uncompressed_size": 73485
+        },
+        "/Game/InnerSphereData/MW5_InnerSphereData.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "InnerSphereData/MW5_InnerSphereData.uexp",
+          "size": 3167256,
+          "uncompressed_size": 3167256
+        },
+        "/Game/InnerSphereData/StarSystemGenerator.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "InnerSphereData/StarSystemGenerator.uasset",
+          "size": 19081,
+          "uncompressed_size": 19081
+        },
+        "/Game/InnerSphereData/StarSystemGenerator.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "InnerSphereData/StarSystemGenerator.uexp",
+          "size": 106917,
+          "uncompressed_size": 106917
+        },
+        "/Game/Levels/FrontEnd/StarMap.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "Levels/FrontEnd/StarMap.uexp",
+          "size": 2490052,
+          "uncompressed_size": 2490052
+        },
+        "/Game/Levels/FrontEnd/StarMap.umap": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "Levels/FrontEnd/StarMap.umap",
+          "size": 1646045,
+          "uncompressed_size": 1646045
+        },
+        "/Game/Modes/CampaignMode.uasset": null,
+        "/Game/Modes/CampaignMode.uexp": null,
+        "/Game/Modes/MW5GameMode.uasset": null,
+        "/Game/Modes/MW5GameMode.uexp": null,
+        "/Game/UI/FrontEnd/StarMapPawn.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "UI/FrontEnd/StarMapPawn.uasset",
+          "size": 3524,
+          "uncompressed_size": 3524
+        },
+        "/Game/UI/FrontEnd/StarMapPawn.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "UI/FrontEnd/StarMapPawn.uexp",
+          "size": 724,
+          "uncompressed_size": 724
+        }
+      },
+      "target_entry_count": 8
+    }
+  ],
+  "generated_utc": "2026-05-25T09:31:09.056841+00:00",
+  "live_backup": "D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\backups\\content_mirror_20260525-193109\\MW5Mercs-zzzzTKUCompatEditorPatch.pak",
+  "live_disabled_backup": null,
+  "live_disabled_exists_after": false,
+  "live_disabled_pak": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Content\\Paks\\MW5Mercs-zzzzTKUCompatEditorPatch.pak.disabled-by-tku-isolation",
+  "live_pak": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Content\\Paks\\MW5Mercs-zzzzTKUCompatEditorPatch.pak",
+  "live_sha256_after": "158B2C6A203646E6595C761F8B8D310B4792A6C9E6C1A9330D34B81E71D2B405",
+  "mirror_scope": "all-game",
+  "mirrored_paths": [
+    "/Game/Campaign/Clusters/TKU_ClanConflict/ClanConflict.uasset",
+    "/Game/Campaign/Clusters/TKU_ClanConflict/ClanConflict.uexp",
+    "/Game/Campaign/Clusters/TKU_ClanConflict/TKU_ClanConflict_NoOverlay_ClusterAsset.uasset",
+    "/Game/Campaign/Clusters/TKU_ClanConflict/TKU_ClanConflict_NoOverlay_ClusterAsset.uexp",
+    "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_1/TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset.uasset",
+    "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_1/TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset.uexp",
+    "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_2/TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset.uasset",
+    "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_2/TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset.uexp",
+    "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_3/TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset.uasset",
+    "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_3/TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset.uexp",
+    "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_4/TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset.uasset",
+    "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_4/TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset.uexp",
+    "/Game/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.uasset",
+    "/Game/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.uexp",
+    "/Game/Campaign/Clusters/TKU_RepairSystem_Clan/TKU_RepairSystem_Clan_NoOverlay_ClusterAsset.uasset",
+    "/Game/Campaign/Clusters/TKU_RepairSystem_Clan/TKU_RepairSystem_Clan_NoOverlay_ClusterAsset.uexp",
+    "/Game/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset.uasset",
+    "/Game/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset.uexp",
+    "/Game/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset.uasset",
+    "/Game/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset.uexp",
+    "/Game/Campaign/_common/DefaultSystemGenerator.uasset",
+    "/Game/Campaign/_common/DefaultSystemGenerator.uexp",
+    "/Game/DLC1/CareerMode/CareerModeCoreCampaign.uasset",
+    "/Game/DLC1/CareerMode/CareerModeCoreCampaign.uexp",
+    "/Game/DLC1/CareerMode/Clusters/Rasalhague_7_10/Rasalhague_7_10_ClusterAsset.uasset",
+    "/Game/DLC1/CareerMode/Clusters/Rasalhague_7_10/Rasalhague_7_10_ClusterAsset.uexp",
+    "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.uasset",
+    "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.uexp",
+    "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.uasset",
+    "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.uexp",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode.uasset",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode.uexp",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.uasset",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.uexp",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.uasset",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.uexp",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.uasset",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.uexp",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.uasset",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.uexp",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.uasset",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.uexp",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.uasset",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.uexp",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.uasset",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.uexp",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.uasset",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.uexp",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.uasset",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.uexp",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.uasset",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.uexp",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Start.uasset",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Start.uexp",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.uasset",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.uexp",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.uasset",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.uexp",
+    "/Game/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.uasset",
+    "/Game/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.uexp",
+    "/Game/InnerSphereData/MW5_InnerSphereData.uasset",
+    "/Game/InnerSphereData/MW5_InnerSphereData.uexp",
+    "/Game/InnerSphereData/StarSystemGenerator.uasset",
+    "/Game/InnerSphereData/StarSystemGenerator.uexp",
+    "/Game/Levels/FrontEnd/StarMap.uexp",
+    "/Game/Levels/FrontEnd/StarMap.umap",
+    "/Game/Modes/CampaignMode.uasset",
+    "/Game/Modes/CampaignMode.uexp",
+    "/Game/Modes/MW5GameMode.uasset",
+    "/Game/Modes/MW5GameMode.uexp",
+    "/Game/UI/FrontEnd/StarMapPawn.uasset",
+    "/Game/UI/FrontEnd/StarMapPawn.uexp"
+  ],
+  "report_json": "D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\tku_content_mirror_20260525-193109.json",
+  "report_md": "D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\tku_content_mirror_20260525-193109.md",
+  "safety_failures": [],
+  "source_pak": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\TKUCompatEditorPatch\\Paks\\TKUCompatEditorPatch.pak",
+  "source_pak_candidates": [
+    {
+      "exists": true,
+      "file_size": 8003375,
+      "last_write_utc": "2026-05-25T06:35:01.290296+00:00",
+      "path": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\TKUCompatEditorPatch\\Paks\\TKUCompatEditorPatch.pak",
+      "sha256": "AB3D9FFAA0E1D0E0724647329889A42C1B490211EC61D14177A93D0659CE3AA6"
+    },
+    {
+      "exists": true,
+      "file_size": 8003375,
+      "last_write_utc": "2026-05-25T06:35:01.290296+00:00",
+      "path": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Mods\\TKUCompatEditorPatch\\TKUCompatEditorPatch\\TKUCompatEditorPatch\\Paks\\TKUCompatEditorPatch.pak",
+      "sha256": "AB3D9FFAA0E1D0E0724647329889A42C1B490211EC61D14177A93D0659CE3AA6"
+    },
+    {
+      "exists": true,
+      "file_size": 7578679,
+      "last_write_utc": "2026-05-24T16:50:49.596112+00:00",
+      "path": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Mods\\TKUCompatEditorPatch\\TKUCompatEditorPatch\\Paks\\TKUCompatEditorPatch.pak",
+      "sha256": "4EFE99533ECB084EE69CF54B22302671EDBC5B57B520E6A3A823B2599629D687"
+    },
+    {
+      "exists": true,
+      "file_size": 7518200,
+      "last_write_utc": "2026-05-11T23:20:16.876441+00:00",
+      "path": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Mods\\TKUCompatEditorPatch\\Paks\\TKUCompatEditorPatch.pak",
+      "sha256": "FB5F798061ADFF1DC78A4CD350541E530692C3C681061D639C24107895CB746C"
+    }
+  ],
+  "staged_inventory": {
+    "entry_count": 72,
+    "exists": true,
+    "file_size": 7977893,
+    "mount_point": "../../../MW5Mercs/Content/",
+    "path": "D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\staging\\MW5Mercs-zzzzTKUCompatEditorPatch-20260525-193109.pak",
+    "sha256": "158B2C6A203646E6595C761F8B8D310B4792A6C9E6C1A9330D34B81E71D2B405",
+    "target_entries": {
+      "/Game/Campaign/Clusters/TKU_ClanConflict/ClanConflict.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "Campaign/Clusters/TKU_ClanConflict/ClanConflict.uasset",
+        "size": 1064,
+        "uncompressed_size": 1064
+      },
+      "/Game/Campaign/Clusters/TKU_ClanConflict/ClanConflict.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "Campaign/Clusters/TKU_ClanConflict/ClanConflict.uexp",
+        "size": 529,
+        "uncompressed_size": 529
+      },
+      "/Game/Campaign/Clusters/TKU_ClanConflict/TKU_ClanConflict_NoOverlay_ClusterAsset.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "Campaign/Clusters/TKU_ClanConflict/TKU_ClanConflict_NoOverlay_ClusterAsset.uasset",
+        "size": 2735,
+        "uncompressed_size": 2735
+      },
+      "/Game/Campaign/Clusters/TKU_ClanConflict/TKU_ClanConflict_NoOverlay_ClusterAsset.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "Campaign/Clusters/TKU_ClanConflict/TKU_ClanConflict_NoOverlay_ClusterAsset.uexp",
+        "size": 949,
+        "uncompressed_size": 949
+      },
+      "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_1/TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_1/TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset.uasset",
+        "size": 2927,
+        "uncompressed_size": 2927
+      },
+      "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_1/TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_1/TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset.uexp",
+        "size": 890,
+        "uncompressed_size": 890
+      },
+      "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_2/TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_2/TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset.uasset",
+        "size": 2927,
+        "uncompressed_size": 2927
+      },
+      "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_2/TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_2/TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset.uexp",
+        "size": 890,
+        "uncompressed_size": 890
+      },
+      "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_3/TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_3/TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset.uasset",
+        "size": 2927,
+        "uncompressed_size": 2927
+      },
+      "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_3/TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_3/TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset.uexp",
+        "size": 890,
+        "uncompressed_size": 890
+      },
+      "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_4/TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_4/TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset.uasset",
+        "size": 2927,
+        "uncompressed_size": 2927
+      },
+      "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_4/TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_4/TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset.uexp",
+        "size": 890,
+        "uncompressed_size": 890
+      },
+      "/Game/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.uasset",
+        "size": 1291,
+        "uncompressed_size": 1291
+      },
+      "/Game/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.uexp",
+        "size": 616,
+        "uncompressed_size": 616
+      },
+      "/Game/Campaign/Clusters/TKU_RepairSystem_Clan/TKU_RepairSystem_Clan_NoOverlay_ClusterAsset.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "Campaign/Clusters/TKU_RepairSystem_Clan/TKU_RepairSystem_Clan_NoOverlay_ClusterAsset.uasset",
+        "size": 2694,
+        "uncompressed_size": 2694
+      },
+      "/Game/Campaign/Clusters/TKU_RepairSystem_Clan/TKU_RepairSystem_Clan_NoOverlay_ClusterAsset.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "Campaign/Clusters/TKU_RepairSystem_Clan/TKU_RepairSystem_Clan_NoOverlay_ClusterAsset.uexp",
+        "size": 757,
+        "uncompressed_size": 757
+      },
+      "/Game/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset.uasset",
+        "size": 3105,
+        "uncompressed_size": 3105
+      },
+      "/Game/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset.uexp",
+        "size": 799,
+        "uncompressed_size": 799
+      },
+      "/Game/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset.uasset",
+        "size": 3105,
+        "uncompressed_size": 3105
+      },
+      "/Game/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset.uexp",
+        "size": 799,
+        "uncompressed_size": 799
+      },
+      "/Game/Campaign/_common/DefaultSystemGenerator.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "Campaign/_common/DefaultSystemGenerator.uasset",
+        "size": 6218,
+        "uncompressed_size": 6218
+      },
+      "/Game/Campaign/_common/DefaultSystemGenerator.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "Campaign/_common/DefaultSystemGenerator.uexp",
+        "size": 5182,
+        "uncompressed_size": 5182
+      },
+      "/Game/DLC1/CareerMode/CareerModeCoreCampaign.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/CareerModeCoreCampaign.uasset",
+        "size": 5260,
+        "uncompressed_size": 5260
+      },
+      "/Game/DLC1/CareerMode/CareerModeCoreCampaign.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/CareerModeCoreCampaign.uexp",
+        "size": 12210,
+        "uncompressed_size": 12210
+      },
+      "/Game/DLC1/CareerMode/Clusters/Rasalhague_7_10/Rasalhague_7_10_ClusterAsset.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/Clusters/Rasalhague_7_10/Rasalhague_7_10_ClusterAsset.uasset",
+        "size": 2792,
+        "uncompressed_size": 2792
+      },
+      "/Game/DLC1/CareerMode/Clusters/Rasalhague_7_10/Rasalhague_7_10_ClusterAsset.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/Clusters/Rasalhague_7_10/Rasalhague_7_10_ClusterAsset.uexp",
+        "size": 852,
+        "uncompressed_size": 852
+      },
+      "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.uasset",
+        "size": 8795,
+        "uncompressed_size": 8795
+      },
+      "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.uexp",
+        "size": 297,
+        "uncompressed_size": 297
+      },
+      "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.uasset",
+        "size": 8216,
+        "uncompressed_size": 8216
+      },
+      "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.uexp",
+        "size": 4549,
+        "uncompressed_size": 4549
+      },
+      "/Game/DLC1/CareerMode/StartConditions/CareerMode.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/StartConditions/CareerMode.uasset",
+        "size": 4677,
+        "uncompressed_size": 4677
+      },
+      "/Game/DLC1/CareerMode/StartConditions/CareerMode.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/StartConditions/CareerMode.uexp",
+        "size": 593,
+        "uncompressed_size": 593
+      },
+      "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.uasset",
+        "size": 4095,
+        "uncompressed_size": 4095
+      },
+      "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.uexp",
+        "size": 20047,
+        "uncompressed_size": 20047
+      },
+      "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.uasset",
+        "size": 3633,
+        "uncompressed_size": 3633
+      },
+      "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.uexp",
+        "size": 14709,
+        "uncompressed_size": 14709
+      },
+      "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.uasset",
+        "size": 4158,
+        "uncompressed_size": 4158
+      },
+      "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.uexp",
+        "size": 20863,
+        "uncompressed_size": 20863
+      },
+      "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.uasset",
+        "size": 3581,
+        "uncompressed_size": 3581
+      },
+      "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.uexp",
+        "size": 15337,
+        "uncompressed_size": 15337
+      },
+      "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.uasset",
+        "size": 3996,
+        "uncompressed_size": 3996
+      },
+      "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.uexp",
+        "size": 20493,
+        "uncompressed_size": 20493
+      },
+      "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.uasset",
+        "size": 3489,
+        "uncompressed_size": 3489
+      },
+      "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.uexp",
+        "size": 15155,
+        "uncompressed_size": 15155
+      },
+      "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.uasset",
+        "size": 4014,
+        "uncompressed_size": 4014
+      },
+      "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.uexp",
+        "size": 20767,
+        "uncompressed_size": 20767
+      },
+      "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.uasset",
+        "size": 3501,
+        "uncompressed_size": 3501
+      },
+      "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.uexp",
+        "size": 15429,
+        "uncompressed_size": 15429
+      },
+      "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.uasset",
+        "size": 4090,
+        "uncompressed_size": 4090
+      },
+      "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.uexp",
+        "size": 21838,
+        "uncompressed_size": 21838
+      },
+      "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.uasset",
+        "size": 3545,
+        "uncompressed_size": 3545
+      },
+      "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.uexp",
+        "size": 16500,
+        "uncompressed_size": 16500
+      },
+      "/Game/DLC1/CareerMode/StartConditions/CareerMode_Start.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Start.uasset",
+        "size": 3345,
+        "uncompressed_size": 3345
+      },
+      "/Game/DLC1/CareerMode/StartConditions/CareerMode_Start.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Start.uexp",
+        "size": 20296,
+        "uncompressed_size": 20296
+      },
+      "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.uasset",
+        "size": 4180,
+        "uncompressed_size": 4180
+      },
+      "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.uexp",
+        "size": 19850,
+        "uncompressed_size": 19850
+      },
+      "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.uasset",
+        "size": 3544,
+        "uncompressed_size": 3544
+      },
+      "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.uexp",
+        "size": 14512,
+        "uncompressed_size": 14512
+      },
+      "/Game/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.uasset",
+        "size": 3351,
+        "uncompressed_size": 3351
+      },
+      "/Game/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.uexp",
+        "size": 20296,
+        "uncompressed_size": 20296
+      },
+      "/Game/InnerSphereData/MW5_InnerSphereData.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "InnerSphereData/MW5_InnerSphereData.uasset",
+        "size": 73485,
+        "uncompressed_size": 73485
+      },
+      "/Game/InnerSphereData/MW5_InnerSphereData.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "InnerSphereData/MW5_InnerSphereData.uexp",
+        "size": 3167256,
+        "uncompressed_size": 3167256
+      },
+      "/Game/InnerSphereData/StarSystemGenerator.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "InnerSphereData/StarSystemGenerator.uasset",
+        "size": 19081,
+        "uncompressed_size": 19081
+      },
+      "/Game/InnerSphereData/StarSystemGenerator.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "InnerSphereData/StarSystemGenerator.uexp",
+        "size": 106917,
+        "uncompressed_size": 106917
+      },
+      "/Game/Levels/FrontEnd/StarMap.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "Levels/FrontEnd/StarMap.uexp",
+        "size": 2490052,
+        "uncompressed_size": 2490052
+      },
+      "/Game/Levels/FrontEnd/StarMap.umap": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "Levels/FrontEnd/StarMap.umap",
+        "size": 1646045,
+        "uncompressed_size": 1646045
+      },
+      "/Game/Modes/CampaignMode.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "Modes/CampaignMode.uasset",
+        "size": 14977,
+        "uncompressed_size": 14977
+      },
+      "/Game/Modes/CampaignMode.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "Modes/CampaignMode.uexp",
+        "size": 34509,
+        "uncompressed_size": 34509
+      },
+      "/Game/Modes/MW5GameMode.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "Modes/MW5GameMode.uasset",
+        "size": 8081,
+        "uncompressed_size": 8081
+      },
+      "/Game/Modes/MW5GameMode.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "Modes/MW5GameMode.uexp",
+        "size": 1480,
+        "uncompressed_size": 1480
+      },
+      "/Game/UI/FrontEnd/StarMapPawn.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "UI/FrontEnd/StarMapPawn.uasset",
+        "size": 3524,
+        "uncompressed_size": 3524
+      },
+      "/Game/UI/FrontEnd/StarMapPawn.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "UI/FrontEnd/StarMapPawn.uexp",
+        "size": 724,
+        "uncompressed_size": 724
+      }
+    },
+    "target_entry_count": 72
+  },
+  "staged_pak": "D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\staging\\MW5Mercs-zzzzTKUCompatEditorPatch-20260525-193109.pak",
+  "staged_sha256": "158B2C6A203646E6595C761F8B8D310B4792A6C9E6C1A9330D34B81E71D2B405",
+  "staged_size": 7977893,
+  "target_paths": [
+    "/Game/Campaign/Clusters/TKU_ClanConflict/ClanConflict.uasset",
+    "/Game/Campaign/Clusters/TKU_ClanConflict/ClanConflict.uexp",
+    "/Game/Campaign/Clusters/TKU_ClanConflict/TKU_ClanConflict_NoOverlay_ClusterAsset.uasset",
+    "/Game/Campaign/Clusters/TKU_ClanConflict/TKU_ClanConflict_NoOverlay_ClusterAsset.uexp",
+    "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_1/TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset.uasset",
+    "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_1/TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset.uexp",
+    "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_2/TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset.uasset",
+    "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_2/TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset.uexp",
+    "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_3/TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset.uasset",
+    "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_3/TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset.uexp",
+    "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_4/TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset.uasset",
+    "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_4/TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset.uexp",
+    "/Game/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.uasset",
+    "/Game/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.uexp",
+    "/Game/Campaign/Clusters/TKU_RepairSystem_Clan/TKU_RepairSystem_Clan_NoOverlay_ClusterAsset.uasset",
+    "/Game/Campaign/Clusters/TKU_RepairSystem_Clan/TKU_RepairSystem_Clan_NoOverlay_ClusterAsset.uexp",
+    "/Game/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset.uasset",
+    "/Game/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset.uexp",
+    "/Game/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset.uasset",
+    "/Game/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset.uexp",
+    "/Game/Campaign/_common/DefaultSystemGenerator.uasset",
+    "/Game/Campaign/_common/DefaultSystemGenerator.uexp",
+    "/Game/DLC1/CareerMode/CareerModeCoreCampaign.uasset",
+    "/Game/DLC1/CareerMode/CareerModeCoreCampaign.uexp",
+    "/Game/DLC1/CareerMode/Clusters/Rasalhague_7_10/Rasalhague_7_10_ClusterAsset.uasset",
+    "/Game/DLC1/CareerMode/Clusters/Rasalhague_7_10/Rasalhague_7_10_ClusterAsset.uexp",
+    "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.uasset",
+    "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.uexp",
+    "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.uasset",
+    "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.uexp",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode.uasset",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode.uexp",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.uasset",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.uexp",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.uasset",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.uexp",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.uasset",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.uexp",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.uasset",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.uexp",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.uasset",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.uexp",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.uasset",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.uexp",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.uasset",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.uexp",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.uasset",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.uexp",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.uasset",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.uexp",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.uasset",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.uexp",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Start.uasset",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Start.uexp",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.uasset",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.uexp",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.uasset",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.uexp",
+    "/Game/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.uasset",
+    "/Game/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.uexp",
+    "/Game/InnerSphereData/MW5_InnerSphereData.uasset",
+    "/Game/InnerSphereData/MW5_InnerSphereData.uexp",
+    "/Game/InnerSphereData/StarSystemGenerator.uasset",
+    "/Game/InnerSphereData/StarSystemGenerator.uexp",
+    "/Game/Levels/FrontEnd/StarMap.uexp",
+    "/Game/Levels/FrontEnd/StarMap.umap",
+    "/Game/Modes/CampaignMode.uasset",
+    "/Game/Modes/CampaignMode.uexp",
+    "/Game/Modes/MW5GameMode.uasset",
+    "/Game/Modes/MW5GameMode.uexp",
+    "/Game/UI/FrontEnd/StarMapPawn.uasset",
+    "/Game/UI/FrontEnd/StarMapPawn.uexp"
+  ],
+  "timestamp": "20260525-193109",
+  "unrealpak_build": {
+    "command": [
+      "E:\\Games\\MechWarrior5Editor\\Engine\\Binaries\\Win64\\UnrealPak.exe",
+      "D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\staging\\MW5Mercs-zzzzTKUCompatEditorPatch-20260525-193109.pak",
+      "-Create=D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\staging\\content_mirror_unrealpak_response_20260525-193109.txt"
+    ],
+    "returncode": 0,
+    "stderr_tail": "",
+    "stdout_tail": "LogPakFile: Display: Using command line for crypto configuration\nLogPakFile: Display: Loading response file D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\staging\\content_mirror_unrealpak_response_20260525-193109.txt\nLogPakFile: Display: Added 72 entries to add to pak file.\nLogPakFile: Display: Collecting files to add to pak file...\nLogPakFile: Display: Collected 72 files in 0.00s.\nLogPakFile: Display: Creating pak D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\staging\\MW5Mercs-zzzzTKUCompatEditorPatch-20260525-193109.pak.\nLogDerivedDataCache: Display: Performance to ../../../Engine/DerivedDataCache: Latency=0.00ms. RandomReadSpeed=999.00MBs, RandomWriteSpeed=999.00MBs. Assigned SpeedClass 'Local'\nLogPakFile: Display: Added 72 files, 7977893 bytes total, time 0.10s.\nLogPakFile: Display: PrimaryIndex size: 995 bytes\nLogPakFile: Display: PathHashIndex size: 872 bytes\nLogPakFile: Display: FullDirectoryIndex size: 3892 bytes\nLogPakFile: Display: Encryption - DISABLED\nLogPakFile: Display: Unreal pak executed in 0.113267 seconds\n"
+  },
+  "unrealpak_exe": "E:\\Games\\MechWarrior5Editor\\Engine\\Binaries\\Win64\\UnrealPak.exe",
+  "unrealpak_response": "D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\staging\\content_mirror_unrealpak_response_20260525-193109.txt"
+}

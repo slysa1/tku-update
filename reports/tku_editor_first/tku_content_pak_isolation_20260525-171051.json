@@ -1,0 +1,29 @@
+{
+  "timestamp": "20260525-171051",
+  "generated_utc": "2026-05-25T07:10:51.4639935Z",
+  "mode": "Status",
+  "target": "CompatMirror",
+  "apply_requested": false,
+  "content_paks_root": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Content\\Paks",
+  "suffix": ".disabled-by-tku-isolation",
+  "safety_failures": [],
+  "actions": [
+    "status checked for MW5Mercs-zzzzTKUCompatEditorPatch.pak"
+  ],
+  "targets": [
+    {
+      "name": "MW5Mercs-zzzzTKUCompatEditorPatch.pak",
+      "reason": "Disable the ad hoc loose content mirror whose packaged assets still contain ModOverride internal paths.",
+      "active_path": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Content\\Paks\\MW5Mercs-zzzzTKUCompatEditorPatch.pak",
+      "disabled_path": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Content\\Paks\\MW5Mercs-zzzzTKUCompatEditorPatch.pak.disabled-by-tku-isolation",
+      "active_exists_before": false,
+      "disabled_exists_before": true,
+      "active_sha256_before": null,
+      "disabled_sha256_before": "AC3FBAFEE4E4B7F36A65C5EBAC6D8FB3B5DD0D02300674CED702F18983082E13",
+      "active_exists_after": false,
+      "disabled_exists_after": true,
+      "active_sha256_after": null,
+      "disabled_sha256_after": "AC3FBAFEE4E4B7F36A65C5EBAC6D8FB3B5DD0D02300674CED702F18983082E13"
+    }
+  ]
+}

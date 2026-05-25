@@ -1,6 +1,6 @@
 # UE4 StarMap Binding Probe - 2026-05-12
 
-- Generated: `2026-05-11T22:32:43.160173+00:00`
+- Generated: `2026-05-25T03:02:16.351684+00:00`
 - Target mod: `TKUCompatEditorPatch`
 - Map: `/Game/Levels/FrontEnd/StarMap`
 - Safety: read-only commandlet; no assets saved.
@@ -32,25 +32,25 @@
 - matched properties:
 - `star_system_body_look_up` = `{'kind': 'Map', 'count': 0, 'sample': []}`
 - `StarSystemBodyLookUp` = `{'kind': 'Map', 'count': 0, 'sample': []}`
-- `StarMapRoot` = `{'repr': "<Object '/ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapActor_2.StarMapRoot' (0x00000183F42FBD80) Class 'SceneComponent'>", 'python_type': 'SceneComponent', 'get_name': 'StarMapRoot', 'get_path_name': '/ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapActor_2.StarMapRoot', 'get_full_name': 'SceneComponent /ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapActor_2.StarMapRoot', 'unreal_class': 'SceneComponent', 'unreal_class_path': '/Script/Engine.SceneComponent'}`
-- `StarMapCamera` = `{'repr': "<Object '/ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapCamera' (0x0000018401799600) Class 'CameraActor'>", 'python_type': 'CameraActor', 'get_name': 'StarMapCamera', 'get_path_name': '/ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapCamera', 'get_full_name': 'CameraActor /ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapCamera', 'unreal_class': 'CameraActor', 'unreal_class_path': '/Script/Engine.CameraActor'}`
-- `InitialCameraTransform` = `{'repr': "<Struct 'Transform' (0x0000018408DE0720) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: 0.000000, y: 0.000000, z: 0.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>", 'python_type': 'Transform'}`
+- `StarMapRoot` = `{'repr': "<Object '/ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapActor_2.StarMapRoot' (0x000001ED8D941800) Class 'SceneComponent'>", 'python_type': 'SceneComponent', 'get_name': 'StarMapRoot', 'get_path_name': '/ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapActor_2.StarMapRoot', 'get_full_name': 'SceneComponent /ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapActor_2.StarMapRoot', 'unreal_class': 'SceneComponent', 'unreal_class_path': '/Script/Engine.SceneComponent'}`
+- `StarMapCamera` = `{'repr': "<Object '/ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapCamera' (0x000001EC98C98100) Class 'CameraActor'>", 'python_type': 'CameraActor', 'get_name': 'StarMapCamera', 'get_path_name': '/ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapCamera', 'get_full_name': 'CameraActor /ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapCamera', 'unreal_class': 'CameraActor', 'unreal_class_path': '/Script/Engine.CameraActor'}`
+- `InitialCameraTransform` = `{'repr': "<Struct 'Transform' (0x000001ED8AD03820) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: 0.000000, y: 0.000000, z: 0.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>", 'python_type': 'Transform'}`
 - `BorderActor` = `None`
-- `cluster_material` = `{'repr': "<Object '/Game/UI/FrontEnd/Starmap/Cluster_MTI.Cluster_MTI' (0x00000183F4495600) Class 'MaterialInstanceConstant'>", 'python_type': 'MaterialInstanceConstant', 'get_name': 'Cluster_MTI', 'get_path_name': '/Game/UI/FrontEnd/Starmap/Cluster_MTI.Cluster_MTI', 'get_full_name': 'MaterialInstanceConstant /Game/UI/FrontEnd/Starmap/Cluster_MTI.Cluster_MTI', 'unreal_class': 'MaterialInstanceConstant', 'unreal_class_path': '/Script/Engine.MaterialInstanceConstant'}`
-- `ClusterMaterial` = `{'repr': "<Object '/Game/UI/FrontEnd/Starmap/Cluster_MTI.Cluster_MTI' (0x00000183F4495600) Class 'MaterialInstanceConstant'>", 'python_type': 'MaterialInstanceConstant', 'get_name': 'Cluster_MTI', 'get_path_name': '/Game/UI/FrontEnd/Starmap/Cluster_MTI.Cluster_MTI', 'get_full_name': 'MaterialInstanceConstant /Game/UI/FrontEnd/Starmap/Cluster_MTI.Cluster_MTI', 'unreal_class': 'MaterialInstanceConstant', 'unreal_class_path': '/Script/Engine.MaterialInstanceConstant'}`
-- `procedural_border_mesh` = `{'repr': "<Object '/ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapActor_2.ProceduralMeshComponent' (0x0000018408DE2400) Class 'ProceduralMeshComponent'>", 'python_type': 'ProceduralMeshComponent', 'get_name': 'ProceduralMeshComponent', 'get_path_name': '/ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapActor_2.ProceduralMeshComponent', 'get_full_name': 'ProceduralMeshComponent /ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapActor_2.ProceduralMeshComponent', 'unreal_class': 'ProceduralMeshComponent', 'unreal_class_path': '/Script/ProceduralMeshComponent.ProceduralMeshComponent'}`
-- `ProceduralBorderMesh` = `{'repr': "<Object '/ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapActor_2.ProceduralMeshComponent' (0x0000018408DE2400) Class 'ProceduralMeshComponent'>", 'python_type': 'ProceduralMeshComponent', 'get_name': 'ProceduralMeshComponent', 'get_path_name': '/ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapActor_2.ProceduralMeshComponent', 'get_full_name': 'ProceduralMeshComponent /ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapActor_2.ProceduralMeshComponent', 'unreal_class': 'ProceduralMeshComponent', 'unreal_class_path': '/Script/ProceduralMeshComponent.ProceduralMeshComponent'}`
+- `cluster_material` = `{'repr': "<Object '/Game/UI/FrontEnd/Starmap/Cluster_MTI.Cluster_MTI' (0x000001ED28D04800) Class 'MaterialInstanceConstant'>", 'python_type': 'MaterialInstanceConstant', 'get_name': 'Cluster_MTI', 'get_path_name': '/Game/UI/FrontEnd/Starmap/Cluster_MTI.Cluster_MTI', 'get_full_name': 'MaterialInstanceConstant /Game/UI/FrontEnd/Starmap/Cluster_MTI.Cluster_MTI', 'unreal_class': 'MaterialInstanceConstant', 'unreal_class_path': '/Script/Engine.MaterialInstanceConstant'}`
+- `ClusterMaterial` = `{'repr': "<Object '/Game/UI/FrontEnd/Starmap/Cluster_MTI.Cluster_MTI' (0x000001ED28D04800) Class 'MaterialInstanceConstant'>", 'python_type': 'MaterialInstanceConstant', 'get_name': 'Cluster_MTI', 'get_path_name': '/Game/UI/FrontEnd/Starmap/Cluster_MTI.Cluster_MTI', 'get_full_name': 'MaterialInstanceConstant /Game/UI/FrontEnd/Starmap/Cluster_MTI.Cluster_MTI', 'unreal_class': 'MaterialInstanceConstant', 'unreal_class_path': '/Script/Engine.MaterialInstanceConstant'}`
+- `procedural_border_mesh` = `{'repr': "<Object '/ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapActor_2.ProceduralMeshComponent' (0x000001ED8AD02400) Class 'ProceduralMeshComponent'>", 'python_type': 'ProceduralMeshComponent', 'get_name': 'ProceduralMeshComponent', 'get_path_name': '/ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapActor_2.ProceduralMeshComponent', 'get_full_name': 'ProceduralMeshComponent /ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapActor_2.ProceduralMeshComponent', 'unreal_class': 'ProceduralMeshComponent', 'unreal_class_path': '/Script/ProceduralMeshComponent.ProceduralMeshComponent'}`
+- `ProceduralBorderMesh` = `{'repr': "<Object '/ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapActor_2.ProceduralMeshComponent' (0x000001ED8AD02400) Class 'ProceduralMeshComponent'>", 'python_type': 'ProceduralMeshComponent', 'get_name': 'ProceduralMeshComponent', 'get_path_name': '/ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapActor_2.ProceduralMeshComponent', 'get_full_name': 'ProceduralMeshComponent /ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapActor_2.ProceduralMeshComponent', 'unreal_class': 'ProceduralMeshComponent', 'unreal_class_path': '/Script/ProceduralMeshComponent.ProceduralMeshComponent'}`
 - CDO matched properties:
 - `star_system_body_look_up` = `{'kind': 'Map', 'count': 0, 'sample': []}`
 - `StarSystemBodyLookUp` = `{'kind': 'Map', 'count': 0, 'sample': []}`
 - `StarMapRoot` = `None`
 - `StarMapCamera` = `None`
-- `InitialCameraTransform` = `{'repr': "<Struct 'Transform' (0x00000183A6D7E320) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: 0.000000, y: 0.000000, z: 0.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>", 'python_type': 'Transform'}`
+- `InitialCameraTransform` = `{'repr': "<Struct 'Transform' (0x000001ED29AB2320) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: 0.000000, y: 0.000000, z: 0.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>", 'python_type': 'Transform'}`
 - `BorderActor` = `None`
-- `cluster_material` = `{'repr': "<Object '/Game/UI/FrontEnd/Starmap/Cluster_MTI.Cluster_MTI' (0x00000183F4495600) Class 'MaterialInstanceConstant'>", 'python_type': 'MaterialInstanceConstant', 'get_name': 'Cluster_MTI', 'get_path_name': '/Game/UI/FrontEnd/Starmap/Cluster_MTI.Cluster_MTI', 'get_full_name': 'MaterialInstanceConstant /Game/UI/FrontEnd/Starmap/Cluster_MTI.Cluster_MTI', 'unreal_class': 'MaterialInstanceConstant', 'unreal_class_path': '/Script/Engine.MaterialInstanceConstant'}`
-- `ClusterMaterial` = `{'repr': "<Object '/Game/UI/FrontEnd/Starmap/Cluster_MTI.Cluster_MTI' (0x00000183F4495600) Class 'MaterialInstanceConstant'>", 'python_type': 'MaterialInstanceConstant', 'get_name': 'Cluster_MTI', 'get_path_name': '/Game/UI/FrontEnd/Starmap/Cluster_MTI.Cluster_MTI', 'get_full_name': 'MaterialInstanceConstant /Game/UI/FrontEnd/Starmap/Cluster_MTI.Cluster_MTI', 'unreal_class': 'MaterialInstanceConstant', 'unreal_class_path': '/Script/Engine.MaterialInstanceConstant'}`
-- `procedural_border_mesh` = `{'repr': "<Object '/Game/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C:ProceduralMeshComponent' (0x00000183A6D7F900) Class 'ProceduralMeshComponent'>", 'python_type': 'ProceduralMeshComponent', 'get_name': 'ProceduralMeshComponent', 'get_path_name': '/Game/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C:ProceduralMeshComponent', 'get_full_name': 'ProceduralMeshComponent /Game/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C:ProceduralMeshComponent', 'unreal_class': 'ProceduralMeshComponent', 'unreal_class_path': '/Script/ProceduralMeshComponent.ProceduralMeshComponent'}`
-- `ProceduralBorderMesh` = `{'repr': "<Object '/Game/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C:ProceduralMeshComponent' (0x00000183A6D7F900) Class 'ProceduralMeshComponent'>", 'python_type': 'ProceduralMeshComponent', 'get_name': 'ProceduralMeshComponent', 'get_path_name': '/Game/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C:ProceduralMeshComponent', 'get_full_name': 'ProceduralMeshComponent /Game/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C:ProceduralMeshComponent', 'unreal_class': 'ProceduralMeshComponent', 'unreal_class_path': '/Script/ProceduralMeshComponent.ProceduralMeshComponent'}`
+- `cluster_material` = `{'repr': "<Object '/Game/UI/FrontEnd/Starmap/Cluster_MTI.Cluster_MTI' (0x000001ED28D04800) Class 'MaterialInstanceConstant'>", 'python_type': 'MaterialInstanceConstant', 'get_name': 'Cluster_MTI', 'get_path_name': '/Game/UI/FrontEnd/Starmap/Cluster_MTI.Cluster_MTI', 'get_full_name': 'MaterialInstanceConstant /Game/UI/FrontEnd/Starmap/Cluster_MTI.Cluster_MTI', 'unreal_class': 'MaterialInstanceConstant', 'unreal_class_path': '/Script/Engine.MaterialInstanceConstant'}`
+- `ClusterMaterial` = `{'repr': "<Object '/Game/UI/FrontEnd/Starmap/Cluster_MTI.Cluster_MTI' (0x000001ED28D04800) Class 'MaterialInstanceConstant'>", 'python_type': 'MaterialInstanceConstant', 'get_name': 'Cluster_MTI', 'get_path_name': '/Game/UI/FrontEnd/Starmap/Cluster_MTI.Cluster_MTI', 'get_full_name': 'MaterialInstanceConstant /Game/UI/FrontEnd/Starmap/Cluster_MTI.Cluster_MTI', 'unreal_class': 'MaterialInstanceConstant', 'unreal_class_path': '/Script/Engine.MaterialInstanceConstant'}`
+- `procedural_border_mesh` = `{'repr': "<Object '/Game/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C:ProceduralMeshComponent' (0x000001ED29AB3900) Class 'ProceduralMeshComponent'>", 'python_type': 'ProceduralMeshComponent', 'get_name': 'ProceduralMeshComponent', 'get_path_name': '/Game/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C:ProceduralMeshComponent', 'get_full_name': 'ProceduralMeshComponent /Game/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C:ProceduralMeshComponent', 'unreal_class': 'ProceduralMeshComponent', 'unreal_class_path': '/Script/ProceduralMeshComponent.ProceduralMeshComponent'}`
+- `ProceduralBorderMesh` = `{'repr': "<Object '/Game/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C:ProceduralMeshComponent' (0x000001ED29AB3900) Class 'ProceduralMeshComponent'>", 'python_type': 'ProceduralMeshComponent', 'get_name': 'ProceduralMeshComponent', 'get_path_name': '/Game/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C:ProceduralMeshComponent', 'get_full_name': 'ProceduralMeshComponent /Game/UI/FrontEnd/Starmap/StarMapActor.Default__StarMapActor_C:ProceduralMeshComponent', 'unreal_class': 'ProceduralMeshComponent', 'unreal_class_path': '/Script/ProceduralMeshComponent.ProceduralMeshComponent'}`
 - filtered dir sample: `['_wrapper_meta_data', 'cluster_material', 'draw_clusters', 'find_camera_component_when_view_target', 'find_star_system_body_by_id', 'generate_overlap_events_during_level_streaming', 'generate_star_map_border_polygon', 'get_hismc_star', 'get_influencers_for_star_system', 'get_selected_star_system_id', 'get_star_map_pawn', 'is_hidden_ed_at_startup', 'mouse_over_star_system', 'on_initialize_star_map', 'on_mouse_over_star_system', 'on_star_system_selected', 'on_travel_to_star_system', 'on_view_star_system', 'procedural_border_mesh', 'receive_on_selected_star_system_changed', 'set_selected_star_system', 'spawn_collision_handling_method', 'star_system_body_look_up', 'travel_to_system']`
 
 ### `StarSystemSceneManager` `StarSystemSceneManager_C`
@@ -60,8 +60,8 @@
 ### `StarMapSceneManager` `StarMapSceneManager_C`
 - path: `/ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapSceneManager_2`
 - matched properties:
-- `StarMapActor` = `{'repr': "<Object '/ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapActor_2' (0x0000018408DE0100) Class 'StarMapActor_C'>", 'python_type': 'MWStarMap', 'get_name': 'StarMapActor_2', 'get_path_name': '/ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapActor_2', 'get_full_name': 'StarMapActor_C /ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapActor_2', 'unreal_class': 'StarMapActor_C', 'unreal_class_path': '/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C'}`
-- `StarmapActor` = `{'repr': "<Object '/ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapActor_2' (0x0000018408DE0100) Class 'StarMapActor_C'>", 'python_type': 'MWStarMap', 'get_name': 'StarMapActor_2', 'get_path_name': '/ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapActor_2', 'get_full_name': 'StarMapActor_C /ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapActor_2', 'unreal_class': 'StarMapActor_C', 'unreal_class_path': '/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C'}`
+- `StarMapActor` = `{'repr': "<Object '/ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapActor_2' (0x000001ED8AD03200) Class 'StarMapActor_C'>", 'python_type': 'MWStarMap', 'get_name': 'StarMapActor_2', 'get_path_name': '/ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapActor_2', 'get_full_name': 'StarMapActor_C /ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapActor_2', 'unreal_class': 'StarMapActor_C', 'unreal_class_path': '/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C'}`
+- `StarmapActor` = `{'repr': "<Object '/ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapActor_2' (0x000001ED8AD03200) Class 'StarMapActor_C'>", 'python_type': 'MWStarMap', 'get_name': 'StarMapActor_2', 'get_path_name': '/ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapActor_2', 'get_full_name': 'StarMapActor_C /ModOverride/TKUCompatEditorPatch/Levels/FrontEnd/StarMap.StarMap:PersistentLevel.StarMapActor_2', 'unreal_class': 'StarMapActor_C', 'unreal_class_path': '/Game/UI/FrontEnd/Starmap/StarMapActor.StarMapActor_C'}`
 - CDO matched properties:
 - `StarMapActor` = `None`
 - `StarmapActor` = `None`
@@ -403,91 +403,6 @@
 - `SpectatorPawn`
 
 ### `/Game/InnerSphereData/StarSystemGenerator`
-- `FiBMetaDataTag`
-- `GenerateCelestialBodies`
-- `Star System Info`
-- `StarSystemInfo`
-- `Star System Id`
-- `Star System Name`
-- `Star Map Stencil Id`
-- `EStarMapStencilId`
-- `Cluster`
-- `FactionAssetId`
-- `Cluster Overlay`
-- `Cluster Constellation`
-- `System Id`
-- `Controlling Faction Id`
-- `this matches the one we make for the level. Look at SartMapActor SetupStarHISMC if you change this.`
-- `System Info`
-- `System Faction`
-- `CelestialBodyInfo`
-- `SystemName`
-- `System Name`
-- `Celestial Body Info`
-- `FromStart`
-- `KismetSystemLibrary:PrintString`
-- `In DevTest System`
-- `Date when game starts`
-- `ControllingFaction`
-- `Controlling Faction`
-- `Get System Faction Asset`
-- `This get controlling faction at a given date`
-- `GetSystemFactionAsset`
-- `Faction Asset Id`
-- `StarMapStencilId`
-- `MWFactionAsset`
-- `Class'/Script/MechWarrior.MWFactionAsset'`
-- `MWFactionAsset:NoFaction`
-- `Determine if another lookup is required`
-- `Convert String to Data Table Name`
-- `ConvertStringToDataTableName`
-- `StarSystemName`
-- `DataTable`
-- `Get Data Table Row`
-- `DataTableName`
-- `StarSystemOrbitalData`
-- `K2Node_GetDataTableRow`
-- `Data Table`
-- `/Game/InnerSphereData/Updated/StarSystemOrbitalData.StarSystemOrbitalData`
-- `SystemPlanetaryInfo_STRUCT1`
-- `OrbitalData`
-- `Orbital Data`
-- `System Planetary Info STRUCT1`
-- `OrbitalBodyInfoData_STRUCT1`
-- `Loop Body`
-- `Orbital Body Info Data STRUCT1`
-- `Celestial Body Name`
-- `Atmosphere Color`
-- `Terrestrial Body Size`
-- `ETerrestrialBodySize`
-- `Celestial Body Radius`
-- `Other Factions`
-- `Default Atmosphere Color`
-- `Habitable Orbitals from data tables`
-- `Any more habitable planets to generate`
-- `How many inhabited planets should this system have`
-- `/Game/InnerSphereData/PlanetaryDescriptions.PlanetaryDescriptions`
-- `Remove planets already generated from list of orbital slots`
-- `System USIIRating`
-- `Find EAtmospheric Pressure from Orbital Data String`
-- `FindEAtmosphericPressureFromOrbitalDataString`
-- `If no index (i.e. nothing from data table`
-- `System has planetary definitions`
-- `SystemFaction`
-- `KismetSystemLibrary:MakeLiteralText`
-- `Nearby Systems`
-- `NearStarSummary_STRUCT`
-- `Generate Celestial Body Name`
-- `GenerateCelestialBodyName`
-- `MWInnerSphereData`
-- `_TmpCelestialBody`
-- `Tmp Celestial Body`
-- `SystemUSIIRating`
-- `EmptyFactionList`
-- `Empty Faction List`
-- `_TerrestrialBodySize`
-- `L_SystemUSIIRating`
-- `L System USIIRating`
 
 ### `/Game/InnerSphereData/StarMapBP_UTILS`
 - `Star System Info`

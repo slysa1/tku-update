@@ -335,11 +335,14 @@ def write_report(report: dict[str, Any]) -> None:
     lines.append(f"- Reason: `{result.get('reason')}`")
     lines.extend(["", "## Modes", ""])
     for mode in clean.get("modes", []):
+        source_before = mode.get("source_before") or {}
+        target_before = mode.get("target_before") or {}
+        target_after = mode.get("target_after") or {}
         lines.append(f"### `{mode['source_asset']}`")
         lines.append(f"- Target: `{mode['target_asset']}`")
-        lines.append(f"- Source before default inner sphere: `{mode.get('source_before', {}).get('default_inner_sphere_class')}`")
-        lines.append(f"- Target before: `{mode.get('target_before', {}).get('default_inner_sphere_class')}`")
-        lines.append(f"- Target after: `{mode.get('target_after', {}).get('default_inner_sphere_class')}`")
+        lines.append(f"- Source before default inner sphere: `{source_before.get('default_inner_sphere_class')}`")
+        lines.append(f"- Target before: `{target_before.get('default_inner_sphere_class')}`")
+        lines.append(f"- Target after: `{target_after.get('default_inner_sphere_class')}`")
         lines.append(f"- Target hash before: `{mode.get('target_hash_before')}`")
         lines.append(f"- Target hash after: `{mode.get('target_hash_after')}`")
     for mode_result in result.get("modes", []):

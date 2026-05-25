@@ -1,15 +1,15 @@
 {
-  "apply_requested": false,
+  "apply_requested": true,
   "completed": true,
   "errors": [],
-  "generated_utc": "2026-05-24T15:34:42.682890+00:00",
+  "generated_utc": "2026-05-24T15:39:59.087860+00:00",
   "generator": {
     "asset": {
       "get_full_name": "Blueprint /ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator",
       "get_name": "StarSystemGenerator",
       "get_path_name": "/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator",
       "python_type": "Blueprint",
-      "repr": "<Object '/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator' (0x000001DC0B508100) Class 'Blueprint'>",
+      "repr": "<Object '/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator' (0x000001BC0EE20100) Class 'Blueprint'>",
       "unreal_class": "Blueprint",
       "unreal_class_path": "/Script/Engine.Blueprint"
     },
@@ -18,7 +18,7 @@
       "get_name": "StarSystemGenerator_C",
       "get_path_name": "/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C",
       "python_type": "BlueprintGeneratedClass",
-      "repr": "<Object '/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C' (0x000001DC0B508800) Class 'BlueprintGeneratedClass'>",
+      "repr": "<Object '/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C' (0x000001BC0EE20800) Class 'BlueprintGeneratedClass'>",
       "unreal_class": "BlueprintGeneratedClass",
       "unreal_class_path": "/Script/Engine.BlueprintGeneratedClass"
     },
@@ -42,7 +42,7 @@
           "get_name": "MW5GameMode",
           "get_path_name": "/Game/Modes/MW5GameMode.MW5GameMode",
           "python_type": "Blueprint",
-          "repr": "<Object '/Game/Modes/MW5GameMode.MW5GameMode' (0x000001DBA9BB8F00) Class 'Blueprint'>",
+          "repr": "<Object '/Game/Modes/MW5GameMode.MW5GameMode' (0x000001BBA99A2400) Class 'Blueprint'>",
           "unreal_class": "Blueprint",
           "unreal_class_path": "/Script/Engine.Blueprint"
         },
@@ -52,7 +52,7 @@
           "get_name": "MW5GameMode_C",
           "get_path_name": "/Game/Modes/MW5GameMode.MW5GameMode_C",
           "python_type": "BlueprintGeneratedClass",
-          "repr": "<Object '/Game/Modes/MW5GameMode.MW5GameMode_C' (0x000001DBA9BB8800) Class 'BlueprintGeneratedClass'>",
+          "repr": "<Object '/Game/Modes/MW5GameMode.MW5GameMode_C' (0x000001BBA99A1D00) Class 'BlueprintGeneratedClass'>",
           "unreal_class": "BlueprintGeneratedClass",
           "unreal_class_path": "/Script/Engine.BlueprintGeneratedClass"
         },
@@ -64,7 +64,7 @@
             "get_name": "DefaultSystemGenerator_C",
             "get_path_name": "/Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C",
             "python_type": "BlueprintGeneratedClass",
-            "repr": "<Object '/Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C' (0x000001DBB7A59D00) Class 'BlueprintGeneratedClass'>",
+            "repr": "<Object '/Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C' (0x000001BBAD771D00) Class 'BlueprintGeneratedClass'>",
             "unreal_class": "BlueprintGeneratedClass",
             "unreal_class_path": "/Script/Engine.BlueprintGeneratedClass"
           }
@@ -74,7 +74,7 @@
           "get_name": "Default__MW5GameMode_C",
           "get_path_name": "/Game/Modes/MW5GameMode.Default__MW5GameMode_C",
           "python_type": "MWGameMode",
-          "repr": "<Object '/Game/Modes/MW5GameMode.Default__MW5GameMode_C' (0x000001DC18AF7040) Class 'MW5GameMode_C'>",
+          "repr": "<Object '/Game/Modes/MW5GameMode.Default__MW5GameMode_C' (0x000001BC1A7E3040) Class 'MW5GameMode_C'>",
           "unreal_class": "MW5GameMode_C",
           "unreal_class_path": "/Game/Modes/MW5GameMode.MW5GameMode_C"
         },
@@ -86,7 +86,7 @@
             "get_name": "StarSystemGenerator_C",
             "get_path_name": "/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C",
             "python_type": "BlueprintGeneratedClass",
-            "repr": "<Object '/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C' (0x000001DC0B508800) Class 'BlueprintGeneratedClass'>",
+            "repr": "<Object '/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C' (0x000001BC0EE20800) Class 'BlueprintGeneratedClass'>",
             "unreal_class": "BlueprintGeneratedClass",
             "unreal_class_path": "/Script/Engine.BlueprintGeneratedClass"
           }
@@ -96,36 +96,23 @@
           "value": true
         }
       },
-      "target_after": null,
-      "target_asset": "/ModOverride/TKUCompatEditorPatch/Modes/MW5GameMode",
-      "target_before": null,
-      "target_exists_after": false,
-      "target_exists_before": false,
-      "target_file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch\\ModOverride\\Modes\\MW5GameMode.uasset",
-      "target_file_exists_after": false,
-      "target_file_exists_before": false,
-      "target_hash_after": null,
-      "target_hash_before": null
-    },
-    {
-      "source_asset": "/Game/Modes/CampaignMode",
-      "source_before": {
+      "target_after": {
         "asset": {
-          "get_full_name": "Blueprint /Game/Modes/CampaignMode.CampaignMode",
-          "get_name": "CampaignMode",
-          "get_path_name": "/Game/Modes/CampaignMode.CampaignMode",
+          "get_full_name": "Blueprint /ModOverride/TKUCompatEditorPatch/Modes/MW5GameMode.MW5GameMode",
+          "get_name": "MW5GameMode",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/Modes/MW5GameMode.MW5GameMode",
           "python_type": "Blueprint",
-          "repr": "<Object '/Game/Modes/CampaignMode.CampaignMode' (0x000001DBAF380100) Class 'Blueprint'>",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Modes/MW5GameMode.MW5GameMode' (0x000001BBABD59D00) Class 'Blueprint'>",
           "unreal_class": "Blueprint",
           "unreal_class_path": "/Script/Engine.Blueprint"
         },
-        "asset_path": "/Game/Modes/CampaignMode",
+        "asset_path": "/ModOverride/TKUCompatEditorPatch/Modes/MW5GameMode",
         "blueprint_class": {
-          "get_full_name": "BlueprintGeneratedClass /Game/Modes/CampaignMode.CampaignMode_C",
-          "get_name": "CampaignMode_C",
-          "get_path_name": "/Game/Modes/CampaignMode.CampaignMode_C",
+          "get_full_name": "BlueprintGeneratedClass /ModOverride/TKUCompatEditorPatch/Modes/MW5GameMode.MW5GameMode_C",
+          "get_name": "MW5GameMode_C",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/Modes/MW5GameMode.MW5GameMode_C",
           "python_type": "BlueprintGeneratedClass",
-          "repr": "<Object '/Game/Modes/CampaignMode.CampaignMode_C' (0x000001DBAF36F900) Class 'BlueprintGeneratedClass'>",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Modes/MW5GameMode.MW5GameMode_C' (0x000001BBABD5B200) Class 'BlueprintGeneratedClass'>",
           "unreal_class": "BlueprintGeneratedClass",
           "unreal_class_path": "/Script/Engine.BlueprintGeneratedClass"
         },
@@ -137,7 +124,79 @@
             "get_name": "DefaultSystemGenerator_C",
             "get_path_name": "/Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C",
             "python_type": "BlueprintGeneratedClass",
-            "repr": "<Object '/Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C' (0x000001DBB7A59D00) Class 'BlueprintGeneratedClass'>",
+            "repr": "<Object '/Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C' (0x000001BBAD771D00) Class 'BlueprintGeneratedClass'>",
+            "unreal_class": "BlueprintGeneratedClass",
+            "unreal_class_path": "/Script/Engine.BlueprintGeneratedClass"
+          }
+        },
+        "cdo": {
+          "get_full_name": "MW5GameMode_C /ModOverride/TKUCompatEditorPatch/Modes/MW5GameMode.Default__MW5GameMode_C",
+          "get_name": "Default__MW5GameMode_C",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/Modes/MW5GameMode.Default__MW5GameMode_C",
+          "python_type": "MWGameMode",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Modes/MW5GameMode.Default__MW5GameMode_C' (0x000001BBEE53C100) Class 'MW5GameMode_C'>",
+          "unreal_class": "MW5GameMode_C",
+          "unreal_class_path": "/ModOverride/TKUCompatEditorPatch/Modes/MW5GameMode.MW5GameMode_C"
+        },
+        "default_inner_sphere_class": {
+          "ok": true,
+          "path": "/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C",
+          "value": {
+            "get_full_name": "BlueprintGeneratedClass /ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C",
+            "get_name": "StarSystemGenerator_C",
+            "get_path_name": "/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C",
+            "python_type": "BlueprintGeneratedClass",
+            "repr": "<Object '/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C' (0x000001BC0EE20800) Class 'BlueprintGeneratedClass'>",
+            "unreal_class": "BlueprintGeneratedClass",
+            "unreal_class_path": "/Script/Engine.BlueprintGeneratedClass"
+          }
+        },
+        "exists": {
+          "ok": true,
+          "value": true
+        }
+      },
+      "target_asset": "/ModOverride/TKUCompatEditorPatch/Modes/MW5GameMode",
+      "target_before": null,
+      "target_exists_after": true,
+      "target_exists_before": false,
+      "target_file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch\\ModOverride\\Modes\\MW5GameMode.uasset",
+      "target_file_exists_after": true,
+      "target_file_exists_before": false,
+      "target_hash_after": "48C1207B7EF340BFA369A29F677A4F1D7AEAAE5E5F97E656EC89C44AD00ABE13",
+      "target_hash_before": null
+    },
+    {
+      "source_asset": "/Game/Modes/CampaignMode",
+      "source_before": {
+        "asset": {
+          "get_full_name": "Blueprint /Game/Modes/CampaignMode.CampaignMode",
+          "get_name": "CampaignMode",
+          "get_path_name": "/Game/Modes/CampaignMode.CampaignMode",
+          "python_type": "Blueprint",
+          "repr": "<Object '/Game/Modes/CampaignMode.CampaignMode' (0x000001BBAF160800) Class 'Blueprint'>",
+          "unreal_class": "Blueprint",
+          "unreal_class_path": "/Script/Engine.Blueprint"
+        },
+        "asset_path": "/Game/Modes/CampaignMode",
+        "blueprint_class": {
+          "get_full_name": "BlueprintGeneratedClass /Game/Modes/CampaignMode.CampaignMode_C",
+          "get_name": "CampaignMode_C",
+          "get_path_name": "/Game/Modes/CampaignMode.CampaignMode_C",
+          "python_type": "BlueprintGeneratedClass",
+          "repr": "<Object '/Game/Modes/CampaignMode.CampaignMode_C' (0x000001BBAF160100) Class 'BlueprintGeneratedClass'>",
+          "unreal_class": "BlueprintGeneratedClass",
+          "unreal_class_path": "/Script/Engine.BlueprintGeneratedClass"
+        },
+        "campaign_system_generator_class": {
+          "ok": true,
+          "path": "/Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C",
+          "value": {
+            "get_full_name": "BlueprintGeneratedClass /Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C",
+            "get_name": "DefaultSystemGenerator_C",
+            "get_path_name": "/Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C",
+            "python_type": "BlueprintGeneratedClass",
+            "repr": "<Object '/Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C' (0x000001BBAD771D00) Class 'BlueprintGeneratedClass'>",
             "unreal_class": "BlueprintGeneratedClass",
             "unreal_class_path": "/Script/Engine.BlueprintGeneratedClass"
           }
@@ -147,7 +206,7 @@
           "get_name": "Default__CampaignMode_C",
           "get_path_name": "/Game/Modes/CampaignMode.Default__CampaignMode_C",
           "python_type": "MWGameMode",
-          "repr": "<Object '/Game/Modes/CampaignMode.Default__CampaignMode_C' (0x000001DC192B7040) Class 'CampaignMode_C'>",
+          "repr": "<Object '/Game/Modes/CampaignMode.Default__CampaignMode_C' (0x000001BC19F9B040) Class 'CampaignMode_C'>",
           "unreal_class": "CampaignMode_C",
           "unreal_class_path": "/Game/Modes/CampaignMode.CampaignMode_C"
         },
@@ -159,7 +218,7 @@
             "get_name": "StarSystemGenerator_C",
             "get_path_name": "/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C",
             "python_type": "BlueprintGeneratedClass",
-            "repr": "<Object '/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C' (0x000001DC0B508800) Class 'BlueprintGeneratedClass'>",
+            "repr": "<Object '/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C' (0x000001BC0EE20800) Class 'BlueprintGeneratedClass'>",
             "unreal_class": "BlueprintGeneratedClass",
             "unreal_class_path": "/Script/Engine.BlueprintGeneratedClass"
           }
@@ -169,25 +228,229 @@
           "value": true
         }
       },
-      "target_after": null,
+      "target_after": {
+        "asset": {
+          "get_full_name": "Blueprint /ModOverride/TKUCompatEditorPatch/Modes/CampaignMode.CampaignMode",
+          "get_name": "CampaignMode",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/Modes/CampaignMode.CampaignMode",
+          "python_type": "Blueprint",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Modes/CampaignMode.CampaignMode' (0x000001BC0A9B8100) Class 'Blueprint'>",
+          "unreal_class": "Blueprint",
+          "unreal_class_path": "/Script/Engine.Blueprint"
+        },
+        "asset_path": "/ModOverride/TKUCompatEditorPatch/Modes/CampaignMode",
+        "blueprint_class": {
+          "get_full_name": "BlueprintGeneratedClass /ModOverride/TKUCompatEditorPatch/Modes/CampaignMode.CampaignMode_C",
+          "get_name": "CampaignMode_C",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/Modes/CampaignMode.CampaignMode_C",
+          "python_type": "BlueprintGeneratedClass",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Modes/CampaignMode.CampaignMode_C' (0x000001BC0A29B200) Class 'BlueprintGeneratedClass'>",
+          "unreal_class": "BlueprintGeneratedClass",
+          "unreal_class_path": "/Script/Engine.BlueprintGeneratedClass"
+        },
+        "campaign_system_generator_class": {
+          "ok": true,
+          "path": "/Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C",
+          "value": {
+            "get_full_name": "BlueprintGeneratedClass /Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C",
+            "get_name": "DefaultSystemGenerator_C",
+            "get_path_name": "/Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C",
+            "python_type": "BlueprintGeneratedClass",
+            "repr": "<Object '/Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C' (0x000001BBAD771D00) Class 'BlueprintGeneratedClass'>",
+            "unreal_class": "BlueprintGeneratedClass",
+            "unreal_class_path": "/Script/Engine.BlueprintGeneratedClass"
+          }
+        },
+        "cdo": {
+          "get_full_name": "CampaignMode_C /ModOverride/TKUCompatEditorPatch/Modes/CampaignMode.Default__CampaignMode_C",
+          "get_name": "Default__CampaignMode_C",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/Modes/CampaignMode.Default__CampaignMode_C",
+          "python_type": "MWGameMode",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Modes/CampaignMode.Default__CampaignMode_C' (0x000001BBEB2450C0) Class 'CampaignMode_C'>",
+          "unreal_class": "CampaignMode_C",
+          "unreal_class_path": "/ModOverride/TKUCompatEditorPatch/Modes/CampaignMode.CampaignMode_C"
+        },
+        "default_inner_sphere_class": {
+          "ok": true,
+          "path": "/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C",
+          "value": {
+            "get_full_name": "BlueprintGeneratedClass /ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C",
+            "get_name": "StarSystemGenerator_C",
+            "get_path_name": "/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C",
+            "python_type": "BlueprintGeneratedClass",
+            "repr": "<Object '/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C' (0x000001BC0EE20800) Class 'BlueprintGeneratedClass'>",
+            "unreal_class": "BlueprintGeneratedClass",
+            "unreal_class_path": "/Script/Engine.BlueprintGeneratedClass"
+          }
+        },
+        "exists": {
+          "ok": true,
+          "value": true
+        }
+      },
       "target_asset": "/ModOverride/TKUCompatEditorPatch/Modes/CampaignMode",
       "target_before": null,
-      "target_exists_after": false,
+      "target_exists_after": true,
       "target_exists_before": false,
       "target_file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch\\ModOverride\\Modes\\CampaignMode.uasset",
-      "target_file_exists_after": false,
+      "target_file_exists_after": true,
       "target_file_exists_before": false,
-      "target_hash_after": null,
+      "target_hash_after": "85DDACC07E58E113CC1338C3D5444EC18F2FCBC791B06A6C4C0DF082310B835E",
       "target_hash_before": null
     }
   ],
   "plugin_dir": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch",
   "result": {
-    "applied": false,
-    "attempted": false,
-    "modes": [],
-    "reason": "dry run only",
-    "saved": false
+    "applied": true,
+    "attempted": true,
+    "generator_class_path": "/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C",
+    "modes": [
+      {
+        "asset": {
+          "get_full_name": "Blueprint /ModOverride/TKUCompatEditorPatch/Modes/MW5GameMode.MW5GameMode",
+          "get_name": "MW5GameMode",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/Modes/MW5GameMode.MW5GameMode",
+          "python_type": "Blueprint",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Modes/MW5GameMode.MW5GameMode' (0x000001BBABD59D00) Class 'Blueprint'>",
+          "unreal_class": "Blueprint",
+          "unreal_class_path": "/Script/Engine.Blueprint"
+        },
+        "attempted": true,
+        "before_default_inner_sphere_class": {
+          "ok": true,
+          "path": "/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C",
+          "value": {
+            "get_full_name": "BlueprintGeneratedClass /ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C",
+            "get_name": "StarSystemGenerator_C",
+            "get_path_name": "/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C",
+            "python_type": "BlueprintGeneratedClass",
+            "repr": "<Object '/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C' (0x000001BC0EE20800) Class 'BlueprintGeneratedClass'>",
+            "unreal_class": "BlueprintGeneratedClass",
+            "unreal_class_path": "/Script/Engine.BlueprintGeneratedClass"
+          }
+        },
+        "blueprint_class": {
+          "get_full_name": "BlueprintGeneratedClass /ModOverride/TKUCompatEditorPatch/Modes/MW5GameMode.MW5GameMode_C",
+          "get_name": "MW5GameMode_C",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/Modes/MW5GameMode.MW5GameMode_C",
+          "python_type": "BlueprintGeneratedClass",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Modes/MW5GameMode.MW5GameMode_C' (0x000001BBABD5B200) Class 'BlueprintGeneratedClass'>",
+          "unreal_class": "BlueprintGeneratedClass",
+          "unreal_class_path": "/Script/Engine.BlueprintGeneratedClass"
+        },
+        "campaign_system_generator_class_after": {
+          "ok": true,
+          "path": "/Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C",
+          "value": {
+            "get_full_name": "BlueprintGeneratedClass /Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C",
+            "get_name": "DefaultSystemGenerator_C",
+            "get_path_name": "/Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C",
+            "python_type": "BlueprintGeneratedClass",
+            "repr": "<Object '/Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C' (0x000001BBAD771D00) Class 'BlueprintGeneratedClass'>",
+            "unreal_class": "BlueprintGeneratedClass",
+            "unreal_class_path": "/Script/Engine.BlueprintGeneratedClass"
+          }
+        },
+        "modify_asset": {
+          "ok": true,
+          "value": false
+        },
+        "modify_cdo": {
+          "ok": true,
+          "value": false
+        },
+        "saved": true,
+        "source_asset": "/Game/Modes/MW5GameMode",
+        "target_asset": "/ModOverride/TKUCompatEditorPatch/Modes/MW5GameMode",
+        "target_file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch\\ModOverride\\Modes\\MW5GameMode.uasset",
+        "write_default_inner_sphere_class": {
+          "ok": true,
+          "path": "/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C",
+          "value": {
+            "get_full_name": "BlueprintGeneratedClass /ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C",
+            "get_name": "StarSystemGenerator_C",
+            "get_path_name": "/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C",
+            "python_type": "BlueprintGeneratedClass",
+            "repr": "<Object '/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C' (0x000001BC0EE20800) Class 'BlueprintGeneratedClass'>",
+            "unreal_class": "BlueprintGeneratedClass",
+            "unreal_class_path": "/Script/Engine.BlueprintGeneratedClass"
+          }
+        }
+      },
+      {
+        "asset": {
+          "get_full_name": "Blueprint /ModOverride/TKUCompatEditorPatch/Modes/CampaignMode.CampaignMode",
+          "get_name": "CampaignMode",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/Modes/CampaignMode.CampaignMode",
+          "python_type": "Blueprint",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Modes/CampaignMode.CampaignMode' (0x000001BC0A9B8100) Class 'Blueprint'>",
+          "unreal_class": "Blueprint",
+          "unreal_class_path": "/Script/Engine.Blueprint"
+        },
+        "attempted": true,
+        "before_default_inner_sphere_class": {
+          "ok": true,
+          "path": "/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C",
+          "value": {
+            "get_full_name": "BlueprintGeneratedClass /ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C",
+            "get_name": "StarSystemGenerator_C",
+            "get_path_name": "/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C",
+            "python_type": "BlueprintGeneratedClass",
+            "repr": "<Object '/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C' (0x000001BC0EE20800) Class 'BlueprintGeneratedClass'>",
+            "unreal_class": "BlueprintGeneratedClass",
+            "unreal_class_path": "/Script/Engine.BlueprintGeneratedClass"
+          }
+        },
+        "blueprint_class": {
+          "get_full_name": "BlueprintGeneratedClass /ModOverride/TKUCompatEditorPatch/Modes/CampaignMode.CampaignMode_C",
+          "get_name": "CampaignMode_C",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/Modes/CampaignMode.CampaignMode_C",
+          "python_type": "BlueprintGeneratedClass",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/Modes/CampaignMode.CampaignMode_C' (0x000001BC0A29B200) Class 'BlueprintGeneratedClass'>",
+          "unreal_class": "BlueprintGeneratedClass",
+          "unreal_class_path": "/Script/Engine.BlueprintGeneratedClass"
+        },
+        "campaign_system_generator_class_after": {
+          "ok": true,
+          "path": "/Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C",
+          "value": {
+            "get_full_name": "BlueprintGeneratedClass /Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C",
+            "get_name": "DefaultSystemGenerator_C",
+            "get_path_name": "/Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C",
+            "python_type": "BlueprintGeneratedClass",
+            "repr": "<Object '/Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C' (0x000001BBAD771D00) Class 'BlueprintGeneratedClass'>",
+            "unreal_class": "BlueprintGeneratedClass",
+            "unreal_class_path": "/Script/Engine.BlueprintGeneratedClass"
+          }
+        },
+        "modify_asset": {
+          "ok": true,
+          "value": false
+        },
+        "modify_cdo": {
+          "ok": true,
+          "value": false
+        },
+        "saved": true,
+        "source_asset": "/Game/Modes/CampaignMode",
+        "target_asset": "/ModOverride/TKUCompatEditorPatch/Modes/CampaignMode",
+        "target_file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch\\ModOverride\\Modes\\CampaignMode.uasset",
+        "write_default_inner_sphere_class": {
+          "ok": true,
+          "path": "/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C",
+          "value": {
+            "get_full_name": "BlueprintGeneratedClass /ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C",
+            "get_name": "StarSystemGenerator_C",
+            "get_path_name": "/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C",
+            "python_type": "BlueprintGeneratedClass",
+            "repr": "<Object '/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C' (0x000001BC0EE20800) Class 'BlueprintGeneratedClass'>",
+            "unreal_class": "BlueprintGeneratedClass",
+            "unreal_class_path": "/Script/Engine.BlueprintGeneratedClass"
+          }
+        }
+      }
+    ],
+    "saved": true
   },
   "safety_failures": [],
   "target_mod_name": "TKUCompatEditorPatch"

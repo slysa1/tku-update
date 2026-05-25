@@ -22,11 +22,12 @@ from tku_project_paths import (
 
 sys.path.insert(0, str(TOOLS_ROOT))
 
-from mw5_pak import extract_exact_paths, iter_entries  # noqa: E402
+from mw5_pak import SIDECAREXT, extract_exact_paths, iter_entries  # noqa: E402
 
 
 MOD_NAME = "TKUCompatEditorPatch"
 MIRROR_PAK_NAME = "MW5Mercs-zzzzTKUCompatEditorPatch.pak"
+DISABLED_SUFFIX = ".disabled-by-tku-isolation"
 TARGET_GAME_PATHS = (
     "/Game/InnerSphereData/MW5_InnerSphereData.uasset",
     "/Game/InnerSphereData/MW5_InnerSphereData.uexp",
@@ -37,6 +38,7 @@ TARGET_GAME_PATHS = (
     "/Game/UI/FrontEnd/StarMapPawn.uasset",
     "/Game/UI/FrontEnd/StarMapPawn.uexp",
 )
+MIRROR_SCOPES = ("starmap-core", "all-game")
 UNREALPAK_EXE = MW5_EDITOR_ROOT / "Engine" / "Binaries" / "Win64" / "UnrealPak.exe"
 
 
@@ -50,11 +52,48 @@ def sha256_file(path: Path) -> str | None:
     return digest.hexdigest().upper()
 
 
+def source_pak_candidates() -> list[Path]:
+    candidates: list[Path] = []
+    editor_mod_root = MW5_EDITOR_ROOT / "MW5Mercs" / "Mods" / MOD_NAME
+    if editor_mod_root.is_dir():
+        candidates.extend(editor_mod_root.rglob(f"{MOD_NAME}.pak"))
+
+    live_mod_pak = MODS_ROOT / MOD_NAME / "Paks" / f"{MOD_NAME}.pak"
+    if live_mod_pak.is_file():
+        candidates.append(live_mod_pak)
+
+    unique: list[Path] = []
+    seen: set[str] = set()
+    for candidate in candidates:
+        if not candidate.is_file():
+            continue
+        key = str(candidate.resolve()).lower()
+        if key in seen:
+            continue
+        seen.add(key)
+        unique.append(candidate)
+
+    return sorted(unique, key=lambda item: (item.stat().st_mtime, str(item).lower()), reverse=True)
+
+
 def default_source_pak() -> Path:
-    editor_pak = MW5_EDITOR_ROOT / "MW5Mercs" / "Mods" / MOD_NAME / "Paks" / f"{MOD_NAME}.pak"
-    if editor_pak.is_file():
-        return editor_pak
+    candidates = source_pak_candidates()
+    if candidates:
+        return candidates[0]
     return MODS_ROOT / MOD_NAME / "Paks" / f"{MOD_NAME}.pak"
+
+
+def file_summary(path: Path) -> dict[str, Any]:
+    item: dict[str, Any] = {
+        "path": str(path),
+        "exists": path.is_file(),
+    }
+    if path.is_file():
+        stat = path.stat()
+        item["file_size"] = stat.st_size
+        item["last_write_utc"] = datetime.fromtimestamp(stat.st_mtime, tz=timezone.utc).isoformat()
+        item["sha256"] = sha256_file(path)
+    return item
 
 
 def pak_inventory(pak_path: Path, target_paths: set[str], *, hash_large_files: bool = True) -> dict[str, Any]:
@@ -94,6 +133,21 @@ def pak_inventory(pak_path: Path, target_paths: set[str], *, hash_large_files: b
     except Exception as exc:  # noqa: BLE001 - report evidence, do not mask.
         item["error"] = f"{type(exc).__name__}: {exc}"
     return item
+
+
+def select_target_paths(source_pak: Path, scope: str) -> set[str]:
+    if scope == "starmap-core":
+        return set(TARGET_GAME_PATHS)
+    if scope != "all-game":
+        raise ValueError(f"unsupported mirror scope: {scope}")
+    if not source_pak.is_file():
+        return set()
+    _, _, entries = iter_entries(source_pak)
+    return {
+        entry.game_path
+        for entry in entries
+        if entry.game_path.startswith("/Game/") and entry.extension in SIDECAREXT
+    }
 
 
 def scan_content_conflicts(content_paks_root: Path, target_paths: set[str]) -> list[dict[str, Any]]:
@@ -169,8 +223,11 @@ def write_report(report: dict[str, Any], report_json: Path, report_md: Path) -> 
         "",
         f"- Apply requested: `{report['apply_requested']}`",
         f"- Source pak: `{report['source_pak']}`",
+        f"- Mirror scope: `{report['mirror_scope']}`",
+        f"- Source pak candidates: `{len(report.get('source_pak_candidates', []))}`",
         f"- Staged mirror pak: `{report['staged_pak']}`",
         f"- Live mirror pak: `{report['live_pak']}`",
+        f"- Disabled live mirror sibling: `{report['live_disabled_pak']}`",
         f"- Mirror pak SHA256: `{report.get('staged_sha256')}`",
         f"- Files mirrored: `{len(report.get('mirrored_paths', []))}`",
         "",
@@ -195,12 +252,18 @@ def write_report(report: dict[str, Any], report_json: Path, report_md: Path) -> 
         lines.append(f"- {action}")
     if not report.get("actions"):
         lines.append("- Dry run/staging only; no live files changed.")
+    if report.get("live_disabled_backup"):
+        lines.extend(["", "## Disabled Mirror Backup", ""])
+        lines.append(f"- Moved stale disabled mirror sibling to `{report['live_disabled_backup']}`.")
     if report.get("live_backup"):
         lines.extend(["", "## Rollback", ""])
         lines.append(f"- Replace `{report['live_pak']}` with backup `{report['live_backup']}`.")
     else:
         lines.extend(["", "## Rollback", ""])
         lines.append(f"- Remove only the staged live mirror pak `{report['live_pak']}` to return to the previous content-pak set.")
+    lines.extend(["", "## Mirrored Path Sample", ""])
+    for path in report.get("mirrored_paths", [])[:160]:
+        lines.append(f"- `{path}`")
     report_md.write_text("\n".join(lines), encoding="utf-8")
 
 
@@ -211,23 +274,29 @@ def build_report(args: argparse.Namespace) -> dict[str, Any]:
     loose_root = staging_dir / f"content_mirror_loose_{timestamp}"
     response_path = staging_dir / f"content_mirror_unrealpak_response_{timestamp}.txt"
     backup_dir = report_dir / "backups" / f"content_mirror_{timestamp}"
+    candidates = source_pak_candidates()
     source_pak = args.source_pak or default_source_pak()
     staged_pak = args.staged_pak or staging_dir / f"MW5Mercs-zzzzTKUCompatEditorPatch-{timestamp}.pak"
     live_pak = args.live_pak or CONTENT_PAKS_ROOT / MIRROR_PAK_NAME
-    target_paths = set(TARGET_GAME_PATHS)
+    live_disabled_pak = Path(str(live_pak) + DISABLED_SUFFIX)
+    target_paths = select_target_paths(source_pak, args.scope)
 
     report: dict[str, Any] = {
         "timestamp": timestamp,
         "generated_utc": datetime.now(timezone.utc).isoformat(),
         "apply_requested": bool(args.apply),
         "source_pak": str(source_pak),
+        "mirror_scope": args.scope,
+        "source_pak_candidates": [file_summary(candidate) for candidate in candidates],
         "staged_pak": str(staged_pak),
         "live_pak": str(live_pak),
+        "live_disabled_pak": str(live_disabled_pak),
         "target_paths": sorted(target_paths),
         "mirrored_paths": [],
         "safety_failures": [],
         "actions": [],
         "live_backup": None,
+        "live_disabled_backup": None,
         "unrealpak_exe": str(UNREALPAK_EXE),
         "unrealpak_response": str(response_path),
         "content_conflicts_before": scan_content_conflicts(CONTENT_PAKS_ROOT, target_paths),
@@ -235,6 +304,8 @@ def build_report(args: argparse.Namespace) -> dict[str, Any]:
 
     if not source_pak.is_file():
         report["safety_failures"].append(f"source pak missing: {source_pak}")
+    if not target_paths:
+        report["safety_failures"].append(f"no target paths selected for scope {args.scope}")
     if not UNREALPAK_EXE.is_file():
         report["safety_failures"].append(f"UnrealPak.exe missing: {UNREALPAK_EXE}")
     if not CONTENT_PAKS_ROOT.is_dir():
@@ -280,10 +351,17 @@ def build_report(args: argparse.Namespace) -> dict[str, Any]:
             shutil.copy2(live_pak, backup_path)
             report["live_backup"] = str(backup_path)
             report["actions"].append(f"backed up existing live mirror pak to {backup_path}")
+        if live_disabled_pak.is_file():
+            backup_dir.mkdir(parents=True, exist_ok=True)
+            disabled_backup_path = backup_dir / live_disabled_pak.name
+            shutil.move(str(live_disabled_pak), str(disabled_backup_path))
+            report["live_disabled_backup"] = str(disabled_backup_path)
+            report["actions"].append(f"moved stale disabled mirror sibling to {disabled_backup_path}")
         live_pak.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(staged_pak, live_pak)
         report["actions"].append(f"deployed live mirror pak to {live_pak}")
         report["live_sha256_after"] = sha256_file(live_pak)
+        report["live_disabled_exists_after"] = live_disabled_pak.is_file()
         report["content_conflicts_after"] = scan_content_conflicts(CONTENT_PAKS_ROOT, target_paths)
 
     report_json = report_dir / f"tku_content_mirror_{timestamp}.json"
@@ -297,6 +375,7 @@ def build_report(args: argparse.Namespace) -> dict[str, Any]:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--apply", action="store_true")
+    parser.add_argument("--scope", choices=MIRROR_SCOPES, default="starmap-core")
     parser.add_argument("--source-pak", type=Path)
     parser.add_argument("--staged-pak", type=Path)
     parser.add_argument("--live-pak", type=Path)

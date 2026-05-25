@@ -1,0 +1,2254 @@
+{
+  "apply_requested": true,
+  "dry_run_assets": [
+    {
+      "asset": {
+        "get_full_name": "MWStartConditionsAsset /Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.CareerMode_Davion_Start",
+        "get_name": "CareerMode_Davion_Start",
+        "get_path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.CareerMode_Davion_Start",
+        "python_type": "MWStartConditionsAsset",
+        "repr": "<Object '/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.CareerMode_Davion_Start' (0x000001762075FA00) Class 'MWStartConditionsAsset'>",
+        "unreal_class": "MWStartConditionsAsset",
+        "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+      },
+      "asset_path": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start",
+      "class_name": "MWStartConditionsAsset",
+      "exists": true,
+      "focused_properties": {
+        "associated_faction_asset_id": {
+          "python_type": "FactionAssetId",
+          "repr": "<Struct 'FactionAssetId' (0x000001762075FB88) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"Davion\"}}>"
+        },
+        "campaign_arc": {
+          "python_type": "CampaignArcAssetId",
+          "repr": "<Struct 'CampaignArcAssetId' (0x000001762075FA78) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"CareerMode_Start\"}}>"
+        },
+        "initial_star_map_borders": {
+          "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+          "get_name": "Borders3015",
+          "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+          "python_type": "MWStarMapBorderAsset",
+          "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015' (0x000001760130AA00) Class 'MWStarMapBorderAsset'>",
+          "unreal_class": "MWStarMapBorderAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+        },
+        "starting_date": {
+          "python_type": "DateTime",
+          "repr": "<Struct 'DateTime' (0x000001762075FAB0) {}>"
+        },
+        "starting_system_id": 1057
+      },
+      "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.uasset",
+      "path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.CareerMode_Davion_Start",
+      "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start"
+    },
+    {
+      "asset": {
+        "get_full_name": "MWStartConditionsAsset /Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.CareerMode_Davion_Start_Tutorial",
+        "get_name": "CareerMode_Davion_Start_Tutorial",
+        "get_path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.CareerMode_Davion_Start_Tutorial",
+        "python_type": "MWStartConditionsAsset",
+        "repr": "<Object '/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.CareerMode_Davion_Start_Tutorial' (0x000001762075F100) Class 'MWStartConditionsAsset'>",
+        "unreal_class": "MWStartConditionsAsset",
+        "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+      },
+      "asset_path": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial",
+      "class_name": "MWStartConditionsAsset",
+      "exists": true,
+      "focused_properties": {
+        "associated_faction_asset_id": {
+          "python_type": "FactionAssetId",
+          "repr": "<Struct 'FactionAssetId' (0x000001762075F288) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"Davion\"}}>"
+        },
+        "campaign_arc": {
+          "python_type": "CampaignArcAssetId",
+          "repr": "<Struct 'CampaignArcAssetId' (0x000001762075F178) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"CareerMode_Start\"}}>"
+        },
+        "initial_star_map_borders": {
+          "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+          "get_name": "Borders3015",
+          "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+          "python_type": "MWStarMapBorderAsset",
+          "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015' (0x000001760130AA00) Class 'MWStarMapBorderAsset'>",
+          "unreal_class": "MWStarMapBorderAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+        },
+        "starting_date": {
+          "python_type": "DateTime",
+          "repr": "<Struct 'DateTime' (0x000001762075F1B0) {}>"
+        },
+        "starting_system_id": 1057
+      },
+      "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.uasset",
+      "path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.CareerMode_Davion_Start_Tutorial",
+      "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial"
+    },
+    {
+      "asset": {
+        "get_full_name": "MWStartConditionsAsset /Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.CareerMode_FRR_Start",
+        "get_name": "CareerMode_FRR_Start",
+        "get_path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.CareerMode_FRR_Start",
+        "python_type": "MWStartConditionsAsset",
+        "repr": "<Object '/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.CareerMode_FRR_Start' (0x000001762075EB00) Class 'MWStartConditionsAsset'>",
+        "unreal_class": "MWStartConditionsAsset",
+        "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+      },
+      "asset_path": "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start",
+      "class_name": "MWStartConditionsAsset",
+      "exists": true,
+      "focused_properties": {
+        "associated_faction_asset_id": {
+          "python_type": "FactionAssetId",
+          "repr": "<Struct 'FactionAssetId' (0x000001762075EC88) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"FreeRasalhagueRepublic\"}}>"
+        },
+        "campaign_arc": {
+          "python_type": "CampaignArcAssetId",
+          "repr": "<Struct 'CampaignArcAssetId' (0x000001762075EB78) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"FRR_CareerMode_Start\"}}>"
+        },
+        "initial_star_map_borders": {
+          "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/Borders3034.Borders3034",
+          "get_name": "Borders3034",
+          "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/Borders3034.Borders3034",
+          "python_type": "MWStarMapBorderAsset",
+          "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/Borders3034.Borders3034' (0x000001762044FF80) Class 'MWStarMapBorderAsset'>",
+          "unreal_class": "MWStarMapBorderAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+        },
+        "starting_date": {
+          "python_type": "DateTime",
+          "repr": "<Struct 'DateTime' (0x000001762075EBB0) {}>"
+        },
+        "starting_system_id": 1675
+      },
+      "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.uasset",
+      "path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.CareerMode_FRR_Start",
+      "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start"
+    },
+    {
+      "asset": {
+        "get_full_name": "MWStartConditionsAsset /Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.CareerMode_FRR_Start_Tutorial",
+        "get_name": "CareerMode_FRR_Start_Tutorial",
+        "get_path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.CareerMode_FRR_Start_Tutorial",
+        "python_type": "MWStartConditionsAsset",
+        "repr": "<Object '/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.CareerMode_FRR_Start_Tutorial' (0x000001762075E500) Class 'MWStartConditionsAsset'>",
+        "unreal_class": "MWStartConditionsAsset",
+        "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+      },
+      "asset_path": "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial",
+      "class_name": "MWStartConditionsAsset",
+      "exists": true,
+      "focused_properties": {
+        "associated_faction_asset_id": {
+          "python_type": "FactionAssetId",
+          "repr": "<Struct 'FactionAssetId' (0x000001762075E688) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"FreeRasalhagueRepublic\"}}>"
+        },
+        "campaign_arc": {
+          "python_type": "CampaignArcAssetId",
+          "repr": "<Struct 'CampaignArcAssetId' (0x000001762075E578) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"FRR_CareerMode_Start\"}}>"
+        },
+        "initial_star_map_borders": {
+          "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/Borders3034.Borders3034",
+          "get_name": "Borders3034",
+          "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/Borders3034.Borders3034",
+          "python_type": "MWStarMapBorderAsset",
+          "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/Borders3034.Borders3034' (0x000001762044FF80) Class 'MWStarMapBorderAsset'>",
+          "unreal_class": "MWStarMapBorderAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+        },
+        "starting_date": {
+          "python_type": "DateTime",
+          "repr": "<Struct 'DateTime' (0x000001762075E5B0) {}>"
+        },
+        "starting_system_id": 1675
+      },
+      "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.uasset",
+      "path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.CareerMode_FRR_Start_Tutorial",
+      "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial"
+    },
+    {
+      "asset": {
+        "get_full_name": "MWStartConditionsAsset /Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.CareerMode_Kurita_Start",
+        "get_name": "CareerMode_Kurita_Start",
+        "get_path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.CareerMode_Kurita_Start",
+        "python_type": "MWStartConditionsAsset",
+        "repr": "<Object '/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.CareerMode_Kurita_Start' (0x000001762075E200) Class 'MWStartConditionsAsset'>",
+        "unreal_class": "MWStartConditionsAsset",
+        "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+      },
+      "asset_path": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start",
+      "class_name": "MWStartConditionsAsset",
+      "exists": true,
+      "focused_properties": {
+        "associated_faction_asset_id": {
+          "python_type": "FactionAssetId",
+          "repr": "<Struct 'FactionAssetId' (0x000001762075E388) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"Kurita\"}}>"
+        },
+        "campaign_arc": {
+          "python_type": "CampaignArcAssetId",
+          "repr": "<Struct 'CampaignArcAssetId' (0x000001762075E278) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"CareerMode_Start\"}}>"
+        },
+        "initial_star_map_borders": {
+          "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+          "get_name": "Borders3015",
+          "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+          "python_type": "MWStarMapBorderAsset",
+          "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015' (0x000001760130AA00) Class 'MWStarMapBorderAsset'>",
+          "unreal_class": "MWStarMapBorderAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+        },
+        "starting_date": {
+          "python_type": "DateTime",
+          "repr": "<Struct 'DateTime' (0x000001762075E2B0) {}>"
+        },
+        "starting_system_id": 1812
+      },
+      "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.uasset",
+      "path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.CareerMode_Kurita_Start",
+      "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start"
+    },
+    {
+      "asset": {
+        "get_full_name": "MWStartConditionsAsset /Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.CareerMode_Kurita_Start_Tutorial",
+        "get_name": "CareerMode_Kurita_Start_Tutorial",
+        "get_path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.CareerMode_Kurita_Start_Tutorial",
+        "python_type": "MWStartConditionsAsset",
+        "repr": "<Object '/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.CareerMode_Kurita_Start_Tutorial' (0x000001762075D900) Class 'MWStartConditionsAsset'>",
+        "unreal_class": "MWStartConditionsAsset",
+        "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+      },
+      "asset_path": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial",
+      "class_name": "MWStartConditionsAsset",
+      "exists": true,
+      "focused_properties": {
+        "associated_faction_asset_id": {
+          "python_type": "FactionAssetId",
+          "repr": "<Struct 'FactionAssetId' (0x000001762075DA88) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"Kurita\"}}>"
+        },
+        "campaign_arc": {
+          "python_type": "CampaignArcAssetId",
+          "repr": "<Struct 'CampaignArcAssetId' (0x000001762075D978) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"CareerMode_Start\"}}>"
+        },
+        "initial_star_map_borders": {
+          "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+          "get_name": "Borders3015",
+          "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+          "python_type": "MWStarMapBorderAsset",
+          "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015' (0x000001760130AA00) Class 'MWStarMapBorderAsset'>",
+          "unreal_class": "MWStarMapBorderAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+        },
+        "starting_date": {
+          "python_type": "DateTime",
+          "repr": "<Struct 'DateTime' (0x000001762075D9B0) {}>"
+        },
+        "starting_system_id": 1812
+      },
+      "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.uasset",
+      "path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.CareerMode_Kurita_Start_Tutorial",
+      "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial"
+    },
+    {
+      "asset": {
+        "get_full_name": "MWStartConditionsAsset /Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.CareerMode_Liao_Start",
+        "get_name": "CareerMode_Liao_Start",
+        "get_path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.CareerMode_Liao_Start",
+        "python_type": "MWStartConditionsAsset",
+        "repr": "<Object '/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.CareerMode_Liao_Start' (0x000001762075D300) Class 'MWStartConditionsAsset'>",
+        "unreal_class": "MWStartConditionsAsset",
+        "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+      },
+      "asset_path": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start",
+      "class_name": "MWStartConditionsAsset",
+      "exists": true,
+      "focused_properties": {
+        "associated_faction_asset_id": {
+          "python_type": "FactionAssetId",
+          "repr": "<Struct 'FactionAssetId' (0x000001762075D488) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"Liao\"}}>"
+        },
+        "campaign_arc": {
+          "python_type": "CampaignArcAssetId",
+          "repr": "<Struct 'CampaignArcAssetId' (0x000001762075D378) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"CareerMode_Start\"}}>"
+        },
+        "initial_star_map_borders": {
+          "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+          "get_name": "Borders3015",
+          "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+          "python_type": "MWStarMapBorderAsset",
+          "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015' (0x000001760130AA00) Class 'MWStarMapBorderAsset'>",
+          "unreal_class": "MWStarMapBorderAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+        },
+        "starting_date": {
+          "python_type": "DateTime",
+          "repr": "<Struct 'DateTime' (0x000001762075D3B0) {}>"
+        },
+        "starting_system_id": 1013
+      },
+      "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.uasset",
+      "path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.CareerMode_Liao_Start",
+      "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start"
+    },
+    {
+      "asset": {
+        "get_full_name": "MWStartConditionsAsset /Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.CareerMode_Liao_Start_Tutorial",
+        "get_name": "CareerMode_Liao_Start_Tutorial",
+        "get_path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.CareerMode_Liao_Start_Tutorial",
+        "python_type": "MWStartConditionsAsset",
+        "repr": "<Object '/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.CareerMode_Liao_Start_Tutorial' (0x000001762075CD00) Class 'MWStartConditionsAsset'>",
+        "unreal_class": "MWStartConditionsAsset",
+        "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+      },
+      "asset_path": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial",
+      "class_name": "MWStartConditionsAsset",
+      "exists": true,
+      "focused_properties": {
+        "associated_faction_asset_id": {
+          "python_type": "FactionAssetId",
+          "repr": "<Struct 'FactionAssetId' (0x000001762075CE88) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"Liao\"}}>"
+        },
+        "campaign_arc": {
+          "python_type": "CampaignArcAssetId",
+          "repr": "<Struct 'CampaignArcAssetId' (0x000001762075CD78) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"CareerMode_Start\"}}>"
+        },
+        "initial_star_map_borders": {
+          "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+          "get_name": "Borders3015",
+          "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+          "python_type": "MWStarMapBorderAsset",
+          "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015' (0x000001760130AA00) Class 'MWStarMapBorderAsset'>",
+          "unreal_class": "MWStarMapBorderAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+        },
+        "starting_date": {
+          "python_type": "DateTime",
+          "repr": "<Struct 'DateTime' (0x000001762075CDB0) {}>"
+        },
+        "starting_system_id": 1013
+      },
+      "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.uasset",
+      "path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.CareerMode_Liao_Start_Tutorial",
+      "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial"
+    },
+    {
+      "asset": {
+        "get_full_name": "MWStartConditionsAsset /Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.CareerMode_Marik_Start",
+        "get_name": "CareerMode_Marik_Start",
+        "get_path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.CareerMode_Marik_Start",
+        "python_type": "MWStartConditionsAsset",
+        "repr": "<Object '/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.CareerMode_Marik_Start' (0x000001762075CA00) Class 'MWStartConditionsAsset'>",
+        "unreal_class": "MWStartConditionsAsset",
+        "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+      },
+      "asset_path": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start",
+      "class_name": "MWStartConditionsAsset",
+      "exists": true,
+      "focused_properties": {
+        "associated_faction_asset_id": {
+          "python_type": "FactionAssetId",
+          "repr": "<Struct 'FactionAssetId' (0x000001762075CB88) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"Marik\"}}>"
+        },
+        "campaign_arc": {
+          "python_type": "CampaignArcAssetId",
+          "repr": "<Struct 'CampaignArcAssetId' (0x000001762075CA78) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"CareerMode_Start\"}}>"
+        },
+        "initial_star_map_borders": {
+          "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+          "get_name": "Borders3015",
+          "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+          "python_type": "MWStarMapBorderAsset",
+          "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015' (0x000001760130AA00) Class 'MWStarMapBorderAsset'>",
+          "unreal_class": "MWStarMapBorderAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+        },
+        "starting_date": {
+          "python_type": "DateTime",
+          "repr": "<Struct 'DateTime' (0x000001762075CAB0) {}>"
+        },
+        "starting_system_id": 1560
+      },
+      "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.uasset",
+      "path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.CareerMode_Marik_Start",
+      "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start"
+    },
+    {
+      "asset": {
+        "get_full_name": "MWStartConditionsAsset /Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.CareerMode_Marik_Start_Tutorial",
+        "get_name": "CareerMode_Marik_Start_Tutorial",
+        "get_path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.CareerMode_Marik_Start_Tutorial",
+        "python_type": "MWStartConditionsAsset",
+        "repr": "<Object '/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.CareerMode_Marik_Start_Tutorial' (0x000001762075C100) Class 'MWStartConditionsAsset'>",
+        "unreal_class": "MWStartConditionsAsset",
+        "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+      },
+      "asset_path": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial",
+      "class_name": "MWStartConditionsAsset",
+      "exists": true,
+      "focused_properties": {
+        "associated_faction_asset_id": {
+          "python_type": "FactionAssetId",
+          "repr": "<Struct 'FactionAssetId' (0x000001762075C288) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"Marik\"}}>"
+        },
+        "campaign_arc": {
+          "python_type": "CampaignArcAssetId",
+          "repr": "<Struct 'CampaignArcAssetId' (0x000001762075C178) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"CareerMode_Start\"}}>"
+        },
+        "initial_star_map_borders": {
+          "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+          "get_name": "Borders3015",
+          "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+          "python_type": "MWStarMapBorderAsset",
+          "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015' (0x000001760130AA00) Class 'MWStarMapBorderAsset'>",
+          "unreal_class": "MWStarMapBorderAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+        },
+        "starting_date": {
+          "python_type": "DateTime",
+          "repr": "<Struct 'DateTime' (0x000001762075C1B0) {}>"
+        },
+        "starting_system_id": 1588
+      },
+      "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.uasset",
+      "path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.CareerMode_Marik_Start_Tutorial",
+      "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial"
+    },
+    {
+      "asset": {
+        "get_full_name": "MWStartConditionsAsset /Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.CareerMode_Steiner_Start",
+        "get_name": "CareerMode_Steiner_Start",
+        "get_path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.CareerMode_Steiner_Start",
+        "python_type": "MWStartConditionsAsset",
+        "repr": "<Object '/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.CareerMode_Steiner_Start' (0x00000176216A3A00) Class 'MWStartConditionsAsset'>",
+        "unreal_class": "MWStartConditionsAsset",
+        "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+      },
+      "asset_path": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start",
+      "class_name": "MWStartConditionsAsset",
+      "exists": true,
+      "focused_properties": {
+        "associated_faction_asset_id": {
+          "python_type": "FactionAssetId",
+          "repr": "<Struct 'FactionAssetId' (0x00000176216A3B88) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"Steiner\"}}>"
+        },
+        "campaign_arc": {
+          "python_type": "CampaignArcAssetId",
+          "repr": "<Struct 'CampaignArcAssetId' (0x00000176216A3A78) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"CareerMode_Start\"}}>"
+        },
+        "initial_star_map_borders": {
+          "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+          "get_name": "Borders3015",
+          "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+          "python_type": "MWStarMapBorderAsset",
+          "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015' (0x000001760130AA00) Class 'MWStarMapBorderAsset'>",
+          "unreal_class": "MWStarMapBorderAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+        },
+        "starting_date": {
+          "python_type": "DateTime",
+          "repr": "<Struct 'DateTime' (0x00000176216A3AB0) {}>"
+        },
+        "starting_system_id": 1209
+      },
+      "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.uasset",
+      "path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.CareerMode_Steiner_Start",
+      "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start"
+    },
+    {
+      "asset": {
+        "get_full_name": "MWStartConditionsAsset /Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.CareerMode_Steiner_Start_Tutorial",
+        "get_name": "CareerMode_Steiner_Start_Tutorial",
+        "get_path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.CareerMode_Steiner_Start_Tutorial",
+        "python_type": "MWStartConditionsAsset",
+        "repr": "<Object '/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.CareerMode_Steiner_Start_Tutorial' (0x00000176216A3100) Class 'MWStartConditionsAsset'>",
+        "unreal_class": "MWStartConditionsAsset",
+        "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+      },
+      "asset_path": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial",
+      "class_name": "MWStartConditionsAsset",
+      "exists": true,
+      "focused_properties": {
+        "associated_faction_asset_id": {
+          "python_type": "FactionAssetId",
+          "repr": "<Struct 'FactionAssetId' (0x00000176216A3288) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"Steiner\"}}>"
+        },
+        "campaign_arc": {
+          "python_type": "CampaignArcAssetId",
+          "repr": "<Struct 'CampaignArcAssetId' (0x00000176216A3178) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"CareerMode_Start\"}}>"
+        },
+        "initial_star_map_borders": {
+          "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+          "get_name": "Borders3015",
+          "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+          "python_type": "MWStarMapBorderAsset",
+          "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015' (0x000001760130AA00) Class 'MWStarMapBorderAsset'>",
+          "unreal_class": "MWStarMapBorderAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+        },
+        "starting_date": {
+          "python_type": "DateTime",
+          "repr": "<Struct 'DateTime' (0x00000176216A31B0) {}>"
+        },
+        "starting_system_id": 1209
+      },
+      "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.uasset",
+      "path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.CareerMode_Steiner_Start_Tutorial",
+      "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial"
+    },
+    {
+      "asset": {
+        "get_full_name": "MWCampaignArcAsset /Game/DLC1/CareerMode/StartConditions/CareerMode_Start.CareerMode_Start",
+        "get_name": "CareerMode_Start",
+        "get_path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Start.CareerMode_Start",
+        "python_type": "MWCampaignArcAsset",
+        "repr": "<Object '/Game/DLC1/CareerMode/StartConditions/CareerMode_Start.CareerMode_Start' (0x0000017712D504C0) Class 'MWCampaignArcAsset'>",
+        "unreal_class": "MWCampaignArcAsset",
+        "unreal_class_path": "/Script/MechWarrior.MWCampaignArcAsset"
+      },
+      "asset_path": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Start",
+      "class_name": "MWCampaignArcAsset",
+      "exists": true,
+      "focused_properties": {
+        "campaign_arc_script": null,
+        "campaign_event_list": {
+          "python_type": "CampaignArcEventList",
+          "repr": "<Struct 'CampaignArcEventList' (0x0000017712D50568) {campaign_events: ((EventName=\"Give mechs\"),(EventName=\"EnableCoOp\",CampaignActions=(/Game/Campaign/CampaignArcs/FactionStarts/MainCampaignStart/CreateCoOpReadySave_ArcAction.CreateCoOpReadySave_ArcAction_C)),(EventName=\"SpawnFRR\",TriggerConditions=(TriggerType=Oneoff,Date=(bCheck=True,Value=3015.01.01-00.00.00)),CampaignActions=(/Game/DLC1/CareerMode/Warzones/Rasalhauge_Clusters/PlaceRasalhague_ArcAction_7_10.PlaceRasalhague_ArcAction_7_10_C)),(EventName=\"SetCompanyUnfounded\",CampaignActions=(/Game/DLC1/CareerMode/StartConditions/Arcs/SetCompanyUnfounded.SetCompanyUnfounded_C)),(EventName=\"InnerSphereNewsFeed\",TriggerConditions=(Events=((bInvertCondition=True,EventIdentifier=(EventName=\"InnerSphereNewsFeed\",CampaignArc=MWCampaignArcAsset'\"/Game/DLC1/CareerMode/StartConditions/CareerMode_Start.CareerMode_Start\"')))),CampaignActions=(/Game/Campaign/NewsReel/NewsFeed_ArcAction.NewsFeed_ArcAction_C)))}>"
+        },
+        "run_campaign_arc_script_on_save": false,
+        "sub_campaigns": {
+          "python_type": "Set",
+          "repr": "set([MWCampaignArcAsset'\"/Game/DLC1/CareerMode/CareerModeCoreCampaign.CareerModeCoreCampaign\"'])"
+        }
+      },
+      "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Start.uasset",
+      "path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Start.CareerMode_Start",
+      "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Start"
+    },
+    {
+      "asset": {
+        "get_full_name": "MWCampaignArcAsset /Game/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.FRR_CareerMode_Start",
+        "get_name": "FRR_CareerMode_Start",
+        "get_path_name": "/Game/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.FRR_CareerMode_Start",
+        "python_type": "MWCampaignArcAsset",
+        "repr": "<Object '/Game/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.FRR_CareerMode_Start' (0x0000017712D50C40) Class 'MWCampaignArcAsset'>",
+        "unreal_class": "MWCampaignArcAsset",
+        "unreal_class_path": "/Script/MechWarrior.MWCampaignArcAsset"
+      },
+      "asset_path": "/Game/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start",
+      "class_name": "MWCampaignArcAsset",
+      "exists": true,
+      "focused_properties": {
+        "campaign_arc_script": null,
+        "campaign_event_list": {
+          "python_type": "CampaignArcEventList",
+          "repr": "<Struct 'CampaignArcEventList' (0x0000017712D50CE8) {campaign_events: ((EventName=\"Give mechs\"),(EventName=\"EnableCoOp\",CampaignActions=(/Game/Campaign/CampaignArcs/FactionStarts/MainCampaignStart/CreateCoOpReadySave_ArcAction.CreateCoOpReadySave_ArcAction_C)),(EventName=\"PlaceFRR\",TriggerConditions=(TriggerType=Oneoff),CampaignActions=(/Game/DLC1/CareerMode/Warzones/Rasalhauge_Clusters/PlaceRasalhague_ArcAction_1_3.PlaceRasalhague_ArcAction_1_3_C)),(EventName=\"SetCompanyUnfounded\",CampaignActions=(/Game/DLC1/CareerMode/StartConditions/Arcs/SetCompanyUnfounded.SetCompanyUnfounded_C)),(EventName=\"InnerSphereNewsFeed\",TriggerConditions=(Events=((bInvertCondition=True,EventIdentifier=(EventName=\"InnerSphereNewsFeed\",CampaignArc=MWCampaignArcAsset'\"/Game/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.FRR_CareerMode_Start\"')))),CampaignActions=(/Game/Campaign/NewsReel/NewsFeed_ArcAction.NewsFeed_ArcAction_C)))}>"
+        },
+        "run_campaign_arc_script_on_save": false,
+        "sub_campaigns": {
+          "python_type": "Set",
+          "repr": "set([MWCampaignArcAsset'\"/Game/DLC1/CareerMode/CareerModeCoreCampaign.CareerModeCoreCampaign\"'])"
+        }
+      },
+      "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.uasset",
+      "path_name": "/Game/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.FRR_CareerMode_Start",
+      "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start"
+    },
+    {
+      "asset": {
+        "get_full_name": "MWCampaignArcAsset /Game/DLC1/CareerMode/CareerModeCoreCampaign.CareerModeCoreCampaign",
+        "get_name": "CareerModeCoreCampaign",
+        "get_path_name": "/Game/DLC1/CareerMode/CareerModeCoreCampaign.CareerModeCoreCampaign",
+        "python_type": "MWCampaignArcAsset",
+        "repr": "<Object '/Game/DLC1/CareerMode/CareerModeCoreCampaign.CareerModeCoreCampaign' (0x0000017712BB2B00) Class 'MWCampaignArcAsset'>",
+        "unreal_class": "MWCampaignArcAsset",
+        "unreal_class_path": "/Script/MechWarrior.MWCampaignArcAsset"
+      },
+      "asset_path": "/Game/DLC1/CareerMode/CareerModeCoreCampaign",
+      "class_name": "MWCampaignArcAsset",
+      "exists": true,
+      "focused_properties": {
+        "campaign_arc_script": null,
+        "campaign_event_list": {
+          "python_type": "CampaignArcEventList",
+          "repr": "<Struct 'CampaignArcEventList' (0x0000017712BB2BA8) {campaign_events: ((EventName=\"Lock_Operations\",CampaignActions=(/Game/Campaign/CampaignArcs/FactionStarts/A1_Arc/Lock_Operations_ArcAction.Lock_Operations_ArcAction_C)),(EventName=\"UniqueEventName\",TriggerConditions=(TriggerType=Always,ReputationLevel=(bCheck=True)),CampaignActions=(None)),(EventName=\"OfferCantinaAspirationalTransmission\",TriggerConditions=(ReputationLevel=(bCheck=True,Value=4,Condition=LessThan),DLC=(bCheck=True,DLCAsset=MWDLCAsset'\"/Game/DLC1/DLC_1.DLC_1\"')),CampaignActions=(/Game/Campaign/CampaignArcs/FactionStarts/A1_Arc/OfferCantinaAsperational_ArcAction.OfferCantinaAsperational_ArcAction_C)))}>"
+        },
+        "run_campaign_arc_script_on_save": false,
+        "sub_campaigns": {
+          "python_type": "Set",
+          "repr": "set([MWCampaignArcAsset'\"/Game/Campaign/CampaignArcs/BorderChanges/AllStarMapBorderChanges.AllStarMapBorderChanges\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.CareerModeClusters\"', MWCampaignArcAsset'\"/Game/Campaign/CampaignArcs/GameOver/Overdraft_Arc.Overdraft_Arc\"', MWCampaignArcAsset'\"/Game/Campaign/CampaignArcs/FactionStarts/AddDefaultCodexEntries_Arc.AddDefaultCodexEntries_Arc\"', MWCampaignArcAsset'\"/Game/Campaign/CampaignArcs/HidingSystems/HidingSystemsArc.HidingSystemsArc\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.CareerMode_SafeZones\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Sidequests/HeroesOfTheIS/Quest_Dragon/DLC1_Dragon.DLC1_Dragon\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/CantinaArc.CantinaArc\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Sidequests/MS_Exclusive/DLC1_GoblinArc.DLC1_GoblinArc\"', MWCampaignArcAsset'\"/Game/Campaign/CampaignArcs/Razer_Exclusive/Razer_WolverineArc.Razer_WolverineArc\"', MWCampaignArcAsset'\"/Game/DLC2/CampaignData/DLC2_CoreCampaign.DLC2_CoreCampaign\"', MWCampaignArcAsset'\"/Game/DLC3/HatchetmanQuestData/DLC3_HatchetmanQuest.DLC3_HatchetmanQuest\"', MWCampaignArcAsset'\"/Game/DLC4/CampaignData/DLC4_CoreCampaign.DLC4_CoreCampaign\"', MWCampaignArcAsset'\"/Game/DLC5/CampaignData/DLC5_CoreCampaign.DLC5_CoreCampaign\"', MWCampaignArcAsset'\"/Game/DLC6/CampaignData/DLC6_CoreCampaign.DLC6_CoreCampaign\"', MWCampaignArcAsset'\"/Game/DLC7/CampaignData/DLC7_CoreCampaign.DLC7_CoreCampaign\"'])"
+        }
+      },
+      "manifest_asset": "/Game/DLC1/CareerMode/CareerModeCoreCampaign.uasset",
+      "path_name": "/Game/DLC1/CareerMode/CareerModeCoreCampaign.CareerModeCoreCampaign",
+      "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/CareerModeCoreCampaign"
+    },
+    {
+      "asset": {
+        "get_full_name": "MWCampaignArcAsset /Game/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.CareerModeClusters",
+        "get_name": "CareerModeClusters",
+        "get_path_name": "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.CareerModeClusters",
+        "python_type": "MWCampaignArcAsset",
+        "repr": "<Object '/Game/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.CareerModeClusters' (0x0000017712BB0E80) Class 'MWCampaignArcAsset'>",
+        "unreal_class": "MWCampaignArcAsset",
+        "unreal_class_path": "/Script/MechWarrior.MWCampaignArcAsset"
+      },
+      "asset_path": "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters",
+      "class_name": "MWCampaignArcAsset",
+      "exists": true,
+      "focused_properties": {
+        "campaign_arc_script": null,
+        "campaign_event_list": {
+          "python_type": "CampaignArcEventList",
+          "repr": "<Struct 'CampaignArcEventList' (0x0000017712BB0F28) {campaign_events: }>"
+        },
+        "run_campaign_arc_script_on_save": false,
+        "sub_campaigns": {
+          "python_type": "Set",
+          "repr": "set([MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/L_1_2/Common_L_1_2.Common_L_1_2\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/L_2_5/Common_L_2_5.Common_L_2_5\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/L_3_6/Common_L_3_6.Common_L_3_6\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/L_5_8/Common_L_5_8.Common_L_5_8\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/L_7_10/Common_L_7_10.Common_L_7_10\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/L_11_12/Common_L_11_12.Common_L_11_12\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/L_12_13/Common_L_12_13.Common_L_12_13\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/L_13_14/Common_L_13_14.Common_L_13_14\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/M_1_2/Common_M_1_2.Common_M_1_2\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/M_2_5/Common_M_2_5.Common_M_2_5\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/M_3_6/Common_M_3_6.Common_M_3_6\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/M_5_8/Common_M_5_8.Common_M_5_8\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/M_7_10/Common_M_7_10.Common_M_7_10\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/M_9_11/Common_M_9_11.Common_M_9_11\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/M_12_13/Common_M_12_13.Common_M_12_13\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/M_11_12/Common_M_11_12.Common_M_11_12\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/M_12_13_1/Common_M_12_13_1.Common_M_12_13_1\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_5_8/Common_S_5_8.Common_S_5_8\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_5_8_1/Common_S_5_8_1.Common_S_5_8_1\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_6_9/Common_S_6_9.Common_S_6_9\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_9_11/Common_S_9_11.Common_S_9_11\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_12_13/Common_S_12_13.Common_S_12_13\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_13_14/Common_S_13_14.Common_S_13_14\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_11_12/Common_D_11_12.Common_D_11_12\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_12_13/Common_D_12_13.Common_D_12_13\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_1_2/Common_D_1_2.Common_D_1_2\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_3_6/Common_D_3_6.Common_D_3_6\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_5_8/Common_D_5_8.Common_D_5_8\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_1_2/Common_K_1_2.Common_K_1_2\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_2_3/Common_K_2_3.Common_K_2_3\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_3_4/Common_K_3_4.Common_K_3_4\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_3_5_1/Common_K_3_5_1.Common_K_3_5_1\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_4_5/Common_K_4_5.Common_K_4_5\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_5_6/Common_K_5_6.Common_K_5_6\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_7_9/Common_K_7_9.Common_K_7_9\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_12_13/Common_K_12_13.Common_K_12_13\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_2_3/Common_D_2_3.Common_D_2_3\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_15/Common_D_15.Common_D_15\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/M_15/Common_M_15.Common_M_15\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/M_13_14/Common_M_13_14.Common_M_13_14\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_3_5/Common_S_3_5.Common_S_3_5\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_2_5/Common_S_2_5.Common_S_2_5\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_2_4/Common_S_2_4.Common_S_2_4\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_2_4/Common_D_2_4.Common_D_2_4\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_3_5/Common_D_3_5.Common_D_3_5\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_1_2/Common_S_1_2.Common_S_1_2\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_10_12/Common_S_10_12.Common_S_10_12\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_7_10/Common_D_7_10.Common_D_7_10\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_3_5/Common_K_3_5.Common_K_3_5\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_13_14/Common_K_13_14.Common_K_13_14\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_6_7/Common_S_6_7.Common_S_6_7\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_4_6/Common_D_4_6.Common_D_4_6\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_5_7/Common_D_5_7.Common_D_5_7\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_6_7/Common_D_6_7.Common_D_6_7\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_6_8/Common_D_6_8.Common_D_6_8\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_6_7/Common_K_6_7.Common_K_6_7\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_6_8/Common_K_6_8.Common_K_6_8\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_8_10/Common_K_8_10.Common_K_8_10\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_4_6/Common_S_4_6.Common_S_4_6\"', MWCampaignArcAsset'\"/Game/Campaign/CampaignArcs/Regions/MercStars/Place_MercStars_Arc.Place_MercStars_Arc\"'])"
+        }
+      },
+      "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.uasset",
+      "path_name": "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.CareerModeClusters",
+      "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters"
+    },
+    {
+      "asset": {
+        "get_full_name": "MWCampaignArcAsset /Game/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.CareerMode_SafeZones",
+        "get_name": "CareerMode_SafeZones",
+        "get_path_name": "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.CareerMode_SafeZones",
+        "python_type": "MWCampaignArcAsset",
+        "repr": "<Object '/Game/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.CareerMode_SafeZones' (0x00000177136A8700) Class 'MWCampaignArcAsset'>",
+        "unreal_class": "MWCampaignArcAsset",
+        "unreal_class_path": "/Script/MechWarrior.MWCampaignArcAsset"
+      },
+      "asset_path": "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones",
+      "class_name": "MWCampaignArcAsset",
+      "exists": true,
+      "focused_properties": {
+        "campaign_arc_script": null,
+        "campaign_event_list": {
+          "python_type": "CampaignArcEventList",
+          "repr": "<Struct 'CampaignArcEventList' (0x00000177136A87A8) {campaign_events: ((EventName=\"PlaceRepairClusters\",TriggerConditions=(TriggerType=Oneoff,ReputationLevel=(Value=3)),CampaignActions=(/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_1_ArcAction.PlaceSafeZone_1_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_2_ArcAction.PlaceSafeZone_2_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_3_ArcAction.PlaceSafeZone_3_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_4_ArcAction.PlaceSafeZone_4_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_5_ArcAction.PlaceSafeZone_5_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_6_ArcAction.PlaceSafeZone_6_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_7_ArcAction.PlaceSafeZone_7_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_8_ArcAction.PlaceSafeZone_8_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_9_ArcAction.PlaceSafeZone_9_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_10_ArcAction.PlaceSafeZone_10_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_11_ArcAction.PlaceSafeZone_11_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_12_ArcAction.PlaceSafeZone_12_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_13_ArcAction.PlaceSafeZone_13_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_14_ArcAction.PlaceSafeZone_14_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_15_ArcAction.PlaceSafeZone_15_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_16_ArcAction.PlaceSafeZone_16_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_17_ArcAction.PlaceSafeZone_17_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_18_ArcAction.PlaceSafeZone_18_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_19_ArcAction.PlaceSafeZone_19_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_20_ArcAction.PlaceSafeZone_20_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_21_ArcAction.PlaceSafeZone_21_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_22_ArcAction.PlaceSafeZone_22_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_23_ArcAction.PlaceSafeZone_23_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_24_ArcAction.PlaceSafeZone_24_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_25_ArcAction.PlaceSafeZone_25_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_26_ArcAction.PlaceSafeZone_26_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_27_ArcAction.PlaceSafeZone_27_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_28_ArcAction.PlaceSafeZone_28_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_29_ArcAction.PlaceSafeZone_29_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_30_ArcAction.PlaceSafeZone_30_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_31_ArcAction.PlaceSafeZone_31_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_32_ArcAction.PlaceSafeZone_32_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_33_ArcAction.PlaceSafeZone_33_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_34_ArcAction.PlaceSafeZone_34_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_35_ArcAction.PlaceSafeZone_35_ArcAction_C)))}>"
+        },
+        "run_campaign_arc_script_on_save": false,
+        "sub_campaigns": {
+          "python_type": "Set",
+          "repr": "set([])"
+        }
+      },
+      "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.uasset",
+      "path_name": "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.CareerMode_SafeZones",
+      "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones"
+    }
+  ],
+  "errors": [],
+  "generated_utc": "2026-05-25T03:27:15.852064+00:00",
+  "plugin_dir": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch",
+  "result": {
+    "applied": true,
+    "assets": [
+      {
+        "asset": {
+          "get_full_name": "MWStartConditionsAsset /ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.CareerMode_Davion_Start",
+          "get_name": "CareerMode_Davion_Start",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.CareerMode_Davion_Start",
+          "python_type": "MWStartConditionsAsset",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.CareerMode_Davion_Start' (0x00000176B06EFD00) Class 'MWStartConditionsAsset'>",
+          "unreal_class": "MWStartConditionsAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+        },
+        "backup": null,
+        "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.uasset",
+        "saved": true,
+        "source_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start",
+        "source_before": {
+          "asset": {
+            "get_full_name": "MWStartConditionsAsset /Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.CareerMode_Davion_Start",
+            "get_name": "CareerMode_Davion_Start",
+            "get_path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.CareerMode_Davion_Start",
+            "python_type": "MWStartConditionsAsset",
+            "repr": "<Object '/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.CareerMode_Davion_Start' (0x000001762075FA00) Class 'MWStartConditionsAsset'>",
+            "unreal_class": "MWStartConditionsAsset",
+            "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+          },
+          "asset_path": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start",
+          "class_name": "MWStartConditionsAsset",
+          "exists": true,
+          "focused_properties": {
+            "associated_faction_asset_id": {
+              "python_type": "FactionAssetId",
+              "repr": "<Struct 'FactionAssetId' (0x000001762075FB88) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"Davion\"}}>"
+            },
+            "campaign_arc": {
+              "python_type": "CampaignArcAssetId",
+              "repr": "<Struct 'CampaignArcAssetId' (0x000001762075FA78) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"CareerMode_Start\"}}>"
+            },
+            "initial_star_map_borders": {
+              "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "get_name": "Borders3015",
+              "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "python_type": "MWStarMapBorderAsset",
+              "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015' (0x000001760130AA00) Class 'MWStarMapBorderAsset'>",
+              "unreal_class": "MWStarMapBorderAsset",
+              "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+            },
+            "starting_date": {
+              "python_type": "DateTime",
+              "repr": "<Struct 'DateTime' (0x000001762075FAB0) {}>"
+            },
+            "starting_system_id": 1057
+          },
+          "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.uasset",
+          "path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.CareerMode_Davion_Start",
+          "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start"
+        },
+        "target_after": {
+          "asset": {
+            "get_full_name": "MWStartConditionsAsset /ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.CareerMode_Davion_Start",
+            "get_name": "CareerMode_Davion_Start",
+            "get_path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.CareerMode_Davion_Start",
+            "python_type": "MWStartConditionsAsset",
+            "repr": "<Object '/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.CareerMode_Davion_Start' (0x00000176B06EFD00) Class 'MWStartConditionsAsset'>",
+            "unreal_class": "MWStartConditionsAsset",
+            "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+          },
+          "asset_path": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start",
+          "class_name": "MWStartConditionsAsset",
+          "exists": true,
+          "focused_properties": {
+            "associated_faction_asset_id": {
+              "python_type": "FactionAssetId",
+              "repr": "<Struct 'FactionAssetId' (0x00000176B06EFE88) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"Davion\"}}>"
+            },
+            "campaign_arc": {
+              "python_type": "CampaignArcAssetId",
+              "repr": "<Struct 'CampaignArcAssetId' (0x00000176B06EFD78) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"CareerMode_Start\"}}>"
+            },
+            "initial_star_map_borders": {
+              "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "get_name": "Borders3015",
+              "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "python_type": "MWStarMapBorderAsset",
+              "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015' (0x000001760130AA00) Class 'MWStarMapBorderAsset'>",
+              "unreal_class": "MWStarMapBorderAsset",
+              "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+            },
+            "starting_date": {
+              "python_type": "DateTime",
+              "repr": "<Struct 'DateTime' (0x00000176B06EFDB0) {}>"
+            },
+            "starting_system_id": 1057
+          },
+          "manifest_asset": null,
+          "path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.CareerMode_Davion_Start",
+          "target_asset": null
+        },
+        "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start",
+        "target_before": null,
+        "target_file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch\\ModOverride\\DLC1\\CareerMode\\StartConditions\\CareerMode_Davion_Start.uasset"
+      },
+      {
+        "asset": {
+          "get_full_name": "MWStartConditionsAsset /ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.CareerMode_Davion_Start_Tutorial",
+          "get_name": "CareerMode_Davion_Start_Tutorial",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.CareerMode_Davion_Start_Tutorial",
+          "python_type": "MWStartConditionsAsset",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.CareerMode_Davion_Start_Tutorial' (0x00000176B06EF700) Class 'MWStartConditionsAsset'>",
+          "unreal_class": "MWStartConditionsAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+        },
+        "backup": null,
+        "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.uasset",
+        "saved": true,
+        "source_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial",
+        "source_before": {
+          "asset": {
+            "get_full_name": "MWStartConditionsAsset /Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.CareerMode_Davion_Start_Tutorial",
+            "get_name": "CareerMode_Davion_Start_Tutorial",
+            "get_path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.CareerMode_Davion_Start_Tutorial",
+            "python_type": "MWStartConditionsAsset",
+            "repr": "<Object '/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.CareerMode_Davion_Start_Tutorial' (0x000001762075F100) Class 'MWStartConditionsAsset'>",
+            "unreal_class": "MWStartConditionsAsset",
+            "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+          },
+          "asset_path": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial",
+          "class_name": "MWStartConditionsAsset",
+          "exists": true,
+          "focused_properties": {
+            "associated_faction_asset_id": {
+              "python_type": "FactionAssetId",
+              "repr": "<Struct 'FactionAssetId' (0x000001762075F288) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"Davion\"}}>"
+            },
+            "campaign_arc": {
+              "python_type": "CampaignArcAssetId",
+              "repr": "<Struct 'CampaignArcAssetId' (0x000001762075F178) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"CareerMode_Start\"}}>"
+            },
+            "initial_star_map_borders": {
+              "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "get_name": "Borders3015",
+              "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "python_type": "MWStarMapBorderAsset",
+              "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015' (0x000001760130AA00) Class 'MWStarMapBorderAsset'>",
+              "unreal_class": "MWStarMapBorderAsset",
+              "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+            },
+            "starting_date": {
+              "python_type": "DateTime",
+              "repr": "<Struct 'DateTime' (0x000001762075F1B0) {}>"
+            },
+            "starting_system_id": 1057
+          },
+          "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.uasset",
+          "path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.CareerMode_Davion_Start_Tutorial",
+          "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial"
+        },
+        "target_after": {
+          "asset": {
+            "get_full_name": "MWStartConditionsAsset /ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.CareerMode_Davion_Start_Tutorial",
+            "get_name": "CareerMode_Davion_Start_Tutorial",
+            "get_path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.CareerMode_Davion_Start_Tutorial",
+            "python_type": "MWStartConditionsAsset",
+            "repr": "<Object '/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.CareerMode_Davion_Start_Tutorial' (0x00000176B06EF700) Class 'MWStartConditionsAsset'>",
+            "unreal_class": "MWStartConditionsAsset",
+            "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+          },
+          "asset_path": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial",
+          "class_name": "MWStartConditionsAsset",
+          "exists": true,
+          "focused_properties": {
+            "associated_faction_asset_id": {
+              "python_type": "FactionAssetId",
+              "repr": "<Struct 'FactionAssetId' (0x00000176B06EF888) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"Davion\"}}>"
+            },
+            "campaign_arc": {
+              "python_type": "CampaignArcAssetId",
+              "repr": "<Struct 'CampaignArcAssetId' (0x00000176B06EF778) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"CareerMode_Start\"}}>"
+            },
+            "initial_star_map_borders": {
+              "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "get_name": "Borders3015",
+              "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "python_type": "MWStarMapBorderAsset",
+              "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015' (0x000001760130AA00) Class 'MWStarMapBorderAsset'>",
+              "unreal_class": "MWStarMapBorderAsset",
+              "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+            },
+            "starting_date": {
+              "python_type": "DateTime",
+              "repr": "<Struct 'DateTime' (0x00000176B06EF7B0) {}>"
+            },
+            "starting_system_id": 1057
+          },
+          "manifest_asset": null,
+          "path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial.CareerMode_Davion_Start_Tutorial",
+          "target_asset": null
+        },
+        "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial",
+        "target_before": null,
+        "target_file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch\\ModOverride\\DLC1\\CareerMode\\StartConditions\\CareerMode_Davion_Start_Tutorial.uasset"
+      },
+      {
+        "asset": {
+          "get_full_name": "MWStartConditionsAsset /ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.CareerMode_FRR_Start",
+          "get_name": "CareerMode_FRR_Start",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.CareerMode_FRR_Start",
+          "python_type": "MWStartConditionsAsset",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.CareerMode_FRR_Start' (0x00000176A5084A00) Class 'MWStartConditionsAsset'>",
+          "unreal_class": "MWStartConditionsAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+        },
+        "backup": null,
+        "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.uasset",
+        "saved": true,
+        "source_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start",
+        "source_before": {
+          "asset": {
+            "get_full_name": "MWStartConditionsAsset /Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.CareerMode_FRR_Start",
+            "get_name": "CareerMode_FRR_Start",
+            "get_path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.CareerMode_FRR_Start",
+            "python_type": "MWStartConditionsAsset",
+            "repr": "<Object '/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.CareerMode_FRR_Start' (0x000001762075EB00) Class 'MWStartConditionsAsset'>",
+            "unreal_class": "MWStartConditionsAsset",
+            "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+          },
+          "asset_path": "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start",
+          "class_name": "MWStartConditionsAsset",
+          "exists": true,
+          "focused_properties": {
+            "associated_faction_asset_id": {
+              "python_type": "FactionAssetId",
+              "repr": "<Struct 'FactionAssetId' (0x000001762075EC88) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"FreeRasalhagueRepublic\"}}>"
+            },
+            "campaign_arc": {
+              "python_type": "CampaignArcAssetId",
+              "repr": "<Struct 'CampaignArcAssetId' (0x000001762075EB78) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"FRR_CareerMode_Start\"}}>"
+            },
+            "initial_star_map_borders": {
+              "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/Borders3034.Borders3034",
+              "get_name": "Borders3034",
+              "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/Borders3034.Borders3034",
+              "python_type": "MWStarMapBorderAsset",
+              "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/Borders3034.Borders3034' (0x000001762044FF80) Class 'MWStarMapBorderAsset'>",
+              "unreal_class": "MWStarMapBorderAsset",
+              "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+            },
+            "starting_date": {
+              "python_type": "DateTime",
+              "repr": "<Struct 'DateTime' (0x000001762075EBB0) {}>"
+            },
+            "starting_system_id": 1675
+          },
+          "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.uasset",
+          "path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.CareerMode_FRR_Start",
+          "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start"
+        },
+        "target_after": {
+          "asset": {
+            "get_full_name": "MWStartConditionsAsset /ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.CareerMode_FRR_Start",
+            "get_name": "CareerMode_FRR_Start",
+            "get_path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.CareerMode_FRR_Start",
+            "python_type": "MWStartConditionsAsset",
+            "repr": "<Object '/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.CareerMode_FRR_Start' (0x00000176A5084A00) Class 'MWStartConditionsAsset'>",
+            "unreal_class": "MWStartConditionsAsset",
+            "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+          },
+          "asset_path": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start",
+          "class_name": "MWStartConditionsAsset",
+          "exists": true,
+          "focused_properties": {
+            "associated_faction_asset_id": {
+              "python_type": "FactionAssetId",
+              "repr": "<Struct 'FactionAssetId' (0x00000176A5084B88) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"FreeRasalhagueRepublic\"}}>"
+            },
+            "campaign_arc": {
+              "python_type": "CampaignArcAssetId",
+              "repr": "<Struct 'CampaignArcAssetId' (0x00000176A5084A78) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"FRR_CareerMode_Start\"}}>"
+            },
+            "initial_star_map_borders": {
+              "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/Borders3034.Borders3034",
+              "get_name": "Borders3034",
+              "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/Borders3034.Borders3034",
+              "python_type": "MWStarMapBorderAsset",
+              "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/Borders3034.Borders3034' (0x000001762044FF80) Class 'MWStarMapBorderAsset'>",
+              "unreal_class": "MWStarMapBorderAsset",
+              "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+            },
+            "starting_date": {
+              "python_type": "DateTime",
+              "repr": "<Struct 'DateTime' (0x00000176A5084AB0) {}>"
+            },
+            "starting_system_id": 1675
+          },
+          "manifest_asset": null,
+          "path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start.CareerMode_FRR_Start",
+          "target_asset": null
+        },
+        "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start",
+        "target_before": null,
+        "target_file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch\\ModOverride\\DLC1\\CareerMode\\StartConditions\\CareerMode_FRR_Start.uasset"
+      },
+      {
+        "asset": {
+          "get_full_name": "MWStartConditionsAsset /ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.CareerMode_FRR_Start_Tutorial",
+          "get_name": "CareerMode_FRR_Start_Tutorial",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.CareerMode_FRR_Start_Tutorial",
+          "python_type": "MWStartConditionsAsset",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.CareerMode_FRR_Start_Tutorial' (0x00000176A5087400) Class 'MWStartConditionsAsset'>",
+          "unreal_class": "MWStartConditionsAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+        },
+        "backup": null,
+        "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.uasset",
+        "saved": true,
+        "source_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial",
+        "source_before": {
+          "asset": {
+            "get_full_name": "MWStartConditionsAsset /Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.CareerMode_FRR_Start_Tutorial",
+            "get_name": "CareerMode_FRR_Start_Tutorial",
+            "get_path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.CareerMode_FRR_Start_Tutorial",
+            "python_type": "MWStartConditionsAsset",
+            "repr": "<Object '/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.CareerMode_FRR_Start_Tutorial' (0x000001762075E500) Class 'MWStartConditionsAsset'>",
+            "unreal_class": "MWStartConditionsAsset",
+            "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+          },
+          "asset_path": "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial",
+          "class_name": "MWStartConditionsAsset",
+          "exists": true,
+          "focused_properties": {
+            "associated_faction_asset_id": {
+              "python_type": "FactionAssetId",
+              "repr": "<Struct 'FactionAssetId' (0x000001762075E688) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"FreeRasalhagueRepublic\"}}>"
+            },
+            "campaign_arc": {
+              "python_type": "CampaignArcAssetId",
+              "repr": "<Struct 'CampaignArcAssetId' (0x000001762075E578) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"FRR_CareerMode_Start\"}}>"
+            },
+            "initial_star_map_borders": {
+              "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/Borders3034.Borders3034",
+              "get_name": "Borders3034",
+              "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/Borders3034.Borders3034",
+              "python_type": "MWStarMapBorderAsset",
+              "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/Borders3034.Borders3034' (0x000001762044FF80) Class 'MWStarMapBorderAsset'>",
+              "unreal_class": "MWStarMapBorderAsset",
+              "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+            },
+            "starting_date": {
+              "python_type": "DateTime",
+              "repr": "<Struct 'DateTime' (0x000001762075E5B0) {}>"
+            },
+            "starting_system_id": 1675
+          },
+          "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.uasset",
+          "path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.CareerMode_FRR_Start_Tutorial",
+          "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial"
+        },
+        "target_after": {
+          "asset": {
+            "get_full_name": "MWStartConditionsAsset /ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.CareerMode_FRR_Start_Tutorial",
+            "get_name": "CareerMode_FRR_Start_Tutorial",
+            "get_path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.CareerMode_FRR_Start_Tutorial",
+            "python_type": "MWStartConditionsAsset",
+            "repr": "<Object '/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.CareerMode_FRR_Start_Tutorial' (0x00000176A5087400) Class 'MWStartConditionsAsset'>",
+            "unreal_class": "MWStartConditionsAsset",
+            "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+          },
+          "asset_path": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial",
+          "class_name": "MWStartConditionsAsset",
+          "exists": true,
+          "focused_properties": {
+            "associated_faction_asset_id": {
+              "python_type": "FactionAssetId",
+              "repr": "<Struct 'FactionAssetId' (0x00000176A5087588) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"FreeRasalhagueRepublic\"}}>"
+            },
+            "campaign_arc": {
+              "python_type": "CampaignArcAssetId",
+              "repr": "<Struct 'CampaignArcAssetId' (0x00000176A5087478) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"FRR_CareerMode_Start\"}}>"
+            },
+            "initial_star_map_borders": {
+              "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/Borders3034.Borders3034",
+              "get_name": "Borders3034",
+              "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/Borders3034.Borders3034",
+              "python_type": "MWStarMapBorderAsset",
+              "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3034_RassalhaugeRecognized/Borders3034.Borders3034' (0x000001762044FF80) Class 'MWStarMapBorderAsset'>",
+              "unreal_class": "MWStarMapBorderAsset",
+              "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+            },
+            "starting_date": {
+              "python_type": "DateTime",
+              "repr": "<Struct 'DateTime' (0x00000176A50874B0) {}>"
+            },
+            "starting_system_id": 1675
+          },
+          "manifest_asset": null,
+          "path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial.CareerMode_FRR_Start_Tutorial",
+          "target_asset": null
+        },
+        "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial",
+        "target_before": null,
+        "target_file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch\\ModOverride\\DLC1\\CareerMode\\StartConditions\\CareerMode_FRR_Start_Tutorial.uasset"
+      },
+      {
+        "asset": {
+          "get_full_name": "MWStartConditionsAsset /ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.CareerMode_Kurita_Start",
+          "get_name": "CareerMode_Kurita_Start",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.CareerMode_Kurita_Start",
+          "python_type": "MWStartConditionsAsset",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.CareerMode_Kurita_Start' (0x00000176A5087100) Class 'MWStartConditionsAsset'>",
+          "unreal_class": "MWStartConditionsAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+        },
+        "backup": null,
+        "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.uasset",
+        "saved": true,
+        "source_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start",
+        "source_before": {
+          "asset": {
+            "get_full_name": "MWStartConditionsAsset /Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.CareerMode_Kurita_Start",
+            "get_name": "CareerMode_Kurita_Start",
+            "get_path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.CareerMode_Kurita_Start",
+            "python_type": "MWStartConditionsAsset",
+            "repr": "<Object '/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.CareerMode_Kurita_Start' (0x000001762075E200) Class 'MWStartConditionsAsset'>",
+            "unreal_class": "MWStartConditionsAsset",
+            "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+          },
+          "asset_path": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start",
+          "class_name": "MWStartConditionsAsset",
+          "exists": true,
+          "focused_properties": {
+            "associated_faction_asset_id": {
+              "python_type": "FactionAssetId",
+              "repr": "<Struct 'FactionAssetId' (0x000001762075E388) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"Kurita\"}}>"
+            },
+            "campaign_arc": {
+              "python_type": "CampaignArcAssetId",
+              "repr": "<Struct 'CampaignArcAssetId' (0x000001762075E278) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"CareerMode_Start\"}}>"
+            },
+            "initial_star_map_borders": {
+              "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "get_name": "Borders3015",
+              "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "python_type": "MWStarMapBorderAsset",
+              "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015' (0x000001760130AA00) Class 'MWStarMapBorderAsset'>",
+              "unreal_class": "MWStarMapBorderAsset",
+              "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+            },
+            "starting_date": {
+              "python_type": "DateTime",
+              "repr": "<Struct 'DateTime' (0x000001762075E2B0) {}>"
+            },
+            "starting_system_id": 1812
+          },
+          "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.uasset",
+          "path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.CareerMode_Kurita_Start",
+          "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start"
+        },
+        "target_after": {
+          "asset": {
+            "get_full_name": "MWStartConditionsAsset /ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.CareerMode_Kurita_Start",
+            "get_name": "CareerMode_Kurita_Start",
+            "get_path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.CareerMode_Kurita_Start",
+            "python_type": "MWStartConditionsAsset",
+            "repr": "<Object '/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.CareerMode_Kurita_Start' (0x00000176A5087100) Class 'MWStartConditionsAsset'>",
+            "unreal_class": "MWStartConditionsAsset",
+            "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+          },
+          "asset_path": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start",
+          "class_name": "MWStartConditionsAsset",
+          "exists": true,
+          "focused_properties": {
+            "associated_faction_asset_id": {
+              "python_type": "FactionAssetId",
+              "repr": "<Struct 'FactionAssetId' (0x00000176A5087288) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"Kurita\"}}>"
+            },
+            "campaign_arc": {
+              "python_type": "CampaignArcAssetId",
+              "repr": "<Struct 'CampaignArcAssetId' (0x00000176A5087178) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"CareerMode_Start\"}}>"
+            },
+            "initial_star_map_borders": {
+              "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "get_name": "Borders3015",
+              "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "python_type": "MWStarMapBorderAsset",
+              "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015' (0x000001760130AA00) Class 'MWStarMapBorderAsset'>",
+              "unreal_class": "MWStarMapBorderAsset",
+              "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+            },
+            "starting_date": {
+              "python_type": "DateTime",
+              "repr": "<Struct 'DateTime' (0x00000176A50871B0) {}>"
+            },
+            "starting_system_id": 1812
+          },
+          "manifest_asset": null,
+          "path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start.CareerMode_Kurita_Start",
+          "target_asset": null
+        },
+        "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start",
+        "target_before": null,
+        "target_file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch\\ModOverride\\DLC1\\CareerMode\\StartConditions\\CareerMode_Kurita_Start.uasset"
+      },
+      {
+        "asset": {
+          "get_full_name": "MWStartConditionsAsset /ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.CareerMode_Kurita_Start_Tutorial",
+          "get_name": "CareerMode_Kurita_Start_Tutorial",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.CareerMode_Kurita_Start_Tutorial",
+          "python_type": "MWStartConditionsAsset",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.CareerMode_Kurita_Start_Tutorial' (0x00000176A5084100) Class 'MWStartConditionsAsset'>",
+          "unreal_class": "MWStartConditionsAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+        },
+        "backup": null,
+        "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.uasset",
+        "saved": true,
+        "source_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial",
+        "source_before": {
+          "asset": {
+            "get_full_name": "MWStartConditionsAsset /Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.CareerMode_Kurita_Start_Tutorial",
+            "get_name": "CareerMode_Kurita_Start_Tutorial",
+            "get_path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.CareerMode_Kurita_Start_Tutorial",
+            "python_type": "MWStartConditionsAsset",
+            "repr": "<Object '/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.CareerMode_Kurita_Start_Tutorial' (0x000001762075D900) Class 'MWStartConditionsAsset'>",
+            "unreal_class": "MWStartConditionsAsset",
+            "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+          },
+          "asset_path": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial",
+          "class_name": "MWStartConditionsAsset",
+          "exists": true,
+          "focused_properties": {
+            "associated_faction_asset_id": {
+              "python_type": "FactionAssetId",
+              "repr": "<Struct 'FactionAssetId' (0x000001762075DA88) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"Kurita\"}}>"
+            },
+            "campaign_arc": {
+              "python_type": "CampaignArcAssetId",
+              "repr": "<Struct 'CampaignArcAssetId' (0x000001762075D978) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"CareerMode_Start\"}}>"
+            },
+            "initial_star_map_borders": {
+              "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "get_name": "Borders3015",
+              "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "python_type": "MWStarMapBorderAsset",
+              "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015' (0x000001760130AA00) Class 'MWStarMapBorderAsset'>",
+              "unreal_class": "MWStarMapBorderAsset",
+              "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+            },
+            "starting_date": {
+              "python_type": "DateTime",
+              "repr": "<Struct 'DateTime' (0x000001762075D9B0) {}>"
+            },
+            "starting_system_id": 1812
+          },
+          "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.uasset",
+          "path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.CareerMode_Kurita_Start_Tutorial",
+          "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial"
+        },
+        "target_after": {
+          "asset": {
+            "get_full_name": "MWStartConditionsAsset /ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.CareerMode_Kurita_Start_Tutorial",
+            "get_name": "CareerMode_Kurita_Start_Tutorial",
+            "get_path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.CareerMode_Kurita_Start_Tutorial",
+            "python_type": "MWStartConditionsAsset",
+            "repr": "<Object '/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.CareerMode_Kurita_Start_Tutorial' (0x00000176A5084100) Class 'MWStartConditionsAsset'>",
+            "unreal_class": "MWStartConditionsAsset",
+            "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+          },
+          "asset_path": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial",
+          "class_name": "MWStartConditionsAsset",
+          "exists": true,
+          "focused_properties": {
+            "associated_faction_asset_id": {
+              "python_type": "FactionAssetId",
+              "repr": "<Struct 'FactionAssetId' (0x00000176A5084288) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"Kurita\"}}>"
+            },
+            "campaign_arc": {
+              "python_type": "CampaignArcAssetId",
+              "repr": "<Struct 'CampaignArcAssetId' (0x00000176A5084178) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"CareerMode_Start\"}}>"
+            },
+            "initial_star_map_borders": {
+              "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "get_name": "Borders3015",
+              "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "python_type": "MWStarMapBorderAsset",
+              "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015' (0x000001760130AA00) Class 'MWStarMapBorderAsset'>",
+              "unreal_class": "MWStarMapBorderAsset",
+              "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+            },
+            "starting_date": {
+              "python_type": "DateTime",
+              "repr": "<Struct 'DateTime' (0x00000176A50841B0) {}>"
+            },
+            "starting_system_id": 1812
+          },
+          "manifest_asset": null,
+          "path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial.CareerMode_Kurita_Start_Tutorial",
+          "target_asset": null
+        },
+        "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial",
+        "target_before": null,
+        "target_file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch\\ModOverride\\DLC1\\CareerMode\\StartConditions\\CareerMode_Kurita_Start_Tutorial.uasset"
+      },
+      {
+        "asset": {
+          "get_full_name": "MWStartConditionsAsset /ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.CareerMode_Liao_Start",
+          "get_name": "CareerMode_Liao_Start",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.CareerMode_Liao_Start",
+          "python_type": "MWStartConditionsAsset",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.CareerMode_Liao_Start' (0x00000176B3D74400) Class 'MWStartConditionsAsset'>",
+          "unreal_class": "MWStartConditionsAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+        },
+        "backup": null,
+        "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.uasset",
+        "saved": true,
+        "source_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start",
+        "source_before": {
+          "asset": {
+            "get_full_name": "MWStartConditionsAsset /Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.CareerMode_Liao_Start",
+            "get_name": "CareerMode_Liao_Start",
+            "get_path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.CareerMode_Liao_Start",
+            "python_type": "MWStartConditionsAsset",
+            "repr": "<Object '/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.CareerMode_Liao_Start' (0x000001762075D300) Class 'MWStartConditionsAsset'>",
+            "unreal_class": "MWStartConditionsAsset",
+            "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+          },
+          "asset_path": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start",
+          "class_name": "MWStartConditionsAsset",
+          "exists": true,
+          "focused_properties": {
+            "associated_faction_asset_id": {
+              "python_type": "FactionAssetId",
+              "repr": "<Struct 'FactionAssetId' (0x000001762075D488) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"Liao\"}}>"
+            },
+            "campaign_arc": {
+              "python_type": "CampaignArcAssetId",
+              "repr": "<Struct 'CampaignArcAssetId' (0x000001762075D378) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"CareerMode_Start\"}}>"
+            },
+            "initial_star_map_borders": {
+              "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "get_name": "Borders3015",
+              "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "python_type": "MWStarMapBorderAsset",
+              "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015' (0x000001760130AA00) Class 'MWStarMapBorderAsset'>",
+              "unreal_class": "MWStarMapBorderAsset",
+              "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+            },
+            "starting_date": {
+              "python_type": "DateTime",
+              "repr": "<Struct 'DateTime' (0x000001762075D3B0) {}>"
+            },
+            "starting_system_id": 1013
+          },
+          "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.uasset",
+          "path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.CareerMode_Liao_Start",
+          "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start"
+        },
+        "target_after": {
+          "asset": {
+            "get_full_name": "MWStartConditionsAsset /ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.CareerMode_Liao_Start",
+            "get_name": "CareerMode_Liao_Start",
+            "get_path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.CareerMode_Liao_Start",
+            "python_type": "MWStartConditionsAsset",
+            "repr": "<Object '/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.CareerMode_Liao_Start' (0x00000176B3D74400) Class 'MWStartConditionsAsset'>",
+            "unreal_class": "MWStartConditionsAsset",
+            "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+          },
+          "asset_path": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start",
+          "class_name": "MWStartConditionsAsset",
+          "exists": true,
+          "focused_properties": {
+            "associated_faction_asset_id": {
+              "python_type": "FactionAssetId",
+              "repr": "<Struct 'FactionAssetId' (0x00000176B3D74588) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"Liao\"}}>"
+            },
+            "campaign_arc": {
+              "python_type": "CampaignArcAssetId",
+              "repr": "<Struct 'CampaignArcAssetId' (0x00000176B3D74478) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"CareerMode_Start\"}}>"
+            },
+            "initial_star_map_borders": {
+              "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "get_name": "Borders3015",
+              "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "python_type": "MWStarMapBorderAsset",
+              "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015' (0x000001760130AA00) Class 'MWStarMapBorderAsset'>",
+              "unreal_class": "MWStarMapBorderAsset",
+              "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+            },
+            "starting_date": {
+              "python_type": "DateTime",
+              "repr": "<Struct 'DateTime' (0x00000176B3D744B0) {}>"
+            },
+            "starting_system_id": 1013
+          },
+          "manifest_asset": null,
+          "path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start.CareerMode_Liao_Start",
+          "target_asset": null
+        },
+        "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start",
+        "target_before": null,
+        "target_file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch\\ModOverride\\DLC1\\CareerMode\\StartConditions\\CareerMode_Liao_Start.uasset"
+      },
+      {
+        "asset": {
+          "get_full_name": "MWStartConditionsAsset /ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.CareerMode_Liao_Start_Tutorial",
+          "get_name": "CareerMode_Liao_Start_Tutorial",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.CareerMode_Liao_Start_Tutorial",
+          "python_type": "MWStartConditionsAsset",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.CareerMode_Liao_Start_Tutorial' (0x00000176B3D77100) Class 'MWStartConditionsAsset'>",
+          "unreal_class": "MWStartConditionsAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+        },
+        "backup": null,
+        "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.uasset",
+        "saved": true,
+        "source_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial",
+        "source_before": {
+          "asset": {
+            "get_full_name": "MWStartConditionsAsset /Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.CareerMode_Liao_Start_Tutorial",
+            "get_name": "CareerMode_Liao_Start_Tutorial",
+            "get_path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.CareerMode_Liao_Start_Tutorial",
+            "python_type": "MWStartConditionsAsset",
+            "repr": "<Object '/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.CareerMode_Liao_Start_Tutorial' (0x000001762075CD00) Class 'MWStartConditionsAsset'>",
+            "unreal_class": "MWStartConditionsAsset",
+            "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+          },
+          "asset_path": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial",
+          "class_name": "MWStartConditionsAsset",
+          "exists": true,
+          "focused_properties": {
+            "associated_faction_asset_id": {
+              "python_type": "FactionAssetId",
+              "repr": "<Struct 'FactionAssetId' (0x000001762075CE88) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"Liao\"}}>"
+            },
+            "campaign_arc": {
+              "python_type": "CampaignArcAssetId",
+              "repr": "<Struct 'CampaignArcAssetId' (0x000001762075CD78) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"CareerMode_Start\"}}>"
+            },
+            "initial_star_map_borders": {
+              "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "get_name": "Borders3015",
+              "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "python_type": "MWStarMapBorderAsset",
+              "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015' (0x000001760130AA00) Class 'MWStarMapBorderAsset'>",
+              "unreal_class": "MWStarMapBorderAsset",
+              "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+            },
+            "starting_date": {
+              "python_type": "DateTime",
+              "repr": "<Struct 'DateTime' (0x000001762075CDB0) {}>"
+            },
+            "starting_system_id": 1013
+          },
+          "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.uasset",
+          "path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.CareerMode_Liao_Start_Tutorial",
+          "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial"
+        },
+        "target_after": {
+          "asset": {
+            "get_full_name": "MWStartConditionsAsset /ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.CareerMode_Liao_Start_Tutorial",
+            "get_name": "CareerMode_Liao_Start_Tutorial",
+            "get_path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.CareerMode_Liao_Start_Tutorial",
+            "python_type": "MWStartConditionsAsset",
+            "repr": "<Object '/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.CareerMode_Liao_Start_Tutorial' (0x00000176B3D77100) Class 'MWStartConditionsAsset'>",
+            "unreal_class": "MWStartConditionsAsset",
+            "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+          },
+          "asset_path": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial",
+          "class_name": "MWStartConditionsAsset",
+          "exists": true,
+          "focused_properties": {
+            "associated_faction_asset_id": {
+              "python_type": "FactionAssetId",
+              "repr": "<Struct 'FactionAssetId' (0x00000176B3D77288) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"Liao\"}}>"
+            },
+            "campaign_arc": {
+              "python_type": "CampaignArcAssetId",
+              "repr": "<Struct 'CampaignArcAssetId' (0x00000176B3D77178) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"CareerMode_Start\"}}>"
+            },
+            "initial_star_map_borders": {
+              "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "get_name": "Borders3015",
+              "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "python_type": "MWStarMapBorderAsset",
+              "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015' (0x000001760130AA00) Class 'MWStarMapBorderAsset'>",
+              "unreal_class": "MWStarMapBorderAsset",
+              "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+            },
+            "starting_date": {
+              "python_type": "DateTime",
+              "repr": "<Struct 'DateTime' (0x00000176B3D771B0) {}>"
+            },
+            "starting_system_id": 1013
+          },
+          "manifest_asset": null,
+          "path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial.CareerMode_Liao_Start_Tutorial",
+          "target_asset": null
+        },
+        "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial",
+        "target_before": null,
+        "target_file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch\\ModOverride\\DLC1\\CareerMode\\StartConditions\\CareerMode_Liao_Start_Tutorial.uasset"
+      },
+      {
+        "asset": {
+          "get_full_name": "MWStartConditionsAsset /ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.CareerMode_Marik_Start",
+          "get_name": "CareerMode_Marik_Start",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.CareerMode_Marik_Start",
+          "python_type": "MWStartConditionsAsset",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.CareerMode_Marik_Start' (0x00000176B3D75900) Class 'MWStartConditionsAsset'>",
+          "unreal_class": "MWStartConditionsAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+        },
+        "backup": null,
+        "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.uasset",
+        "saved": true,
+        "source_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start",
+        "source_before": {
+          "asset": {
+            "get_full_name": "MWStartConditionsAsset /Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.CareerMode_Marik_Start",
+            "get_name": "CareerMode_Marik_Start",
+            "get_path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.CareerMode_Marik_Start",
+            "python_type": "MWStartConditionsAsset",
+            "repr": "<Object '/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.CareerMode_Marik_Start' (0x000001762075CA00) Class 'MWStartConditionsAsset'>",
+            "unreal_class": "MWStartConditionsAsset",
+            "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+          },
+          "asset_path": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start",
+          "class_name": "MWStartConditionsAsset",
+          "exists": true,
+          "focused_properties": {
+            "associated_faction_asset_id": {
+              "python_type": "FactionAssetId",
+              "repr": "<Struct 'FactionAssetId' (0x000001762075CB88) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"Marik\"}}>"
+            },
+            "campaign_arc": {
+              "python_type": "CampaignArcAssetId",
+              "repr": "<Struct 'CampaignArcAssetId' (0x000001762075CA78) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"CareerMode_Start\"}}>"
+            },
+            "initial_star_map_borders": {
+              "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "get_name": "Borders3015",
+              "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "python_type": "MWStarMapBorderAsset",
+              "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015' (0x000001760130AA00) Class 'MWStarMapBorderAsset'>",
+              "unreal_class": "MWStarMapBorderAsset",
+              "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+            },
+            "starting_date": {
+              "python_type": "DateTime",
+              "repr": "<Struct 'DateTime' (0x000001762075CAB0) {}>"
+            },
+            "starting_system_id": 1560
+          },
+          "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.uasset",
+          "path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.CareerMode_Marik_Start",
+          "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start"
+        },
+        "target_after": {
+          "asset": {
+            "get_full_name": "MWStartConditionsAsset /ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.CareerMode_Marik_Start",
+            "get_name": "CareerMode_Marik_Start",
+            "get_path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.CareerMode_Marik_Start",
+            "python_type": "MWStartConditionsAsset",
+            "repr": "<Object '/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.CareerMode_Marik_Start' (0x00000176B3D75900) Class 'MWStartConditionsAsset'>",
+            "unreal_class": "MWStartConditionsAsset",
+            "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+          },
+          "asset_path": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start",
+          "class_name": "MWStartConditionsAsset",
+          "exists": true,
+          "focused_properties": {
+            "associated_faction_asset_id": {
+              "python_type": "FactionAssetId",
+              "repr": "<Struct 'FactionAssetId' (0x00000176B3D75A88) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"Marik\"}}>"
+            },
+            "campaign_arc": {
+              "python_type": "CampaignArcAssetId",
+              "repr": "<Struct 'CampaignArcAssetId' (0x00000176B3D75978) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"CareerMode_Start\"}}>"
+            },
+            "initial_star_map_borders": {
+              "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "get_name": "Borders3015",
+              "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "python_type": "MWStarMapBorderAsset",
+              "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015' (0x000001760130AA00) Class 'MWStarMapBorderAsset'>",
+              "unreal_class": "MWStarMapBorderAsset",
+              "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+            },
+            "starting_date": {
+              "python_type": "DateTime",
+              "repr": "<Struct 'DateTime' (0x00000176B3D759B0) {}>"
+            },
+            "starting_system_id": 1560
+          },
+          "manifest_asset": null,
+          "path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start.CareerMode_Marik_Start",
+          "target_asset": null
+        },
+        "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start",
+        "target_before": null,
+        "target_file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch\\ModOverride\\DLC1\\CareerMode\\StartConditions\\CareerMode_Marik_Start.uasset"
+      },
+      {
+        "asset": {
+          "get_full_name": "MWStartConditionsAsset /ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.CareerMode_Marik_Start_Tutorial",
+          "get_name": "CareerMode_Marik_Start_Tutorial",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.CareerMode_Marik_Start_Tutorial",
+          "python_type": "MWStartConditionsAsset",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.CareerMode_Marik_Start_Tutorial' (0x00000176B3D75300) Class 'MWStartConditionsAsset'>",
+          "unreal_class": "MWStartConditionsAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+        },
+        "backup": null,
+        "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.uasset",
+        "saved": true,
+        "source_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial",
+        "source_before": {
+          "asset": {
+            "get_full_name": "MWStartConditionsAsset /Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.CareerMode_Marik_Start_Tutorial",
+            "get_name": "CareerMode_Marik_Start_Tutorial",
+            "get_path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.CareerMode_Marik_Start_Tutorial",
+            "python_type": "MWStartConditionsAsset",
+            "repr": "<Object '/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.CareerMode_Marik_Start_Tutorial' (0x000001762075C100) Class 'MWStartConditionsAsset'>",
+            "unreal_class": "MWStartConditionsAsset",
+            "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+          },
+          "asset_path": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial",
+          "class_name": "MWStartConditionsAsset",
+          "exists": true,
+          "focused_properties": {
+            "associated_faction_asset_id": {
+              "python_type": "FactionAssetId",
+              "repr": "<Struct 'FactionAssetId' (0x000001762075C288) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"Marik\"}}>"
+            },
+            "campaign_arc": {
+              "python_type": "CampaignArcAssetId",
+              "repr": "<Struct 'CampaignArcAssetId' (0x000001762075C178) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"CareerMode_Start\"}}>"
+            },
+            "initial_star_map_borders": {
+              "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "get_name": "Borders3015",
+              "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "python_type": "MWStarMapBorderAsset",
+              "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015' (0x000001760130AA00) Class 'MWStarMapBorderAsset'>",
+              "unreal_class": "MWStarMapBorderAsset",
+              "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+            },
+            "starting_date": {
+              "python_type": "DateTime",
+              "repr": "<Struct 'DateTime' (0x000001762075C1B0) {}>"
+            },
+            "starting_system_id": 1588
+          },
+          "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.uasset",
+          "path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.CareerMode_Marik_Start_Tutorial",
+          "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial"
+        },
+        "target_after": {
+          "asset": {
+            "get_full_name": "MWStartConditionsAsset /ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.CareerMode_Marik_Start_Tutorial",
+            "get_name": "CareerMode_Marik_Start_Tutorial",
+            "get_path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.CareerMode_Marik_Start_Tutorial",
+            "python_type": "MWStartConditionsAsset",
+            "repr": "<Object '/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.CareerMode_Marik_Start_Tutorial' (0x00000176B3D75300) Class 'MWStartConditionsAsset'>",
+            "unreal_class": "MWStartConditionsAsset",
+            "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+          },
+          "asset_path": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial",
+          "class_name": "MWStartConditionsAsset",
+          "exists": true,
+          "focused_properties": {
+            "associated_faction_asset_id": {
+              "python_type": "FactionAssetId",
+              "repr": "<Struct 'FactionAssetId' (0x00000176B3D75488) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"Marik\"}}>"
+            },
+            "campaign_arc": {
+              "python_type": "CampaignArcAssetId",
+              "repr": "<Struct 'CampaignArcAssetId' (0x00000176B3D75378) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"CareerMode_Start\"}}>"
+            },
+            "initial_star_map_borders": {
+              "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "get_name": "Borders3015",
+              "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "python_type": "MWStarMapBorderAsset",
+              "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015' (0x000001760130AA00) Class 'MWStarMapBorderAsset'>",
+              "unreal_class": "MWStarMapBorderAsset",
+              "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+            },
+            "starting_date": {
+              "python_type": "DateTime",
+              "repr": "<Struct 'DateTime' (0x00000176B3D753B0) {}>"
+            },
+            "starting_system_id": 1588
+          },
+          "manifest_asset": null,
+          "path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial.CareerMode_Marik_Start_Tutorial",
+          "target_asset": null
+        },
+        "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial",
+        "target_before": null,
+        "target_file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch\\ModOverride\\DLC1\\CareerMode\\StartConditions\\CareerMode_Marik_Start_Tutorial.uasset"
+      },
+      {
+        "asset": {
+          "get_full_name": "MWStartConditionsAsset /ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.CareerMode_Steiner_Start",
+          "get_name": "CareerMode_Steiner_Start",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.CareerMode_Steiner_Start",
+          "python_type": "MWStartConditionsAsset",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.CareerMode_Steiner_Start' (0x00000176B3D74D00) Class 'MWStartConditionsAsset'>",
+          "unreal_class": "MWStartConditionsAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+        },
+        "backup": null,
+        "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.uasset",
+        "saved": true,
+        "source_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start",
+        "source_before": {
+          "asset": {
+            "get_full_name": "MWStartConditionsAsset /Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.CareerMode_Steiner_Start",
+            "get_name": "CareerMode_Steiner_Start",
+            "get_path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.CareerMode_Steiner_Start",
+            "python_type": "MWStartConditionsAsset",
+            "repr": "<Object '/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.CareerMode_Steiner_Start' (0x00000176216A3A00) Class 'MWStartConditionsAsset'>",
+            "unreal_class": "MWStartConditionsAsset",
+            "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+          },
+          "asset_path": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start",
+          "class_name": "MWStartConditionsAsset",
+          "exists": true,
+          "focused_properties": {
+            "associated_faction_asset_id": {
+              "python_type": "FactionAssetId",
+              "repr": "<Struct 'FactionAssetId' (0x00000176216A3B88) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"Steiner\"}}>"
+            },
+            "campaign_arc": {
+              "python_type": "CampaignArcAssetId",
+              "repr": "<Struct 'CampaignArcAssetId' (0x00000176216A3A78) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"CareerMode_Start\"}}>"
+            },
+            "initial_star_map_borders": {
+              "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "get_name": "Borders3015",
+              "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "python_type": "MWStarMapBorderAsset",
+              "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015' (0x000001760130AA00) Class 'MWStarMapBorderAsset'>",
+              "unreal_class": "MWStarMapBorderAsset",
+              "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+            },
+            "starting_date": {
+              "python_type": "DateTime",
+              "repr": "<Struct 'DateTime' (0x00000176216A3AB0) {}>"
+            },
+            "starting_system_id": 1209
+          },
+          "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.uasset",
+          "path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.CareerMode_Steiner_Start",
+          "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start"
+        },
+        "target_after": {
+          "asset": {
+            "get_full_name": "MWStartConditionsAsset /ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.CareerMode_Steiner_Start",
+            "get_name": "CareerMode_Steiner_Start",
+            "get_path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.CareerMode_Steiner_Start",
+            "python_type": "MWStartConditionsAsset",
+            "repr": "<Object '/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.CareerMode_Steiner_Start' (0x00000176B3D74D00) Class 'MWStartConditionsAsset'>",
+            "unreal_class": "MWStartConditionsAsset",
+            "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+          },
+          "asset_path": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start",
+          "class_name": "MWStartConditionsAsset",
+          "exists": true,
+          "focused_properties": {
+            "associated_faction_asset_id": {
+              "python_type": "FactionAssetId",
+              "repr": "<Struct 'FactionAssetId' (0x00000176B3D74E88) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"Steiner\"}}>"
+            },
+            "campaign_arc": {
+              "python_type": "CampaignArcAssetId",
+              "repr": "<Struct 'CampaignArcAssetId' (0x00000176B3D74D78) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"CareerMode_Start\"}}>"
+            },
+            "initial_star_map_borders": {
+              "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "get_name": "Borders3015",
+              "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "python_type": "MWStarMapBorderAsset",
+              "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015' (0x000001760130AA00) Class 'MWStarMapBorderAsset'>",
+              "unreal_class": "MWStarMapBorderAsset",
+              "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+            },
+            "starting_date": {
+              "python_type": "DateTime",
+              "repr": "<Struct 'DateTime' (0x00000176B3D74DB0) {}>"
+            },
+            "starting_system_id": 1209
+          },
+          "manifest_asset": null,
+          "path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start.CareerMode_Steiner_Start",
+          "target_asset": null
+        },
+        "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start",
+        "target_before": null,
+        "target_file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch\\ModOverride\\DLC1\\CareerMode\\StartConditions\\CareerMode_Steiner_Start.uasset"
+      },
+      {
+        "asset": {
+          "get_full_name": "MWStartConditionsAsset /ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.CareerMode_Steiner_Start_Tutorial",
+          "get_name": "CareerMode_Steiner_Start_Tutorial",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.CareerMode_Steiner_Start_Tutorial",
+          "python_type": "MWStartConditionsAsset",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.CareerMode_Steiner_Start_Tutorial' (0x00000176B3D74100) Class 'MWStartConditionsAsset'>",
+          "unreal_class": "MWStartConditionsAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+        },
+        "backup": null,
+        "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.uasset",
+        "saved": true,
+        "source_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial",
+        "source_before": {
+          "asset": {
+            "get_full_name": "MWStartConditionsAsset /Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.CareerMode_Steiner_Start_Tutorial",
+            "get_name": "CareerMode_Steiner_Start_Tutorial",
+            "get_path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.CareerMode_Steiner_Start_Tutorial",
+            "python_type": "MWStartConditionsAsset",
+            "repr": "<Object '/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.CareerMode_Steiner_Start_Tutorial' (0x00000176216A3100) Class 'MWStartConditionsAsset'>",
+            "unreal_class": "MWStartConditionsAsset",
+            "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+          },
+          "asset_path": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial",
+          "class_name": "MWStartConditionsAsset",
+          "exists": true,
+          "focused_properties": {
+            "associated_faction_asset_id": {
+              "python_type": "FactionAssetId",
+              "repr": "<Struct 'FactionAssetId' (0x00000176216A3288) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"Steiner\"}}>"
+            },
+            "campaign_arc": {
+              "python_type": "CampaignArcAssetId",
+              "repr": "<Struct 'CampaignArcAssetId' (0x00000176216A3178) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"CareerMode_Start\"}}>"
+            },
+            "initial_star_map_borders": {
+              "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "get_name": "Borders3015",
+              "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "python_type": "MWStarMapBorderAsset",
+              "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015' (0x000001760130AA00) Class 'MWStarMapBorderAsset'>",
+              "unreal_class": "MWStarMapBorderAsset",
+              "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+            },
+            "starting_date": {
+              "python_type": "DateTime",
+              "repr": "<Struct 'DateTime' (0x00000176216A31B0) {}>"
+            },
+            "starting_system_id": 1209
+          },
+          "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.uasset",
+          "path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.CareerMode_Steiner_Start_Tutorial",
+          "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial"
+        },
+        "target_after": {
+          "asset": {
+            "get_full_name": "MWStartConditionsAsset /ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.CareerMode_Steiner_Start_Tutorial",
+            "get_name": "CareerMode_Steiner_Start_Tutorial",
+            "get_path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.CareerMode_Steiner_Start_Tutorial",
+            "python_type": "MWStartConditionsAsset",
+            "repr": "<Object '/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.CareerMode_Steiner_Start_Tutorial' (0x00000176B3D74100) Class 'MWStartConditionsAsset'>",
+            "unreal_class": "MWStartConditionsAsset",
+            "unreal_class_path": "/Script/MechWarrior.MWStartConditionsAsset"
+          },
+          "asset_path": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial",
+          "class_name": "MWStartConditionsAsset",
+          "exists": true,
+          "focused_properties": {
+            "associated_faction_asset_id": {
+              "python_type": "FactionAssetId",
+              "repr": "<Struct 'FactionAssetId' (0x00000176B3D74288) {id: {primary_asset_type: {name: \"MWFactionAsset\"}, primary_asset_name: \"Steiner\"}}>"
+            },
+            "campaign_arc": {
+              "python_type": "CampaignArcAssetId",
+              "repr": "<Struct 'CampaignArcAssetId' (0x00000176B3D74178) {id: {primary_asset_type: {name: \"MWCampaignArcAsset\"}, primary_asset_name: \"CareerMode_Start\"}}>"
+            },
+            "initial_star_map_borders": {
+              "get_full_name": "MWStarMapBorderAsset /Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "get_name": "Borders3015",
+              "get_path_name": "/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015",
+              "python_type": "MWStarMapBorderAsset",
+              "repr": "<Object '/Game/Campaign/CampaignArcs/BorderChanges/3015_GameStart/Borders3015.Borders3015' (0x000001760130AA00) Class 'MWStarMapBorderAsset'>",
+              "unreal_class": "MWStarMapBorderAsset",
+              "unreal_class_path": "/Script/MechWarrior.MWStarMapBorderAsset"
+            },
+            "starting_date": {
+              "python_type": "DateTime",
+              "repr": "<Struct 'DateTime' (0x00000176B3D741B0) {}>"
+            },
+            "starting_system_id": 1209
+          },
+          "manifest_asset": null,
+          "path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial.CareerMode_Steiner_Start_Tutorial",
+          "target_asset": null
+        },
+        "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial",
+        "target_before": null,
+        "target_file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch\\ModOverride\\DLC1\\CareerMode\\StartConditions\\CareerMode_Steiner_Start_Tutorial.uasset"
+      },
+      {
+        "asset": {
+          "get_full_name": "MWCampaignArcAsset /ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Start.CareerMode_Start",
+          "get_name": "CareerMode_Start",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Start.CareerMode_Start",
+          "python_type": "MWCampaignArcAsset",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Start.CareerMode_Start' (0x0000017707D8C100) Class 'MWCampaignArcAsset'>",
+          "unreal_class": "MWCampaignArcAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWCampaignArcAsset"
+        },
+        "backup": null,
+        "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Start.uasset",
+        "saved": true,
+        "source_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Start",
+        "source_before": {
+          "asset": {
+            "get_full_name": "MWCampaignArcAsset /Game/DLC1/CareerMode/StartConditions/CareerMode_Start.CareerMode_Start",
+            "get_name": "CareerMode_Start",
+            "get_path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Start.CareerMode_Start",
+            "python_type": "MWCampaignArcAsset",
+            "repr": "<Object '/Game/DLC1/CareerMode/StartConditions/CareerMode_Start.CareerMode_Start' (0x0000017712D504C0) Class 'MWCampaignArcAsset'>",
+            "unreal_class": "MWCampaignArcAsset",
+            "unreal_class_path": "/Script/MechWarrior.MWCampaignArcAsset"
+          },
+          "asset_path": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Start",
+          "class_name": "MWCampaignArcAsset",
+          "exists": true,
+          "focused_properties": {
+            "campaign_arc_script": null,
+            "campaign_event_list": {
+              "python_type": "CampaignArcEventList",
+              "repr": "<Struct 'CampaignArcEventList' (0x0000017712D50568) {campaign_events: ((EventName=\"Give mechs\"),(EventName=\"EnableCoOp\",CampaignActions=(/Game/Campaign/CampaignArcs/FactionStarts/MainCampaignStart/CreateCoOpReadySave_ArcAction.CreateCoOpReadySave_ArcAction_C)),(EventName=\"SpawnFRR\",TriggerConditions=(TriggerType=Oneoff,Date=(bCheck=True,Value=3015.01.01-00.00.00)),CampaignActions=(/Game/DLC1/CareerMode/Warzones/Rasalhauge_Clusters/PlaceRasalhague_ArcAction_7_10.PlaceRasalhague_ArcAction_7_10_C)),(EventName=\"SetCompanyUnfounded\",CampaignActions=(/Game/DLC1/CareerMode/StartConditions/Arcs/SetCompanyUnfounded.SetCompanyUnfounded_C)),(EventName=\"InnerSphereNewsFeed\",TriggerConditions=(Events=((bInvertCondition=True,EventIdentifier=(EventName=\"InnerSphereNewsFeed\",CampaignArc=MWCampaignArcAsset'\"/Game/DLC1/CareerMode/StartConditions/CareerMode_Start.CareerMode_Start\"')))),CampaignActions=(/Game/Campaign/NewsReel/NewsFeed_ArcAction.NewsFeed_ArcAction_C)))}>"
+            },
+            "run_campaign_arc_script_on_save": false,
+            "sub_campaigns": {
+              "python_type": "Set",
+              "repr": "set([MWCampaignArcAsset'\"/Game/DLC1/CareerMode/CareerModeCoreCampaign.CareerModeCoreCampaign\"'])"
+            }
+          },
+          "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Start.uasset",
+          "path_name": "/Game/DLC1/CareerMode/StartConditions/CareerMode_Start.CareerMode_Start",
+          "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Start"
+        },
+        "target_after": {
+          "asset": {
+            "get_full_name": "MWCampaignArcAsset /ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Start.CareerMode_Start",
+            "get_name": "CareerMode_Start",
+            "get_path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Start.CareerMode_Start",
+            "python_type": "MWCampaignArcAsset",
+            "repr": "<Object '/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Start.CareerMode_Start' (0x0000017707D8C100) Class 'MWCampaignArcAsset'>",
+            "unreal_class": "MWCampaignArcAsset",
+            "unreal_class_path": "/Script/MechWarrior.MWCampaignArcAsset"
+          },
+          "asset_path": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Start",
+          "class_name": "MWCampaignArcAsset",
+          "exists": true,
+          "focused_properties": {
+            "campaign_arc_script": null,
+            "campaign_event_list": {
+              "python_type": "CampaignArcEventList",
+              "repr": "<Struct 'CampaignArcEventList' (0x0000017707D8C1A8) {campaign_events: ((EventName=\"Give mechs\"),(EventName=\"EnableCoOp\",CampaignActions=(/Game/Campaign/CampaignArcs/FactionStarts/MainCampaignStart/CreateCoOpReadySave_ArcAction.CreateCoOpReadySave_ArcAction_C)),(EventName=\"SpawnFRR\",TriggerConditions=(TriggerType=Oneoff,Date=(bCheck=True,Value=3015.01.01-00.00.00)),CampaignActions=(/Game/DLC1/CareerMode/Warzones/Rasalhauge_Clusters/PlaceRasalhague_ArcAction_7_10.PlaceRasalhague_ArcAction_7_10_C)),(EventName=\"SetCompanyUnfounded\",CampaignActions=(/Game/DLC1/CareerMode/StartConditions/Arcs/SetCompanyUnfounded.SetCompanyUnfounded_C)),(EventName=\"InnerSphereNewsFeed\",TriggerConditions=(Events=((bInvertCondition=True,EventIdentifier=(EventName=\"InnerSphereNewsFeed\",CampaignArc=MWCampaignArcAsset'\"/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Start.CareerMode_Start\"')))),CampaignActions=(/Game/Campaign/NewsReel/NewsFeed_ArcAction.NewsFeed_ArcAction_C)))}>"
+            },
+            "run_campaign_arc_script_on_save": false,
+            "sub_campaigns": {
+              "python_type": "Set",
+              "repr": "set([MWCampaignArcAsset'\"/Game/DLC1/CareerMode/CareerModeCoreCampaign.CareerModeCoreCampaign\"'])"
+            }
+          },
+          "manifest_asset": null,
+          "path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Start.CareerMode_Start",
+          "target_asset": null
+        },
+        "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Start",
+        "target_before": null,
+        "target_file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch\\ModOverride\\DLC1\\CareerMode\\StartConditions\\CareerMode_Start.uasset"
+      },
+      {
+        "asset": {
+          "get_full_name": "MWCampaignArcAsset /ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.FRR_CareerMode_Start",
+          "get_name": "FRR_CareerMode_Start",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.FRR_CareerMode_Start",
+          "python_type": "MWCampaignArcAsset",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.FRR_CareerMode_Start' (0x0000017707D8FB80) Class 'MWCampaignArcAsset'>",
+          "unreal_class": "MWCampaignArcAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWCampaignArcAsset"
+        },
+        "backup": null,
+        "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.uasset",
+        "saved": true,
+        "source_asset": "/Game/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start",
+        "source_before": {
+          "asset": {
+            "get_full_name": "MWCampaignArcAsset /Game/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.FRR_CareerMode_Start",
+            "get_name": "FRR_CareerMode_Start",
+            "get_path_name": "/Game/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.FRR_CareerMode_Start",
+            "python_type": "MWCampaignArcAsset",
+            "repr": "<Object '/Game/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.FRR_CareerMode_Start' (0x0000017712D50C40) Class 'MWCampaignArcAsset'>",
+            "unreal_class": "MWCampaignArcAsset",
+            "unreal_class_path": "/Script/MechWarrior.MWCampaignArcAsset"
+          },
+          "asset_path": "/Game/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start",
+          "class_name": "MWCampaignArcAsset",
+          "exists": true,
+          "focused_properties": {
+            "campaign_arc_script": null,
+            "campaign_event_list": {
+              "python_type": "CampaignArcEventList",
+              "repr": "<Struct 'CampaignArcEventList' (0x0000017712D50CE8) {campaign_events: ((EventName=\"Give mechs\"),(EventName=\"EnableCoOp\",CampaignActions=(/Game/Campaign/CampaignArcs/FactionStarts/MainCampaignStart/CreateCoOpReadySave_ArcAction.CreateCoOpReadySave_ArcAction_C)),(EventName=\"PlaceFRR\",TriggerConditions=(TriggerType=Oneoff),CampaignActions=(/Game/DLC1/CareerMode/Warzones/Rasalhauge_Clusters/PlaceRasalhague_ArcAction_1_3.PlaceRasalhague_ArcAction_1_3_C)),(EventName=\"SetCompanyUnfounded\",CampaignActions=(/Game/DLC1/CareerMode/StartConditions/Arcs/SetCompanyUnfounded.SetCompanyUnfounded_C)),(EventName=\"InnerSphereNewsFeed\",TriggerConditions=(Events=((bInvertCondition=True,EventIdentifier=(EventName=\"InnerSphereNewsFeed\",CampaignArc=MWCampaignArcAsset'\"/Game/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.FRR_CareerMode_Start\"')))),CampaignActions=(/Game/Campaign/NewsReel/NewsFeed_ArcAction.NewsFeed_ArcAction_C)))}>"
+            },
+            "run_campaign_arc_script_on_save": false,
+            "sub_campaigns": {
+              "python_type": "Set",
+              "repr": "set([MWCampaignArcAsset'\"/Game/DLC1/CareerMode/CareerModeCoreCampaign.CareerModeCoreCampaign\"'])"
+            }
+          },
+          "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.uasset",
+          "path_name": "/Game/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.FRR_CareerMode_Start",
+          "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start"
+        },
+        "target_after": {
+          "asset": {
+            "get_full_name": "MWCampaignArcAsset /ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.FRR_CareerMode_Start",
+            "get_name": "FRR_CareerMode_Start",
+            "get_path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.FRR_CareerMode_Start",
+            "python_type": "MWCampaignArcAsset",
+            "repr": "<Object '/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.FRR_CareerMode_Start' (0x0000017707D8FB80) Class 'MWCampaignArcAsset'>",
+            "unreal_class": "MWCampaignArcAsset",
+            "unreal_class_path": "/Script/MechWarrior.MWCampaignArcAsset"
+          },
+          "asset_path": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start",
+          "class_name": "MWCampaignArcAsset",
+          "exists": true,
+          "focused_properties": {
+            "campaign_arc_script": null,
+            "campaign_event_list": {
+              "python_type": "CampaignArcEventList",
+              "repr": "<Struct 'CampaignArcEventList' (0x0000017707D8FC28) {campaign_events: ((EventName=\"Give mechs\"),(EventName=\"EnableCoOp\",CampaignActions=(/Game/Campaign/CampaignArcs/FactionStarts/MainCampaignStart/CreateCoOpReadySave_ArcAction.CreateCoOpReadySave_ArcAction_C)),(EventName=\"PlaceFRR\",TriggerConditions=(TriggerType=Oneoff),CampaignActions=(/Game/DLC1/CareerMode/Warzones/Rasalhauge_Clusters/PlaceRasalhague_ArcAction_1_3.PlaceRasalhague_ArcAction_1_3_C)),(EventName=\"SetCompanyUnfounded\",CampaignActions=(/Game/DLC1/CareerMode/StartConditions/Arcs/SetCompanyUnfounded.SetCompanyUnfounded_C)),(EventName=\"InnerSphereNewsFeed\",TriggerConditions=(Events=((bInvertCondition=True,EventIdentifier=(EventName=\"InnerSphereNewsFeed\",CampaignArc=MWCampaignArcAsset'\"/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.FRR_CareerMode_Start\"')))),CampaignActions=(/Game/Campaign/NewsReel/NewsFeed_ArcAction.NewsFeed_ArcAction_C)))}>"
+            },
+            "run_campaign_arc_script_on_save": false,
+            "sub_campaigns": {
+              "python_type": "Set",
+              "repr": "set([MWCampaignArcAsset'\"/Game/DLC1/CareerMode/CareerModeCoreCampaign.CareerModeCoreCampaign\"'])"
+            }
+          },
+          "manifest_asset": null,
+          "path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start.FRR_CareerMode_Start",
+          "target_asset": null
+        },
+        "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start",
+        "target_before": null,
+        "target_file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch\\ModOverride\\DLC1\\CareerMode\\StartConditions\\FRR_CareerMode_Start.uasset"
+      },
+      {
+        "asset": {
+          "get_full_name": "MWCampaignArcAsset /ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/CareerModeCoreCampaign.CareerModeCoreCampaign",
+          "get_name": "CareerModeCoreCampaign",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/CareerModeCoreCampaign.CareerModeCoreCampaign",
+          "python_type": "MWCampaignArcAsset",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/CareerModeCoreCampaign.CareerModeCoreCampaign' (0x0000017707DEFD00) Class 'MWCampaignArcAsset'>",
+          "unreal_class": "MWCampaignArcAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWCampaignArcAsset"
+        },
+        "backup": null,
+        "manifest_asset": "/Game/DLC1/CareerMode/CareerModeCoreCampaign.uasset",
+        "saved": true,
+        "source_asset": "/Game/DLC1/CareerMode/CareerModeCoreCampaign",
+        "source_before": {
+          "asset": {
+            "get_full_name": "MWCampaignArcAsset /Game/DLC1/CareerMode/CareerModeCoreCampaign.CareerModeCoreCampaign",
+            "get_name": "CareerModeCoreCampaign",
+            "get_path_name": "/Game/DLC1/CareerMode/CareerModeCoreCampaign.CareerModeCoreCampaign",
+            "python_type": "MWCampaignArcAsset",
+            "repr": "<Object '/Game/DLC1/CareerMode/CareerModeCoreCampaign.CareerModeCoreCampaign' (0x0000017712BB2B00) Class 'MWCampaignArcAsset'>",
+            "unreal_class": "MWCampaignArcAsset",
+            "unreal_class_path": "/Script/MechWarrior.MWCampaignArcAsset"
+          },
+          "asset_path": "/Game/DLC1/CareerMode/CareerModeCoreCampaign",
+          "class_name": "MWCampaignArcAsset",
+          "exists": true,
+          "focused_properties": {
+            "campaign_arc_script": null,
+            "campaign_event_list": {
+              "python_type": "CampaignArcEventList",
+              "repr": "<Struct 'CampaignArcEventList' (0x0000017712BB2BA8) {campaign_events: ((EventName=\"Lock_Operations\",CampaignActions=(/Game/Campaign/CampaignArcs/FactionStarts/A1_Arc/Lock_Operations_ArcAction.Lock_Operations_ArcAction_C)),(EventName=\"UniqueEventName\",TriggerConditions=(TriggerType=Always,ReputationLevel=(bCheck=True)),CampaignActions=(None)),(EventName=\"OfferCantinaAspirationalTransmission\",TriggerConditions=(ReputationLevel=(bCheck=True,Value=4,Condition=LessThan),DLC=(bCheck=True,DLCAsset=MWDLCAsset'\"/Game/DLC1/DLC_1.DLC_1\"')),CampaignActions=(/Game/Campaign/CampaignArcs/FactionStarts/A1_Arc/OfferCantinaAsperational_ArcAction.OfferCantinaAsperational_ArcAction_C)))}>"
+            },
+            "run_campaign_arc_script_on_save": false,
+            "sub_campaigns": {
+              "python_type": "Set",
+              "repr": "set([MWCampaignArcAsset'\"/Game/Campaign/CampaignArcs/BorderChanges/AllStarMapBorderChanges.AllStarMapBorderChanges\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.CareerModeClusters\"', MWCampaignArcAsset'\"/Game/Campaign/CampaignArcs/GameOver/Overdraft_Arc.Overdraft_Arc\"', MWCampaignArcAsset'\"/Game/Campaign/CampaignArcs/FactionStarts/AddDefaultCodexEntries_Arc.AddDefaultCodexEntries_Arc\"', MWCampaignArcAsset'\"/Game/Campaign/CampaignArcs/HidingSystems/HidingSystemsArc.HidingSystemsArc\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.CareerMode_SafeZones\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Sidequests/HeroesOfTheIS/Quest_Dragon/DLC1_Dragon.DLC1_Dragon\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/CantinaArc.CantinaArc\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Sidequests/MS_Exclusive/DLC1_GoblinArc.DLC1_GoblinArc\"', MWCampaignArcAsset'\"/Game/Campaign/CampaignArcs/Razer_Exclusive/Razer_WolverineArc.Razer_WolverineArc\"', MWCampaignArcAsset'\"/Game/DLC2/CampaignData/DLC2_CoreCampaign.DLC2_CoreCampaign\"', MWCampaignArcAsset'\"/Game/DLC3/HatchetmanQuestData/DLC3_HatchetmanQuest.DLC3_HatchetmanQuest\"', MWCampaignArcAsset'\"/Game/DLC4/CampaignData/DLC4_CoreCampaign.DLC4_CoreCampaign\"', MWCampaignArcAsset'\"/Game/DLC5/CampaignData/DLC5_CoreCampaign.DLC5_CoreCampaign\"', MWCampaignArcAsset'\"/Game/DLC6/CampaignData/DLC6_CoreCampaign.DLC6_CoreCampaign\"', MWCampaignArcAsset'\"/Game/DLC7/CampaignData/DLC7_CoreCampaign.DLC7_CoreCampaign\"'])"
+            }
+          },
+          "manifest_asset": "/Game/DLC1/CareerMode/CareerModeCoreCampaign.uasset",
+          "path_name": "/Game/DLC1/CareerMode/CareerModeCoreCampaign.CareerModeCoreCampaign",
+          "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/CareerModeCoreCampaign"
+        },
+        "target_after": {
+          "asset": {
+            "get_full_name": "MWCampaignArcAsset /ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/CareerModeCoreCampaign.CareerModeCoreCampaign",
+            "get_name": "CareerModeCoreCampaign",
+            "get_path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/CareerModeCoreCampaign.CareerModeCoreCampaign",
+            "python_type": "MWCampaignArcAsset",
+            "repr": "<Object '/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/CareerModeCoreCampaign.CareerModeCoreCampaign' (0x0000017707DEFD00) Class 'MWCampaignArcAsset'>",
+            "unreal_class": "MWCampaignArcAsset",
+            "unreal_class_path": "/Script/MechWarrior.MWCampaignArcAsset"
+          },
+          "asset_path": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/CareerModeCoreCampaign",
+          "class_name": "MWCampaignArcAsset",
+          "exists": true,
+          "focused_properties": {
+            "campaign_arc_script": null,
+            "campaign_event_list": {
+              "python_type": "CampaignArcEventList",
+              "repr": "<Struct 'CampaignArcEventList' (0x0000017707DEFDA8) {campaign_events: ((EventName=\"Lock_Operations\",CampaignActions=(/Game/Campaign/CampaignArcs/FactionStarts/A1_Arc/Lock_Operations_ArcAction.Lock_Operations_ArcAction_C)),(EventName=\"UniqueEventName\",TriggerConditions=(TriggerType=Always,ReputationLevel=(bCheck=True)),CampaignActions=(None)),(EventName=\"OfferCantinaAspirationalTransmission\",TriggerConditions=(ReputationLevel=(bCheck=True,Value=4,Condition=LessThan),DLC=(bCheck=True,DLCAsset=MWDLCAsset'\"/Game/DLC1/DLC_1.DLC_1\"')),CampaignActions=(/Game/Campaign/CampaignArcs/FactionStarts/A1_Arc/OfferCantinaAsperational_ArcAction.OfferCantinaAsperational_ArcAction_C)))}>"
+            },
+            "run_campaign_arc_script_on_save": false,
+            "sub_campaigns": {
+              "python_type": "Set",
+              "repr": "set([MWCampaignArcAsset'\"/Game/Campaign/CampaignArcs/BorderChanges/AllStarMapBorderChanges.AllStarMapBorderChanges\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.CareerModeClusters\"', MWCampaignArcAsset'\"/Game/Campaign/CampaignArcs/GameOver/Overdraft_Arc.Overdraft_Arc\"', MWCampaignArcAsset'\"/Game/Campaign/CampaignArcs/FactionStarts/AddDefaultCodexEntries_Arc.AddDefaultCodexEntries_Arc\"', MWCampaignArcAsset'\"/Game/Campaign/CampaignArcs/HidingSystems/HidingSystemsArc.HidingSystemsArc\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.CareerMode_SafeZones\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Sidequests/HeroesOfTheIS/Quest_Dragon/DLC1_Dragon.DLC1_Dragon\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/CantinaArc.CantinaArc\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Sidequests/MS_Exclusive/DLC1_GoblinArc.DLC1_GoblinArc\"', MWCampaignArcAsset'\"/Game/Campaign/CampaignArcs/Razer_Exclusive/Razer_WolverineArc.Razer_WolverineArc\"', MWCampaignArcAsset'\"/Game/DLC2/CampaignData/DLC2_CoreCampaign.DLC2_CoreCampaign\"', MWCampaignArcAsset'\"/Game/DLC3/HatchetmanQuestData/DLC3_HatchetmanQuest.DLC3_HatchetmanQuest\"', MWCampaignArcAsset'\"/Game/DLC4/CampaignData/DLC4_CoreCampaign.DLC4_CoreCampaign\"', MWCampaignArcAsset'\"/Game/DLC5/CampaignData/DLC5_CoreCampaign.DLC5_CoreCampaign\"', MWCampaignArcAsset'\"/Game/DLC6/CampaignData/DLC6_CoreCampaign.DLC6_CoreCampaign\"', MWCampaignArcAsset'\"/Game/DLC7/CampaignData/DLC7_CoreCampaign.DLC7_CoreCampaign\"'])"
+            }
+          },
+          "manifest_asset": null,
+          "path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/CareerModeCoreCampaign.CareerModeCoreCampaign",
+          "target_asset": null
+        },
+        "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/CareerModeCoreCampaign",
+        "target_before": null,
+        "target_file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch\\ModOverride\\DLC1\\CareerMode\\CareerModeCoreCampaign.uasset"
+      },
+      {
+        "asset": {
+          "get_full_name": "MWCampaignArcAsset /ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.CareerModeClusters",
+          "get_name": "CareerModeClusters",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.CareerModeClusters",
+          "python_type": "MWCampaignArcAsset",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.CareerModeClusters' (0x0000017707DEF940) Class 'MWCampaignArcAsset'>",
+          "unreal_class": "MWCampaignArcAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWCampaignArcAsset"
+        },
+        "backup": null,
+        "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.uasset",
+        "saved": true,
+        "source_asset": "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters",
+        "source_before": {
+          "asset": {
+            "get_full_name": "MWCampaignArcAsset /Game/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.CareerModeClusters",
+            "get_name": "CareerModeClusters",
+            "get_path_name": "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.CareerModeClusters",
+            "python_type": "MWCampaignArcAsset",
+            "repr": "<Object '/Game/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.CareerModeClusters' (0x0000017712BB0E80) Class 'MWCampaignArcAsset'>",
+            "unreal_class": "MWCampaignArcAsset",
+            "unreal_class_path": "/Script/MechWarrior.MWCampaignArcAsset"
+          },
+          "asset_path": "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters",
+          "class_name": "MWCampaignArcAsset",
+          "exists": true,
+          "focused_properties": {
+            "campaign_arc_script": null,
+            "campaign_event_list": {
+              "python_type": "CampaignArcEventList",
+              "repr": "<Struct 'CampaignArcEventList' (0x0000017712BB0F28) {campaign_events: }>"
+            },
+            "run_campaign_arc_script_on_save": false,
+            "sub_campaigns": {
+              "python_type": "Set",
+              "repr": "set([MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/L_1_2/Common_L_1_2.Common_L_1_2\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/L_2_5/Common_L_2_5.Common_L_2_5\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/L_3_6/Common_L_3_6.Common_L_3_6\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/L_5_8/Common_L_5_8.Common_L_5_8\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/L_7_10/Common_L_7_10.Common_L_7_10\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/L_11_12/Common_L_11_12.Common_L_11_12\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/L_12_13/Common_L_12_13.Common_L_12_13\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/L_13_14/Common_L_13_14.Common_L_13_14\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/M_1_2/Common_M_1_2.Common_M_1_2\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/M_2_5/Common_M_2_5.Common_M_2_5\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/M_3_6/Common_M_3_6.Common_M_3_6\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/M_5_8/Common_M_5_8.Common_M_5_8\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/M_7_10/Common_M_7_10.Common_M_7_10\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/M_9_11/Common_M_9_11.Common_M_9_11\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/M_12_13/Common_M_12_13.Common_M_12_13\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/M_11_12/Common_M_11_12.Common_M_11_12\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/M_12_13_1/Common_M_12_13_1.Common_M_12_13_1\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_5_8/Common_S_5_8.Common_S_5_8\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_5_8_1/Common_S_5_8_1.Common_S_5_8_1\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_6_9/Common_S_6_9.Common_S_6_9\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_9_11/Common_S_9_11.Common_S_9_11\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_12_13/Common_S_12_13.Common_S_12_13\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_13_14/Common_S_13_14.Common_S_13_14\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_11_12/Common_D_11_12.Common_D_11_12\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_12_13/Common_D_12_13.Common_D_12_13\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_1_2/Common_D_1_2.Common_D_1_2\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_3_6/Common_D_3_6.Common_D_3_6\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_5_8/Common_D_5_8.Common_D_5_8\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_1_2/Common_K_1_2.Common_K_1_2\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_2_3/Common_K_2_3.Common_K_2_3\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_3_4/Common_K_3_4.Common_K_3_4\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_3_5_1/Common_K_3_5_1.Common_K_3_5_1\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_4_5/Common_K_4_5.Common_K_4_5\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_5_6/Common_K_5_6.Common_K_5_6\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_7_9/Common_K_7_9.Common_K_7_9\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_12_13/Common_K_12_13.Common_K_12_13\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_2_3/Common_D_2_3.Common_D_2_3\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_15/Common_D_15.Common_D_15\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/M_15/Common_M_15.Common_M_15\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/M_13_14/Common_M_13_14.Common_M_13_14\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_3_5/Common_S_3_5.Common_S_3_5\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_2_5/Common_S_2_5.Common_S_2_5\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_2_4/Common_S_2_4.Common_S_2_4\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_2_4/Common_D_2_4.Common_D_2_4\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_3_5/Common_D_3_5.Common_D_3_5\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_1_2/Common_S_1_2.Common_S_1_2\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_10_12/Common_S_10_12.Common_S_10_12\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_7_10/Common_D_7_10.Common_D_7_10\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_3_5/Common_K_3_5.Common_K_3_5\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_13_14/Common_K_13_14.Common_K_13_14\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_6_7/Common_S_6_7.Common_S_6_7\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_4_6/Common_D_4_6.Common_D_4_6\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_5_7/Common_D_5_7.Common_D_5_7\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_6_7/Common_D_6_7.Common_D_6_7\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_6_8/Common_D_6_8.Common_D_6_8\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_6_7/Common_K_6_7.Common_K_6_7\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_6_8/Common_K_6_8.Common_K_6_8\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_8_10/Common_K_8_10.Common_K_8_10\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_4_6/Common_S_4_6.Common_S_4_6\"', MWCampaignArcAsset'\"/Game/Campaign/CampaignArcs/Regions/MercStars/Place_MercStars_Arc.Place_MercStars_Arc\"'])"
+            }
+          },
+          "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.uasset",
+          "path_name": "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.CareerModeClusters",
+          "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters"
+        },
+        "target_after": {
+          "asset": {
+            "get_full_name": "MWCampaignArcAsset /ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.CareerModeClusters",
+            "get_name": "CareerModeClusters",
+            "get_path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.CareerModeClusters",
+            "python_type": "MWCampaignArcAsset",
+            "repr": "<Object '/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.CareerModeClusters' (0x0000017707DEF940) Class 'MWCampaignArcAsset'>",
+            "unreal_class": "MWCampaignArcAsset",
+            "unreal_class_path": "/Script/MechWarrior.MWCampaignArcAsset"
+          },
+          "asset_path": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters",
+          "class_name": "MWCampaignArcAsset",
+          "exists": true,
+          "focused_properties": {
+            "campaign_arc_script": null,
+            "campaign_event_list": {
+              "python_type": "CampaignArcEventList",
+              "repr": "<Struct 'CampaignArcEventList' (0x0000017707DEF9E8) {campaign_events: }>"
+            },
+            "run_campaign_arc_script_on_save": false,
+            "sub_campaigns": {
+              "python_type": "Set",
+              "repr": "set([MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/L_1_2/Common_L_1_2.Common_L_1_2\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/L_2_5/Common_L_2_5.Common_L_2_5\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/L_3_6/Common_L_3_6.Common_L_3_6\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/L_5_8/Common_L_5_8.Common_L_5_8\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/L_7_10/Common_L_7_10.Common_L_7_10\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/L_11_12/Common_L_11_12.Common_L_11_12\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/L_12_13/Common_L_12_13.Common_L_12_13\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/L_13_14/Common_L_13_14.Common_L_13_14\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/M_1_2/Common_M_1_2.Common_M_1_2\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/M_2_5/Common_M_2_5.Common_M_2_5\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/M_3_6/Common_M_3_6.Common_M_3_6\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/M_5_8/Common_M_5_8.Common_M_5_8\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/M_7_10/Common_M_7_10.Common_M_7_10\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/M_9_11/Common_M_9_11.Common_M_9_11\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/M_12_13/Common_M_12_13.Common_M_12_13\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/M_11_12/Common_M_11_12.Common_M_11_12\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/M_12_13_1/Common_M_12_13_1.Common_M_12_13_1\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_5_8/Common_S_5_8.Common_S_5_8\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_5_8_1/Common_S_5_8_1.Common_S_5_8_1\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_6_9/Common_S_6_9.Common_S_6_9\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_9_11/Common_S_9_11.Common_S_9_11\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_12_13/Common_S_12_13.Common_S_12_13\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_13_14/Common_S_13_14.Common_S_13_14\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_11_12/Common_D_11_12.Common_D_11_12\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_12_13/Common_D_12_13.Common_D_12_13\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_1_2/Common_D_1_2.Common_D_1_2\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_3_6/Common_D_3_6.Common_D_3_6\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_5_8/Common_D_5_8.Common_D_5_8\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_1_2/Common_K_1_2.Common_K_1_2\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_2_3/Common_K_2_3.Common_K_2_3\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_3_4/Common_K_3_4.Common_K_3_4\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_3_5_1/Common_K_3_5_1.Common_K_3_5_1\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_4_5/Common_K_4_5.Common_K_4_5\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_5_6/Common_K_5_6.Common_K_5_6\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_7_9/Common_K_7_9.Common_K_7_9\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_12_13/Common_K_12_13.Common_K_12_13\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_2_3/Common_D_2_3.Common_D_2_3\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_15/Common_D_15.Common_D_15\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/M_15/Common_M_15.Common_M_15\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/M_13_14/Common_M_13_14.Common_M_13_14\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_3_5/Common_S_3_5.Common_S_3_5\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_2_5/Common_S_2_5.Common_S_2_5\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_2_4/Common_S_2_4.Common_S_2_4\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_2_4/Common_D_2_4.Common_D_2_4\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_3_5/Common_D_3_5.Common_D_3_5\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_1_2/Common_S_1_2.Common_S_1_2\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_10_12/Common_S_10_12.Common_S_10_12\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_7_10/Common_D_7_10.Common_D_7_10\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_3_5/Common_K_3_5.Common_K_3_5\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_13_14/Common_K_13_14.Common_K_13_14\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_6_7/Common_S_6_7.Common_S_6_7\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_4_6/Common_D_4_6.Common_D_4_6\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_5_7/Common_D_5_7.Common_D_5_7\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_6_7/Common_D_6_7.Common_D_6_7\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/D_6_8/Common_D_6_8.Common_D_6_8\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_6_7/Common_K_6_7.Common_K_6_7\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_6_8/Common_K_6_8.Common_K_6_8\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/K_8_10/Common_K_8_10.Common_K_8_10\"', MWCampaignArcAsset'\"/Game/DLC1/CareerMode/Warzones/S_4_6/Common_S_4_6.Common_S_4_6\"', MWCampaignArcAsset'\"/Game/Campaign/CampaignArcs/Regions/MercStars/Place_MercStars_Arc.Place_MercStars_Arc\"'])"
+            }
+          },
+          "manifest_asset": null,
+          "path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.CareerModeClusters",
+          "target_asset": null
+        },
+        "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters",
+        "target_before": null,
+        "target_file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch\\ModOverride\\DLC1\\CareerMode\\StartConditions\\Arcs\\CareerModeClusters.uasset"
+      },
+      {
+        "asset": {
+          "get_full_name": "MWCampaignArcAsset /ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.CareerMode_SafeZones",
+          "get_name": "CareerMode_SafeZones",
+          "get_path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.CareerMode_SafeZones",
+          "python_type": "MWCampaignArcAsset",
+          "repr": "<Object '/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.CareerMode_SafeZones' (0x0000017707DEF640) Class 'MWCampaignArcAsset'>",
+          "unreal_class": "MWCampaignArcAsset",
+          "unreal_class_path": "/Script/MechWarrior.MWCampaignArcAsset"
+        },
+        "backup": null,
+        "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.uasset",
+        "saved": true,
+        "source_asset": "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones",
+        "source_before": {
+          "asset": {
+            "get_full_name": "MWCampaignArcAsset /Game/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.CareerMode_SafeZones",
+            "get_name": "CareerMode_SafeZones",
+            "get_path_name": "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.CareerMode_SafeZones",
+            "python_type": "MWCampaignArcAsset",
+            "repr": "<Object '/Game/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.CareerMode_SafeZones' (0x00000177136A8700) Class 'MWCampaignArcAsset'>",
+            "unreal_class": "MWCampaignArcAsset",
+            "unreal_class_path": "/Script/MechWarrior.MWCampaignArcAsset"
+          },
+          "asset_path": "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones",
+          "class_name": "MWCampaignArcAsset",
+          "exists": true,
+          "focused_properties": {
+            "campaign_arc_script": null,
+            "campaign_event_list": {
+              "python_type": "CampaignArcEventList",
+              "repr": "<Struct 'CampaignArcEventList' (0x00000177136A87A8) {campaign_events: ((EventName=\"PlaceRepairClusters\",TriggerConditions=(TriggerType=Oneoff,ReputationLevel=(Value=3)),CampaignActions=(/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_1_ArcAction.PlaceSafeZone_1_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_2_ArcAction.PlaceSafeZone_2_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_3_ArcAction.PlaceSafeZone_3_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_4_ArcAction.PlaceSafeZone_4_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_5_ArcAction.PlaceSafeZone_5_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_6_ArcAction.PlaceSafeZone_6_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_7_ArcAction.PlaceSafeZone_7_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_8_ArcAction.PlaceSafeZone_8_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_9_ArcAction.PlaceSafeZone_9_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_10_ArcAction.PlaceSafeZone_10_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_11_ArcAction.PlaceSafeZone_11_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_12_ArcAction.PlaceSafeZone_12_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_13_ArcAction.PlaceSafeZone_13_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_14_ArcAction.PlaceSafeZone_14_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_15_ArcAction.PlaceSafeZone_15_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_16_ArcAction.PlaceSafeZone_16_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_17_ArcAction.PlaceSafeZone_17_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_18_ArcAction.PlaceSafeZone_18_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_19_ArcAction.PlaceSafeZone_19_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_20_ArcAction.PlaceSafeZone_20_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_21_ArcAction.PlaceSafeZone_21_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_22_ArcAction.PlaceSafeZone_22_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_23_ArcAction.PlaceSafeZone_23_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_24_ArcAction.PlaceSafeZone_24_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_25_ArcAction.PlaceSafeZone_25_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_26_ArcAction.PlaceSafeZone_26_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_27_ArcAction.PlaceSafeZone_27_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_28_ArcAction.PlaceSafeZone_28_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_29_ArcAction.PlaceSafeZone_29_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_30_ArcAction.PlaceSafeZone_30_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_31_ArcAction.PlaceSafeZone_31_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_32_ArcAction.PlaceSafeZone_32_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_33_ArcAction.PlaceSafeZone_33_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_34_ArcAction.PlaceSafeZone_34_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_35_ArcAction.PlaceSafeZone_35_ArcAction_C)))}>"
+            },
+            "run_campaign_arc_script_on_save": false,
+            "sub_campaigns": {
+              "python_type": "Set",
+              "repr": "set([])"
+            }
+          },
+          "manifest_asset": "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.uasset",
+          "path_name": "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.CareerMode_SafeZones",
+          "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones"
+        },
+        "target_after": {
+          "asset": {
+            "get_full_name": "MWCampaignArcAsset /ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.CareerMode_SafeZones",
+            "get_name": "CareerMode_SafeZones",
+            "get_path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.CareerMode_SafeZones",
+            "python_type": "MWCampaignArcAsset",
+            "repr": "<Object '/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.CareerMode_SafeZones' (0x0000017707DEF640) Class 'MWCampaignArcAsset'>",
+            "unreal_class": "MWCampaignArcAsset",
+            "unreal_class_path": "/Script/MechWarrior.MWCampaignArcAsset"
+          },
+          "asset_path": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones",
+          "class_name": "MWCampaignArcAsset",
+          "exists": true,
+          "focused_properties": {
+            "campaign_arc_script": null,
+            "campaign_event_list": {
+              "python_type": "CampaignArcEventList",
+              "repr": "<Struct 'CampaignArcEventList' (0x0000017707DEF6E8) {campaign_events: ((EventName=\"PlaceRepairClusters\",TriggerConditions=(TriggerType=Oneoff,ReputationLevel=(Value=3)),CampaignActions=(/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_1_ArcAction.PlaceSafeZone_1_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_2_ArcAction.PlaceSafeZone_2_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_3_ArcAction.PlaceSafeZone_3_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_4_ArcAction.PlaceSafeZone_4_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_5_ArcAction.PlaceSafeZone_5_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_6_ArcAction.PlaceSafeZone_6_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_7_ArcAction.PlaceSafeZone_7_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_8_ArcAction.PlaceSafeZone_8_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_9_ArcAction.PlaceSafeZone_9_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_10_ArcAction.PlaceSafeZone_10_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_11_ArcAction.PlaceSafeZone_11_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_12_ArcAction.PlaceSafeZone_12_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_13_ArcAction.PlaceSafeZone_13_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_14_ArcAction.PlaceSafeZone_14_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_15_ArcAction.PlaceSafeZone_15_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_16_ArcAction.PlaceSafeZone_16_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_17_ArcAction.PlaceSafeZone_17_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_18_ArcAction.PlaceSafeZone_18_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_19_ArcAction.PlaceSafeZone_19_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_20_ArcAction.PlaceSafeZone_20_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_21_ArcAction.PlaceSafeZone_21_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_22_ArcAction.PlaceSafeZone_22_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_23_ArcAction.PlaceSafeZone_23_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_24_ArcAction.PlaceSafeZone_24_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_25_ArcAction.PlaceSafeZone_25_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_26_ArcAction.PlaceSafeZone_26_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_27_ArcAction.PlaceSafeZone_27_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_28_ArcAction.PlaceSafeZone_28_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_29_ArcAction.PlaceSafeZone_29_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_30_ArcAction.PlaceSafeZone_30_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_31_ArcAction.PlaceSafeZone_31_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_32_ArcAction.PlaceSafeZone_32_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_33_ArcAction.PlaceSafeZone_33_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_34_ArcAction.PlaceSafeZone_34_ArcAction_C,/Game/DLC1/CareerMode/IndustrialHubs/PlaceSafeZone_35_ArcAction.PlaceSafeZone_35_ArcAction_C)))}>"
+            },
+            "run_campaign_arc_script_on_save": false,
+            "sub_campaigns": {
+              "python_type": "Set",
+              "repr": "set([])"
+            }
+          },
+          "manifest_asset": null,
+          "path_name": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.CareerMode_SafeZones",
+          "target_asset": null
+        },
+        "target_asset": "/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones",
+        "target_before": null,
+        "target_file": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Plugins\\TKUCompatEditorPatch\\ModOverride\\DLC1\\CareerMode\\StartConditions\\Arcs\\CareerMode_SafeZones.uasset"
+      }
+    ],
+    "attempted": true,
+    "reason": null,
+    "saved": true
+  },
+  "safety_failures": [],
+  "source_assets": [
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start_Tutorial",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_FRR_Start_Tutorial",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Kurita_Start_Tutorial",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Liao_Start_Tutorial",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Marik_Start_Tutorial",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Steiner_Start_Tutorial",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode_Start",
+    "/Game/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start",
+    "/Game/DLC1/CareerMode/CareerModeCoreCampaign",
+    "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters",
+    "/Game/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones"
+  ],
+  "target_mod_name": "TKUCompatEditorPatch"
+}

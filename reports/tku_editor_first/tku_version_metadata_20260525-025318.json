@@ -1,0 +1,47 @@
+{
+  "generated": "2026-05-25T02:53:18.4671333+10:00",
+  "apply_requested": true,
+  "mod_name": "TKUCompatEditorPatch",
+  "target_game_version": "1.13.378",
+  "target_description": "Editor-authored compatibility patch for Known Universe on MW5 1.13.x / DLC7 (Steam/GOG 1.13.378)",
+  "backup_dir": "D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\backups\\version_metadata_20260525-025318",
+  "changes": [
+    {
+      "kind": "editor packaged mod.json",
+      "path": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Mods\\TKUCompatEditorPatch\\mod.json",
+      "before": {
+        "description": "Editor-authored compatibility patch for Known Universe on MW5 1.13.x / DLC7 (Steam/GOG 1.13.378)",
+        "gameVersion": "1.13.378"
+      },
+      "after": {
+        "description": "Editor-authored compatibility patch for Known Universe on MW5 1.13.x / DLC7 (Steam/GOG 1.13.378)",
+        "gameVersion": "1.13.378"
+      },
+      "status": "updated"
+    },
+    {
+      "kind": "live deployed mod.json",
+      "path": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\TKUCompatEditorPatch\\mod.json",
+      "before": {
+        "description": "Editor-authored compatibility patch for Known Universe on MW5 1.1.380",
+        "gameVersion": "1.13.378"
+      },
+      "after": {
+        "description": "Editor-authored compatibility patch for Known Universe on MW5 1.13.x / DLC7 (Steam/GOG 1.13.378)",
+        "gameVersion": "1.13.378"
+      },
+      "status": "updated"
+    },
+    {
+      "kind": "live modlist",
+      "path": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\modlist.json",
+      "before": {
+        "gameVersion": "1.13.378"
+      },
+      "after": {
+        "gameVersion": "1.13.378"
+      },
+      "status": "updated"
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "actions": [
+    "staged UnrealPak-built content-root mirror pak at D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\staging\\MW5Mercs-zzzzTKUCompatEditorPatch-20260525-170948.pak"
+  ],
+  "apply_requested": false,
+  "content_conflicts_before": [
+    {
+      "entry_count": 239830,
+      "exists": true,
+      "file_size": 79065809048,
+      "mount_point": "../../../",
+      "path": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Content\\Paks\\MW5Mercs-WindowsNoEditor.pak",
+      "sha256": null,
+      "sha256_skipped": "file is larger than 512 MiB",
+      "target_entries": {
+        "/Game/InnerSphereData/MW5_InnerSphereData.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/InnerSphereData/MW5_InnerSphereData.uasset",
+          "size": 46392,
+          "uncompressed_size": 46392
+        },
+        "/Game/InnerSphereData/MW5_InnerSphereData.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/InnerSphereData/MW5_InnerSphereData.uexp",
+          "size": 1729727,
+          "uncompressed_size": 1729727
+        },
+        "/Game/InnerSphereData/StarSystemGenerator.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/InnerSphereData/StarSystemGenerator.uasset",
+          "size": 18857,
+          "uncompressed_size": 18857
+        },
+        "/Game/InnerSphereData/StarSystemGenerator.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/InnerSphereData/StarSystemGenerator.uexp",
+          "size": 106888,
+          "uncompressed_size": 106888
+        },
+        "/Game/Levels/FrontEnd/StarMap.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/Levels/FrontEnd/StarMap.uexp",
+          "size": 1690408,
+          "uncompressed_size": 1690408
+        },
+        "/Game/Levels/FrontEnd/StarMap.umap": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/Levels/FrontEnd/StarMap.umap",
+          "size": 891398,
+          "uncompressed_size": 891398
+        },
+        "/Game/UI/FrontEnd/StarMapPawn.uasset": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/UI/FrontEnd/StarMapPawn.uasset",
+          "size": 3442,
+          "uncompressed_size": 3442
+        },
+        "/Game/UI/FrontEnd/StarMapPawn.uexp": {
+          "compression_method_index": 0,
+          "encrypted": false,
+          "pak_path": "MW5Mercs/Content/UI/FrontEnd/StarMapPawn.uexp",
+          "size": 650,
+          "uncompressed_size": 650
+        }
+      },
+      "target_entry_count": 8
+    }
+  ],
+  "generated_utc": "2026-05-25T07:09:48.276261+00:00",
+  "live_backup": null,
+  "live_disabled_backup": null,
+  "live_disabled_pak": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Content\\Paks\\MW5Mercs-zzzzTKUCompatEditorPatch.pak.disabled-by-tku-isolation",
+  "live_pak": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Content\\Paks\\MW5Mercs-zzzzTKUCompatEditorPatch.pak",
+  "mirrored_paths": [
+    "/Game/InnerSphereData/MW5_InnerSphereData.uasset",
+    "/Game/InnerSphereData/MW5_InnerSphereData.uexp",
+    "/Game/InnerSphereData/StarSystemGenerator.uasset",
+    "/Game/InnerSphereData/StarSystemGenerator.uexp",
+    "/Game/Levels/FrontEnd/StarMap.uexp",
+    "/Game/Levels/FrontEnd/StarMap.umap",
+    "/Game/UI/FrontEnd/StarMapPawn.uasset",
+    "/Game/UI/FrontEnd/StarMapPawn.uexp"
+  ],
+  "report_json": "D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\tku_content_mirror_20260525-170948.json",
+  "report_md": "D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\tku_content_mirror_20260525-170948.md",
+  "safety_failures": [],
+  "source_pak": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\TKUCompatEditorPatch\\Paks\\TKUCompatEditorPatch.pak",
+  "source_pak_candidates": [
+    {
+      "exists": true,
+      "file_size": 8003375,
+      "last_write_utc": "2026-05-25T06:35:01.290296+00:00",
+      "path": "E:\\SteamLibrary\\steamapps\\common\\MechWarrior 5 Mercenaries\\MW5Mercs\\Mods\\TKUCompatEditorPatch\\Paks\\TKUCompatEditorPatch.pak",
+      "sha256": "AB3D9FFAA0E1D0E0724647329889A42C1B490211EC61D14177A93D0659CE3AA6"
+    },
+    {
+      "exists": true,
+      "file_size": 8003375,
+      "last_write_utc": "2026-05-25T06:35:01.290296+00:00",
+      "path": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Mods\\TKUCompatEditorPatch\\TKUCompatEditorPatch\\TKUCompatEditorPatch\\Paks\\TKUCompatEditorPatch.pak",
+      "sha256": "AB3D9FFAA0E1D0E0724647329889A42C1B490211EC61D14177A93D0659CE3AA6"
+    },
+    {
+      "exists": true,
+      "file_size": 7578679,
+      "last_write_utc": "2026-05-24T16:50:49.596112+00:00",
+      "path": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Mods\\TKUCompatEditorPatch\\TKUCompatEditorPatch\\Paks\\TKUCompatEditorPatch.pak",
+      "sha256": "4EFE99533ECB084EE69CF54B22302671EDBC5B57B520E6A3A823B2599629D687"
+    },
+    {
+      "exists": true,
+      "file_size": 7518200,
+      "last_write_utc": "2026-05-11T23:20:16.876441+00:00",
+      "path": "E:\\Games\\MechWarrior5Editor\\MW5Mercs\\Mods\\TKUCompatEditorPatch\\Paks\\TKUCompatEditorPatch.pak",
+      "sha256": "FB5F798061ADFF1DC78A4CD350541E530692C3C681061D639C24107895CB746C"
+    }
+  ],
+  "staged_inventory": {
+    "entry_count": 8,
+    "exists": true,
+    "file_size": 7508403,
+    "mount_point": "../../../MW5Mercs/Content/",
+    "path": "D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\staging\\MW5Mercs-zzzzTKUCompatEditorPatch-20260525-170948.pak",
+    "sha256": "CD28346527E769B8174E650677F76B6B9F3DD1ED106AC541033F5252373A8B36",
+    "target_entries": {
+      "/Game/InnerSphereData/MW5_InnerSphereData.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "InnerSphereData/MW5_InnerSphereData.uasset",
+        "size": 73485,
+        "uncompressed_size": 73485
+      },
+      "/Game/InnerSphereData/MW5_InnerSphereData.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "InnerSphereData/MW5_InnerSphereData.uexp",
+        "size": 3167256,
+        "uncompressed_size": 3167256
+      },
+      "/Game/InnerSphereData/StarSystemGenerator.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "InnerSphereData/StarSystemGenerator.uasset",
+        "size": 19081,
+        "uncompressed_size": 19081
+      },
+      "/Game/InnerSphereData/StarSystemGenerator.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "InnerSphereData/StarSystemGenerator.uexp",
+        "size": 106917,
+        "uncompressed_size": 106917
+      },
+      "/Game/Levels/FrontEnd/StarMap.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "Levels/FrontEnd/StarMap.uexp",
+        "size": 2490052,
+        "uncompressed_size": 2490052
+      },
+      "/Game/Levels/FrontEnd/StarMap.umap": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "Levels/FrontEnd/StarMap.umap",
+        "size": 1646045,
+        "uncompressed_size": 1646045
+      },
+      "/Game/UI/FrontEnd/StarMapPawn.uasset": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "UI/FrontEnd/StarMapPawn.uasset",
+        "size": 3524,
+        "uncompressed_size": 3524
+      },
+      "/Game/UI/FrontEnd/StarMapPawn.uexp": {
+        "compression_method_index": 0,
+        "encrypted": false,
+        "pak_path": "UI/FrontEnd/StarMapPawn.uexp",
+        "size": 724,
+        "uncompressed_size": 724
+      }
+    },
+    "target_entry_count": 8
+  },
+  "staged_pak": "D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\staging\\MW5Mercs-zzzzTKUCompatEditorPatch-20260525-170948.pak",
+  "staged_sha256": "CD28346527E769B8174E650677F76B6B9F3DD1ED106AC541033F5252373A8B36",
+  "staged_size": 7508403,
+  "target_paths": [
+    "/Game/InnerSphereData/MW5_InnerSphereData.uasset",
+    "/Game/InnerSphereData/MW5_InnerSphereData.uexp",
+    "/Game/InnerSphereData/StarSystemGenerator.uasset",
+    "/Game/InnerSphereData/StarSystemGenerator.uexp",
+    "/Game/Levels/FrontEnd/StarMap.uexp",
+    "/Game/Levels/FrontEnd/StarMap.umap",
+    "/Game/UI/FrontEnd/StarMapPawn.uasset",
+    "/Game/UI/FrontEnd/StarMapPawn.uexp"
+  ],
+  "timestamp": "20260525-170948",
+  "unrealpak_build": {
+    "command": [
+      "E:\\Games\\MechWarrior5Editor\\Engine\\Binaries\\Win64\\UnrealPak.exe",
+      "D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\staging\\MW5Mercs-zzzzTKUCompatEditorPatch-20260525-170948.pak",
+      "-Create=D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\staging\\content_mirror_unrealpak_response_20260525-170948.txt"
+    ],
+    "returncode": 0,
+    "stderr_tail": "",
+    "stdout_tail": "LogPakFile: Display: Using command line for crypto configuration\nLogPakFile: Display: Loading response file D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\staging\\content_mirror_unrealpak_response_20260525-170948.txt\nLogPakFile: Display: Added 8 entries to add to pak file.\nLogPakFile: Display: Collecting files to add to pak file...\nLogPakFile: Display: Collected 8 files in 0.00s.\nLogPakFile: Display: Creating pak D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\staging\\MW5Mercs-zzzzTKUCompatEditorPatch-20260525-170948.pak.\nLogDerivedDataCache: Display: Performance to ../../../Engine/DerivedDataCache: Latency=0.00ms. RandomReadSpeed=999.00MBs, RandomWriteSpeed=999.00MBs. Assigned SpeedClass 'Local'\nLogPakFile: Display: Added 8 files, 7508403 bytes total, time 0.06s.\nLogPakFile: Display: PrimaryIndex size: 227 bytes\nLogPakFile: Display: PathHashIndex size: 104 bytes\nLogPakFile: Display: FullDirectoryIndex size: 343 bytes\nLogPakFile: Display: Encryption - DISABLED\nLogPakFile: Display: Unreal pak executed in 0.065054 seconds\n"
+  },
+  "unrealpak_exe": "E:\\Games\\MechWarrior5Editor\\Engine\\Binaries\\Win64\\UnrealPak.exe",
+  "unrealpak_response": "D:\\Downloads\\OneDrive\\Documents\\code\\tku-update\\reports\\tku_editor_first\\staging\\content_mirror_unrealpak_response_20260525-170948.txt"
+}

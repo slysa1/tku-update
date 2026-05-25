@@ -1,0 +1,154 @@
+# MW5 Save StarMap Scan - 20260525-190333
+
+- Method: read-only binary/string scan of the latest MW5 save directory.
+- Safety: no save files, game files, mod files, or editor assets were modified.
+
+## Findings
+
+- Latest campaign save advertises DLC tags: DLC.DLC1, DLC.DLC2, DLC.DLC3, DLC.DLC4, DLC.DLC5, DLC.DLC6, DLC.DLC7.
+- 37C711E141C90274851105B37CBC3707.sav serializes a StarMapModel segment of 184853 bytes; first focused tokens: StarMapModel | /Script/MechWarrior.MWStarMapModel | OnStarSystemInfoChanged | OnTravelToNewStarSystem | OnStarSystemInfoChanged_Event_0 | OnStarSystemInfoChanged | RefreshStarSystem | StarSystemInfoChanged | OnStarSystemInfoChanged | OnStarSystemChanged | OnStarSystemChanged | OnStarSystemChanged | OnStarSystemChanged | OnStarSystemChanged | OnStarSystemChanged | OnStarSystemChanged.
+- 37C711E141C90274851105B37CBC3707.sav StarMapModel sample-id occurrences: {'4088': 0, '4089': 0, '4090': 0, '4110': 0, '7921': 0}.
+- 37C711E141C90274851105B37CBC3707.sav contains Taurian/Canopus faction references.
+- BD62C5CF48B665CA3600959FDFB9AEEB.sav serializes a StarMapModel segment of 109024 bytes; first focused tokens: StarMapModel | /Script/MechWarrior.MWStarMapModel | OnStarSystemInfoChanged | OnTravelToNewStarSystem | OnStarSystemInfoChanged_Event_0 | OnStarSystemInfoChanged | OnUserStarSystemChanged | OnUserStarSystemChanged | OnUserStarSystemChanged | OnStarMapInitialized | OnInitializeStarMap | OnUpdateHiddenSystems | OnHiddenSystemsUpdated | OnHiddenSystemsUpdated | OnHiddenSystemsUpdated | OnHiddenSystemsUpdated.
+- BD62C5CF48B665CA3600959FDFB9AEEB.sav StarMapModel sample-id occurrences: {'4088': 0, '4089': 0, '4090': 0, '4110': 0, '7921': 0}.
+- BD62C5CF48B665CA3600959FDFB9AEEB.sav contains Taurian/Canopus faction references.
+
+## Campaign
+
+- Path: `C:\Users\dogpe\AppData\Local\MW5Mercs\Saved\SaveGames\2ABF90FF4B331B545900CBAC70A9230A\Campaign.json`
+- Name: `House Davion`
+- Game date: `3015.01.15-14.00.00`
+- Last save date: `2026.05.25-09.00.06`
+- Start condition: `MWStartConditionsAsset:CareerMode_Davion_Start`
+- Last save file: `37C711E141C90274851105B37CBC3707`
+- Save count: `3`
+
+## `37C711E141C90274851105B37CBC3707.sav`
+
+- Size: `900548`
+- Last write: `2026-05-25T19:00:06.359942`
+- SHA256: `855FB48E1BEADF761D70EE3FBD43D7872E8B780B6F06729867D0366FACBFAC2A`
+- StarMapModel segment count: `1`
+- Marker `StarMapModel` count `2` sample offsets `[5068, 5135]`
+- Marker `MWStarMapModel` count `1` sample offsets `[5133]`
+- Marker `HiddenStarSystems` count `1` sample offsets `[189068]`
+- Marker `CurrentStarSystemId` count `1` sample offsets `[189165]`
+- Marker `StarSystemId` count `80` sample offsets `[189172, 331815, 333582, 334379, 335951, 336748, 338320, 339117]`
+- Marker `MWClusterDataAsset` count `80` sample offsets `[333413, 335787, 338156, 340525, 342894, 345263, 347632, 350001]`
+- Marker `ClusterAsset` count `80` sample offsets `[333508, 335877, 338246, 340615, 342984, 345353, 347722, 350091]`
+- Marker `TaurianConcordat` count `1` sample offsets `[215325]`
+- Marker `MagistracyOfCanopus` count `1` sample offsets `[215756]`
+- Marker `OutworldsAlliance` count `1` sample offsets `[214469]`
+- Marker `Periphery` count `1` sample offsets `[214901]`
+- Segment start `4908` end `189761` length `184853`
+  - Token `5068` `StarMapModel`
+  - Token `5113` `/Script/MechWarrior.MWStarMapModel`
+  - Token `5152` `OnStarSystemInfoChanged`
+  - Token `5229` `OnTravelToNewStarSystem`
+  - Token `5257` `OnStarSystemInfoChanged_Event_0`
+  - Token `5293` `OnStarSystemInfoChanged`
+  - Token `5321` `RefreshStarSystem`
+  - Token `5343` `StarSystemInfoChanged`
+  - Token `5387` `OnStarSystemInfoChanged`
+  - Token `5415` `OnStarSystemChanged`
+  - Token `5439` `OnStarSystemChanged`
+  - Token `5463` `OnStarSystemChanged`
+  - Token `5487` `OnStarSystemChanged`
+  - Token `5511` `OnStarSystemChanged`
+  - Token `5535` `OnStarSystemChanged`
+  - Token `5559` `OnStarSystemChanged`
+  - Token `5583` `OnStarSystemChanged`
+  - Token `5607` `OnStarSystemChanged`
+  - Token `5631` `OnStarSystemChanged`
+  - Token `5655` `OnStarSystemChanged`
+  - Token `5679` `OnStarSystemChanged`
+  - Token `5703` `OnStarSystemChanged`
+  - Token `5727` `OnStarSystemChanged`
+  - Token `5751` `OnStarSystemChanged`
+  - Token `5775` `OnStarSystemChanged`
+  - Token `5799` `OnStarSystemChanged`
+  - Token `5823` `OnStarSystemChanged`
+  - Token `5847` `OnStarSystemChanged`
+  - Token `5871` `OnStarSystemChanged`
+  - Token `5895` `OnStarSystemChanged`
+  - Token `5919` `OnStarSystemChanged`
+  - Token `5943` `OnStarSystemChanged`
+  - Token `5967` `OnStarSystemChanged`
+  - Token `5991` `OnStarSystemChanged`
+  - Token `6015` `OnStarSystemChanged`
+  - Token `6039` `OnStarSystemChanged`
+  - Token `6063` `OnStarSystemChanged`
+  - Token `6087` `OnStarSystemChanged`
+  - Token `6111` `OnStarSystemChanged`
+  - Token `6135` `OnStarSystemChanged`
+- Global sample ID occurrence counts:
+  - `4088`: `0`
+  - `4089`: `0`
+  - `4090`: `0`
+  - `4110`: `0`
+  - `7921`: `0`
+
+## `BD62C5CF48B665CA3600959FDFB9AEEB.sav`
+
+- Size: `779486`
+- Last write: `2026-05-25T18:59:34.198375`
+- SHA256: `181BA88E19581BC65FFF2E919230CAF5D951DEB612C072A3D10FFE47CB66B4F9`
+- StarMapModel segment count: `1`
+- Marker `StarMapModel` count `2` sample offsets `[5068, 5135]`
+- Marker `MWStarMapModel` count `1` sample offsets `[5133]`
+- Marker `HiddenStarSystems` count `1` sample offsets `[113239]`
+- Marker `CurrentStarSystemId` count `1` sample offsets `[113336]`
+- Marker `StarSystemId` count `80` sample offsets `[113343, 255691, 257458, 258255, 259827, 260624, 262196, 262993]`
+- Marker `MWClusterDataAsset` count `80` sample offsets `[257289, 259663, 262032, 264401, 266770, 269139, 271508, 273877]`
+- Marker `ClusterAsset` count `80` sample offsets `[257384, 259753, 262122, 264491, 266860, 269229, 271598, 273967]`
+- Marker `TaurianConcordat` count `1` sample offsets `[139219]`
+- Marker `MagistracyOfCanopus` count `1` sample offsets `[139650]`
+- Marker `OutworldsAlliance` count `1` sample offsets `[138363]`
+- Marker `Periphery` count `1` sample offsets `[138795]`
+- Segment start `4908` end `113932` length `109024`
+  - Token `5068` `StarMapModel`
+  - Token `5113` `/Script/MechWarrior.MWStarMapModel`
+  - Token `5152` `OnStarSystemInfoChanged`
+  - Token `5229` `OnTravelToNewStarSystem`
+  - Token `5257` `OnStarSystemInfoChanged_Event_0`
+  - Token `5293` `OnStarSystemInfoChanged`
+  - Token `5321` `OnUserStarSystemChanged`
+  - Token `5398` `OnUserStarSystemChanged`
+  - Token `5426` `OnUserStarSystemChanged`
+  - Token `5454` `OnStarMapInitialized`
+  - Token `5528` `OnInitializeStarMap`
+  - Token `5652` `OnUpdateHiddenSystems`
+  - Token `5727` `OnHiddenSystemsUpdated`
+  - Token `5754` `OnHiddenSystemsUpdated`
+  - Token `5781` `OnHiddenSystemsUpdated`
+  - Token `5808` `OnHiddenSystemsUpdated`
+  - Token `5835` `OnHiddenSystemsUpdated`
+  - Token `5862` `OnHiddenSystemsUpdated`
+  - Token `5889` `OnHiddenSystemsUpdated`
+  - Token `5916` `OnHiddenSystemsUpdated`
+  - Token `5943` `OnHiddenSystemsUpdated`
+  - Token `5970` `OnHiddenSystemsUpdated`
+  - Token `5997` `OnHiddenSystemsUpdated`
+  - Token `6024` `OnHiddenSystemsUpdated`
+  - Token `6051` `OnHiddenSystemsUpdated`
+  - Token `6078` `OnHiddenSystemsUpdated`
+  - Token `6105` `OnHiddenSystemsUpdated`
+  - Token `6132` `OnHiddenSystemsUpdated`
+  - Token `6159` `OnHiddenSystemsUpdated`
+  - Token `6186` `OnHiddenSystemsUpdated`
+  - Token `6213` `OnHiddenSystemsUpdated`
+  - Token `6240` `OnHiddenSystemsUpdated`
+  - Token `6267` `OnHiddenSystemsUpdated`
+  - Token `6294` `OnHiddenSystemsUpdated`
+  - Token `6321` `OnHiddenSystemsUpdated`
+  - Token `6348` `OnHiddenSystemsUpdated`
+  - Token `6375` `OnHiddenSystemsUpdated`
+  - Token `6402` `OnHiddenSystemsUpdated`
+  - Token `6429` `OnHiddenSystemsUpdated`
+  - Token `6456` `OnHiddenSystemsUpdated`
+- Global sample ID occurrence counts:
+  - `4088`: `0`
+  - `4089`: `0`
+  - `4090`: `0`
+  - `4110`: `0`
+  - `7921`: `0`

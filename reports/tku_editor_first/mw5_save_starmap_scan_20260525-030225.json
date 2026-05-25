@@ -1,0 +1,3594 @@
+{
+  "campaign": {
+    "game_date": "3015.01.15-14.00.00",
+    "last_save_date": "2026.05.24-16.55.58",
+    "last_save_file_name": "88A8ED8E4D572547644EC6A402C7F60B",
+    "name": "House Davion",
+    "path": "C:\\Users\\dogpe\\AppData\\Local\\MW5Mercs\\Saved\\SaveGames\\674ECD2A445A4842DBC7FEAAD156939F\\Campaign.json",
+    "save_count": 2,
+    "saves": [
+      {
+        "DLCTags": [
+          "DLC.DLC1",
+          "DLC.DLC2",
+          "DLC.DLC3",
+          "DLC.DLC4",
+          "DLC.DLC5",
+          "DLC.DLC6",
+          "DLC.DLC7"
+        ],
+        "GameDate": "3015.01.15-14.00.00",
+        "GameTimeElapsed": 0,
+        "Name": "AutoSave (Co-Op Unlocked)",
+        "Reputation": 0,
+        "ReputationLevel": 1,
+        "SaveFileName": "1AECDDA041E049552356349A756C83D3",
+        "SaveType": 1,
+        "StarSystemName": "New Save Game",
+        "TimePlayedInSeconds": 0,
+        "TrackedObjectiveId": "",
+        "bMultiplayerEnabled": true
+      },
+      {
+        "DLCTags": [
+          "DLC.DLC1",
+          "DLC.DLC2",
+          "DLC.DLC3",
+          "DLC.DLC4",
+          "DLC.DLC5",
+          "DLC.DLC6",
+          "DLC.DLC7"
+        ],
+        "GameDate": "3015.01.15-14.00.00",
+        "GameTimeElapsed": 0,
+        "Name": "AutoSave (Company Created)",
+        "Reputation": 0,
+        "ReputationLevel": 1,
+        "SaveFileName": "88A8ED8E4D572547644EC6A402C7F60B",
+        "SaveType": 1,
+        "StarSystemName": "New Save Game",
+        "TimePlayedInSeconds": 18,
+        "TrackedObjectiveId": "",
+        "bMultiplayerEnabled": true
+      }
+    ],
+    "start_condition_id": "MWStartConditionsAsset:CareerMode_Davion_Start"
+  },
+  "findings": [
+    "Latest campaign save advertises DLC tags: DLC.DLC1, DLC.DLC2, DLC.DLC3, DLC.DLC4, DLC.DLC5, DLC.DLC6, DLC.DLC7.",
+    "88A8ED8E4D572547644EC6A402C7F60B.sav serializes a StarMapModel segment of 109024 bytes; first focused tokens: StarMapModel | /Script/MechWarrior.MWStarMapModel | OnStarSystemInfoChanged | OnTravelToNewStarSystem | OnStarSystemInfoChanged_Event_0 | OnStarSystemInfoChanged | OnUserStarSystemChanged | OnUserStarSystemChanged | OnUserStarSystemChanged | OnStarMapInitialized | OnInitializeStarMap | OnUpdateHiddenSystems | OnHiddenSystemsUpdated | OnHiddenSystemsUpdated | OnHiddenSystemsUpdated | OnHiddenSystemsUpdated.",
+    "88A8ED8E4D572547644EC6A402C7F60B.sav StarMapModel sample-id occurrences: {'1': 6, '3501': 1, '3502': 0, '4001': 0, '4110': 0, '5000': 0, '6000': 0, '7000': 0, '7912': 0, '7921': 0}.",
+    "88A8ED8E4D572547644EC6A402C7F60B.sav contains Taurian/Canopus faction references.",
+    "1AECDDA041E049552356349A756C83D3.sav serializes a StarMapModel segment of 1042 bytes; first focused tokens: StarMapModel | /Script/MechWarrior.MWStarMapModel | OnUserStarSystemChanged | OnUserStarSystemChanged | HiddenStarSystems | CurrentStarSystemId | StarMapBorderAssetId | StarMapBorderAssetId | PrimaryAssetId | PrimaryAssetType | PrimaryAssetType | MWStarMapBorderAsset | PrimaryAssetName.",
+    "1AECDDA041E049552356349A756C83D3.sav StarMapModel sample-id occurrences: {'1': 2, '3501': 1, '3502': 0, '4001': 0, '4110': 0, '5000': 0, '6000': 0, '7000': 0, '7912': 0, '7921': 0}.",
+    "1AECDDA041E049552356349A756C83D3.sav contains Taurian/Canopus faction references."
+  ],
+  "generated_utc": "2026-05-24T17:02:25.439370+00:00",
+  "sample_ids": [
+    1,
+    3501,
+    3502,
+    4001,
+    4110,
+    5000,
+    6000,
+    7000,
+    7912,
+    7921
+  ],
+  "sav_files": [
+    {
+      "focused_tokens_sample": [
+        {
+          "offset": 50,
+          "text": "/Game/DLC1/CareerMode/StartConditions/CareerMode.CareerMode_C"
+        },
+        {
+          "offset": 274,
+          "text": "CurrentScenario"
+        },
+        {
+          "offset": 647,
+          "text": "/Game/Levels/TileElements/Leopard/OperationsStart/LeopardMissionHubArea.LeopardMissionHubArea"
+        },
+        {
+          "offset": 1131,
+          "text": "/Game/Levels/TileElements/Leopard/OperationsStart/LeopardMissionHubArea.LeopardMissionHubArea"
+        },
+        {
+          "offset": 4765,
+          "text": "MapProperty"
+        },
+        {
+          "offset": 5068,
+          "text": "StarMapModel"
+        },
+        {
+          "offset": 5113,
+          "text": "/Script/MechWarrior.MWStarMapModel"
+        },
+        {
+          "offset": 5152,
+          "text": "OnStarSystemInfoChanged"
+        },
+        {
+          "offset": 5229,
+          "text": "OnTravelToNewStarSystem"
+        },
+        {
+          "offset": 5257,
+          "text": "OnStarSystemInfoChanged_Event_0"
+        },
+        {
+          "offset": 5293,
+          "text": "OnStarSystemInfoChanged"
+        },
+        {
+          "offset": 5321,
+          "text": "OnUserStarSystemChanged"
+        },
+        {
+          "offset": 5398,
+          "text": "OnUserStarSystemChanged"
+        },
+        {
+          "offset": 5426,
+          "text": "OnUserStarSystemChanged"
+        },
+        {
+          "offset": 5454,
+          "text": "OnStarMapInitialized"
+        },
+        {
+          "offset": 5528,
+          "text": "OnInitializeStarMap"
+        },
+        {
+          "offset": 5652,
+          "text": "OnUpdateHiddenSystems"
+        },
+        {
+          "offset": 5727,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 5754,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 5781,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 5808,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 5835,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 5862,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 5889,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 5916,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 5943,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 5970,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 5997,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6024,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6051,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6078,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6105,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6132,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6159,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6186,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6213,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6240,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6267,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6294,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6321,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6348,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6375,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6402,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6429,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6456,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6483,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6510,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6537,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6564,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6591,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6618,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6645,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6672,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6699,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6726,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6753,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6780,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6807,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6834,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6861,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6888,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6915,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6942,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6969,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 6996,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7023,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7050,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7077,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7104,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7131,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7158,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7185,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7212,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7239,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7266,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7293,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7320,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7347,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7374,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7401,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7428,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7455,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7482,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7509,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7536,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7563,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7590,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7617,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7644,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7671,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7698,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7725,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7752,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7779,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7806,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7833,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7860,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7887,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7914,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7941,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7968,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 7995,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8022,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8049,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8076,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8103,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8130,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8157,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8184,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8211,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8238,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8265,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8292,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8319,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8346,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8373,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8400,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8427,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8454,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8481,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8508,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8535,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8562,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8589,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8616,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8643,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8670,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8697,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8724,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8751,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8778,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8805,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8832,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8859,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8886,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8913,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8940,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8967,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 8994,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9021,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9048,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9075,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9102,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9129,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9156,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9183,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9210,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9237,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9264,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9291,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9318,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9345,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9372,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9399,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9426,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9453,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9480,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9507,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9534,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9561,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9588,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9615,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9642,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9669,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9696,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9723,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9750,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9777,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9804,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9831,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9858,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9885,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9912,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9939,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9966,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 9993,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10020,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10047,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10074,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10101,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10128,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10155,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10182,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10209,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10236,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10263,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10290,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10317,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10344,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10371,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10398,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10425,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10452,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10479,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10506,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10533,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10560,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10587,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10614,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10641,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10668,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10695,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10722,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10749,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10776,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10803,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10830,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10857,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10884,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10911,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10938,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10965,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 10992,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 11019,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 11046,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 11073,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 11100,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 11127,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 11154,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 11181,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 11208,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 11235,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 11262,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 11289,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 11316,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 11343,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 11370,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 11397,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 11424,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 11451,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 11478,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 11505,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 11532,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 11559,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 11586,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 11613,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 11640,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 11667,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 11694,
+          "text": "OnHiddenSystemsUpdated"
+        },
+        {
+          "offset": 11721,
+          "text": "OnHiddenSystemsUpdated"
+        }
+      ],
+      "global_sample_id_nearest_markers": {
+        "1": [
+          {
+            "distance": 4758,
+            "marker": "StarMapModel",
+            "marker_offset": 5068
+          },
+          {
+            "distance": 4274,
+            "marker": "StarMapModel",
+            "marker_offset": 5068
+          },
+          {
+            "distance": 2090,
+            "marker": "StarMapModel",
+            "marker_offset": 5068
+          },
+          {
+            "distance": 1515,
+            "marker": "StarMapModel",
+            "marker_offset": 5068
+          },
+          {
+            "distance": 940,
+            "marker": "StarMapModel",
+            "marker_offset": 5068
+          },
+          {
+            "distance": 365,
+            "marker": "StarMapModel",
+            "marker_offset": 5068
+          },
+          {
+            "distance": 31,
+            "marker": "MWStarMapModel",
+            "marker_offset": 5133
+          },
+          {
+            "distance": 385,
+            "marker": "StarMapModel",
+            "marker_offset": 5135
+          },
+          {
+            "distance": 483,
+            "marker": "StarMapModel",
+            "marker_offset": 5135
+          },
+          {
+            "distance": 577,
+            "marker": "StarMapModel",
+            "marker_offset": 5135
+          }
+        ],
+        "3501": [
+          {
+            "distance": 20,
+            "marker": "CurrentStarSystemId",
+            "marker_offset": 113336
+          }
+        ],
+        "3502": [],
+        "4001": [],
+        "4110": [],
+        "5000": [],
+        "6000": [],
+        "7000": [],
+        "7912": [],
+        "7921": []
+      },
+      "global_sample_id_occurrences": {
+        "1": [
+          310,
+          794,
+          2978,
+          3553,
+          4128,
+          4703,
+          5102,
+          5520,
+          5618,
+          5712,
+          113066,
+          113430,
+          114089,
+          115392,
+          115493,
+          115586,
+          116148,
+          116220,
+          116713,
+          116913,
+          116985,
+          117471,
+          117671,
+          117743,
+          118229,
+          118429,
+          118501,
+          118983,
+          119183,
+          119255,
+          119942,
+          120014,
+          120700,
+          120772,
+          121685,
+          121763,
+          122262,
+          122462,
+          122540,
+          123050,
+          123250,
+          123328,
+          123817,
+          124017,
+          124095,
+          124794,
+          124872,
+          125571,
+          125649,
+          127389
+        ],
+        "3501": [
+          113316
+        ],
+        "3502": [],
+        "4001": [],
+        "4110": [],
+        "5000": [],
+        "6000": [],
+        "7000": [],
+        "7912": [],
+        "7921": []
+      },
+      "last_write_time": "2026-05-25T02:55:58.519576",
+      "marker_offsets": {
+        "Clan": [],
+        "ClusterAsset": [
+          257384,
+          259753,
+          262122,
+          264491,
+          266860,
+          269229,
+          271598,
+          273967,
+          276336,
+          278705,
+          281075,
+          283445,
+          285815,
+          288185,
+          290555,
+          292925,
+          295295,
+          297665,
+          300035,
+          302405,
+          304775,
+          307145,
+          309515,
+          311885,
+          314255,
+          316625,
+          318995,
+          321365,
+          323735,
+          326105,
+          328475,
+          330845,
+          333215,
+          335585,
+          337955,
+          340325,
+          342790,
+          345344,
+          347898,
+          350452,
+          353007,
+          355563,
+          358119,
+          360675,
+          363140,
+          365694,
+          368248,
+          370802,
+          373357,
+          375912,
+          378468,
+          381024,
+          383582,
+          386136,
+          388692,
+          391246,
+          393801,
+          396357,
+          398913,
+          401469,
+          404025,
+          406490,
+          409044,
+          411598,
+          414063,
+          416617,
+          419171,
+          421727,
+          424281,
+          426835,
+          429389,
+          431945,
+          434499,
+          437052,
+          439605,
+          442161,
+          444715,
+          447269,
+          449823,
+          452377
+        ],
+        "CurrentStarSystemId": [
+          113336
+        ],
+        "HiddenStarSystems": [
+          113239
+        ],
+        "InnerSphereClass": [],
+        "InnerSphereMapInfo": [],
+        "MWClusterDataAsset": [
+          257289,
+          259663,
+          262032,
+          264401,
+          266770,
+          269139,
+          271508,
+          273877,
+          276246,
+          278615,
+          280984,
+          283354,
+          285724,
+          288094,
+          290464,
+          292834,
+          295204,
+          297574,
+          299944,
+          302314,
+          304684,
+          307054,
+          309424,
+          311794,
+          314164,
+          316534,
+          318904,
+          321274,
+          323644,
+          326014,
+          328384,
+          330754,
+          333124,
+          335494,
+          337864,
+          340234,
+          342705,
+          345259,
+          347813,
+          350367,
+          352921,
+          355476,
+          358032,
+          360588,
+          363055,
+          365609,
+          368163,
+          370717,
+          373271,
+          375826,
+          378381,
+          380937,
+          383493,
+          386051,
+          388605,
+          391161,
+          393715,
+          396270,
+          398826,
+          401382,
+          403938,
+          406405,
+          408959,
+          411513,
+          413978,
+          416532,
+          419086,
+          421640,
+          424196,
+          426750,
+          429304,
+          431858,
+          434414,
+          436968,
+          439521,
+          442074,
+          444630,
+          447184,
+          449738,
+          452292
+        ],
+        "MWStarMapModel": [
+          5133
+        ],
+        "MagistracyOfCanopus": [
+          139650
+        ],
+        "OutworldsAlliance": [
+          138363
+        ],
+        "Periphery": [
+          138795
+        ],
+        "RimWorldsRepublic": [],
+        "StarMapModel": [
+          5068,
+          5135
+        ],
+        "StarSystemGenerator": [],
+        "StarSystemId": [
+          113343,
+          255691,
+          257458,
+          258255,
+          259827,
+          260624,
+          262196,
+          262993,
+          264565,
+          265362,
+          266934,
+          267731,
+          269303,
+          270100,
+          271672,
+          272469,
+          274041,
+          274838,
+          276410,
+          277207,
+          278779,
+          279576,
+          281149,
+          281946,
+          283519,
+          284316,
+          285889,
+          286686,
+          288259,
+          289056,
+          290629,
+          291426,
+          292999,
+          293796,
+          295369,
+          296166,
+          297739,
+          298536,
+          300109,
+          300906,
+          302479,
+          303276,
+          304849,
+          305646,
+          307219,
+          308016,
+          309589,
+          310386,
+          311959,
+          312756,
+          314329,
+          315126,
+          316699,
+          317496,
+          319069,
+          319866,
+          321439,
+          322236,
+          323809,
+          324606,
+          326179,
+          326976,
+          328549,
+          329346,
+          330919,
+          331716,
+          333289,
+          334086,
+          335659,
+          336456,
+          338029,
+          338826,
+          340399,
+          341196,
+          342864,
+          343661,
+          345418,
+          346215,
+          347972,
+          348769
+        ],
+        "TaurianConcordat": [
+          139219
+        ]
+      },
+      "path": "C:\\Users\\dogpe\\AppData\\Local\\MW5Mercs\\Saved\\SaveGames\\674ECD2A445A4842DBC7FEAAD156939F\\88A8ED8E4D572547644EC6A402C7F60B.sav",
+      "sha256": "00B975E686BE4A86A8684C109D907DD602D410A322B7474ED51BF159C5C4A0FE",
+      "size": 740337,
+      "starmap_segments": [
+        {
+          "anchor": 5068,
+          "end": 113932,
+          "focused_tokens": [
+            {
+              "offset": 5068,
+              "text": "StarMapModel"
+            },
+            {
+              "offset": 5113,
+              "text": "/Script/MechWarrior.MWStarMapModel"
+            },
+            {
+              "offset": 5152,
+              "text": "OnStarSystemInfoChanged"
+            },
+            {
+              "offset": 5229,
+              "text": "OnTravelToNewStarSystem"
+            },
+            {
+              "offset": 5257,
+              "text": "OnStarSystemInfoChanged_Event_0"
+            },
+            {
+              "offset": 5293,
+              "text": "OnStarSystemInfoChanged"
+            },
+            {
+              "offset": 5321,
+              "text": "OnUserStarSystemChanged"
+            },
+            {
+              "offset": 5398,
+              "text": "OnUserStarSystemChanged"
+            },
+            {
+              "offset": 5426,
+              "text": "OnUserStarSystemChanged"
+            },
+            {
+              "offset": 5454,
+              "text": "OnStarMapInitialized"
+            },
+            {
+              "offset": 5528,
+              "text": "OnInitializeStarMap"
+            },
+            {
+              "offset": 5652,
+              "text": "OnUpdateHiddenSystems"
+            },
+            {
+              "offset": 5727,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 5754,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 5781,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 5808,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 5835,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 5862,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 5889,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 5916,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 5943,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 5970,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 5997,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6024,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6051,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6078,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6105,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6132,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6159,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6186,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6213,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6240,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6267,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6294,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6321,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6348,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6375,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6402,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6429,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6456,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6483,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6510,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6537,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6564,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6591,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6618,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6645,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6672,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6699,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6726,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6753,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6780,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6807,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6834,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6861,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6888,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6915,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6942,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6969,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 6996,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7023,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7050,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7077,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7104,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7131,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7158,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7185,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7212,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7239,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7266,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7293,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7320,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7347,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7374,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7401,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7428,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7455,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7482,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7509,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7536,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7563,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7590,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7617,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7644,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7671,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7698,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7725,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7752,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7779,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7806,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7833,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7860,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7887,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7914,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7941,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7968,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 7995,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8022,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8049,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8076,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8103,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8130,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8157,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8184,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8211,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8238,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8265,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8292,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8319,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8346,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8373,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8400,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8427,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8454,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8481,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8508,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8535,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8562,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8589,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8616,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8643,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8670,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8697,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8724,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8751,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8778,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8805,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8832,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8859,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8886,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8913,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8940,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8967,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 8994,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 9021,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 9048,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 9075,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 9102,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 9129,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 9156,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 9183,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 9210,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 9237,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 9264,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 9291,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 9318,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 9345,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 9372,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 9399,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 9426,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 9453,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 9480,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 9507,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 9534,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 9561,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 9588,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 9615,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 9642,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 9669,
+              "text": "OnHiddenSystemsUpdated"
+            },
+            {
+              "offset": 9696,
+              "text": "OnHiddenSystemsUpdated"
+            }
+          ],
+          "length": 109024,
+          "sample_id_occurrences": {
+            "1": [
+              5102,
+              5520,
+              5618,
+              5712,
+              113066,
+              113430
+            ],
+            "3501": [
+              113316
+            ],
+            "3502": [],
+            "4001": [],
+            "4110": [],
+            "5000": [],
+            "6000": [],
+            "7000": [],
+            "7912": [],
+            "7921": []
+          },
+          "start": 4908
+        }
+      ]
+    },
+    {
+      "focused_tokens_sample": [
+        {
+          "offset": 50,
+          "text": "/Game/DLC1/CareerMode/StartConditions/CareerMode.CareerMode_C"
+        },
+        {
+          "offset": 274,
+          "text": "CurrentScenario"
+        },
+        {
+          "offset": 647,
+          "text": "/Game/Levels/TileElements/Leopard/OperationsStart/LeopardMissionHubArea.LeopardMissionHubArea"
+        },
+        {
+          "offset": 3591,
+          "text": "MapProperty"
+        },
+        {
+          "offset": 3894,
+          "text": "StarMapModel"
+        },
+        {
+          "offset": 3939,
+          "text": "/Script/MechWarrior.MWStarMapModel"
+        },
+        {
+          "offset": 3978,
+          "text": "OnUserStarSystemChanged"
+        },
+        {
+          "offset": 4055,
+          "text": "OnUserStarSystemChanged"
+        },
+        {
+          "offset": 4083,
+          "text": "HiddenStarSystems"
+        },
+        {
+          "offset": 4180,
+          "text": "CurrentStarSystemId"
+        },
+        {
+          "offset": 4233,
+          "text": "StarMapBorderAssetId"
+        },
+        {
+          "offset": 4285,
+          "text": "StarMapBorderAssetId"
+        },
+        {
+          "offset": 4361,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 4397,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 4445,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 4518,
+          "text": "MWStarMapBorderAsset"
+        },
+        {
+          "offset": 4552,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 4858,
+          "text": "OnStarSystemEntry"
+        },
+        {
+          "offset": 5060,
+          "text": "CurrentOrbitalId"
+        },
+        {
+          "offset": 5110,
+          "text": "bWantsEnterStarSystem"
+        },
+        {
+          "offset": 6561,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 6597,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 6645,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 6759,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 7326,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 7362,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 7410,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 7519,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 8084,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 8120,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 8168,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 8277,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 8842,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 8878,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 8926,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 9035,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 9596,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 9632,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 9680,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 9789,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 10355,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 10391,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 10439,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 10548,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 11113,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 11149,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 11197,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 11308,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 12107,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 12143,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 12191,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 12293,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 12884,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 12920,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 12968,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 13070,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 13672,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 13708,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 13756,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 13858,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 14439,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 14475,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 14523,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 14628,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 15216,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 15252,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 15300,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 15405,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 15993,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 16029,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 16077,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 16183,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 17260,
+          "text": "OnCurrentEventChanged"
+        },
+        {
+          "offset": 17286,
+          "text": "StartingDateTicks"
+        },
+        {
+          "offset": 19639,
+          "text": "OnFactionStandingsChanged"
+        },
+        {
+          "offset": 19718,
+          "text": "OnFactionStandingChanged"
+        },
+        {
+          "offset": 20233,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 20269,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 20317,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 20419,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 20754,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 20790,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 20838,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 20940,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 21275,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 21311,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 21359,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 21461,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 21796,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 21832,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 21880,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 21982,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 22315,
+          "text": "FactionStandingList"
+        },
+        {
+          "offset": 22366,
+          "text": "FactionStandingList"
+        },
+        {
+          "offset": 22512,
+          "text": "FactionStanding"
+        },
+        {
+          "offset": 22549,
+          "text": "Faction"
+        },
+        {
+          "offset": 22588,
+          "text": "FactionAssetId"
+        },
+        {
+          "offset": 22658,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 22694,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 22742,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 22815,
+          "text": "MWFactionAsset"
+        },
+        {
+          "offset": 22843,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 22970,
+          "text": "Faction"
+        },
+        {
+          "offset": 23009,
+          "text": "FactionAssetId"
+        },
+        {
+          "offset": 23079,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 23115,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 23163,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 23236,
+          "text": "MWFactionAsset"
+        },
+        {
+          "offset": 23264,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 23391,
+          "text": "Faction"
+        },
+        {
+          "offset": 23430,
+          "text": "FactionAssetId"
+        },
+        {
+          "offset": 23500,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 23536,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 23584,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 23657,
+          "text": "MWFactionAsset"
+        },
+        {
+          "offset": 23685,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 23810,
+          "text": "Faction"
+        },
+        {
+          "offset": 23849,
+          "text": "FactionAssetId"
+        },
+        {
+          "offset": 23919,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 23955,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 24003,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 24076,
+          "text": "MWFactionAsset"
+        },
+        {
+          "offset": 24104,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 24232,
+          "text": "Faction"
+        },
+        {
+          "offset": 24271,
+          "text": "FactionAssetId"
+        },
+        {
+          "offset": 24341,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 24377,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 24425,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 24498,
+          "text": "MWFactionAsset"
+        },
+        {
+          "offset": 24526,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 24652,
+          "text": "Faction"
+        },
+        {
+          "offset": 24691,
+          "text": "FactionAssetId"
+        },
+        {
+          "offset": 24761,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 24797,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 24845,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 24918,
+          "text": "MWFactionAsset"
+        },
+        {
+          "offset": 24946,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 25078,
+          "text": "Faction"
+        },
+        {
+          "offset": 25117,
+          "text": "FactionAssetId"
+        },
+        {
+          "offset": 25187,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 25223,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 25271,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 25344,
+          "text": "MWFactionAsset"
+        },
+        {
+          "offset": 25372,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 25500,
+          "text": "Faction"
+        },
+        {
+          "offset": 25539,
+          "text": "FactionAssetId"
+        },
+        {
+          "offset": 25609,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 25645,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 25693,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 25766,
+          "text": "MWFactionAsset"
+        },
+        {
+          "offset": 25794,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 25932,
+          "text": "Faction"
+        },
+        {
+          "offset": 25971,
+          "text": "FactionAssetId"
+        },
+        {
+          "offset": 26041,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 26077,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 26125,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 26198,
+          "text": "MWFactionAsset"
+        },
+        {
+          "offset": 26226,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 26273,
+          "text": "Periphery"
+        },
+        {
+          "offset": 26356,
+          "text": "Faction"
+        },
+        {
+          "offset": 26395,
+          "text": "FactionAssetId"
+        },
+        {
+          "offset": 26465,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 26501,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 26549,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 26622,
+          "text": "MWFactionAsset"
+        },
+        {
+          "offset": 26650,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 26697,
+          "text": "TaurianConcordat"
+        },
+        {
+          "offset": 26787,
+          "text": "Faction"
+        },
+        {
+          "offset": 26826,
+          "text": "FactionAssetId"
+        },
+        {
+          "offset": 26896,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 26932,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 26980,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 27053,
+          "text": "MWFactionAsset"
+        },
+        {
+          "offset": 27081,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 27128,
+          "text": "MagistracyOfCanopus"
+        },
+        {
+          "offset": 27315,
+          "text": "StartConditionId"
+        },
+        {
+          "offset": 27363,
+          "text": "StartConditionsAssetId"
+        },
+        {
+          "offset": 27441,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 27477,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 27525,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 27598,
+          "text": "MWStartConditionsAsset"
+        },
+        {
+          "offset": 27634,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 27681,
+          "text": "CareerMode_Davion_Start"
+        },
+        {
+          "offset": 29111,
+          "text": "Hailing from an unknown region of space, the Commander is pursuing a dream that many other residents of the Inner Sphere share. Whether the Commander will succeed or fail, remains to be seen. "
+        },
+        {
+          "offset": 29576,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 29612,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 29660,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 29762,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 30058,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 30094,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 30142,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 30233,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 32070,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 32106,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 32154,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 32245,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 33827,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 33863,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 33911,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 34013,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 34321,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 34357,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 34405,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 34512,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 36353,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 36389,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 36437,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 36528,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 38201,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 38237,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 38285,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 38387,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 38693,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 38729,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 38777,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 38884,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 40723,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 40759,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 40807,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 40898,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 42347,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 42383,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 42431,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 42533,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 42835,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 42871,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 42919,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 43026,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 44865,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 44901,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 44949,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 45040,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 46147,
+          "text": "PrimaryAssetId"
+        },
+        {
+          "offset": 46183,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 46231,
+          "text": "PrimaryAssetType"
+        },
+        {
+          "offset": 46328,
+          "text": "PrimaryAssetName"
+        },
+        {
+          "offset": 46375,
+          "text": "ClusterToi"
+        },
+        {
+          "offset": 46614,
+          "text": "SavedClusterDataAssetId"
+        },
+        {
+          "offset": 46669,
+          "text": "ClusterDataAssetId"
+        },
+        {
+          "offset": 46743,
+          "text": "PrimaryAssetId"
+        }
+      ],
+      "global_sample_id_nearest_markers": {
+        "1": [
+          {
+            "distance": 3584,
+            "marker": "StarMapModel",
+            "marker_offset": 3894
+          },
+          {
+            "distance": 2090,
+            "marker": "StarMapModel",
+            "marker_offset": 3894
+          },
+          {
+            "distance": 1515,
+            "marker": "StarMapModel",
+            "marker_offset": 3894
+          },
+          {
+            "distance": 940,
+            "marker": "StarMapModel",
+            "marker_offset": 3894
+          },
+          {
+            "distance": 365,
+            "marker": "StarMapModel",
+            "marker_offset": 3894
+          },
+          {
+            "distance": 36,
+            "marker": "HiddenStarSystems",
+            "marker_offset": 4083
+          },
+          {
+            "distance": 87,
+            "marker": "StarSystemId",
+            "marker_offset": 4187
+          },
+          {
+            "distance": 621,
+            "marker": "StarSystemId",
+            "marker_offset": 4187
+          },
+          {
+            "distance": 734,
+            "marker": "StarSystemId",
+            "marker_offset": 4187
+          },
+          {
+            "distance": 915,
+            "marker": "StarSystemId",
+            "marker_offset": 4187
+          }
+        ],
+        "3501": [
+          {
+            "distance": 20,
+            "marker": "CurrentStarSystemId",
+            "marker_offset": 4180
+          }
+        ],
+        "3502": [],
+        "4001": [],
+        "4110": [],
+        "5000": [],
+        "6000": [],
+        "7000": [],
+        "7912": [],
+        "7921": []
+      },
+      "global_sample_id_occurrences": {
+        "1": [
+          310,
+          1804,
+          2379,
+          2954,
+          3529,
+          4047,
+          4274,
+          4808,
+          4921,
+          5102,
+          5464,
+          5843,
+          6405,
+          6477,
+          6970,
+          7170,
+          7242,
+          7728,
+          7928,
+          8000,
+          8486,
+          8686,
+          8758,
+          9240,
+          9440,
+          9512,
+          10199,
+          10271,
+          10957,
+          11029,
+          11942,
+          12020,
+          12519,
+          12719,
+          12797,
+          13307,
+          13507,
+          13585,
+          14074,
+          14274,
+          14352,
+          15051,
+          15129,
+          15828,
+          15906,
+          16939,
+          17138,
+          17252,
+          17391,
+          17467
+        ],
+        "3501": [
+          4160
+        ],
+        "3502": [],
+        "4001": [],
+        "4110": [],
+        "5000": [],
+        "6000": [],
+        "7000": [],
+        "7912": [],
+        "7921": []
+      },
+      "last_write_time": "2026-05-25T02:55:40.154379",
+      "marker_offsets": {
+        "Clan": [],
+        "ClusterAsset": [
+          46995,
+          48088,
+          49181,
+          50274,
+          51367,
+          52460,
+          53553,
+          54646,
+          55739,
+          56832,
+          57926,
+          59020,
+          60114,
+          61208,
+          62302,
+          63396,
+          64490,
+          65584,
+          66678,
+          67772,
+          68866,
+          69960,
+          71054,
+          72148,
+          73242,
+          74336,
+          75430,
+          76524,
+          77618,
+          78712,
+          79806,
+          80900,
+          81994,
+          83088,
+          84182,
+          85276,
+          86364,
+          87452,
+          88540,
+          89628,
+          90717,
+          91807,
+          92897,
+          93987,
+          95075,
+          96163,
+          97251,
+          98339,
+          99428,
+          100517,
+          101607,
+          102697,
+          103789,
+          104877,
+          105967,
+          107055,
+          108144,
+          109234,
+          110324,
+          111414,
+          112504,
+          113592,
+          114680,
+          115768,
+          116856,
+          117944,
+          119032,
+          120122,
+          121210,
+          122298,
+          123386,
+          124476,
+          125564,
+          126651,
+          127738,
+          128828,
+          129916,
+          131004,
+          132092,
+          133180
+        ],
+        "CurrentStarSystemId": [
+          4180
+        ],
+        "HiddenStarSystems": [
+          4083
+        ],
+        "InnerSphereClass": [],
+        "InnerSphereMapInfo": [],
+        "MWClusterDataAsset": [
+          46900,
+          47998,
+          49091,
+          50184,
+          51277,
+          52370,
+          53463,
+          54556,
+          55649,
+          56742,
+          57835,
+          58929,
+          60023,
+          61117,
+          62211,
+          63305,
+          64399,
+          65493,
+          66587,
+          67681,
+          68775,
+          69869,
+          70963,
+          72057,
+          73151,
+          74245,
+          75339,
+          76433,
+          77527,
+          78621,
+          79715,
+          80809,
+          81903,
+          82997,
+          84091,
+          85185,
+          86279,
+          87367,
+          88455,
+          89543,
+          90631,
+          91720,
+          92810,
+          93900,
+          94990,
+          96078,
+          97166,
+          98254,
+          99342,
+          100431,
+          101520,
+          102610,
+          103700,
+          104792,
+          105880,
+          106970,
+          108058,
+          109147,
+          110237,
+          111327,
+          112417,
+          113507,
+          114595,
+          115683,
+          116771,
+          117859,
+          118947,
+          120035,
+          121125,
+          122213,
+          123301,
+          124389,
+          125479,
+          126567,
+          127654,
+          128741,
+          129831,
+          130919,
+          132007,
+          133095
+        ],
+        "MWStarMapModel": [
+          3959
+        ],
+        "MagistracyOfCanopus": [
+          27128
+        ],
+        "OutworldsAlliance": [
+          25841
+        ],
+        "Periphery": [
+          26273
+        ],
+        "RimWorldsRepublic": [],
+        "StarMapModel": [
+          3894,
+          3961
+        ],
+        "StarSystemGenerator": [],
+        "StarSystemId": [
+          4187,
+          47069,
+          48162,
+          49255,
+          50348,
+          51441,
+          52534,
+          53627,
+          54720,
+          55813,
+          56906,
+          58000,
+          59094,
+          60188,
+          61282,
+          62376,
+          63470,
+          64564,
+          65658,
+          66752,
+          67846,
+          68940,
+          70034,
+          71128,
+          72222,
+          73316,
+          74410,
+          75504,
+          76598,
+          77692,
+          78786,
+          79880,
+          80974,
+          82068,
+          83162,
+          84256,
+          85350,
+          86438,
+          87526,
+          88614,
+          89702,
+          90791,
+          91881,
+          92971,
+          94061,
+          95149,
+          96237,
+          97325,
+          98413,
+          99502,
+          100591,
+          101681,
+          102771,
+          103863,
+          104951,
+          106041,
+          107129,
+          108218,
+          109308,
+          110398,
+          111488,
+          112578,
+          113666,
+          114754,
+          115842,
+          116930,
+          118018,
+          119106,
+          120196,
+          121284,
+          122372,
+          123460,
+          124550,
+          125638,
+          126725,
+          127812,
+          128902,
+          129990,
+          131078,
+          132166
+        ],
+        "TaurianConcordat": [
+          26697
+        ]
+      },
+      "path": "C:\\Users\\dogpe\\AppData\\Local\\MW5Mercs\\Saved\\SaveGames\\674ECD2A445A4842DBC7FEAAD156939F\\1AECDDA041E049552356349A756C83D3.sav",
+      "sha256": "E4DC7E630D9AC97CF425862EA35B7B0F7B9B4452F7F5A5F1060B27C915A29B77",
+      "size": 455767,
+      "starmap_segments": [
+        {
+          "anchor": 3894,
+          "end": 4776,
+          "focused_tokens": [
+            {
+              "offset": 3894,
+              "text": "StarMapModel"
+            },
+            {
+              "offset": 3939,
+              "text": "/Script/MechWarrior.MWStarMapModel"
+            },
+            {
+              "offset": 3978,
+              "text": "OnUserStarSystemChanged"
+            },
+            {
+              "offset": 4055,
+              "text": "OnUserStarSystemChanged"
+            },
+            {
+              "offset": 4083,
+              "text": "HiddenStarSystems"
+            },
+            {
+              "offset": 4180,
+              "text": "CurrentStarSystemId"
+            },
+            {
+              "offset": 4233,
+              "text": "StarMapBorderAssetId"
+            },
+            {
+              "offset": 4285,
+              "text": "StarMapBorderAssetId"
+            },
+            {
+              "offset": 4361,
+              "text": "PrimaryAssetId"
+            },
+            {
+              "offset": 4397,
+              "text": "PrimaryAssetType"
+            },
+            {
+              "offset": 4445,
+              "text": "PrimaryAssetType"
+            },
+            {
+              "offset": 4518,
+              "text": "MWStarMapBorderAsset"
+            },
+            {
+              "offset": 4552,
+              "text": "PrimaryAssetName"
+            }
+          ],
+          "length": 1042,
+          "sample_id_occurrences": {
+            "1": [
+              4047,
+              4274
+            ],
+            "3501": [
+              4160
+            ],
+            "3502": [],
+            "4001": [],
+            "4110": [],
+            "5000": [],
+            "6000": [],
+            "7000": [],
+            "7912": [],
+            "7921": []
+          },
+          "start": 3734
+        }
+      ]
+    }
+  ],
+  "save_dir": "C:\\Users\\dogpe\\AppData\\Local\\MW5Mercs\\Saved\\SaveGames\\674ECD2A445A4842DBC7FEAAD156939F",
+  "save_root": "C:\\Users\\dogpe\\AppData\\Local\\MW5Mercs\\Saved\\SaveGames",
+  "timestamp": "20260525-030225"
+}

@@ -751,3 +751,380 @@ Corrected mirror deployment:
   - `Levels/FrontEnd/StarMap.uexp`
   - `UI/FrontEnd/StarMapPawn.uasset`
   - `UI/FrontEnd/StarMapPawn.uexp`
+
+## Career Model Source Patch - 2026-05-25
+
+Runtime evidence from the 2026-05-25 tests narrowed the failure:
+
+- The live mod loaded and `StarMapPawn` bounds were active.
+- The starmap still showed vanilla stars and vanilla faction overlay.
+- A fresh save scan did not show TKU-only sample star IDs in the serialized `StarMapModel` segment.
+- This reduced confidence in generic package/load-order failure and shifted the leading hypothesis to the active career model generation path.
+
+Read-only probe:
+
+- Script: `tools\tku_reference_audit\ue4_probe_campaign_model_sources.py`.
+- Report: `reports\tku_editor_first\ue4_campaign_model_sources_probe.md`.
+- The active DLC1 career class `/Game/DLC1/CareerMode/StartConditions/CareerMode` existed and still referenced `/Game/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C` for `campaign_system_generator_class`.
+- `MW5GameMode` and `CampaignMode` also still referenced the vanilla campaign generator class even though `default_inner_sphere_class` resolved to the mod-owned `StarSystemGenerator`.
+
+Applied patch:
+
+- Script: `tools\tku_reference_audit\ue4_patch_tku_career_model_sources.py`.
+- Launcher: `tools\Invoke-TKUCareerModelSourcesPatch.ps1`.
+- Report: `reports\tku_editor_first\ue4_career_model_sources_patch.md`.
+- The commandlet completed with no safety failures and saved:
+  - `/ModOverride/TKUCompatEditorPatch/Campaign/_common/DefaultSystemGenerator`.
+  - `/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode`.
+  - updated `/ModOverride/TKUCompatEditorPatch/Modes/MW5GameMode`.
+  - updated `/ModOverride/TKUCompatEditorPatch/Modes/CampaignMode`.
+- Updated defaults:
+  - `DefaultInnerSphereClass` -> `/ModOverride/TKUCompatEditorPatch/InnerSphereData/StarSystemGenerator.StarSystemGenerator_C`.
+  - `CampaignSystemGeneratorClass` -> `/ModOverride/TKUCompatEditorPatch/Campaign/_common/DefaultSystemGenerator.DefaultSystemGenerator_C`.
+
+Packaging/deployment:
+
+- The MW5 Mod Editor produced nested package folders again. The valid fresh package was:
+  - `E:\Games\MechWarrior5Editor\MW5Mercs\Mods\TKUCompatEditorPatch\TKUCompatEditorPatch\TKUCompatEditorPatch`.
+- Package inspection report: `reports\tku_editor_first\tku_packaged_mod_inspection_20260511.md`.
+- Valid package pak SHA256: `34C81B14DA91F69DA9655C855CAF31286BE75446FEC8FBAB5B8A749464ECCA64`.
+- `UnrealPak -List` confirmed all expected fragments, including the new `DefaultSystemGenerator` and DLC1 `CareerMode` overrides.
+- Live deployment report: `reports\tku_editor_first\tkucompat_live_test_deploy_20260525-034655.md`.
+- Version metadata report: `reports\tku_editor_first\tku_version_metadata_20260525-034707.md`.
+- Live `mod.json` is now build `5`, load order `95`, `gameVersion` `1.13.378`, and has the 1.13.x / DLC7 description.
+- Active live `modlist.json` is the isolated test profile:
+  - `TKUEvidenceCorePluginOnly`
+  - `TKUCompatEditorPatch`
+
+Current validation gate:
+
+- MW5 was launched after deployment for a fresh career starmap test.
+- If TKU/clan/periphery stars appear, the missing active runtime path was the DLC1 `CareerMode` / `CampaignSystemGeneratorClass` binding.
+- If the result remains vanilla except for bounds, the next evidence target is native `MWStarMapModel` or campaign-arc generation rather than mod metadata, package layout, or simple mode class defaults.
+
+## Clan Cluster Cook Fix - 2026-05-25
+
+Runtime result after the career model source patch:
+
+- Career mode loaded and the starmap opened.
+- Extended panning remained active.
+- Taurian and Magistracy of Canopus space may have had more stars than before.
+- Clan stars were still missing.
+- Faction overlay still looked vanilla.
+
+Follow-up package inspection changed the diagnosis:
+
+- The then-current package did not contain any of the new `Content/Campaign/Clusters/TKU_*` cluster assets.
+- Therefore the missing-clan runtime result did not prove the cluster data was rejected at runtime; it proved the package was still missing the assets needed to test that path.
+
+Applied fix:
+
+- Added `tools\Set-TKUCompatClusterManifest.ps1`.
+- Applied report: `reports\tku_editor_first\tku_cluster_manifest_20260525-043107.md`.
+- Updated editor source `E:\Games\MechWarrior5Editor\MW5Mercs\Plugins\TKUCompatEditorPatch\mod.json`:
+  - `gameVersion`: `1.13.378`.
+  - `defaultLoadOrder`: `95`.
+  - manifest count: `8` -> `18`.
+  - TKU cluster manifest entries: `0` -> `10`.
+
+Cluster asset source/cook evidence:
+
+- Cluster asset patch report: `reports\tku_editor_first\ue4_tku_clan_cluster_assets_patch.md`.
+- New package inspection report: `reports\tku_editor_first\tku_packaged_mod_inspection_20260511.md`.
+- New package pak SHA256: `7B9EA432C7624E4AE045F90D5E4C81F91A744F94F285A75B57232BA12C0A6C4E`.
+- `UnrealPak -List` now confirms all 10 expected TKU clan cluster/faction assets and their `.uexp` files:
+  - `Content/Campaign/Clusters/TKU_ClanConflict/ClanConflict.uasset`.
+  - `Content/Campaign/Clusters/TKU_ClanConflict/TKU_ClanConflict_NoOverlay_ClusterAsset.uasset`.
+  - `Content/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_1/TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset.uasset`.
+  - `Content/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_2/TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset.uasset`.
+  - `Content/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_3/TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset.uasset`.
+  - `Content/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_4/TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset.uasset`.
+  - `Content/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.uasset`.
+  - `Content/Campaign/Clusters/TKU_RepairSystem_Clan/TKU_RepairSystem_Clan_NoOverlay_ClusterAsset.uasset`.
+  - `Content/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset.uasset`.
+  - `Content/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset.uasset`.
+
+Deployment:
+
+- Live deployment report: `reports\tku_editor_first\tkucompat_live_test_deploy_20260525-122425.md`.
+- Live deployed pak SHA256 matches the inspected source package: `7B9EA432C7624E4AE045F90D5E4C81F91A744F94F285A75B57232BA12C0A6C4E`.
+- Live `mod.json` was normalized after deployment to `gameVersion` `1.13.378`; the MW5 Mod Editor packaged copy still stamped `1.13.64`.
+- Active live profile remains isolated to `TKUEvidenceCorePluginOnly` plus `TKUCompatEditorPatch`.
+
+Current validation gate:
+
+- Launch MW5 against the active isolated profile.
+- Start or load a career and open the starmap.
+- Check for clan systems around the cluster IDs represented by the generated assets, including sample IDs such as `4088`, `4089`, `4090`, `4098`, `4100`, `4101`, `4103`, `4108`, `4110`, `4118`, `4120`, `4124`, `4127`, `4132`, `4135`, and `4143`.
+- Check whether the faction overlay remains vanilla or now shows a cluster/territory change.
+- If this still looks vanilla except for bounds, the next investigation target is cluster asset registry/discovery or runtime `MWStarMapModel`/campaign-arc generation, not package omission.
+
+## Active Career Source Surface Patch - 2026-05-25
+
+Runtime result after the cluster-cooked package:
+
+- Career mode loaded and the starmap opened.
+- Extended panning remained active.
+- Stars that exist appear to carry TKU ownership data; the user specifically observed Oberon Confederation ownership.
+- The visible base starmap and faction overlay still look vanilla.
+- TKU/clan stars are still missing.
+
+Save/runtime model evidence:
+
+- Latest save scan report: `reports\tku_editor_first\mw5_save_starmap_scan_20260525-131101.md`.
+- The latest test save still used `MWStartConditionsAsset:CareerMode_Davion_Start`.
+- Both latest scanned saves serialized `MWStarMapModel`, but the TKU/clan sample IDs were absent from the serialized StarMapModel segment.
+- This supports a split failure: TKU row/faction data can affect existing vanilla systems, but the runtime star model is still not receiving the TKU-only systems.
+
+Applied active-source patch:
+
+- Script: `tools\tku_reference_audit\ue4_patch_tku_active_career_sources.py`.
+- Launcher: `tools\Invoke-TKUActiveCareerSourcesPatch.ps1`.
+- Report: `reports\tku_editor_first\ue4_active_career_sources_patch.md`.
+- Dry-run safety failures: none.
+- Apply result: `attempted=True`, `applied=True`, `saved=True`.
+- Saved `17` current-schema active career source assets into `E:\Games\MechWarrior5Editor\MW5Mercs\Plugins\TKUCompatEditorPatch\ModOverride`, covering:
+  - all 12 direct DLC1 `CareerMode_*_Start` and tutorial start-condition assets.
+  - `/Game/DLC1/CareerMode/StartConditions/CareerMode_Start`.
+  - `/Game/DLC1/CareerMode/StartConditions/FRR_CareerMode_Start`.
+  - `/Game/DLC1/CareerMode/CareerModeCoreCampaign`.
+  - `/Game/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters`.
+  - `/Game/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones`.
+
+Manifest update:
+
+- Script: `tools\Set-TKUCompatClusterManifest.ps1`.
+- Applied report: `reports\tku_editor_first\tku_cluster_manifest_20260525-132824.md`.
+- Editor source `mod.json` now targets `gameVersion` `1.13.378`, load order `95`.
+- Source manifest count: `18` -> `35`.
+- Active career source manifest entries: `0` -> `17`.
+- Local source-file check found `0` missing files for the 35 manifest entries.
+
+Verification probe:
+
+- Probe rerun: `reports\tku_editor_first\ue4_campaign_model_sources_probe.md`.
+- `/Game/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start` now resolves to `/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/StartConditions/CareerMode_Davion_Start.CareerMode_Davion_Start`.
+- `/Game/DLC1/CareerMode/StartConditions/CareerMode_Start` now references the mod-owned `/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/CareerModeCoreCampaign`.
+- `/Game/DLC1/CareerMode/CareerModeCoreCampaign` now references mod-owned `CareerModeClusters` and `CareerMode_SafeZones`.
+- The duplicated active assets still contain vanilla border and warzone action content; this patch establishes a packageable current-schema active surface for the next runtime test and later content edits, but it is not evidence that the clan star generation path is fixed.
+
+Current validation gate:
+
+- Package `TKUCompatEditorPatch` again in the MW5 Mod Editor.
+- Deploy the newest nested package output to the live isolated test profile.
+- Start a fresh career test, preferably from a fresh slot, and open the starmap.
+- Expected discriminator:
+  - If the result changes, the active career source packaging was blocking some runtime path.
+  - If the result remains vanilla except for bounds and TKU ownership on existing stars, the leading root cause is runtime `MWStarMapModel` generation bypassing the patched generator/table path, with a separate remaining overlay-content problem in vanilla border/warzone actions.
+
+## Active Cluster Diagnostic Patch - 2026-05-25
+
+Runtime result after the active career source package:
+
+- Career mode loaded and the starmap opened.
+- Extended panning remained active.
+- The starmap opened at a corner rather than centered on the ship.
+- Clan stars were still absent, star density remained low, and faction overlay still showed only the five major vanilla factions.
+- Latest save scan report: `reports\tku_editor_first\mw5_save_starmap_scan_20260525-153826.md`.
+- Save evidence: latest career save still used `MWStartConditionsAsset:CareerMode_Davion_Start`, advertised DLC1 through DLC7, serialized 80 `StarSystemId`/`MWClusterDataAsset`/`ClusterAsset` marker slots in the current scanner, and had zero `StarMapModel` occurrences for sample clan IDs `4088`, `4089`, `4090`, `4098`, `4100`, `4101`, `4103`, `4108`, `4110`, `4118`, `4120`, `4124`, `4127`, `4132`, `4135`, and `4143`.
+
+Cross-agent review and sequential review:
+
+- Cross-agent review via Claude recommended a narrow active-cluster diagnostic before broad DLC7/career-arc mutation.
+- I accept the recommendation with one correction: the peer assumed a DLC7 campaign cluster was runtime-active, but local save evidence only proved active cluster names after a separate scan.
+- Local save string extraction showed active serialized cluster names including `Rasalhague_7_10_ClusterAsset`, `SafeZone_*_ClusterAsset`, major-house region clusters, and DLC6/DLC7 clusters.
+- The resulting discriminator is: append a few TKU clan system IDs to a proven active cluster, package, run a fresh career, and rescan the save. If those IDs enter `StarMapModel`, cluster membership is the blocker; if not, the remaining failure is upstream of cluster membership or in runtime initialization.
+
+Applied diagnostic patch:
+
+- Script: `tools\tku_reference_audit\ue4_patch_tku_active_cluster_diagnostic.py`.
+- Launcher: `tools\Invoke-TKUActiveClusterDiagnosticPatch.ps1`.
+- Report: `reports\tku_editor_first\ue4_active_cluster_diagnostic_patch.md`.
+- Source cluster: `/Game/DLC1/CareerMode/Clusters/Rasalhague_7_10/Rasalhague_7_10_ClusterAsset`.
+- Target override: `/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/Clusters/Rasalhague_7_10/Rasalhague_7_10_ClusterAsset`.
+- Diagnostic IDs appended: `4088`, `4089`, `4090`.
+- Apply result: `attempted=True`, `applied=True`, `saved=True`.
+- The target cluster system count changed from `18` to `21`, preserving the original cluster faction/overlay for this diagnostic.
+
+Manifest update:
+
+- Manifest script updated: `tools\Set-TKUCompatClusterManifest.ps1`.
+- Applied report: `reports\tku_editor_first\tku_cluster_manifest_20260525-162032.md`.
+- Editor source `mod.json` now has `gameVersion` `1.13.378`, load order `95`, and manifest count `36`.
+- New manifest entry: `/Game/DLC1/CareerMode/Clusters/Rasalhague_7_10/Rasalhague_7_10_ClusterAsset.uasset`.
+
+Current validation gate:
+
+- Package `TKUCompatEditorPatch` again in the already-running MW5 Mod Editor.
+- Inspect the newest nested package output and confirm the pak includes `Content/DLC1/CareerMode/Clusters/Rasalhague_7_10/Rasalhague_7_10_ClusterAsset.uasset`.
+- Deploy the package to the isolated live profile.
+- Start a fresh career and open the starmap.
+- Run the save scanner with sample IDs `4088`, `4089`, and `4090`.
+- Expected discriminator:
+  - If `4088`, `4089`, or `4090` appears in the serialized `StarMapModel`, then active cluster membership is confirmed as the missing path and the next fix should migrate TKU clan IDs into active/discoverable DLC7/current-schema cluster placement assets.
+  - If those IDs still do not appear, the blocker is upstream of `MWClusterDataAsset.system_ids` or the active career source override is not taking package precedence at runtime.
+
+## Runtime Result After Active Cluster Diagnostic - 2026-05-25
+
+Package and deployment evidence:
+
+- Package inspection report: `reports\tku_editor_first\tku_packaged_mod_inspection_20260511.md`.
+- Packaged build: `8`.
+- Packaged pak SHA256: `AB3D9FFAA0E1D0E0724647329889A42C1B490211EC61D14177A93D0659CE3AA6`.
+- `UnrealPak -List` confirmed the diagnostic override exists in the pak:
+  - `Content/DLC1/CareerMode/Clusters/Rasalhague_7_10/Rasalhague_7_10_ClusterAsset.uasset`.
+  - `Content/DLC1/CareerMode/Clusters/Rasalhague_7_10/Rasalhague_7_10_ClusterAsset.uexp`.
+- Live deployment report: `reports\tku_editor_first\tkucompat_live_test_deploy_20260525-163735.md`.
+- Live deployed pak SHA256 matches the inspected source package: `AB3D9FFAA0E1D0E0724647329889A42C1B490211EC61D14177A93D0659CE3AA6`.
+- Live `mod.json` was normalized to `gameVersion` `1.13.378`, load order `95`, build `8`.
+- Active live profile remained isolated to `TKUEvidenceCorePluginOnly` and `TKUCompatEditorPatch`.
+
+Runtime result:
+
+- Career mode loaded and the starmap opened.
+- The user reported the starmap looked the same as the previous run.
+- The user saved after opening the starmap.
+- Latest save scan report: `reports\tku_editor_first\mw5_save_starmap_scan_20260525-164145.md`.
+- Latest campaign: `House Davion`, start condition `MWStartConditionsAsset:CareerMode_Davion_Start`, DLC tags `DLC1` through `DLC7`, last save `9A4F28E54B4B3C198B385CB51BF47EA4`.
+- The latest save still had zero `StarMapModel` occurrences for diagnostic IDs `4088`, `4089`, and `4090`.
+
+Important correction to the diagnostic interpretation:
+
+- Follow-up scan report: `reports\tku_editor_first\mw5_save_starmap_scan_20260525-164254.md`.
+- The same save also had zero `StarMapModel` occurrences for original `Rasalhague_7_10_ClusterAsset` member IDs such as `933`, `952`, `990`, `1568`, `1573`, `1581`, `1585`, `1586`, `1587`, `1600`, `1602`, `1606`, `1616`, `1629`, `1630`, `1637`, `1644`, and `1651`.
+- Therefore the save-ID scan is not a definitive proof that `MWClusterDataAsset.system_ids` was ignored; the save appears to serialize cluster asset identifiers and TOI/state data rather than all cluster member star IDs.
+- The visual result remains negative, but the failed diagnostic now narrows the next evidence target to the active campaign arc/action path, not only cluster data asset contents.
+
+Next evidence target:
+
+- Probe the mod-owned active career arcs and their place-cluster actions, especially `CareerModeClusters`, `CareerMode_SafeZones`, and referenced `PlaceCluster*` action Blueprints.
+- For each active placement action, capture action class, CDO properties, `ClusterDataAsset`, `ClusterDataAssetId`, campaign event list entries, trigger/condition properties, and referencer chains.
+- Compare the current active career action pattern against DLC7 clan placement actions under `/Game/DLC7/PlaceClusterActions/NewClusters`.
+- Do not continue with blind package/retest loops until that active action graph is mapped.
+
+## Active Campaign Action Graph Probe And Content Mirror Discriminator - 2026-05-25
+
+Cross-agent review follow-up:
+
+- Peer review identified four valid gaps in the first active-action probe: direct event action path collection was too string-based, traversal only enqueued cluster paths, `ClusterDataAssetId` was missing from summaries, and the 480-asset walk cap could saturate.
+- Implemented corrections in `tools\tku_reference_audit\ue4_probe_active_campaign_actions.py` and `tools\Invoke-TKUActiveCampaignActionsProbe.ps1`.
+- Validation: Python AST parse passed; PowerShell parser check passed.
+- Probe report: `reports\tku_editor_first\ue4_active_campaign_actions_probe.md`.
+- Probe result: `800` assets inspected; walk limit still hit; `252` active ArcAction Blueprints found; `47` PlaceCluster-like actions; `35` PlaceSafeZone actions; `212` cluster references; only `1` mod-owned cluster reference.
+- Confirmed active mod-owned binding: `/Game/DLC1/CareerMode/Warzones/Rasalhauge_Clusters/PlaceRasalhague_ArcAction_7_10` points to `/ModOverride/TKUCompatEditorPatch/DLC1/CareerMode/Clusters/Rasalhague_7_10/Rasalhague_7_10_ClusterAsset` with `ClusterDataAssetId` `MWClusterDataAsset:Rasalhague_7_10_ClusterAsset`.
+- Important negative evidence: TKU clan cluster assets exist in the package, but the current active campaign graph does not wire them into active placement roots.
+
+Deployment discriminator implemented:
+
+- Root contradiction before this step: editor and package evidence showed the TKU DataTable, `StarSystemGenerator`, and `StarMap` level with clan stars, while runtime still showed vanilla stars/overlay and the latest save lacked clan star strings.
+- Patched `tools\tku_reference_audit\build_tku_content_mirror.py` so the content mirror builder selects the newest available `TKUCompatEditorPatch.pak` instead of the stale 2026-05-12 top-level editor pak.
+- Patched `tools\Set-TKUContentPakIsolation.ps1` with `-Target All|CompatMirror|LegacyStarmap` and fixed the PowerShell `$Target`/`$target` variable collision found during status validation.
+- Dry-run mirror report: `reports\tku_editor_first\tku_content_mirror_20260525-170948.md`; staged `8` files with mount `../../../MW5Mercs/Content/` and no safety failures.
+- Applied mirror report: `reports\tku_editor_first\tku_content_mirror_20260525-171114.md`.
+- Live mirror deployed: `E:\SteamLibrary\steamapps\common\MechWarrior 5 Mercenaries\MW5Mercs\Content\Paks\MW5Mercs-zzzzTKUCompatEditorPatch.pak`.
+- Live mirror SHA256: `4414AC6DA60FD9D04E5BCB9098E0D716A689912AF4C484288AD54680537860DC`.
+- Stale disabled compat mirror moved to repo backup: `reports\tku_editor_first\backups\content_mirror_20260525-171114\MW5Mercs-zzzzTKUCompatEditorPatch.pak.disabled-by-tku-isolation`.
+- Legacy `MW5Mercs-zKnownUniverseStarmap.pak` remains disabled; it was not restored or edited.
+- Isolation status report: `reports\tku_editor_first\tku_content_pak_isolation_20260525-171148.md`; compat mirror active before/after `True`, disabled sibling before/after `False`.
+
+Current validation gate:
+
+- Close the MW5 Mod Editor before launching the game.
+- Launch MW5 with the isolated live modlist: `TKUEvidenceCorePluginOnly` and `TKUCompatEditorPatch`.
+- Start a new career or a fresh test slot, open the starmap, and inspect clan/periphery space before relying on an older save.
+- Record whether clan stars such as Strana Mechty appear, whether faction overlay remains vanilla, and whether the map still starts in a corner.
+- After saving, run `python tools\tku_reference_audit\scan_mw5_save_starmap.py --sample-ids 4088 4089 4090 4110 7921` to capture the next save artifact.
+- If the fresh content-root mirror restores TKU/clan stars, the remaining root is mod-pak mount/override precedence for root `/Game` starmap/data assets.
+- If stars remain absent with the content-root mirror active, the next repair surface is runtime initialization/campaign source binding rather than basic pak presence.
+
+## Runtime Result After Fresh Content Mirror - 2026-05-25
+
+Runtime result:
+
+- MW5 launched with isolated live `modlist.json` enabling only `TKUEvidenceCorePluginOnly` and `TKUCompatEditorPatch`.
+- Active content mirror before launch: `MW5Mercs-zzzzTKUCompatEditorPatch.pak`, SHA256 `4414AC6DA60FD9D04E5BCB9098E0D716A689912AF4C484288AD54680537860DC`.
+- The user created/loaded the test career, opened the starmap, observed no visible change, and saved.
+- User-visible result: clan/TKU stars still absent and faction overlay still vanilla.
+
+Save evidence:
+
+- Save scan report: `reports\tku_editor_first\mw5_save_starmap_scan_20260525-190333.md`.
+- Latest campaign path: `C:\Users\dogpe\AppData\Local\MW5Mercs\Saved\SaveGames\2ABF90FF4B331B545900CBAC70A9230A\Campaign.json`.
+- Campaign: `House Davion`.
+- Start condition: `MWStartConditionsAsset:CareerMode_Davion_Start`.
+- DLC tags: `DLC1` through `DLC7`.
+- Latest save: `37C711E141C90274851105B37CBC3707.sav`, timestamp `2026-05-25T19:00:06`.
+- `StarMapModel` sample-id occurrences remain zero for `4088`, `4089`, `4090`, `4110`, and `7921`.
+- Direct binary string scan of the latest saves found no `Strana Mechty`, `Strana`, `Babylon`, `Huntress`, `Clan`, `Oberon`, or `TKU_ClanConflict` strings.
+- The same saves still contain `TaurianConcordat`, `MagistracyOfCanopus`, and `Rasalhague_7_10_ClusterAsset`, matching the visible partial-periphery/vanilla-active state.
+
+Content mirror package evidence:
+
+- `UnrealPak -List` on the live mirror confirms mount point `../../../MW5Mercs/Content/`.
+- The live mirror contains the expected eight files:
+  - `InnerSphereData/MW5_InnerSphereData.uasset/.uexp`.
+  - `InnerSphereData/StarSystemGenerator.uasset/.uexp`.
+  - `Levels/FrontEnd/StarMap.umap/.uexp`.
+  - `UI/FrontEnd/StarMapPawn.uasset/.uexp`.
+
+Conclusion:
+
+- This test did not support the hypothesis that a fresh content-root mirror alone restores TKU-only stars.
+- The strongest remaining repair surface is now active campaign/starmap initialization and placement-action wiring, not basic package presence for the eight mirrored root assets.
+- Faction overlay remains a separate confirmed gap: the active campaign graph still has only one mod-owned cluster binding and no active TKU clan cluster placement roots.
+
+## All-Game Content Mirror Discriminator - 2026-05-25
+
+User-provided strategy note:
+
+- The user supplied a public-source strategy analysis arguing that DLC7 likely broke TKU through stale base-game overrides and that the old required override pak is a critical clue.
+- This was treated as strategy context, not proof. The local evidence still controls the repair path.
+- The local evidence matches one part of that model: the current editor-authored `TKUCompatEditorPatch.pak` contains more root `/Game` overrides than the active content-root mirror was deploying.
+
+Evidence before the change:
+
+- The active content mirror from `reports\tku_editor_first\tku_content_mirror_20260525-171114.md` contained only `8` files.
+- The current live/editor-authored `TKUCompatEditorPatch.pak` contains additional root `/Game` assets needed for runtime activation tests, including:
+  - `/Game/Campaign/_common/DefaultSystemGenerator.uasset/.uexp`.
+  - `/Game/DLC1/CareerMode/CareerModeCoreCampaign.uasset/.uexp`.
+  - `/Game/DLC1/CareerMode/StartConditions/Arcs/CareerModeClusters.uasset/.uexp`.
+  - `/Game/DLC1/CareerMode/StartConditions/Arcs/CareerMode_SafeZones.uasset/.uexp`.
+  - `/Game/Modes/CampaignMode.uasset/.uexp`.
+  - `/Game/Modes/MW5GameMode.uasset/.uexp`.
+  - TKU clan conflict and repair-system cluster assets under `/Game/Campaign/Clusters/TKU_*`.
+- Therefore the previous mirror test proved only the starmap-core override path. It did not prove whether the full editor-authored `/Game` override set can win runtime precedence.
+
+Implemented change:
+
+- Patched `tools\tku_reference_audit\build_tku_content_mirror.py` to support mirror scopes:
+  - `starmap-core`: previous 8-file behavior.
+  - `all-game`: mirrors every `/Game/*` asset sidecar entry from the selected source pak.
+- The tool now records source pak candidates, selected mirror scope, live disabled sibling status, and a mirrored path sample in the generated report.
+- The tool still builds a separate late-loading content pak and backs up the previous live mirror; it does not rewrite game paks or cooked source assets.
+
+Validation and deployment:
+
+- Python AST parse passed for `tools\tku_reference_audit\build_tku_content_mirror.py`.
+- Dry-run report: `reports\tku_editor_first\tku_content_mirror_20260525-193027.md`.
+- Dry-run result: `72` target paths selected, `72` staged entries, no safety failures.
+- Applied report: `reports\tku_editor_first\tku_content_mirror_20260525-193109.md`.
+- Live mirror deployed: `E:\SteamLibrary\steamapps\common\MechWarrior 5 Mercenaries\MW5Mercs\Content\Paks\MW5Mercs-zzzzTKUCompatEditorPatch.pak`.
+- Previous 8-file live mirror backup: `reports\tku_editor_first\backups\content_mirror_20260525-193109\MW5Mercs-zzzzTKUCompatEditorPatch.pak`.
+- Live all-game mirror SHA256: `158B2C6A203646E6595C761F8B8D310B4792A6C9E6C1A9330D34B81E71D2B405`.
+- Live pak verification with `mw5_pak.iter_entries`:
+  - mount point: `../../../MW5Mercs/Content/`.
+  - total entries: `72`.
+  - `/Game` sidecar entries: `72`.
+  - confirmed present: `/Game/Modes/CampaignMode.uasset`.
+  - confirmed present: `/Game/Modes/MW5GameMode.uasset`.
+  - confirmed present: `/Game/DLC1/CareerMode/CareerModeCoreCampaign.uasset`.
+  - confirmed present: `/Game/Campaign/Clusters/TKU_ClanConflict/TKU_ClanConflict_NoOverlay_ClusterAsset.uasset`.
+  - confirmed present: `/Game/Levels/FrontEnd/StarMap.umap`.
+
+Next validation gate:
+
+- Launch MW5 from a closed state with the isolated live mod profile.
+- Start a new Davion career or a fresh test career, open the starmap, and inspect visible TKU/clan star coverage.
+- Record whether clan systems such as Strana Mechty appear, whether faction overlay remains vanilla, whether map centering is still wrong, and whether extended panning remains active.
+- Save once after opening the starmap so `tools\tku_reference_audit\scan_mw5_save_starmap.py --sample-ids 4088 4089 4090 4110 7921` can capture the next evidence artifact.
+- If nothing changes, the next confirmed repair surface is active campaign event/action rebasing onto DLC7 rather than content mirror coverage.

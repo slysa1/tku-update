@@ -1,0 +1,33 @@
+{
+  "displayName": "TKUCompatEditorPatch",
+  "version": "1.0",
+  "buildNumber": 6,
+  "description": "Editor-authored compatibility patch for Known Universe on MW5 1.13.x / DLC7 (Steam/GOG 1.13.378)",
+  "author": "Codex/TKU Recovery",
+  "authorURL": "",
+  "defaultLoadOrder": 95,
+  "gameVersion": "1.13.378",
+  "manifest": [
+    "/Game/Campaign/Clusters/TKU_ClanConflict/ClanConflict.uasset",
+    "/Game/Campaign/Clusters/TKU_ClanConflict/TKU_ClanConflict_NoOverlay_ClusterAsset.uasset",
+    "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_1/TKU_ClanConflict_Zones_ClanConf_1_ClusterAsset.uasset",
+    "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_2/TKU_ClanConflict_Zones_ClanConf_2_ClusterAsset.uasset",
+    "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_3/TKU_ClanConflict_Zones_ClanConf_3_ClusterAsset.uasset",
+    "/Game/Campaign/Clusters/TKU_ClanConflict_Zones_ClanConf_4/TKU_ClanConflict_Zones_ClanConf_4_ClusterAsset.uasset",
+    "/Game/Campaign/Clusters/TKU_RepairSystem_Clan/RepairSystem_Clan.uasset",
+    "/Game/Campaign/Clusters/TKU_RepairSystem_Clan/TKU_RepairSystem_Clan_NoOverlay_ClusterAsset.uasset",
+    "/Game/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1/TKU_RepairSystem_Clan_Zones_Clan_Safezone_1_ClusterAsset.uasset",
+    "/Game/Campaign/Clusters/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2/TKU_RepairSystem_Clan_Zones_Clan_Safezone_2_ClusterAsset.uasset",
+    "/Game/Campaign/_common/DefaultSystemGenerator.uasset",
+    "/Game/DLC1/CareerMode/StartConditions/CareerMode.uasset",
+    "/Game/InnerSphereData/MW5_InnerSphereData.uasset",
+    "/Game/InnerSphereData/StarSystemGenerator.uasset",
+    "/Game/Modes/CampaignMode.uasset",
+    "/Game/Modes/MW5GameMode.uasset",
+    "/Game/UI/FrontEnd/StarMapPawn.uasset",
+    "/Game/Levels/FrontEnd/StarMap.umap"
+  ],
+  "steamPublishedFileId": 0,
+  "steamLastSubmittedBuildNumber": 0,
+  "steamModVisibility": "Private"
+}

@@ -1,6 +1,8 @@
 param(
     [ValidateSet('Status', 'Isolate', 'Restore')]
     [string]$Mode = 'Status',
+    [ValidateSet('All', 'CompatMirror', 'LegacyStarmap')]
+    [string]$Target = 'All',
     [switch]$Apply
 )
 
@@ -58,14 +60,20 @@ $suffix = '.disabled-by-tku-isolation'
 
 $targets = @(
     [pscustomobject]@{
+        Key = 'CompatMirror'
         Name = 'MW5Mercs-zzzzTKUCompatEditorPatch.pak'
         Reason = 'Disable the ad hoc loose content mirror whose packaged assets still contain ModOverride internal paths.'
     },
     [pscustomobject]@{
+        Key = 'LegacyStarmap'
         Name = 'MW5Mercs-zKnownUniverseStarmap.pak'
         Reason = 'Disable the legacy loose root override for a reversible mod-folder-only isolation test.'
     }
 )
+
+if ($Target -ne 'All') {
+    $targets = @($targets | Where-Object { $_.Key -eq $Target })
+}
 
 if (-not (Test-Path -LiteralPath $contentPaksRoot -PathType Container)) {
     throw "Content pak root not found: $contentPaksRoot"
@@ -77,8 +85,8 @@ $actions = @()
 $safetyFailures = @()
 $targetReports = @()
 
-foreach ($target in $targets) {
-    $activePath = Join-Path $contentPaksRoot $target.Name
+foreach ($pakTarget in $targets) {
+    $activePath = Join-Path $contentPaksRoot $pakTarget.Name
     $disabledPath = "$activePath$suffix"
     Assert-UnderRoot -Root $contentPaksRoot -Path $activePath
     Assert-UnderRoot -Root $contentPaksRoot -Path $disabledPath
@@ -86,8 +94,8 @@ foreach ($target in $targets) {
     $activeExists = Test-Path -LiteralPath $activePath -PathType Leaf
     $disabledExists = Test-Path -LiteralPath $disabledPath -PathType Leaf
     $targetReport = [ordered]@{
-        name = $target.Name
-        reason = $target.Reason
+        name = $pakTarget.Name
+        reason = $pakTarget.Reason
         active_path = $activePath
         disabled_path = $disabledPath
         active_exists_before = $activeExists
@@ -98,36 +106,36 @@ foreach ($target in $targets) {
 
     if ($Mode -eq 'Isolate') {
         if ($activeExists -and $disabledExists) {
-            $safetyFailures += "Both active and disabled files exist for $($target.Name); refusing to guess."
+            $safetyFailures += "Both active and disabled files exist for $($pakTarget.Name); refusing to guess."
         } elseif ($activeExists) {
             if ($Apply) {
                 Move-Item -LiteralPath $activePath -Destination $disabledPath
-                $actions += "disabled $($target.Name)"
+                $actions += "disabled $($pakTarget.Name)"
             } else {
-                $actions += "would disable $($target.Name)"
+                $actions += "would disable $($pakTarget.Name)"
             }
         } elseif ($disabledExists) {
-            $actions += "$($target.Name) already disabled"
+            $actions += "$($pakTarget.Name) already disabled"
         } else {
-            $actions += "$($target.Name) absent"
+            $actions += "$($pakTarget.Name) absent"
         }
     } elseif ($Mode -eq 'Restore') {
         if ($activeExists -and $disabledExists) {
-            $safetyFailures += "Both active and disabled files exist for $($target.Name); refusing to guess."
+            $safetyFailures += "Both active and disabled files exist for $($pakTarget.Name); refusing to guess."
         } elseif ($disabledExists) {
             if ($Apply) {
                 Move-Item -LiteralPath $disabledPath -Destination $activePath
-                $actions += "restored $($target.Name)"
+                $actions += "restored $($pakTarget.Name)"
             } else {
-                $actions += "would restore $($target.Name)"
+                $actions += "would restore $($pakTarget.Name)"
             }
         } elseif ($activeExists) {
-            $actions += "$($target.Name) already active"
+            $actions += "$($pakTarget.Name) already active"
         } else {
-            $actions += "$($target.Name) absent"
+            $actions += "$($pakTarget.Name) absent"
         }
     } else {
-        $actions += "status checked for $($target.Name)"
+        $actions += "status checked for $($pakTarget.Name)"
     }
 
     $targetReport.active_exists_after = Test-Path -LiteralPath $activePath -PathType Leaf
@@ -141,6 +149,7 @@ $report = [ordered]@{
     timestamp = $timestamp
     generated_utc = (Get-Date).ToUniversalTime().ToString('o')
     mode = $Mode
+    target = $Target
     apply_requested = [bool]$Apply
     content_paks_root = $contentPaksRoot
     suffix = $suffix
@@ -155,9 +164,10 @@ $lines = @(
     "# TKU Content Pak Isolation - $timestamp",
     "",
     "- Mode: ``$Mode``",
+    "- Target: ``$Target``",
     "- Apply requested: ``$([bool]$Apply)``",
     "- Safety: renames only; no pak contents are modified.",
-    "- Restore command: ``.\tools\Set-TKUContentPakIsolation.ps1 -Mode Restore -Apply``",
+    "- Restore command: ``.\tools\Set-TKUContentPakIsolation.ps1 -Mode Restore -Target $Target -Apply``",
     "",
     "## Actions"
 )
